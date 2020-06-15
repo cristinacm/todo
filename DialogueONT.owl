@@ -1,0 +1,534 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT">
+    <Prefix name="" IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="prov" IRI="http://www.w3.org/ns/prov#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="vann" IRI="http://purl.org/vocab/vann/"/>
+    <Prefix name="pmofn" IRI="http://premon.fbk.eu/ontology/fn#"/>
+    <Prefix name="ontolex" IRI="http://www.w3.org/ns/lemon/ontolex#"/>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime"></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionIRI"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">0.1.0</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://creativecommons.org/ns#license"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime"></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-21T00:00:00</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:priorVersion"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#YesNoResponse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ArgumentNotGuessedResponse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StatusRequest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TimeRequest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ArgumentRequest"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isValid"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:time"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://creativecommons.org/ns#license"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ContentRequest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StepExplanationResponse"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/bibliographicCitation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnderstoodResponse"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GreetingResponse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#YesNoRequest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StepFurtherActionRequest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ContentResponse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ArgumentAssignationRequest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExecutionAgentRequest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SystemResponse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ResponseTypeNotExpectedResponse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UserResponse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NoResponse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Intent"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasOutputSentence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#YesNoResponseNotExpected"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NullResponse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HelpRequest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SystemStep"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Duration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ArgumentExplanationResponse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ContentResponseNotExpected"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRequiredBy"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NotUnderstoodResponse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UserStep"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#YesResponse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReassureRequest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SystemRequest"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UserRequest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FinishDialogueRequest"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#requires"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="owl:versionIRI"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ArgumentCharacteristicRequest"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ArgumentNotCompatibleResponse"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#ArgumentAssignationRequest"/>
+        <Class IRI="#ContentRequest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ArgumentCharacteristicRequest"/>
+        <Class IRI="#ContentRequest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ArgumentExplanationResponse"/>
+        <Class IRI="#SystemResponse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ArgumentNotCompatibleResponse"/>
+        <Class IRI="#SystemResponse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ArgumentNotGuessedResponse"/>
+        <Class IRI="#SystemResponse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ArgumentRequest"/>
+        <Class IRI="#ContentRequest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ContentRequest"/>
+        <Class IRI="#SystemRequest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ContentRequest"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#requires"/>
+            <Class IRI="#ContentResponse"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ContentResponse"/>
+        <Class IRI="#UserResponse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ContentResponseNotExpected"/>
+        <Class IRI="#ResponseTypeNotExpectedResponse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExecutionAgentRequest"/>
+        <Class IRI="#ContentRequest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FinishDialogueRequest"/>
+        <Class IRI="#ContentRequest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GreetingResponse"/>
+        <Class IRI="#SystemResponse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HelpRequest"/>
+        <Class IRI="#YesNoRequest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Intent"/>
+        <Class IRI="#UserRequest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NoResponse"/>
+        <Class IRI="#YesNoResponse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NotUnderstoodResponse"/>
+        <Class IRI="#SystemResponse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NullResponse"/>
+        <Class IRI="#UserResponse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReassureRequest"/>
+        <Class IRI="#YesNoRequest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResponseTypeNotExpectedResponse"/>
+        <Class IRI="#SystemResponse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StatusRequest"/>
+        <Class IRI="#YesNoRequest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StepExplanationResponse"/>
+        <Class IRI="#SystemResponse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StepFurtherActionRequest"/>
+        <Class IRI="#ContentRequest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SystemRequest"/>
+        <Class IRI="#SystemStep"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SystemResponse"/>
+        <Class IRI="#SystemStep"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TimeRequest"/>
+        <Class IRI="#YesNoRequest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnderstoodResponse"/>
+        <Class IRI="#SystemResponse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UserRequest"/>
+        <Class IRI="#UserStep"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UserRequest"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#requires"/>
+            <Class IRI="#SystemResponse"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UserResponse"/>
+        <Class IRI="#UserStep"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UserResponse"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#isValid"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#YesNoRequest"/>
+        <Class IRI="#SystemRequest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#YesNoRequest"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#requires"/>
+            <Class IRI="#YesNoResponse"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#YesNoResponse"/>
+        <Class IRI="#UserResponse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#YesNoResponseNotExpected"/>
+        <Class IRI="#ResponseTypeNotExpectedResponse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#YesResponse"/>
+        <Class IRI="#YesNoResponse"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#ContentRequest"/>
+        <Class IRI="#YesNoRequest"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ContentResponse"/>
+        <Class IRI="#YesNoResponse"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#SystemRequest"/>
+        <Class IRI="#SystemResponse"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#SystemStep"/>
+        <Class IRI="#UserStep"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#UserRequest"/>
+        <Class IRI="#UserResponse"/>
+    </DisjointClasses>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isRequiredBy"/>
+        <ObjectProperty IRI="#requires"/>
+    </InverseObjectProperties>
+    <DataPropertyRange>
+        <DataProperty IRI="#Duration"/>
+        <Datatype abbreviatedIRI="xsd:time"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isValid"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ArgumentNotCompatibleResponse</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This would imply an ArgumentRequest.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ArgumentNotGuessedResponse</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This would imply an ArgumentRequest/ArgumentCharacteristicRequest</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ContentRequest</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Request that asks for specific information, other than &quot;Yes&quot; or &quot;No&quot; (and equivalents).
+
+Also known as &quot;Non polar/Open question&quot; in linguistics.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>#ContentRequest</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Which is the error code?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ContentResponse</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Response that provides specific information, as a response for a ContentRequest.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>#ContentResponse</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The error code is 412.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NoResponse</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Response that corresponds to a negative polarity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>#NoResponse</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">No, Never, Not at all</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NullResponse</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Response that does not represent a value that can be classified as ContentResponse or YesNoResponse.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>#NullResponse</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">I don&apos;t know.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#StepExplanationResponse</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Statement that provides information about a ProposedAction.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SystemRequest</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Act in which the system asks the user for missing information.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SystemResponse</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Information that the system provides in response to a UserRequest or as a piece of information directed to the user, without a prior UserRequest.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#UserRequest</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Act in which the user asks the system to perform an action or to obtain information.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#UserResponse</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Information provided by the user to answer a request made by the system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#YesNoRequest</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Request the response of which is expected to be limited to &quot;Yes&quot; or &quot;No&quot; (and equivalents).
+
+Also known as &quot;Polar question&quot; in linguistics.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>#YesNoRequest</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Do you want to go to the laboratory?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#YesNoResponse</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Reponse that corresponds to a positive or negative polarity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>#YesNoResponse</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Yes, OK
+
+No, Not at all</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#YesResponse</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Response that corresponds to a positive polarity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>#YesResponse</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Yes, OK</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
