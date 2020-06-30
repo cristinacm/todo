@@ -1,0 +1,389 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-World"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-World">
+    <Prefix name="" IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/WorldONT"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="prov" IRI="http://www.w3.org/ns/prov#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="vann" IRI="http://purl.org/vocab/vann/"/>
+    <Prefix name="pmofn" IRI="http://premon.fbk.eu/ontology/fn#"/>
+    <Prefix name="ontolex" IRI="http://www.w3.org/ns/lemon/ontolex#"/>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime"></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">0.1.0</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://creativecommons.org/ns#license"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime"></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2020-06-20T00:00:00</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:priorVersion"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionIRI"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime"></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </Annotation>
+    <Declaration>
+        <NamedIndividual IRI="#zonaVestíbulo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#café.N"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isLexicalUnitOf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#vestíbulo.N"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLexicalUnit"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#vestíbulo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#baño.N"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cafetera.N"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://creativecommons.org/ns#license"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#servicio.N"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FloorSection"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#coordZ"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#contains"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#coordX"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#café"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cafetera"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Beverage"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#baño"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPoint"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#zonaTalleres"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/bibliographicCitation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RoomSpace"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WC.N"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#coord"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#váter.N"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPointOf"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="owl:versionIRI"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isContainedBy"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#coordY"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LexicalUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Object"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#hall.N"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WC"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Beverage"/>
+        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FloorSection"/>
+        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Object"/>
+        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RoomSpace"/>
+        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Object"/>
+        <NamedIndividual IRI="#WC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LexicalUnit"/>
+        <NamedIndividual IRI="#WC.N"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RoomSpace"/>
+        <NamedIndividual IRI="#baño"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LexicalUnit"/>
+        <NamedIndividual IRI="#baño.N"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Object"/>
+        <NamedIndividual IRI="#cafetera"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LexicalUnit"/>
+        <NamedIndividual IRI="#cafetera.N"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Beverage"/>
+        <NamedIndividual IRI="#café"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LexicalUnit"/>
+        <NamedIndividual IRI="#café.N"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LexicalUnit"/>
+        <NamedIndividual IRI="#hall.N"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LexicalUnit"/>
+        <NamedIndividual IRI="#servicio.N"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RoomSpace"/>
+        <NamedIndividual IRI="#vestíbulo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LexicalUnit"/>
+        <NamedIndividual IRI="#vestíbulo.N"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LexicalUnit"/>
+        <NamedIndividual IRI="#váter.N"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FloorSection"/>
+        <NamedIndividual IRI="#zonaTalleres"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FloorSection"/>
+        <NamedIndividual IRI="#zonaVestíbulo"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLexicalUnit"/>
+        <NamedIndividual IRI="#WC"/>
+        <NamedIndividual IRI="#WC.N"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLexicalUnit"/>
+        <NamedIndividual IRI="#WC"/>
+        <NamedIndividual IRI="#váter.N"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedBy"/>
+        <NamedIndividual IRI="#WC"/>
+        <NamedIndividual IRI="#baño"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLexicalUnit"/>
+        <NamedIndividual IRI="#baño"/>
+        <NamedIndividual IRI="#baño.N"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLexicalUnit"/>
+        <NamedIndividual IRI="#baño"/>
+        <NamedIndividual IRI="#servicio.N"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#cafetera"/>
+        <NamedIndividual IRI="#café"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLexicalUnit"/>
+        <NamedIndividual IRI="#cafetera"/>
+        <NamedIndividual IRI="#cafetera.N"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLexicalUnit"/>
+        <NamedIndividual IRI="#vestíbulo"/>
+        <NamedIndividual IRI="#hall.N"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLexicalUnit"/>
+        <NamedIndividual IRI="#vestíbulo"/>
+        <NamedIndividual IRI="#vestíbulo.N"/>
+    </ObjectPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#contains"/>
+        <ObjectProperty IRI="#isContainedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasLexicalUnit"/>
+        <ObjectProperty IRI="#isLexicalUnitOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasPoint"/>
+        <ObjectProperty IRI="#isPointOf"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isLexicalUnitOf"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isPointOf"/>
+    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#hasLexicalUnit"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#hasPoint"/>
+    </InverseFunctionalObjectProperty>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#coordX"/>
+        <DataProperty IRI="#coord"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#coordY"/>
+        <DataProperty IRI="#coord"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#coordZ"/>
+        <DataProperty IRI="#coord"/>
+    </SubDataPropertyOf>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#LexicalUnit</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Representation of a FrameHead or a Thing.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LexicalUnit</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">LexicalUnit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>#LexicalUnit</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">FrameHead: buy
+LU: buy.v
+
+SpatialThing - Object: WC
+LUs: toilet.n, loo.n</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#coord</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">coordXYZ</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

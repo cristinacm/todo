@@ -69,7 +69,7 @@
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
     </Annotation>
     <Declaration>
-        <ObjectProperty IRI="#contains"/>
+        <ObjectProperty IRI="#hasCoreArgument"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasFrameHead"/>
@@ -102,6 +102,9 @@
         <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#isCoreArgumentOf"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Intent"/>
     </Declaration>
     <Declaration>
@@ -120,19 +123,16 @@
         <ObjectProperty IRI="#hasActionOn"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasLexeme"/>
-    </Declaration>
-    <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/terms/bibliographicCitation"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isArgumentSetOf"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+        <ObjectProperty IRI="#isTargetSystemReadableInfoOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isTargetSystemReadableInfoOf"/>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasTargetSystemReadableInfo"/>
@@ -192,7 +192,13 @@
         <Class IRI="#CoreArgument"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#isOptionalArgumentOf"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#isLexemeOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasOptionalArgument"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
@@ -202,9 +208,6 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isComposedOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isContainedBy"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
@@ -278,20 +281,25 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#LexicalUnit"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasLexeme"/>
-            <Class IRI="#Lexeme"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#OptionalArgument"/>
         <Class IRI="#Argument"/>
     </SubClassOf>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="#contains"/>
-        <ObjectProperty IRI="#isContainedBy"/>
-    </InverseObjectProperties>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCoreArgument"/>
+        <ObjectProperty IRI="#hasArgument"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasOptionalArgument"/>
+        <ObjectProperty IRI="#hasArgument"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isCoreArgumentOf"/>
+        <ObjectProperty IRI="#isArgumentOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isOptionalArgumentOf"/>
+        <ObjectProperty IRI="#isArgumentOf"/>
+    </SubObjectPropertyOf>
     <InverseObjectProperties>
         <ObjectProperty IRI="#hasActionAssociated"/>
         <ObjectProperty IRI="#hasActionOn"/>
@@ -303,6 +311,10 @@
     <InverseObjectProperties>
         <ObjectProperty IRI="#hasArgumentSet"/>
         <ObjectProperty IRI="#isArgumentSetOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasCoreArgument"/>
+        <ObjectProperty IRI="#isCoreArgumentOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#hasExecutableOrder"/>
@@ -325,8 +337,8 @@
         <ObjectProperty IRI="#isIntentOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#hasLexeme"/>
-        <ObjectProperty IRI="#isLexemeOf"/>
+        <ObjectProperty IRI="#hasOptionalArgument"/>
+        <ObjectProperty IRI="#isOptionalArgumentOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#hasTargetSystemReadableInfo"/>
@@ -335,10 +347,6 @@
     <InverseObjectProperties>
         <ObjectProperty IRI="#isComposedOf"/>
         <ObjectProperty IRI="#isPartOf"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="#isLexicalUnitOf"/>
-        <ObjectProperty IRI="#isLexicalUnitOf"/>
     </InverseObjectProperties>
     <FunctionalObjectProperty>
         <ObjectProperty IRI="#hasArgumentSet"/>
@@ -363,9 +371,6 @@
     </InverseFunctionalObjectProperty>
     <InverseFunctionalObjectProperty>
         <ObjectProperty IRI="#hasFrameHead"/>
-    </InverseFunctionalObjectProperty>
-    <InverseFunctionalObjectProperty>
-        <ObjectProperty IRI="#hasLexeme"/>
     </InverseFunctionalObjectProperty>
     <InverseFunctionalObjectProperty>
         <ObjectProperty IRI="#hasLexicalUnit"/>
