@@ -1,0 +1,317 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-Inst"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-Inst">
+    <Prefix name="" IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-Frame"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="prov" IRI="http://www.w3.org/ns/prov#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="vann" IRI="http://purl.org/vocab/vann/"/>
+    <Prefix name="pmofn" IRI="http://premon.fbk.eu/ontology/fn#"/>
+    <Prefix name="ontolex" IRI="http://www.w3.org/ns/lemon/ontolex#"/>
+    <Import>http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-Frame</Import>
+    <Import>http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-World</Import>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime"></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">0.1.0</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://creativecommons.org/ns#license"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime"></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-21T00:00:00</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:priorVersion"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionIRI"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime"></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </Annotation>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/bibliographicCitation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Destination"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GuideRobot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Origin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Motion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Take"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://creativecommons.org/ns#license"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#desplazar.V"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ir"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="owl:versionIRI"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ir.V"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#execute_move([X][Y][Z])"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GuideRobot_take"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ESGuideGrammar.bin"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="-Frame#isFrameHeadOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="-Frame#Action"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="-Frame#hasExecutableOrder"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="-World#café"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="-Frame#FrameHead"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="-Frame#Argument"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="-Frame#hasIntent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="-Frame#hasFrame"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="-Frame#isArgumentOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="-Frame#FomaGrammar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="-World#café.N"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="-Frame#hasFomaGrammar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="-Frame#Frame"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="-Frame#hasLexicalUnit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="-Frame#isLexicalUnitOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="-Frame#ExecutableOrder"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="-Frame#hasOptionalArgument"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="-Frame#hasFrameHead"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="-Frame#hasCoreArgument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="-Frame#Skill"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="-Frame#Intent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="-Frame#isFrameOf"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class IRI="-Frame#Argument"/>
+        <NamedIndividual IRI="#Destination"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="-Frame#FomaGrammar"/>
+        <NamedIndividual IRI="#ESGuideGrammar.bin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="-Frame#Skill"/>
+        <NamedIndividual IRI="#GuideRobot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="-Frame#Action"/>
+        <NamedIndividual IRI="#GuideRobot_take"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="-Frame#Frame"/>
+        <NamedIndividual IRI="#Motion"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="-Frame#Intent"/>
+        <NamedIndividual IRI="#Take"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="-Frame#FrameHead"/>
+        <NamedIndividual IRI="#ir"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="-Frame#ExecutableOrder"/>
+        <NamedIndividual IRI="#execute_move([X][Y][Z])"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="-Frame#isArgumentOf"/>
+        <NamedIndividual IRI="#Destination"/>
+        <NamedIndividual IRI="#Motion"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="-Frame#hasFomaGrammar"/>
+        <NamedIndividual IRI="#GuideRobot"/>
+        <NamedIndividual IRI="#ESGuideGrammar.bin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="-Frame#hasFrame"/>
+        <NamedIndividual IRI="#GuideRobot"/>
+        <NamedIndividual IRI="#Motion"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="-Frame#hasIntent"/>
+        <NamedIndividual IRI="#GuideRobot"/>
+        <NamedIndividual IRI="#Take"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="-Frame#hasExecutableOrder"/>
+        <NamedIndividual IRI="#GuideRobot_take"/>
+        <NamedIndividual IRI="#execute_move([X][Y][Z])"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="-Frame#hasCoreArgument"/>
+        <NamedIndividual IRI="#Motion"/>
+        <NamedIndividual IRI="#Destination"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="-Frame#hasFrameHead"/>
+        <NamedIndividual IRI="#Motion"/>
+        <NamedIndividual IRI="#ir"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="-Frame#hasOptionalArgument"/>
+        <NamedIndividual IRI="#Motion"/>
+        <NamedIndividual IRI="#Origin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="-Frame#isFrameOf"/>
+        <NamedIndividual IRI="#Motion"/>
+        <NamedIndividual IRI="#Take"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="-Frame#hasLexicalUnit"/>
+        <NamedIndividual IRI="#ir"/>
+        <NamedIndividual IRI="#desplazar.V"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="-Frame#hasLexicalUnit"/>
+        <NamedIndividual IRI="#ir"/>
+        <NamedIndividual IRI="#ir.V"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="-Frame#isFrameHeadOf"/>
+        <NamedIndividual IRI="#ir"/>
+        <NamedIndividual IRI="#Motion"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="-Frame#isLexicalUnitOf"/>
+        <NamedIndividual IRI="-World#café.N"/>
+        <NamedIndividual IRI="-World#café"/>
+    </ObjectPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="-Frame#hasLexicalUnit"/>
+        <ObjectProperty IRI="-Frame#isLexicalUnitOf"/>
+    </InverseObjectProperties>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
