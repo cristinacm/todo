@@ -69,16 +69,10 @@
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
     </Annotation>
     <Declaration>
-        <Class IRI="#YesNoResponse"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#ArgumentNotGuessedResponse"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#StatusRequest"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#TimeRequest"/>
+        <Class IRI="#NoUserResponse"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ArgumentRequest"/>
@@ -87,25 +81,31 @@
         <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#isValid"/>
-    </Declaration>
-    <Declaration>
         <Datatype abbreviatedIRI="xsd:time"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://creativecommons.org/ns#license"/>
+        <DataProperty IRI="#isValid"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
     </Declaration>
     <Declaration>
+        <AnnotationProperty IRI="http://creativecommons.org/ns#license"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#YesUserResponse"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NullUserResponse"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ContentRequest"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#StepExplanationResponse"/>
+        <Class IRI="#ReassureFeedbackRequest"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/terms/bibliographicCitation"/>
@@ -123,16 +123,10 @@
         <Class IRI="#YesNoRequest"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#StepFurtherActionRequest"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ContentResponse"/>
+        <ObjectProperty IRI="#implies"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ArgumentAssignationRequest"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ExecutionAgentRequest"/>
     </Declaration>
     <Declaration>
         <Class IRI="#SystemResponse"/>
@@ -144,31 +138,34 @@
         <Class IRI="#UserResponse"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#NoResponse"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Intent"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#OngoingDialStatus"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasOutputSentence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CurrentDial"/>
     </Declaration>
     <Declaration>
         <Class IRI="#YesNoResponseNotExpected"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#NullResponse"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#HelpRequest"/>
+        <Class IRI="#ContentUserResponse"/>
     </Declaration>
     <Declaration>
         <Class IRI="#SystemStep"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#Duration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SystemRequestType"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ArgumentExplanationResponse"/>
@@ -183,16 +180,25 @@
         <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#IncorrectArgumentRequest"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#NotUnderstoodResponse"/>
     </Declaration>
     <Declaration>
         <Class IRI="#UserStep"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#YesResponse"/>
+        <Class IRI="#IntentRequest"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ReassureRequest"/>
+        <Class IRI="#ArgumentSpecifyRequest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CurrentStep"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DialogueType"/>
     </Declaration>
     <Declaration>
         <Class IRI="#SystemRequest"/>
@@ -201,10 +207,13 @@
         <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#YesNoUserResponse"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#UserRequest"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#FinishDialogueRequest"/>
+        <Class IRI="#DialogueStatus"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#requires"/>
@@ -214,6 +223,9 @@
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SystemRequestStatus"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ArgumentCharacteristicRequest"/>
@@ -229,7 +241,7 @@
     </Declaration>
     <SubClassOf>
         <Class IRI="#ArgumentAssignationRequest"/>
-        <Class IRI="#ContentRequest"/>
+        <Class IRI="#YesNoRequest"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ArgumentCharacteristicRequest"/>
@@ -244,12 +256,37 @@
         <Class IRI="#SystemResponse"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#ArgumentNotCompatibleResponse"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#implies"/>
+            <Class IRI="#ArgumentRequest"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#ArgumentNotGuessedResponse"/>
         <Class IRI="#SystemResponse"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#ArgumentNotGuessedResponse"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#implies"/>
+            <Class IRI="#ArgumentCharacteristicRequest"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ArgumentNotGuessedResponse"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#implies"/>
+            <Class IRI="#ArgumentRequest"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#ArgumentRequest"/>
         <Class IRI="#ContentRequest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ArgumentSpecifyRequest"/>
+        <Class IRI="#YesNoRequest"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ContentRequest"/>
@@ -259,31 +296,31 @@
         <Class IRI="#ContentRequest"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#requires"/>
-            <Class IRI="#ContentResponse"/>
+            <Class IRI="#ContentUserResponse"/>
         </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ContentResponse"/>
-        <Class IRI="#UserResponse"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ContentResponseNotExpected"/>
         <Class IRI="#ResponseTypeNotExpectedResponse"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#ExecutionAgentRequest"/>
-        <Class IRI="#ContentRequest"/>
+        <Class IRI="#ContentUserResponse"/>
+        <Class IRI="#UserResponse"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#FinishDialogueRequest"/>
-        <Class IRI="#ContentRequest"/>
+        <Class IRI="#CurrentDial"/>
+        <Class IRI="#DialogueStatus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CurrentStep"/>
+        <Class IRI="#DialogueStatus"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#GreetingResponse"/>
         <Class IRI="#SystemResponse"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#HelpRequest"/>
+        <Class IRI="#IncorrectArgumentRequest"/>
         <Class IRI="#YesNoRequest"/>
     </SubClassOf>
     <SubClassOf>
@@ -291,19 +328,27 @@
         <Class IRI="#UserRequest"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#NoResponse"/>
-        <Class IRI="#YesNoResponse"/>
+        <Class IRI="#IntentRequest"/>
+        <Class IRI="#YesNoRequest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NoUserResponse"/>
+        <Class IRI="#YesNoUserResponse"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#NotUnderstoodResponse"/>
         <Class IRI="#SystemResponse"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#NullResponse"/>
+        <Class IRI="#NullUserResponse"/>
         <Class IRI="#UserResponse"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#ReassureRequest"/>
+        <Class IRI="#OngoingDialStatus"/>
+        <Class IRI="#DialogueStatus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReassureFeedbackRequest"/>
         <Class IRI="#YesNoRequest"/>
     </SubClassOf>
     <SubClassOf>
@@ -311,28 +356,20 @@
         <Class IRI="#SystemResponse"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#StatusRequest"/>
-        <Class IRI="#YesNoRequest"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#StepExplanationResponse"/>
-        <Class IRI="#SystemResponse"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#StepFurtherActionRequest"/>
-        <Class IRI="#ContentRequest"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#SystemRequest"/>
         <Class IRI="#SystemStep"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#SystemResponse"/>
-        <Class IRI="#SystemStep"/>
+        <Class IRI="#SystemRequestStatus"/>
+        <Class IRI="#DialogueStatus"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#TimeRequest"/>
-        <Class IRI="#YesNoRequest"/>
+        <Class IRI="#SystemRequestType"/>
+        <Class IRI="#SystemRequestStatus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SystemResponse"/>
+        <Class IRI="#SystemStep"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#UnderstoodResponse"/>
@@ -368,28 +405,28 @@
         <Class IRI="#YesNoRequest"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#requires"/>
-            <Class IRI="#YesNoResponse"/>
+            <Class IRI="#YesNoUserResponse"/>
         </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#YesNoResponse"/>
-        <Class IRI="#UserResponse"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#YesNoResponseNotExpected"/>
         <Class IRI="#ResponseTypeNotExpectedResponse"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#YesResponse"/>
-        <Class IRI="#YesNoResponse"/>
+        <Class IRI="#YesNoUserResponse"/>
+        <Class IRI="#UserResponse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#YesUserResponse"/>
+        <Class IRI="#YesNoUserResponse"/>
     </SubClassOf>
     <DisjointClasses>
         <Class IRI="#ContentRequest"/>
         <Class IRI="#YesNoRequest"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#ContentResponse"/>
-        <Class IRI="#YesNoResponse"/>
+        <Class IRI="#ContentUserResponse"/>
+        <Class IRI="#YesNoUserResponse"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#SystemRequest"/>
@@ -417,13 +454,167 @@
     </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ArgumentAssignationRequest</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Request made to reassure the assignation of a value from the KEE to an Argument.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>#ArgumentAssignationRequest</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">&quot;El {Argument} es el {Argument_value}, ¿verdad?&quot;
+
+&quot;El Destino es el &quot;Auditorio&quot;, ¿verdad?&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>#ArgumentAssignationRequest</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The {Argument} is {Argument_value}, isn&apos;t it?
+
+&quot;The Destination is &quot;Auditorium&quot;, isn&apos;t it?&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ArgumentCharacteristicRequest</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Request that demands a specific characteristic of the argument. This request is used when the argument provided is too broad and the system needs some characteristic that allows determining the specific element the user is refering to.
+
+For example, the user would require a &quot;piece&quot;, and the system includes data for 300 types of pieces.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>#ArgumentCharacteristicRequest</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">&quot;Which {characteristic} is {too_broad_argument}?&quot;
+
+&quot;Which {colour} is (the) {piece}?&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>#ArgumentCharacteristicRequest</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">&quot;¿De qué {characteristic} es {too_broad_argument}?
+
+&quot;¿De qué {color} es (la) {pieza}?&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ArgumentExplanationResponse</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Response that gives details about an Argument. For example, when the user does not understand what information conveys said Argument.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>#ArgumentExplanationResponse</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">&quot;El {Argument} corresponde a{ArgDescription}&quot;
+
+&quot;El {Error} corresponde a{l número de error que aparece en la máquina}&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>#ArgumentExplanationResponse</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">&quot;The {Argument} corresponds to {ArgDescription}&quot;
+
+&quot;The {Error} corresponds to {the ID of the error that appears in the machine}&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ArgumentNotCompatibleResponse</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The system informs the user the Argument value provided is not valid according to what has been modelled in the KB.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#ArgumentNotCompatibleResponse</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This would imply an ArgumentRequest.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>#ArgumentNotCompatibleResponse</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">&quot;{ArgumentValue} cannot be the {Argument}. Can you check it?&quot;
+
+&quot;{Toilet} cannot be the {Error}. Can you check it?&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>#ArgumentNotCompatibleResponse</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">&quot;{ArgumentValue} no puede ser {Argument}. ¿Puedes verificarlo?&quot;
+
+&quot;{Baño} no puede ser {Error}. ¿Puedes verificarlo?&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ArgumentNotGuessedResponse</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Response given when the system has not been able to guess the value of the Argument through its characteristics.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#ArgumentNotGuessedResponse</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This would imply an ArgumentRequest/ArgumentCharacteristicRequest</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>#ArgumentNotGuessedResponse</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">&quot;Con las características que me has dado, no he podido averiguar el {Argument}. ¿Puedes verificar alguna de las informaciones que te he pedido para volverlo a intentar?&quot;
+
+&quot;Con las características que me has dado, no he podido averiguar el {Error}. ¿Puedes verificar alguna de las informaciones que te he pedido para volverlo a intentar?&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>#ArgumentNotGuessedResponse</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">&quot;I cannot guess the {Argument} with the information you provided. Could you check any of the characteristics I have requested and try again?&quot;
+
+&quot;I cannot guess the {Error} with the information you provided. Could you check any of the characteristics I have requested and try again?&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ArgumentRequest</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Request that demands for the value of an Argument.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>#ArgumentRequest</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">&quot;Can you tell me the {argument}?
+
+&quot;Can you tell me the {Destination}?&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>#ArgumentRequest</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">&quot;¿Puedes decirme el {argument}?&quot;
+
+&quot;¿Puedes decirme el {Destino}?&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ArgumentSpecifyRequest</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Request made when a value for an Argument can belong to different Arguments. The strategy is asking for each Argument option until the user confirms.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>#ArgumentSpecifyRequest</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Situation: the value &quot;Mesa de reparación&quot; could be Origin or Destination
+
+&quot;¡{Argument_value} podría ser varias cosas! ¿Es el {Argument}?&quot;
+&quot;¿Podría {argument_value; pronoun?} ser el {Argument}?
+
+SYS: &quot;¡{&quot;Mesa de reparación&quot;} podría ser varias cosas! ¿Es el {Origen}?&quot;
+
+USR: &quot;No&quot;
+
+SYS: &quot;¿Podría {eso} ser el {Destino}?
+
+USR: &quot;Sí&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>#ArgumentSpecifyRequest</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Situation: the value &quot;Repairing table&quot; could be Origin or Destination
+
+&quot;{Argument_value} could be quite a few things! Is it the {Argument}?&quot;
+&quot;Could {Argument_value; pronoun?} be the {Argument}?
+
+
+SYS: &quot;{&quot;Repairing table&quot;} could be quite a few things! Is it the {Origin}?&quot;
+
+USR: &quot;No&quot;
+
+SYS: &quot;Could {it} be the {Destination}?&quot;
+
+USR: &quot;Yes&quot;</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -439,38 +630,173 @@ Also known as &quot;Non polar/Open question&quot; in linguistics.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#ContentResponse</IRI>
+        <IRI>#ContentResponseNotExpected</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">&quot;Solo necesito que me digas sí o no, por favor&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ContentResponseNotExpected</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">&quot;You only need me to tell me yes or no, please&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ContentResponseNotExpected</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Implies resuming YesNoRequest</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ContentResponseNotExpected</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Reponse given to the user when the UserResponse is a ContentResponse and the SystemRequest requires a YesNoResponse.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ContentUserResponse</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Response that provides specific information, as a response for a ContentRequest.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
-        <IRI>#ContentResponse</IRI>
+        <IRI>#ContentUserResponse</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The error code is 412.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#NoResponse</IRI>
+        <IRI>#GreetingResponse</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Welcome message.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>#GreetingResponse</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">&quot;Hi! I am {SystemName}. I am happy to help you. What do you need?&quot;
+
+&quot;Hi! I am {Teknibot}. I am happy to help you. What do you need?&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>#GreetingResponse</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">&quot;¡Hola! Soy {SystemName}. Encantado de ayudarte. ¿Qué necesitas?&quot;
+
+&quot;¡Hola! Soy {Teknibot}. Encantado de ayudarte. ¿Qué necesitas?&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#IncorrectArgumentRequest</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Request that checks which is the Argument/Action that has not been interpreter correctly, after a negative ReassureFeedbackRequest.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>#IncorrectArgumentRequest</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">&quot;Have I missed the {Argument}?&quot;
+
+&quot;Have I missed the {Origin}?&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>#IncorrectArgumentRequest</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">&quot;¿Me he equivocado con el {Argument}?&quot;
+
+&quot;¿Me he equivocado con el {Origen}?&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#IntentRequest</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Request made when a UserRequest can belong to different Intents. The strategy is asking for each Intent option until the user confirms.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>#IntentRequest</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Situation: the Intent for the Request could be &quot;Information&quot; or &quot;Guiding&quot;
+
+&quot;So many interpretations! See if you can help me! Do you need {Intent}?&quot;
+&quot;Then do you need {Intent}?
+
+
+SYS: &quot;So many interpretations! See if you can help me! Do you need {Information}?&quot;
+
+USR: &quot;No&quot;
+
+SYS: &quot;Then do you need {Guiding}?
+
+USR: &quot;Yes&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>#IntentRequest</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Situation: the intent for the Request could be &quot;Information&quot; or &quot;Guiding&quot;
+
+&quot;¡Cuántas interpretaciones! ¡A ver si me puedes ayudar! ¿Quieres {Intent}?&quot;
+&quot;¿Entonces necesitas {Intent}?
+
+SYS: &quot;¡Cuántas interpretaciones! ¡A ver si me puedes ayudar! ¿Quieres {que te dé información}?&quot;
+
+USR: &quot;No&quot;
+
+SYS: &quot;¿Entonces necesitas {que te lleve}?
+
+USR: &quot;Sí&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NoUserResponse</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Response that corresponds to a negative polarity.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
-        <IRI>#NoResponse</IRI>
+        <IRI>#NoUserResponse</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">No, Never, Not at all</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#NullResponse</IRI>
+        <IRI>#NotUnderstoodResponse</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Implies resuming the current ContentSystemRequest</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NotUnderstoodResponse</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Response that informs the user that the system has not understood the user command.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>#NotUnderstoodResponse</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">&quot;I am sorry, but I haven&apos;t understood. Can you repeat, please?&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>#NotUnderstoodResponse</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">&quot;Lo siento, no te he entendido. ¿Puedes repetir, por favor?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NullUserResponse</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Response that does not represent a value that can be classified as ContentResponse or YesNoResponse.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
-        <IRI>#NullResponse</IRI>
+        <IRI>#NullUserResponse</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">I don&apos;t know.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#StepExplanationResponse</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Statement that provides information about a ProposedAction.</Literal>
+        <IRI>#ReassureFeedbackRequest</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Request that is sent in order to obtain feedback whether the interpretation obtained is correct or not.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>#ReassureFeedbackRequest</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">&quot;Entonces, quieres que {Action} {Argument}, ¿verdad?&quot;
+
+&quot;Entonces, quieres que {te lleve} {al baño}, ¿verdad?&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>#ReassureFeedbackRequest</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">&quot;So, you want me {Action} {Argument}, right?&quot;
+
+&quot;So, you want me {to take you} {to the toilet}, right?&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ResponseTypeNotExpectedResponse</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Reponse given to the user when the UserResponse does not correspond with the expected response of the SystemRequest.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -480,7 +806,7 @@ Also known as &quot;Non polar/Open question&quot; in linguistics.</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#SystemResponse</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Information that the system provides in response to a UserRequest or as a piece of information directed to the user, without a prior UserRequest.</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Information that the system provides in response to a UserRequest or as a piece of information directed to the user without a prior UserRequest.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -506,24 +832,44 @@ Also known as &quot;Polar question&quot; in linguistics.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#YesNoResponse</IRI>
+        <IRI>#YesNoResponseNotExpected</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">&quot;Creo que no te he entendido. ¿Puedes ser un poco más concreto con tu respuesta?&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#YesNoResponseNotExpected</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">&quot;I think I haven&apos;t understood. Can you be more specific?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#YesNoResponseNotExpected</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Implies resuming ContentRequest</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#YesNoResponseNotExpected</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Reponse given to the user when the UserResponse is a YesNoResponse and the SystemRequest requires a ContentResponse.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#YesNoUserResponse</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Reponse that corresponds to a positive or negative polarity.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
-        <IRI>#YesNoResponse</IRI>
+        <IRI>#YesNoUserResponse</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Yes, OK
 
 No, Not at all</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#YesResponse</IRI>
+        <IRI>#YesUserResponse</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Response that corresponds to a positive polarity.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
-        <IRI>#YesResponse</IRI>
+        <IRI>#YesUserResponse</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Yes, OK</Literal>
     </AnnotationAssertion>
 </Ontology>

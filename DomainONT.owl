@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-World"
+     xml:base="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-World">
-    <Prefix name="" IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-World"/>
+     ontologyIRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT">
+    <Prefix name="" IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -16,6 +16,8 @@
     <Prefix name="vann" IRI="http://purl.org/vocab/vann/"/>
     <Prefix name="pmofn" IRI="http://premon.fbk.eu/ontology/fn#"/>
     <Prefix name="ontolex" IRI="http://www.w3.org/ns/lemon/ontolex#"/>
+    <Import>http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-World</Import>
+    <Import>http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction</Import>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime"></Literal>
@@ -46,7 +48,7 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2020-06-20T00:00:00</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-21T00:00:00</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
@@ -69,10 +71,34 @@
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
     </Annotation>
     <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TargetSystemReadableInformation"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/bibliographicCitation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasExecutableOrder"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isTargetSystemReadableInfoOf"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#LexicalUnit"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isExecutableOrderOf"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
@@ -81,64 +107,31 @@
         <AnnotationProperty IRI="http://creativecommons.org/ns#license"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#FloorSection"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#coordZ"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#contains"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#coordX"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Beverage"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasPoint"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/bibliographicCitation"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#RoomSpace"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#coord"/>
-    </Declaration>
-    <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isPointOf"/>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTargetSystemReadableInfo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLexicalUnit"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="owl:versionIRI"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#coordY"/>
-    </Declaration>
-    <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isContainedBy"/>
+        <Class IRI="#ExecutableOrder"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Object"/>
+        <ObjectProperty IRI="#hasActionOn"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <ObjectProperty IRI="#hasActionAssociated"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
@@ -146,52 +139,79 @@
     <Declaration>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
     </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isLexicalUnitOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="-FrameAction#isExecutableOrderOf"/>
+    </Declaration>
     <SubClassOf>
-        <Class IRI="#Beverage"/>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <Class IRI="#ExecutableOrder"/>
+        <Class IRI="#TargetSystemReadableInformation"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#FloorSection"/>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <Class IRI="#ExecutableOrder"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="-FrameAction#isExecutableOrderOf"/>
+            <Class IRI="-FrameAction#Action"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Object"/>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <Class IRI="-FrameAction#Action"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasExecutableOrder"/>
+            <Class IRI="#ExecutableOrder"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#RoomSpace"/>
+        <Class IRI="-FrameAction#FrameHead"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLexicalUnit"/>
+            <Class IRI="#LexicalUnit"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLexicalUnit"/>
+            <Class IRI="#LexicalUnit"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#contains"/>
-        <ObjectProperty IRI="#isContainedBy"/>
+        <ObjectProperty IRI="#hasActionAssociated"/>
+        <ObjectProperty IRI="#hasActionOn"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#hasPoint"/>
-        <ObjectProperty IRI="#isPointOf"/>
+        <ObjectProperty IRI="#hasExecutableOrder"/>
+        <ObjectProperty IRI="#isExecutableOrderOf"/>
     </InverseObjectProperties>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="#isPointOf"/>
-    </FunctionalObjectProperty>
-    <InverseFunctionalObjectProperty>
-        <ObjectProperty IRI="#hasPoint"/>
-    </InverseFunctionalObjectProperty>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#coordX"/>
-        <DataProperty IRI="#coord"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#coordY"/>
-        <DataProperty IRI="#coord"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#coordZ"/>
-        <DataProperty IRI="#coord"/>
-    </SubDataPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasLexicalUnit"/>
+        <ObjectProperty IRI="#isLexicalUnitOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasTargetSystemReadableInfo"/>
+        <ObjectProperty IRI="#isTargetSystemReadableInfoOf"/>
+    </InverseObjectProperties>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TargetSystemReadableInformation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Information that is sent to the system to perform an execution or as argument for an execution, in a format that is understandable to the target system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TargetSystemReadableInformation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Plain language for whole action: Pick plastic container
+
+SystemReadableInfo for &quot;pick&quot;: robAction.Pick
+SystemReadableInfo for &quot;plastic container&quot;: containerID:235
+
+SystemReadableInfo for whole action: robAction.Pick(containerID:235)</Literal>
+    </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#coord</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">coordXYZ</Literal>
+        <IRI>#TargetSystemReadableInformation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">TargetSystemReadableInformation</Literal>
     </AnnotationAssertion>
 </Ontology>
 

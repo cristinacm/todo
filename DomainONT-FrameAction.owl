@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-Frame"
+     xml:base="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-Frame">
-    <Prefix name="" IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-Frame"/>
+     ontologyIRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction">
+    <Prefix name="" IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -69,142 +69,100 @@
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
     </Annotation>
     <Declaration>
-        <ObjectProperty IRI="#hasCoreArgument"/>
+        <Class IRI="#FomaGrammar"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasFrameHead"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Frame"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Lexeme"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#FrameHead"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#FomaGrammar"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasArgumentSet"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://creativecommons.org/ns#license"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isCoreArgumentOf"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Intent"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isExecutableOrderOf"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Action"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isFomaGrammarOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isIntentOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasActionOn"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/bibliographicCitation"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isArgumentSetOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isTargetSystemReadableInfoOf"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasTargetSystemReadableInfo"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ExecutableOrder"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OptionalArgument"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isArgumentOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasExecutableOrder"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Argument"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isFrameOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isFrameHeadOf"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#LexicalUnit"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasFrame"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#TargetSystemReadableInformation"/>
+        <ObjectProperty IRI="#hasFomaGrammar"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasFomaGrammar"/>
+        <Class IRI="#Frame"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasArgument"/>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ArgumentSet"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Skill"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasActionAssociated"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasIntent"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#CoreArgument"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isOptionalArgumentOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isLexemeOf"/>
+        <Class IRI="#Lexeme"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasOptionalArgument"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Skill"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFrame"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CoreArgument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Argument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Action"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://creativecommons.org/ns#license"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isIntentOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasIntent"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isLexemeOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasArgument"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isOptionalArgumentOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Intent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCoreArgument"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFrameHeadOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFrameOf"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isPartOf"/>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/bibliographicCitation"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#belongsToAction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isArgumentSetOf"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isComposedOf"/>
@@ -213,16 +171,28 @@
         <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasArgumentSet"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isArgumentOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OptionalArgument"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty abbreviatedIRI="owl:versionIRI"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasLexicalUnit"/>
+        <ObjectProperty IRI="#isCoreArgumentOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isLexicalUnitOf"/>
+        <ObjectProperty IRI="#isPartOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ArgumentSet"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
@@ -231,10 +201,31 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
     </Declaration>
     <SubClassOf>
+        <Class IRI="#Action"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasArgument"/>
+            <Class IRI="#Argument"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Action"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasArgumentSet"/>
+            <Class IRI="#ArgumentSet"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Argument"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasLexicalUnit"/>
-            <Class IRI="#LexicalUnit"/>
+            <ObjectProperty IRI="#isArgumentOf"/>
+            <Class IRI="#Action"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ArgumentSet"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isArgumentSetOf"/>
+            <Class IRI="#Action"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -249,40 +240,71 @@
         <Class IRI="#Argument"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#ExecutableOrder"/>
-        <Class IRI="#TargetSystemReadableInformation"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Frame"/>
+        <Class IRI="#FomaGrammar"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasArgument"/>
-            <Class IRI="#Argument"/>
+            <ObjectProperty IRI="#isFomaGrammarOf"/>
+            <Class IRI="#Skill"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Frame"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasArgumentSet"/>
-            <Class IRI="#ArgumentSet"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Frame"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasFomaGrammar"/>
-            <Class IRI="#FomaGrammar"/>
+            <ObjectProperty IRI="#belongsToAction"/>
+            <Class IRI="#Action"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Frame"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasFrameHead"/>
-            <Class IRI="#LexicalUnit"/>
+            <Class IRI="#FrameHead"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Frame"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isFrameOf"/>
+            <Class IRI="#Intent"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FrameHead"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isFrameHeadOf"/>
+            <Class IRI="#Frame"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Intent"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFrame"/>
+            <Class IRI="#Frame"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Intent"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isIntentOf"/>
+            <Class IRI="#Skill"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#OptionalArgument"/>
         <Class IRI="#Argument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Skill"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFomaGrammar"/>
+            <Class IRI="#FomaGrammar"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Skill"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasIntent"/>
+            <Class IRI="#Intent"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasCoreArgument"/>
@@ -301,10 +323,6 @@
         <ObjectProperty IRI="#isArgumentOf"/>
     </SubObjectPropertyOf>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#hasActionAssociated"/>
-        <ObjectProperty IRI="#hasActionOn"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
         <ObjectProperty IRI="#hasArgument"/>
         <ObjectProperty IRI="#isArgumentOf"/>
     </InverseObjectProperties>
@@ -315,10 +333,6 @@
     <InverseObjectProperties>
         <ObjectProperty IRI="#hasCoreArgument"/>
         <ObjectProperty IRI="#isCoreArgumentOf"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="#hasExecutableOrder"/>
-        <ObjectProperty IRI="#isExecutableOrderOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#hasFomaGrammar"/>
@@ -341,18 +355,11 @@
         <ObjectProperty IRI="#isOptionalArgumentOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#hasTargetSystemReadableInfo"/>
-        <ObjectProperty IRI="#isTargetSystemReadableInfoOf"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
         <ObjectProperty IRI="#isComposedOf"/>
         <ObjectProperty IRI="#isPartOf"/>
     </InverseObjectProperties>
     <FunctionalObjectProperty>
         <ObjectProperty IRI="#hasArgumentSet"/>
-    </FunctionalObjectProperty>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="#hasExecutableOrder"/>
     </FunctionalObjectProperty>
     <FunctionalObjectProperty>
         <ObjectProperty IRI="#hasFomaGrammar"/>
@@ -363,23 +370,11 @@
     <FunctionalObjectProperty>
         <ObjectProperty IRI="#isLexemeOf"/>
     </FunctionalObjectProperty>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="#isLexicalUnitOf"/>
-    </FunctionalObjectProperty>
-    <InverseFunctionalObjectProperty>
-        <ObjectProperty IRI="#hasExecutableOrder"/>
-    </InverseFunctionalObjectProperty>
     <InverseFunctionalObjectProperty>
         <ObjectProperty IRI="#hasFrameHead"/>
     </InverseFunctionalObjectProperty>
     <InverseFunctionalObjectProperty>
-        <ObjectProperty IRI="#hasLexicalUnit"/>
-    </InverseFunctionalObjectProperty>
-    <InverseFunctionalObjectProperty>
         <ObjectProperty IRI="#isArgumentSetOf"/>
-    </InverseFunctionalObjectProperty>
-    <InverseFunctionalObjectProperty>
-        <ObjectProperty IRI="#isExecutableOrderOf"/>
     </InverseFunctionalObjectProperty>
     <InverseFunctionalObjectProperty>
         <ObjectProperty IRI="#isFomaGrammarOf"/>
@@ -448,23 +443,6 @@ For the sentence &quot;My mother lost her watch at home&quot;:
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#CoreArgument</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">CoreArgument</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#ExecutableOrder</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Information that is sent to the system to perform an execution in a format that is understandable to the target system.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#ExecutableOrder</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ExecutableOrder</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
-        <IRI>#ExecutableOrder</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Plain language for action: Pick
-
-SystemReadableInfo for &quot;pick&quot;: robAction.Pick</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -554,25 +532,6 @@ Intent: receive_information</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#LexicalUnit</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Representation of a FrameHead or a Thing.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#LexicalUnit</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">LexicalUnit</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
-        <IRI>#LexicalUnit</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">FrameHead: buy
-LU: buy.v
-
-SpatialThing - Object: WC
-LUs: toilet.n, loo.n</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#OptionalArgument</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Argument that is not compulsory in a specific frame.</Literal>
     </AnnotationAssertion>
@@ -585,26 +544,6 @@ LUs: toilet.n, loo.n</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Skill</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Skill</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#TargetSystemReadableInformation</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Information that is sent to the system to perform an execution or as argument for an execution, in a format that is understandable to the target system.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#TargetSystemReadableInformation</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">TargetSystemReadableInformation</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
-        <IRI>#TargetSystemReadableInformation</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Plain language for whole action: Pick plastic container
-
-SystemReadableInfo for &quot;pick&quot;: robAction.Pick
-SystemReadableInfo for &quot;plastic container&quot;: containerID:235
-
-SystemReadableInfo for whole action: robAction.Pick(containerID:235)</Literal>
     </AnnotationAssertion>
 </Ontology>
 
