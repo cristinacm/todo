@@ -17,32 +17,12 @@
     <Prefix name="pmofn" IRI="http://premon.fbk.eu/ontology/fn#"/>
     <Prefix name="ontolex" IRI="http://www.w3.org/ns/lemon/ontolex#"/>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime"></Literal>
+        <AnnotationProperty IRI="http://creativecommons.org/ns#license"/>
+        <Literal></Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">0.1.0</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://creativecommons.org/ns#license"/>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime"></Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+        <Literal></Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
@@ -50,116 +30,100 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+        <Literal></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <Literal></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime"></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime"></Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+        <Literal></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+        <Literal></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+        <Literal></Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="owl:priorVersion"/>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+        <Literal></Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="owl:versionIRI"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime"></Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal>0.1.0</Literal>
     </Annotation>
     <Declaration>
-        <Class IRI="#FomaGrammar"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasFrameHead"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#FrameHead"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isFomaGrammarOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasFomaGrammar"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Frame"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Lexeme"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasOptionalArgument"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Skill"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasFrame"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#CoreArgument"/>
+        <Class IRI="#Action"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Argument"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Action"/>
+        <Class IRI="#ArgumentSet"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://creativecommons.org/ns#license"/>
+        <Class IRI="#FomaGrammar"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+        <Class IRI="#Frame"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isIntentOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasIntent"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isLexemeOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasArgument"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isOptionalArgumentOf"/>
+        <Class IRI="#FrameHead"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Intent"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasCoreArgument"/>
+        <Class IRI="#Lexeme"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isFrameHeadOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isFrameOf"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/bibliographicCitation"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+        <Class IRI="#Skill"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#belongsToAction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasArgument"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasArgumentSet"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCoreArgument"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFomaGrammar"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFrame"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFrameHead"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasIntent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasOptionalArgument"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isArgumentOf"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isArgumentSetOf"/>
@@ -168,34 +132,64 @@
         <ObjectProperty IRI="#isComposedOf"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasArgumentSet"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isArgumentOf"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OptionalArgument"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="owl:versionIRI"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#isCoreArgumentOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFomaGrammarOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFrameHeadOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFrameOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isIntentOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isLexemeOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isOptionalArgumentOf"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isPartOf"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ArgumentSet"/>
+        <AnnotationProperty IRI="http://creativecommons.org/ns#license"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/bibliographicCitation"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="owl:versionIRI"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
@@ -236,21 +230,10 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#CoreArgument"/>
-        <Class IRI="#Argument"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#FomaGrammar"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#isFomaGrammarOf"/>
             <Class IRI="#Skill"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Frame"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#belongsToAction"/>
-            <Class IRI="#Action"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -287,10 +270,6 @@
             <ObjectProperty IRI="#isIntentOf"/>
             <Class IRI="#Skill"/>
         </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OptionalArgument"/>
-        <Class IRI="#Argument"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Skill"/>
@@ -382,22 +361,22 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Action</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Action</Literal>
+        <Literal xml:lang="en">Action</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Argument</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Participant that is involved in the event described by the Frame. It can be Core (its presence is compulsory to convey the event) or Optional (its presence is not compulsory, but it adds additional information).</Literal>
+        <Literal>Participant that is involved in the event described by the Frame. It can be Core (its presence is compulsory to convey the event) or Optional (its presence is not compulsory, but it adds additional information).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Argument</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Argument</Literal>
+        <Literal xml:lang="en">Argument</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
         <IRI>#Argument</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Frame: Losing
+        <Literal xml:lang="en">Frame: Losing
 
 ArgumentSet:
 * Owner [Core]
@@ -412,17 +391,17 @@ For the sentence &quot;My mother lost her watch at home&quot;:
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#ArgumentSet</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The group of Arguments that belong to a Frame.</Literal>
+        <Literal xml:lang="en">The group of Arguments that belong to a Frame.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#ArgumentSet</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ArgumentSet</Literal>
+        <Literal xml:lang="en">ArgumentSet</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
         <IRI>#ArgumentSet</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Frame: Losing
+        <Literal xml:lang="en">Frame: Losing
 
 ArgumentSet:
 * Owner [Core]
@@ -436,38 +415,28 @@ For the sentence &quot;My mother lost her watch at home&quot;:
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#CoreArgument</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Argument that is compulsory in a specific frame.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#CoreArgument</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">CoreArgument</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#FomaGrammar</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Grammar to be used by Foma to perform Key Element Extraction.</Literal>
+        <Literal xml:lang="en">Grammar to be used by Foma to perform Key Element Extraction.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#FomaGrammar</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">FomaGrammar</Literal>
+        <Literal xml:lang="en">FomaGrammar</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Frame</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A specific event or situation evoked by a specific word (FrameHead), along with its participants (Arguments).</Literal>
+        <Literal xml:lang="en">A specific event or situation evoked by a specific word (FrameHead), along with its participants (Arguments).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Frame</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Frame</Literal>
+        <Literal xml:lang="en">Frame</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
         <IRI>#Frame</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Frame: Losing
+        <Literal xml:lang="en">Frame: Losing
 
 FrameHead: lose (LexicalUnit: lose.v)
 
@@ -484,17 +453,17 @@ For the sentence &quot;My mother lost her watch at home&quot;:
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#FrameHead</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Word (or more than one) that evokes a specific situation or event, with its specific participants; that is, a frame. It is represented by one or more LexicalUnits.</Literal>
+        <Literal xml:lang="en">Word (or more than one) that evokes a specific situation or event, with its specific participants; that is, a frame. It is represented by one or more LexicalUnits.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#FrameHead</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">FrameHead</Literal>
+        <Literal xml:lang="en">FrameHead</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
         <IRI>#FrameHead</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Frame: Losing
+        <Literal xml:lang="en">Frame: Losing
 
 FrameHead: lose (LexicalUnit: lose.v)
 
@@ -511,43 +480,33 @@ For the sentence &quot;My mother lost her watch at home&quot;:
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Intent</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">User intention when formulating a request.</Literal>
+        <Literal xml:lang="en">User intention when formulating a request.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Intent</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Intent</Literal>
+        <Literal xml:lang="en">Intent</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
         <IRI>#Intent</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">User request: &quot;I want information about Mona Lisa&quot;
+        <Literal xml:lang="en">User request: &quot;I want information about Mona Lisa&quot;
 
 Intent: receive_information</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Lexeme</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Lexeme</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#OptionalArgument</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Argument that is not compulsory in a specific frame.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OptionalArgument</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">OptionalArgument</Literal>
+        <Literal xml:lang="en">Lexeme</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Skill</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Skill</Literal>
+        <Literal xml:lang="en">Skill</Literal>
     </AnnotationAssertion>
 </Ontology>
 
 
 
-<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 

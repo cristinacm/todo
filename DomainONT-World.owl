@@ -17,32 +17,12 @@
     <Prefix name="pmofn" IRI="http://premon.fbk.eu/ontology/fn#"/>
     <Prefix name="ontolex" IRI="http://www.w3.org/ns/lemon/ontolex#"/>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime"></Literal>
+        <AnnotationProperty IRI="http://creativecommons.org/ns#license"/>
+        <Literal></Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">0.1.0</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://creativecommons.org/ns#license"/>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime"></Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+        <Literal></Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
@@ -50,132 +30,108 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+        <Literal></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <Literal></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime"></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime"></Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+        <Literal></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+        <Literal></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+        <Literal></Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="owl:priorVersion"/>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+        <Literal></Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="owl:versionIRI"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime"></Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal>0.1.0</Literal>
     </Annotation>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://creativecommons.org/ns#license"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#FloorSection"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#coordZ"/>
+        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#contains"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#coordX"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Beverage"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasPoint"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/bibliographicCitation"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#RoomSpace"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+        <ObjectProperty IRI="#isContainedBy"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#coord"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isPointOf"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="owl:versionIRI"/>
+        <DataProperty IRI="#coordX"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#coordY"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#coordZ"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://creativecommons.org/ns#license"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/bibliographicCitation"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isContainedBy"/>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Object"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
     </Declaration>
     <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="owl:versionIRI"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
     </Declaration>
-    <SubClassOf>
-        <Class IRI="#Beverage"/>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#FloorSection"/>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Object"/>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#RoomSpace"/>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
-    </SubClassOf>
     <InverseObjectProperties>
         <ObjectProperty IRI="#contains"/>
         <ObjectProperty IRI="#isContainedBy"/>
     </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="#hasPoint"/>
-        <ObjectProperty IRI="#isPointOf"/>
-    </InverseObjectProperties>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="#isPointOf"/>
-    </FunctionalObjectProperty>
-    <InverseFunctionalObjectProperty>
-        <ObjectProperty IRI="#hasPoint"/>
-    </InverseFunctionalObjectProperty>
     <SubDataPropertyOf>
         <DataProperty IRI="#coordX"/>
         <DataProperty IRI="#coord"/>
@@ -191,11 +147,11 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#coord</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">coordXYZ</Literal>
+        <Literal>coordXYZ</Literal>
     </AnnotationAssertion>
 </Ontology>
 
 
 
-<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
