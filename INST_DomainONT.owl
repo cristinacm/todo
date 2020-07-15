@@ -136,8 +136,8 @@
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#Destination_ExecMove -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#Destination_ExecMove">
-        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#CoordArgument"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst-FrameAction#Argument"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#CoordArgument"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Argument"/>
         <DomainONT:appliesToWorldElementGroup rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#Group_Beverage"/>
         <DomainONT:appliesToWorldElementGroup rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#Group_Machine"/>
         <DomainONT:appliesToWorldElementGroup rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#Group_Object"/>
@@ -150,7 +150,7 @@
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#ESGuideGrammar.bin -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#ESGuideGrammar.bin">
-        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst-FrameAction#FomaGrammar"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#FomaGrammar"/>
     </owl:NamedIndividual>
     
 
@@ -158,7 +158,7 @@
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#Group_Beverage -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#Group_Beverage">
-        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#WorldElementGroup"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#WorldElementGroup"/>
         <DomainONT:hasGroupMember rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#café"/>
     </owl:NamedIndividual>
     
@@ -167,7 +167,7 @@
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#Group_Machine -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#Group_Machine">
-        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#WorldElementGroup"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#WorldElementGroup"/>
         <DomainONT:hasGroupMember rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#máquina4398"/>
     </owl:NamedIndividual>
     
@@ -176,7 +176,7 @@
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#Group_Object -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#Group_Object">
-        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#WorldElementGroup"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#WorldElementGroup"/>
         <DomainONT:hasGroupMember rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#WC"/>
         <DomainONT:hasGroupMember rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#cafetera"/>
     </owl:NamedIndividual>
@@ -186,7 +186,7 @@
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#Group_Space -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#Group_Space">
-        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#WorldElementGroup"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#WorldElementGroup"/>
         <DomainONT:hasGroupMember rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#baño"/>
         <DomainONT:hasGroupMember rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#vestíbulo"/>
     </owl:NamedIndividual>
@@ -196,7 +196,7 @@
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#Group_Zone -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#Group_Zone">
-        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#WorldElementGroup"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#WorldElementGroup"/>
         <DomainONT:hasGroupMember rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#zonaTalleres"/>
         <DomainONT:hasGroupMember rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#zonaVestíbulo"/>
     </owl:NamedIndividual>
@@ -206,7 +206,7 @@
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#GuideRobot -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#GuideRobot">
-        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst-FrameAction#Skill"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Skill"/>
         <DomainONT-FrameAction:hasFomaGrammar rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#ESGuideGrammar.bin"/>
         <DomainONT-FrameAction:hasIntent rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#RequestInfo"/>
         <DomainONT-FrameAction:hasIntent rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#Take"/>
@@ -217,7 +217,7 @@
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#GuideRobot_giveInfo -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#GuideRobot_giveInfo">
-        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst-FrameAction#Action"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Action"/>
         <DomainONT:hasTargetSystemReadableInfo rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#execute_giveInfo"/>
         <DomainONT-FrameAction:hasCoreArgument rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#PieceInformation_RequestInfo"/>
     </owl:NamedIndividual>
@@ -227,7 +227,7 @@
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#GuideRobot_take -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#GuideRobot_take">
-        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst-FrameAction#Action"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Action"/>
         <DomainONT:hasTargetSystemReadableInfo rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#execute_move"/>
         <DomainONT-FrameAction:hasCoreArgument rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#Destination_ExecMove"/>
         <DomainONT-FrameAction:hasOptionalArgument rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#Origin_ExecMove"/>
@@ -238,7 +238,7 @@
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#ID_máquina4398 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#ID_máquina4398">
-        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#ID"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#ID"/>
         <DomainONT:ID>4398</DomainONT:ID>
     </owl:NamedIndividual>
     
@@ -247,7 +247,7 @@
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#Information -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#Information">
-        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst-FrameAction#Frame"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Frame"/>
     </owl:NamedIndividual>
     
 
@@ -255,7 +255,7 @@
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#Motion -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#Motion">
-        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst-FrameAction#Frame"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Frame"/>
         <DomainONT-FrameAction:hasCoreArgument rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#Destination_ExecMove"/>
         <DomainONT-FrameAction:hasOptionalArgument rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#Origin_ExecMove"/>
         <DomainONT-FrameAction:isFrameOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#Take"/>
@@ -266,8 +266,8 @@
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#Origin_ExecMove -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#Origin_ExecMove">
-        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#CoordArgument"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst-FrameAction#Argument"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#CoordArgument"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Argument"/>
         <DomainONT:appliesToWorldElementGroup rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#Group_Beverage"/>
         <DomainONT:appliesToWorldElementGroup rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#Group_Machine"/>
         <DomainONT:appliesToWorldElementGroup rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#Group_Object"/>
@@ -279,7 +279,7 @@
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#PieceInformation_RequestInfo -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#PieceInformation_RequestInfo">
-        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#IDArgument"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#IDArgument"/>
         <DomainONT:appliesToWorldElementGroup rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#Group_Machine"/>
     </owl:NamedIndividual>
     
@@ -288,7 +288,7 @@
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#RequestInfo -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#RequestInfo">
-        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst-FrameAction#Intent"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Intent"/>
         <DomainONT-FrameAction:hasFrame rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#Information"/>
     </owl:NamedIndividual>
     
@@ -297,7 +297,7 @@
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#Take -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#Take">
-        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst-FrameAction#Intent"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Intent"/>
     </owl:NamedIndividual>
     
 
@@ -314,7 +314,7 @@
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#WC.N -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#WC.N">
-        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#LexicalUnit"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#LexicalUnit"/>
     </owl:NamedIndividual>
     
 
@@ -334,7 +334,7 @@
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#baño.N -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#baño.N">
-        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#LexicalUnit"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#LexicalUnit"/>
     </owl:NamedIndividual>
     
 
@@ -353,7 +353,7 @@
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#cafetera.N -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#cafetera.N">
-        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#LexicalUnit"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#LexicalUnit"/>
     </owl:NamedIndividual>
     
 
@@ -371,7 +371,7 @@
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#café.N -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#café.N">
-        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#LexicalUnit"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#LexicalUnit"/>
     </owl:NamedIndividual>
     
 
@@ -445,7 +445,7 @@
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#desplazar.V -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#desplazar.V">
-        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#LexicalUnit"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#LexicalUnit"/>
         <DomainONT:isLexicalUnitOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#ir"/>
     </owl:NamedIndividual>
     
@@ -454,7 +454,7 @@
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#execute_giveInfo -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#execute_giveInfo">
-        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#TargetSystemReadableInformation"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#TargetSystemReadableInformation"/>
     </owl:NamedIndividual>
     
 
@@ -462,7 +462,7 @@
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#execute_move -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#execute_move">
-        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#TargetSystemReadableInformation"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#TargetSystemReadableInformation"/>
     </owl:NamedIndividual>
     
 
@@ -476,7 +476,7 @@
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#hall.N -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#hall.N">
-        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#LexicalUnit"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#LexicalUnit"/>
         <DomainONT:isLexicalUnitOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#vestíbulo"/>
     </owl:NamedIndividual>
     
@@ -485,7 +485,7 @@
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#informar -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#informar">
-        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst-FrameAction#FrameHead"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#FrameHead"/>
         <DomainONT:hasLexicalUnit rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#informar.V"/>
         <DomainONT-FrameAction:isFrameHeadOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#Information"/>
     </owl:NamedIndividual>
@@ -501,7 +501,7 @@
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#ir -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#ir">
-        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst-FrameAction#FrameHead"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#FrameHead"/>
         <DomainONT:hasLexicalUnit rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#ir.V"/>
         <DomainONT-FrameAction:isFrameHeadOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#Motion"/>
     </owl:NamedIndividual>
@@ -511,7 +511,7 @@
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#ir.V -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#ir.V">
-        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#LexicalUnit"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#LexicalUnit"/>
     </owl:NamedIndividual>
     
 
@@ -530,7 +530,7 @@
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#servicio.N -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#servicio.N">
-        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#LexicalUnit"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#LexicalUnit"/>
     </owl:NamedIndividual>
     
 
@@ -548,7 +548,7 @@
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#vestíbulo.N -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#vestíbulo.N">
-        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#LexicalUnit"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#LexicalUnit"/>
     </owl:NamedIndividual>
     
 
@@ -556,7 +556,7 @@
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#váter.N -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#váter.N">
-        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#LexicalUnit"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#LexicalUnit"/>
         <DomainONT:isLexicalUnitOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#WC"/>
     </owl:NamedIndividual>
     
