@@ -16,35 +16,15 @@
     <Prefix name="vann" IRI="http://purl.org/vocab/vann/"/>
     <Prefix name="pmofn" IRI="http://premon.fbk.eu/ontology/fn#"/>
     <Prefix name="ontolex" IRI="http://www.w3.org/ns/lemon/ontolex#"/>
-    <Import>http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-World</Import>
     <Import>http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction</Import>
+    <Import>http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-World</Import>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime"></Literal>
+        <AnnotationProperty IRI="http://creativecommons.org/ns#license"/>
+        <Literal></Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">0.1.0</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://creativecommons.org/ns#license"/>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime"></Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+        <Literal></Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
@@ -52,115 +32,121 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+        <Literal></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <Literal></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime"></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime"></Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+        <Literal></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+        <Literal></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+        <Literal></Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="owl:priorVersion"/>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+        <Literal></Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="owl:versionIRI"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime"></Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal>0.1.0</Literal>
     </Annotation>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#TargetSystemReadableInformation"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/bibliographicCitation"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasExecutableOrder"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isTargetSystemReadableInfoOf"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
-    </Declaration>
     <Declaration>
         <Class IRI="#LexicalUnit"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isExecutableOrderOf"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://creativecommons.org/ns#license"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasTargetSystemReadableInfo"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasLexicalUnit"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="owl:versionIRI"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ExecutableOrder"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasActionOn"/>
+        <Class IRI="#TargetSystemReadableInformation"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasActionAssociated"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <ObjectProperty IRI="#hasActionOn"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <ObjectProperty IRI="#hasExecutableOrder"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLexicalUnit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTargetSystemReadableInfo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isExecutableOrderOf"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isLexicalUnitOf"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#isTargetSystemReadableInfoOf"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="-FrameAction#isExecutableOrderOf"/>
     </Declaration>
-    <SubClassOf>
-        <Class IRI="#ExecutableOrder"/>
-        <Class IRI="#TargetSystemReadableInformation"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ExecutableOrder"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="-FrameAction#isExecutableOrderOf"/>
-            <Class IRI="-FrameAction#Action"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
+    <Declaration>
+        <AnnotationProperty IRI="http://creativecommons.org/ns#license"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/bibliographicCitation"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="owl:versionIRI"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+    </Declaration>
     <SubClassOf>
         <Class IRI="-FrameAction#Action"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasExecutableOrder"/>
-            <Class IRI="#ExecutableOrder"/>
+            <ObjectProperty IRI="#isTargetSystemReadableInfoOf"/>
+            <Class IRI="#TargetSystemReadableInformation"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -196,12 +182,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#TargetSystemReadableInformation</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Information that is sent to the system to perform an execution or as argument for an execution, in a format that is understandable to the target system.</Literal>
+        <Literal xml:lang="en">Information that is sent to the system to perform an execution or as argument for an execution, in a format that is understandable to the target system.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#TargetSystemReadableInformation</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Plain language for whole action: Pick plastic container
+        <Literal xml:lang="en">Plain language for whole action: Pick plastic container
 
 SystemReadableInfo for &quot;pick&quot;: robAction.Pick
 SystemReadableInfo for &quot;plastic container&quot;: containerID:235
@@ -211,11 +197,11 @@ SystemReadableInfo for whole action: robAction.Pick(containerID:235)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#TargetSystemReadableInformation</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">TargetSystemReadableInformation</Literal>
+        <Literal xml:lang="en">TargetSystemReadableInformation</Literal>
     </AnnotationAssertion>
 </Ontology>
 
 
 
-<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
