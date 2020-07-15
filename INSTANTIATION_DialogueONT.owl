@@ -18,36 +18,12 @@
     <Prefix name="ontolex" IRI="http://www.w3.org/ns/lemon/ontolex#"/>
     <Import>http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT</Import>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime"></Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="owl:versionIRI"/>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+        <AnnotationProperty IRI="http://creativecommons.org/ns#license"/>
+        <Literal></Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">0.1.0</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://creativecommons.org/ns#license"/>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime"></Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+        <Literal></Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
@@ -55,278 +31,315 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="owl:priorVersion"/>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+        <Literal></Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+        <Literal></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime"></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime"></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+        <Literal></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+        <Literal></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+        <Literal></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:priorVersion"/>
+        <Literal></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionIRI"/>
+        <Literal></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal>0.1.0</Literal>
     </Annotation>
     <Declaration>
-        <NamedIndividual IRI="#SResp_NotUnderstood2"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#SResp_YNRespNotExpected2"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#SReqCont_ArgCharacteristic1"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#SResp_ContentRespNotExpected1"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#SReqYN_ArgSpecify1"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#SResp_Greeting2"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#Duration"/>
-    </Declaration>
-    <Declaration>
-        <Datatype abbreviatedIRI="xsd:time"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#SResp_ArgExplanation1"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://creativecommons.org/ns#license"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#SReqCont_ArgRequest1"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#SReqYN_Reassure2"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#SReqYN_IncorrectArg2"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#SReqCont_ArgRequest2"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#SReqYN_ArgAssignation1"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#SResp_Understood1"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#SResp_ArgNotCompatible1"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#SResp_ArgNotGuessed1"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#SResp_YNRespNotExpected1"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/bibliographicCitation"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#SResp_NotUnderstood1"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#SReqCont_ArgCharacteristic2"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#SResp_ContentRespNotExpected2"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#SReqYN_Intent1"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#SResp_Greeting1"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#SResp_ArgExplanation2"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#SReqYN_ArgSpecify2"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#SReqYN_Reassure1"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#isValid"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <NamedIndividual IRI="#Dialogue1"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#SResp_Understood2"/>
+        <NamedIndividual IRI="#MainDialogue1"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#SReqYN_ArgAssignation2"/>
+        <NamedIndividual IRI="#SReqCont_ArgCharacteristic"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#SReqYN_IncorrectArg1"/>
+        <NamedIndividual IRI="#SReqCont_ArgRequest"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="owl:versionIRI"/>
+        <NamedIndividual IRI="#SReqYN_ArgAssignation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SReqYN_ArgSpecify"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SReqYN_IncorrectArg"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SReqYN_Intent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SReqYN_Reassure"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SResp_ArgExplanation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SResp_ArgNotCompatible"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SResp_ArgNotGuessed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SResp_ContentRespNotExpected"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SResp_Greeting"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SResp_NotUnderstood"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SResp_Understood"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SResp_YNRespNotExpected"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SecondaryDialogue1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SecondaryDialogue2"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://creativecommons.org/ns#license"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/bibliographicCitation"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#SReqYN_Intent2"/>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#SResp_ArgNotCompatible2"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#SResp_ArgNotGuessed2"/>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
     </Declaration>
     <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="owl:versionIRI"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
     </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:time"/>
+    </Declaration>
     <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentCharacteristicRequest"/>
-        <NamedIndividual IRI="#SReqCont_ArgCharacteristic1"/>
+        <Class IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#Dialogue"/>
+        <NamedIndividual IRI="#Dialogue1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#MainDialogue"/>
+        <NamedIndividual IRI="#MainDialogue1"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentCharacteristicRequest"/>
-        <NamedIndividual IRI="#SReqCont_ArgCharacteristic2"/>
+        <NamedIndividual IRI="#SReqCont_ArgCharacteristic"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentRequest"/>
-        <NamedIndividual IRI="#SReqCont_ArgRequest1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentRequest"/>
-        <NamedIndividual IRI="#SReqCont_ArgRequest2"/>
+        <NamedIndividual IRI="#SReqCont_ArgRequest"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentAssignationRequest"/>
-        <NamedIndividual IRI="#SReqYN_ArgAssignation1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentAssignationRequest"/>
-        <NamedIndividual IRI="#SReqYN_ArgAssignation2"/>
+        <NamedIndividual IRI="#SReqYN_ArgAssignation"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentSpecifyRequest"/>
-        <NamedIndividual IRI="#SReqYN_ArgSpecify1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentSpecifyRequest"/>
-        <NamedIndividual IRI="#SReqYN_ArgSpecify2"/>
+        <NamedIndividual IRI="#SReqYN_ArgSpecify"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#IncorrectArgumentRequest"/>
-        <NamedIndividual IRI="#SReqYN_IncorrectArg1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#IncorrectArgumentRequest"/>
-        <NamedIndividual IRI="#SReqYN_IncorrectArg2"/>
+        <NamedIndividual IRI="#SReqYN_IncorrectArg"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#IntentRequest"/>
-        <NamedIndividual IRI="#SReqYN_Intent1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#IntentRequest"/>
-        <NamedIndividual IRI="#SReqYN_Intent2"/>
+        <NamedIndividual IRI="#SReqYN_Intent"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ReassureFeedbackRequest"/>
-        <NamedIndividual IRI="#SReqYN_Reassure1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ReassureFeedbackRequest"/>
-        <NamedIndividual IRI="#SReqYN_Reassure2"/>
+        <NamedIndividual IRI="#SReqYN_Reassure"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentExplanationResponse"/>
-        <NamedIndividual IRI="#SResp_ArgExplanation1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentExplanationResponse"/>
-        <NamedIndividual IRI="#SResp_ArgExplanation2"/>
+        <NamedIndividual IRI="#SResp_ArgExplanation"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentNotCompatibleResponse"/>
-        <NamedIndividual IRI="#SResp_ArgNotCompatible1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentNotCompatibleResponse"/>
-        <NamedIndividual IRI="#SResp_ArgNotCompatible2"/>
+        <NamedIndividual IRI="#SResp_ArgNotCompatible"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentNotGuessedResponse"/>
-        <NamedIndividual IRI="#SResp_ArgNotGuessed1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentNotGuessedResponse"/>
-        <NamedIndividual IRI="#SResp_ArgNotGuessed2"/>
+        <NamedIndividual IRI="#SResp_ArgNotGuessed"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ContentResponseNotExpected"/>
-        <NamedIndividual IRI="#SResp_ContentRespNotExpected1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ContentResponseNotExpected"/>
-        <NamedIndividual IRI="#SResp_ContentRespNotExpected2"/>
+        <NamedIndividual IRI="#SResp_ContentRespNotExpected"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#GreetingResponse"/>
-        <NamedIndividual IRI="#SResp_Greeting1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#GreetingResponse"/>
-        <NamedIndividual IRI="#SResp_Greeting2"/>
+        <NamedIndividual IRI="#SResp_Greeting"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#NotUnderstoodResponse"/>
-        <NamedIndividual IRI="#SResp_NotUnderstood1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#NotUnderstoodResponse"/>
-        <NamedIndividual IRI="#SResp_NotUnderstood2"/>
+        <NamedIndividual IRI="#SResp_NotUnderstood"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UnderstoodResponse"/>
-        <NamedIndividual IRI="#SResp_Understood1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UnderstoodResponse"/>
-        <NamedIndividual IRI="#SResp_Understood2"/>
+        <NamedIndividual IRI="#SResp_Understood"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#YesNoResponseNotExpected"/>
-        <NamedIndividual IRI="#SResp_YNRespNotExpected1"/>
+        <NamedIndividual IRI="#SResp_YNRespNotExpected"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#YesNoResponseNotExpected"/>
-        <NamedIndividual IRI="#SResp_YNRespNotExpected2"/>
+        <Class IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SecondaryDialogue"/>
+        <NamedIndividual IRI="#SecondaryDialogue1"/>
     </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SecondaryDialogue"/>
+        <NamedIndividual IRI="#SecondaryDialogue2"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#outputSentence"/>
+        <NamedIndividual IRI="#SReqCont_ArgRequest"/>
+        <Literal xml:lang="es">Necesito que me digas el {Argument}, por favor</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#outputSentence"/>
+        <NamedIndividual IRI="#SReqCont_ArgRequest"/>
+        <Literal xml:lang="es">¿Puedes decirme el {Argument}?</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#outputSentence"/>
+        <NamedIndividual IRI="#SReqYN_ArgSpecify"/>
+        <Literal xml:lang="es">Hay muchas alternativas para lo que me has dicho. ¿Es el {Argument}?</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#outputSentence"/>
+        <NamedIndividual IRI="#SReqYN_ArgSpecify"/>
+        <Literal xml:lang="es">¡Lo que me has dicho podría ser varias cosas! ¿Es el {Argument}?</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#outputSentence"/>
+        <NamedIndividual IRI="#SReqYN_IncorrectArg"/>
+        <Literal xml:lang="es">¿Me he equivocado con el {Argument}?</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#outputSentence"/>
+        <NamedIndividual IRI="#SReqYN_IncorrectArg"/>
+        <Literal xml:lang="es">¿Puede que haya interpretado mal el {Argument}?</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#outputSentence"/>
+        <NamedIndividual IRI="#SReqYN_Intent"/>
+        <Literal xml:lang="es">Tu petición puede aplicar a varias interpretaciones. ¿Quieres {Intent}?</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#outputSentence"/>
+        <NamedIndividual IRI="#SReqYN_Intent"/>
+        <Literal xml:lang="es">¡Cuántas interpretaciones! ¡A ver si me puedes ayudar! ¿Quieres {Intent}?</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#outputSentence"/>
+        <NamedIndividual IRI="#SResp_ArgNotCompatible"/>
+        <Literal xml:lang="es">El {Argument} no es válido. ¿Puedes volverlo a intentar?</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#outputSentence"/>
+        <NamedIndividual IRI="#SResp_ArgNotCompatible"/>
+        <Literal xml:lang="es">No puede ser {Argument}. ¿Puedes verificarlo?</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#outputSentence"/>
+        <NamedIndividual IRI="#SResp_ContentRespNotExpected"/>
+        <Literal xml:lang="es">Solo necesito que me digas sí o no, por favor.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#outputSentence"/>
+        <NamedIndividual IRI="#SResp_ContentRespNotExpected"/>
+        <Literal xml:lang="es">¡Con que me digas sí o no es suficiente!</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#outputSentence"/>
+        <NamedIndividual IRI="#SResp_Greeting"/>
+        <Literal xml:lang="es">Bienvenido a {SystemName}. ¿En qué puedo ayudarte?</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#outputSentence"/>
+        <NamedIndividual IRI="#SResp_Greeting"/>
+        <Literal xml:lang="es">¡Hola! Soy {SystemName}. Encantado de ayudarte. ¿Qué necesitas?</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#outputSentence"/>
+        <NamedIndividual IRI="#SResp_NotUnderstood"/>
+        <Literal xml:lang="es">Lo siento, no te he entendido. ¿Puedes repetir, por favor?</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#outputSentence"/>
+        <NamedIndividual IRI="#SResp_NotUnderstood"/>
+        <Literal xml:lang="es">Perdona, ¿Puedes repetir? No te he entendido.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#outputSentence"/>
+        <NamedIndividual IRI="#SResp_YNRespNotExpected"/>
+        <Literal xml:lang="es">Creo que no te he entendido. ¿Puedes ser más concreto con tu respuesta?</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#outputSentence"/>
+        <NamedIndividual IRI="#SResp_YNRespNotExpected"/>
+        <Literal xml:lang="es">¿Puedes ser un poco más específico, por favor?</Literal>
+    </DataPropertyAssertion>
     <DataPropertyRange>
         <DataProperty IRI="#Duration"/>
         <Datatype abbreviatedIRI="xsd:time"/>
@@ -339,5 +352,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
