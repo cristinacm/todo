@@ -1,1007 +1,868 @@
 <?xml version="1.0"?>
-<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+<rdf:RDF xmlns="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT"
      xml:base="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT">
-    <Prefix name="" IRI="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT"/>
-    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
-    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
-    <Prefix name="prov" IRI="http://www.w3.org/ns/prov#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Prefix name="vann" IRI="http://purl.org/vocab/vann/"/>
-    <Prefix name="pmofn" IRI="http://premon.fbk.eu/ontology/fn#"/>
-    <Prefix name="ontolex" IRI="http://www.w3.org/ns/lemon/ontolex#"/>
-    <Import>http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction</Import>
-    <Import>http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-World</Import>
-    <Annotation>
-        <AnnotationProperty IRI="http://creativecommons.org/ns#license"/>
-        <Literal></Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
-        <Literal></Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-21T00:00:00</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
-        <Literal></Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
-        <Literal></Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime"></Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime"></Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
-        <Literal></Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
-        <Literal></Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
-        <Literal></Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="owl:priorVersion"/>
-        <Literal></Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="owl:versionIRI"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime"></Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <Literal>0.1.0</Literal>
-    </Annotation>
-    <Declaration>
-        <Class IRI="#CoordArgument"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ID"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#IDArgument"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#LexicalUnit"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#TargetSystemReadableInformation"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#WorldElementGroup"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#appliesToWorldElementGroup"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasActionAssociated"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasActionOn"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasGroupMember"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasLexicalUnit"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasPoint"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasTSRIType"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasTargetSystemReadableInfo"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isApplicableToArgument"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isLexicalUnitOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isMemberOfGroup"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isPointOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isTSRITypeOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isTargetSystemReadableInfoOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="-FrameAction#hasExecutableOrder"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#ID"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Destination_ExecMove"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#ESGuideGrammar.bin"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Group_Beverage"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Group_Machine"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Group_Object"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Group_Space"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Group_Zone"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#GuideRobot"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#GuideRobot_giveInfo"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#GuideRobot_take"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#ID_máquina4398"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Information"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Motion"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Origin_ExecMove"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#PieceInformation_RequestInfo"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#RequestInfo"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Take"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#WC"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#WC.N"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#baño"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#baño.N"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#cafetera"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#cafetera.N"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#café"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#café.N"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#coords_baño"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#coords_cafetera"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#coords_máquina4398"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#coords_vestíbulo"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#coords_zonaTalleres"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#coords_zonaVestíbulo"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#desplazar.V"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#execute_giveInfo"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#execute_move"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#fresadora.N"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#hall.N"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#informar"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#informar.V"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#ir"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#ir.V"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#máquina4398"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#servicio.N"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#vestíbulo"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#vestíbulo.N"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#váter.N"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#zonaTalleres"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#zonaVestíbulo"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://creativecommons.org/ns#license"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/bibliographicCitation"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="owl:versionIRI"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
-    </Declaration>
-    <SubClassOf>
-        <Class IRI="#CoordArgument"/>
-        <Class IRI="-FrameAction#Argument"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#CoordArgument"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasTSRIType"/>
-            <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ID"/>
-        <Class IRI="#TargetSystemReadableInformation"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#IDArgument"/>
-        <Class IRI="-FrameAction#Argument"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#IDArgument"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasTSRIType"/>
-            <Class IRI="#ID"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#LexicalUnit"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#isLexicalUnitOf"/>
-            <Class IRI="-FrameAction#FrameHead"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#LexicalUnit"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#isLexicalUnitOf"/>
-            <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#WorldElementGroup"/>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="-FrameAction#Action"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasTargetSystemReadableInfo"/>
-            <Class IRI="#TargetSystemReadableInformation"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="-FrameAction#FrameHead"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasLexicalUnit"/>
-            <Class IRI="#LexicalUnit"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="-FrameAction#Intent"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="-FrameAction#belongsToAction"/>
-            <Class IRI="-FrameAction#Action"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
-        <Class IRI="#TargetSystemReadableInformation"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasLexicalUnit"/>
-            <Class IRI="#LexicalUnit"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <ClassAssertion>
-        <Class IRI="#CoordArgument"/>
-        <NamedIndividual IRI="#Destination_ExecMove"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="-FrameAction#Argument"/>
-        <NamedIndividual IRI="#Destination_ExecMove"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="-FrameAction#FomaGrammar"/>
-        <NamedIndividual IRI="#ESGuideGrammar.bin"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#WorldElementGroup"/>
-        <NamedIndividual IRI="#Group_Beverage"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#WorldElementGroup"/>
-        <NamedIndividual IRI="#Group_Machine"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#WorldElementGroup"/>
-        <NamedIndividual IRI="#Group_Object"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#WorldElementGroup"/>
-        <NamedIndividual IRI="#Group_Space"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#WorldElementGroup"/>
-        <NamedIndividual IRI="#Group_Zone"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="-FrameAction#Skill"/>
-        <NamedIndividual IRI="#GuideRobot"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="-FrameAction#Action"/>
-        <NamedIndividual IRI="#GuideRobot_giveInfo"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="-FrameAction#Action"/>
-        <NamedIndividual IRI="#GuideRobot_take"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#ID"/>
-        <NamedIndividual IRI="#ID_máquina4398"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="-FrameAction#Frame"/>
-        <NamedIndividual IRI="#Information"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="-FrameAction#Frame"/>
-        <NamedIndividual IRI="#Motion"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#CoordArgument"/>
-        <NamedIndividual IRI="#Origin_ExecMove"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="-FrameAction#Argument"/>
-        <NamedIndividual IRI="#Origin_ExecMove"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#IDArgument"/>
-        <NamedIndividual IRI="#PieceInformation_RequestInfo"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="-FrameAction#Intent"/>
-        <NamedIndividual IRI="#RequestInfo"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="-FrameAction#Intent"/>
-        <NamedIndividual IRI="#Take"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
-        <NamedIndividual IRI="#WC"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#LexicalUnit"/>
-        <NamedIndividual IRI="#WC.N"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
-        <NamedIndividual IRI="#baño"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#LexicalUnit"/>
-        <NamedIndividual IRI="#baño.N"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
-        <NamedIndividual IRI="#cafetera"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#LexicalUnit"/>
-        <NamedIndividual IRI="#cafetera.N"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
-        <NamedIndividual IRI="#café"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#LexicalUnit"/>
-        <NamedIndividual IRI="#café.N"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
-        <NamedIndividual IRI="#coords_baño"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
-        <NamedIndividual IRI="#coords_cafetera"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
-        <NamedIndividual IRI="#coords_máquina4398"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
-        <NamedIndividual IRI="#coords_vestíbulo"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
-        <NamedIndividual IRI="#coords_zonaTalleres"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
-        <NamedIndividual IRI="#coords_zonaVestíbulo"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#LexicalUnit"/>
-        <NamedIndividual IRI="#desplazar.V"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#TargetSystemReadableInformation"/>
-        <NamedIndividual IRI="#execute_giveInfo"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#TargetSystemReadableInformation"/>
-        <NamedIndividual IRI="#execute_move"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#LexicalUnit"/>
-        <NamedIndividual IRI="#hall.N"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="-FrameAction#FrameHead"/>
-        <NamedIndividual IRI="#informar"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="-FrameAction#FrameHead"/>
-        <NamedIndividual IRI="#ir"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#LexicalUnit"/>
-        <NamedIndividual IRI="#ir.V"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
-        <NamedIndividual IRI="#máquina4398"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#LexicalUnit"/>
-        <NamedIndividual IRI="#servicio.N"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
-        <NamedIndividual IRI="#vestíbulo"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#LexicalUnit"/>
-        <NamedIndividual IRI="#vestíbulo.N"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#LexicalUnit"/>
-        <NamedIndividual IRI="#váter.N"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
-        <NamedIndividual IRI="#zonaTalleres"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
-        <NamedIndividual IRI="#zonaVestíbulo"/>
-    </ClassAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#appliesToWorldElementGroup"/>
-        <NamedIndividual IRI="#Destination_ExecMove"/>
-        <NamedIndividual IRI="#Group_Beverage"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#appliesToWorldElementGroup"/>
-        <NamedIndividual IRI="#Destination_ExecMove"/>
-        <NamedIndividual IRI="#Group_Machine"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#appliesToWorldElementGroup"/>
-        <NamedIndividual IRI="#Destination_ExecMove"/>
-        <NamedIndividual IRI="#Group_Object"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#appliesToWorldElementGroup"/>
-        <NamedIndividual IRI="#Destination_ExecMove"/>
-        <NamedIndividual IRI="#Group_Space"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#appliesToWorldElementGroup"/>
-        <NamedIndividual IRI="#Destination_ExecMove"/>
-        <NamedIndividual IRI="#Group_Zone"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasGroupMember"/>
-        <NamedIndividual IRI="#Group_Beverage"/>
-        <NamedIndividual IRI="#café"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasGroupMember"/>
-        <NamedIndividual IRI="#Group_Machine"/>
-        <NamedIndividual IRI="#máquina4398"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasGroupMember"/>
-        <NamedIndividual IRI="#Group_Object"/>
-        <NamedIndividual IRI="#WC"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasGroupMember"/>
-        <NamedIndividual IRI="#Group_Object"/>
-        <NamedIndividual IRI="#cafetera"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasGroupMember"/>
-        <NamedIndividual IRI="#Group_Space"/>
-        <NamedIndividual IRI="#baño"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasGroupMember"/>
-        <NamedIndividual IRI="#Group_Space"/>
-        <NamedIndividual IRI="#vestíbulo"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasGroupMember"/>
-        <NamedIndividual IRI="#Group_Zone"/>
-        <NamedIndividual IRI="#zonaTalleres"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasGroupMember"/>
-        <NamedIndividual IRI="#Group_Zone"/>
-        <NamedIndividual IRI="#zonaVestíbulo"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="-FrameAction#hasFomaGrammar"/>
-        <NamedIndividual IRI="#GuideRobot"/>
-        <NamedIndividual IRI="#ESGuideGrammar.bin"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="-FrameAction#hasIntent"/>
-        <NamedIndividual IRI="#GuideRobot"/>
-        <NamedIndividual IRI="#RequestInfo"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="-FrameAction#hasIntent"/>
-        <NamedIndividual IRI="#GuideRobot"/>
-        <NamedIndividual IRI="#Take"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTargetSystemReadableInfo"/>
-        <NamedIndividual IRI="#GuideRobot_giveInfo"/>
-        <NamedIndividual IRI="#execute_giveInfo"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="-FrameAction#hasCoreArgument"/>
-        <NamedIndividual IRI="#GuideRobot_giveInfo"/>
-        <NamedIndividual IRI="#PieceInformation_RequestInfo"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTargetSystemReadableInfo"/>
-        <NamedIndividual IRI="#GuideRobot_take"/>
-        <NamedIndividual IRI="#execute_move"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="-FrameAction#hasCoreArgument"/>
-        <NamedIndividual IRI="#GuideRobot_take"/>
-        <NamedIndividual IRI="#Destination_ExecMove"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="-FrameAction#hasOptionalArgument"/>
-        <NamedIndividual IRI="#GuideRobot_take"/>
-        <NamedIndividual IRI="#Origin_ExecMove"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="-FrameAction#hasCoreArgument"/>
-        <NamedIndividual IRI="#Motion"/>
-        <NamedIndividual IRI="#Destination_ExecMove"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="-FrameAction#hasOptionalArgument"/>
-        <NamedIndividual IRI="#Motion"/>
-        <NamedIndividual IRI="#Origin_ExecMove"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="-FrameAction#isFrameOf"/>
-        <NamedIndividual IRI="#Motion"/>
-        <NamedIndividual IRI="#Take"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#appliesToWorldElementGroup"/>
-        <NamedIndividual IRI="#Origin_ExecMove"/>
-        <NamedIndividual IRI="#Group_Beverage"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#appliesToWorldElementGroup"/>
-        <NamedIndividual IRI="#Origin_ExecMove"/>
-        <NamedIndividual IRI="#Group_Machine"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#appliesToWorldElementGroup"/>
-        <NamedIndividual IRI="#Origin_ExecMove"/>
-        <NamedIndividual IRI="#Group_Object"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#appliesToWorldElementGroup"/>
-        <NamedIndividual IRI="#Origin_ExecMove"/>
-        <NamedIndividual IRI="#Group_Space"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#appliesToWorldElementGroup"/>
-        <NamedIndividual IRI="#PieceInformation_RequestInfo"/>
-        <NamedIndividual IRI="#Group_Machine"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="-FrameAction#hasFrame"/>
-        <NamedIndividual IRI="#RequestInfo"/>
-        <NamedIndividual IRI="#Information"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasLexicalUnit"/>
-        <NamedIndividual IRI="#WC"/>
-        <NamedIndividual IRI="#WC.N"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasLexicalUnit"/>
-        <NamedIndividual IRI="#baño"/>
-        <NamedIndividual IRI="#baño.N"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasLexicalUnit"/>
-        <NamedIndividual IRI="#baño"/>
-        <NamedIndividual IRI="#servicio.N"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTargetSystemReadableInfo"/>
-        <NamedIndividual IRI="#baño"/>
-        <NamedIndividual IRI="#coords_baño"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="-World#contains"/>
-        <NamedIndividual IRI="#baño"/>
-        <NamedIndividual IRI="#WC"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasLexicalUnit"/>
-        <NamedIndividual IRI="#cafetera"/>
-        <NamedIndividual IRI="#cafetera.N"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTargetSystemReadableInfo"/>
-        <NamedIndividual IRI="#cafetera"/>
-        <NamedIndividual IRI="#coords_cafetera"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="-World#contains"/>
-        <NamedIndividual IRI="#cafetera"/>
-        <NamedIndividual IRI="#café"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasLexicalUnit"/>
-        <NamedIndividual IRI="#café"/>
-        <NamedIndividual IRI="#café.N"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTargetSystemReadableInfo"/>
-        <NamedIndividual IRI="#café"/>
-        <NamedIndividual IRI="#coords_cafetera"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isLexicalUnitOf"/>
-        <NamedIndividual IRI="#desplazar.V"/>
-        <NamedIndividual IRI="#ir"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isLexicalUnitOf"/>
-        <NamedIndividual IRI="#hall.N"/>
-        <NamedIndividual IRI="#vestíbulo"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasLexicalUnit"/>
-        <NamedIndividual IRI="#informar"/>
-        <NamedIndividual IRI="#informar.V"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="-FrameAction#isFrameHeadOf"/>
-        <NamedIndividual IRI="#informar"/>
-        <NamedIndividual IRI="#Information"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasLexicalUnit"/>
-        <NamedIndividual IRI="#ir"/>
-        <NamedIndividual IRI="#ir.V"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="-FrameAction#isFrameHeadOf"/>
-        <NamedIndividual IRI="#ir"/>
-        <NamedIndividual IRI="#Motion"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasLexicalUnit"/>
-        <NamedIndividual IRI="#máquina4398"/>
-        <NamedIndividual IRI="#fresadora.N"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTargetSystemReadableInfo"/>
-        <NamedIndividual IRI="#máquina4398"/>
-        <NamedIndividual IRI="#ID_máquina4398"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTargetSystemReadableInfo"/>
-        <NamedIndividual IRI="#máquina4398"/>
-        <NamedIndividual IRI="#coords_máquina4398"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasLexicalUnit"/>
-        <NamedIndividual IRI="#vestíbulo"/>
-        <NamedIndividual IRI="#vestíbulo.N"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTargetSystemReadableInfo"/>
-        <NamedIndividual IRI="#vestíbulo"/>
-        <NamedIndividual IRI="#coords_vestíbulo"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isLexicalUnitOf"/>
-        <NamedIndividual IRI="#váter.N"/>
-        <NamedIndividual IRI="#WC"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTargetSystemReadableInfo"/>
-        <NamedIndividual IRI="#zonaTalleres"/>
-        <NamedIndividual IRI="#coords_zonaTalleres"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTargetSystemReadableInfo"/>
-        <NamedIndividual IRI="#zonaVestíbulo"/>
-        <NamedIndividual IRI="#coords_zonaVestíbulo"/>
-    </ObjectPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#ID"/>
-        <NamedIndividual IRI="#ID_máquina4398"/>
-        <Literal>4398</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="-World#coordX"/>
-        <NamedIndividual IRI="#coords_baño"/>
-        <Literal>3</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="-World#coordY"/>
-        <NamedIndividual IRI="#coords_baño"/>
-        <Literal>-5</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="-World#coordZ"/>
-        <NamedIndividual IRI="#coords_baño"/>
-        <Literal>4</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="-World#coordX"/>
-        <NamedIndividual IRI="#coords_cafetera"/>
-        <Literal>4</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="-World#coordY"/>
-        <NamedIndividual IRI="#coords_cafetera"/>
-        <Literal>6</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="-World#coordZ"/>
-        <NamedIndividual IRI="#coords_cafetera"/>
-        <Literal>9</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="-World#coordX"/>
-        <NamedIndividual IRI="#coords_máquina4398"/>
-        <Literal>5</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="-World#coordY"/>
-        <NamedIndividual IRI="#coords_máquina4398"/>
-        <Literal>-7</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="-World#coordZ"/>
-        <NamedIndividual IRI="#coords_máquina4398"/>
-        <Literal>1</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="-World#coordX"/>
-        <NamedIndividual IRI="#coords_vestíbulo"/>
-        <Literal>-1</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="-World#coordY"/>
-        <NamedIndividual IRI="#coords_vestíbulo"/>
-        <Literal>7</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="-World#coordZ"/>
-        <NamedIndividual IRI="#coords_vestíbulo"/>
-        <Literal>8</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="-World#coordX"/>
-        <NamedIndividual IRI="#coords_zonaTalleres"/>
-        <Literal>5</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="-World#coordY"/>
-        <NamedIndividual IRI="#coords_zonaTalleres"/>
-        <Literal>2</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="-World#coordZ"/>
-        <NamedIndividual IRI="#coords_zonaTalleres"/>
-        <Literal>9</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="-World#coordX"/>
-        <NamedIndividual IRI="#coords_zonaVestíbulo"/>
-        <Literal>1</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="-World#coordY"/>
-        <NamedIndividual IRI="#coords_zonaVestíbulo"/>
-        <Literal>6</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="-World#coordZ"/>
-        <NamedIndividual IRI="#coords_zonaVestíbulo"/>
-        <Literal>2</Literal>
-    </DataPropertyAssertion>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="#appliesToWorldElementGroup"/>
-        <ObjectProperty IRI="#isApplicableToArgument"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="#hasActionAssociated"/>
-        <ObjectProperty IRI="#hasActionOn"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="#hasGroupMember"/>
-        <ObjectProperty IRI="#isMemberOfGroup"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="#hasLexicalUnit"/>
-        <ObjectProperty IRI="#isLexicalUnitOf"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="#hasPoint"/>
-        <ObjectProperty IRI="#isPointOf"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="#hasTSRIType"/>
-        <ObjectProperty IRI="#isTSRITypeOf"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="#hasTargetSystemReadableInfo"/>
-        <ObjectProperty IRI="#isTargetSystemReadableInfoOf"/>
-    </InverseObjectProperties>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="#hasTSRIType"/>
-    </FunctionalObjectProperty>
-    <InverseFunctionalObjectProperty>
-        <ObjectProperty IRI="#isTSRITypeOf"/>
-    </InverseFunctionalObjectProperty>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#LexicalUnit</IRI>
-        <Literal xml:lang="en">Representation of a FrameHead or a Thing.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#LexicalUnit</IRI>
-        <Literal xml:lang="en">LexicalUnit</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
-        <IRI>#LexicalUnit</IRI>
-        <Literal xml:lang="en">FrameHead: buy
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:pmofn="http://premon.fbk.eu/ontology/fn#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:ontolex="http://www.w3.org/ns/lemon/ontolex#"
+     xmlns:DomainONT="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#"
+     xmlns:DomainONT-World="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-World#"
+     xmlns:DomainONT-FrameAction="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT">
+        <owl:imports rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction"/>
+        <owl:imports rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-World"/>
+        <ns:license></ns:license>
+        <terms:contributor></terms:contributor>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-21T00:00:00</terms:created>
+        <terms:creator></terms:creator>
+        <terms:description></terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></terms:issued>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></terms:modified>
+        <terms:title></terms:title>
+        <vann:preferredNamespacePrefix></vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri></vann:preferredNamespaceUri>
+        <owl:priorVersion></owl:priorVersion>
+        <owl:versionIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></owl:versionIRI>
+        <owl:versionInfo>0.1.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://creativecommons.org/ns#license -->
+
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/bibliographicCitation -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionIRI -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionIRI"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#example -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#example"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#appliesToWorldElementGroup -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#appliesToWorldElementGroup">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isApplicableToArgument"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasActionAssociated -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasActionAssociated">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasActionOn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasActionOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasActionOn"/>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasGroupMember -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasGroupMember">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isMemberOfGroup"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasLexicalUnit -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasLexicalUnit">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isLexicalUnitOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasPoint -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasPoint">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isPointOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasTSRIType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasTSRIType">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isTSRITypeOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasTargetSystemReadableInfo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasTargetSystemReadableInfo">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isTargetSystemReadableInfoOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isApplicableToArgument -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isApplicableToArgument"/>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isLexicalUnitOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isLexicalUnitOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isMemberOfGroup -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isMemberOfGroup"/>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isPointOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isPointOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isTSRITypeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isTSRITypeOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isTargetSystemReadableInfoOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isTargetSystemReadableInfoOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#hasExecutableOrder -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#hasExecutableOrder"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#ID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#ID"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#CoordArgument -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#CoordArgument">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Argument"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasTSRIType"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#ID -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#ID">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#TargetSystemReadableInformation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#IDArgument -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#IDArgument">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Argument"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasTSRIType"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#ID"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#LexicalUnit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#LexicalUnit">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isLexicalUnitOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#FrameHead"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isLexicalUnitOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Representation of a FrameHead or a Thing.</rdfs:comment>
+        <rdfs:label xml:lang="en">LexicalUnit</rdfs:label>
+        <skos:example xml:lang="en">FrameHead: buy
 LU: buy.v
 
 SpatialThing - Object: WC
-LUs: toilet.n, loo.n</Literal>
-    </AnnotationAssertion>
-</Ontology>
+LUs: toilet.n, loo.n</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#TargetSystemReadableInformation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#TargetSystemReadableInformation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#WorldElementGroup -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#WorldElementGroup">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Action -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Action">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasTargetSystemReadableInfo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#TargetSystemReadableInformation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#FrameHead -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#FrameHead">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasLexicalUnit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#LexicalUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Intent -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Intent">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#belongsToAction"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Action"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#Point -->
+
+    <owl:Class rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#Point">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#TargetSystemReadableInformation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasLexicalUnit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#LexicalUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#Destination_ExecMove -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#Destination_ExecMove">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#CoordArgument"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Argument"/>
+        <DomainONT:appliesToWorldElementGroup rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#Group_Beverage"/>
+        <DomainONT:appliesToWorldElementGroup rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#Group_Machine"/>
+        <DomainONT:appliesToWorldElementGroup rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#Group_Object"/>
+        <DomainONT:appliesToWorldElementGroup rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#Group_Space"/>
+        <DomainONT:appliesToWorldElementGroup rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#Group_Zone"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#ESGuideGrammar.bin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#ESGuideGrammar.bin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#FomaGrammar"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#Group_Beverage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#Group_Beverage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#WorldElementGroup"/>
+        <DomainONT:hasGroupMember rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#café"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#Group_Machine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#Group_Machine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#WorldElementGroup"/>
+        <DomainONT:hasGroupMember rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#máquina4398"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#Group_Object -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#Group_Object">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#WorldElementGroup"/>
+        <DomainONT:hasGroupMember rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#WC"/>
+        <DomainONT:hasGroupMember rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#cafetera"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#Group_Space -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#Group_Space">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#WorldElementGroup"/>
+        <DomainONT:hasGroupMember rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#baño"/>
+        <DomainONT:hasGroupMember rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#vestíbulo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#Group_Zone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#Group_Zone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#WorldElementGroup"/>
+        <DomainONT:hasGroupMember rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#zonaTalleres"/>
+        <DomainONT:hasGroupMember rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#zonaVestíbulo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#GuideRobot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#GuideRobot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Skill"/>
+        <DomainONT-FrameAction:hasFomaGrammar rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#ESGuideGrammar.bin"/>
+        <DomainONT-FrameAction:hasIntent rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#RequestInfo"/>
+        <DomainONT-FrameAction:hasIntent rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#Take"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#GuideRobot_giveInfo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#GuideRobot_giveInfo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Action"/>
+        <DomainONT:hasTargetSystemReadableInfo rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#execute_giveInfo"/>
+        <DomainONT-FrameAction:hasCoreArgument rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#PieceInformation_RequestInfo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#GuideRobot_take -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#GuideRobot_take">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Action"/>
+        <DomainONT:hasTargetSystemReadableInfo rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#execute_move"/>
+        <DomainONT-FrameAction:hasCoreArgument rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#Destination_ExecMove"/>
+        <DomainONT-FrameAction:hasOptionalArgument rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#Origin_ExecMove"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#ID_máquina4398 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#ID_máquina4398">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#ID"/>
+        <DomainONT:ID>4398</DomainONT:ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#Information -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#Information">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Frame"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#Motion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#Motion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Frame"/>
+        <DomainONT-FrameAction:hasCoreArgument rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#Destination_ExecMove"/>
+        <DomainONT-FrameAction:hasOptionalArgument rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#Origin_ExecMove"/>
+        <DomainONT-FrameAction:isFrameOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#Take"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#Origin_ExecMove -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#Origin_ExecMove">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#CoordArgument"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Argument"/>
+        <DomainONT:appliesToWorldElementGroup rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#Group_Beverage"/>
+        <DomainONT:appliesToWorldElementGroup rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#Group_Machine"/>
+        <DomainONT:appliesToWorldElementGroup rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#Group_Object"/>
+        <DomainONT:appliesToWorldElementGroup rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#Group_Space"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#PieceInformation_RequestInfo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#PieceInformation_RequestInfo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#IDArgument"/>
+        <DomainONT:appliesToWorldElementGroup rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#Group_Machine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#RequestInfo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#RequestInfo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Intent"/>
+        <DomainONT-FrameAction:hasFrame rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#Information"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#Take -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#Take">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Intent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#WC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#WC">
+        <rdf:type rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <DomainONT:hasLexicalUnit rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#WC.N"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#WC.N -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#WC.N">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#LexicalUnit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#baño -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#baño">
+        <rdf:type rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <DomainONT:hasLexicalUnit rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#baño.N"/>
+        <DomainONT:hasLexicalUnit rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#servicio.N"/>
+        <DomainONT:hasTargetSystemReadableInfo rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#coords_baño"/>
+        <DomainONT-World:contains rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#WC"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#baño.N -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#baño.N">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#LexicalUnit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#cafetera -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#cafetera">
+        <rdf:type rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <DomainONT:hasLexicalUnit rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#cafetera.N"/>
+        <DomainONT:hasTargetSystemReadableInfo rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#coords_cafetera"/>
+        <DomainONT-World:contains rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#café"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#cafetera.N -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#cafetera.N">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#LexicalUnit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#café -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#café">
+        <rdf:type rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <DomainONT:hasLexicalUnit rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#café.N"/>
+        <DomainONT:hasTargetSystemReadableInfo rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#coords_cafetera"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#café.N -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#café.N">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#LexicalUnit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#coords_baño -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#coords_baño">
+        <rdf:type rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+        <DomainONT-World:coordX>3</DomainONT-World:coordX>
+        <DomainONT-World:coordY>-5</DomainONT-World:coordY>
+        <DomainONT-World:coordZ>4</DomainONT-World:coordZ>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#coords_cafetera -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#coords_cafetera">
+        <rdf:type rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+        <DomainONT-World:coordX>4</DomainONT-World:coordX>
+        <DomainONT-World:coordY>6</DomainONT-World:coordY>
+        <DomainONT-World:coordZ>9</DomainONT-World:coordZ>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#coords_máquina4398 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#coords_máquina4398">
+        <rdf:type rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+        <DomainONT-World:coordX>5</DomainONT-World:coordX>
+        <DomainONT-World:coordY>-7</DomainONT-World:coordY>
+        <DomainONT-World:coordZ>1</DomainONT-World:coordZ>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#coords_vestíbulo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#coords_vestíbulo">
+        <rdf:type rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+        <DomainONT-World:coordX>-1</DomainONT-World:coordX>
+        <DomainONT-World:coordY>7</DomainONT-World:coordY>
+        <DomainONT-World:coordZ>8</DomainONT-World:coordZ>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#coords_zonaTalleres -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#coords_zonaTalleres">
+        <rdf:type rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+        <DomainONT-World:coordX>5</DomainONT-World:coordX>
+        <DomainONT-World:coordY>2</DomainONT-World:coordY>
+        <DomainONT-World:coordZ>9</DomainONT-World:coordZ>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#coords_zonaVestíbulo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#coords_zonaVestíbulo">
+        <rdf:type rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+        <DomainONT-World:coordX>1</DomainONT-World:coordX>
+        <DomainONT-World:coordY>6</DomainONT-World:coordY>
+        <DomainONT-World:coordZ>2</DomainONT-World:coordZ>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#desplazar.V -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#desplazar.V">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#LexicalUnit"/>
+        <DomainONT:isLexicalUnitOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#ir"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#execute_giveInfo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#execute_giveInfo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#TargetSystemReadableInformation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#execute_move -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#execute_move">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#TargetSystemReadableInformation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#fresadora.N -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#fresadora.N"/>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hall.N -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hall.N">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#LexicalUnit"/>
+        <DomainONT:isLexicalUnitOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#vestíbulo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#informar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#informar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#FrameHead"/>
+        <DomainONT:hasLexicalUnit rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#informar.V"/>
+        <DomainONT-FrameAction:isFrameHeadOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#Information"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#informar.V -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#informar.V"/>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#ir -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#ir">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#FrameHead"/>
+        <DomainONT:hasLexicalUnit rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#ir.V"/>
+        <DomainONT-FrameAction:isFrameHeadOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#Motion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#ir.V -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#ir.V">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#LexicalUnit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#máquina4398 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#máquina4398">
+        <rdf:type rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <DomainONT:hasLexicalUnit rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#fresadora.N"/>
+        <DomainONT:hasTargetSystemReadableInfo rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#ID_máquina4398"/>
+        <DomainONT:hasTargetSystemReadableInfo rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#coords_máquina4398"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#servicio.N -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#servicio.N">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#LexicalUnit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#vestíbulo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#vestíbulo">
+        <rdf:type rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <DomainONT:hasLexicalUnit rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#vestíbulo.N"/>
+        <DomainONT:hasTargetSystemReadableInfo rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#coords_vestíbulo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#vestíbulo.N -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#vestíbulo.N">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#LexicalUnit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#váter.N -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#váter.N">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#LexicalUnit"/>
+        <DomainONT:isLexicalUnitOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#WC"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#zonaTalleres -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#zonaTalleres">
+        <rdf:type rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <DomainONT:hasTargetSystemReadableInfo rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#coords_zonaTalleres"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#zonaVestíbulo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#zonaVestíbulo">
+        <rdf:type rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <DomainONT:hasTargetSystemReadableInfo rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#coords_zonaVestíbulo"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
 
 
 
