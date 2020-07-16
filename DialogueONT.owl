@@ -206,12 +206,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#hasValue -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#hasValue"/>
-    
-
-
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#implies -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#implies"/>
