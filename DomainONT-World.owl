@@ -148,49 +148,6 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Data properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-World#coord -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-World#coord">
-        <rdfs:label>coordXYZ</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-World#coordX -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-World#coordX">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-World#coord"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-World#coordY -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-World#coordY">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-World#coord"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-World#coordZ -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-World#coordZ">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-World#coord"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
