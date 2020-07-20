@@ -342,6 +342,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#RequestInfo">
         <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Intent"/>
+        <DomainONT-FrameAction:belongsToAction rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#GuideRobot_giveInfo"/>
         <DomainONT-FrameAction:hasFrame rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#Information"/>
     </owl:NamedIndividual>
     
@@ -351,7 +352,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#Take">
         <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Intent"/>
-        <DomainONT-FrameAction:belongsToAction rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#GuideRobot_giveInfo"/>
         <DomainONT-FrameAction:belongsToAction rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst#GuideRobot_take"/>
     </owl:NamedIndividual>
     
