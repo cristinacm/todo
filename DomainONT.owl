@@ -141,16 +141,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#belongsToIntent -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#belongsToIntent">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#belongsToAction"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasActionAssociated -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasActionAssociated">
@@ -246,10 +236,10 @@
 
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#belongsToAction -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#belongsToAction">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#belongsToAction">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-    </rdf:Description>
+    </owl:ObjectProperty>
     
 
 
@@ -261,6 +251,14 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#IDval -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#IDval">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -312,6 +310,9 @@
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#ArgumentTrace"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#IDval"/>
+        </owl:hasKey>
     </owl:Class>
     
 
@@ -345,6 +346,9 @@
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#ActionTrace"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#IDval"/>
+        </owl:hasKey>
     </owl:Class>
     
 
@@ -358,13 +362,20 @@
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#IntentTrace"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#IDval"/>
+        </owl:hasKey>
     </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#InfoType -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#InfoType"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#InfoType">
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#IDval"/>
+        </owl:hasKey>
+    </owl:Class>
     
 
 
@@ -383,13 +394,32 @@
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#SkillTrace"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#IDval"/>
+        </owl:hasKey>
     </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#LexicalUnit -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#LexicalUnit"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#LexicalUnit">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isLexicalUnitOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#FrameHead"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isLexicalUnitOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#IDval"/>
+        </owl:hasKey>
+    </owl:Class>
     
 
 
@@ -430,6 +460,9 @@
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#IntentTrace"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#IDval"/>
+        </owl:hasKey>
     </owl:Class>
     
 
@@ -449,6 +482,9 @@
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#IDval"/>
+        </owl:hasKey>
         <rdfs:comment xml:lang="en">Information that is sent to the system to perform an execution or as argument for an execution, in a format that is understandable to the target system.</rdfs:comment>
         <rdfs:comment xml:lang="en">Plain language for whole action: Pick plastic container
 
@@ -470,6 +506,9 @@ SystemReadableInfo for whole action: robAction.Pick(containerID:235)</rdfs:comme
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#IDval"/>
+        </owl:hasKey>
     </owl:Class>
     
 
@@ -480,16 +519,13 @@ SystemReadableInfo for whole action: robAction.Pick(containerID:235)</rdfs:comme
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasTargetSystemReadableInfo"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#TargetSystemReadableInformation"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#belongsToIntent"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Intent"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#TargetSystemReadableInformation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#IDval"/>
+        </owl:hasKey>
     </rdf:Description>
     
 
@@ -511,16 +547,43 @@ SystemReadableInfo for whole action: robAction.Pick(containerID:235)</rdfs:comme
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isTargetSystemReadableInfoOf"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#TargetSystemReadableInformation"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#order"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#IDval"/>
+        </owl:hasKey>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#ArgumentSet -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#ArgumentSet">
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#IDval"/>
+        </owl:hasKey>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#FomaGrammar -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#FomaGrammar">
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#IDval"/>
+        </owl:hasKey>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Frame -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Frame">
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#IDval"/>
+        </owl:hasKey>
     </rdf:Description>
     
 
@@ -534,6 +597,9 @@ SystemReadableInfo for whole action: robAction.Pick(containerID:235)</rdfs:comme
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#LexicalUnit"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#IDval"/>
+        </owl:hasKey>
     </rdf:Description>
     
 
@@ -541,27 +607,42 @@ SystemReadableInfo for whole action: robAction.Pick(containerID:235)</rdfs:comme
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Intent -->
 
     <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Intent">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#belongsToAction"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Action"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#IDval"/>
+        </owl:hasKey>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Skill -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Skill">
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#IDval"/>
+        </owl:hasKey>
     </rdf:Description>
     
 
 
     <!-- http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing -->
 
-    <rdf:Description rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing">
+    <owl:Class rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasLexicalUnit"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#LexicalUnit"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-    </rdf:Description>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isMemberOfGroup"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#WorldElementGroup"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#IDval"/>
+        </owl:hasKey>
+    </owl:Class>
 </rdf:RDF>
 
 
