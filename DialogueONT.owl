@@ -615,14 +615,6 @@ Also known as &quot;Non polar/Open question&quot; in linguistics.</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#Intent -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#Intent">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UserRequest"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#IntentRequest -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#IntentRequest">
