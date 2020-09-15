@@ -1,50 +1,34 @@
 <?xml version="1.0"?>
-
-
-<!DOCTYPE rdf:RDF [
-    <!ENTITY terms "http://purl.org/dc/terms/" >
-    <!ENTITY prov "http://www.w3.org/ns/prov#" >
-    <!ENTITY vann "http://purl.org/vocab/vann/" >
-    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
-    <!ENTITY ns "http://creativecommons.org/ns#" >
-    <!ENTITY pmofn "http://premon.fbk.eu/ontology/fn#" >
-    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
-    <!ENTITY ontolex "http://www.w3.org/ns/lemon/ontolex#" >
-    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
-    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
-    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-]>
-
-
 <rdf:RDF xmlns="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT"
      xml:base="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:ns="http://creativecommons.org/ns#"
-     xmlns:pmofn="http://premon.fbk.eu/ontology/fn#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:ontolex="http://www.w3.org/ns/lemon/ontolex#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:prov="http://www.w3.org/ns/prov#">
+     xmlns:pmofn="http://premon.fbk.eu/ontology/fn#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:ontolex="http://www.w3.org/ns/lemon/ontolex#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT">
-        <terms:modified rdf:datatype="&xsd;dateTime"></terms:modified>
-        <terms:issued rdf:datatype="&xsd;dateTime"></terms:issued>
-        <owl:versionIRI rdf:datatype="&xsd;dateTime"></owl:versionIRI>
-        <terms:created rdf:datatype="&xsd;dateTime">2020-04-21T00:00:00</terms:created>
-        <ns:license></ns:license>
-        <terms:title></terms:title>
-        <owl:priorVersion></owl:priorVersion>
-        <owl:versionInfo>0.1.0</owl:versionInfo>
-        <terms:contributor></terms:contributor>
-        <terms:creator></terms:creator>
-        <vann:preferredNamespacePrefix></vann:preferredNamespacePrefix>
-        <terms:description></terms:description>
-        <vann:preferredNamespaceUri></vann:preferredNamespaceUri>
         <owl:imports rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction"/>
         <owl:imports rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-World"/>
+        <ns:license></ns:license>
+        <terms:contributor></terms:contributor>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-21T00:00:00</terms:created>
+        <terms:creator></terms:creator>
+        <terms:description></terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></terms:issued>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></terms:modified>
+        <terms:title></terms:title>
+        <vann:preferredNamespacePrefix></vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri></vann:preferredNamespaceUri>
+        <owl:priorVersion></owl:priorVersion>
+        <owl:versionIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></owl:versionIRI>
+        <owl:versionInfo>0.1.0</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -62,79 +46,79 @@
 
     <!-- http://creativecommons.org/ns#license -->
 
-    <owl:AnnotationProperty rdf:about="&ns;license"/>
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
     
 
 
     <!-- http://purl.org/dc/terms/bibliographicCitation -->
 
-    <owl:AnnotationProperty rdf:about="&terms;bibliographicCitation"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
     
 
 
     <!-- http://purl.org/dc/terms/contributor -->
 
-    <owl:AnnotationProperty rdf:about="&terms;contributor"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
     
 
 
     <!-- http://purl.org/dc/terms/created -->
 
-    <owl:AnnotationProperty rdf:about="&terms;created"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
     
 
 
     <!-- http://purl.org/dc/terms/creator -->
 
-    <owl:AnnotationProperty rdf:about="&terms;creator"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
     
 
 
     <!-- http://purl.org/dc/terms/description -->
 
-    <owl:AnnotationProperty rdf:about="&terms;description"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
     
 
 
     <!-- http://purl.org/dc/terms/issued -->
 
-    <owl:AnnotationProperty rdf:about="&terms;issued"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
     
 
 
     <!-- http://purl.org/dc/terms/modified -->
 
-    <owl:AnnotationProperty rdf:about="&terms;modified"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
     
 
 
     <!-- http://purl.org/dc/terms/title -->
 
-    <owl:AnnotationProperty rdf:about="&terms;title"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
     
 
 
     <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
 
-    <owl:AnnotationProperty rdf:about="&vann;preferredNamespacePrefix"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
     
 
 
     <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
 
-    <owl:AnnotationProperty rdf:about="&vann;preferredNamespaceUri"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
     
 
 
     <!-- http://www.w3.org/2002/07/owl#versionIRI -->
 
-    <owl:AnnotationProperty rdf:about="&owl;versionIRI"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionIRI"/>
     
 
 
     <!-- http://www.w3.org/2004/02/skos/core#example -->
 
-    <owl:AnnotationProperty rdf:about="&skos;example"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#example"/>
     
 
 
@@ -152,8 +136,8 @@
     <!-- http://www.daml.org/services/owl-s/1.1/Grounding.owl#hasAtomicProcessGrounding -->
 
     <owl:ObjectProperty rdf:about="http://www.daml.org/services/owl-s/1.1/Grounding.owl#hasAtomicProcessGrounding">
-        <rdfs:range rdf:resource="http://www.daml.org/services/owl-s/1.2/Grounding.owl#WsdlAtomicProcessGrounding"/>
-        <rdfs:domain rdf:resource="http://www.daml.org/services/owl-s/1.2/Grounding.owl#WsdlGrounding"/>
+        <rdfs:domain rdf:resource="http://www.daml.org/services/owl-s/1.2/Grounding.owl#Grounding"/>
+        <rdfs:range rdf:resource="http://www.daml.org/services/owl-s/1.2/Grounding.owl#AtomicProcessGrounding"/>
     </owl:ObjectProperty>
     
 
@@ -175,10 +159,28 @@
     
 
 
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#appliesToWorld -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#appliesToWorld">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isApplicableToArgument"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#appliesToWorldElement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#appliesToWorldElement">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#appliesToWorld"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#appliesToWorldElementGroup -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#appliesToWorldElementGroup">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isApplicableToArgument"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#appliesToWorld"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#WorldElementGroup"/>
     </owl:ObjectProperty>
     
 
@@ -200,7 +202,7 @@
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasActionTrace -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasActionTrace">
-        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     </owl:ObjectProperty>
     
 
@@ -238,8 +240,8 @@
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasType -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasType">
-        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isTypeOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     </owl:ObjectProperty>
     
 
@@ -252,7 +254,9 @@
 
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isApplicableToArgument -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isApplicableToArgument"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isApplicableToArgument">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Argument"/>
+    </owl:ObjectProperty>
     
 
 
@@ -277,7 +281,7 @@
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isTypeOf -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isTypeOf">
-        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
     </owl:ObjectProperty>
     
 
@@ -285,8 +289,8 @@
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#belongsToAction -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#belongsToAction">
-        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
-        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
     </owl:ObjectProperty>
     
 
@@ -311,7 +315,7 @@
     <!-- http://www.daml.org/services/owl-s/1.1/Grounding.owl#wsdlDocument -->
 
     <owl:DatatypeProperty rdf:about="http://www.daml.org/services/owl-s/1.1/Grounding.owl#wsdlDocument">
-        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     </owl:DatatypeProperty>
     
 
@@ -319,9 +323,9 @@
     <!-- http://www.daml.org/services/owl-s/1.1/Grounding.owl#wsdlInputMessage -->
 
     <owl:DatatypeProperty rdf:about="http://www.daml.org/services/owl-s/1.1/Grounding.owl#wsdlInputMessage">
-        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.daml.org/services/owl-s/1.2/Grounding.owl#WsdlAtomicProcessGrounding"/>
-        <rdfs:range rdf:resource="&xsd;anyURI"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
     </owl:DatatypeProperty>
     
 
@@ -329,9 +333,9 @@
     <!-- http://www.daml.org/services/owl-s/1.1/Grounding.owl#wsdlOutputMessage -->
 
     <owl:DatatypeProperty rdf:about="http://www.daml.org/services/owl-s/1.1/Grounding.owl#wsdlOutputMessage">
-        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.daml.org/services/owl-s/1.2/Grounding.owl#WsdlAtomicProcessGrounding"/>
-        <rdfs:range rdf:resource="&xsd;anyURI"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
     </owl:DatatypeProperty>
     
 
@@ -339,9 +343,9 @@
     <!-- http://www.daml.org/services/owl-s/1.1/Grounding.owl#wsdlVersion -->
 
     <owl:DatatypeProperty rdf:about="http://www.daml.org/services/owl-s/1.1/Grounding.owl#wsdlVersion">
-        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.daml.org/services/owl-s/1.2/Grounding.owl#WsdlAtomicProcessGrounding"/>
-        <rdfs:range rdf:resource="&xsd;anyURI"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
     </owl:DatatypeProperty>
     
 
@@ -349,7 +353,7 @@
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#IDval -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#IDval">
-        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     </owl:DatatypeProperty>
     
 
@@ -357,7 +361,7 @@
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#implementation -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#implementation">
-        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     </owl:DatatypeProperty>
     
 
@@ -365,7 +369,7 @@
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#order -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#order">
-        <rdfs:range rdf:resource="&xsd;int"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
     </owl:DatatypeProperty>
     
 
@@ -427,8 +431,8 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.daml.org/services/owl-s/1.1/Service.owl#supports"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="http://www.daml.org/services/owl-s/1.2/Service.owl#ServiceGrounding"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -464,29 +468,29 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.daml.org/services/owl-s/1.1/Grounding.owl#wsdlDocument"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;anyURI"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.daml.org/services/owl-s/1.1/Grounding.owl#wsdlInputMessage"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;anyURI"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.daml.org/services/owl-s/1.1/Grounding.owl#wsdlOutputMessage"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;anyURI"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.daml.org/services/owl-s/1.1/Grounding.owl#wsdlVersion"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;anyURI"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:hasKey rdf:parseType="Collection">
@@ -573,8 +577,8 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#implementation"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:hasKey rdf:parseType="Collection">
@@ -612,8 +616,8 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#implementation"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:hasKey rdf:parseType="Collection">
@@ -630,8 +634,8 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasSpecification"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#Command"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:hasKey rdf:parseType="Collection">
@@ -695,13 +699,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isLexicalUnitOf"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#FrameHead"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isLexicalUnitOf"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#FrameHead"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:hasKey rdf:parseType="Collection">
@@ -735,8 +739,8 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasSpecification"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="http://www.daml.org/services/owl-s/1.1/Service.owl#Service"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:hasKey rdf:parseType="Collection">
@@ -765,7 +769,6 @@
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#TargetSystemReadableInformation -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#TargetSystemReadableInformation">
-        <rdfs:label xml:lang="en">TargetSystemReadableInformation</rdfs:label>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasType"/>
@@ -775,9 +778,12 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#val"/>
-                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#IDval"/>
+        </owl:hasKey>
         <rdfs:comment xml:lang="en">Information that is sent to the system to perform an execution or as argument for an execution, in a format that is understandable to the target system.</rdfs:comment>
         <rdfs:comment xml:lang="en">Plain language for whole action: Pick plastic container
 
@@ -785,9 +791,7 @@ SystemReadableInfo for &quot;pick&quot;: robAction.Pick
 SystemReadableInfo for &quot;plastic container&quot;: containerID:235
 
 SystemReadableInfo for whole action: robAction.Pick(containerID:235)</rdfs:comment>
-        <owl:hasKey rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#IDval"/>
-        </owl:hasKey>
+        <rdfs:label xml:lang="en">TargetSystemReadableInformation</rdfs:label>
     </owl:Class>
     
 
@@ -831,8 +835,8 @@ SystemReadableInfo for whole action: robAction.Pick(containerID:235)</rdfs:comme
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasTargetSystemReadableInfo"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#TargetSystemReadableInformation"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:hasKey rdf:parseType="Collection">
@@ -847,14 +851,8 @@ SystemReadableInfo for whole action: robAction.Pick(containerID:235)</rdfs:comme
     <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Argument">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#order"/>
-                <owl:someValuesFrom rdf:resource="&xsd;int"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasType"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#ParameterType"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#appliesToWorldElement"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -865,9 +863,21 @@ SystemReadableInfo for whole action: robAction.Pick(containerID:235)</rdfs:comme
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasType"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#ParameterType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasTargetSystemReadableInfo"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#TargetSystemReadableInformation"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#order"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:hasKey rdf:parseType="Collection">
@@ -948,13 +958,6 @@ SystemReadableInfo for whole action: robAction.Pick(containerID:235)</rdfs:comme
     <owl:Class rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasTargetSystemReadableInfo"/>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#TargetSystemReadableInformation"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasLexicalUnit"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#LexicalUnit"/>
             </owl:Restriction>
@@ -963,6 +966,13 @@ SystemReadableInfo for whole action: robAction.Pick(containerID:235)</rdfs:comme
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isMemberOfGroup"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#WorldElementGroup"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasTargetSystemReadableInfo"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#TargetSystemReadableInformation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:hasKey rdf:parseType="Collection">
@@ -987,5 +997,5 @@ SystemReadableInfo for whole action: robAction.Pick(containerID:235)</rdfs:comme
 
 
 
-<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
