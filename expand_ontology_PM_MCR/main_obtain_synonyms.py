@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import retrieve_from_PM as ret_data
 import mysql_test as get_from_sql
 import pprint as pp
@@ -37,8 +39,8 @@ def info_to_sparql(PM_data):
 	idval_insert_template = 'domainOntInst:{element} domainOnt:IDval "{element}" .'
 	framehead_insert_template = "domainOntInst:{framehead} a domainOntFrame:FrameHead ."
 	frame_has_framehead_insert_template = "domainOntInst:{frame} domainOntFrame:hasFrameHead domainOntInst:{framehead} ." 
-	lu_insert_template = "domainOntInst:{lu} a domainOnt:LexicalUnit ."
-	framehead_has_lu_insert_template = "domainOntInst:{framehead} domainOnt:hasLexicalUnit domainOntInst:{lu} ."
+	lu_insert_template = "domainOntInst:{lu}.V a domainOnt:LexicalUnit ."
+	framehead_has_lu_insert_template = "domainOntInst:{framehead} domainOnt:hasLexicalUnit domainOntInst:{lu}.V ."
 
 	inserts = []
 	inserts.append(sparql_header)
@@ -54,18 +56,16 @@ def info_to_sparql(PM_data):
 			inserts.extend([framehead_insert, idval_framehead_insert, frame_has_framehead_insert])
 			for lu in PM_data[frame][fh]["LUs"]:
 				lu_insert = lu_insert_template.format(lu=lu)
-				idval_lu_insert = idval_insert_template.format(element=lu)
+				idval_lu_insert = idval_insert_template.format(element=lu+".V")
 				framehead_has_lu_insert = framehead_has_lu_insert_template.format(framehead=fh+"_"+frame, lu=lu)
 				inserts.extend([lu_insert, idval_lu_insert, framehead_has_lu_insert])
-	
-	#En cada insert, habría que meter "\n" o hacerlo al unirlo todo
-	#Hay que vigilar qué pasa con idval_insert_template (comillas en element)
+
 
 	inserts = "\n".join(inserts)
 	inserts = inserts+"}"
 
 	# pp.pprint(inserts)
-	# print(inserts)
+	print(inserts)
 	return(inserts)
 
 insert = info_to_sparql(PM_data)
