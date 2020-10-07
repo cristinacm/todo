@@ -1,15 +1,15 @@
 #!/usr/bin/python3
 
 import retrieve_from_PM as ret_data
-import mysql_test as get_from_sql
+import mysql_connect as get_from_sql
 import pprint as pp
 import os
 import argparse
 
-pred_matrix = (open("PredicateMatrix_v1_3.tsv")).read()
-pred_matrix_split = pred_matrix.split("\n")
+# pred_matrix = (open("PredicateMatrix_v1_3.tsv")).read()
+# pred_matrix_split = pred_matrix.split("\n")
 
-args = {"fn:Motion": {"LUs": ["fn:go.v", "fn:move.v"], "SUMOs": ["mcr:Motion", "mcr:DirectionChange", "mcr:BodyMotion"]}, "fn:Taking": {"LUs": ["fn:take.v", "NULL"], "SUMOs": ["mcr:Guiding", "mcr:Transfer"]}} #cambiar LUs a FHs
+# args = {"fn:Motion": {"FHs": ["fn:go.v", "fn:move.v"], "SUMOs": ["mcr:Motion", "mcr:DirectionChange", "mcr:BodyMotion"]}, "fn:Taking": {"FHs": ["fn:take.v", "NULL"], "SUMOs": ["mcr:Guiding", "mcr:Transfer"]}} #cambiar LUs a FHs
 
 def get_info(args, pred_matrix_split):
 	PM_data = ret_data.extract_ili_predmatrix_morethanoneframe(pred_matrix_split, args)
@@ -22,17 +22,19 @@ def get_info(args, pred_matrix_split):
 			# print(ilis_list)
 			words = get_from_sql.connect(ilis_list)
 			# print("fh:", words)
-			PM_data[frame][fh]["LUs"] = words
+			PM_data[frame][fh]["FHs"] = words
 	
 	# pp.pprint(PM_data)
 	# print(PM_data)
 	return(PM_data)
 
-PM_data = get_info(args, pred_matrix_split)
+# PM_data = get_info(args, pred_matrix_split)
 
 # PM_data -> {'Motion': {'go': {'mcr': ['ili-30-01835496-v', 'ili-30-01848718-v'], 'LUs': ['acudir', 'desplazarse', 'ir', 'mover', 'moverse', 'viajar', 'partir']}, 'move': {'mcr': ['ili-30-00014549-v', 'ili-30-01831531-v', 'ili-30-01835496-v'], 'LUs': ['estar_activo', 'moverse', 'mover', 'trasladar', 'acudir', 'desplazarse', 'ir', 'viajar']}}, 'Taking': {'take': {'mcr': ['ili-30-01999798-v', 'ili-30-02077656-v', 'ili-30-02717102-v'], 'LUs': ['apoderar', 'conducir', 'copar', 'dirigir', 'encaminar', 'guiar', 'llevar', 'acarrear', 'portar', 'tomar', 'traer', 'transportar', 'cargar']}}}
 
-def info_to_sparql(PM_data):
+def info_to_sparql(args, pred_matrix_split):
+	PM_data = get_info(args, pred_matrix_split)
+
 	sparql_header = "prefix domainOntInst: <http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst-GuideRobot#>\nprefix domainOntFrame: <http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#>\nprefix domainOnt: <http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#>\nprefix rdfs: <http://www.w3.org/2000/01/rd-schema#>\nprefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>\ninsert data{"
 
 	frame_insert_template = "domainOntInst:{frame} a domainOntFrame:Frame ."
@@ -54,7 +56,7 @@ def info_to_sparql(PM_data):
 			idval_framehead_insert = idval_insert_template.format(element=fh+"_"+frame)
 			frame_has_framehead_insert = frame_has_framehead_insert_template.format(frame=frame, framehead=fh+"_"+frame)
 			inserts.extend([framehead_insert, idval_framehead_insert, frame_has_framehead_insert])
-			for lu in PM_data[frame][fh]["LUs"]:
+			for lu in PM_data[frame][fh]["FHs"]:
 				lu_insert = lu_insert_template.format(lu=lu)
 				idval_lu_insert = idval_insert_template.format(element=lu+".V")
 				framehead_has_lu_insert = framehead_has_lu_insert_template.format(framehead=fh+"_"+frame, lu=lu)
@@ -65,10 +67,10 @@ def info_to_sparql(PM_data):
 	inserts = inserts+"}"
 
 	# pp.pprint(inserts)
-	print(inserts)
+	# print(inserts)
 	return(inserts)
 
-insert = info_to_sparql(PM_data)
+# insert = info_to_sparql(PM_data)
 
 # insert:
 # prefix domainOntInst: <http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst-GuideRobot#>

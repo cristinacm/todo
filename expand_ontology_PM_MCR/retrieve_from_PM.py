@@ -7,7 +7,7 @@ def create_out_dict(out, frame_col, LU_col, ILI_col):
 	if frame_col not in out.keys():
 		out[frame_col] = {}
 	if LU_col not in out[frame_col].keys():
-		out[frame_col][LU_col] = {"mcr":[], "LUs":""}
+		out[frame_col][LU_col] = {"mcr":[], "FHs":""}
 	if ILI_col not in out[frame_col][LU_col]["mcr"]:
 		out[frame_col][LU_col]["mcr"].append(ILI_col)
 	
@@ -88,16 +88,16 @@ def extract_ili_predmatrix_morethanoneframe(pred_matrix_split, args):
 		# if LU_col in LUs:
 			# print("ok")
 		if frame_col in args.keys():
-			if len(args[frame_col]["LUs"]) < 1 and len(args[frame_col]["SUMOs"]) < 1:
+			if len(args[frame_col]["FHs"]) < 1 and len(args[frame_col]["SUMOs"]) < 1:
 					out = create_out_dict(out, frame_col[3:], LU_col[3:-2], ILI_col[4:])
-			if len(args[frame_col]["LUs"]) < 1:
+			if len(args[frame_col]["FHs"]) < 1:
 				if SUMO_col in args[frame_col]["SUMOs"]:
 					out = create_out_dict(out, frame_col[3:], LU_col[3:-2], ILI_col[4:])
 			elif len(args[frame_col]["SUMOs"]) < 1:
-				if LU_col[3:-2] in args[frame_col]["LUs"]:
+				if LU_col[3:-2] in args[frame_col]["FHs"]:
 					out = create_out_dict(out, frame_col[3:], LU_col[3:-2], ILI_col[4:])
 			else:
-				if SUMO_col in args[frame_col]["SUMOs"] and LU_col in args[frame_col]["LUs"]:
+				if SUMO_col in args[frame_col]["SUMOs"] and LU_col in args[frame_col]["FHs"]:
 					out = create_out_dict(out, frame_col[3:], LU_col[3:-2], ILI_col[4:])
 			
 			
@@ -134,5 +134,5 @@ def extract_ili_predmatrix_morethanoneframe(pred_matrix_split, args):
 # SUMOs = ["mcr:Motion", "mcr:DirectionChange", "mcr:BodyMotion"] #if len > 1 -> all
 # print(extract_ili_predmatrix_onlyoneframe(pred_matrix_split, frame, LUs, SUMOs))
 
-# args = {"fn:Motion": {"LUs": ["fn:go.v", "fn:move.v"], "SUMOs": ["mcr:Motion", "mcr:DirectionChange", "mcr:BodyMotion"]}, "fn:Taking": {"LUs": ["fn:take.v", "NULL"], "SUMOs": ["mcr:Guiding", "mcr:Transfer"]}}
+# args = {"fn:Motion": {"FHs": ["fn:go.v", "fn:move.v"], "SUMOs": ["mcr:Motion", "mcr:DirectionChange", "mcr:BodyMotion"]}, "fn:Taking": {"FHs": ["fn:take.v", "NULL"], "SUMOs": ["mcr:Guiding", "mcr:Transfer"]}}
 # print(extract_ili_predmatrix_morethanoneframe(pred_matrix_split, args))
