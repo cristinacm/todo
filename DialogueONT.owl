@@ -594,6 +594,13 @@ Also known as &quot;Non polar/Open question&quot; in linguistics.</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#dialStatus"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#finishDateTime"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
@@ -691,6 +698,18 @@ USR: &quot;Sí&quot;</skos:example>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#MissingArgumentsResponse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#MissingArgumentsResponse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
+        <rdfs:comment xml:lang="es">Response that enumerates the missing arguments from a UserRequest.</rdfs:comment>
+        <skos:example xml:lang="es">No he podido resolver tu petición. Me faltaría saber el {Argument}(n-times).
+
+No he podido resolver tu petición. Me faltaría saber el {Origen}.</skos:example>
     </owl:Class>
     
 
