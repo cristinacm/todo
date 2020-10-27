@@ -20,11 +20,12 @@ def update_synonyms_ontology():
     data = request.get_json()
     sparql_query = obtain_syns.info_to_sparql(data, pred_matrix_split)
 
-    update_ontology = requests.post("http://10.0.0.161:8083/CAMService/SPARQLInferenceUpdate", sparql_query)
+    # update_ontology = requests.post("http://10.0.0.161:8083/CAMService/SPARQLInferenceUpdate", sparql_query)
 
-    response_update = update_ontology.text
+    # response_update = update_ontology.text
 
-    return(update_ontology.text)
+    # return(update_ontology.text)
+    return(sparql_query)
     # return interpreter.interpreter(tree, command, config, cluster), {'Content-Type': 'application/json'}
 
 if __name__ == '__main__':

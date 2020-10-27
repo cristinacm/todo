@@ -35,7 +35,7 @@ def get_info(args, pred_matrix_split):
 def info_to_sparql(args, pred_matrix_split):
 	PM_data = get_info(args, pred_matrix_split)
 
-	sparql_header = "prefix domainOntInst: <http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst-GuideRobot#>\nprefix domainOntFrame: <http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#>\nprefix domainOnt: <http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#>\nprefix rdfs: <http://www.w3.org/2000/01/rd-schema#>\nprefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>\ninsert data{"
+	sparql_header = "DEFINE input:inference 'urn:ALKAdata' prefix dialSystemOnt: <http://www.semanticweb.org/linuxsii/ontologies/2020/6/DialSystemONT#>\nprefix dialSystemOntInst: <http://www.semanticweb.org/linuxsii/ontologies/2020/6/DialSystemONT-inst#>\nprefix domainOnt: <http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#>\nprefix domainOntFrame: <http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#>\nprefix domainOntWorld: <http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-World#>\nprefix domainOntInst: <http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst-ALKA#>\nprefix dialogueOnt: <http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#>\nprefix dialogueOntInst: <http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#>\ninsert in <urn:ALKAdata>{"
 
 	frame_insert_template = "domainOntInst:{frame} a domainOntFrame:Frame ."
 	idval_insert_template = 'domainOntInst:{element} domainOnt:IDval "{element}" .'
