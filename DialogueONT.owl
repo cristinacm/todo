@@ -529,6 +529,17 @@ USR: &quot;Yes&quot;</skos:example>
     
 
 
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#CannotResolveActionResponse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#CannotResolveActionResponse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
+        <rdfs:comment xml:lang="en">Response that the system gives when it cannot associate an action/target to one or more actions.</rdfs:comment>
+        <skos:example xml:lang="en">I couldn&apos;t associate your command to an action. Can you please be more specific?</skos:example>
+        <skos:example xml:lang="es">No he podido asociar tu comando a una acción. ¿Puedes repetir y ser más específico, por favor?</skos:example>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ContentRequest -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ContentRequest">
@@ -706,6 +717,12 @@ USR: &quot;Sí&quot;</skos:example>
 
     <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#MissingArgumentsResponse">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#implies"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentRequest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="es">Response that enumerates the missing arguments from a UserRequest.</rdfs:comment>
         <skos:example xml:lang="es">No he podido resolver tu petición. Me faltaría saber el {Argument}(n-times).
 
@@ -848,6 +865,17 @@ No he podido resolver tu petición. Me faltaría saber el {Origen}.</skos:exampl
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UserStep"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#TooManyOptionsResponse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#TooManyOptionsResponse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
+        <rdfs:comment xml:lang="en">Response that the system gives when a command can be associated to more than one action.</rdfs:comment>
+        <skos:example xml:lang="en">Your command can be associated to many actions! Can you please repeat and be more specific?</skos:example>
+        <skos:example xml:lang="es">¡El comando puede asociarse a varias acciones! ¿Puedes repetir y ser más específico, por favor?</skos:example>
     </owl:Class>
     
 

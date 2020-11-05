@@ -283,6 +283,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_CannotResolveAction -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_CannotResolveAction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#CannotResolveActionResponse"/>
+        <DialogueONT:outputSentence xml:lang="es">No he podido asociar tu comando a una acción. ¿Puedes repetir y ser más específico, por favor?</DialogueONT:outputSentence>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_ContentRespNotExpected -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_ContentRespNotExpected">
@@ -306,6 +315,7 @@
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_MissingArgs -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_MissingArgs">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#MissingArgumentsResponse"/>
         <DialogueONT:outputSentence xml:lang="es">No he podido resolver tu petición. Me faltaría saber el {Argument}.</DialogueONT:outputSentence>
     </owl:NamedIndividual>
     
@@ -317,6 +327,15 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#NotUnderstoodResponse"/>
         <DialogueONT:outputSentence xml:lang="es">Lo siento, no te he entendido. ¿Puedes repetir, por favor?</DialogueONT:outputSentence>
         <DialogueONT:outputSentence xml:lang="es">Perdona, ¿Puedes repetir? No te he entendido.</DialogueONT:outputSentence>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_TooManyOptions -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_TooManyOptions">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#TooManyOptionsResponse"/>
+        <DialogueONT:outputSentence xml:lang="es">¡El comando puede asociarse a varias acciones! ¿Puedes repetir y ser más específico, por favor?</DialogueONT:outputSentence>
     </owl:NamedIndividual>
     
 
