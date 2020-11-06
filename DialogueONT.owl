@@ -692,6 +692,17 @@ USR: &quot;Sí&quot;</skos:example>
     
 
 
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ItemNotCompatibleAnyArgResponse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ItemNotCompatibleAnyArgResponse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
+        <rdfs:comment xml:lang="es">El item {item} no es compatible con ningún argumento de la acción. ¿Puedes revisar tu petición?</rdfs:comment>
+        <rdfs:comment xml:lang="en">The item {item} is not compatible with any argument for this action. Can you revise your command, please?</rdfs:comment>
+        <rdfs:comment>The system informs the user the Item value provided is not compatible with any action argument, according to what has been modelled in the KB.</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#MainDialogue -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#MainDialogue">
@@ -869,13 +880,24 @@ No he podido resolver tu petición. Me faltaría saber el {Origen}.</skos:exampl
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#TooManyOptionsResponse -->
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#TooManyActionOptionsResponse -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#TooManyOptionsResponse">
+    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#TooManyActionOptionsResponse">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
         <rdfs:comment xml:lang="en">Response that the system gives when a command can be associated to more than one action.</rdfs:comment>
         <skos:example xml:lang="en">Your command can be associated to many actions! Can you please repeat and be more specific?</skos:example>
         <skos:example xml:lang="es">¡El comando puede asociarse a varias acciones! ¿Puedes repetir y ser más específico, por favor?</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#TooManyArgumentOptionsResponse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#TooManyArgumentOptionsResponse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
+        <rdfs:comment xml:lang="en">Response that the system gives when an item can be associated to more than one argument.</rdfs:comment>
+        <skos:example xml:lang="en">The item {item} can be associated to many arguments! Can you please repeat and be more specific?</skos:example>
+        <skos:example xml:lang="es">¡El item {item} puede asociarse a varios argumentos! ¿Puedes repetir y ser más específico, por favor?</skos:example>
     </owl:Class>
     
 

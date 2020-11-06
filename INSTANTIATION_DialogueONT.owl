@@ -312,6 +312,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_ItemNotCompatibleAnyArg -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_ItemNotCompatibleAnyArg">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ItemNotCompatibleAnyArgResponse"/>
+        <DialogueONT:outputSentence xml:lang="es">El item {item} no es compatible con ningún argumento de la acción. ¿Puedes revisar tu petición?</DialogueONT:outputSentence>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_MissingArgs -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_MissingArgs">
@@ -331,11 +340,20 @@
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_TooManyOptions -->
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_TooManyActionOptions -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_TooManyOptions">
-        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#TooManyOptionsResponse"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_TooManyActionOptions">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#TooManyActionOptionsResponse"/>
         <DialogueONT:outputSentence xml:lang="es">¡El comando puede asociarse a varias acciones! ¿Puedes repetir y ser más específico, por favor?</DialogueONT:outputSentence>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_TooManyArgumentOptions -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_TooManyArgumentOptions">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#TooManyArgumentOptionsResponse"/>
+        <DialogueONT:outputSentence xml:lang="es">¡El item {item} puede asociarse a varios argumentos! ¿Puedes repetir y ser más específico, por favor?</DialogueONT:outputSentence>
     </owl:NamedIndividual>
     
 
