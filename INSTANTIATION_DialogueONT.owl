@@ -205,8 +205,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqCont_ArgRequest">
         <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentRequest"/>
-        <DialogueONT:outputSentence xml:lang="es">Necesito que me digas el {Argument}, por favor</DialogueONT:outputSentence>
-        <DialogueONT:outputSentence xml:lang="es">¿Puedes decirme el {Argument}?</DialogueONT:outputSentence>
+        <DialogueONT:outputSentence xml:lang="es">Necesito que me digas {Argument}, por favor</DialogueONT:outputSentence>
+        <DialogueONT:outputSentence xml:lang="es">¿Puedes decirme {Argument}?</DialogueONT:outputSentence>
     </owl:NamedIndividual>
     
 
@@ -223,8 +223,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqYN_ArgSpecify">
         <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentSpecifyRequest"/>
-        <DialogueONT:outputSentence xml:lang="es">Hay muchas alternativas para lo que me has dicho. ¿Es el {Argument}?</DialogueONT:outputSentence>
-        <DialogueONT:outputSentence xml:lang="es">¡Lo que me has dicho podría ser varias cosas! ¿Es el {Argument}?</DialogueONT:outputSentence>
+        <DialogueONT:outputSentence xml:lang="es">Hay muchas alternativas para lo que me has dicho. ¿Es {Argument}?</DialogueONT:outputSentence>
+        <DialogueONT:outputSentence xml:lang="es">¡Lo que me has dicho podría ser varias cosas! ¿Es {Argument}?</DialogueONT:outputSentence>
     </owl:NamedIndividual>
     
 
@@ -233,8 +233,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqYN_IncorrectArg">
         <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#IncorrectArgumentRequest"/>
-        <DialogueONT:outputSentence xml:lang="es">¿Me he equivocado con el {Argument}?</DialogueONT:outputSentence>
-        <DialogueONT:outputSentence xml:lang="es">¿Puede que haya interpretado mal el {Argument}?</DialogueONT:outputSentence>
+        <DialogueONT:outputSentence xml:lang="es">¿Me he equivocado con {Argument}?</DialogueONT:outputSentence>
+        <DialogueONT:outputSentence xml:lang="es">¿Puede que haya interpretado mal {Argument}?</DialogueONT:outputSentence>
     </owl:NamedIndividual>
     
 
@@ -269,8 +269,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_ArgNotCompatible">
         <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentNotCompatibleResponse"/>
-        <DialogueONT:outputSentence xml:lang="es">El {Argument} no es válido. ¿Puedes volverlo a intentar?</DialogueONT:outputSentence>
         <DialogueONT:outputSentence xml:lang="es">No puede ser {Argument}. ¿Puedes verificarlo?</DialogueONT:outputSentence>
+        <DialogueONT:outputSentence xml:lang="es">{Argument} no es válido. ¿Puedes volverlo a intentar?</DialogueONT:outputSentence>
     </owl:NamedIndividual>
     
 
@@ -325,7 +325,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_MissingArgs">
         <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#MissingArgumentsResponse"/>
-        <DialogueONT:outputSentence xml:lang="es">No he podido resolver tu petición. Me faltaría saber el {Argument}.</DialogueONT:outputSentence>
+        <DialogueONT:outputSentence xml:lang="es">No he podido resolver tu petición. Me faltaría saber {Argument}.</DialogueONT:outputSentence>
     </owl:NamedIndividual>
     
 
