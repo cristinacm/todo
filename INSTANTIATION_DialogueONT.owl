@@ -253,6 +253,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqYN_Reassure">
         <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ReassureFeedbackRequest"/>
+        <DialogueONT:outputSentence xml:lang="es">&quot;Entonces, quieres que {Action} {Argument}, ¿verdad?&quot;</DialogueONT:outputSentence>
     </owl:NamedIndividual>
     
 
