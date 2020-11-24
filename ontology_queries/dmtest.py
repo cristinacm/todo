@@ -13,27 +13,28 @@ import call_virtuoso as virtuoso
 	# freeling_tree_new = re.sub("\n", "@@@@", freeling_tree)
 	# return(freeling_tree_new)
 
-def call_KEE(user_request): #DONE-TESTED
+def call_freeling(user_request): #DONE-TESTED
 	#TODO: llamar freeling
 	freeling_URL = "http://10.0.0.194/FreelingServices/Freeling4"
 	params_FL = {"text":user_request, "port":"30020"}
 	freeling_tree = requests.post(freeling_URL, json.dumps(params_FL)).text
 	# freeling_tree_json = json.loads(sub_newline(freeling_tree))
 	freeling_tree_json = json.loads(freeling_tree)
-	# print(freeling_tree_json)
+	return(freeling_tree_json)
 
+def call_KEE(freeling_tree_json, user_request):
 	#TODO: lanzar request al KEE (falta servicio SRV)
 	kee_URL = "http://10.0.0.131:8087/interpretar_peticion_GMAO"
 	config = "GMAOES_config.xml"
 	cluster = "0"
 	params_kee = {"text":freeling_tree_json["analysis"], "command":user_request, "config":config, "cluster":cluster}
-	# print(params_kee)
-	# print(user_request)
+	#print(params_kee)
 	# print(type(json.loads(params_kee)))
 
 	key_elements = requests.post(kee_URL, json=params_kee)
 	key_elements.encoding = "utf-8"
-	return(key_elements.text)
+	#print(key_elements.text)
+	return(json.loads(key_elements.text))
 
 
 print(call_KEE("quiero ver el despiece de la máquina"))
