@@ -220,6 +220,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqYN_AlternativeArgSuggestion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqYN_AlternativeArgSuggestion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#AlternativeArgumentSuggestionRequest"/>
+        <DialogueONT:outputSentence xml:lang="es">No encuentro ningún/a {Item} con {Complement} como {argumentTag}, pero puedo sugerir {IDval_AlternativeItem}, que sí que tiene. ¿Le llevo ahí?</DialogueONT:outputSentence>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqYN_ArgAssignation -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqYN_ArgAssignation">
