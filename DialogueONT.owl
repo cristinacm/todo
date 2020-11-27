@@ -411,7 +411,7 @@
         <rdfs:comment xml:lang="es">Request that arises when the system has not been able to obtain an argument through an item + complement. The system suggests an alternative that contains the complement in the request.</rdfs:comment>
         <skos:example xml:lang="es">Request: &quot;Llévame a un laboratorio con micrófono&quot;.
 
-&quot;No encuentro ningún/a {Item} con {Complement} como {argumentTag}, pero te puedo sugerir {IDval_AlternativeItem}, que sí que tiene. ¿Te llevo ahí?&quot;
+&quot;No encuentro ningún/a {Item} con {Complement} como {argumentTag}, pero puedo sugerir {IDval_AlternativeItem}, que sí que tiene. ¿Le llevo ahí?&quot;
 
 &quot;No encuentro ningún/a {laboratorio} con {micrófono} como {el destino al que quiere que le lleve}, pero puedo sugerir {sala de reunión 1}, que sí que tiene. ¿Le llevo ahí?&quot;</skos:example>
         <skos:example xml:lang="en">Request: &quot;Take me to a laboratory with microphone&quot;.
