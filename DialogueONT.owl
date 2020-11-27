@@ -383,6 +383,46 @@
     
 
 
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ActionDisambiguationRequest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ActionDisambiguationRequest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#YesNoRequest"/>
+        <rdfs:comment xml:lang="en">Request that makes the user choose from a set of Actions obtained through inference.</rdfs:comment>
+        <skos:example xml:lang="en">&quot;I couldn&apos;t resolve the action from your request. Do you want to {ActionTag}?
+
+&quot;I couldn&apos;t resolve the action from your request. Do you want to {go somewhere}?</skos:example>
+        <skos:example xml:lang="es">&quot;No he podido resolver la acción de tu petición. ¿Quieres {ActionTag}?
+
+&quot;No he podido resolver la acción de tu petición. ¿Quieres {que te lleve a algún sitio}?</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#AlternativeArgumentSuggestionRequest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#AlternativeArgumentSuggestionRequest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#YesNoRequest"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#implies"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentRequest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="es">Request that arises when the system has not been able to obtain an argument through an item + complement. The system suggests an alternative that contains the complement in the request.</rdfs:comment>
+        <skos:example xml:lang="es">Request: &quot;Llévame a un laboratorio con micrófono&quot;.
+
+&quot;No encuentro ningún/a {Item} con {Complement} como {argumentTag}, pero te puedo sugerir {IDval_AlternativeItem}, que sí que tiene. ¿Te llevo ahí?&quot;
+
+&quot;No encuentro ningún/a {laboratorio} con {micrófono} como {el destino al que quiere que le lleve}, pero puedo sugerir {sala de reunión 1}, que sí que tiene. ¿Le llevo ahí?&quot;</skos:example>
+        <skos:example xml:lang="en">Request: &quot;Take me to a laboratory with microphone&quot;.
+
+&quot;I cannot find any {Item} with {Complement} as {ArgumentTag}, but I can suggest {IDval_AlternativeItem}, which it does have it. Do you want me to take you there?&quot;
+
+&quot;I cannot find any {laboratory} with {microphone} as {the destination you want to go}, but I can suggest {meeting room 1}, which it does have it. Do you want me to take you there?&quot;</skos:example>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentAssignationRequest -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentAssignationRequest">
