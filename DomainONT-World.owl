@@ -131,17 +131,17 @@
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-World#contains -->
+    <!-- http://purl.org/dc/terms/hasPart -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-World#contains">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-World#isContainedBy"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/hasPart">
+        <owl:inverseOf rdf:resource="http://purl.org/dc/terms/isPartOf"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-World#isContainedBy -->
+    <!-- http://purl.org/dc/terms/isPartOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-World#isContainedBy"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/isPartOf"/>
     
 
 
