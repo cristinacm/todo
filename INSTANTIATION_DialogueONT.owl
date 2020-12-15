@@ -1,34 +1,34 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst"
      xml:base="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst"
-     xmlns:ns="http://creativecommons.org/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:prov="http://www.w3.org/ns/prov#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:ns="http://creativecommons.org/ns#"
      xmlns:pmofn="http://premon.fbk.eu/ontology/fn#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:ontolex="http://www.w3.org/ns/lemon/ontolex#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:DialogueONT="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst">
         <owl:imports rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT"/>
-        <ns:license></ns:license>
-        <terms:contributor></terms:contributor>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-21T00:00:00</terms:created>
-        <terms:creator></terms:creator>
-        <terms:description></terms:description>
-        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></terms:issued>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></terms:modified>
-        <terms:title></terms:title>
+        <owl:versionIRI></owl:versionIRI>
+        <terms:contributor></terms:contributor>
+        <owl:versionInfo>0.1.0</owl:versionInfo>
+        <ns:license></ns:license>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></terms:issued>
         <vann:preferredNamespacePrefix></vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri></vann:preferredNamespaceUri>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-21T00:00:00</terms:created>
+        <terms:creator></terms:creator>
+        <terms:title></terms:title>
         <owl:priorVersion></owl:priorVersion>
-        <owl:versionIRI></owl:versionIRI>
-        <owl:versionInfo>0.1.0</owl:versionInfo>
+        <terms:description></terms:description>
     </owl:Ontology>
     
 
@@ -169,6 +169,35 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#Dialogue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#Dialogue"/>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#MainDialogue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#MainDialogue"/>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SecondaryDialogue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SecondaryDialogue"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Individuals
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -224,7 +253,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqYN_AlternativeArgSuggestion">
         <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#AlternativeArgumentSuggestionRequest"/>
-        <DialogueONT:outputSentence xml:lang="es">No encuentro ningún/a {Item} con {Complement} como {argumentTag}, pero puedo sugerir {IDval_AlternativeItem}, que sí que tiene. ¿Le llevo ahí?</DialogueONT:outputSentence>
+        <DialogueONT:outputSentence xml:lang="es">No encuentro ningún/a {Item} con {Complement} como {argumentTag}, pero puedo sugerir {IDval_AlternativeItem}, que sí que tiene. ¿Te llevo ahí?</DialogueONT:outputSentence>
     </owl:NamedIndividual>
     
 
@@ -271,7 +300,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqYN_Reassure">
         <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ReassureFeedbackRequest"/>
-        <DialogueONT:outputSentence xml:lang="es">&quot;Entonces, quieres que {Action} {Argument}, ¿verdad?&quot;</DialogueONT:outputSentence>
+        <DialogueONT:outputSentence xml:lang="es">Entonces, quieres que {Action} {ArgumentConnector} {Argument}, ¿verdad?</DialogueONT:outputSentence>
     </owl:NamedIndividual>
     
 
@@ -335,7 +364,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_ItemNotCompatibleAnyArg">
         <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ItemNotCompatibleAnyArgResponse"/>
-        <DialogueONT:outputSentence xml:lang="es">El item {item} no es compatible con ningún argumento de la acción. ¿Puedes revisar tu petición?</DialogueONT:outputSentence>
+        <DialogueONT:outputSentence xml:lang="es">{item} no es compatible con ningún argumento de la acción. ¿Puedes revisar tu petición?</DialogueONT:outputSentence>
     </owl:NamedIndividual>
     
 
@@ -372,7 +401,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_TooManyArgumentOptions">
         <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#TooManyArgumentOptionsResponse"/>
-        <DialogueONT:outputSentence xml:lang="es">¡El item {item} puede asociarse a varios argumentos! ¿Puedes repetir y ser más específico, por favor?</DialogueONT:outputSentence>
+        <DialogueONT:outputSentence xml:lang="es">¡{item} puede asociarse a varios argumentos! ¿Puedes repetir y ser más específico, por favor?</DialogueONT:outputSentence>
     </owl:NamedIndividual>
     
 
@@ -412,5 +441,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
 
