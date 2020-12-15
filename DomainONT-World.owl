@@ -145,20 +145,6 @@
     
 
 
-    <!-- http://tekniker.robotassistant.es/isMemberOf -->
-
-    <owl:ObjectProperty rdf:about="http://tekniker.robotassistant.es/isMemberOf">
-        <owl:inverseOf rdf:resource="http://xmlns.com/foaf/0.1/Member"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://xmlns.com/foaf/0.1/Member -->
-
-    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/Member"/>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -167,12 +153,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-World#WorldElementGroup -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-World#WorldElementGroup"/>
     
 
 
