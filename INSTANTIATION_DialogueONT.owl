@@ -169,35 +169,6 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#Dialogue -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#Dialogue"/>
-    
-
-
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#MainDialogue -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#MainDialogue"/>
-    
-
-
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SecondaryDialogue -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SecondaryDialogue"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
     // Individuals
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -209,7 +180,7 @@
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#Dialogue1 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#Dialogue1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#Dialogue"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#DialogueTrace"/>
     </owl:NamedIndividual>
     
 
@@ -217,7 +188,7 @@
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#MainDialogue1 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#MainDialogue1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#MainDialogue"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#MainDialogueTrace"/>
     </owl:NamedIndividual>
     
 
@@ -272,6 +243,15 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentSpecifyRequest"/>
         <DialogueONT:outputSentence xml:lang="es">Hay muchas alternativas para lo que me has dicho. ¿Es {Argument}?</DialogueONT:outputSentence>
         <DialogueONT:outputSentence xml:lang="es">¡Lo que me has dicho podría ser varias cosas! ¿Es {Argument}?</DialogueONT:outputSentence>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqYN_ArgumentDisambiguation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqYN_ArgumentDisambiguation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentValueDisambiguationRequest"/>
+        <DialogueONT:outputSentence xml:lang="es">Tengo varias opciones para tu comando. ¿Quieres {Action} {ArgumentConnector} {WorldElement}?</DialogueONT:outputSentence>
     </owl:NamedIndividual>
     
 
@@ -427,7 +407,7 @@
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SecondaryDialogue1 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SecondaryDialogue1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SecondaryDialogue"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SecondaryDialogueTrace"/>
     </owl:NamedIndividual>
     
 
@@ -435,7 +415,7 @@
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SecondaryDialogue2 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SecondaryDialogue2">
-        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SecondaryDialogue"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SecondaryDialogueTrace"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 

@@ -697,6 +697,21 @@ USR: &quot;Yes&quot;</skos:example>
     
 
 
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentValueDisambiguationRequest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentValueDisambiguationRequest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#YesNoRequest"/>
+        <rdfs:comment xml:lang="en">Request that tries to obtain the value of the argument when it is ambiguous (e.g. &quot;sala&quot; may apply to &quot;sala Ura&quot;, &quot;sala Sua&quot;, etc.).</rdfs:comment>
+        <skos:example xml:lang="en">I have many options for your request. Do you want {Action} {ArgumentConnector} {WorldElement}?
+
+I have many options for your request. Do you want {to go} {to} {Sala Ura}?</skos:example>
+        <skos:example xml:lang="es">Tengo varias opciones para tu comando. ¿Quieres {Action} {ArgumentConnector} {WorldElement}?
+
+Tengo varias opciones para tu comando. ¿Quieres {que te guíe} {a} {Sala Ura}?</skos:example>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#CannotResolveActionResponse -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#CannotResolveActionResponse">
