@@ -1159,6 +1159,21 @@ No he podido resolver tu petición. Me faltaría saber el {Origen}.</skos:exampl
     
 
 
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#TooManyWorldElementOptionsResponse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#TooManyWorldElementOptionsResponse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
+        <rdfs:comment xml:lang="en">Response given when the Item provided corresponds to a list of possible WorldElements that is too big.</rdfs:comment>
+        <skos:example xml:lang="en">&quot;I have too many options taking into account the information you provided to me. Could you please be more specific with {ArgTag}?&quot;
+
+&quot;I have too many options taking into account the information you provided to me. Could you please be more specific with {the destination you want me to take you}?&quot;</skos:example>
+        <skos:example xml:lang="es">&quot;Tengo demasiadas opciones con la información que me has dado. ¿Puedes ser un poco más específico con el {ArgTag}?&quot;
+
+&quot;Tengo demasiadas opciones con la información que me has dado. ¿Puedes ser un poco más específico con el {destino al que quieres que te guíe}?&quot;</skos:example>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UnderstoodResponse -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UnderstoodResponse">
