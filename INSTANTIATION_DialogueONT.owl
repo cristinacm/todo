@@ -390,7 +390,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_TooManyWorldElementOptions">
         <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#TooManyWorldElementOptionsResponse"/>
-        <DialogueONT:outputSentence xml:lang="es">Tengo demasiadas opciones con la información que me has dado. ¿Puedes ser un poco más específico con el {ArgTag}?</DialogueONT:outputSentence>
+        <DialogueONT:outputSentence xml:lang="es">Tengo demasiadas opciones con la información que me has dado. ¿Puedes ser un poco más específico con el {ArgTag}? Para que tengas una referencia, un ejemplo podría ser {PossibleValue}.</DialogueONT:outputSentence>
     </owl:NamedIndividual>
     
 
