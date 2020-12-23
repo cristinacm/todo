@@ -565,6 +565,21 @@ For example, the user would require a &quot;piece&quot;, and the system includes
     
 
 
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentClarificationRequest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentClarificationRequest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ContentRequest"/>
+        <rdfs:comment xml:lang="en">Request that asks the user for some clarification for the value of an argument when a previously saved value generates too many options.</rdfs:comment>
+        <skos:example xml:lang="es">&quot;Could you please be more specific with {ArgTag}?&quot;
+
+&quot;Could you please be more specific with {the destination you want me to take you}?&quot;</skos:example>
+        <skos:example xml:lang="es">&quot;¿Puedes ser un poco más específico con el {ArgTag}?&quot;
+
+&quot;¿Puedes ser un poco más específico con el {destino al que quieres que te guíe}?&quot;</skos:example>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentExplanationResponse -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentExplanationResponse">
@@ -971,6 +986,43 @@ No he podido resolver tu petición. Me faltaría saber el {Origen}.</skos:exampl
     
 
 
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#NoMoreOptionsContinueResponse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#NoMoreOptionsContinueResponse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
+        <rdfs:comment xml:lang="en">Response that the system displays when it runs out of options. It is intended to continue with a full request of the element that the previous options corresponded to.</rdfs:comment>
+        <skos:example xml:lang="en">I do not have more options to offer you!</skos:example>
+        <skos:example xml:lang="es">¡No tengo más opciones que mostrarte!</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#NoMoreOptionsRestartResponse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#NoMoreOptionsRestartResponse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
+        <rdfs:comment xml:lang="en">Response that the system displays when it runs out of options. It finishes the current Dialogue.</rdfs:comment>
+        <skos:example xml:lang="en">I do not have more options to offer you! Can you reformulate your command so I can understand better?</skos:example>
+        <skos:example xml:lang="es">¡No tengo más opciones que mostrarte! ¿Puedes reformular tu comando para que te entienda mejor?</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#NoResultsClarification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#NoResultsClarification">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
+        <rdfs:comment xml:lang="en">Response that the system returns when the clarification step of the value of an Argument does not return any results.</rdfs:comment>
+        <skos:example xml:lang="en">I cannot find anything that corresponds to your demand. Can you repeat {Argument} again, please?
+
+I cannot find anything that corresponds to your demand. Can you repeat {the destination you want me to take you} again, please?</skos:example>
+        <skos:example xml:lang="es">No encuentro ningún elemento que responda a lo que me pides. ¿Puedes volver a repetir el {Argument}?
+
+No encuentro ningún elemento que responda a lo que me pides. ¿Puedes volver a repetir el {destino al que quieres que te guíe}?</skos:example>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#NoUserResponse -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#NoUserResponse">
@@ -1153,8 +1205,8 @@ No he podido resolver tu petición. Me faltaría saber el {Origen}.</skos:exampl
     <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#TooManyArgumentOptionsResponse">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
         <rdfs:comment xml:lang="en">Response that the system gives when an item can be associated to more than one argument.</rdfs:comment>
-        <skos:example xml:lang="en">The item {item} can be associated to many arguments! Can you please repeat and be more specific?</skos:example>
-        <skos:example xml:lang="es">¡El item {item} puede asociarse a varios argumentos! ¿Puedes repetir y ser más específico, por favor?</skos:example>
+        <skos:example xml:lang="en">The item {item} can be associated to many arguments!</skos:example>
+        <skos:example xml:lang="es">¡El item {item} puede asociarse a varios argumentos!</skos:example>
     </owl:Class>
     
 
@@ -1164,12 +1216,12 @@ No he podido resolver tu petición. Me faltaría saber el {Origen}.</skos:exampl
     <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#TooManyWorldElementOptionsResponse">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
         <rdfs:comment xml:lang="en">Response given when the Item provided corresponds to a list of possible WorldElements that is too big.</rdfs:comment>
-        <skos:example xml:lang="en">&quot;I have too many options taking into account the information you provided to me. Could you please be more specific with {ArgTag}?&quot;
+        <skos:example xml:lang="en">&quot;I have too many options taking into account the information you provided to me.&quot;
 
-&quot;I have too many options taking into account the information you provided to me. Could you please be more specific with {the destination you want me to take you}?&quot;</skos:example>
-        <skos:example xml:lang="es">&quot;Tengo demasiadas opciones con la información que me has dado. ¿Puedes ser un poco más específico con el {ArgTag}?&quot;
+&quot;I have too many options taking into account the information you provided to me.&quot;</skos:example>
+        <skos:example xml:lang="es">&quot;Tengo demasiadas opciones con la información que me has dado.&quot;
 
-&quot;Tengo demasiadas opciones con la información que me has dado. ¿Puedes ser un poco más específico con el {destino al que quieres que te guíe}?&quot;</skos:example>
+&quot;Tengo demasiadas opciones con la información que me has dado.&quot;</skos:example>
     </owl:Class>
     
 
