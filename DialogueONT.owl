@@ -284,14 +284,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#compl -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#compl">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#currentValue -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#currentValue"/>
@@ -420,14 +412,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#item -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#item">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#outputSentence -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#outputSentence"/>
@@ -437,12 +421,6 @@
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#possibleValue -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#possibleValue"/>
-    
-
-
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#prep -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#prep"/>
     
 
 
