@@ -1262,6 +1262,17 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
     
 
 
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#TooManyActionOptions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#TooManyActionOptions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
+        <rdfs:comment xml:lang="en">Response given when the number of possible Actions is too big.</rdfs:comment>
+        <skos:example xml:lang="en">Your command can be associated to too many actions! Can you repeat and be more specific, please?</skos:example>
+        <skos:example xml:lang="es">¡Tu comando se puede asociar a demasiadas acciones! ¿Puedes repetir y ser un poco más específico, por favor?</skos:example>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#TooManyAlternativesResponse -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#TooManyAlternativesResponse">
@@ -1279,6 +1290,28 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
         <skos:example xml:lang="es">&quot;Tengo demasiadas opciones con la información que me has dado.&quot;
 
 &quot;Tengo demasiadas opciones con la información que me has dado.&quot;</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#TooManyArgumentOptionsResponse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#TooManyArgumentOptionsResponse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
+        <skos:example xml:lang="en">Response given when the number of possible Arguments is too big.</skos:example>
+        <skos:example xml:lang="en">Your command can be associated to too many arguments! Can you repeat and be more specific, please?</skos:example>
+        <skos:example xml:lang="es">¡Tu comando se puede asociar a demasiados argumentos! ¿Puedes repetir y ser un poco más específico, por favor?</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#TooManyWorldElementOptionsResponse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#TooManyWorldElementOptionsResponse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
+        <rdfs:comment xml:lang="en">Response given when the number of possible World Elements is too big.</rdfs:comment>
+        <skos:example xml:lang="en">Your command can be associated to too many elements! Can you repeat and be more specific, please?</skos:example>
+        <skos:example xml:lang="es">¡Tu comando se puede asociar a demasiados elementos! ¿Puedes repetir y ser un poco más específico, por favor?</skos:example>
     </owl:Class>
     
 
