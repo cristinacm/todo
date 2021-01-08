@@ -169,6 +169,35 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#TooManyActionOptionsResponse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#TooManyActionOptionsResponse"/>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#TooManyArgumentOptionsResponse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#TooManyArgumentOptionsResponse"/>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#TooManyWorldElementOptionsResponse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#TooManyWorldElementOptionsResponse"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Individuals
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -220,11 +249,41 @@
     
 
 
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqCont_RepeatArgument -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqCont_RepeatArgument">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#RepeatArgumentRequest"/>
+        <DialogueONT:outputSentence xml:lang="es">¿Me puedes decir de nuevo {ArgTag}?</DialogueONT:outputSentence>
+        <DialogueONT:outputSentence xml:lang="es">¿Puedes repetir {ArgTag}?</DialogueONT:outputSentence>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqCont_UserCommand -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqCont_UserCommand">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UserCommandRequest"/>
+        <DialogueONT:outputSentence xml:lang="es">Dame tu comando.</DialogueONT:outputSentence>
+        <DialogueONT:outputSentence xml:lang="es">¿En qué puedo ayudarte?</DialogueONT:outputSentence>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqCont_VerifyInfo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqCont_VerifyInfo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#VerifyInfoRequest"/>
+        <DialogueONT:outputSentence xml:lang="es">¿Puedes verificarlo?</DialogueONT:outputSentence>
+        <DialogueONT:outputSentence xml:lang="es">¿Puedes volverlo a intentar?</DialogueONT:outputSentence>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqYN_ActionDisambiguation -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqYN_ActionDisambiguation">
         <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ActionDisambiguationRequest"/>
-        <DialogueONT:outputSentence xml:lang="es">No he podido resolver la acción de tu petición. ¿Quieres {ActionTag}?</DialogueONT:outputSentence>
+        <DialogueONT:outputSentence xml:lang="es">¿Quieres {ActionTag}?</DialogueONT:outputSentence>
     </owl:NamedIndividual>
     
 
@@ -242,6 +301,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqYN_ArgAssignation">
         <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentAssignationRequest"/>
+        <DialogueONT:outputSentence xml:lang="es">El {ArgTag} es {ArgValue}, ¿verdad?</DialogueONT:outputSentence>
     </owl:NamedIndividual>
     
 
@@ -250,8 +310,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqYN_ArgSpecify">
         <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentSpecifyRequest"/>
-        <DialogueONT:outputSentence xml:lang="es">Hay muchas alternativas para lo que me has dicho. ¿Es {Argument}?</DialogueONT:outputSentence>
-        <DialogueONT:outputSentence xml:lang="es">¡Lo que me has dicho podría ser varias cosas! ¿Es {Argument}?</DialogueONT:outputSentence>
+        <DialogueONT:outputSentence xml:lang="es">¿Es {ArgTag}?</DialogueONT:outputSentence>
+        <DialogueONT:outputSentence xml:lang="es">¿Te refieres a {ArgTag}?</DialogueONT:outputSentence>
     </owl:NamedIndividual>
     
 
@@ -260,7 +320,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqYN_ArgumentDisambiguation">
         <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentValueDisambiguationRequest"/>
-        <DialogueONT:outputSentence xml:lang="es">Tengo varias opciones para tu comando. ¿Quieres {Action} {ArgumentConnector} {WorldElement}?</DialogueONT:outputSentence>
+        <DialogueONT:outputSentence xml:lang="es">¿Quieres {Action} {ArgumentConnector} {WorldElement}?</DialogueONT:outputSentence>
     </owl:NamedIndividual>
     
 
@@ -269,8 +329,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqYN_IncorrectArg">
         <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#IncorrectArgumentRequest"/>
-        <DialogueONT:outputSentence xml:lang="es">¿Me he equivocado con {Argument}?</DialogueONT:outputSentence>
-        <DialogueONT:outputSentence xml:lang="es">¿Puede que haya interpretado mal {Argument}?</DialogueONT:outputSentence>
+        <DialogueONT:outputSentence xml:lang="es">¿Me he equivocado con {ArgTag}?</DialogueONT:outputSentence>
+        <DialogueONT:outputSentence xml:lang="es">¿Puede que haya interpretado mal {ArgTag}?</DialogueONT:outputSentence>
     </owl:NamedIndividual>
     
 
@@ -294,20 +354,20 @@
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_ArgExplanation -->
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_ActionOptions -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_ArgExplanation">
-        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentExplanationResponse"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_ActionOptions">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ActionOptionsResponse"/>
+        <DialogueONT:outputSentence xml:lang="es">Hay varias acciones que podrían corresponderse con tu comando.</DialogueONT:outputSentence>
+        <DialogueONT:outputSentence xml:lang="es">¡El comando puede asociarse a varias acciones!</DialogueONT:outputSentence>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_ArgNotCompatible -->
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_ArgExplanation -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_ArgNotCompatible">
-        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentNotCompatibleResponse"/>
-        <DialogueONT:outputSentence xml:lang="es">No puede ser {Argument}. ¿Puedes verificarlo?</DialogueONT:outputSentence>
-        <DialogueONT:outputSentence xml:lang="es">{Argument} no es válido. ¿Puedes volverlo a intentar?</DialogueONT:outputSentence>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_ArgExplanation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentExplanationResponse"/>
     </owl:NamedIndividual>
     
 
@@ -320,11 +380,39 @@
     
 
 
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_ArgumentNotCompatible -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_ArgumentNotCompatible">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentNotCompatibleResponse"/>
+        <DialogueONT:outputSentence xml:lang="es">No puede ser {Argument}.</DialogueONT:outputSentence>
+        <DialogueONT:outputSentence xml:lang="es">{Argument} no es válido.</DialogueONT:outputSentence>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_ArgumentOptions -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_ArgumentOptions">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentOptionsResponse"/>
+        <DialogueONT:outputSentence xml:lang="es">¡{Item} puede asociarse a varios argumentos!</DialogueONT:outputSentence>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_CannotResolveAction -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_CannotResolveAction">
         <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#CannotResolveActionResponse"/>
         <DialogueONT:outputSentence xml:lang="es">No he podido asociar tu comando a una acción. ¿Puedes repetir y ser más específico, por favor?</DialogueONT:outputSentence>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_CannotResolveCommand -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_CannotResolveCommand">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#CannotResolveCommandResponse"/>
+        <DialogueONT:outputSentence xml:lang="es">No he podido resolver tu petición.</DialogueONT:outputSentence>
     </owl:NamedIndividual>
     
 
@@ -343,8 +431,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_Greeting">
         <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#GreetingResponse"/>
-        <DialogueONT:outputSentence xml:lang="es">Bienvenido a {SystemName}. ¿En qué puedo ayudarte?</DialogueONT:outputSentence>
-        <DialogueONT:outputSentence xml:lang="es">¡Hola! Soy {SystemName}. Encantado de ayudarte. ¿Qué necesitas?</DialogueONT:outputSentence>
+        <DialogueONT:outputSentence xml:lang="es">Bienvenido a {SystemName}. Encantado de ayudarte.</DialogueONT:outputSentence>
+        <DialogueONT:outputSentence xml:lang="es">¡Hola! Soy {SystemName}. Encantado de ayudarte.</DialogueONT:outputSentence>
     </owl:NamedIndividual>
     
 
@@ -353,16 +441,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_ItemNotCompatibleAnyArg">
         <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ItemNotCompatibleAnyArgResponse"/>
-        <DialogueONT:outputSentence xml:lang="es">{item} no es compatible con ningún argumento de la acción. ¿Puedes revisar tu petición?</DialogueONT:outputSentence>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_MissingArgs -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_MissingArgs">
-        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#MissingArgumentsResponse"/>
-        <DialogueONT:outputSentence xml:lang="es">No he podido resolver tu petición. Me faltaría saber {Argument}.</DialogueONT:outputSentence>
+        <DialogueONT:outputSentence xml:lang="es">{item} no es compatible con ningún argumento de la acción.</DialogueONT:outputSentence>
     </owl:NamedIndividual>
     
 
@@ -388,8 +467,8 @@
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_NoResultsClarification -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_NoResultsClarification">
-        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#NoResultsClarification"/>
-        <DialogueONT:outputSentence xml:lang="es">No encuentro ningún elemento que responda a lo que me pides. Necesitaría que repitieras.</DialogueONT:outputSentence>
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#NoResultsClarificationResponse"/>
+        <DialogueONT:outputSentence xml:lang="es">No encuentro ningún elemento que responda a lo que me pides.</DialogueONT:outputSentence>
     </owl:NamedIndividual>
     
 
@@ -404,6 +483,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_OptionsAvailable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_OptionsAvailable">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#OptionsAvailableResponse"/>
+        <DialogueONT:outputSentence xml:lang="es">Tengo varias opciones para tu comando.</DialogueONT:outputSentence>
+        <DialogueONT:outputSentence xml:lang="es">¡Lo que me has dicho puede ser varias cosas!</DialogueONT:outputSentence>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_TooManyActionOptions -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_TooManyActionOptions">
@@ -413,11 +502,22 @@
     
 
 
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_TooManyAlternatives -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_TooManyAlternatives">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#TooManyAlternativesResponse"/>
+        <DialogueONT:outputSentence xml:lang="es">Hay muchas alternativas para lo que me has dicho.</DialogueONT:outputSentence>
+        <DialogueONT:outputSentence xml:lang="es">Tengo demasiadas opciones con la información que me has dado.</DialogueONT:outputSentence>
+        <DialogueONT:outputSentence xml:lang="es">¡Lo que me has dicho podría ser demasiadas cosas!</DialogueONT:outputSentence>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_TooManyArgumentOptions -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_TooManyArgumentOptions">
         <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#TooManyArgumentOptionsResponse"/>
-        <DialogueONT:outputSentence xml:lang="es">¡{item} puede asociarse a varios argumentos!</DialogueONT:outputSentence>
+        <DialogueONT:outputSentence xml:lang="es">¡{item} puede asociarse a varios argumentos! ¿Puedes repetir y ser un poco más específico, por favor?</DialogueONT:outputSentence>
     </owl:NamedIndividual>
     
 
@@ -435,6 +535,15 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_Understood">
         <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UnderstoodResponse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_ValueNotCompatibleArgument -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_ValueNotCompatibleArgument">
+        <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ValueNotCompatibleWithArgumentResponse"/>
+        <DialogueONT:outputSentence xml:lang="es">No puede ser {ArgTag}.</DialogueONT:outputSentence>
     </owl:NamedIndividual>
     
 
