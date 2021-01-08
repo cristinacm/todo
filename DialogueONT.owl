@@ -458,12 +458,32 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Request that makes the user choose from a set of Actions obtained through inference.</rdfs:comment>
-        <skos:example xml:lang="en">&quot;I couldn&apos;t resolve the action from your request. Do you want to {ActionTag}?
+        <skos:example xml:lang="en">[Previous SysResp: &quot;I couldn&apos;t resolve the action from your request&quot;.]
+&quot;Do you want to {ActionTag}?
 
-&quot;I couldn&apos;t resolve the action from your request. Do you want to {go somewhere}?</skos:example>
-        <skos:example xml:lang="es">&quot;No he podido resolver la acción de tu petición. ¿Quieres {ActionTag}?
+&quot;Do you want to {go somewhere}?</skos:example>
+        <skos:example xml:lang="es">[Previous SysResp: &quot;No he podido resolver la acción a partir de tu petición&quot;]
 
-&quot;No he podido resolver la acción de tu petición. ¿Quieres {que te lleve a algún sitio}?</skos:example>
+&quot;¿Quieres {ActionTag}?
+
+&quot;¿Quieres {que te lleve a algún sitio}?&quot;</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ActionOptionsResponse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ActionOptionsResponse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#implies"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ActionDisambiguationRequest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Response that the system gives when a command can be associated to more than one action.</rdfs:comment>
+        <skos:example xml:lang="en">Your command can be associated to many actions!</skos:example>
+        <skos:example xml:lang="es">¡El comando puede asociarse a varias acciones!</skos:example>
     </owl:Class>
     
 
@@ -580,17 +600,17 @@ For example, the user would require a &quot;piece&quot;, and the system includes
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#implies"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentRequest"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#VerifyInfoRequest"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">The system informs the user the Argument value provided is not valid according to what has been modelled in the KB.</rdfs:comment>
         <rdfs:comment xml:lang="en">This would imply an ArgumentRequest.</rdfs:comment>
-        <skos:example xml:lang="en">&quot;{ArgumentValue} cannot be the {Argument}. Can you check it?&quot;
+        <skos:example xml:lang="en">&quot;{ArgumentValue} cannot be the {Argument}.&quot;
 
-&quot;{Toilet} cannot be the {Error}. Can you check it?&quot;</skos:example>
-        <skos:example xml:lang="es">&quot;{ArgumentValue} no puede ser {Argument}. ¿Puedes verificarlo?&quot;
+&quot;{Toilet} cannot be the {Error}.&quot;</skos:example>
+        <skos:example xml:lang="es">&quot;{ArgumentValue} no puede ser {Argument}.&quot;
 
-&quot;{Baño} no puede ser {Error}. ¿Puedes verificarlo?&quot;</skos:example>
+&quot;{Baño} no puede ser {Error}.&quot;</skos:example>
     </owl:Class>
     
 
@@ -602,23 +622,34 @@ For example, the user would require a &quot;piece&quot;, and the system includes
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#implies"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentCharacteristicRequest"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#implies"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentRequest"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Response given when the system has not been able to guess the value of the Argument through its characteristics.</rdfs:comment>
         <rdfs:comment xml:lang="en">This would imply an ArgumentRequest/ArgumentCharacteristicRequest</rdfs:comment>
-        <skos:example xml:lang="es">&quot;Con las características que me has dado, no he podido averiguar el {Argument}. ¿Puedes verificar alguna de las informaciones que te he pedido para volverlo a intentar?&quot;
+        <skos:example xml:lang="es">&quot;Con las características que me has dado, no he podido averiguar el {Argument}.&quot;
 
-&quot;Con las características que me has dado, no he podido averiguar el {Error}. ¿Puedes verificar alguna de las informaciones que te he pedido para volverlo a intentar?&quot;</skos:example>
-        <skos:example xml:lang="es">&quot;I cannot guess the {Argument} with the information you provided. Could you check any of the characteristics I have requested and try again?&quot;
+&quot;Con las características que me has dado, no he podido averiguar el {Error}.&quot;</skos:example>
+        <skos:example xml:lang="es">&quot;I cannot guess the {Argument} with the information you provided.&quot;
 
-&quot;I cannot guess the {Error} with the information you provided. Could you check any of the characteristics I have requested and try again?&quot;</skos:example>
+&quot;I cannot guess the {Error} with the information you provided.&quot;</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentOptionsResponse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentOptionsResponse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#implies"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentSpecifyRequest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Response that the system gives when an item can be associated to more than one argument.</rdfs:comment>
+        <skos:example xml:lang="en">The item {item} can be associated to many arguments!</skos:example>
+        <skos:example xml:lang="es">¡El item {item} puede asociarse a varios argumentos!</skos:example>
     </owl:Class>
     
 
@@ -661,31 +692,20 @@ For example, the user would require a &quot;piece&quot;, and the system includes
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Request made when a value for an Argument can belong to different Arguments. The strategy is asking for each Argument option until the user confirms.</rdfs:comment>
-        <skos:example xml:lang="es">Situation: the value &quot;Mesa de reparación&quot; could be Origin or Destination
+        <skos:example xml:lang="es">[Situation: the value &quot;Mesa de reparación&quot; could be Origin or Destination]
 
-&quot;¡{Argument_value} podría ser varias cosas! ¿Es el {Argument}?&quot;
-&quot;¿Podría {argument_value; pronoun?} ser el {Argument}?
+[Previous SysResponse: &quot;¡Lo que me has dicho podría ser varias cosas!&quot;]
 
-SYS: &quot;¡{&quot;Mesa de reparación&quot;} podría ser varias cosas! ¿Es el {Origen}?&quot;
+&quot;¿Es {el lugar al que quieres que te lleve}?&quot;
 
-USR: &quot;No&quot;
+&quot;¿Es {Argument}?&quot;</skos:example>
+        <skos:example xml:lang="en">[Situation: the value &quot;Repairing table&quot; could be Origin or Destination]
 
-SYS: &quot;¿Podría {eso} ser el {Destino}?
+[Previous SysResponse: &quot;What you told me could correspond to many elements!&quot;]
 
-USR: &quot;Sí&quot;</skos:example>
-        <skos:example xml:lang="en">Situation: the value &quot;Repairing table&quot; could be Origin or Destination
+&quot;Is it {the place you want me to take you}?&quot;
 
-&quot;{Argument_value} could be quite a few things! Is it the {Argument}?&quot;
-&quot;Could {Argument_value; pronoun?} be the {Argument}?
-
-
-SYS: &quot;{&quot;Repairing table&quot;} could be quite a few things! Is it the {Origin}?&quot;
-
-USR: &quot;No&quot;
-
-SYS: &quot;Could {it} be the {Destination}?&quot;
-
-USR: &quot;Yes&quot;</skos:example>
+&quot;Is it {Argument}?&quot;</skos:example>
     </owl:Class>
     
 
@@ -695,12 +715,12 @@ USR: &quot;Yes&quot;</skos:example>
     <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentValueDisambiguationRequest">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#YesNoRequest"/>
         <rdfs:comment xml:lang="en">Request that tries to obtain the value of the argument when it is ambiguous (e.g. &quot;sala&quot; may apply to &quot;sala Ura&quot;, &quot;sala Sua&quot;, etc.).</rdfs:comment>
-        <skos:example xml:lang="en">I have many options for your request. Do you want {Action} {ArgumentConnector} {WorldElement}?
+        <skos:example xml:lang="en">&quot;Do you want {Action} {ArgumentConnector} {WorldElement}?&quot;
 
-I have many options for your request. Do you want {to go} {to} {Sala Ura}?</skos:example>
-        <skos:example xml:lang="es">Tengo varias opciones para tu comando. ¿Quieres {Action} {ArgumentConnector} {WorldElement}?
+&quot;Do you want {to go} {to} {Sala Ura}?&quot;</skos:example>
+        <skos:example xml:lang="es">&quot;¿Quieres {Action} {ArgumentConnector} {WorldElement}?&quot;
 
-Tengo varias opciones para tu comando. ¿Quieres {que te guíe} {a} {Sala Ura}?</skos:example>
+&quot;¿Quieres {que te guíe} {a} {Sala Ura}?&quot;</skos:example>
     </owl:Class>
     
 
@@ -709,9 +729,34 @@ Tengo varias opciones para tu comando. ¿Quieres {que te guíe} {a} {Sala Ura}?<
 
     <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#CannotResolveActionResponse">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#implies"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UserCommandRequest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Response that the system gives when it cannot associate an action/target to one or more actions.</rdfs:comment>
         <skos:example xml:lang="en">I couldn&apos;t associate your command to an action. Can you please be more specific?</skos:example>
         <skos:example xml:lang="es">No he podido asociar tu comando a una acción. ¿Puedes repetir y ser más específico, por favor?</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#CannotResolveCommandResponse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#CannotResolveCommandResponse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#implies"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentRequest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Response that informs the user that the command could not be resolved.
+
+[to be followed by an ArgRequest]</rdfs:comment>
+        <skos:example xml:lang="en">I could not resolve your command.</skos:example>
+        <skos:example xml:lang="es">No he podido resolver tu petición.</skos:example>
     </owl:Class>
     
 
@@ -842,13 +887,19 @@ Also known as &quot;Non polar/Open question&quot; in linguistics.</rdfs:comment>
 
     <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#GreetingResponse">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#implies"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UserCommandRequest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Welcome message.</rdfs:comment>
-        <skos:example xml:lang="en">&quot;Hi! I am {SystemName}. I am happy to help you. What do you need?&quot;
+        <skos:example xml:lang="en">&quot;Hi! I am {SystemName}. I am happy to help you.&quot;
 
-&quot;Hi! I am {Teknibot}. I am happy to help you. What do you need?&quot;</skos:example>
-        <skos:example xml:lang="es">&quot;¡Hola! Soy {SystemName}. Encantado de ayudarte. ¿Qué necesitas?&quot;
+&quot;Hi! I am {Teknibot}. I am happy to help you.&quot;</skos:example>
+        <skos:example xml:lang="es">&quot;¡Hola! Soy {SystemName}. Encantado de ayudarte.&quot;
 
-&quot;¡Hola! Soy {Teknibot}. Encantado de ayudarte. ¿Qué necesitas?&quot;</skos:example>
+&quot;¡Hola! Soy {Teknibot}. Encantado de ayudarte.&quot;</skos:example>
     </owl:Class>
     
 
@@ -918,8 +969,14 @@ USR: &quot;Sí&quot;</skos:example>
 
     <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ItemNotCompatibleAnyArgResponse">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
-        <rdfs:comment xml:lang="es">El item {item} no es compatible con ningún argumento de la acción. ¿Puedes revisar tu petición?</rdfs:comment>
-        <rdfs:comment xml:lang="en">The item {item} is not compatible with any argument for this action. Can you revise your command, please?</rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#implies"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#VerifyInfoRequest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="es">El item {item} no es compatible con ningún argumento de la acción.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The item {item} is not compatible with any argument for this action.</rdfs:comment>
         <rdfs:comment>The system informs the user the Item value provided is not compatible with any action argument, according to what has been modelled in the KB.</rdfs:comment>
     </owl:Class>
     
@@ -946,24 +1003,6 @@ USR: &quot;Sí&quot;</skos:example>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#MissingArgumentsResponse -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#MissingArgumentsResponse">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#implies"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentRequest"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="es">Response that enumerates the missing arguments from a UserRequest.</rdfs:comment>
-        <skos:example xml:lang="es">No he podido resolver tu petición. Me faltaría saber el {Argument}(n-times).
-
-No he podido resolver tu petición. Me faltaría saber el {Origen}.</skos:example>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#NoMoreOptionsContinueResponse -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#NoMoreOptionsContinueResponse">
@@ -979,6 +1018,12 @@ No he podido resolver tu petición. Me faltaría saber el {Origen}.</skos:exampl
 
     <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#NoMoreOptionsRestartResponse">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#implies"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UserCommandRequest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Response that the system displays when it runs out of options. It finishes the current Dialogue.</rdfs:comment>
         <skos:example xml:lang="en">I do not have more options to offer you! Can you reformulate your command so I can understand better?</skos:example>
         <skos:example xml:lang="es">¡No tengo más opciones que mostrarte! ¿Puedes reformular tu comando para que te entienda mejor?</skos:example>
@@ -986,17 +1031,19 @@ No he podido resolver tu petición. Me faltaría saber el {Origen}.</skos:exampl
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#NoResultsClarification -->
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#NoResultsClarificationResponse -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#NoResultsClarification">
+    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#NoResultsClarificationResponse">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#implies"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#RepeatArgumentRequest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Response that the system returns when the clarification step of the value of an Argument does not return any results.</rdfs:comment>
-        <skos:example xml:lang="en">I cannot find anything that corresponds to your demand. Can you repeat {Argument} again, please?
-
-I cannot find anything that corresponds to your demand. Can you repeat {the destination you want me to take you} again, please?</skos:example>
-        <skos:example xml:lang="es">No encuentro ningún elemento que responda a lo que me pides. ¿Puedes volver a repetir el {Argument}?
-
-No encuentro ningún elemento que responda a lo que me pides. ¿Puedes volver a repetir el {destino al que quieres que te guíe}?</skos:example>
+        <skos:example xml:lang="en">I cannot find anything that corresponds to your demand.</skos:example>
+        <skos:example xml:lang="es">No encuentro ningún elemento que responda a lo que me pides.</skos:example>
     </owl:Class>
     
 
@@ -1033,6 +1080,33 @@ No encuentro ningún elemento que responda a lo que me pides. ¿Puedes volver a 
     
 
 
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#OptionsAvailableResponse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#OptionsAvailableResponse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#implies"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentSpecifyRequest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#implies"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentValueDisambiguationRequest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Response in which the system tells the user that it has several options for a specific element (e.g. WorldElement).
+
+Note the difference between OptionsAvailableResponse and TooManyAlternativesResponse: the first implies that there is a fair amount of options, whereas the latter implies that the options that are available are too many and it will require the user to be more specific.</rdfs:comment>
+        <skos:example xml:lang="en">&quot;I have many options for your request.&quot;</skos:example>
+        <skos:example xml:lang="es">&quot;Tengo varias opciones para tu comando.&quot;
+
+&quot;¡Lo que me has dicho puede ser varias cosas!&quot;</skos:example>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ReassureFeedbackRequest -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ReassureFeedbackRequest">
@@ -1050,6 +1124,27 @@ No encuentro ningún elemento que responda a lo que me pides. ¿Puedes volver a 
         <skos:example xml:lang="en">&quot;So, you want me {Action} {Argument}, right?&quot;
 
 &quot;So, you want me {to take you} {to the toilet}, right?&quot;</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#RepeatArgumentRequest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#RepeatArgumentRequest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentRequest"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#multipleOptionsImplies"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#RepeatArgumentRequest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Request that demands the user to repeat the value of an Argument.</rdfs:comment>
+        <skos:example xml:lang="en">&quot;Can you repeat the {Argument}?
+
+&quot;Can you repeat the {Destination}?&quot;</skos:example>
+        <skos:example xml:lang="es">&quot;¿Puedes repetir el {argument}?&quot;
+
+&quot;¿Puedes repetir el {Destino}?&quot;</skos:example>
     </owl:Class>
     
 
@@ -1167,33 +1262,17 @@ No encuentro ningún elemento que responda a lo que me pides. ¿Puedes volver a 
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#TooManyActionOptionsResponse -->
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#TooManyAlternativesResponse -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#TooManyActionOptionsResponse">
+    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#TooManyAlternativesResponse">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
-        <rdfs:comment xml:lang="en">Response that the system gives when a command can be associated to more than one action.</rdfs:comment>
-        <skos:example xml:lang="en">Your command can be associated to many actions! Can you please repeat and be more specific?</skos:example>
-        <skos:example xml:lang="es">¡El comando puede asociarse a varias acciones! ¿Puedes repetir y ser más específico, por favor?</skos:example>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#TooManyArgumentOptionsResponse -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#TooManyArgumentOptionsResponse">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
-        <rdfs:comment xml:lang="en">Response that the system gives when an item can be associated to more than one argument.</rdfs:comment>
-        <skos:example xml:lang="en">The item {item} can be associated to many arguments!</skos:example>
-        <skos:example xml:lang="es">¡El item {item} puede asociarse a varios argumentos!</skos:example>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#TooManyWorldElementOptionsResponse -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#TooManyWorldElementOptionsResponse">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
-        <rdfs:comment xml:lang="en">Response given when the Item provided corresponds to a list of possible WorldElements that is too big.</rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#implies"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentClarificationRequest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Response given when the Item provided corresponds to a list of possible elements (e.g. WorldElements) that is too big.</rdfs:comment>
         <skos:example xml:lang="en">&quot;I have too many options taking into account the information you provided to me.&quot;
 
 &quot;I have too many options taking into account the information you provided to me.&quot;</skos:example>
@@ -1208,6 +1287,21 @@ No encuentro ningún elemento que responda a lo que me pides. ¿Puedes volver a 
 
     <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UnderstoodResponse">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UserCommandRequest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UserCommandRequest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ContentRequest"/>
+        <rdfs:comment xml:lang="en">Request to the user to provide their (initial) command.</rdfs:comment>
+        <skos:example xml:lang="es">How can I help you?
+
+Tell me your command.</skos:example>
+        <skos:example xml:lang="es">¿En qué puedo ayudarte?
+
+Dame tu comando.</skos:example>
     </owl:Class>
     
 
@@ -1247,6 +1341,46 @@ No encuentro ningún elemento que responda a lo que me pides. ¿Puedes volver a 
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ValueNotCompatibleWithArgumentResponse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ValueNotCompatibleWithArgumentResponse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#implies"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#VerifyInfoRequest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Response given when the ArgValue for an Argument provided by the user is not compatible with said Argument.</rdfs:comment>
+        <skos:example xml:lang="en">&quot;It cannot be the {Argument}&quot;.
+
+&quot;It cannot be the {destination you want me to take you}&quot;.</skos:example>
+        <skos:example xml:lang="es">&quot;No puede ser {Argument}&quot;.
+
+&quot;No puede ser {el lugar al que quieres que te lleve}&quot;.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#VerifyInfoRequest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#VerifyInfoRequest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ContentRequest"/>
+        <rdfs:comment xml:lang="en">Request that requires the user to repeat some information.</rdfs:comment>
+        <skos:example xml:lang="en">[Previous SysResponse: &quot;This item cannot be {ArgTag}&quot;]
+&quot;Can you verify?&quot;
+
+[Previous SysResponse: &quot;This item cannot be {the destination}&quot;]
+&quot;Can you verify?&quot;</skos:example>
+        <skos:example xml:lang="en">[PreviousSysResponse: &quot;Este elemento no puede ser {ArgTag}&quot;]
+&quot;¿Puedes verificarlo?&quot;
+
+[PreviousSysResponse: &quot;Este elemento no puede ser {el destino}&quot;]
+&quot;¿Puedes verificarlo?&quot;</skos:example>
     </owl:Class>
     
 
