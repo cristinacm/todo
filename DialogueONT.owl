@@ -195,6 +195,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#hasStepFunction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#hasStepFunction">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#isStepFunctionOf"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#hasSystemRequest -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#hasSystemRequest"/>
@@ -238,6 +246,12 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#isRequiredBy">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#requires"/>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#isStepFunctionOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#isStepFunctionOf"/>
     
 
 
@@ -319,6 +333,14 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#IDval -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#IDval">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -505,12 +527,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#noUserResponseTypeImplies"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentSpecifyRequest"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#yesUserResponseTypeImplies"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#nextStep"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Request that makes the user choose from a set of Actions obtained through inference.</rdfs:comment>
@@ -753,12 +769,6 @@ For example, the user would require a &quot;piece&quot;, and the system includes
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentSpecifyRequest"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#yesUserResponseTypeImplies"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#continue"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Request made when a value for an Argument can belong to different Arguments. The strategy is asking for each Argument option until the user confirms.</rdfs:comment>
         <skos:example xml:lang="es">[Situation: the value &quot;Mesa de reparación&quot; could be Origin or Destination]
 
@@ -800,12 +810,6 @@ For example, the user would require a &quot;piece&quot;, and the system includes
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentValueDisambiguationRequest"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#yesUserResponseTypeImplies"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#continue"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Request that tries to obtain the value of the argument when it is ambiguous (e.g. &quot;sala&quot; may apply to &quot;sala Ura&quot;, &quot;sala Sua&quot;, etc.).</rdfs:comment>
         <skos:example xml:lang="en">&quot;Do you want {Action} {ArgumentConnector} {WorldElement}?&quot;
 
@@ -825,12 +829,6 @@ For example, the user would require a &quot;piece&quot;, and the system includes
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#implies"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UserCommandRequest"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#implies"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#restart"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Response that the system gives when it cannot associate an action/target to one or more actions.</rdfs:comment>
@@ -865,6 +863,12 @@ For example, the user would require a &quot;piece&quot;, and the system includes
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemRequest"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#hasStepFunction"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#StepFunction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#incorrectUserResponseTypeImplies"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#YesNoResponseNotExpected"/>
             </owl:Restriction>
@@ -880,6 +884,32 @@ For example, the user would require a &quot;piece&quot;, and the system includes
 
 Also known as &quot;Non polar/Open question&quot; in linguistics.</rdfs:comment>
         <skos:example xml:lang="en">Which is the error code?</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ContentRequestStepFunction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ContentRequestStepFunction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#StepFunction"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#incorrectUserResponseTypeImplies"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#YesNoResponseNotExpected"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#isStepFunctionOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ContentRequest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#userResponseNotUnderstoodImplies"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#NotUnderstoodResponse"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -909,13 +939,53 @@ Also known as &quot;Non polar/Open question&quot; in linguistics.</rdfs:comment>
 
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#DialogueControlMarkers -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#DialogueControlMarkers"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#DialogueControlMarkers">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#IDval"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#DialogueStep -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#DialogueStep"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#DialogueStep">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#hasStepFunction"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#StepFunction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#IDval"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#order"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#DialogueStepStepFunction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#DialogueStepStepFunction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#StepFunction"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#isStepFunctionOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#DialogueStep"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
@@ -1030,12 +1100,6 @@ Also known as &quot;Non polar/Open question&quot; in linguistics.</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentRequest"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#yesUserResponseTypeImplies"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#nextStep"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Request that checks which is the Argument/Action that has not been interpreter correctly, after a negative ReassureFeedbackRequest.</rdfs:comment>
         <skos:example xml:lang="en">&quot;Have I missed the {Argument}?&quot;
 
@@ -1123,12 +1187,6 @@ USR: &quot;Sí&quot;</skos:example>
 
     <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#NoMoreOptionsContinueResponse">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#implies"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#return"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Response that the system displays when it runs out of options. It is intended to continue with a full request of the element that the previous options corresponded to.</rdfs:comment>
         <skos:example xml:lang="en">I do not have more options to offer you!</skos:example>
         <skos:example xml:lang="es">¡No tengo más opciones que mostrarte!</skos:example>
@@ -1144,12 +1202,6 @@ USR: &quot;Sí&quot;</skos:example>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#implies"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UserCommandRequest"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#implies"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#restart"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Response that the system displays when it runs out of options. It finishes the current Dialogue.</rdfs:comment>
@@ -1190,12 +1242,6 @@ USR: &quot;Sí&quot;</skos:example>
 
     <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#NotUnderstoodResponse">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#implies"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#return"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Implies resuming the current ContentSystemRequest</rdfs:comment>
         <rdfs:comment xml:lang="en">Response that informs the user that the system has not understood the user command.</rdfs:comment>
         <skos:example xml:lang="en">&quot;I am sorry, but I haven&apos;t understood. Can you repeat, please?&quot;</skos:example>
@@ -1251,18 +1297,6 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#IncorrectArgumentRequest"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#yesUserResponseTypeImplies"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#continue"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#yesUserResponseTypeImplies"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#finishDial"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Request that is sent in order to obtain feedback whether the interpretation obtained is correct or not.</rdfs:comment>
         <skos:example xml:lang="es">&quot;Entonces, quieres que {Action} {Argument}, ¿verdad?&quot;
 
@@ -1299,12 +1333,6 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
 
     <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ResponseTypeNotExpectedResponse">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#implies"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#return"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Reponse given to the user when the UserResponse does not correspond with the expected response of the SystemRequest.</rdfs:comment>
     </owl:Class>
     
@@ -1353,6 +1381,25 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#text"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#StepFunction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#StepFunction">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#IDval"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#order"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1430,12 +1477,6 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UserCommandRequest"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#implies"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#restart"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Response given when the number of possible Actions is too big.</rdfs:comment>
         <skos:example xml:lang="en">Your command can be associated to too many actions! Can you repeat and be more specific, please?</skos:example>
         <skos:example xml:lang="es">¡Tu comando se puede asociar a demasiadas acciones! ¿Puedes repetir y ser un poco más específico, por favor?</skos:example>
@@ -1474,12 +1515,6 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UserCommandRequest"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#implies"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#restart"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <skos:example xml:lang="en">Response given when the number of possible Arguments is too big.</skos:example>
         <skos:example xml:lang="en">Your command can be associated to too many arguments! Can you repeat and be more specific, please?</skos:example>
         <skos:example xml:lang="es">¡Tu comando se puede asociar a demasiados argumentos! ¿Puedes repetir y ser un poco más específico, por favor?</skos:example>
@@ -1516,30 +1551,6 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
 
     <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UserCommandRequest">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ContentRequest"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#lessMaxOptionsImplies"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ActionOptionsResponse"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#moreMaxOptionsImplies"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#TooManyActionOptionsResponse"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#noOptionsImplies"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#NoMoreOptionsRestartResponse"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#singleOptionImplies"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#nextStep"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Request to the user to provide their (initial) command.</rdfs:comment>
         <skos:example xml:lang="es">How can I help you?
 
@@ -1668,6 +1679,32 @@ Dame tu comando.</skos:example>
 
 Also known as &quot;Polar question&quot; in linguistics.</rdfs:comment>
         <skos:example xml:lang="en">Do you want to go to the laboratory?</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#YesNoRequestStepFunction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#YesNoRequestStepFunction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#StepFunction"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#incorrectUserResponseTypeImplies"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ContentResponseNotExpected"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#isStepFunctionOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#YesNoRequest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#userResponseNotUnderstoodImplies"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#NotUnderstoodResponse"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
