@@ -308,9 +308,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqYN_ArgumentDisambiguation -->
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqYN_ArgumentValueDisambiguation -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqYN_ArgumentDisambiguation">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqYN_ArgumentValueDisambiguation">
         <rdf:type rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentValueDisambiguationRequest"/>
         <DialogueONT:outputSentence xml:lang="es">¿Quieres {Action} {ArgumentConnector} {WorldElement}?</DialogueONT:outputSentence>
     </owl:NamedIndividual>
