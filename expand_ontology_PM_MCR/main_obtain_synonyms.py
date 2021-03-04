@@ -35,12 +35,12 @@ def get_info(args, pred_matrix_split):
 def info_to_sparql(args, pred_matrix_split):
 	PM_data = get_info(args, pred_matrix_split)
 
-	sparql_header = "DEFINE input:inference 'urn:ALKAdata' prefix dialSystemOnt: <http://www.semanticweb.org/linuxsii/ontologies/2020/6/DialSystemONT#>\nprefix dialSystemOntInst: <http://www.semanticweb.org/linuxsii/ontologies/2020/6/DialSystemONT-inst#>\nprefix domainOnt: <http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#>\nprefix domainOntFrame: <http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#>\nprefix domainOntWorld: <http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-World#>\nprefix domainOntInst: <http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-inst-ALKA#>\nprefix dialogueOnt: <http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#>\nprefix dialogueOntInst: <http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#>\ninsert in <urn:ALKAdata>{"
+	sparql_header = "DEFINE input:inference 'urn:ElkarbotInteraction'  prefix domainOnt: <http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#>  prefix domainOntElkarbot: <http://www.semanticweb.org/linuxsii/ontologies/2021/1/DomainONT-elkarbot#>  prefix domainOntFrame: <http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#>  prefix domainOntWorld: <http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-World#>  prefix domainOntWorldElkarbot: <http://www.semanticweb.org/linuxsii/ontologies/2020/11/DomainONT-World-elkarbot#>  prefix domainOntWorldInst: <http://www.semanticweb.org/linuxsii/ontologies/2020/11/DomainONT-World-elkarbot-inst#>  prefix domainOntFrameInst: <http://www.semanticweb.org/linuxsii/ontologies/2021/1/DomainONT-FrameAction-elkarbot-inst#>  prefix domainOntInst: <http://www.semanticweb.org/linuxsii/ontologies/2021/1/DomainONT-elkarbot-inst#>  prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>  insert in <urn:ElkarbotInteraction>{"
 
-	frame_insert_template = "domainOntInst:{frame} a domainOntFrame:Frame ."
-	idval_insert_template = 'domainOntInst:{element} domainOnt:IDval "{element}" .'
+	frame_insert_template = "domainOntFrameInst:{frame} a domainOntFrame:Frame ."
+	idval_insert_template = 'domainOntInst:{element1} domainOnt:IDval "{element2}" .'
 	framehead_insert_template = "domainOntInst:{framehead} a domainOntFrame:FrameHead ."
-	frame_has_framehead_insert_template = "domainOntInst:{frame} domainOntFrame:hasFrameHead domainOntInst:{framehead} ." 
+	frame_has_framehead_insert_template = "domainOntFrameInst:{frame} domainOntFrame:hasFrameHead domainOntInst:{framehead} ." 
 	lu_insert_template = "domainOntInst:{lu}.V a domainOnt:LexicalUnit ."
 	framehead_has_lu_insert_template = "domainOntInst:{framehead} domainOnt:hasLexicalUnit domainOntInst:{lu}.V ."
 
@@ -49,19 +49,27 @@ def info_to_sparql(args, pred_matrix_split):
 
 	for frame in PM_data.keys():
 		frame_insert = frame_insert_template.format(frame=frame)
-		idval_frame_insert = idval_insert_template.format(element=frame)
-		inserts.extend([frame_insert, idval_frame_insert])
+		idval_frame_insert = idval_insert_template.format(element1=frame, element2=frame)
+		if frame_insert not in inserts:
+			inserts.extend([frame_insert, idval_frame_insert])
 		for fh in PM_data[frame].keys():
 			framehead_insert = framehead_insert_template.format(framehead=fh+"_"+frame)
-			idval_framehead_insert = idval_insert_template.format(element=fh+"_"+frame)
+			idval_framehead_insert = idval_insert_template.format(element1=fh+"_"+frame, element2=fh+"_"+frame)
 			frame_has_framehead_insert = frame_has_framehead_insert_template.format(frame=frame, framehead=fh+"_"+frame)
-			inserts.extend([framehead_insert, idval_framehead_insert, frame_has_framehead_insert])
+			if framehead_insert not in inserts:
+				inserts.extend([framehead_insert, idval_framehead_insert, frame_has_framehead_insert])
+			else:
+				inserts.extend([frame_has_framehead_insert])
 			for lu in PM_data[frame][fh]["FHs"]:
 				lu_insert = lu_insert_template.format(lu=lu)
-				idval_lu_insert = idval_insert_template.format(element=lu+".V")
+				idval_lu_insert = idval_insert_template.format(element1=lu+".V", element2=lu)
 				framehead_has_lu_insert = framehead_has_lu_insert_template.format(framehead=fh+"_"+frame, lu=lu)
-				inserts.extend([lu_insert, idval_lu_insert, framehead_has_lu_insert])
+				if lu_insert not in inserts:
+					inserts.extend([lu_insert, idval_lu_insert, framehead_has_lu_insert])
+				else:
+					inserts.extend([framehead_has_lu_insert])
 
+	# print(inserts)
 
 	inserts = "\n".join(inserts)
 	inserts = inserts+"}"
