@@ -22,7 +22,7 @@ def sparqlQuery(query,format="application/json"):
 	
 	# querypart=urllib.parse.urlencode(params).encode("utf-8")
 	baseURL="http://10.0.0.183:8890/sparql/" #IP de máquina de virtuoso 8.3
-	response = requests.get(baseURL,params)
+	response = requests.post(baseURL,params)
 	# print(response.text)
 	return json.loads(response.text)
 
