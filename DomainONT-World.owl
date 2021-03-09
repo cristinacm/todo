@@ -14,19 +14,18 @@
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:prov="http://www.w3.org/ns/prov#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-World">
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></terms:modified>
-        <terms:contributor></terms:contributor>
-        <owl:versionInfo>0.1.0</owl:versionInfo>
+        <terms:contributor>Izaskun Fernández (Tekniker) &lt;mailto:izaskun.fernandez@tekniker.es&gt;</terms:contributor>
+        <owl:versionInfo>1.0.0</owl:versionInfo>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></terms:issued>
-        <ns:license></ns:license>
-        <vann:preferredNamespacePrefix></vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri></vann:preferredNamespaceUri>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-06-20T00:00:00</terms:created>
-        <terms:creator></terms:creator>
-        <terms:title></terms:title>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-09T10:00:00</terms:modified>
+        <ns:license>CC BY &lt;https://creativecommons.org/licenses/by/2.0/&gt;</ns:license>
+        <terms:creator>Cristina Aceta (Tekniker) &lt;mailto:cristina.aceta@tekniker.es&gt;</terms:creator>
+        <vann:preferredNamespacePrefix>DomainOnt-World</vann:preferredNamespacePrefix>
         <owl:priorVersion></owl:priorVersion>
-        <owl:versionIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></owl:versionIRI>
-        <terms:description></terms:description>
+        <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">World for Domain for Generic Task-Oriented Dialogue Systems Ontology</terms:title>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Module for scenario modelling (world elements) of domain.</terms:description>
     </owl:Ontology>
     
 

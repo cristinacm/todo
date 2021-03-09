@@ -1,32 +1,31 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction"
      xml:base="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction"
-     xmlns:ns="http://creativecommons.org/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:prov="http://www.w3.org/ns/prov#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:ns="http://creativecommons.org/ns#"
      xmlns:pmofn="http://premon.fbk.eu/ontology/fn#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:ontolex="http://www.w3.org/ns/lemon/ontolex#">
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:ontolex="http://www.w3.org/ns/lemon/ontolex#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:prov="http://www.w3.org/ns/prov#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction">
-        <ns:license></ns:license>
-        <terms:contributor></terms:contributor>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-21T00:00:00</terms:created>
-        <terms:creator></terms:creator>
-        <terms:description></terms:description>
+        <terms:contributor>Izaskun Fernández (Tekniker) &lt;mailto:izaskun.fernandez@tekniker.es&gt;</terms:contributor>
+        <owl:versionInfo>1.0.0</owl:versionInfo>
+        <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Frame-Action for Domain for Generic Task-Oriented Dialogue Systems Ontology</terms:title>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></terms:issued>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></terms:modified>
-        <terms:title></terms:title>
-        <vann:preferredNamespacePrefix></vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri></vann:preferredNamespaceUri>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-21T00:00:00</terms:created>
+        <terms:creator>Cristina Aceta (Tekniker) &lt;mailto:cristina.aceta@tekniker.es&gt;</terms:creator>
+        <ns:license>CC BY &lt;https://creativecommons.org/licenses/by/2.0/&gt;</ns:license>
         <owl:priorVersion></owl:priorVersion>
-        <owl:versionIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></owl:versionIRI>
-        <owl:versionInfo>0.1.0</owl:versionInfo>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-08T16:00:00</terms:modified>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Module for Action (and Frame) modelling inside domain.</terms:description>
+        <vann:preferredNamespacePrefix>DomainOnt-Frame</vann:preferredNamespacePrefix>
     </owl:Ontology>
     
 
@@ -135,13 +134,18 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#belongsToAction">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#belongsToIntent"/>
+        <rdfs:comment>Establishes the relation between an Intent and the Action it belongs to.</rdfs:comment>
+        <rdfs:label>belongsToAction</rdfs:label>
     </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#belongsToIntent -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#belongsToIntent"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#belongsToIntent">
+        <rdfs:comment>Establishes the relation between an Action and the Intent it belongs to.</rdfs:comment>
+        <rdfs:label>belongsToIntent</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
@@ -149,6 +153,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#hasArgument">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isArgumentOf"/>
+        <rdfs:comment>Establishes a relation between an Action and its Argument(s).</rdfs:comment>
+        <rdfs:label>hasArgument</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -158,6 +164,8 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#hasArgumentSet">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isArgumentSetOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:comment>Establishes a relation between an Action and the set composed of its Argument(s).</rdfs:comment>
+        <rdfs:label>hasArgumentSet</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -167,6 +175,8 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#hasCoreArgument">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#hasArgument"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isCoreArgumentOf"/>
+        <rdfs:comment>Establishes a relation between an Action and its CoreArguments (i.e. the arguments that are compulsory in order to perform the Action).</rdfs:comment>
+        <rdfs:label>hasCoreArgument</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -176,6 +186,8 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#hasFomaGrammar">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isFomaGrammarOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:comment>Establishes a relation between a Skill and the FomaGrammar to use to perform Key Element Extraction.</rdfs:comment>
+        <rdfs:label>hasFomaGrammar</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -184,6 +196,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#hasFrame">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isFrameOf"/>
+        <rdfs:comment>Establishes a relation between an Intent and its corresponding Frame.</rdfs:comment>
+        <rdfs:label>hasFrame</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -193,6 +207,8 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#hasFrameHead">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isFrameHeadOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:comment>Establishes a relation between a Frame and its FrameHead.</rdfs:comment>
+        <rdfs:label>hasFrameHead</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -201,6 +217,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#hasIntent">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isIntentOf"/>
+        <rdfs:comment>Establishes a relation between a Skill and its corresponding Intent(s).</rdfs:comment>
+        <rdfs:label>hasIntent</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -210,13 +228,18 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#hasOptionalArgument">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#hasArgument"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isOptionalArgumentOf"/>
+        <rdfs:comment>Establishes a relation between an Action and its OptionalArguments (i.e. the arguments that are not compulsory in order to perform the Action).</rdfs:comment>
+        <rdfs:label>hasOptionalArgument</rdfs:label>
     </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isArgumentOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isArgumentOf"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isArgumentOf">
+        <rdfs:comment>Establishes a relation between an Argument and its corresponding Action.</rdfs:comment>
+        <rdfs:label>isArgumentOf</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
@@ -224,14 +247,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isArgumentSetOf">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isComposedOf -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isComposedOf">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isPartOf"/>
+        <rdfs:comment>Establishes a relation between an ArgumentSet and the Action it corresponds to.</rdfs:comment>
+        <rdfs:label>isArgumentSetOf</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -240,6 +257,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isCoreArgumentOf">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isArgumentOf"/>
+        <rdfs:comment>Establishes a relation between a CoreArgument (i.e. the arguments that are compulsory in order to perform the Action) and its corresponding Action.</rdfs:comment>
+        <rdfs:label>isCoreArgumentOf</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -248,6 +267,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isFomaGrammarOf">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:comment>Establishes a relation between the FomaGrammar to use to perform Key Element Extraction and a Skill.</rdfs:comment>
+        <rdfs:label>isFomaGrammarOf</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -256,26 +277,26 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isFrameHeadOf">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:comment>Establishes a relation between a FrameHead and the Frame it applies to.</rdfs:comment>
+        <rdfs:label>isFrameHeadOf</rdfs:label>
     </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isFrameOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isFrameOf"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isFrameOf">
+        <rdfs:comment>Establishes a relation between a Frame and the Intent it corresponds to.</rdfs:comment>
+        <rdfs:label>isFrameOf</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isIntentOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isIntentOf"/>
-    
-
-
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isLexemeOf -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isLexemeOf">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isIntentOf">
+        <rdfs:comment>Establishes a relation between an Intent and its corresponding Skill.</rdfs:comment>
+        <rdfs:label>isIntentOf</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -284,13 +305,9 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isOptionalArgumentOf">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isArgumentOf"/>
+        <rdfs:comment>Establishes a relation between an Optional Argument (i.e. the arguments that are not compulsory in order to perform the Action) and its corresponding Action.</rdfs:comment>
+        <rdfs:label>isOptionalArgumentOf</rdfs:label>
     </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isPartOf -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isPartOf"/>
     
 
 
@@ -355,7 +372,9 @@
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>Element that makes reference to the functionalities of the target system.</rdfs:comment>
         <rdfs:label xml:lang="en">Action</rdfs:label>
+        <skos:example>(For a multipurpose robot) Guide, provide_information, pick, place</skos:example>
     </owl:Class>
     
 
@@ -399,12 +418,6 @@ For the sentence &quot;My mother lost her watch at home&quot;:
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isArgumentSetOf"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Action"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isComposedOf"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Argument"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">The group of Arguments that belong to a Frame.</rdfs:comment>
@@ -531,14 +544,6 @@ Intent: receive_information</skos:example>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Lexeme -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Lexeme">
-        <rdfs:label xml:lang="en">Lexeme</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Skill -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Skill">
@@ -555,11 +560,13 @@ Intent: receive_information</skos:example>
                 <owl:onClass rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#FomaGrammar"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>Element that makes reference to the capabilities of the target system.</rdfs:comment>
         <rdfs:label xml:lang="en">Skill</rdfs:label>
+        <skos:example>(For a multipurpose robot) GuideRobot, RoboticArm</skos:example>
     </owl:Class>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
 

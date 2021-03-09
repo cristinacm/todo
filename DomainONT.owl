@@ -16,19 +16,18 @@
     <owl:Ontology rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT">
         <owl:imports rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-World"/>
         <owl:imports rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction"/>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></terms:modified>
-        <terms:contributor></terms:contributor>
-        <owl:versionInfo>0.1.0</owl:versionInfo>
-        <ns:license></ns:license>
+        <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Domain for Generic Task-Oriented Dialogue Systems Ontology</terms:title>
+        <terms:contributor>Izaskun Fernández (Tekniker) &lt;mailto:izaskun.fernandez@tekniker.es&gt;</terms:contributor>
+        <owl:versionInfo>1.0.0</owl:versionInfo>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></terms:issued>
-        <vann:preferredNamespacePrefix></vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri></vann:preferredNamespaceUri>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-21T00:00:00</terms:created>
-        <terms:creator></terms:creator>
-        <terms:title></terms:title>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-09T10:00:00</terms:modified>
+        <ns:license>CC BY &lt;https://creativecommons.org/licenses/by/2.0/&gt;</ns:license>
+        <terms:creator>Cristina Aceta (Tekniker) &lt;mailto:cristina.aceta@tekniker.es&gt;</terms:creator>
         <owl:priorVersion></owl:priorVersion>
-        <owl:versionIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></owl:versionIRI>
-        <terms:description></terms:description>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Module for domain modelling.</terms:description>
+        <vann:preferredNamespacePrefix>DomainOnt</vann:preferredNamespacePrefix>
     </owl:Ontology>
     
 
@@ -163,6 +162,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#appliesToWorld">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isApplicableToArgument"/>
+        <rdfs:comment>Establishes the relation between an Argument and the WorldElements that can be associated to it.</rdfs:comment>
+        <rdfs:label>appliesToWorld</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -172,6 +173,8 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#appliesToWorldElement">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#appliesToWorld"/>
         <rdfs:range rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <rdfs:comment>Establishes the relation between an Argument and a WorldElement that can be associated to it.</rdfs:comment>
+        <rdfs:label>appliesToWorldElement</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -181,28 +184,8 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#appliesToWorldElementGroup">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#appliesToWorld"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#WorldElementGroup"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasActionAssociated -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasActionAssociated">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasActionOn"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasActionOn -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasActionOn"/>
-    
-
-
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasActionTrace -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasActionTrace">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:comment>Establishes the relation between an Argument and a WorldElementGroup that can be associated to it.</rdfs:comment>
+        <rdfs:label>appliesToWorldElementGroup</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -211,6 +194,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasGroupMember">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isMemberOfGroup"/>
+        <rdfs:comment>Establishes the relation between a WorldElementGroup and a member of said group.</rdfs:comment>
+        <rdfs:label>hasGroupMember</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -219,13 +204,18 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasLexicalUnit">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isLexicalUnitOf"/>
+        <rdfs:comment>Establishes the relation between a FrameHead/WorldElement and one of its corresponding Lexical Units.</rdfs:comment>
+        <rdfs:label>hasLexicalUnit</rdfs:label>
     </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasSpecification -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasSpecification"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasSpecification">
+        <rdfs:comment>Establishes a relation between a TargetSystemReadableInformation element and its specific implementation in the target system (specification).</rdfs:comment>
+        <rdfs:label>hasSpecification</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
@@ -233,6 +223,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasTargetSystemReadableInfo">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isTargetSystemReadableInfoOf"/>
+        <rdfs:comment>Establishes the relation between an Action/Argument/WorldElement and its corresponding TargetSystemReadableInfo.</rdfs:comment>
+        <rdfs:label>hasTargetSystemReadableInfo</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -241,6 +233,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasTrace">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isTraceOf"/>
+        <rdfs:comment>Establishes the relationship between an element and its Trace.</rdfs:comment>
+        <rdfs:label>hasTrace</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -250,13 +244,25 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasType">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isTypeOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:comment>(In a guide robot, with guiding and information functionalities; the TSRI of the destinations are coordinates and the TSRI of the elements to obtain information about are IDs)
+
+Destination_guideRobot hasTSRI ?x .
+?x hasType coordinate .
+
+PieceInformation_guideRobot has TSRI ?y .
+?y hasType ID .</rdfs:comment>
+        <rdfs:comment>Establishes a relation between an Action/Argument/WorldElement TSRI and its TSRI type.</rdfs:comment>
+        <rdfs:label>hasType</rdfs:label>
     </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasValue -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasValue"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasValue">
+        <rdfs:comment>Establishes the relation between an ArgumentTrace and its corresponding value (WorldElement).</rdfs:comment>
+        <rdfs:label>hasValue</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
@@ -264,31 +270,45 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isApplicableToArgument">
         <rdfs:range rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Argument"/>
+        <rdfs:comment>Establishes the relation between a WorldElement and the Argument(s) that it can be associated to.</rdfs:comment>
+        <rdfs:label>isApplicableToArgument</rdfs:label>
     </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isLexicalUnitOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isLexicalUnitOf"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isLexicalUnitOf">
+        <rdfs:comment>Establishes the relation between a Lexical Unit and its corresponding FrameHead/WorldElement.</rdfs:comment>
+        <rdfs:label>isLexicalUnitOf</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isMemberOfGroup -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isMemberOfGroup"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isMemberOfGroup">
+        <rdfs:comment>Establishes the relation between a WorldElement and a WorldElementGroup, which is a member of.</rdfs:comment>
+        <rdfs:label>isMemberOfGroup</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isTargetSystemReadableInfoOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isTargetSystemReadableInfoOf"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isTargetSystemReadableInfoOf">
+        <rdfs:comment>Establishes the relation between a TargetSystemReadableInfon and the Action/Argument/WorldElement it corresponds to.</rdfs:comment>
+        <rdfs:label>isTargetSystemReadableInfoOf</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isTraceOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isTraceOf"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isTraceOf">
+        <rdfs:comment>Establishes the relationship between a Trace and the element it refers to.</rdfs:comment>
+        <rdfs:label>isTraceOf</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
@@ -296,6 +316,15 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isTypeOf">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:comment>(In a guide robot, with guiding and information functionalities; the TSRI of the destinations are coordinates and the TSRI of the elements to obtain information about are IDs)
+
+Destination_guideRobot hasTSRI ?x .
+coordinate isTypeOf ?x .
+
+PieceInformation_guideRobot has TSRI ?y .
+ID isTypeOf ?y .</rdfs:comment>
+        <rdfs:comment>Establishes a relation between a TSRI type and the Action/Argument/WorldElement TSRI with said TSRI type.</rdfs:comment>
+        <rdfs:label>isTypeOf</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -550,6 +579,8 @@
         <owl:hasKey rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#IDval"/>
         </owl:hasKey>
+        <rdfs:label>ActionTSRI</rdfs:label>
+        <rdfs:label>Target System Readable Information corresponding to elements of the class Action.</rdfs:label>
     </owl:Class>
     
 
@@ -578,6 +609,8 @@
         <owl:hasKey rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#IDval"/>
         </owl:hasKey>
+        <rdfs:comment>Element that leaves a record of an Action obtained throughout the dialogue process.</rdfs:comment>
+        <rdfs:label>ActionTrace</rdfs:label>
     </owl:Class>
     
 
@@ -595,6 +628,10 @@
         <owl:hasKey rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#IDval"/>
         </owl:hasKey>
+        <rdfs:label>ActionType</rdfs:label>
+        <skos:example>Action: obtain_information -&gt; it is directed towards API REST service
+The TSRI for obtain_information has an ActionType &quot;service&quot;.</skos:example>
+        <skos:example>Establishes the TSRI type of an Action.</skos:example>
     </owl:Class>
     
 
@@ -605,6 +642,12 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#TargetSystemReadableInformation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasType"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#ParameterType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#implementation"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -613,6 +656,8 @@
         <owl:hasKey rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#IDval"/>
         </owl:hasKey>
+        <rdfs:comment>Target System Readable Information corresponding to elements of the class Argument.</rdfs:comment>
+        <rdfs:label>ArgumentTSRI</rdfs:label>
     </owl:Class>
     
 
@@ -641,6 +686,8 @@
         <owl:hasKey rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#IDval"/>
         </owl:hasKey>
+        <rdfs:comment>Element that leaves a record of an Argument obtained throughout the dialogue process.</rdfs:comment>
+        <rdfs:label>ArgumentTrace</rdfs:label>
     </owl:Class>
     
 
@@ -658,6 +705,8 @@
         <owl:hasKey rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#IDval"/>
         </owl:hasKey>
+        <rdfs:comment>Element that covers the information to execute an Action that is executable through a command (vs. as a Service).</rdfs:comment>
+        <rdfs:label>Command</rdfs:label>
     </owl:Class>
     
 
@@ -676,6 +725,8 @@
         <owl:hasKey rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#IDval"/>
         </owl:hasKey>
+        <rdfs:comment>Target System Readable Information corresponding to elements of the class Action that require information in a Command format.</rdfs:comment>
+        <rdfs:label>CommandTSRI</rdfs:label>
     </owl:Class>
     
 
@@ -698,6 +749,8 @@
         <owl:hasKey rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#IDval"/>
         </owl:hasKey>
+        <rdfs:comment>Element that leaves a record of a Frame obtained throughout the dialogue process.</rdfs:comment>
+        <rdfs:label>FrameTrace</rdfs:label>
     </owl:Class>
     
 
@@ -708,6 +761,8 @@
         <owl:hasKey rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#IDval"/>
         </owl:hasKey>
+        <rdfs:comment>Establishes the TSRI type of a given Action/Parameter.</rdfs:comment>
+        <rdfs:label>InfoType</rdfs:label>
     </owl:Class>
     
 
@@ -742,6 +797,8 @@
         <owl:hasKey rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#IDval"/>
         </owl:hasKey>
+        <rdfs:comment>Element that leaves a record of an Intent obtained throughout the dialogue process.</rdfs:comment>
+        <rdfs:label>IntentTrace</rdfs:label>
     </owl:Class>
     
 
@@ -764,6 +821,10 @@
         <owl:hasKey rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#IDval"/>
         </owl:hasKey>
+        <rdfs:comment>LexicalUnit</rdfs:comment>
+        <rdfs:comment>Word(s) that cover the different variants of a FrameHead or a WorldElement.</rdfs:comment>
+        <skos:example>FrameHead: go
+LexUnits (in Spanish): ir.V, desplazarse.V</skos:example>
     </owl:Class>
     
 
@@ -781,6 +842,13 @@
         <owl:hasKey rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#IDval"/>
         </owl:hasKey>
+        <rdfs:comment>Establishes the type of parameter of a TSRI.</rdfs:comment>
+        <rdfs:label>ParameterType</rdfs:label>
+        <skos:example>&quot;baño&quot; hasTSRI &quot;coords_baño&quot;
+&quot;baño&quot; hasTSRI &quot;ID_baño&quot; 
+
+&quot;coords_baño&quot; is of ParameterType &quot;coordinate&quot;
+&quot;ID_baño&quot; is of ParameterType &quot;ID&quot;</skos:example>
     </owl:Class>
     
 
@@ -799,6 +867,8 @@
         <owl:hasKey rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#IDval"/>
         </owl:hasKey>
+        <rdfs:comment>Target System Readable Information corresponding to elements of the class Action that point to Services.</rdfs:comment>
+        <rdfs:label>ServiceTSRI</rdfs:label>
     </owl:Class>
     
 
@@ -821,6 +891,8 @@
         <owl:hasKey rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#IDval"/>
         </owl:hasKey>
+        <rdfs:comment>Element that leaves a record of a Skill obtained throughout the dialogue process.</rdfs:comment>
+        <rdfs:comment>SkillTrace</rdfs:comment>
     </owl:Class>
     
 
@@ -867,6 +939,8 @@ SystemReadableInfo for whole action: robAction.Pick(containerID:235)</rdfs:comme
         <owl:hasKey rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#IDval"/>
         </owl:hasKey>
+        <rdfs:comment>Agrupation of WorldElements of similar characteristics.</rdfs:comment>
+        <rdfs:label>WorldElementGroup</rdfs:label>
     </owl:Class>
     
 
@@ -884,6 +958,8 @@ SystemReadableInfo for whole action: robAction.Pick(containerID:235)</rdfs:comme
         <owl:hasKey rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#IDval"/>
         </owl:hasKey>
+        <rdfs:comment>Target System Readable Information corresponding to elements of the class WorldElement.</rdfs:comment>
+        <rdfs:label>WorldElementTSRI</rdfs:label>
     </owl:Class>
     
 
@@ -930,12 +1006,6 @@ SystemReadableInfo for whole action: robAction.Pick(containerID:235)</rdfs:comme
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasTrace"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#ArgumentTrace"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasType"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#ParameterType"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
