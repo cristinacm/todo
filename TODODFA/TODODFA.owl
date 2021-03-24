@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction"
-     xml:base="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction"
+<rdf:RDF xmlns="https://w3id.org/todo/tododfa"
+     xml:base="https://w3id.org/todo/tododfa"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:ns="http://creativecommons.org/ns#"
      xmlns:pmofn="http://premon.fbk.eu/ontology/fn#"
@@ -14,14 +14,14 @@
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:prov="http://www.w3.org/ns/prov#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction">
+    <owl:Ontology rdf:about="https://w3id.org/todo/tododfa">
         <terms:contributor>Izaskun Fernández (Tekniker) &lt;mailto:izaskun.fernandez@tekniker.es&gt;</terms:contributor>
         <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tododfa</vann:preferredNamespacePrefix>
         <ns:license>http://purl.org/NET/rdflicense/cc-by4.0</ns:license>
         <owl:versionInfo>1.0.0</owl:versionInfo>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></terms:issued>
         <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TODODFA: Frame-Action Module for Task-Oriented Dialogue management Ontology (TODO)</terms:title>
-        <vann:preferredNamespaceUri></vann:preferredNamespaceUri>
+        <vann:preferredNamespaceUri>https://w3id.org/todo/tododfa</vann:preferredNamespaceUri>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-21T00:00:00</terms:created>
         <terms:creator>Cristina Aceta (Tekniker) &lt;mailto:cristina.aceta@tekniker.es&gt;</terms:creator>
         <owl:priorVersion></owl:priorVersion>
@@ -137,183 +137,219 @@
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#belongsToAction -->
+    <!-- https://w3id.org/todo/tododfa#belongsToAction -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#belongsToAction">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#belongsToIntent"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododfa#belongsToAction">
+        <owl:inverseOf rdf:resource="https://w3id.org/todo/tododfa#belongsToIntent"/>
         <rdfs:comment>Establishes the relation between an Intent and the Action it belongs to.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
         <rdfs:label>belongsToAction</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#belongsToIntent -->
+    <!-- https://w3id.org/todo/tododfa#belongsToIntent -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#belongsToIntent">
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododfa#belongsToIntent">
         <rdfs:comment>Establishes the relation between an Action and the Intent it belongs to.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
         <rdfs:label>belongsToIntent</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#hasArgument -->
+    <!-- https://w3id.org/todo/tododfa#hasArgument -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#hasArgument">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isArgumentOf"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododfa#hasArgument">
+        <owl:inverseOf rdf:resource="https://w3id.org/todo/tododfa#isArgumentOf"/>
         <rdfs:comment>Establishes a relation between an Action and its Argument(s).</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
         <rdfs:label>hasArgument</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#hasArgumentSet -->
+    <!-- https://w3id.org/todo/tododfa#hasArgumentSet -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#hasArgumentSet">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isArgumentSetOf"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododfa#hasArgumentSet">
+        <owl:inverseOf rdf:resource="https://w3id.org/todo/tododfa#isArgumentSetOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:comment>Establishes a relation between an Action and the set composed of its Argument(s).</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
         <rdfs:label>hasArgumentSet</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#hasCoreArgument -->
+    <!-- https://w3id.org/todo/tododfa#hasCoreArgument -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#hasCoreArgument">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#hasArgument"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isCoreArgumentOf"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododfa#hasCoreArgument">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/todo/tododfa#hasArgument"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/todo/tododfa#isCoreArgumentOf"/>
         <rdfs:comment>Establishes a relation between an Action and its CoreArguments (i.e. the arguments that are compulsory in order to perform the Action).</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
         <rdfs:label>hasCoreArgument</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#hasFomaGrammar -->
+    <!-- https://w3id.org/todo/tododfa#hasFomaGrammar -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#hasFomaGrammar">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isFomaGrammarOf"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododfa#hasFomaGrammar">
+        <owl:inverseOf rdf:resource="https://w3id.org/todo/tododfa#isFomaGrammarOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:comment>Establishes a relation between a Skill and the FomaGrammar to use to perform Key Element Extraction.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
         <rdfs:label>hasFomaGrammar</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#hasFrame -->
+    <!-- https://w3id.org/todo/tododfa#hasFrame -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#hasFrame">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isFrameOf"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododfa#hasFrame">
+        <owl:inverseOf rdf:resource="https://w3id.org/todo/tododfa#isFrameOf"/>
         <rdfs:comment>Establishes a relation between an Intent and its corresponding Frame.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
         <rdfs:label>hasFrame</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#hasFrameHead -->
+    <!-- https://w3id.org/todo/tododfa#hasFrameHead -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#hasFrameHead">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isFrameHeadOf"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododfa#hasFrameHead">
+        <owl:inverseOf rdf:resource="https://w3id.org/todo/tododfa#isFrameHeadOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <rdfs:comment>Establishes a relation between a Frame and its FrameHead.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
         <rdfs:label>hasFrameHead</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#hasIntent -->
+    <!-- https://w3id.org/todo/tododfa#hasIntent -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#hasIntent">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isIntentOf"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododfa#hasIntent">
+        <owl:inverseOf rdf:resource="https://w3id.org/todo/tododfa#isIntentOf"/>
         <rdfs:comment>Establishes a relation between a Skill and its corresponding Intent(s).</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
         <rdfs:label>hasIntent</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#hasOptionalArgument -->
+    <!-- https://w3id.org/todo/tododfa#hasOptionalArgument -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#hasOptionalArgument">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#hasArgument"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isOptionalArgumentOf"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododfa#hasOptionalArgument">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/todo/tododfa#hasArgument"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/todo/tododfa#isOptionalArgumentOf"/>
         <rdfs:comment>Establishes a relation between an Action and its OptionalArguments (i.e. the arguments that are not compulsory in order to perform the Action).</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
         <rdfs:label>hasOptionalArgument</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isArgumentOf -->
+    <!-- https://w3id.org/todo/tododfa#isArgumentOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isArgumentOf">
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododfa#isArgumentOf">
         <rdfs:comment>Establishes a relation between an Argument and its corresponding Action.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
         <rdfs:label>isArgumentOf</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isArgumentSetOf -->
+    <!-- https://w3id.org/todo/tododfa#isArgumentSetOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isArgumentSetOf">
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododfa#isArgumentSetOf">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <rdfs:comment>Establishes a relation between an ArgumentSet and the Action it corresponds to.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
         <rdfs:label>isArgumentSetOf</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isCoreArgumentOf -->
+    <!-- https://w3id.org/todo/tododfa#isCoreArgumentOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isCoreArgumentOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isArgumentOf"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododfa#isCoreArgumentOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/todo/tododfa#isArgumentOf"/>
         <rdfs:comment>Establishes a relation between a CoreArgument (i.e. the arguments that are compulsory in order to perform the Action) and its corresponding Action.</rdfs:comment>
+        <rdfs:comment>https://w3id.org/todo/tododfa#</rdfs:comment>
         <rdfs:label>isCoreArgumentOf</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isFomaGrammarOf -->
+    <!-- https://w3id.org/todo/tododfa#isFomaGrammarOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isFomaGrammarOf">
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododfa#isFomaGrammarOf">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <rdfs:comment>Establishes a relation between the FomaGrammar to use to perform Key Element Extraction and a Skill.</rdfs:comment>
+        <rdfs:comment>https://w3id.org/todo/tododfa#</rdfs:comment>
         <rdfs:label>isFomaGrammarOf</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isFrameHeadOf -->
+    <!-- https://w3id.org/todo/tododfa#isFrameHeadOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isFrameHeadOf">
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododfa#isFrameHeadOf">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:comment>Establishes a relation between a FrameHead and the Frame it applies to.</rdfs:comment>
+        <rdfs:comment>https://w3id.org/todo/tododfa#</rdfs:comment>
         <rdfs:label>isFrameHeadOf</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isFrameOf -->
+    <!-- https://w3id.org/todo/tododfa#isFrameOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isFrameOf">
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododfa#isFrameOf">
         <rdfs:comment>Establishes a relation between a Frame and the Intent it corresponds to.</rdfs:comment>
+        <rdfs:comment>https://w3id.org/todo/tododfa#</rdfs:comment>
         <rdfs:label>isFrameOf</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isIntentOf -->
+    <!-- https://w3id.org/todo/tododfa#isIntentOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isIntentOf">
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododfa#isIntentOf">
         <rdfs:comment>Establishes a relation between an Intent and its corresponding Skill.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
         <rdfs:label>isIntentOf</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isOptionalArgumentOf -->
+    <!-- https://w3id.org/todo/tododfa#isOptionalArgumentOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isOptionalArgumentOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isArgumentOf"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododfa#isOptionalArgumentOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/todo/tododfa#isArgumentOf"/>
         <rdfs:comment>Establishes a relation between an Optional Argument (i.e. the arguments that are not compulsory in order to perform the Action) and its corresponding Action.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
         <rdfs:label>isOptionalArgumentOf</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
@@ -329,11 +365,13 @@
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#actionTag -->
+    <!-- https://w3id.org/todo/tododfa#actionTag -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#actionTag">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/todo/tododfa#actionTag">
         <rdfs:comment>String that identifies the Action when invoked in a SystemRequest/Response (DomainONT).</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododfa</rdfs:isDefinedBy>
         <rdfs:label>actionTag</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
         <skos:example xml:lang="en">System request: &quot;Do you need me to {argumentTag}?&quot;
 
 Action: take_guideRobot
@@ -350,11 +388,13 @@ Resulting SysRequest: &quot;Necesitas que {te lleve}?&quot;</skos:example>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#argumentConnector -->
+    <!-- https://w3id.org/todo/tododfa#argumentConnector -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#argumentConnector">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/todo/tododfa#argumentConnector">
         <rdfs:comment>String that defines the word that acts as a connector between the Argument and the rest of elements in a SystemRequest/Response.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododfa</rdfs:isDefinedBy>
         <rdfs:label>argumentConnector</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
         <skos:example xml:lang="en">SystemRequest: Do you want me {actionTag}{argumentConnector}{WorldElement}?
 
 Action: take_guideRobot
@@ -371,11 +411,13 @@ argumentConnector: &quot;a&quot;
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#argumentTag -->
+    <!-- https://w3id.org/todo/tododfa#argumentTag -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#argumentTag">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/todo/tododfa#argumentTag">
         <rdfs:comment>String that identifies the Argument when invoked in a SystemRequest/Response (DomainONT)</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
         <rdfs:label>argumentTag</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
         <skos:example xml:lang="en">System request: &quot;I need to know {argumentTag}&quot;
 
 Argument: destination_guideRobot
@@ -403,34 +445,35 @@ Resulting SysRequest: &quot;Necesito saber {adónde quieres ir}&quot;</skos:exam
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Action -->
+    <!-- https://w3id.org/todo/tododfa#Action -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Action">
+    <owl:Class rdf:about="https://w3id.org/todo/tododfa#Action">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#belongsToIntent"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Intent"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododfa#belongsToIntent"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododfa#Intent"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#hasArgument"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Argument"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododfa#hasArgument"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododfa#Argument"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#hasArgumentSet"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#ArgumentSet"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododfa#hasArgumentSet"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododfa#ArgumentSet"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#actionTag"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododfa#actionTag"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Element that makes reference to the functionalities of the target system.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">Action</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example>(For a multipurpose robot) Guide, provide_information, pick, place</skos:example>
@@ -438,22 +481,23 @@ Resulting SysRequest: &quot;Necesito saber {adónde quieres ir}&quot;</skos:exam
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Argument -->
+    <!-- https://w3id.org/todo/tododfa#Argument -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Argument">
+    <owl:Class rdf:about="https://w3id.org/todo/tododfa#Argument">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isArgumentOf"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Action"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododfa#isArgumentOf"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododfa#Action"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#argumentTag"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododfa#argumentTag"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Participant that is involved in the event described by the Frame. It can be Core (its presence is compulsory to convey the event) or Optional (its presence is not compulsory, but it adds additional information).</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">Argument</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">Frame: Losing
@@ -471,16 +515,17 @@ For the sentence &quot;My mother lost her watch at home&quot;:
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#ArgumentSet -->
+    <!-- https://w3id.org/todo/tododfa#ArgumentSet -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#ArgumentSet">
+    <owl:Class rdf:about="https://w3id.org/todo/tododfa#ArgumentSet">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isArgumentSetOf"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Action"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododfa#isArgumentSetOf"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododfa#Action"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">The group of Arguments that belong to a Frame.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">ArgumentSet</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">Frame: Losing
@@ -498,38 +543,40 @@ For the sentence &quot;My mother lost her watch at home&quot;:
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#FomaGrammar -->
+    <!-- https://w3id.org/todo/tododfa#FomaGrammar -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#FomaGrammar">
+    <owl:Class rdf:about="https://w3id.org/todo/tododfa#FomaGrammar">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isFomaGrammarOf"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Skill"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododfa#isFomaGrammarOf"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododfa#Skill"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Grammar to be used by Foma to perform Key Element Extraction.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">FomaGrammar</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Frame -->
+    <!-- https://w3id.org/todo/tododfa#Frame -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Frame">
+    <owl:Class rdf:about="https://w3id.org/todo/tododfa#Frame">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#hasFrameHead"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#FrameHead"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododfa#hasFrameHead"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododfa#FrameHead"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isFrameOf"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Intent"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododfa#isFrameOf"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododfa#Intent"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A specific event or situation evoked by a specific word (FrameHead), along with its participants (Arguments).</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">Frame</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">Frame: Losing
@@ -549,16 +596,17 @@ For the sentence &quot;My mother lost her watch at home&quot;:
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#FrameHead -->
+    <!-- https://w3id.org/todo/tododfa#FrameHead -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#FrameHead">
+    <owl:Class rdf:about="https://w3id.org/todo/tododfa#FrameHead">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isFrameHeadOf"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Frame"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododfa#isFrameHeadOf"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododfa#Frame"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Word (or more than one) that evokes a specific situation or event, with its specific participants; that is, a frame. It is represented by one or more LexicalUnits.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">FrameHead</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">Frame: Losing
@@ -578,28 +626,29 @@ For the sentence &quot;My mother lost her watch at home&quot;:
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Intent -->
+    <!-- https://w3id.org/todo/tododfa#Intent -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Intent">
+    <owl:Class rdf:about="https://w3id.org/todo/tododfa#Intent">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#belongsToAction"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Action"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododfa#belongsToAction"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododfa#Action"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#hasFrame"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Frame"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododfa#hasFrame"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododfa#Frame"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#isIntentOf"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Skill"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododfa#isIntentOf"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododfa#Skill"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">User intention when formulating a request.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">Intent</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">User request: &quot;I want information about Mona Lisa&quot;
@@ -609,23 +658,24 @@ Intent: receive_information</skos:example>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Skill -->
+    <!-- https://w3id.org/todo/tododfa#Skill -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Skill">
+    <owl:Class rdf:about="https://w3id.org/todo/tododfa#Skill">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#hasIntent"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Intent"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododfa#hasIntent"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododfa#Intent"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#hasFomaGrammar"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododfa#hasFomaGrammar"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#FomaGrammar"/>
+                <owl:onClass rdf:resource="https://w3id.org/todo/tododfa#FomaGrammar"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Element that makes reference to the capabilities of the target system.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">Skill</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example>(For a multipurpose robot) GuideRobot, RoboticArm</skos:example>
@@ -644,14 +694,14 @@ Intent: receive_information</skos:example>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Action"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Argument"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#ArgumentSet"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#FomaGrammar"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Frame"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#FrameHead"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Intent"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Skill"/>
+            <rdf:Description rdf:about="https://w3id.org/todo/tododfa#Action"/>
+            <rdf:Description rdf:about="https://w3id.org/todo/tododfa#Argument"/>
+            <rdf:Description rdf:about="https://w3id.org/todo/tododfa#ArgumentSet"/>
+            <rdf:Description rdf:about="https://w3id.org/todo/tododfa#FomaGrammar"/>
+            <rdf:Description rdf:about="https://w3id.org/todo/tododfa#Frame"/>
+            <rdf:Description rdf:about="https://w3id.org/todo/tododfa#FrameHead"/>
+            <rdf:Description rdf:about="https://w3id.org/todo/tododfa#Intent"/>
+            <rdf:Description rdf:about="https://w3id.org/todo/tododfa#Skill"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>

@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/linuxsii/ontologies/2020/6/untitled-ontology-147#"
-     xml:base="http://www.semanticweb.org/linuxsii/ontologies/2020/6/untitled-ontology-147"
+<rdf:RDF xmlns="https://w3id.org/todo/todo#"
+     xml:base="https://w3id.org/todo/todo"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -10,14 +10,12 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/linuxsii/ontologies/2020/6/DialSystemONT">
-        <owl:imports rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT"/>
-        <owl:imports rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT"/>
+    <owl:Ontology rdf:about="https://w3id.org/todo/todo">
         <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></terms:description>
-        <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Generic Task-Oriented Dialogue Systems Ontology</terms:title>
+        <vann:preferredNamespaceUri>https://w3id.org/todo/todo</vann:preferredNamespaceUri>
+        <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TODO: Task-Oriented Dialogue management Ontology</terms:title>
         <owl:versionInfo>1.0.0</owl:versionInfo>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></terms:issued>
-        <vann:preferredNamespaceUri></vann:preferredNamespaceUri>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-21T00:00:00</terms:created>
         <ns:license>CC BY &lt;https://creativecommons.org/licenses/by/2.0/&gt;</ns:license>
         <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cristina Aceta (Tekniker) &lt;mailto:cristina.aceta@tekniker.es&gt;</terms:creator>
@@ -39,33 +37,25 @@
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#isTraceOf -->
+    <!-- https://w3id.org/todo/todo#hasActionTrace -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#isTraceOf">
-        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isTraceOf"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isTraceOf -->
-
-    <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isTraceOf"/>
-    
-
-
-    <!-- http://www.semanticweb.org/linuxsii/ontologies/2020/6/DialSystemONT#hasActionTrace -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/linuxsii/ontologies/2020/6/DialSystemONT#hasActionTrace">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/linuxsii/ontologies/2020/6/DialSystemONT#isActionTraceOf"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/todo#hasActionTrace">
+        <owl:inverseOf rdf:resource="https://w3id.org/todo/todo#isActionTraceOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:comment>Establishes the relationship between an Action and its Trace</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/todo</rdfs:isDefinedBy>
+        <rdfs:label>hasActionTrace</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/linuxsii/ontologies/2020/6/DialSystemONT#isActionTraceOf -->
+    <!-- https://w3id.org/todo/todo#isActionTraceOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/linuxsii/ontologies/2020/6/DialSystemONT#isActionTraceOf">
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/todo#isActionTraceOf">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:comment>Establishes the relationship between an ActionTrace and the Action it refers to.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/todo</rdfs:isDefinedBy>
+        <rdfs:label>isActionTraceOf</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -81,16 +71,22 @@
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UserRequestTrace -->
+    <!-- https://w3id.org/todo/tododial#UserRequestTrace -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UserRequestTrace">
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#UserRequestTrace">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/linuxsii/ontologies/2020/6/DialSystemONT#hasActionTrace"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#ActionTrace"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/todo#hasActionTrace"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododom#ActionTrace"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-    </rdf:Description>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/todo/tododom#ActionTrace -->
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododom#ActionTrace"/>
 </rdf:RDF>
 
 

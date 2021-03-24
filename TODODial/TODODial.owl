@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT"
-     xml:base="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT"
+<rdf:RDF xmlns="https://w3id.org/todo/tododial"
+     xml:base="https://w3id.org/todo/tododial"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:ns="http://creativecommons.org/ns#"
      xmlns:pmofn="http://premon.fbk.eu/ontology/fn#"
@@ -14,11 +14,10 @@
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:prov="http://www.w3.org/ns/prov#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT">
+    <owl:Ontology rdf:about="https://w3id.org/todo/tododial">
         <ns:license>http://purl.org/NET/rdflicense/cc-by4.0</ns:license>
         <owl:versionInfo>1.0.0</owl:versionInfo>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></terms:issued>
-        <vann:preferredNamespaceUri></vann:preferredNamespaceUri>
         <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tododial</vann:preferredNamespacePrefix>
         <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TODODial: Dialogue Module for Task-Oriented Dialogue management Ontology (TODO)</terms:title>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-21T00:00:00</terms:created>
@@ -26,6 +25,7 @@
         <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Module for dialogue process and system output management.</terms:description>
         <owl:priorVersion></owl:priorVersion>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-08T16:00:00</terms:modified>
+        <vann:preferredNamespaceUri>https://w3id.org/todo/tododial</vann:preferredNamespaceUri>
         <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Izaskun Fernández (Tekniker) &lt;mailto:izaskun.fernandez@tekniker.es&gt;</terms:contributor>
     </owl:Ontology>
     
@@ -154,213 +154,257 @@
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#hasDialogueProcessStep -->
+    <!-- https://w3id.org/todo/tododial#hasDialogueProcessStep -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#hasDialogueProcessStep">
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododial#hasDialogueProcessStep">
         <rdfs:comment>Establishes the DialogueProcessStep corresponding to a DialogueTrace.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>hasDialogueProcessStep</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#hasSecondaryDialogue -->
+    <!-- https://w3id.org/todo/tododial#hasSecondaryDialogue -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#hasSecondaryDialogue">
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododial#hasSecondaryDialogue">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:comment>Establishes the SecondaryDialogue corresponding to a DialogueTrace.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>hasSecondaryDialogue</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#hasStepFunction -->
+    <!-- https://w3id.org/todo/tododial#hasStepFunction -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#hasStepFunction">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#isStepFunctionOf"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododial#hasStepFunction">
+        <owl:inverseOf rdf:resource="https://w3id.org/todo/tododial#isStepFunctionOf"/>
         <rdfs:comment>Establishes the StepFunction corresponding to a SystemRequest or a ProcessStep.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>hasStepFunction</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#hasSystemRequest -->
+    <!-- https://w3id.org/todo/tododial#hasSystemRequest -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#hasSystemRequest">
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododial#hasSystemRequest">
         <rdfs:comment>Establishes the SystemRequest corresponding to a SecondaryDialogueTrace.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>hasSystemRequest</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#hasTrace -->
+    <!-- https://w3id.org/todo/tododial#hasTrace -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#hasTrace">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#isTraceOf"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododial#hasTrace">
+        <owl:inverseOf rdf:resource="https://w3id.org/todo/tododial#isTraceOf"/>
         <rdfs:comment>Establishes the relationship between an element and its Trace.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>hasTrace</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#hasUserRequest -->
+    <!-- https://w3id.org/todo/tododial#hasUserRequest -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#hasUserRequest">
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododial#hasUserRequest">
         <rdfs:comment>Establishes the UserRequest corresponding to a DialogueTrace.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>hasUserRequest</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#hasUserResponse -->
+    <!-- https://w3id.org/todo/tododial#hasUserResponse -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#hasUserResponse">
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododial#hasUserResponse">
         <rdfs:comment>Establishes the UserResponse corresponding to a SecondaryDialogueTrace.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>hasUserResponse</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#implies -->
+    <!-- https://w3id.org/todo/tododial#implies -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#implies">
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododial#implies">
         <rdfs:comment>Establishes the implications of the output of a StepFunction in the Dialogue Manager code.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>implies</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#incorrectUserResponseTypeImplies -->
+    <!-- https://w3id.org/todo/tododial#incorrectUserResponseTypeImplies -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#incorrectUserResponseTypeImplies">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#implies"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododial#incorrectUserResponseTypeImplies">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/todo/tododial#implies"/>
         <rdfs:comment>Establishes the implications of an incorrect UserResponseType (e.g. when the request requires Yes/No as response and the user provides a ContentResponse).</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>incorrectUserResponseTypeImplies</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#initiatedBy -->
+    <!-- https://w3id.org/todo/tododial#initiatedBy -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#initiatedBy">
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododial#initiatedBy">
         <rdfs:comment>Establishes the SystemRequest/Response that initiates a DialogueStep.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>initiatedBy</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#isRequiredBy -->
+    <!-- https://w3id.org/todo/tododial#isRequiredBy -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#isRequiredBy">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#requires"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododial#isRequiredBy">
+        <owl:inverseOf rdf:resource="https://w3id.org/todo/tododial#requires"/>
         <rdfs:comment>Establishes the SystemRequest that requires a given UserResponse type.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>isRequiredBy</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#isStepFunctionOf -->
+    <!-- https://w3id.org/todo/tododial#isStepFunctionOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#isStepFunctionOf">
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododial#isStepFunctionOf">
         <rdfs:comment>Establishes the SystemRequest or a ProcessStep corresponding to a StepFunction.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>isStepFunctionOf</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#isTraceOf -->
+    <!-- https://w3id.org/todo/tododial#isTraceOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#isTraceOf">
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododial#isTraceOf">
         <rdfs:comment>Establishes the relationship between a Trace and the element it refers to.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>isTraceOf</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#lessMaxOptionsImplies -->
+    <!-- https://w3id.org/todo/tododial#lessMaxOptionsImplies -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#lessMaxOptionsImplies">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#multipleOptionsImplies"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododial#lessMaxOptionsImplies">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/todo/tododial#multipleOptionsImplies"/>
         <rdfs:comment>Establishes the implications when a StepFunction, in the Dialogue Manager code, returns more than one result as output and the length of the output is smaller than the number of maximum results previously defined.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>lessMaxOptionsImplies</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#moreMaxOptionsImplies -->
+    <!-- https://w3id.org/todo/tododial#moreMaxOptionsImplies -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#moreMaxOptionsImplies">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#multipleOptionsImplies"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododial#moreMaxOptionsImplies">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/todo/tododial#multipleOptionsImplies"/>
         <rdfs:comment>Establishes the implications when a StepFunction, in the Dialogue Manager code, returns more than one result as output and the length of the output is higher than the number of maximum results previously defined.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>moreMaxOptionsImplies</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#multipleOptionsImplies -->
+    <!-- https://w3id.org/todo/tododial#multipleOptionsImplies -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#multipleOptionsImplies">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#implies"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododial#multipleOptionsImplies">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/todo/tododial#implies"/>
         <rdfs:comment>Establishes the implications when a StepFunction, in the Dialogue Manager code, returns more than one result as output.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>multipleOptionsImplies</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#noOptionsImplies -->
+    <!-- https://w3id.org/todo/tododial#noOptionsImplies -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#noOptionsImplies">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#implies"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododial#noOptionsImplies">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/todo/tododial#implies"/>
         <rdfs:comment>Establishes the implications when a StepFunction, in the Dialogue Manager code, returns no results as output.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>noOptionsImplies</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#noUserResponseTypeImplies -->
+    <!-- https://w3id.org/todo/tododial#noUserResponseTypeImplies -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#noUserResponseTypeImplies">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#implies"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododial#noUserResponseTypeImplies">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/todo/tododial#implies"/>
         <rdfs:comment>Establishes the implications of a negative UserResponse.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>noUserResponseTypeImplies</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#requires -->
+    <!-- https://w3id.org/todo/tododial#requires -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#requires">
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododial#requires">
         <rdfs:comment>Establishes the type of UserResponse required by a SystemRequest.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>requires</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#singleOptionImplies -->
+    <!-- https://w3id.org/todo/tododial#singleOptionImplies -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#singleOptionImplies">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#implies"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododial#singleOptionImplies">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/todo/tododial#implies"/>
         <rdfs:comment>Establishes the implications when a StepFunction, in the Dialogue Manager code, returns one result as output.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>singleOptionImplies</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#userResponseNotUnderstoodImplies -->
+    <!-- https://w3id.org/todo/tododial#userResponseNotUnderstoodImplies -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#userResponseNotUnderstoodImplies">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#implies"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododial#userResponseNotUnderstoodImplies">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/todo/tododial#implies"/>
         <rdfs:comment>Establishes the implications when the system does not understand a UserResponse.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>userResponseNotUnderstoodImplies</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#yesUserResponseTypeImplies -->
+    <!-- https://w3id.org/todo/tododial#yesUserResponseTypeImplies -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#yesUserResponseTypeImplies">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#implies"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododial#yesUserResponseTypeImplies">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/todo/tododial#implies"/>
         <rdfs:comment>Establishes the implications of a positive UserResponse.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>YesUserResponseImplies</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
@@ -376,21 +420,25 @@
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#IDval -->
+    <!-- https://w3id.org/todo/tododial#IDval -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#IDval">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/todo/tododial#IDval">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:comment>Unique identification value for individuals.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>IDval</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#currentValue -->
+    <!-- https://w3id.org/todo/tododial#currentValue -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#currentValue">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/todo/tododial#currentValue">
         <rdfs:comment>When asking the user for a specific information, the information currently asked to the user.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>currentValue</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
         <skos:example xml:lang="en">UserReq: &quot;I want to go to the room&quot;
 
 possibleValue &quot;room1&quot;
@@ -407,19 +455,21 @@ System Req: &quot;¿Quieres ir a la {sala1}?&quot; (currentValue: sala1); &quot;
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#dateTime -->
+    <!-- https://w3id.org/todo/tododial#dateTime -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#dateTime">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/todo/tododial#dateTime">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:comment>Sets a timestamp to a DialogueTrace.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>dateTime</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#dialStatus -->
+    <!-- https://w3id.org/todo/tododial#dialStatus -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#dialStatus">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/todo/tododial#dialStatus">
         <rdfs:range>
             <rdfs:Datatype>
                 <owl:oneOf>
@@ -438,63 +488,77 @@ System Req: &quot;¿Quieres ir a la {sala1}?&quot; (currentValue: sala1); &quot;
             </rdfs:Datatype>
         </rdfs:range>
         <rdfs:comment>Sets whether a Dialogue/SecondaryDialogue has finished (closed) or not (open).</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>dialStatus</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#dialogueStep -->
+    <!-- https://w3id.org/todo/tododial#dialogueStep -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#dialogueStep">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/todo/tododial#dialogueStep">
         <rdfs:comment>Used to control which step is performing the current Dialogue.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>dialogueStep</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#finishDateTime -->
+    <!-- https://w3id.org/todo/tododial#finishDateTime -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#finishDateTime">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#dateTime"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/todo/tododial#finishDateTime">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/todo/tododial#dateTime"/>
         <rdfs:comment>Sets a finish timestamp to a DialogueTrace.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>finishDateTime</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#initDateTime -->
+    <!-- https://w3id.org/todo/tododial#initDateTime -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#initDateTime">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#dateTime"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/todo/tododial#initDateTime">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/todo/tododial#dateTime"/>
         <rdfs:comment>Sets a start timestamp to a DialogueTrace.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>initDateTime</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#order -->
+    <!-- https://w3id.org/todo/tododial#order -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#order">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/todo/tododial#order">
         <rdfs:comment>Sets the order for StepFunctions/DialogueSteps.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>order</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#outputSentence -->
+    <!-- https://w3id.org/todo/tododial#outputSentence -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#outputSentence">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/todo/tododial#outputSentence">
         <rdfs:comment>String to be output by the system in order to communicate a SystemRequest/Response to the user.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>outputSentence</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#possibleValue -->
+    <!-- https://w3id.org/todo/tododial#possibleValue -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#possibleValue">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/todo/tododial#possibleValue">
         <rdfs:comment>When asking the user for a specific information, the possible values of that information to be asked to the user.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>possibleValue</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
         <skos:example xml:lang="en">UserReq: &quot;I want to go to the room&quot;
 
 possibleValue &quot;room1&quot;
@@ -511,20 +575,24 @@ System Req: &quot;¿Quieres ir a la {sala1}?&quot;; &quot;¿Quieres ir a la {sal
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#text -->
+    <!-- https://w3id.org/todo/tododial#text -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#text">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/todo/tododial#text">
         <rdfs:comment>String that corresponds to a transcribed command by an user or the fully constructed outputSentence directed to the user.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>text</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#verb -->
+    <!-- https://w3id.org/todo/tododial#verb -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#verb">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/todo/tododial#verb">
         <rdfs:comment>Key element classified as &quot;verb&quot;/&quot;action&quot;.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>verb</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:DatatypeProperty>
     
 
@@ -540,11 +608,12 @@ System Req: &quot;¿Quieres ir a la {sala1}?&quot;; &quot;¿Quieres ir a la {sal
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ActionDisambiguationRequest -->
+    <!-- https://w3id.org/todo/tododial#ActionDisambiguationRequest -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ActionDisambiguationRequest">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#YesNoRequest"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#ActionDisambiguationRequest">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#YesNoRequest"/>
         <rdfs:comment xml:lang="en">Request that makes the user choose from a set of Actions obtained through inference.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>ActionDisambiguationRequest</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">[Previous SysResp: &quot;I couldn&apos;t resolve the action from your request&quot;.]
@@ -560,17 +629,18 @@ System Req: &quot;¿Quieres ir a la {sala1}?&quot;; &quot;¿Quieres ir a la {sal
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ActionOptionsResponse -->
+    <!-- https://w3id.org/todo/tododial#ActionOptionsResponse -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ActionOptionsResponse">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#ActionOptionsResponse">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#SystemResponse"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#implies"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ActionDisambiguationRequest"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododial#implies"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododial#ActionDisambiguationRequest"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Response that the system gives when a command can be associated to more than one action.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>ActionOptionsResponse</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">Your command can be associated to many actions!</skos:example>
@@ -579,11 +649,12 @@ System Req: &quot;¿Quieres ir a la {sala1}?&quot;; &quot;¿Quieres ir a la {sal
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#AlternativeArgumentSuggestionRequest -->
+    <!-- https://w3id.org/todo/tododial#AlternativeArgumentSuggestionRequest -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#AlternativeArgumentSuggestionRequest">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#YesNoRequest"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#AlternativeArgumentSuggestionRequest">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#YesNoRequest"/>
         <rdfs:comment xml:lang="es">Request that arises when the system has not been able to obtain an argument through an item + complement. The system suggests an alternative that contains the complement in the request.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>AlternativeArgumentSuggestionRequest</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="es">Request: &quot;Llévame a un laboratorio con micrófono&quot;.
@@ -600,11 +671,12 @@ System Req: &quot;¿Quieres ir a la {sala1}?&quot;; &quot;¿Quieres ir a la {sal
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentAssignationRequest -->
+    <!-- https://w3id.org/todo/tododial#ArgumentAssignationRequest -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentAssignationRequest">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#YesNoRequest"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#ArgumentAssignationRequest">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#YesNoRequest"/>
         <rdfs:comment xml:lang="en">Request made to reassure the assignation of a value from the KEE to an Argument.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>ArgumentAssignationRequest</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="es">&quot;El {Argument} es el {Argument_value}, ¿verdad?&quot;
@@ -617,13 +689,14 @@ System Req: &quot;¿Quieres ir a la {sala1}?&quot;; &quot;¿Quieres ir a la {sal
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentCharacteristicRequest -->
+    <!-- https://w3id.org/todo/tododial#ArgumentCharacteristicRequest -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentCharacteristicRequest">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ContentRequest"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#ArgumentCharacteristicRequest">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#ContentRequest"/>
         <rdfs:comment xml:lang="en">Request that demands a specific characteristic of the argument. This request is used when the argument provided is too broad and the system needs some characteristic that allows determining the specific element the user is refering to.
 
 For example, the user would require a &quot;piece&quot;, and the system includes data for 300 types of pieces.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>ArgumentCharacteristicRequest</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">&quot;Which {characteristic} is {too_broad_argument}?&quot;
@@ -636,11 +709,12 @@ For example, the user would require a &quot;piece&quot;, and the system includes
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentClarificationRequest -->
+    <!-- https://w3id.org/todo/tododial#ArgumentClarificationRequest -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentClarificationRequest">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ContentRequest"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#ArgumentClarificationRequest">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#ContentRequest"/>
         <rdfs:comment xml:lang="en">Request that asks the user for some clarification for the value of an argument when a previously saved value generates too many options.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>ArgumentClarificationRequest</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="es">&quot;Could you please be more specific with {ArgTag}?&quot;
@@ -653,11 +727,12 @@ For example, the user would require a &quot;piece&quot;, and the system includes
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentExplanationResponse -->
+    <!-- https://w3id.org/todo/tododial#ArgumentExplanationResponse -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentExplanationResponse">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#ArgumentExplanationResponse">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#SystemResponse"/>
         <rdfs:comment xml:lang="en">Response that gives details about an Argument. For example, when the user does not understand what information conveys said Argument.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>ArgumentExplanationResponse</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="es">&quot;El {Argument} corresponde a{ArgDescription}&quot;
@@ -670,18 +745,19 @@ For example, the user would require a &quot;piece&quot;, and the system includes
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentNotCompatibleResponse -->
+    <!-- https://w3id.org/todo/tododial#ArgumentNotCompatibleResponse -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentNotCompatibleResponse">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#ArgumentNotCompatibleResponse">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#SystemResponse"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#implies"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#VerifyInfoRequest"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododial#implies"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododial#VerifyInfoRequest"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">The system informs the user the Argument value provided is not valid according to what has been modelled in the KB.</rdfs:comment>
         <rdfs:comment xml:lang="en">This would imply an ArgumentRequest.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>ArgumentNotCompatibleResponse</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">&quot;{ArgumentValue} cannot be the {Argument}.&quot;
@@ -694,18 +770,19 @@ For example, the user would require a &quot;piece&quot;, and the system includes
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentNotGuessedResponse -->
+    <!-- https://w3id.org/todo/tododial#ArgumentNotGuessedResponse -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentNotGuessedResponse">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#ArgumentNotGuessedResponse">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#SystemResponse"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#implies"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentRequest"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododial#implies"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododial#ArgumentRequest"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Response given when the system has not been able to guess the value of the Argument through its characteristics.</rdfs:comment>
         <rdfs:comment xml:lang="en">This would imply an ArgumentRequest/ArgumentCharacteristicRequest</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>ArgumentNotGuessedResponse</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="es">&quot;Con las características que me has dado, no he podido averiguar el {Argument}.&quot;
@@ -718,17 +795,18 @@ For example, the user would require a &quot;piece&quot;, and the system includes
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentOptionsResponse -->
+    <!-- https://w3id.org/todo/tododial#ArgumentOptionsResponse -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentOptionsResponse">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#ArgumentOptionsResponse">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#SystemResponse"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#implies"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentSpecifyRequest"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododial#implies"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododial#ArgumentSpecifyRequest"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Response that the system gives when an item can be associated to more than one argument.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>ArgumentOptionsResponse</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">The item {item} can be associated to many arguments!</skos:example>
@@ -737,11 +815,12 @@ For example, the user would require a &quot;piece&quot;, and the system includes
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentRequest -->
+    <!-- https://w3id.org/todo/tododial#ArgumentRequest -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentRequest">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ContentRequest"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#ArgumentRequest">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#ContentRequest"/>
         <rdfs:comment xml:lang="en">Request that demands for the value of an Argument.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>ArgumentRequest</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">&quot;Can you tell me the {argument}?
@@ -754,11 +833,12 @@ For example, the user would require a &quot;piece&quot;, and the system includes
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentSpecifyRequest -->
+    <!-- https://w3id.org/todo/tododial#ArgumentSpecifyRequest -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentSpecifyRequest">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#YesNoRequest"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#ArgumentSpecifyRequest">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#YesNoRequest"/>
         <rdfs:comment xml:lang="en">Request made when a value for an Argument can belong to different Arguments. The strategy is asking for each Argument option until the user confirms.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>ArgumentSpecifyRequest</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="es">[Situation: the value &quot;Mesa de reparación&quot; could be Origin or Destination]
@@ -779,11 +859,12 @@ For example, the user would require a &quot;piece&quot;, and the system includes
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentValueDisambiguationRequest -->
+    <!-- https://w3id.org/todo/tododial#ArgumentValueDisambiguationRequest -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentValueDisambiguationRequest">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#YesNoRequest"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#ArgumentValueDisambiguationRequest">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#YesNoRequest"/>
         <rdfs:comment xml:lang="en">Request that tries to obtain the value of the argument when it is ambiguous (e.g. &quot;sala&quot; may apply to &quot;sala Ura&quot;, &quot;sala Sua&quot;, etc.).</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>ArgumentValueDisambiguationRequest</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">&quot;Do you want {Action} {ArgumentConnector} {WorldElement}?&quot;
@@ -796,17 +877,18 @@ For example, the user would require a &quot;piece&quot;, and the system includes
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#CannotResolveActionResponse -->
+    <!-- https://w3id.org/todo/tododial#CannotResolveActionResponse -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#CannotResolveActionResponse">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#CannotResolveActionResponse">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#SystemResponse"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#implies"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UserCommandRequest"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododial#implies"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododial#UserCommandRequest"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Response that the system gives when it cannot associate an action/target to one or more actions.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>CannotResolveActionResponse</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">I couldn&apos;t associate your command to an action. Can you please be more specific?</skos:example>
@@ -815,19 +897,20 @@ For example, the user would require a &quot;piece&quot;, and the system includes
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#CannotResolveCommandResponse -->
+    <!-- https://w3id.org/todo/tododial#CannotResolveCommandResponse -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#CannotResolveCommandResponse">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#CannotResolveCommandResponse">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#SystemResponse"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#implies"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentRequest"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododial#implies"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododial#ArgumentRequest"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Response that informs the user that the command could not be resolved.
 
 [to be followed by an ArgRequest]</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>CannotResolveCommandResponse</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">I could not resolve your command.</skos:example>
@@ -836,26 +919,27 @@ For example, the user would require a &quot;piece&quot;, and the system includes
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ContentRequest -->
+    <!-- https://w3id.org/todo/tododial#ContentRequest -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ContentRequest">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemRequest"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#ContentRequest">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#SystemRequest"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#hasStepFunction"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ContentRequestStepFunction"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododial#hasStepFunction"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododial#ContentRequestStepFunction"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#requires"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ContentUserResponseTrace"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododial#requires"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododial#ContentUserResponseTrace"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#YesNoRequest"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/todo/tododial#YesNoRequest"/>
         <rdfs:comment xml:lang="en">Request that asks for specific information, other than &quot;Yes&quot; or &quot;No&quot; (and equivalents).
 
 Also known as &quot;Non polar/Open question&quot; in linguistics.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>ContentRequest</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">Which is the error code?</skos:example>
@@ -863,54 +947,57 @@ Also known as &quot;Non polar/Open question&quot; in linguistics.</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ContentRequestStepFunction -->
+    <!-- https://w3id.org/todo/tododial#ContentRequestStepFunction -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ContentRequestStepFunction">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#StepFunction"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#ContentRequestStepFunction">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#StepFunction"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#incorrectUserResponseTypeImplies"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#YesNoResponseNotExpected"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododial#incorrectUserResponseTypeImplies"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododial#YesNoResponseNotExpected"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#isStepFunctionOf"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ContentRequest"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododial#isStepFunctionOf"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododial#ContentRequest"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#userResponseNotUnderstoodImplies"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#NotUnderstoodResponse"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododial#userResponseNotUnderstoodImplies"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododial#NotUnderstoodResponse"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Step Function associated to a ContentRequest.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>ContentRequestStepFunction</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ContentResponseNotExpected -->
+    <!-- https://w3id.org/todo/tododial#ContentResponseNotExpected -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ContentResponseNotExpected">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ResponseTypeNotExpectedResponse"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#ContentResponseNotExpected">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#ResponseTypeNotExpectedResponse"/>
         <rdfs:comment xml:lang="es">&quot;Solo necesito que me digas sí o no, por favor&quot;</rdfs:comment>
         <rdfs:comment xml:lang="en">&quot;You only need me to tell me yes or no, please&quot;</rdfs:comment>
         <rdfs:comment xml:lang="en">Reponse given to the user when the UserResponse is a ContentResponse and the SystemRequest requires a YesNoResponse.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>ContentResponseNotExpected</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ContentUserResponseTrace -->
+    <!-- https://w3id.org/todo/tododial#ContentUserResponseTrace -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ContentUserResponseTrace">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UserResponseTrace"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#YesNoUserResponseTrace"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#ContentUserResponseTrace">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#UserResponseTrace"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/todo/tododial#YesNoUserResponseTrace"/>
         <rdfs:comment xml:lang="en">Element that leaves a record of the User Responses performed throughout the dialogue process. These responses provide specific information, as a response for a ContentRequest.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>ContentUserResponseTrace</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">Content User Response: The error code is 412.</skos:example>
@@ -918,27 +1005,29 @@ Also known as &quot;Non polar/Open question&quot; in linguistics.</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#Continue -->
+    <!-- https://w3id.org/todo/tododial#Continue -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#Continue">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#DialogueControlMarker"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#Continue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#DialogueControlMarker"/>
         <rdfs:comment>Marker that conveys the idea of continuing with the dialogue process.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>Continue</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#DialogueControlMarker -->
+    <!-- https://w3id.org/todo/tododial#DialogueControlMarker -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#DialogueControlMarker">
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#DialogueControlMarker">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#IDval"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododial#IDval"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Elements that correspond to predefined or generic actions in dialogue control.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>DialogueControlMarkers</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example>Continue, restart dialogue</skos:example>
@@ -946,18 +1035,18 @@ Also known as &quot;Non polar/Open question&quot; in linguistics.</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#DialogueProcessTrace -->
+    <!-- https://w3id.org/todo/tododial#DialogueProcessTrace -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#DialogueProcessTrace">
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#DialogueProcessTrace">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#hasSecondaryDialogue"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SecondaryDialogueTrace"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododial#hasSecondaryDialogue"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododial#SecondaryDialogueTrace"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#dialStatus"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododial#dialStatus"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange>
                     <rdfs:Datatype>
@@ -980,100 +1069,105 @@ Also known as &quot;Non polar/Open question&quot; in linguistics.</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#finishDateTime"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododial#finishDateTime"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#initDateTime"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododial#initDateTime"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Element that leaves a record of the dialogues performed throughout the dialogue process.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>DialogueProcessTrace</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#DialogueStep -->
+    <!-- https://w3id.org/todo/tododial#DialogueStep -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#DialogueStep">
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#DialogueStep">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#initiatedBy"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemStep"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododial#initiatedBy"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododial#SystemStep"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#IDval"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododial#IDval"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#order"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododial#order"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ProcessStep"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/todo/tododial#ProcessStep"/>
         <rdfs:comment>Step in the dialogue process that requires a system interaction with the user (SystemStep).</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>DialogueStep</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#DialogueTrace -->
+    <!-- https://w3id.org/todo/tododial#DialogueTrace -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#DialogueTrace">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#DialogueProcessTrace"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#DialogueTrace">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#DialogueProcessTrace"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#hasUserRequest"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UserRequestTrace"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododial#hasUserRequest"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododial#UserRequestTrace"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#dialogueStep"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododial#dialogueStep"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Element that leaves a record of the dialogues performed.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>DialogueTrace</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#FinishDial -->
+    <!-- https://w3id.org/todo/tododial#FinishDial -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#FinishDial">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#DialogueControlMarker"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#FinishDial">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#DialogueControlMarker"/>
         <rdfs:comment>Marker that establishes that the dialogue must be finished.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>FinishDial</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#GreetingResponse -->
+    <!-- https://w3id.org/todo/tododial#GreetingResponse -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#GreetingResponse">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#GreetingResponse">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#SystemResponse"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#implies"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UserCommandRequest"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododial#implies"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododial#UserCommandRequest"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Welcome message.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>GreetingResponse</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">&quot;Hi! I am {SystemName}. I am happy to help you.&quot;
@@ -1086,11 +1180,12 @@ Also known as &quot;Non polar/Open question&quot; in linguistics.</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#IncorrectArgumentRequest -->
+    <!-- https://w3id.org/todo/tododial#IncorrectArgumentRequest -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#IncorrectArgumentRequest">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#YesNoRequest"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#IncorrectArgumentRequest">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#YesNoRequest"/>
         <rdfs:comment xml:lang="en">Request that checks which is the Argument/Action that has not been interpreter correctly, after a negative ReassureFeedbackRequest.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>IncorrectArgumentRequest</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">&quot;Have I missed the {Argument}?&quot;
@@ -1103,11 +1198,12 @@ Also known as &quot;Non polar/Open question&quot; in linguistics.</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#IntentRequest -->
+    <!-- https://w3id.org/todo/tododial#IntentRequest -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#IntentRequest">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#YesNoRequest"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#IntentRequest">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#YesNoRequest"/>
         <rdfs:comment xml:lang="en">Request made when a UserRequest can belong to different Intents. The strategy is asking for each Intent option until the user confirms.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>IntentRequest</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">Situation: the Intent for the Request could be &quot;Information&quot; or &quot;Guiding&quot;
@@ -1139,30 +1235,32 @@ USR: &quot;Sí&quot;</skos:example>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ItemNotCompatibleAnyArgResponse -->
+    <!-- https://w3id.org/todo/tododial#ItemNotCompatibleAnyArgResponse -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ItemNotCompatibleAnyArgResponse">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#ItemNotCompatibleAnyArgResponse">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#SystemResponse"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#implies"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#VerifyInfoRequest"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododial#implies"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododial#VerifyInfoRequest"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="es">El item {item} no es compatible con ningún argumento de la acción.</rdfs:comment>
         <rdfs:comment xml:lang="en">The item {item} is not compatible with any argument for this action.</rdfs:comment>
         <rdfs:comment>The system informs the user the Item value provided is not compatible with any action argument, according to what has been modelled in the KB.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>ItemNotCompatibleAnyArgResponse</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#NoMoreOptionsContinueResponse -->
+    <!-- https://w3id.org/todo/tododial#NoMoreOptionsContinueResponse -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#NoMoreOptionsContinueResponse">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#NoMoreOptionsContinueResponse">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#SystemResponse"/>
         <rdfs:comment xml:lang="en">Response that the system displays when it runs out of options. It is intended to continue with a full request of the element that the previous options corresponded to.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>NoMoreOptionsContinueResponse</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">I do not have more options to offer you!</skos:example>
@@ -1171,17 +1269,18 @@ USR: &quot;Sí&quot;</skos:example>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#NoMoreOptionsRestartResponse -->
+    <!-- https://w3id.org/todo/tododial#NoMoreOptionsRestartResponse -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#NoMoreOptionsRestartResponse">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#NoMoreOptionsRestartResponse">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#SystemResponse"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#implies"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UserCommandRequest"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododial#implies"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododial#UserCommandRequest"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Response that the system displays when it runs out of options. It finishes the current Dialogue.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>NoMoreOptionsRestartResponse</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">I do not have more options to offer you! Can you reformulate your command so I can understand better?</skos:example>
@@ -1190,17 +1289,18 @@ USR: &quot;Sí&quot;</skos:example>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#NoResultsClarificationResponse -->
+    <!-- https://w3id.org/todo/tododial#NoResultsClarificationResponse -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#NoResultsClarificationResponse">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#NoResultsClarificationResponse">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#SystemResponse"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#implies"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#RepeatArgumentRequest"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododial#implies"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododial#RepeatArgumentRequest"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Response that the system returns when the clarification step of the value of an Argument does not return any results.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>NoResultsClarificationResponse</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">I cannot find anything that corresponds to your demand.</skos:example>
@@ -1209,11 +1309,12 @@ USR: &quot;Sí&quot;</skos:example>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#NoUserResponse -->
+    <!-- https://w3id.org/todo/tododial#NoUserResponse -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#NoUserResponse">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#YesNoUserResponseTrace"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#NoUserResponse">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#YesNoUserResponseTrace"/>
         <rdfs:comment xml:lang="en">Element that leaves a record of the User Responses performed throughout the dialogue process. These responses correspond to a negative polarity.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>NoUserResponse</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">No User Responses: No, Never, Not at all</skos:example>
@@ -1221,11 +1322,12 @@ USR: &quot;Sí&quot;</skos:example>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#NotUnderstoodResponse -->
+    <!-- https://w3id.org/todo/tododial#NotUnderstoodResponse -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#NotUnderstoodResponse">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#NotUnderstoodResponse">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#SystemResponse"/>
         <rdfs:comment xml:lang="en">Response that informs the user that the system has not understood the user command.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>NotUnderstoodResponse</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">&quot;I am sorry, but I haven&apos;t understood. Can you repeat, please?&quot;</skos:example>
@@ -1234,11 +1336,12 @@ USR: &quot;Sí&quot;</skos:example>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#NullUserResponseTrace -->
+    <!-- https://w3id.org/todo/tododial#NullUserResponseTrace -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#NullUserResponseTrace">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UserResponseTrace"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#NullUserResponseTrace">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#UserResponseTrace"/>
         <rdfs:comment xml:lang="en">Response that does not represent a value that can be classified as ContentResponse or YesNoResponse.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>NullUserResponseTrace</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">Null User Response: I don&apos;t know.</skos:example>
@@ -1246,25 +1349,26 @@ USR: &quot;Sí&quot;</skos:example>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#OptionsAvailableResponse -->
+    <!-- https://w3id.org/todo/tododial#OptionsAvailableResponse -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#OptionsAvailableResponse">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#OptionsAvailableResponse">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#SystemResponse"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#implies"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentSpecifyRequest"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododial#implies"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododial#ArgumentSpecifyRequest"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#implies"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentValueDisambiguationRequest"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododial#implies"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododial#ArgumentValueDisambiguationRequest"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Response in which the system tells the user that it has several options for a specific element (e.g. WorldElement).
 
 Note the difference between OptionsAvailableResponse and TooManyAlternativesResponse: the first implies that there is a fair amount of options, whereas the latter implies that the options that are available are too many and it will require the user to be more specific.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>OptionsAvailableResponse</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">&quot;I have many options for your request.&quot;</skos:example>
@@ -1275,56 +1379,59 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ProcessStep -->
+    <!-- https://w3id.org/todo/tododial#ProcessStep -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ProcessStep">
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#ProcessStep">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#hasStepFunction"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ProcessStepStepFunction"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododial#hasStepFunction"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododial#ProcessStepStepFunction"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#IDval"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododial#IDval"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Step in the dialogue process that does not require a system interaction with the user (SystemStep).</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>ProcessStep</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ProcessStepStepFunction -->
+    <!-- https://w3id.org/todo/tododial#ProcessStepStepFunction -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ProcessStepStepFunction">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#StepFunction"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#ProcessStepStepFunction">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#StepFunction"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#isStepFunctionOf"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ProcessStep"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododial#isStepFunctionOf"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododial#ProcessStep"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#order"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododial#order"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Step Function associated to a ProcessStep.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>ProcessStepStepFunction</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ReassureFeedbackRequest -->
+    <!-- https://w3id.org/todo/tododial#ReassureFeedbackRequest -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ReassureFeedbackRequest">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#YesNoRequest"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#ReassureFeedbackRequest">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#YesNoRequest"/>
         <rdfs:comment xml:lang="en">Request that is sent in order to obtain feedback whether the interpretation obtained is correct or not.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>ReassureFeedbackRequest</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="es">&quot;Entonces, quieres que {Action} {ArgumentConnector} {Argument}, ¿verdad?&quot;
@@ -1337,11 +1444,12 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#RepeatArgumentRequest -->
+    <!-- https://w3id.org/todo/tododial#RepeatArgumentRequest -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#RepeatArgumentRequest">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ContentRequest"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#RepeatArgumentRequest">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#ContentRequest"/>
         <rdfs:comment xml:lang="en">Request that demands the user to repeat the value of an Argument.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>RepeatArgumentRequest</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">&quot;Can you repeat the {Argument}?
@@ -1354,86 +1462,91 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ResponseTypeNotExpectedResponse -->
+    <!-- https://w3id.org/todo/tododial#ResponseTypeNotExpectedResponse -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ResponseTypeNotExpectedResponse">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#ResponseTypeNotExpectedResponse">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#SystemResponse"/>
         <rdfs:comment xml:lang="en">Reponse given to the user when the UserResponse does not correspond with the expected response of the SystemRequest.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>ResponseTypeNotExpectedResponse</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#Restart -->
+    <!-- https://w3id.org/todo/tododial#Restart -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#Restart">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#DialogueControlMarker"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#Restart">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#DialogueControlMarker"/>
         <rdfs:comment>Marker that requires the dialogue to restart.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>Restart</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SecondaryDialogueTrace -->
+    <!-- https://w3id.org/todo/tododial#SecondaryDialogueTrace -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SecondaryDialogueTrace">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#DialogueProcessTrace"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#SecondaryDialogueTrace">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#DialogueProcessTrace"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#hasDialogueProcessStep"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#DialogueStep"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododial#hasDialogueProcessStep"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododial#DialogueStep"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#hasSystemRequest"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemRequestTrace"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododial#hasSystemRequest"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododial#SystemRequestTrace"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#hasUserResponse"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UserResponseTrace"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododial#hasUserResponse"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododial#UserResponseTrace"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#text"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododial#text"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Element that leaves a record of the secondary dialogues performed.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>SecondaryDialogueTrace</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#StepFunction -->
+    <!-- https://w3id.org/todo/tododial#StepFunction -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#StepFunction">
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#StepFunction">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#IDval"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododial#IDval"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Element that is linked to a function in the Dialogue Manager code. This element also determines the implications of the output of said function in the code.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>StepFunction</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemRequest -->
+    <!-- https://w3id.org/todo/tododial#SystemRequest -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemRequest">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemStep"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#SystemRequest">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#SystemStep"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/todo/tododial#SystemResponse"/>
         <rdfs:comment xml:lang="en">Act in which the system requires user input.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>SystemRequest</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example>Ask for missing information, ask for confirmation.</skos:example>
@@ -1441,95 +1554,101 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemRequestTrace -->
+    <!-- https://w3id.org/todo/tododial#SystemRequestTrace -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemRequestTrace">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemStepTrace"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#SystemRequestTrace">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#SystemStepTrace"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#isTraceOf"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemRequest"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododial#isTraceOf"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododial#SystemRequest"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Element that leaves a record of the SystemRequests performed throughout the dialogue process.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>SystemRequestTrace</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse -->
+    <!-- https://w3id.org/todo/tododial#SystemResponse -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemStep"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#SystemResponse">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#SystemStep"/>
         <rdfs:comment xml:lang="en">Information that the system provides in response to a UserRequest or as a piece of information directed to the user without a prior UserRequest.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>SystemResponse</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponseTrace -->
+    <!-- https://w3id.org/todo/tododial#SystemResponseTrace -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponseTrace">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemStepTrace"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#SystemResponseTrace">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#SystemStepTrace"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#isTraceOf"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododial#isTraceOf"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododial#SystemResponse"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Element that leaves a record of the SystemResponses performed throughout the dialogue process.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>SystemResponseTrace</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemStep -->
+    <!-- https://w3id.org/todo/tododial#SystemStep -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemStep">
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#SystemStep">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#outputSentence"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododial#outputSentence"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UserStepTrace"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/todo/tododial#UserStepTrace"/>
         <rdfs:comment>Step performed by the system in order to request information to the user or simply outputting information.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>SystemStep</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemStepTrace -->
+    <!-- https://w3id.org/todo/tododial#SystemStepTrace -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemStepTrace">
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#SystemStepTrace">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#isTraceOf"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemStep"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododial#isTraceOf"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododial#SystemStep"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Element that leaves a record of the SystemSteps performed throughout the dialogue process.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>SystemStepTrace</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#TooManyActionOptionsResponse -->
+    <!-- https://w3id.org/todo/tododial#TooManyActionOptionsResponse -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#TooManyActionOptionsResponse">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#TooManyActionOptionsResponse">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#SystemResponse"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#implies"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UserCommandRequest"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododial#implies"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododial#UserCommandRequest"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Response given when the number of possible Actions is too big.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>TooManyActionOptionsResponse</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">Your command can be associated to too many actions! Can you repeat and be more specific, please?</skos:example>
@@ -1538,17 +1657,18 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#TooManyAlternativesResponse -->
+    <!-- https://w3id.org/todo/tododial#TooManyAlternativesResponse -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#TooManyAlternativesResponse">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#TooManyAlternativesResponse">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#SystemResponse"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#implies"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentClarificationRequest"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododial#implies"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododial#ArgumentClarificationRequest"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Response given when the alternatives (in general) are too big.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>TooManyAlternativesResponse</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">&quot;I have too many options taking into account the information you provided to me.&quot;
@@ -1561,16 +1681,17 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#TooManyArgumentOptionsResponse -->
+    <!-- https://w3id.org/todo/tododial#TooManyArgumentOptionsResponse -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#TooManyArgumentOptionsResponse">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#TooManyArgumentOptionsResponse">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#SystemResponse"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#implies"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UserCommandRequest"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododial#implies"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododial#UserCommandRequest"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>TooManyArgumentOptionsResponse</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">Response given when the number of possible Arguments is too big.</skos:example>
@@ -1580,17 +1701,18 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#TooManyWorldElementOptionsResponse -->
+    <!-- https://w3id.org/todo/tododial#TooManyWorldElementOptionsResponse -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#TooManyWorldElementOptionsResponse">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#TooManyWorldElementOptionsResponse">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#SystemResponse"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#implies"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ArgumentClarificationRequest"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododial#implies"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododial#ArgumentClarificationRequest"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Response given when the number of possible World Elements is too big.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>TooManyWorldElementOptionsResponse</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">Your command can be associated to too many elements!</skos:example>
@@ -1599,22 +1721,24 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UnderstoodResponse -->
+    <!-- https://w3id.org/todo/tododial#UnderstoodResponse -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UnderstoodResponse">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#UnderstoodResponse">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#SystemResponse"/>
         <rdfs:comment>Response given by the system to reassure the user that it has understood the request.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>UnderstoodResponse</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UserCommandRequest -->
+    <!-- https://w3id.org/todo/tododial#UserCommandRequest -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UserCommandRequest">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ContentRequest"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#UserCommandRequest">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#ContentRequest"/>
         <rdfs:comment xml:lang="en">Request to the user to provide their (initial) command.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>UserCommandRequest</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="es">How can I help you?
@@ -1627,57 +1751,61 @@ Dame tu comando.</skos:example>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UserRequestTrace -->
+    <!-- https://w3id.org/todo/tododial#UserRequestTrace -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UserRequestTrace">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UserStepTrace"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UserResponseTrace"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#UserRequestTrace">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#UserStepTrace"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/todo/tododial#UserResponseTrace"/>
         <rdfs:comment xml:lang="en">Element that leaves a record of the User Requests performed throughout the dialogue process.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>UserRequestTrace</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UserResponseTrace -->
+    <!-- https://w3id.org/todo/tododial#UserResponseTrace -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UserResponseTrace">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UserStepTrace"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#UserResponseTrace">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#UserStepTrace"/>
         <rdfs:comment xml:lang="en">Element that leaves a record of the User Responses performed throughout the dialogue process.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>UserResponseTrace</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UserStepTrace -->
+    <!-- https://w3id.org/todo/tododial#UserStepTrace -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UserStepTrace">
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#UserStepTrace">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#text"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododial#text"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Element that leaves a record of the user steps (requests and responses) performed throughout the dialogue process.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>UserStepTrace</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ValueNotCompatibleWithArgumentResponse -->
+    <!-- https://w3id.org/todo/tododial#ValueNotCompatibleWithArgumentResponse -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ValueNotCompatibleWithArgumentResponse">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#ValueNotCompatibleWithArgumentResponse">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#SystemResponse"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#implies"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#VerifyInfoRequest"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododial#implies"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododial#VerifyInfoRequest"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Response given when the ArgValue for an Argument provided by the user is not compatible with said Argument.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>ValueNotCompatibleWithArgumentResponse</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">&quot;It cannot be the {Argument}&quot;.
@@ -1690,11 +1818,12 @@ Dame tu comando.</skos:example>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#VerifyInfoRequest -->
+    <!-- https://w3id.org/todo/tododial#VerifyInfoRequest -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#VerifyInfoRequest">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ContentRequest"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#VerifyInfoRequest">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#ContentRequest"/>
         <rdfs:comment xml:lang="en">Request that requires the user to repeat some information.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>VerifyInfoRequest</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">[Previous SysResponse: &quot;This item cannot be {ArgTag}&quot;]
@@ -1711,25 +1840,26 @@ Dame tu comando.</skos:example>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#YesNoRequest -->
+    <!-- https://w3id.org/todo/tododial#YesNoRequest -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#YesNoRequest">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemRequest"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#YesNoRequest">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#SystemRequest"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#hasStepFunction"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#YesNoRequestStepFunction"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododial#hasStepFunction"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododial#YesNoRequestStepFunction"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#requires"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#YesNoUserResponseTrace"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododial#requires"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododial#YesNoUserResponseTrace"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Request the response of which is expected to be limited to &quot;Yes&quot; or &quot;No&quot; (and equivalents).
 
 Also known as &quot;Polar question&quot; in linguistics.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>YesNoRequest</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">Do you want to go to the laboratory?</skos:example>
@@ -1737,53 +1867,56 @@ Also known as &quot;Polar question&quot; in linguistics.</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#YesNoRequestStepFunction -->
+    <!-- https://w3id.org/todo/tododial#YesNoRequestStepFunction -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#YesNoRequestStepFunction">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#StepFunction"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#YesNoRequestStepFunction">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#StepFunction"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#incorrectUserResponseTypeImplies"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ContentResponseNotExpected"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododial#incorrectUserResponseTypeImplies"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododial#ContentResponseNotExpected"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#isStepFunctionOf"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#YesNoRequest"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododial#isStepFunctionOf"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododial#YesNoRequest"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#userResponseNotUnderstoodImplies"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#NotUnderstoodResponse"/>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododial#userResponseNotUnderstoodImplies"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododial#NotUnderstoodResponse"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Step Function associated to a YesNoRequest.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>YesNoRequestStepFunction</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#YesNoResponseNotExpected -->
+    <!-- https://w3id.org/todo/tododial#YesNoResponseNotExpected -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#YesNoResponseNotExpected">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ResponseTypeNotExpectedResponse"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#YesNoResponseNotExpected">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#ResponseTypeNotExpectedResponse"/>
         <rdfs:comment xml:lang="es">&quot;Creo que no te he entendido. ¿Puedes ser un poco más concreto con tu respuesta?&quot;</rdfs:comment>
         <rdfs:comment xml:lang="en">&quot;I think I haven&apos;t understood. Can you be more specific?</rdfs:comment>
         <rdfs:comment xml:lang="en">Reponse given to the user when the UserResponse is a YesNoResponse and the SystemRequest requires a ContentResponse.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>YesNoResponseNotExpected</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#YesNoUserResponseTrace -->
+    <!-- https://w3id.org/todo/tododial#YesNoUserResponseTrace -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#YesNoUserResponseTrace">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UserResponseTrace"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#YesNoUserResponseTrace">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#UserResponseTrace"/>
         <rdfs:comment xml:lang="en">Element that leaves a record of the User Responses performed throughout the dialogue process. These responses correspond to a positive or negative polarity.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>YesNoUserResponseTrace</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">YesNo User Responses:
@@ -1795,11 +1928,12 @@ Also known as &quot;Polar question&quot; in linguistics.</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#YesUserResponse -->
+    <!-- https://w3id.org/todo/tododial#YesUserResponse -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#YesUserResponse">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#YesNoUserResponseTrace"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododial#YesUserResponse">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododial#YesNoUserResponseTrace"/>
         <rdfs:comment xml:lang="en">Element that leaves a record of the User Responses performed throughout the dialogue process. These responses correspond to a positive polarity.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>YesUserResponse</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">Yes User Responses: Yes, OK</skos:example>
@@ -1818,14 +1952,14 @@ Also known as &quot;Polar question&quot; in linguistics.</rdfs:comment>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#DialogueControlMarker"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#DialogueProcessTrace"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#DialogueStep"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ProcessStep"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#StepFunction"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemStep"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemStepTrace"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UserStepTrace"/>
+            <rdf:Description rdf:about="https://w3id.org/todo/tododial#DialogueControlMarker"/>
+            <rdf:Description rdf:about="https://w3id.org/todo/tododial#DialogueProcessTrace"/>
+            <rdf:Description rdf:about="https://w3id.org/todo/tododial#DialogueStep"/>
+            <rdf:Description rdf:about="https://w3id.org/todo/tododial#ProcessStep"/>
+            <rdf:Description rdf:about="https://w3id.org/todo/tododial#StepFunction"/>
+            <rdf:Description rdf:about="https://w3id.org/todo/tododial#SystemStep"/>
+            <rdf:Description rdf:about="https://w3id.org/todo/tododial#SystemStepTrace"/>
+            <rdf:Description rdf:about="https://w3id.org/todo/tododial#UserStepTrace"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
