@@ -12,20 +12,21 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:ontolex="http://www.w3.org/ns/lemon/ontolex#"
      xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:prov="http://www.w3.org/ns/prov#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT">
-        <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dialogue for Generic Task-Oriented Dialogue Systems Ontology</terms:title>
+        <ns:license>http://purl.org/NET/rdflicense/cc-by4.0</ns:license>
         <owl:versionInfo>1.0.0</owl:versionInfo>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></terms:issued>
         <vann:preferredNamespaceUri></vann:preferredNamespaceUri>
+        <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tododial</vann:preferredNamespacePrefix>
+        <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TODODial: Dialogue Module for Task-Oriented Dialogue management Ontology (TODO)</terms:title>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-21T00:00:00</terms:created>
-        <ns:license>CC BY &lt;https://creativecommons.org/licenses/by/2.0/&gt;</ns:license>
         <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cristina Aceta (Tekniker) &lt;mailto:cristina.aceta@tekniker.es&gt;</terms:creator>
         <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Module for dialogue process and system output management.</terms:description>
         <owl:priorVersion></owl:priorVersion>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-08T16:00:00</terms:modified>
         <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Izaskun Fernández (Tekniker) &lt;mailto:izaskun.fernandez@tekniker.es&gt;</terms:contributor>
-        <vann:preferredNamespacePrefix>domainONT</vann:preferredNamespacePrefix>
     </owl:Ontology>
     
 
@@ -110,6 +111,12 @@
     <!-- http://www.w3.org/2002/07/owl#versionIRI -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionIRI"/>
+    
+
+
+    <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
     
 
 
@@ -373,13 +380,30 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#IDval">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:comment>Unique identification value for individuals.</rdfs:comment>
+        <rdfs:label>IDval</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#currentValue -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#currentValue"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#currentValue">
+        <rdfs:comment>When asking the user for a specific information, the information currently asked to the user.</rdfs:comment>
+        <rdfs:label>currentValue</rdfs:label>
+        <skos:example xml:lang="en">UserReq: &quot;I want to go to the room&quot;
+
+possibleValue &quot;room1&quot;
+possibleValue &quot;room2&quot;
+
+SystemReq: &quot;Do you want to go to {room1}?&quot; (currentValue: room1); &quot;Do you want to go to {room2}? (currentValue: room2)&quot;</skos:example>
+        <skos:example xml:lang="en">UserReq: &quot;Quiero ir a la sala&quot;
+
+possibleValue &quot;sala1&quot;
+possibleValue &quot;sala2&quot;
+
+System Req: &quot;¿Quieres ir a la {sala1}?&quot; (currentValue: sala1); &quot;¿Quieres ir a la {sala2}? (currentValue: sala2)&quot;</skos:example>
+    </owl:DatatypeProperty>
     
 
 
@@ -387,6 +411,8 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#dateTime">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment>Sets a timestamp to a DialogueTrace.</rdfs:comment>
+        <rdfs:label>dateTime</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -411,6 +437,8 @@
                 </owl:oneOf>
             </rdfs:Datatype>
         </rdfs:range>
+        <rdfs:comment>Sets whether a Dialogue/SecondaryDialogue has finished (closed) or not (open).</rdfs:comment>
+        <rdfs:label>dialStatus</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -418,59 +446,8 @@
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#dialogueStep -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#dialogueStep">
-        <rdfs:range>
-            <rdfs:Datatype>
-                <owl:oneOf>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                        <rdf:first>Action</rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                <rdf:first>ActionArgsAssign</rdf:first>
-                                <rdf:rest>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first>ActionExec</rdf:first>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first>Feedback</rdf:first>
-                                                <rdf:rest>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                        <rdf:first>Frame</rdf:first>
-                                                        <rdf:rest>
-                                                            <rdf:Description>
-                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                <rdf:first>Intent</rdf:first>
-                                                                <rdf:rest>
-                                                                    <rdf:Description>
-                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                        <rdf:first>KEE</rdf:first>
-                                                                        <rdf:rest>
-                                                                            <rdf:Description>
-                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                                <rdf:first>Skill</rdf:first>
-                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                                                            </rdf:Description>
-                                                                        </rdf:rest>
-                                                                    </rdf:Description>
-                                                                </rdf:rest>
-                                                            </rdf:Description>
-                                                        </rdf:rest>
-                                                    </rdf:Description>
-                                                </rdf:rest>
-                                            </rdf:Description>
-                                        </rdf:rest>
-                                    </rdf:Description>
-                                </rdf:rest>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </owl:oneOf>
-            </rdfs:Datatype>
-        </rdfs:range>
+        <rdfs:comment>Used to control which step is performing the current Dialogue.</rdfs:comment>
+        <rdfs:label>dialogueStep</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -479,13 +456,9 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#finishDateTime">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#dateTime"/>
+        <rdfs:comment>Sets a finish timestamp to a DialogueTrace.</rdfs:comment>
+        <rdfs:label>finishDateTime</rdfs:label>
     </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#hasValue -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#hasValue"/>
     
 
 
@@ -493,45 +466,66 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#initDateTime">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#dateTime"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#isValid -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#isValid">
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>Sets a start timestamp to a DialogueTrace.</rdfs:comment>
+        <rdfs:label>initDateTime</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#order -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#order"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#order">
+        <rdfs:comment>Sets the order for StepFunctions/DialogueSteps.</rdfs:comment>
+        <rdfs:label>order</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#outputSentence -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#outputSentence"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#outputSentence">
+        <rdfs:comment>String to be output by the system in order to communicate a SystemRequest/Response to the user.</rdfs:comment>
+        <rdfs:label>outputSentence</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#possibleValue -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#possibleValue"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#possibleValue">
+        <rdfs:comment>When asking the user for a specific information, the possible values of that information to be asked to the user.</rdfs:comment>
+        <rdfs:label>possibleValue</rdfs:label>
+        <skos:example xml:lang="en">UserReq: &quot;I want to go to the room&quot;
+
+possibleValue &quot;room1&quot;
+possibleValue &quot;room2&quot;
+
+SystemReq: &quot;Do you want to go to {room1}?&quot;; &quot;Do you want to go to {room2}?&quot;</skos:example>
+        <skos:example xml:lang="es">UserReq: &quot;Quiero ir a la sala&quot;
+
+possibleValue &quot;sala1&quot;
+possibleValue &quot;sala2&quot;
+
+System Req: &quot;¿Quieres ir a la {sala1}?&quot;; &quot;¿Quieres ir a la {sala2}?&quot;</skos:example>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#text -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#text"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#text">
+        <rdfs:comment>String that corresponds to a transcribed command by an user or the fully constructed outputSentence directed to the user.</rdfs:comment>
+        <rdfs:label>text</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#verb -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#verb"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#verb">
+        <rdfs:comment>Key element classified as &quot;verb&quot;/&quot;action&quot;.</rdfs:comment>
+        <rdfs:label>verb</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
@@ -552,6 +546,7 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#YesNoRequest"/>
         <rdfs:comment xml:lang="en">Request that makes the user choose from a set of Actions obtained through inference.</rdfs:comment>
         <rdfs:label>ActionDisambiguationRequest</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">[Previous SysResp: &quot;I couldn&apos;t resolve the action from your request&quot;.]
 &quot;Do you want to {ActionTag}?
 
@@ -577,6 +572,7 @@
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Response that the system gives when a command can be associated to more than one action.</rdfs:comment>
         <rdfs:label>ActionOptionsResponse</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">Your command can be associated to many actions!</skos:example>
         <skos:example xml:lang="es">¡El comando puede asociarse a varias acciones!</skos:example>
     </owl:Class>
@@ -589,6 +585,7 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#YesNoRequest"/>
         <rdfs:comment xml:lang="es">Request that arises when the system has not been able to obtain an argument through an item + complement. The system suggests an alternative that contains the complement in the request.</rdfs:comment>
         <rdfs:label>AlternativeArgumentSuggestionRequest</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="es">Request: &quot;Llévame a un laboratorio con micrófono&quot;.
 
 &quot;No encuentro ningún/a {Item} con {Complement} como {argumentTag}, pero puedo sugerir {IDval_AlternativeItem}, que sí que tiene. ¿Le llevo ahí?&quot;
@@ -609,6 +606,7 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#YesNoRequest"/>
         <rdfs:comment xml:lang="en">Request made to reassure the assignation of a value from the KEE to an Argument.</rdfs:comment>
         <rdfs:label>ArgumentAssignationRequest</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="es">&quot;El {Argument} es el {Argument_value}, ¿verdad?&quot;
 
 &quot;El Destino es el &quot;Auditorio&quot;, ¿verdad?&quot;</skos:example>
@@ -627,6 +625,7 @@
 
 For example, the user would require a &quot;piece&quot;, and the system includes data for 300 types of pieces.</rdfs:comment>
         <rdfs:label>ArgumentCharacteristicRequest</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">&quot;Which {characteristic} is {too_broad_argument}?&quot;
 
 &quot;Which {colour} is (the) {piece}?&quot;</skos:example>
@@ -643,6 +642,7 @@ For example, the user would require a &quot;piece&quot;, and the system includes
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ContentRequest"/>
         <rdfs:comment xml:lang="en">Request that asks the user for some clarification for the value of an argument when a previously saved value generates too many options.</rdfs:comment>
         <rdfs:label>ArgumentClarificationRequest</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="es">&quot;Could you please be more specific with {ArgTag}?&quot;
 
 &quot;Could you please be more specific with {the destination you want me to take you}?&quot;</skos:example>
@@ -659,6 +659,7 @@ For example, the user would require a &quot;piece&quot;, and the system includes
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
         <rdfs:comment xml:lang="en">Response that gives details about an Argument. For example, when the user does not understand what information conveys said Argument.</rdfs:comment>
         <rdfs:label>ArgumentExplanationResponse</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="es">&quot;El {Argument} corresponde a{ArgDescription}&quot;
 
 &quot;El {Error} corresponde a{l número de error que aparece en la máquina}&quot;</skos:example>
@@ -682,6 +683,7 @@ For example, the user would require a &quot;piece&quot;, and the system includes
         <rdfs:comment xml:lang="en">The system informs the user the Argument value provided is not valid according to what has been modelled in the KB.</rdfs:comment>
         <rdfs:comment xml:lang="en">This would imply an ArgumentRequest.</rdfs:comment>
         <rdfs:label>ArgumentNotCompatibleResponse</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">&quot;{ArgumentValue} cannot be the {Argument}.&quot;
 
 &quot;{Toilet} cannot be the {Error}.&quot;</skos:example>
@@ -705,6 +707,7 @@ For example, the user would require a &quot;piece&quot;, and the system includes
         <rdfs:comment xml:lang="en">Response given when the system has not been able to guess the value of the Argument through its characteristics.</rdfs:comment>
         <rdfs:comment xml:lang="en">This would imply an ArgumentRequest/ArgumentCharacteristicRequest</rdfs:comment>
         <rdfs:label>ArgumentNotGuessedResponse</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="es">&quot;Con las características que me has dado, no he podido averiguar el {Argument}.&quot;
 
 &quot;Con las características que me has dado, no he podido averiguar el {Error}.&quot;</skos:example>
@@ -727,6 +730,7 @@ For example, the user would require a &quot;piece&quot;, and the system includes
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Response that the system gives when an item can be associated to more than one argument.</rdfs:comment>
         <rdfs:label>ArgumentOptionsResponse</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">The item {item} can be associated to many arguments!</skos:example>
         <skos:example xml:lang="es">¡El item {item} puede asociarse a varios argumentos!</skos:example>
     </owl:Class>
@@ -739,6 +743,7 @@ For example, the user would require a &quot;piece&quot;, and the system includes
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ContentRequest"/>
         <rdfs:comment xml:lang="en">Request that demands for the value of an Argument.</rdfs:comment>
         <rdfs:label>ArgumentRequest</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">&quot;Can you tell me the {argument}?
 
 &quot;Can you tell me the {Destination}?&quot;</skos:example>
@@ -755,6 +760,7 @@ For example, the user would require a &quot;piece&quot;, and the system includes
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#YesNoRequest"/>
         <rdfs:comment xml:lang="en">Request made when a value for an Argument can belong to different Arguments. The strategy is asking for each Argument option until the user confirms.</rdfs:comment>
         <rdfs:label>ArgumentSpecifyRequest</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="es">[Situation: the value &quot;Mesa de reparación&quot; could be Origin or Destination]
 
 [Previous SysResponse: &quot;¡Lo que me has dicho podría ser varias cosas!&quot;]
@@ -779,6 +785,7 @@ For example, the user would require a &quot;piece&quot;, and the system includes
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#YesNoRequest"/>
         <rdfs:comment xml:lang="en">Request that tries to obtain the value of the argument when it is ambiguous (e.g. &quot;sala&quot; may apply to &quot;sala Ura&quot;, &quot;sala Sua&quot;, etc.).</rdfs:comment>
         <rdfs:label>ArgumentValueDisambiguationRequest</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">&quot;Do you want {Action} {ArgumentConnector} {WorldElement}?&quot;
 
 &quot;Do you want {to go} {to} {Sala Ura}?&quot;</skos:example>
@@ -801,6 +808,7 @@ For example, the user would require a &quot;piece&quot;, and the system includes
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Response that the system gives when it cannot associate an action/target to one or more actions.</rdfs:comment>
         <rdfs:label>CannotResolveActionResponse</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">I couldn&apos;t associate your command to an action. Can you please be more specific?</skos:example>
         <skos:example xml:lang="es">No he podido asociar tu comando a una acción. ¿Puedes repetir y ser más específico, por favor?</skos:example>
     </owl:Class>
@@ -821,6 +829,7 @@ For example, the user would require a &quot;piece&quot;, and the system includes
 
 [to be followed by an ArgRequest]</rdfs:comment>
         <rdfs:label>CannotResolveCommandResponse</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">I could not resolve your command.</skos:example>
         <skos:example xml:lang="es">No he podido resolver tu petición.</skos:example>
     </owl:Class>
@@ -848,6 +857,7 @@ For example, the user would require a &quot;piece&quot;, and the system includes
 
 Also known as &quot;Non polar/Open question&quot; in linguistics.</rdfs:comment>
         <rdfs:label>ContentRequest</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">Which is the error code?</skos:example>
     </owl:Class>
     
@@ -877,6 +887,7 @@ Also known as &quot;Non polar/Open question&quot; in linguistics.</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:comment>Step Function associated to a ContentRequest.</rdfs:comment>
         <rdfs:label>ContentRequestStepFunction</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
     </owl:Class>
     
 
@@ -889,6 +900,7 @@ Also known as &quot;Non polar/Open question&quot; in linguistics.</rdfs:comment>
         <rdfs:comment xml:lang="en">&quot;You only need me to tell me yes or no, please&quot;</rdfs:comment>
         <rdfs:comment xml:lang="en">Reponse given to the user when the UserResponse is a ContentResponse and the SystemRequest requires a YesNoResponse.</rdfs:comment>
         <rdfs:label>ContentResponseNotExpected</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
     </owl:Class>
     
 
@@ -900,14 +912,26 @@ Also known as &quot;Non polar/Open question&quot; in linguistics.</rdfs:comment>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#YesNoUserResponseTrace"/>
         <rdfs:comment xml:lang="en">Element that leaves a record of the User Responses performed throughout the dialogue process. These responses provide specific information, as a response for a ContentRequest.</rdfs:comment>
         <rdfs:label>ContentUserResponseTrace</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">Content User Response: The error code is 412.</skos:example>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#DialogueControlMarkers -->
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#Continue -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#DialogueControlMarkers">
+    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#Continue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#DialogueControlMarker"/>
+        <rdfs:comment>Marker that conveys the idea of continuing with the dialogue process.</rdfs:comment>
+        <rdfs:label>Continue</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#DialogueControlMarker -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#DialogueControlMarker">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#IDval"/>
@@ -916,6 +940,7 @@ Also known as &quot;Non polar/Open question&quot; in linguistics.</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:comment>Elements that correspond to predefined or generic actions in dialogue control.</rdfs:comment>
         <rdfs:label>DialogueControlMarkers</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example>Continue, restart dialogue</skos:example>
     </owl:Class>
     
@@ -969,6 +994,7 @@ Also known as &quot;Non polar/Open question&quot; in linguistics.</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:comment>Element that leaves a record of the dialogues performed throughout the dialogue process.</rdfs:comment>
         <rdfs:label>DialogueProcessTrace</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
     </owl:Class>
     
 
@@ -997,6 +1023,7 @@ Also known as &quot;Non polar/Open question&quot; in linguistics.</rdfs:comment>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ProcessStep"/>
         <rdfs:comment>Step in the dialogue process that requires a system interaction with the user (SystemStep).</rdfs:comment>
         <rdfs:label>DialogueStep</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
     </owl:Class>
     
 
@@ -1020,6 +1047,18 @@ Also known as &quot;Non polar/Open question&quot; in linguistics.</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:comment>Element that leaves a record of the dialogues performed.</rdfs:comment>
         <rdfs:label>DialogueTrace</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#FinishDial -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#FinishDial">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#DialogueControlMarker"/>
+        <rdfs:comment>Marker that establishes that the dialogue must be finished.</rdfs:comment>
+        <rdfs:label>FinishDial</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
     </owl:Class>
     
 
@@ -1036,6 +1075,7 @@ Also known as &quot;Non polar/Open question&quot; in linguistics.</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Welcome message.</rdfs:comment>
         <rdfs:label>GreetingResponse</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">&quot;Hi! I am {SystemName}. I am happy to help you.&quot;
 
 &quot;Hi! I am {Teknibot}. I am happy to help you.&quot;</skos:example>
@@ -1052,6 +1092,7 @@ Also known as &quot;Non polar/Open question&quot; in linguistics.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#YesNoRequest"/>
         <rdfs:comment xml:lang="en">Request that checks which is the Argument/Action that has not been interpreter correctly, after a negative ReassureFeedbackRequest.</rdfs:comment>
         <rdfs:label>IncorrectArgumentRequest</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">&quot;Have I missed the {Argument}?&quot;
 
 &quot;Have I missed the {Origin}?&quot;</skos:example>
@@ -1068,6 +1109,7 @@ Also known as &quot;Non polar/Open question&quot; in linguistics.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#YesNoRequest"/>
         <rdfs:comment xml:lang="en">Request made when a UserRequest can belong to different Intents. The strategy is asking for each Intent option until the user confirms.</rdfs:comment>
         <rdfs:label>IntentRequest</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">Situation: the Intent for the Request could be &quot;Information&quot; or &quot;Guiding&quot;
 
 &quot;So many interpretations! See if you can help me! Do you need {Intent}?&quot;
@@ -1111,6 +1153,7 @@ USR: &quot;Sí&quot;</skos:example>
         <rdfs:comment xml:lang="en">The item {item} is not compatible with any argument for this action.</rdfs:comment>
         <rdfs:comment>The system informs the user the Item value provided is not compatible with any action argument, according to what has been modelled in the KB.</rdfs:comment>
         <rdfs:label>ItemNotCompatibleAnyArgResponse</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
     </owl:Class>
     
 
@@ -1121,6 +1164,7 @@ USR: &quot;Sí&quot;</skos:example>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
         <rdfs:comment xml:lang="en">Response that the system displays when it runs out of options. It is intended to continue with a full request of the element that the previous options corresponded to.</rdfs:comment>
         <rdfs:label>NoMoreOptionsContinueResponse</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">I do not have more options to offer you!</skos:example>
         <skos:example xml:lang="es">¡No tengo más opciones que mostrarte!</skos:example>
     </owl:Class>
@@ -1139,6 +1183,7 @@ USR: &quot;Sí&quot;</skos:example>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Response that the system displays when it runs out of options. It finishes the current Dialogue.</rdfs:comment>
         <rdfs:label>NoMoreOptionsRestartResponse</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">I do not have more options to offer you! Can you reformulate your command so I can understand better?</skos:example>
         <skos:example xml:lang="es">¡No tengo más opciones que mostrarte! ¿Puedes reformular tu comando para que te entienda mejor?</skos:example>
     </owl:Class>
@@ -1157,6 +1202,7 @@ USR: &quot;Sí&quot;</skos:example>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Response that the system returns when the clarification step of the value of an Argument does not return any results.</rdfs:comment>
         <rdfs:label>NoResultsClarificationResponse</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">I cannot find anything that corresponds to your demand.</skos:example>
         <skos:example xml:lang="es">No encuentro ningún elemento que responda a lo que me pides.</skos:example>
     </owl:Class>
@@ -1169,6 +1215,7 @@ USR: &quot;Sí&quot;</skos:example>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#YesNoUserResponseTrace"/>
         <rdfs:comment xml:lang="en">Element that leaves a record of the User Responses performed throughout the dialogue process. These responses correspond to a negative polarity.</rdfs:comment>
         <rdfs:label>NoUserResponse</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">No User Responses: No, Never, Not at all</skos:example>
     </owl:Class>
     
@@ -1180,6 +1227,7 @@ USR: &quot;Sí&quot;</skos:example>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
         <rdfs:comment xml:lang="en">Response that informs the user that the system has not understood the user command.</rdfs:comment>
         <rdfs:label>NotUnderstoodResponse</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">&quot;I am sorry, but I haven&apos;t understood. Can you repeat, please?&quot;</skos:example>
         <skos:example xml:lang="es">&quot;Lo siento, no te he entendido. ¿Puedes repetir, por favor?</skos:example>
     </owl:Class>
@@ -1192,6 +1240,7 @@ USR: &quot;Sí&quot;</skos:example>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UserResponseTrace"/>
         <rdfs:comment xml:lang="en">Response that does not represent a value that can be classified as ContentResponse or YesNoResponse.</rdfs:comment>
         <rdfs:label>NullUserResponseTrace</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">Null User Response: I don&apos;t know.</skos:example>
     </owl:Class>
     
@@ -1217,6 +1266,7 @@ USR: &quot;Sí&quot;</skos:example>
 
 Note the difference between OptionsAvailableResponse and TooManyAlternativesResponse: the first implies that there is a fair amount of options, whereas the latter implies that the options that are available are too many and it will require the user to be more specific.</rdfs:comment>
         <rdfs:label>OptionsAvailableResponse</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">&quot;I have many options for your request.&quot;</skos:example>
         <skos:example xml:lang="es">&quot;Tengo varias opciones para tu comando.&quot;
 
@@ -1242,6 +1292,7 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
         </rdfs:subClassOf>
         <rdfs:comment>Step in the dialogue process that does not require a system interaction with the user (SystemStep).</rdfs:comment>
         <rdfs:label>ProcessStep</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
     </owl:Class>
     
 
@@ -1264,6 +1315,7 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
         </rdfs:subClassOf>
         <rdfs:comment>Step Function associated to a ProcessStep.</rdfs:comment>
         <rdfs:label>ProcessStepStepFunction</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
     </owl:Class>
     
 
@@ -1274,6 +1326,7 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#YesNoRequest"/>
         <rdfs:comment xml:lang="en">Request that is sent in order to obtain feedback whether the interpretation obtained is correct or not.</rdfs:comment>
         <rdfs:label>ReassureFeedbackRequest</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="es">&quot;Entonces, quieres que {Action} {ArgumentConnector} {Argument}, ¿verdad?&quot;
 
 &quot;Entonces, quieres que {te lleve} {a} {l baño}, ¿verdad?&quot;</skos:example>
@@ -1290,6 +1343,7 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ContentRequest"/>
         <rdfs:comment xml:lang="en">Request that demands the user to repeat the value of an Argument.</rdfs:comment>
         <rdfs:label>RepeatArgumentRequest</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">&quot;Can you repeat the {Argument}?
 
 &quot;Can you repeat the {Destination}?&quot;</skos:example>
@@ -1306,6 +1360,18 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
         <rdfs:comment xml:lang="en">Reponse given to the user when the UserResponse does not correspond with the expected response of the SystemRequest.</rdfs:comment>
         <rdfs:label>ResponseTypeNotExpectedResponse</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#Restart -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#Restart">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#DialogueControlMarker"/>
+        <rdfs:comment>Marker that requires the dialogue to restart.</rdfs:comment>
+        <rdfs:label>Restart</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
     </owl:Class>
     
 
@@ -1341,6 +1407,7 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
         </rdfs:subClassOf>
         <rdfs:comment>Element that leaves a record of the secondary dialogues performed.</rdfs:comment>
         <rdfs:label>SecondaryDialogueTrace</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
     </owl:Class>
     
 
@@ -1356,6 +1423,7 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
         </rdfs:subClassOf>
         <rdfs:comment>Element that is linked to a function in the Dialogue Manager code. This element also determines the implications of the output of said function in the code.</rdfs:comment>
         <rdfs:label>StepFunction</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
     </owl:Class>
     
 
@@ -1367,6 +1435,7 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
         <rdfs:comment xml:lang="en">Act in which the system requires user input.</rdfs:comment>
         <rdfs:label>SystemRequest</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example>Ask for missing information, ask for confirmation.</skos:example>
     </owl:Class>
     
@@ -1384,6 +1453,7 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
         </rdfs:subClassOf>
         <rdfs:comment>Element that leaves a record of the SystemRequests performed throughout the dialogue process.</rdfs:comment>
         <rdfs:label>SystemRequestTrace</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
     </owl:Class>
     
 
@@ -1394,6 +1464,7 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemStep"/>
         <rdfs:comment xml:lang="en">Information that the system provides in response to a UserRequest or as a piece of information directed to the user without a prior UserRequest.</rdfs:comment>
         <rdfs:label>SystemResponse</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
     </owl:Class>
     
 
@@ -1410,6 +1481,7 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
         </rdfs:subClassOf>
         <rdfs:comment>Element that leaves a record of the SystemResponses performed throughout the dialogue process.</rdfs:comment>
         <rdfs:label>SystemResponseTrace</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
     </owl:Class>
     
 
@@ -1426,6 +1498,7 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UserStepTrace"/>
         <rdfs:comment>Step performed by the system in order to request information to the user or simply outputting information.</rdfs:comment>
         <rdfs:label>SystemStep</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
     </owl:Class>
     
 
@@ -1441,6 +1514,7 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
         </rdfs:subClassOf>
         <rdfs:comment>Element that leaves a record of the SystemSteps performed throughout the dialogue process.</rdfs:comment>
         <rdfs:label>SystemStepTrace</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
     </owl:Class>
     
 
@@ -1457,6 +1531,7 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Response given when the number of possible Actions is too big.</rdfs:comment>
         <rdfs:label>TooManyActionOptionsResponse</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">Your command can be associated to too many actions! Can you repeat and be more specific, please?</skos:example>
         <skos:example xml:lang="es">¡Tu comando se puede asociar a demasiadas acciones! ¿Puedes repetir y ser un poco más específico, por favor?</skos:example>
     </owl:Class>
@@ -1475,6 +1550,7 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Response given when the alternatives (in general) are too big.</rdfs:comment>
         <rdfs:label>TooManyAlternativesResponse</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">&quot;I have too many options taking into account the information you provided to me.&quot;
 
 &quot;I have too many options taking into account the information you provided to me.&quot;</skos:example>
@@ -1496,6 +1572,7 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>TooManyArgumentOptionsResponse</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">Response given when the number of possible Arguments is too big.</skos:example>
         <skos:example xml:lang="en">Your command can be associated to too many arguments! Can you repeat and be more specific, please?</skos:example>
         <skos:example xml:lang="es">¡Tu comando se puede asociar a demasiados argumentos! ¿Puedes repetir y ser un poco más específico, por favor?</skos:example>
@@ -1515,6 +1592,7 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Response given when the number of possible World Elements is too big.</rdfs:comment>
         <rdfs:label>TooManyWorldElementOptionsResponse</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">Your command can be associated to too many elements!</skos:example>
         <skos:example xml:lang="es">¡Tu comando se puede asociar a demasiados elementos!</skos:example>
     </owl:Class>
@@ -1527,6 +1605,7 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
         <rdfs:comment>Response given by the system to reassure the user that it has understood the request.</rdfs:comment>
         <rdfs:label>UnderstoodResponse</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
     </owl:Class>
     
 
@@ -1537,6 +1616,7 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ContentRequest"/>
         <rdfs:comment xml:lang="en">Request to the user to provide their (initial) command.</rdfs:comment>
         <rdfs:label>UserCommandRequest</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="es">How can I help you?
 
 Tell me your command.</skos:example>
@@ -1551,15 +1631,10 @@ Dame tu comando.</skos:example>
 
     <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UserRequestTrace">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UserStepTrace"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#requires"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemResponse"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UserResponseTrace"/>
         <rdfs:comment xml:lang="en">Element that leaves a record of the User Requests performed throughout the dialogue process.</rdfs:comment>
         <rdfs:label>UserRequestTrace</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
     </owl:Class>
     
 
@@ -1570,6 +1645,7 @@ Dame tu comando.</skos:example>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UserStepTrace"/>
         <rdfs:comment xml:lang="en">Element that leaves a record of the User Responses performed throughout the dialogue process.</rdfs:comment>
         <rdfs:label>UserResponseTrace</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
     </owl:Class>
     
 
@@ -1586,6 +1662,7 @@ Dame tu comando.</skos:example>
         </rdfs:subClassOf>
         <rdfs:comment>Element that leaves a record of the user steps (requests and responses) performed throughout the dialogue process.</rdfs:comment>
         <rdfs:label>UserStepTrace</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
     </owl:Class>
     
 
@@ -1602,6 +1679,7 @@ Dame tu comando.</skos:example>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Response given when the ArgValue for an Argument provided by the user is not compatible with said Argument.</rdfs:comment>
         <rdfs:label>ValueNotCompatibleWithArgumentResponse</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">&quot;It cannot be the {Argument}&quot;.
 
 &quot;It cannot be the {destination you want me to take you}&quot;.</skos:example>
@@ -1618,6 +1696,7 @@ Dame tu comando.</skos:example>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ContentRequest"/>
         <rdfs:comment xml:lang="en">Request that requires the user to repeat some information.</rdfs:comment>
         <rdfs:label>VerifyInfoRequest</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">[Previous SysResponse: &quot;This item cannot be {ArgTag}&quot;]
 &quot;Can you verify?&quot;
 
@@ -1652,6 +1731,7 @@ Dame tu comando.</skos:example>
 
 Also known as &quot;Polar question&quot; in linguistics.</rdfs:comment>
         <rdfs:label>YesNoRequest</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">Do you want to go to the laboratory?</skos:example>
     </owl:Class>
     
@@ -1681,6 +1761,7 @@ Also known as &quot;Polar question&quot; in linguistics.</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:comment>Step Function associated to a YesNoRequest.</rdfs:comment>
         <rdfs:label>YesNoRequestStepFunction</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
     </owl:Class>
     
 
@@ -1693,6 +1774,7 @@ Also known as &quot;Polar question&quot; in linguistics.</rdfs:comment>
         <rdfs:comment xml:lang="en">&quot;I think I haven&apos;t understood. Can you be more specific?</rdfs:comment>
         <rdfs:comment xml:lang="en">Reponse given to the user when the UserResponse is a YesNoResponse and the SystemRequest requires a ContentResponse.</rdfs:comment>
         <rdfs:label>YesNoResponseNotExpected</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
     </owl:Class>
     
 
@@ -1703,6 +1785,7 @@ Also known as &quot;Polar question&quot; in linguistics.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UserResponseTrace"/>
         <rdfs:comment xml:lang="en">Element that leaves a record of the User Responses performed throughout the dialogue process. These responses correspond to a positive or negative polarity.</rdfs:comment>
         <rdfs:label>YesNoUserResponseTrace</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">YesNo User Responses:
 
 - Yes, OK
@@ -1718,38 +1801,33 @@ Also known as &quot;Polar question&quot; in linguistics.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#YesNoUserResponseTrace"/>
         <rdfs:comment xml:lang="en">Element that leaves a record of the User Responses performed throughout the dialogue process. These responses correspond to a positive polarity.</rdfs:comment>
         <rdfs:label>YesUserResponse</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">Yes User Responses: Yes, OK</skos:example>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#continue -->
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#continue">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#DialogueControlMarkers"/>
-        <rdfs:comment>Marker that conveys the idea of continuing with the dialogue process.</rdfs:comment>
-        <rdfs:label>continue</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#finishDial -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#finishDial">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#DialogueControlMarkers"/>
-        <rdfs:comment>Marker that establishes that the dialogue must be finished.</rdfs:comment>
-        <rdfs:label>finishDial</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#restart -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#restart">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#DialogueControlMarkers"/>
-        <rdfs:comment>Marker that requires the dialogue to restart.</rdfs:comment>
-        <rdfs:label>restart</rdfs:label>
-    </owl:Class>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#DialogueControlMarker"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#DialogueProcessTrace"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#DialogueStep"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#ProcessStep"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#StepFunction"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemStep"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#SystemStepTrace"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UserStepTrace"/>
+        </owl:members>
+    </rdf:Description>
 </rdf:RDF>
 
 

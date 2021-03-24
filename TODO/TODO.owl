@@ -39,19 +39,24 @@
     
 
 
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#isTraceOf -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#isTraceOf">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isTraceOf"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isTraceOf -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#isTraceOf"/>
+    
+
+
     <!-- http://www.semanticweb.org/linuxsii/ontologies/2020/6/DialSystemONT#hasActionTrace -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/linuxsii/ontologies/2020/6/DialSystemONT#hasActionTrace">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/linuxsii/ontologies/2020/6/DialSystemONT#isActionTraceOf"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/linuxsii/ontologies/2020/6/DialSystemONT#hasTrace -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/linuxsii/ontologies/2020/6/DialSystemONT#hasTrace">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/linuxsii/ontologies/2020/6/DialSystemONT#isTraceOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     </owl:ObjectProperty>
     
@@ -65,11 +70,27 @@
     
 
 
-    <!-- http://www.semanticweb.org/linuxsii/ontologies/2020/6/DialSystemONT#isTraceOf -->
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/linuxsii/ontologies/2020/6/DialSystemONT#isTraceOf">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UserRequestTrace -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT#UserRequestTrace">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/linuxsii/ontologies/2020/6/DialSystemONT#hasActionTrace"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#ActionTrace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
 </rdf:RDF>
 
 

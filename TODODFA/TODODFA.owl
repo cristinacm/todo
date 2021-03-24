@@ -12,20 +12,21 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:ontolex="http://www.w3.org/ns/lemon/ontolex#"
      xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:prov="http://www.w3.org/ns/prov#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction">
         <terms:contributor>Izaskun Fernández (Tekniker) &lt;mailto:izaskun.fernandez@tekniker.es&gt;</terms:contributor>
+        <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tododfa</vann:preferredNamespacePrefix>
+        <ns:license>http://purl.org/NET/rdflicense/cc-by4.0</ns:license>
         <owl:versionInfo>1.0.0</owl:versionInfo>
-        <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Frame-Action for Domain for Generic Task-Oriented Dialogue Systems Ontology</terms:title>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></terms:issued>
+        <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TODODFA: Frame-Action Module for Task-Oriented Dialogue management Ontology (TODO)</terms:title>
         <vann:preferredNamespaceUri></vann:preferredNamespaceUri>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-21T00:00:00</terms:created>
         <terms:creator>Cristina Aceta (Tekniker) &lt;mailto:cristina.aceta@tekniker.es&gt;</terms:creator>
-        <ns:license>CC BY &lt;https://creativecommons.org/licenses/by/2.0/&gt;</ns:license>
         <owl:priorVersion></owl:priorVersion>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-08T16:00:00</terms:modified>
         <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Module for Action (and Frame) modelling inside domain.</terms:description>
-        <vann:preferredNamespacePrefix>DomainOnt-Frame</vann:preferredNamespacePrefix>
     </owl:Ontology>
     
 
@@ -110,6 +111,12 @@
     <!-- http://www.w3.org/2002/07/owl#versionIRI -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionIRI"/>
+    
+
+
+    <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
     
 
 
@@ -324,13 +331,64 @@
 
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#actionTag -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#actionTag"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#actionTag">
+        <rdfs:comment>String that identifies the Action when invoked in a SystemRequest/Response (DomainONT).</rdfs:comment>
+        <rdfs:label>actionTag</rdfs:label>
+        <skos:example xml:lang="en">System request: &quot;Do you need me to {argumentTag}?&quot;
+
+Action: take_guideRobot
+actionTag: &quot;take you somewhere&quot;
+
+Resulting SysRequest: &quot;Do you need me to {take you somewhere}?&quot;</skos:example>
+        <skos:example xml:lang="es">System request: &quot;Necesitas que {argumentTag}?&quot;
+
+Action: take_guideRobot
+actionTag: &quot;te lleve a algún lugar&quot;
+
+Resulting SysRequest: &quot;Necesitas que {te lleve}?&quot;</skos:example>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#argumentConnector -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#argumentConnector">
+        <rdfs:comment>String that defines the word that acts as a connector between the Argument and the rest of elements in a SystemRequest/Response.</rdfs:comment>
+        <rdfs:label>argumentConnector</rdfs:label>
+        <skos:example xml:lang="en">SystemRequest: Do you want me {actionTag}{argumentConnector}{WorldElement}?
+
+Action: take_guideRobot
+argumentConnector: &quot;to&quot;
+
+&quot;Do you want me {to take you}{to}{the restroom}?&quot;</skos:example>
+        <skos:example xml:lang="es">SystemRequest: ¿Necesitas que {actionTag}{argumentConnector}{WorldElement}?
+
+Action: take_guideRobot
+argumentConnector: &quot;a&quot;
+
+&quot;¿Necesitas que {te lleve}{a}{la sala}?&quot;</skos:example>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#argumentTag -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#argumentTag"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#argumentTag">
+        <rdfs:comment>String that identifies the Argument when invoked in a SystemRequest/Response (DomainONT)</rdfs:comment>
+        <rdfs:label>argumentTag</rdfs:label>
+        <skos:example xml:lang="en">System request: &quot;I need to know {argumentTag}&quot;
+
+Argument: destination_guideRobot
+argumentTag: &quot;where do you want to go&quot;
+
+Resulting SysRequest: &quot;I need to know {where do you want to go}&quot;</skos:example>
+        <skos:example xml:lang="es">System request: &quot;Necesito saber {argumentTag}&quot;
+
+Argument: destination_guideRobot
+argumentTag: &quot;adónde quieres ir&quot;
+
+Resulting SysRequest: &quot;Necesito saber {adónde quieres ir}&quot;</skos:example>
+    </owl:DatatypeProperty>
     
 
 
@@ -374,6 +432,7 @@
         </rdfs:subClassOf>
         <rdfs:comment>Element that makes reference to the functionalities of the target system.</rdfs:comment>
         <rdfs:label xml:lang="en">Action</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example>(For a multipurpose robot) Guide, provide_information, pick, place</skos:example>
     </owl:Class>
     
@@ -396,6 +455,7 @@
         </rdfs:subClassOf>
         <rdfs:comment>Participant that is involved in the event described by the Frame. It can be Core (its presence is compulsory to convey the event) or Optional (its presence is not compulsory, but it adds additional information).</rdfs:comment>
         <rdfs:label xml:lang="en">Argument</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">Frame: Losing
 
 ArgumentSet:
@@ -422,6 +482,7 @@ For the sentence &quot;My mother lost her watch at home&quot;:
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">The group of Arguments that belong to a Frame.</rdfs:comment>
         <rdfs:label xml:lang="en">ArgumentSet</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">Frame: Losing
 
 ArgumentSet:
@@ -448,6 +509,7 @@ For the sentence &quot;My mother lost her watch at home&quot;:
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Grammar to be used by Foma to perform Key Element Extraction.</rdfs:comment>
         <rdfs:label xml:lang="en">FomaGrammar</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
     </owl:Class>
     
 
@@ -469,6 +531,7 @@ For the sentence &quot;My mother lost her watch at home&quot;:
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A specific event or situation evoked by a specific word (FrameHead), along with its participants (Arguments).</rdfs:comment>
         <rdfs:label xml:lang="en">Frame</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">Frame: Losing
 
 FrameHead: lose (LexicalUnit: lose.v)
@@ -497,6 +560,7 @@ For the sentence &quot;My mother lost her watch at home&quot;:
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Word (or more than one) that evokes a specific situation or event, with its specific participants; that is, a frame. It is represented by one or more LexicalUnits.</rdfs:comment>
         <rdfs:label xml:lang="en">FrameHead</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">Frame: Losing
 
 FrameHead: lose (LexicalUnit: lose.v)
@@ -537,6 +601,7 @@ For the sentence &quot;My mother lost her watch at home&quot;:
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">User intention when formulating a request.</rdfs:comment>
         <rdfs:label xml:lang="en">Intent</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example xml:lang="en">User request: &quot;I want information about Mona Lisa&quot;
 
 Intent: receive_information</skos:example>
@@ -562,8 +627,33 @@ Intent: receive_information</skos:example>
         </rdfs:subClassOf>
         <rdfs:comment>Element that makes reference to the capabilities of the target system.</rdfs:comment>
         <rdfs:label xml:lang="en">Skill</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example>(For a multipurpose robot) GuideRobot, RoboticArm</skos:example>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Action"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Argument"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#ArgumentSet"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#FomaGrammar"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Frame"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#FrameHead"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Intent"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Skill"/>
+        </owl:members>
+    </rdf:Description>
 </rdf:RDF>
 
 

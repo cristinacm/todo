@@ -7,6 +7,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ns1="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -16,18 +17,18 @@
     <owl:Ontology rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT">
         <owl:imports rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-World"/>
         <owl:imports rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction"/>
-        <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Domain for Generic Task-Oriented Dialogue Systems Ontology</terms:title>
-        <terms:contributor>Izaskun Fernández (Tekniker) &lt;mailto:izaskun.fernandez@tekniker.es&gt;</terms:contributor>
+        <ns:license>http://purl.org/NET/rdflicense/cc-by4.0</ns:license>
         <owl:versionInfo>1.0.0</owl:versionInfo>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></terms:issued>
         <vann:preferredNamespaceUri></vann:preferredNamespaceUri>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-21T00:00:00</terms:created>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-09T10:00:00</terms:modified>
-        <ns:license>CC BY &lt;https://creativecommons.org/licenses/by/2.0/&gt;</ns:license>
-        <terms:creator>Cristina Aceta (Tekniker) &lt;mailto:cristina.aceta@tekniker.es&gt;</terms:creator>
+        <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cristina Aceta (Tekniker) &lt;mailto:cristina.aceta@tekniker.es&gt;</terms:creator>
         <owl:priorVersion></owl:priorVersion>
         <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Module for domain modelling.</terms:description>
-        <vann:preferredNamespacePrefix>DomainOnt</vann:preferredNamespacePrefix>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Izaskun Fernández (Tekniker) &lt;mailto:izaskun.fernandez@tekniker.es&gt;</terms:contributor>
+        <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tododom</vann:preferredNamespacePrefix>
+        <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TODODom: Domain Module for Task-Oriented Dialogue management Ontology (TODO)</terms:title>
     </owl:Ontology>
     
 
@@ -394,13 +395,9 @@ ID isTypeOf ?y .</rdfs:comment>
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#IDval">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:comment>Unique identification value for individuals.</rdfs:comment>
+        <rdfs:label>IDval</rdfs:label>
     </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#argumentConnector -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#argumentConnector"/>
     
 
 
@@ -408,6 +405,8 @@ ID isTypeOf ?y .</rdfs:comment>
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#implementation">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:comment>Sets specific implementation information for a Service.</rdfs:comment>
+        <rdfs:label>implementation</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -416,13 +415,18 @@ ID isTypeOf ?y .</rdfs:comment>
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#order">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment>Sets the order in which each argument needs to be output to the target system.</rdfs:comment>
+        <rdfs:label>order</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
     <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#val -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#val"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#val">
+        <rdfs:comment>Sets the value of a TSRI to be input to the target system.</rdfs:comment>
+        <rdfs:label>val</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
@@ -581,6 +585,7 @@ ID isTypeOf ?y .</rdfs:comment>
         </owl:hasKey>
         <rdfs:label>ActionTSRI</rdfs:label>
         <rdfs:label>Target System Readable Information corresponding to elements of the class Action.</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -611,6 +616,7 @@ ID isTypeOf ?y .</rdfs:comment>
         </owl:hasKey>
         <rdfs:comment>Element that leaves a record of an Action obtained throughout the dialogue process.</rdfs:comment>
         <rdfs:label>ActionTrace</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -629,6 +635,7 @@ ID isTypeOf ?y .</rdfs:comment>
             <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#IDval"/>
         </owl:hasKey>
         <rdfs:label>ActionType</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
         <skos:example>Action: obtain_information -&gt; it is directed towards API REST service
 The TSRI for obtain_information has an ActionType &quot;service&quot;.</skos:example>
         <skos:example>Establishes the TSRI type of an Action.</skos:example>
@@ -658,6 +665,7 @@ The TSRI for obtain_information has an ActionType &quot;service&quot;.</skos:exa
         </owl:hasKey>
         <rdfs:comment>Target System Readable Information corresponding to elements of the class Argument.</rdfs:comment>
         <rdfs:label>ArgumentTSRI</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -688,6 +696,7 @@ The TSRI for obtain_information has an ActionType &quot;service&quot;.</skos:exa
         </owl:hasKey>
         <rdfs:comment>Element that leaves a record of an Argument obtained throughout the dialogue process.</rdfs:comment>
         <rdfs:label>ArgumentTrace</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -707,6 +716,7 @@ The TSRI for obtain_information has an ActionType &quot;service&quot;.</skos:exa
         </owl:hasKey>
         <rdfs:comment>Element that covers the information to execute an Action that is executable through a command (vs. as a Service).</rdfs:comment>
         <rdfs:label>Command</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -727,6 +737,7 @@ The TSRI for obtain_information has an ActionType &quot;service&quot;.</skos:exa
         </owl:hasKey>
         <rdfs:comment>Target System Readable Information corresponding to elements of the class Action that require information in a Command format.</rdfs:comment>
         <rdfs:label>CommandTSRI</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -751,6 +762,7 @@ The TSRI for obtain_information has an ActionType &quot;service&quot;.</skos:exa
         </owl:hasKey>
         <rdfs:comment>Element that leaves a record of a Frame obtained throughout the dialogue process.</rdfs:comment>
         <rdfs:label>FrameTrace</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -763,6 +775,7 @@ The TSRI for obtain_information has an ActionType &quot;service&quot;.</skos:exa
         </owl:hasKey>
         <rdfs:comment>Establishes the TSRI type of a given Action/Parameter.</rdfs:comment>
         <rdfs:label>InfoType</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -799,6 +812,7 @@ The TSRI for obtain_information has an ActionType &quot;service&quot;.</skos:exa
         </owl:hasKey>
         <rdfs:comment>Element that leaves a record of an Intent obtained throughout the dialogue process.</rdfs:comment>
         <rdfs:label>IntentTrace</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -821,8 +835,9 @@ The TSRI for obtain_information has an ActionType &quot;service&quot;.</skos:exa
         <owl:hasKey rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#IDval"/>
         </owl:hasKey>
-        <rdfs:comment>LexicalUnit</rdfs:comment>
         <rdfs:comment>Word(s) that cover the different variants of a FrameHead or a WorldElement.</rdfs:comment>
+        <rdfs:label>LexicalUnit</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
         <skos:example>FrameHead: go
 LexUnits (in Spanish): ir.V, desplazarse.V</skos:example>
     </owl:Class>
@@ -844,6 +859,7 @@ LexUnits (in Spanish): ir.V, desplazarse.V</skos:example>
         </owl:hasKey>
         <rdfs:comment>Establishes the type of parameter of a TSRI.</rdfs:comment>
         <rdfs:label>ParameterType</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
         <skos:example>&quot;baño&quot; hasTSRI &quot;coords_baño&quot;
 &quot;baño&quot; hasTSRI &quot;ID_baño&quot; 
 
@@ -869,6 +885,7 @@ LexUnits (in Spanish): ir.V, desplazarse.V</skos:example>
         </owl:hasKey>
         <rdfs:comment>Target System Readable Information corresponding to elements of the class Action that point to Services.</rdfs:comment>
         <rdfs:label>ServiceTSRI</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -892,7 +909,8 @@ LexUnits (in Spanish): ir.V, desplazarse.V</skos:example>
             <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#IDval"/>
         </owl:hasKey>
         <rdfs:comment>Element that leaves a record of a Skill obtained throughout the dialogue process.</rdfs:comment>
-        <rdfs:comment>SkillTrace</rdfs:comment>
+        <rdfs:label>SkillTrace</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -923,6 +941,7 @@ SystemReadableInfo for &quot;plastic container&quot;: containerID:235
 
 SystemReadableInfo for whole action: robAction.Pick(containerID:235)</rdfs:comment>
         <rdfs:label xml:lang="en">TargetSystemReadableInformation</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -941,6 +960,7 @@ SystemReadableInfo for whole action: robAction.Pick(containerID:235)</rdfs:comme
         </owl:hasKey>
         <rdfs:comment>Agrupation of WorldElements of similar characteristics.</rdfs:comment>
         <rdfs:label>WorldElementGroup</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -960,6 +980,7 @@ SystemReadableInfo for whole action: robAction.Pick(containerID:235)</rdfs:comme
         </owl:hasKey>
         <rdfs:comment>Target System Readable Information corresponding to elements of the class WorldElement.</rdfs:comment>
         <rdfs:label>WorldElementTSRI</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -1013,12 +1034,6 @@ SystemReadableInfo for whole action: robAction.Pick(containerID:235)</rdfs:comme
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#hasTargetSystemReadableInfo"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#TargetSystemReadableInformation"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#argumentConnector"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1157,6 +1172,51 @@ SystemReadableInfo for whole action: robAction.Pick(containerID:235)</rdfs:comme
     <!-- https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl#WadlResourceMethodRef -->
 
     <owl:Class rdf:about="https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl#WadlResourceMethodRef"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.daml.org/services/owl-s/1.1/Service.owl#Service"/>
+            <rdf:Description rdf:about="http://www.daml.org/services/owl-s/1.2/Grounding.owl#AtomicProcessGrounding"/>
+            <rdf:Description rdf:about="http://www.daml.org/services/owl-s/1.2/Service.owl#ServiceGrounding"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#ActionTrace"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#ArgumentTrace"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#Command"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#FrameTrace"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#InfoType"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#IntentTrace"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#LexicalUnit"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#SkillTrace"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#TargetSystemReadableInformation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#WorldElementGroup"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Action"/>
+            <rdf:Description rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+            <rdf:Description rdf:about="https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl#WadlResourceMethodRef"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT#ActionTrace"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Action"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Argument"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#ArgumentSet"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Frame"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#FrameHead"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Intent"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DomainONT-FrameAction#Skill"/>
+        </owl:members>
+    </rdf:Description>
 </rdf:RDF>
 
 
