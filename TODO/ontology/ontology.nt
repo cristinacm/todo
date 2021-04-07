@@ -1,0 +1,95 @@
+<https://w3id.org/todo/todo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/todo/todo> <http://creativecommons.org/ns#license> "CC BY <https://creativecommons.org/licenses/by/2.0/>" .
+<https://w3id.org/todo/todo> <http://purl.org/dc/terms/contributor> "Izaskun Fernández (Tekniker) <mailto:izaskun.fernandez@tekniker.es>" .
+<https://w3id.org/todo/todo> <http://purl.org/dc/terms/created> "2020-04-21T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/todo/todo> <http://purl.org/dc/terms/creator> "Cristina Aceta (Tekniker) <mailto:cristina.aceta@tekniker.es>" .
+<https://w3id.org/todo/todo> <http://purl.org/dc/terms/description> "" .
+<https://w3id.org/todo/todo> <http://purl.org/dc/terms/issued> ""^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/todo/todo> <http://purl.org/dc/terms/modified> "2021-03-09T11:00:00" .
+<https://w3id.org/todo/todo> <http://purl.org/dc/terms/title> "TODO: Task-Oriented Dialogue management Ontology" .
+<https://w3id.org/todo/todo> <http://purl.org/vocab/vann/preferredNamespacePrefix> "DialSystemOnt" .
+<https://w3id.org/todo/todo> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/todo/todo" .
+<https://w3id.org/todo/todo> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/todo/todo#hasActionTrace
+<https://w3id.org/todo/todo#hasActionTrace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/todo/todo#hasActionTrace> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/todo/todo#isActionTraceOf> .
+<https://w3id.org/todo/todo#hasActionTrace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/todo/todo#hasActionTrace> <http://www.w3.org/2000/01/rdf-schema#comment> "Establishes the relationship between an Action and its Trace" .
+<https://w3id.org/todo/todo#hasActionTrace> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/todo" .
+<https://w3id.org/todo/todo#hasActionTrace> <http://www.w3.org/2000/01/rdf-schema#label> "hasActionTrace" .
+# 
+# https://w3id.org/todo/todo#isActionTraceOf
+<https://w3id.org/todo/todo#isActionTraceOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/todo/todo#isActionTraceOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<https://w3id.org/todo/todo#isActionTraceOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Establishes the relationship between an ActionTrace and the Action it refers to." .
+<https://w3id.org/todo/todo#isActionTraceOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/todo" .
+<https://w3id.org/todo/todo#isActionTraceOf> <http://www.w3.org/2000/01/rdf-schema#label> "isActionTraceOf" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/todo/tododial#UserRequestTrace
+<https://w3id.org/todo/tododial#UserRequestTrace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododial#UserRequestTrace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/todo#hasActionTrace> .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododom#ActionTrace> .
+# 
+# https://w3id.org/todo/tododom#ActionTrace
+<https://w3id.org/todo/tododom#ActionTrace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

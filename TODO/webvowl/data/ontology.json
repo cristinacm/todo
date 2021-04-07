@@ -1,0 +1,192 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "https://w3id.org/todo/todo", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/todo/tododom", "https://w3id.org/todo/tododial" ],
+    "title" : {
+      "undefined" : "TODO: Task-Oriented Dialogue management Ontology"
+    },
+    "iri" : "https://w3id.org/todo/todo",
+    "version" : "1.0.0",
+    "author" : [ "Cristina Aceta (Tekniker) <mailto:cristina.aceta@tekniker.es>" ],
+    "description" : { },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "CC BY <https://creativecommons.org/licenses/by/2.0/>",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Cristina Aceta (Tekniker) <mailto:cristina.aceta@tekniker.es>",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Izaskun Fernández (Tekniker) <mailto:izaskun.fernandez@tekniker.es>",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-04-21T00:00:00",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "DialSystemOnt",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2021-03-09T11:00:00",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0.0",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/todo",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "TODO: Task-Oriented Dialogue management Ontology",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "1",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "1",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://w3id.org/todo/tododom#ActionTrace",
+    "baseIri" : "https://w3id.org/todo/tododom",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ActionTrace"
+    },
+    "attributes" : [ "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#UserRequestTrace",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UserRequestTrace"
+    },
+    "attributes" : [ "external" ],
+    "id" : "3"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "2",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "5",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/todo/todo#isActionTraceOf",
+    "baseIri" : "https://w3id.org/todo/todo",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/todo",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isActionTraceOf",
+      "undefined" : "isActionTraceOf"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Establishes the relationship between an ActionTrace and the Action it refers to."
+    },
+    "attributes" : [ "inverse functional", "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://w3id.org/todo/todo#hasActionTrace",
+    "inverse" : "0",
+    "baseIri" : "https://w3id.org/todo/todo",
+    "range" : "4",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/todo",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasActionTrace",
+      "undefined" : "hasActionTrace"
+    },
+    "domain" : "3",
+    "comment" : {
+      "undefined" : "Establishes the relationship between an Action and its Trace"
+    },
+    "attributes" : [ "someValues", "object", "functional" ],
+    "id" : "2"
+  }, {
+    "iri" : "https://w3id.org/todo/todo#hasActionTrace",
+    "inverse" : "0",
+    "baseIri" : "https://w3id.org/todo/todo",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/todo",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasActionTrace",
+      "undefined" : "hasActionTrace"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Establishes the relationship between an Action and its Trace"
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "5"
+  } ]
+}

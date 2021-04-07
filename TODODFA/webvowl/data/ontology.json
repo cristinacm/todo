@@ -1,0 +1,1302 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "es", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/todo/tododfa" ],
+    "title" : {
+      "undefined" : "TODODFA: Frame-Action Module for Task-Oriented Dialogue management Ontology (TODO)"
+    },
+    "iri" : "https://w3id.org/todo/tododfa",
+    "version" : "1.0.0",
+    "author" : [ "Cristina Aceta (Tekniker) <mailto:cristina.aceta@tekniker.es>" ],
+    "description" : {
+      "undefined" : "Module for Action (and Frame) modelling inside domain."
+    },
+    "other" : {
+      "priorVersion" : [ {
+        "identifier" : "priorVersion",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://purl.org/NET/rdflicense/cc-by4.0",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Cristina Aceta (Tekniker) <mailto:cristina.aceta@tekniker.es>",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Izaskun Fernández (Tekniker) <mailto:izaskun.fernandez@tekniker.es>",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-04-21T00:00:00",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "tododfa",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2021-03-08T16:00:00",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0.0",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "TODODFA: Frame-Action Module for Task-Oriented Dialogue management Ontology (TODO)",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "4",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "1",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:Datatype"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "4",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/todo/tododfa#Intent",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "User request: \"I want information about Mona Lisa\"\n\nIntent: receive_information",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Intent",
+      "en" : "Intent"
+    },
+    "comment" : {
+      "en" : "User intention when formulating a request."
+    },
+    "id" : "5"
+  }, {
+    "iri" : "https://w3id.org/todo/tododfa#Skill",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "(For a multipurpose robot) GuideRobot, RoboticArm",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Skill",
+      "en" : "Skill"
+    },
+    "comment" : {
+      "undefined" : "Element that makes reference to the capabilities of the target system."
+    },
+    "id" : "9"
+  }, {
+    "iri" : "https://w3id.org/todo/tododfa#Frame",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Frame: Losing\n\nFrameHead: lose (LexicalUnit: lose.v)\n\nArgumentSet:\n* Owner [Core]\n* Possession [Core]\n* Place [Optional]\n* Time [Optional]\n...\n\nFor the sentence \"My mother lost her watch at home\":\n\"[My mother - owner(C)] LOST [her watch - possession(C)] (at home - place (O))\"",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Frame",
+      "en" : "Frame"
+    },
+    "comment" : {
+      "en" : "A specific event or situation evoked by a specific word (FrameHead), along with its participants (Arguments)."
+    },
+    "id" : "11"
+  }, {
+    "iri" : "https://w3id.org/todo/tododfa#Action",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "(For a multipurpose robot) Guide, provide_information, pick, place",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Action",
+      "en" : "Action"
+    },
+    "comment" : {
+      "undefined" : "Element that makes reference to the functionalities of the target system."
+    },
+    "id" : "7"
+  }, {
+    "iri" : "https://w3id.org/todo/tododfa#Argument",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Frame: Losing\n\nArgumentSet:\n* Owner [Core]\n* Possession [Core]\n* Place [Optional]\n* Time [Optional]\n...\n\nFor the sentence \"My mother lost her watch at home\":\n\"[My mother - owner(C)] LOST [her watch - possession(C)] (at home - place (O))\"",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Argument",
+      "en" : "Argument"
+    },
+    "comment" : {
+      "undefined" : "Participant that is involved in the event described by the Frame. It can be Core (its presence is compulsory to convey the event) or Optional (its presence is not compulsory, but it adds additional information)."
+    },
+    "id" : "28"
+  }, {
+    "iri" : "https://w3id.org/todo/tododfa#FomaGrammar",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "FomaGrammar",
+      "en" : "FomaGrammar"
+    },
+    "comment" : {
+      "en" : "Grammar to be used by Foma to perform Key Element Extraction."
+    },
+    "id" : "17"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "24",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "1",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://w3id.org/todo/tododfa#ArgumentSet",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Frame: Losing\n\nArgumentSet:\n* Owner [Core]\n* Possession [Core]\n* Place [Optional]\n* Time [Optional]\n...\n\nFor the sentence \"My mother lost her watch at home\":\n\"[My mother - owner(C)] LOST [her watch - possession(C)] (at home - place (O))\"",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ArgumentSet",
+      "en" : "ArgumentSet"
+    },
+    "comment" : {
+      "en" : "The group of Arguments that belong to a Frame."
+    },
+    "id" : "26"
+  }, {
+    "iri" : "https://w3id.org/todo/tododfa#FrameHead",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Frame: Losing\n\nFrameHead: lose (LexicalUnit: lose.v)\n\nArgumentSet:\n* Owner [Core]\n* Possession [Core]\n* Place [Optional]\n* Time [Optional]\n...\n\nFor the sentence \"My mother lost her watch at home\":\n\"[My mother - owner(C)] LOST [her watch - possession(C)] (at home - place (O))\"",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "FrameHead",
+      "en" : "FrameHead"
+    },
+    "comment" : {
+      "en" : "Word (or more than one) that evokes a specific situation or event, with its specific participants; that is, a frame. It is represented by one or more LexicalUnits."
+    },
+    "id" : "14"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "60",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "8",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "10",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "12",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "13",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "15",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "16",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "18",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "2",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "21",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "25",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "27",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "29",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "30",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "31",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "32",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "33",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "34",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "35",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "36",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "37",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "38",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "39",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "40",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "41",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "42",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "43",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "44",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "45",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "46",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "47",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "49",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "51",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "53",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "54",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "55",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "56",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "59",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "61",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "63",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "64",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "66",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "67",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "68",
+    "type" : "owl:someValuesFrom"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/todo/tododfa#hasOptionalArgument",
+    "inverse" : "2",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasOptionalArgument",
+      "undefined" : "hasOptionalArgument"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Establishes a relation between an Action and its OptionalArguments (i.e. the arguments that are not compulsory in order to perform the Action)."
+    },
+    "attributes" : [ "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://w3id.org/todo/tododfa#actionTag",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "range" : "4",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "es",
+        "value" : "System request: \"Necesitas que {argumentTag}?\"\n\nAction: take_guideRobot\nactionTag: \"te lleve a algún lugar\"\n\nResulting SysRequest: \"Necesitas que {te lleve}?\"",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "System request: \"Do you need me to {argumentTag}?\"\n\nAction: take_guideRobot\nactionTag: \"take you somewhere\"\n\nResulting SysRequest: \"Do you need me to {take you somewhere}?\"",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "actionTag",
+      "undefined" : "actionTag"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "String that identifies the Action when invoked in a SystemRequest/Response (DomainONT)."
+    },
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "6"
+  }, {
+    "range" : "9",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "8"
+  }, {
+    "range" : "9",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "10"
+  }, {
+    "range" : "5",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "12"
+  }, {
+    "range" : "9",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "13"
+  }, {
+    "range" : "5",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "15"
+  }, {
+    "range" : "5",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "16"
+  }, {
+    "range" : "14",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "18"
+  }, {
+    "iri" : "https://w3id.org/todo/tododfa#isOptionalArgumentOf",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isOptionalArgumentOf",
+      "undefined" : "isOptionalArgumentOf"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Establishes a relation between an Optional Argument (i.e. the arguments that are not compulsory in order to perform the Action) and its corresponding Action."
+    },
+    "attributes" : [ "object" ],
+    "id" : "2"
+  }, {
+    "range" : "14",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "20"
+  }, {
+    "range" : "9",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "21"
+  }, {
+    "iri" : "https://w3id.org/todo/tododfa#isCoreArgumentOf",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "range" : "1",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isCoreArgumentOf",
+      "undefined" : "isCoreArgumentOf"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Establishes a relation between a CoreArgument (i.e. the arguments that are compulsory in order to perform the Action) and its corresponding Action."
+    },
+    "attributes" : [ "object" ],
+    "id" : "22"
+  }, {
+    "iri" : "https://w3id.org/todo/tododfa#argumentConnector",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "range" : "24",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "es",
+        "value" : "SystemRequest: ¿Necesitas que {actionTag}{argumentConnector}{WorldElement}?\n\nAction: take_guideRobot\nargumentConnector: \"a\"\n\n\"¿Necesitas que {te lleve}{a}{la sala}?\"",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "SystemRequest: Do you want me {actionTag}{argumentConnector}{WorldElement}?\n\nAction: take_guideRobot\nargumentConnector: \"to\"\n\n\"Do you want me {to take you}{to}{the restroom}?\"",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "argumentConnector",
+      "undefined" : "argumentConnector"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "String that defines the word that acts as a connector between the Argument and the rest of elements in a SystemRequest/Response."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "23"
+  }, {
+    "range" : "9",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "25"
+  }, {
+    "range" : "5",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "27"
+  }, {
+    "range" : "11",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "29"
+  }, {
+    "range" : "17",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "30"
+  }, {
+    "range" : "9",
+    "domain" : "28",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "31"
+  }, {
+    "range" : "14",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "32"
+  }, {
+    "range" : "11",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "33"
+  }, {
+    "range" : "11",
+    "domain" : "28",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "34"
+  }, {
+    "range" : "5",
+    "domain" : "28",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "35"
+  }, {
+    "range" : "14",
+    "domain" : "28",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "36"
+  }, {
+    "range" : "26",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "37"
+  }, {
+    "range" : "17",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "38"
+  }, {
+    "range" : "11",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "39"
+  }, {
+    "range" : "14",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "40"
+  }, {
+    "range" : "5",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "41"
+  }, {
+    "range" : "9",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "42"
+  }, {
+    "range" : "26",
+    "domain" : "28",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "43"
+  }, {
+    "range" : "17",
+    "domain" : "28",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "44"
+  }, {
+    "iri" : "https://w3id.org/todo/tododfa#belongsToIntent",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "range" : "5",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "belongsToIntent",
+      "undefined" : "belongsToIntent"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "Establishes the relation between an Action and the Intent it belongs to."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "45"
+  }, {
+    "range" : "28",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "46"
+  }, {
+    "iri" : "https://w3id.org/todo/tododfa#belongsToAction",
+    "inverse" : "48",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "range" : "7",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "belongsToAction",
+      "undefined" : "belongsToAction"
+    },
+    "domain" : "5",
+    "comment" : {
+      "undefined" : "Establishes the relation between an Intent and the Action it belongs to."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "47"
+  }, {
+    "iri" : "https://w3id.org/todo/tododfa#hasFrame",
+    "inverse" : "50",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "range" : "11",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasFrame",
+      "undefined" : "hasFrame"
+    },
+    "domain" : "5",
+    "comment" : {
+      "undefined" : "Establishes a relation between an Intent and its corresponding Frame."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "49"
+  }, {
+    "iri" : "https://w3id.org/todo/tododfa#hasIntent",
+    "inverse" : "52",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "range" : "5",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasIntent",
+      "undefined" : "hasIntent"
+    },
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "Establishes a relation between a Skill and its corresponding Intent(s)."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "51"
+  }, {
+    "iri" : "https://w3id.org/todo/tododfa#isIntentOf",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "range" : "9",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isIntentOf",
+      "undefined" : "isIntentOf"
+    },
+    "domain" : "5",
+    "comment" : {
+      "undefined" : "Establishes a relation between an Intent and its corresponding Skill."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "53"
+  }, {
+    "iri" : "https://w3id.org/todo/tododfa#isFrameHeadOf",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "range" : "11",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isFrameHeadOf",
+      "undefined" : "isFrameHeadOf"
+    },
+    "domain" : "14",
+    "comment" : {
+      "undefined" : "https://w3id.org/todo/tododfa#"
+    },
+    "attributes" : [ "object", "someValues", "functional" ],
+    "id" : "54"
+  }, {
+    "iri" : "https://w3id.org/todo/tododfa#hasCoreArgument",
+    "inverse" : "22",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasCoreArgument",
+      "undefined" : "hasCoreArgument"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Establishes a relation between an Action and its CoreArguments (i.e. the arguments that are compulsory in order to perform the Action)."
+    },
+    "attributes" : [ "object" ],
+    "id" : "55"
+  }, {
+    "iri" : "https://w3id.org/todo/tododfa#hasFomaGrammar",
+    "inverse" : "57",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasFomaGrammar",
+      "undefined" : "hasFomaGrammar"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Establishes a relation between a Skill and the FomaGrammar to use to perform Key Element Extraction."
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "56"
+  }, {
+    "iri" : "https://w3id.org/todo/tododfa#isFrameOf",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "range" : "5",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isFrameOf",
+      "undefined" : "isFrameOf"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "Establishes a relation between a Frame and the Intent it corresponds to."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "58"
+  }, {
+    "iri" : "https://w3id.org/todo/tododfa#isArgumentSetOf",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "range" : "7",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isArgumentSetOf",
+      "undefined" : "isArgumentSetOf"
+    },
+    "domain" : "26",
+    "comment" : {
+      "undefined" : "Establishes a relation between an ArgumentSet and the Action it corresponds to."
+    },
+    "attributes" : [ "inverse functional", "object", "someValues" ],
+    "id" : "59"
+  }, {
+    "iri" : "https://w3id.org/todo/tododfa#hasFrameHead",
+    "inverse" : "62",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "range" : "14",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasFrameHead",
+      "undefined" : "hasFrameHead"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "Establishes a relation between a Frame and its FrameHead."
+    },
+    "attributes" : [ "inverse functional", "object", "someValues" ],
+    "id" : "61"
+  }, {
+    "iri" : "https://w3id.org/todo/tododfa#isFomaGrammarOf",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "range" : "9",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isFomaGrammarOf",
+      "undefined" : "isFomaGrammarOf"
+    },
+    "domain" : "17",
+    "comment" : {
+      "undefined" : "Establishes a relation between the FomaGrammar to use to perform Key Element Extraction and a Skill."
+    },
+    "attributes" : [ "inverse functional", "object", "someValues" ],
+    "id" : "63"
+  }, {
+    "iri" : "https://w3id.org/todo/tododfa#hasArgumentSet",
+    "inverse" : "65",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "range" : "26",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasArgumentSet",
+      "undefined" : "hasArgumentSet"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "Establishes a relation between an Action and the set composed of its Argument(s)."
+    },
+    "attributes" : [ "object", "someValues", "functional" ],
+    "id" : "64"
+  }, {
+    "iri" : "https://w3id.org/todo/tododfa#hasArgument",
+    "inverse" : "19",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "range" : "28",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasArgument",
+      "undefined" : "hasArgument"
+    },
+    "domain" : "7",
+    "subproperty" : [ "0", "55" ],
+    "comment" : {
+      "undefined" : "Establishes a relation between an Action and its Argument(s)."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "66"
+  }, {
+    "iri" : "https://w3id.org/todo/tododfa#argumentTag",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "range" : "60",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "System request: \"I need to know {argumentTag}\"\n\nArgument: destination_guideRobot\nargumentTag: \"where do you want to go\"\n\nResulting SysRequest: \"I need to know {where do you want to go}\"",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "es",
+        "value" : "System request: \"Necesito saber {argumentTag}\"\n\nArgument: destination_guideRobot\nargumentTag: \"adónde quieres ir\"\n\nResulting SysRequest: \"Necesito saber {adónde quieres ir}\"",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "argumentTag",
+      "undefined" : "argumentTag"
+    },
+    "domain" : "28",
+    "comment" : {
+      "undefined" : "String that identifies the Argument when invoked in a SystemRequest/Response (DomainONT)"
+    },
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "67"
+  }, {
+    "iri" : "https://w3id.org/todo/tododfa#isArgumentOf",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "range" : "7",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isArgumentOf",
+      "undefined" : "isArgumentOf"
+    },
+    "domain" : "28",
+    "subproperty" : [ "22", "2" ],
+    "comment" : {
+      "undefined" : "Establishes a relation between an Argument and its corresponding Action."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "68"
+  } ]
+}

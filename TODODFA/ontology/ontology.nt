@@ -1,0 +1,428 @@
+<https://w3id.org/todo/tododfa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/todo/tododfa> <http://creativecommons.org/ns#license> "http://purl.org/NET/rdflicense/cc-by4.0" .
+<https://w3id.org/todo/tododfa> <http://purl.org/dc/terms/contributor> "Izaskun Fernández (Tekniker) <mailto:izaskun.fernandez@tekniker.es>" .
+<https://w3id.org/todo/tododfa> <http://purl.org/dc/terms/created> "2020-04-21T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/todo/tododfa> <http://purl.org/dc/terms/creator> "Cristina Aceta (Tekniker) <mailto:cristina.aceta@tekniker.es>" .
+<https://w3id.org/todo/tododfa> <http://purl.org/dc/terms/description> "Module for Action (and Frame) modelling inside domain." .
+<https://w3id.org/todo/tododfa> <http://purl.org/dc/terms/issued> ""^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/todo/tododfa> <http://purl.org/dc/terms/modified> "2021-03-08T16:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/todo/tododfa> <http://purl.org/dc/terms/title> "TODODFA: Frame-Action Module for Task-Oriented Dialogue management Ontology (TODO)" .
+<https://w3id.org/todo/tododfa> <http://purl.org/vocab/vann/preferredNamespacePrefix> "tododfa" .
+<https://w3id.org/todo/tododfa> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/todo/tododfa" .
+<https://w3id.org/todo/tododfa> <http://www.w3.org/2002/07/owl#priorVersion> "" .
+<https://w3id.org/todo/tododfa> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/bibliographicCitation
+<http://purl.org/dc/terms/bibliographicCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionIRI
+<http://www.w3.org/2002/07/owl#versionIRI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#example
+<http://www.w3.org/2004/02/skos/core#example> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/todo/tododfa#belongsToAction
+<https://w3id.org/todo/tododfa#belongsToAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/todo/tododfa#belongsToAction> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/todo/tododfa#belongsToIntent> .
+<https://w3id.org/todo/tododfa#belongsToAction> <http://www.w3.org/2000/01/rdf-schema#comment> "Establishes the relation between an Intent and the Action it belongs to." .
+<https://w3id.org/todo/tododfa#belongsToAction> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododfa#" .
+<https://w3id.org/todo/tododfa#belongsToAction> <http://www.w3.org/2000/01/rdf-schema#label> "belongsToAction" .
+<https://w3id.org/todo/tododfa#belongsToAction> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododfa#belongsToIntent
+<https://w3id.org/todo/tododfa#belongsToIntent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/todo/tododfa#belongsToIntent> <http://www.w3.org/2000/01/rdf-schema#comment> "Establishes the relation between an Action and the Intent it belongs to." .
+<https://w3id.org/todo/tododfa#belongsToIntent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododfa#" .
+<https://w3id.org/todo/tododfa#belongsToIntent> <http://www.w3.org/2000/01/rdf-schema#label> "belongsToIntent" .
+<https://w3id.org/todo/tododfa#belongsToIntent> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododfa#hasArgument
+<https://w3id.org/todo/tododfa#hasArgument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/todo/tododfa#hasArgument> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/todo/tododfa#isArgumentOf> .
+<https://w3id.org/todo/tododfa#hasArgument> <http://www.w3.org/2000/01/rdf-schema#comment> "Establishes a relation between an Action and its Argument(s)." .
+<https://w3id.org/todo/tododfa#hasArgument> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododfa#" .
+<https://w3id.org/todo/tododfa#hasArgument> <http://www.w3.org/2000/01/rdf-schema#label> "hasArgument" .
+<https://w3id.org/todo/tododfa#hasArgument> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododfa#hasArgumentSet
+<https://w3id.org/todo/tododfa#hasArgumentSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/todo/tododfa#hasArgumentSet> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/todo/tododfa#isArgumentSetOf> .
+<https://w3id.org/todo/tododfa#hasArgumentSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/todo/tododfa#hasArgumentSet> <http://www.w3.org/2000/01/rdf-schema#comment> "Establishes a relation between an Action and the set composed of its Argument(s)." .
+<https://w3id.org/todo/tododfa#hasArgumentSet> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododfa#" .
+<https://w3id.org/todo/tododfa#hasArgumentSet> <http://www.w3.org/2000/01/rdf-schema#label> "hasArgumentSet" .
+<https://w3id.org/todo/tododfa#hasArgumentSet> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododfa#hasCoreArgument
+<https://w3id.org/todo/tododfa#hasCoreArgument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/todo/tododfa#hasCoreArgument> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/todo/tododfa#hasArgument> .
+<https://w3id.org/todo/tododfa#hasCoreArgument> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/todo/tododfa#isCoreArgumentOf> .
+<https://w3id.org/todo/tododfa#hasCoreArgument> <http://www.w3.org/2000/01/rdf-schema#comment> "Establishes a relation between an Action and its CoreArguments (i.e. the arguments that are compulsory in order to perform the Action)." .
+<https://w3id.org/todo/tododfa#hasCoreArgument> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododfa#" .
+<https://w3id.org/todo/tododfa#hasCoreArgument> <http://www.w3.org/2000/01/rdf-schema#label> "hasCoreArgument" .
+<https://w3id.org/todo/tododfa#hasCoreArgument> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododfa#hasFomaGrammar
+<https://w3id.org/todo/tododfa#hasFomaGrammar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/todo/tododfa#hasFomaGrammar> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/todo/tododfa#isFomaGrammarOf> .
+<https://w3id.org/todo/tododfa#hasFomaGrammar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/todo/tododfa#hasFomaGrammar> <http://www.w3.org/2000/01/rdf-schema#comment> "Establishes a relation between a Skill and the FomaGrammar to use to perform Key Element Extraction." .
+<https://w3id.org/todo/tododfa#hasFomaGrammar> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododfa#" .
+<https://w3id.org/todo/tododfa#hasFomaGrammar> <http://www.w3.org/2000/01/rdf-schema#label> "hasFomaGrammar" .
+<https://w3id.org/todo/tododfa#hasFomaGrammar> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododfa#hasFrame
+<https://w3id.org/todo/tododfa#hasFrame> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/todo/tododfa#hasFrame> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/todo/tododfa#isFrameOf> .
+<https://w3id.org/todo/tododfa#hasFrame> <http://www.w3.org/2000/01/rdf-schema#comment> "Establishes a relation between an Intent and its corresponding Frame." .
+<https://w3id.org/todo/tododfa#hasFrame> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododfa#" .
+<https://w3id.org/todo/tododfa#hasFrame> <http://www.w3.org/2000/01/rdf-schema#label> "hasFrame" .
+<https://w3id.org/todo/tododfa#hasFrame> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododfa#hasFrameHead
+<https://w3id.org/todo/tododfa#hasFrameHead> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/todo/tododfa#hasFrameHead> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/todo/tododfa#isFrameHeadOf> .
+<https://w3id.org/todo/tododfa#hasFrameHead> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<https://w3id.org/todo/tododfa#hasFrameHead> <http://www.w3.org/2000/01/rdf-schema#comment> "Establishes a relation between a Frame and its FrameHead." .
+<https://w3id.org/todo/tododfa#hasFrameHead> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododfa#" .
+<https://w3id.org/todo/tododfa#hasFrameHead> <http://www.w3.org/2000/01/rdf-schema#label> "hasFrameHead" .
+<https://w3id.org/todo/tododfa#hasFrameHead> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododfa#hasIntent
+<https://w3id.org/todo/tododfa#hasIntent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/todo/tododfa#hasIntent> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/todo/tododfa#isIntentOf> .
+<https://w3id.org/todo/tododfa#hasIntent> <http://www.w3.org/2000/01/rdf-schema#comment> "Establishes a relation between a Skill and its corresponding Intent(s)." .
+<https://w3id.org/todo/tododfa#hasIntent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododfa#" .
+<https://w3id.org/todo/tododfa#hasIntent> <http://www.w3.org/2000/01/rdf-schema#label> "hasIntent" .
+<https://w3id.org/todo/tododfa#hasIntent> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododfa#hasOptionalArgument
+<https://w3id.org/todo/tododfa#hasOptionalArgument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/todo/tododfa#hasOptionalArgument> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/todo/tododfa#hasArgument> .
+<https://w3id.org/todo/tododfa#hasOptionalArgument> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/todo/tododfa#isOptionalArgumentOf> .
+<https://w3id.org/todo/tododfa#hasOptionalArgument> <http://www.w3.org/2000/01/rdf-schema#comment> "Establishes a relation between an Action and its OptionalArguments (i.e. the arguments that are not compulsory in order to perform the Action)." .
+<https://w3id.org/todo/tododfa#hasOptionalArgument> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododfa#" .
+<https://w3id.org/todo/tododfa#hasOptionalArgument> <http://www.w3.org/2000/01/rdf-schema#label> "hasOptionalArgument" .
+<https://w3id.org/todo/tododfa#hasOptionalArgument> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododfa#isArgumentOf
+<https://w3id.org/todo/tododfa#isArgumentOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/todo/tododfa#isArgumentOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Establishes a relation between an Argument and its corresponding Action." .
+<https://w3id.org/todo/tododfa#isArgumentOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododfa#" .
+<https://w3id.org/todo/tododfa#isArgumentOf> <http://www.w3.org/2000/01/rdf-schema#label> "isArgumentOf" .
+<https://w3id.org/todo/tododfa#isArgumentOf> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododfa#isArgumentSetOf
+<https://w3id.org/todo/tododfa#isArgumentSetOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/todo/tododfa#isArgumentSetOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<https://w3id.org/todo/tododfa#isArgumentSetOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Establishes a relation between an ArgumentSet and the Action it corresponds to." .
+<https://w3id.org/todo/tododfa#isArgumentSetOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododfa#" .
+<https://w3id.org/todo/tododfa#isArgumentSetOf> <http://www.w3.org/2000/01/rdf-schema#label> "isArgumentSetOf" .
+<https://w3id.org/todo/tododfa#isArgumentSetOf> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododfa#isCoreArgumentOf
+<https://w3id.org/todo/tododfa#isCoreArgumentOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/todo/tododfa#isCoreArgumentOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/todo/tododfa#isArgumentOf> .
+<https://w3id.org/todo/tododfa#isCoreArgumentOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Establishes a relation between a CoreArgument (i.e. the arguments that are compulsory in order to perform the Action) and its corresponding Action." .
+<https://w3id.org/todo/tododfa#isCoreArgumentOf> <http://www.w3.org/2000/01/rdf-schema#comment> "https://w3id.org/todo/tododfa#" .
+<https://w3id.org/todo/tododfa#isCoreArgumentOf> <http://www.w3.org/2000/01/rdf-schema#label> "isCoreArgumentOf" .
+<https://w3id.org/todo/tododfa#isCoreArgumentOf> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododfa#isFomaGrammarOf
+<https://w3id.org/todo/tododfa#isFomaGrammarOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/todo/tododfa#isFomaGrammarOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<https://w3id.org/todo/tododfa#isFomaGrammarOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Establishes a relation between the FomaGrammar to use to perform Key Element Extraction and a Skill." .
+<https://w3id.org/todo/tododfa#isFomaGrammarOf> <http://www.w3.org/2000/01/rdf-schema#comment> "https://w3id.org/todo/tododfa#" .
+<https://w3id.org/todo/tododfa#isFomaGrammarOf> <http://www.w3.org/2000/01/rdf-schema#label> "isFomaGrammarOf" .
+<https://w3id.org/todo/tododfa#isFomaGrammarOf> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododfa#isFrameHeadOf
+<https://w3id.org/todo/tododfa#isFrameHeadOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/todo/tododfa#isFrameHeadOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/todo/tododfa#isFrameHeadOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Establishes a relation between a FrameHead and the Frame it applies to." .
+<https://w3id.org/todo/tododfa#isFrameHeadOf> <http://www.w3.org/2000/01/rdf-schema#comment> "https://w3id.org/todo/tododfa#" .
+<https://w3id.org/todo/tododfa#isFrameHeadOf> <http://www.w3.org/2000/01/rdf-schema#label> "isFrameHeadOf" .
+<https://w3id.org/todo/tododfa#isFrameHeadOf> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododfa#isFrameOf
+<https://w3id.org/todo/tododfa#isFrameOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/todo/tododfa#isFrameOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Establishes a relation between a Frame and the Intent it corresponds to." .
+<https://w3id.org/todo/tododfa#isFrameOf> <http://www.w3.org/2000/01/rdf-schema#comment> "https://w3id.org/todo/tododfa#" .
+<https://w3id.org/todo/tododfa#isFrameOf> <http://www.w3.org/2000/01/rdf-schema#label> "isFrameOf" .
+<https://w3id.org/todo/tododfa#isFrameOf> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododfa#isIntentOf
+<https://w3id.org/todo/tododfa#isIntentOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/todo/tododfa#isIntentOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Establishes a relation between an Intent and its corresponding Skill." .
+<https://w3id.org/todo/tododfa#isIntentOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododfa#" .
+<https://w3id.org/todo/tododfa#isIntentOf> <http://www.w3.org/2000/01/rdf-schema#label> "isIntentOf" .
+<https://w3id.org/todo/tododfa#isIntentOf> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododfa#isOptionalArgumentOf
+<https://w3id.org/todo/tododfa#isOptionalArgumentOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/todo/tododfa#isOptionalArgumentOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/todo/tododfa#isArgumentOf> .
+<https://w3id.org/todo/tododfa#isOptionalArgumentOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Establishes a relation between an Optional Argument (i.e. the arguments that are not compulsory in order to perform the Action) and its corresponding Action." .
+<https://w3id.org/todo/tododfa#isOptionalArgumentOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododfa#" .
+<https://w3id.org/todo/tododfa#isOptionalArgumentOf> <http://www.w3.org/2000/01/rdf-schema#label> "isOptionalArgumentOf" .
+<https://w3id.org/todo/tododfa#isOptionalArgumentOf> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/todo/tododfa#actionTag
+<https://w3id.org/todo/tododfa#actionTag> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/todo/tododfa#actionTag> <http://www.w3.org/2000/01/rdf-schema#comment> "String that identifies the Action when invoked in a SystemRequest/Response (DomainONT)." .
+<https://w3id.org/todo/tododfa#actionTag> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododfa" .
+<https://w3id.org/todo/tododfa#actionTag> <http://www.w3.org/2000/01/rdf-schema#label> "actionTag" .
+<https://w3id.org/todo/tododfa#actionTag> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<https://w3id.org/todo/tododfa#actionTag> <http://www.w3.org/2004/02/skos/core#example> "System request: \"Do you need me to {argumentTag}?\"\n\nAction: take_guideRobot\nactionTag: \"take you somewhere\"\n\nResulting SysRequest: \"Do you need me to {take you somewhere}?\""@en .
+<https://w3id.org/todo/tododfa#actionTag> <http://www.w3.org/2004/02/skos/core#example> "System request: \"Necesitas que {argumentTag}?\"\n\nAction: take_guideRobot\nactionTag: \"te lleve a algún lugar\"\n\nResulting SysRequest: \"Necesitas que {te lleve}?\""@es .
+# 
+# https://w3id.org/todo/tododfa#argumentConnector
+<https://w3id.org/todo/tododfa#argumentConnector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/todo/tododfa#argumentConnector> <http://www.w3.org/2000/01/rdf-schema#comment> "String that defines the word that acts as a connector between the Argument and the rest of elements in a SystemRequest/Response." .
+<https://w3id.org/todo/tododfa#argumentConnector> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododfa" .
+<https://w3id.org/todo/tododfa#argumentConnector> <http://www.w3.org/2000/01/rdf-schema#label> "argumentConnector" .
+<https://w3id.org/todo/tododfa#argumentConnector> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<https://w3id.org/todo/tododfa#argumentConnector> <http://www.w3.org/2004/02/skos/core#example> "SystemRequest: Do you want me {actionTag}{argumentConnector}{WorldElement}?\n\nAction: take_guideRobot\nargumentConnector: \"to\"\n\n\"Do you want me {to take you}{to}{the restroom}?\""@en .
+<https://w3id.org/todo/tododfa#argumentConnector> <http://www.w3.org/2004/02/skos/core#example> "SystemRequest: ¿Necesitas que {actionTag}{argumentConnector}{WorldElement}?\n\nAction: take_guideRobot\nargumentConnector: \"a\"\n\n\"¿Necesitas que {te lleve}{a}{la sala}?\""@es .
+# 
+# https://w3id.org/todo/tododfa#argumentTag
+<https://w3id.org/todo/tododfa#argumentTag> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/todo/tododfa#argumentTag> <http://www.w3.org/2000/01/rdf-schema#comment> "String that identifies the Argument when invoked in a SystemRequest/Response (DomainONT)" .
+<https://w3id.org/todo/tododfa#argumentTag> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododfa#" .
+<https://w3id.org/todo/tododfa#argumentTag> <http://www.w3.org/2000/01/rdf-schema#label> "argumentTag" .
+<https://w3id.org/todo/tododfa#argumentTag> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<https://w3id.org/todo/tododfa#argumentTag> <http://www.w3.org/2004/02/skos/core#example> "System request: \"I need to know {argumentTag}\"\n\nArgument: destination_guideRobot\nargumentTag: \"where do you want to go\"\n\nResulting SysRequest: \"I need to know {where do you want to go}\""@en .
+<https://w3id.org/todo/tododfa#argumentTag> <http://www.w3.org/2004/02/skos/core#example> "System request: \"Necesito saber {argumentTag}\"\n\nArgument: destination_guideRobot\nargumentTag: \"adónde quieres ir\"\n\nResulting SysRequest: \"Necesito saber {adónde quieres ir}\""@es .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/todo/tododfa#Action
+<https://w3id.org/todo/tododfa#Action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododfa#Action> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododfa#belongsToIntent> .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododfa#Intent> .
+<https://w3id.org/todo/tododfa#Action> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododfa#hasArgument> .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododfa#Argument> .
+<https://w3id.org/todo/tododfa#Action> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododfa#hasArgumentSet> .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododfa#ArgumentSet> .
+<https://w3id.org/todo/tododfa#Action> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododfa#actionTag> .
+_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/todo/tododfa#Action> <http://www.w3.org/2000/01/rdf-schema#comment> "Element that makes reference to the functionalities of the target system." .
+<https://w3id.org/todo/tododfa#Action> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododfa#" .
+<https://w3id.org/todo/tododfa#Action> <http://www.w3.org/2000/01/rdf-schema#label> "Action"@en .
+<https://w3id.org/todo/tododfa#Action> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<https://w3id.org/todo/tododfa#Action> <http://www.w3.org/2004/02/skos/core#example> "(For a multipurpose robot) Guide, provide_information, pick, place" .
+# 
+# https://w3id.org/todo/tododfa#Argument
+<https://w3id.org/todo/tododfa#Argument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododfa#Argument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododfa#isArgumentOf> .
+_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododfa#Action> .
+<https://w3id.org/todo/tododfa#Argument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododfa#argumentTag> .
+_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/todo/tododfa#Argument> <http://www.w3.org/2000/01/rdf-schema#comment> "Participant that is involved in the event described by the Frame. It can be Core (its presence is compulsory to convey the event) or Optional (its presence is not compulsory, but it adds additional information)." .
+<https://w3id.org/todo/tododfa#Argument> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododfa#" .
+<https://w3id.org/todo/tododfa#Argument> <http://www.w3.org/2000/01/rdf-schema#label> "Argument"@en .
+<https://w3id.org/todo/tododfa#Argument> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<https://w3id.org/todo/tododfa#Argument> <http://www.w3.org/2004/02/skos/core#example> "Frame: Losing\n\nArgumentSet:\n* Owner [Core]\n* Possession [Core]\n* Place [Optional]\n* Time [Optional]\n...\n\nFor the sentence \"My mother lost her watch at home\":\n\"[My mother - owner(C)] LOST [her watch - possession(C)] (at home - place (O))\""@en .
+# 
+# https://w3id.org/todo/tododfa#ArgumentSet
+<https://w3id.org/todo/tododfa#ArgumentSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododfa#ArgumentSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododfa#isArgumentSetOf> .
+_:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododfa#Action> .
+<https://w3id.org/todo/tododfa#ArgumentSet> <http://www.w3.org/2000/01/rdf-schema#comment> "The group of Arguments that belong to a Frame."@en .
+<https://w3id.org/todo/tododfa#ArgumentSet> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododfa#" .
+<https://w3id.org/todo/tododfa#ArgumentSet> <http://www.w3.org/2000/01/rdf-schema#label> "ArgumentSet"@en .
+<https://w3id.org/todo/tododfa#ArgumentSet> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<https://w3id.org/todo/tododfa#ArgumentSet> <http://www.w3.org/2004/02/skos/core#example> "Frame: Losing\n\nArgumentSet:\n* Owner [Core]\n* Possession [Core]\n* Place [Optional]\n* Time [Optional]\n...\n\nFor the sentence \"My mother lost her watch at home\":\n\"[My mother - owner(C)] LOST [her watch - possession(C)] (at home - place (O))\""@en .
+# 
+# https://w3id.org/todo/tododfa#FomaGrammar
+<https://w3id.org/todo/tododfa#FomaGrammar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododfa#FomaGrammar> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododfa#isFomaGrammarOf> .
+_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododfa#Skill> .
+<https://w3id.org/todo/tododfa#FomaGrammar> <http://www.w3.org/2000/01/rdf-schema#comment> "Grammar to be used by Foma to perform Key Element Extraction."@en .
+<https://w3id.org/todo/tododfa#FomaGrammar> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododfa#" .
+<https://w3id.org/todo/tododfa#FomaGrammar> <http://www.w3.org/2000/01/rdf-schema#label> "FomaGrammar"@en .
+<https://w3id.org/todo/tododfa#FomaGrammar> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododfa#Frame
+<https://w3id.org/todo/tododfa#Frame> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododfa#Frame> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododfa#hasFrameHead> .
+_:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododfa#FrameHead> .
+<https://w3id.org/todo/tododfa#Frame> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododfa#isFrameOf> .
+_:genid10 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododfa#Intent> .
+<https://w3id.org/todo/tododfa#Frame> <http://www.w3.org/2000/01/rdf-schema#comment> "A specific event or situation evoked by a specific word (FrameHead), along with its participants (Arguments)."@en .
+<https://w3id.org/todo/tododfa#Frame> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododfa#" .
+<https://w3id.org/todo/tododfa#Frame> <http://www.w3.org/2000/01/rdf-schema#label> "Frame"@en .
+<https://w3id.org/todo/tododfa#Frame> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<https://w3id.org/todo/tododfa#Frame> <http://www.w3.org/2004/02/skos/core#example> "Frame: Losing\n\nFrameHead: lose (LexicalUnit: lose.v)\n\nArgumentSet:\n* Owner [Core]\n* Possession [Core]\n* Place [Optional]\n* Time [Optional]\n...\n\nFor the sentence \"My mother lost her watch at home\":\n\"[My mother - owner(C)] LOST [her watch - possession(C)] (at home - place (O))\""@en .
+# 
+# https://w3id.org/todo/tododfa#FrameHead
+<https://w3id.org/todo/tododfa#FrameHead> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododfa#FrameHead> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododfa#isFrameHeadOf> .
+_:genid11 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododfa#Frame> .
+<https://w3id.org/todo/tododfa#FrameHead> <http://www.w3.org/2000/01/rdf-schema#comment> "Word (or more than one) that evokes a specific situation or event, with its specific participants; that is, a frame. It is represented by one or more LexicalUnits."@en .
+<https://w3id.org/todo/tododfa#FrameHead> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododfa#" .
+<https://w3id.org/todo/tododfa#FrameHead> <http://www.w3.org/2000/01/rdf-schema#label> "FrameHead"@en .
+<https://w3id.org/todo/tododfa#FrameHead> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<https://w3id.org/todo/tododfa#FrameHead> <http://www.w3.org/2004/02/skos/core#example> "Frame: Losing\n\nFrameHead: lose (LexicalUnit: lose.v)\n\nArgumentSet:\n* Owner [Core]\n* Possession [Core]\n* Place [Optional]\n* Time [Optional]\n...\n\nFor the sentence \"My mother lost her watch at home\":\n\"[My mother - owner(C)] LOST [her watch - possession(C)] (at home - place (O))\""@en .
+# 
+# https://w3id.org/todo/tododfa#Intent
+<https://w3id.org/todo/tododfa#Intent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododfa#Intent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododfa#belongsToAction> .
+_:genid12 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododfa#Action> .
+<https://w3id.org/todo/tododfa#Intent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododfa#hasFrame> .
+_:genid13 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododfa#Frame> .
+<https://w3id.org/todo/tododfa#Intent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododfa#isIntentOf> .
+_:genid14 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododfa#Skill> .
+<https://w3id.org/todo/tododfa#Intent> <http://www.w3.org/2000/01/rdf-schema#comment> "User intention when formulating a request."@en .
+<https://w3id.org/todo/tododfa#Intent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododfa#" .
+<https://w3id.org/todo/tododfa#Intent> <http://www.w3.org/2000/01/rdf-schema#label> "Intent"@en .
+<https://w3id.org/todo/tododfa#Intent> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<https://w3id.org/todo/tododfa#Intent> <http://www.w3.org/2004/02/skos/core#example> "User request: \"I want information about Mona Lisa\"\n\nIntent: receive_information"@en .
+# 
+# https://w3id.org/todo/tododfa#Skill
+<https://w3id.org/todo/tododfa#Skill> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododfa#Skill> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododfa#hasIntent> .
+_:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododfa#Intent> .
+<https://w3id.org/todo/tododfa#Skill> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododfa#hasFomaGrammar> .
+_:genid16 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid16 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/todo/tododfa#FomaGrammar> .
+<https://w3id.org/todo/tododfa#Skill> <http://www.w3.org/2000/01/rdf-schema#comment> "Element that makes reference to the capabilities of the target system." .
+<https://w3id.org/todo/tododfa#Skill> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododfa#" .
+<https://w3id.org/todo/tododfa#Skill> <http://www.w3.org/2000/01/rdf-schema#label> "Skill"@en .
+<https://w3id.org/todo/tododfa#Skill> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<https://w3id.org/todo/tododfa#Skill> <http://www.w3.org/2004/02/skos/core#example> "(For a multipurpose robot) GuideRobot, RoboticArm" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid17 <http://www.w3.org/2002/07/owl#members> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/todo/tododfa#Action> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/todo/tododfa#Argument> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/todo/tododfa#ArgumentSet> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/todo/tododfa#FomaGrammar> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/todo/tododfa#Frame> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/todo/tododfa#FrameHead> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/todo/tododfa#Intent> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/todo/tododfa#Skill> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

@@ -1,0 +1,1122 @@
+<h2 id="crossreference" class="list">Cross reference for TODODFA: Frame-Action Module for Task-Oriented Dialogue management Ontology (TODO) classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by TODODFA: Frame-Action Module for Task-Oriented Dialogue management Ontology (TODO).
+<div id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#Action" title="https://w3id.org/todo/tododfa#Action">Action</a>
+      </li>
+      <li>
+         <a href="#Argument" title="https://w3id.org/todo/tododfa#Argument">Argument</a>
+      </li>
+      <li>
+         <a href="#ArgumentSet" title="https://w3id.org/todo/tododfa#ArgumentSet">ArgumentSet</a>
+      </li>
+      <li>
+         <a href="#FomaGrammar" title="https://w3id.org/todo/tododfa#FomaGrammar">FomaGrammar</a>
+      </li>
+      <li>
+         <a href="#Frame" title="https://w3id.org/todo/tododfa#Frame">Frame</a>
+      </li>
+      <li>
+         <a href="#FrameHead" title="https://w3id.org/todo/tododfa#FrameHead">FrameHead</a>
+      </li>
+      <li>
+         <a href="#Intent" title="https://w3id.org/todo/tododfa#Intent">Intent</a>
+      </li>
+      <li>
+         <a href="#Skill" title="https://w3id.org/todo/tododfa#Skill">Skill</a>
+      </li>
+   </ul>
+   <div class="entity" id="Action">
+      <h3>Action<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/todo/tododfa#Action</p>
+      <div class="comment">
+         <span class="markdown">Element that makes reference to the functionalities of the target system.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododfa</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>(For a multipurpose robot) Guide, provide_information, pick, place</pre>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Argument" title="https://w3id.org/todo/tododfa#Argument">Argument</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ArgumentSet" title="https://w3id.org/todo/tododfa#ArgumentSet">ArgumentSet</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#FomaGrammar" title="https://w3id.org/todo/tododfa#FomaGrammar">FomaGrammar</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Frame" title="https://w3id.org/todo/tododfa#Frame">Frame</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#FrameHead" title="https://w3id.org/todo/tododfa#FrameHead">FrameHead</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Intent" title="https://w3id.org/todo/tododfa#Intent">Intent</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Skill" title="https://w3id.org/todo/tododfa#Skill">Skill</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Argument">
+      <h3>Argument<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/todo/tododfa#Argument</p>
+      <div class="comment">
+         <span class="markdown">Participant that is involved in the event described by the Frame. It can be Core (its presence is compulsory to convey the event) or Optional (its presence is not compulsory, but it adds additional information).</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododfa</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>Frame: Losing
+
+ArgumentSet:
+* Owner [Core]
+* Possession [Core]
+* Place [Optional]
+* Time [Optional]
+...
+
+For the sentence "My mother lost her watch at home":
+"[My mother - owner(C)] LOST [her watch - possession(C)] (at home - place (O))"</pre>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Action" title="https://w3id.org/todo/tododfa#Action">Action</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ArgumentSet" title="https://w3id.org/todo/tododfa#ArgumentSet">ArgumentSet</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#FomaGrammar" title="https://w3id.org/todo/tododfa#FomaGrammar">FomaGrammar</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Frame" title="https://w3id.org/todo/tododfa#Frame">Frame</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#FrameHead" title="https://w3id.org/todo/tododfa#FrameHead">FrameHead</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Intent" title="https://w3id.org/todo/tododfa#Intent">Intent</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Skill" title="https://w3id.org/todo/tododfa#Skill">Skill</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ArgumentSet">
+      <h3>ArgumentSet<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/todo/tododfa#ArgumentSet</p>
+      <div class="comment">
+         <span class="markdown">The group of Arguments that belong to a Frame.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododfa</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>Frame: Losing
+
+ArgumentSet:
+* Owner [Core]
+* Possession [Core]
+* Place [Optional]
+* Time [Optional]
+...
+
+For the sentence "My mother lost her watch at home":
+"[My mother - owner(C)] LOST [her watch - possession(C)] (at home - place (O))"</pre>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Action" title="https://w3id.org/todo/tododfa#Action">Action</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Argument" title="https://w3id.org/todo/tododfa#Argument">Argument</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#FomaGrammar" title="https://w3id.org/todo/tododfa#FomaGrammar">FomaGrammar</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Frame" title="https://w3id.org/todo/tododfa#Frame">Frame</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#FrameHead" title="https://w3id.org/todo/tododfa#FrameHead">FrameHead</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Intent" title="https://w3id.org/todo/tododfa#Intent">Intent</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Skill" title="https://w3id.org/todo/tododfa#Skill">Skill</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="FomaGrammar">
+      <h3>FomaGrammar<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/todo/tododfa#FomaGrammar</p>
+      <div class="comment">
+         <span class="markdown">Grammar to be used by Foma to perform Key Element Extraction.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododfa</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Action" title="https://w3id.org/todo/tododfa#Action">Action</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Argument" title="https://w3id.org/todo/tododfa#Argument">Argument</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ArgumentSet" title="https://w3id.org/todo/tododfa#ArgumentSet">ArgumentSet</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Frame" title="https://w3id.org/todo/tododfa#Frame">Frame</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#FrameHead" title="https://w3id.org/todo/tododfa#FrameHead">FrameHead</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Intent" title="https://w3id.org/todo/tododfa#Intent">Intent</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Skill" title="https://w3id.org/todo/tododfa#Skill">Skill</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Frame">
+      <h3>Frame<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/todo/tododfa#Frame</p>
+      <div class="comment">
+         <span class="markdown">A specific event or situation evoked by a specific word (FrameHead), along with its participants (Arguments).</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododfa</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>Frame: Losing
+
+FrameHead: lose (LexicalUnit: lose.v)
+
+ArgumentSet:
+* Owner [Core]
+* Possession [Core]
+* Place [Optional]
+* Time [Optional]
+...
+
+For the sentence "My mother lost her watch at home":
+"[My mother - owner(C)] LOST [her watch - possession(C)] (at home - place (O))"</pre>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Action" title="https://w3id.org/todo/tododfa#Action">Action</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Argument" title="https://w3id.org/todo/tododfa#Argument">Argument</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ArgumentSet" title="https://w3id.org/todo/tododfa#ArgumentSet">ArgumentSet</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#FomaGrammar" title="https://w3id.org/todo/tododfa#FomaGrammar">FomaGrammar</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#FrameHead" title="https://w3id.org/todo/tododfa#FrameHead">FrameHead</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Intent" title="https://w3id.org/todo/tododfa#Intent">Intent</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Skill" title="https://w3id.org/todo/tododfa#Skill">Skill</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="FrameHead">
+      <h3>FrameHead<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/todo/tododfa#FrameHead</p>
+      <div class="comment">
+         <span class="markdown">Word (or more than one) that evokes a specific situation or event, with its specific participants; that is, a frame. It is represented by one or more LexicalUnits.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododfa</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>Frame: Losing
+
+FrameHead: lose (LexicalUnit: lose.v)
+
+ArgumentSet:
+* Owner [Core]
+* Possession [Core]
+* Place [Optional]
+* Time [Optional]
+...
+
+For the sentence "My mother lost her watch at home":
+"[My mother - owner(C)] LOST [her watch - possession(C)] (at home - place (O))"</pre>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Action" title="https://w3id.org/todo/tododfa#Action">Action</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Argument" title="https://w3id.org/todo/tododfa#Argument">Argument</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ArgumentSet" title="https://w3id.org/todo/tododfa#ArgumentSet">ArgumentSet</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#FomaGrammar" title="https://w3id.org/todo/tododfa#FomaGrammar">FomaGrammar</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Frame" title="https://w3id.org/todo/tododfa#Frame">Frame</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Intent" title="https://w3id.org/todo/tododfa#Intent">Intent</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Skill" title="https://w3id.org/todo/tododfa#Skill">Skill</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Intent">
+      <h3>Intent<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/todo/tododfa#Intent</p>
+      <div class="comment">
+         <span class="markdown">User intention when formulating a request.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododfa</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>User request: "I want information about Mona Lisa"
+
+Intent: receive_information</pre>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Action" title="https://w3id.org/todo/tododfa#Action">Action</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Argument" title="https://w3id.org/todo/tododfa#Argument">Argument</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ArgumentSet" title="https://w3id.org/todo/tododfa#ArgumentSet">ArgumentSet</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#FomaGrammar" title="https://w3id.org/todo/tododfa#FomaGrammar">FomaGrammar</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Frame" title="https://w3id.org/todo/tododfa#Frame">Frame</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#FrameHead" title="https://w3id.org/todo/tododfa#FrameHead">FrameHead</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Skill" title="https://w3id.org/todo/tododfa#Skill">Skill</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Skill">
+      <h3>Skill<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/todo/tododfa#Skill</p>
+      <div class="comment">
+         <span class="markdown">Element that makes reference to the capabilities of the target system.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododfa</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>(For a multipurpose robot) GuideRobot, RoboticArm</pre>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Action" title="https://w3id.org/todo/tododfa#Action">Action</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Argument" title="https://w3id.org/todo/tododfa#Argument">Argument</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ArgumentSet" title="https://w3id.org/todo/tododfa#ArgumentSet">ArgumentSet</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#FomaGrammar" title="https://w3id.org/todo/tododfa#FomaGrammar">FomaGrammar</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Frame" title="https://w3id.org/todo/tododfa#Frame">Frame</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#FrameHead" title="https://w3id.org/todo/tododfa#FrameHead">FrameHead</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Intent" title="https://w3id.org/todo/tododfa#Intent">Intent</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#belongsToAction" title="https://w3id.org/todo/tododfa#belongsToAction">belongsToAction</a>
+      </li>
+      <li>
+         <a href="#belongsToIntent" title="https://w3id.org/todo/tododfa#belongsToIntent">belongsToIntent</a>
+      </li>
+      <li>
+         <a href="#hasArgument" title="https://w3id.org/todo/tododfa#hasArgument">hasArgument</a>
+      </li>
+      <li>
+         <a href="#hasArgumentSet" title="https://w3id.org/todo/tododfa#hasArgumentSet">hasArgumentSet</a>
+      </li>
+      <li>
+         <a href="#hasCoreArgument" title="https://w3id.org/todo/tododfa#hasCoreArgument">hasCoreArgument</a>
+      </li>
+      <li>
+         <a href="#hasFomaGrammar" title="https://w3id.org/todo/tododfa#hasFomaGrammar">hasFomaGrammar</a>
+      </li>
+      <li>
+         <a href="#hasFrame" title="https://w3id.org/todo/tododfa#hasFrame">hasFrame</a>
+      </li>
+      <li>
+         <a href="#hasFrameHead" title="https://w3id.org/todo/tododfa#hasFrameHead">hasFrameHead</a>
+      </li>
+      <li>
+         <a href="#hasIntent" title="https://w3id.org/todo/tododfa#hasIntent">hasIntent</a>
+      </li>
+      <li>
+         <a href="#hasOptionalArgument"
+            title="https://w3id.org/todo/tododfa#hasOptionalArgument">hasOptionalArgument</a>
+      </li>
+      <li>
+         <a href="#isArgumentOf" title="https://w3id.org/todo/tododfa#isArgumentOf">isArgumentOf</a>
+      </li>
+      <li>
+         <a href="#isArgumentSetOf" title="https://w3id.org/todo/tododfa#isArgumentSetOf">isArgumentSetOf</a>
+      </li>
+      <li>
+         <a href="#isCoreArgumentOf" title="https://w3id.org/todo/tododfa#isCoreArgumentOf">isCoreArgumentOf</a>
+      </li>
+      <li>
+         <a href="#isFomaGrammarOf" title="https://w3id.org/todo/tododfa#isFomaGrammarOf">isFomaGrammarOf</a>
+      </li>
+      <li>
+         <a href="#isFrameHeadOf" title="https://w3id.org/todo/tododfa#isFrameHeadOf">isFrameHeadOf</a>
+      </li>
+      <li>
+         <a href="#isFrameOf" title="https://w3id.org/todo/tododfa#isFrameOf">isFrameOf</a>
+      </li>
+      <li>
+         <a href="#isIntentOf" title="https://w3id.org/todo/tododfa#isIntentOf">isIntentOf</a>
+      </li>
+      <li>
+         <a href="#isOptionalArgumentOf"
+            title="https://w3id.org/todo/tododfa#isOptionalArgumentOf">isOptionalArgumentOf</a>
+      </li>
+   </ul>
+   <div class="entity" id="belongsToAction">
+      <h3>belongsToAction<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/todo/tododfa#belongsToAction</p>
+      <div class="comment">
+         <span class="markdown">Establishes the relation between an Intent and the Action it belongs to.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododfa</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#belongsToIntent" title="https://w3id.org/todo/tododfa#belongsToIntent">belongsToIntent</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="belongsToIntent">
+      <h3>belongsToIntent<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/todo/tododfa#belongsToIntent</p>
+      <div class="comment">
+         <span class="markdown">Establishes the relation between an Action and the Intent it belongs to.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododfa</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#belongsToAction" title="https://w3id.org/todo/tododfa#belongsToAction">belongsToAction</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasArgument">
+      <h3>hasArgument<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/todo/tododfa#hasArgument</p>
+      <div class="comment">
+         <span class="markdown">Establishes a relation between an Action and its Argument(s).</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododfa</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#hasCoreArgument" title="https://w3id.org/todo/tododfa#hasCoreArgument">hasCoreArgument</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#hasOptionalArgument"
+                  title="https://w3id.org/todo/tododfa#hasOptionalArgument">hasOptionalArgument</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isArgumentOf" title="https://w3id.org/todo/tododfa#isArgumentOf">isArgumentOf</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasArgumentSet">
+      <h3>hasArgumentSet<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/todo/tododfa#hasArgumentSet</p>
+      <div class="comment">
+         <span class="markdown">Establishes a relation between an Action and the set composed of its Argument(s).</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododfa</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
+         <dl>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isArgumentSetOf" title="https://w3id.org/todo/tododfa#isArgumentSetOf">isArgumentSetOf</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasCoreArgument">
+      <h3>hasCoreArgument<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/todo/tododfa#hasCoreArgument</p>
+      <div class="comment">
+         <span class="markdown">Establishes a relation between an Action and its CoreArguments (i.e. the arguments that are compulsory in order to perform the Action).</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododfa</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#hasArgument" title="https://w3id.org/todo/tododfa#hasArgument">hasArgument</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isCoreArgumentOf" title="https://w3id.org/todo/tododfa#isCoreArgumentOf">isCoreArgumentOf</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasFomaGrammar">
+      <h3>hasFomaGrammar<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/todo/tododfa#hasFomaGrammar</p>
+      <div class="comment">
+         <span class="markdown">Establishes a relation between a Skill and the FomaGrammar to use to perform Key Element Extraction.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododfa</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
+         <dl>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isFomaGrammarOf" title="https://w3id.org/todo/tododfa#isFomaGrammarOf">isFomaGrammarOf</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasFrame">
+      <h3>hasFrame<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/todo/tododfa#hasFrame</p>
+      <div class="comment">
+         <span class="markdown">Establishes a relation between an Intent and its corresponding Frame.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododfa</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isFrameOf" title="https://w3id.org/todo/tododfa#isFrameOf">isFrameOf</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasFrameHead">
+      <h3>hasFrameHead<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/todo/tododfa#hasFrameHead</p>
+      <div class="comment">
+         <span class="markdown">Establishes a relation between a Frame and its FrameHead.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododfa</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> inverse functional</p>
+         <dl>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isFrameHeadOf" title="https://w3id.org/todo/tododfa#isFrameHeadOf">isFrameHeadOf</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasIntent">
+      <h3>hasIntent<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/todo/tododfa#hasIntent</p>
+      <div class="comment">
+         <span class="markdown">Establishes a relation between a Skill and its corresponding Intent(s).</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododfa</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isIntentOf" title="https://w3id.org/todo/tododfa#isIntentOf">isIntentOf</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasOptionalArgument">
+      <h3>hasOptionalArgument<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/todo/tododfa#hasOptionalArgument</p>
+      <div class="comment">
+         <span class="markdown">Establishes a relation between an Action and its OptionalArguments (i.e. the arguments that are not compulsory in order to perform the Action).</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododfa</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#hasArgument" title="https://w3id.org/todo/tododfa#hasArgument">hasArgument</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isOptionalArgumentOf"
+                  title="https://w3id.org/todo/tododfa#isOptionalArgumentOf">isOptionalArgumentOf</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isArgumentOf">
+      <h3>isArgumentOf<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/todo/tododfa#isArgumentOf</p>
+      <div class="comment">
+         <span class="markdown">Establishes a relation between an Argument and its corresponding Action.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododfa</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#isCoreArgumentOf" title="https://w3id.org/todo/tododfa#isCoreArgumentOf">isCoreArgumentOf</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#isOptionalArgumentOf"
+                  title="https://w3id.org/todo/tododfa#isOptionalArgumentOf">isOptionalArgumentOf</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasArgument" title="https://w3id.org/todo/tododfa#hasArgument">hasArgument</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isArgumentSetOf">
+      <h3>isArgumentSetOf<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/todo/tododfa#isArgumentSetOf</p>
+      <div class="comment">
+         <span class="markdown">Establishes a relation between an ArgumentSet and the Action it corresponds to.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododfa</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> inverse functional</p>
+         <dl>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasArgumentSet" title="https://w3id.org/todo/tododfa#hasArgumentSet">hasArgumentSet</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isCoreArgumentOf">
+      <h3>isCoreArgumentOf<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/todo/tododfa#isCoreArgumentOf</p>
+      <div class="comment">
+         <span class="markdown">Establishes a relation between a CoreArgument (i.e. the arguments that are compulsory in order to perform the Action) and its corresponding Action.</span>
+      </div>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#isArgumentOf" title="https://w3id.org/todo/tododfa#isArgumentOf">isArgumentOf</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasCoreArgument" title="https://w3id.org/todo/tododfa#hasCoreArgument">hasCoreArgument</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isFomaGrammarOf">
+      <h3>isFomaGrammarOf<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/todo/tododfa#isFomaGrammarOf</p>
+      <div class="comment">
+         <span class="markdown">Establishes a relation between the FomaGrammar to use to perform Key Element Extraction and a Skill.</span>
+      </div>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> inverse functional</p>
+         <dl>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasFomaGrammar" title="https://w3id.org/todo/tododfa#hasFomaGrammar">hasFomaGrammar</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isFrameHeadOf">
+      <h3>isFrameHeadOf<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/todo/tododfa#isFrameHeadOf</p>
+      <div class="comment">
+         <span class="markdown">Establishes a relation between a FrameHead and the Frame it applies to.</span>
+      </div>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
+         <dl>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasFrameHead" title="https://w3id.org/todo/tododfa#hasFrameHead">hasFrameHead</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isFrameOf">
+      <h3>isFrameOf<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/todo/tododfa#isFrameOf</p>
+      <div class="comment">
+         <span class="markdown">Establishes a relation between a Frame and the Intent it corresponds to.</span>
+      </div>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasFrame" title="https://w3id.org/todo/tododfa#hasFrame">hasFrame</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isIntentOf">
+      <h3>isIntentOf<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/todo/tododfa#isIntentOf</p>
+      <div class="comment">
+         <span class="markdown">Establishes a relation between an Intent and its corresponding Skill.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododfa</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasIntent" title="https://w3id.org/todo/tododfa#hasIntent">hasIntent</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isOptionalArgumentOf">
+      <h3>isOptionalArgumentOf<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/todo/tododfa#isOptionalArgumentOf</p>
+      <div class="comment">
+         <span class="markdown">Establishes a relation between an Optional Argument (i.e. the arguments that are not compulsory in order to perform the Action) and its corresponding Action.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododfa</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#isArgumentOf" title="https://w3id.org/todo/tododfa#isArgumentOf">isArgumentOf</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasOptionalArgument"
+                  title="https://w3id.org/todo/tododfa#hasOptionalArgument">hasOptionalArgument</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#actionTag" title="https://w3id.org/todo/tododfa#actionTag">actionTag</a>
+      </li>
+      <li>
+         <a href="#argumentConnector" title="https://w3id.org/todo/tododfa#argumentConnector">argumentConnector</a>
+      </li>
+      <li>
+         <a href="#argumentTag" title="https://w3id.org/todo/tododfa#argumentTag">argumentTag</a>
+      </li>
+   </ul>
+   <div class="entity" id="actionTag">
+      <h3>actionTag<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/todo/tododfa#actionTag</p>
+      <div class="comment">
+         <span class="markdown">String that identifies the Action when invoked in a SystemRequest/Response (DomainONT).</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododfa</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>System request: "Do you need me to {argumentTag}?"
+
+Action: take_guideRobot
+actionTag: "take you somewhere"
+
+Resulting SysRequest: "Do you need me to {take you somewhere}?"</pre>
+         </dd>
+         <dd>
+            <pre>System request: "Necesitas que {argumentTag}?"
+
+Action: take_guideRobot
+actionTag: "te lleve a algún lugar"
+
+Resulting SysRequest: "Necesitas que {te lleve}?"</pre>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="argumentConnector">
+      <h3>argumentConnector<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/todo/tododfa#argumentConnector</p>
+      <div class="comment">
+         <span class="markdown">String that defines the word that acts as a connector between the Argument and the rest of elements in a SystemRequest/Response.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododfa</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>SystemRequest: Do you want me {actionTag}{argumentConnector}{WorldElement}?
+
+Action: take_guideRobot
+argumentConnector: "to"
+
+"Do you want me {to take you}{to}{the restroom}?"</pre>
+         </dd>
+         <dd>
+            <pre>SystemRequest: ¿Necesitas que {actionTag}{argumentConnector}{WorldElement}?
+
+Action: take_guideRobot
+argumentConnector: "a"
+
+"¿Necesitas que {te lleve}{a}{la sala}?"</pre>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="argumentTag">
+      <h3>argumentTag<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/todo/tododfa#argumentTag</p>
+      <div class="comment">
+         <span class="markdown">String that identifies the Argument when invoked in a SystemRequest/Response (DomainONT)</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododfa</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>System request: "I need to know {argumentTag}"
+
+Argument: destination_guideRobot
+argumentTag: "where do you want to go"
+
+Resulting SysRequest: "I need to know {where do you want to go}"</pre>
+         </dd>
+         <dd>
+            <pre>System request: "Necesito saber {argumentTag}"
+
+Argument: destination_guideRobot
+argumentTag: "adónde quieres ir"
+
+Resulting SysRequest: "Necesito saber {adónde quieres ir}"</pre>
+         </dd>
+      </dl>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>
