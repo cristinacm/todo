@@ -1,0 +1,1766 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/todo/tododm#implies"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/todo/tododm#ActionDisambiguationRequest"
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/todo/tododm#userResponseNotUnderstoodImplies"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/todo/tododm#NotUnderstoodResponse"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/todo/tododm#IDval"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/todo/tododm#initiatedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/todo/tododm#SystemStep"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/todo/tododm#IDval"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/todo/tododm#order"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/todo/tododm#implies"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/todo/tododm#UserCommandRequest"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/todo/tododm#implies"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/todo/tododm#VerifyInfoRequest"
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/todo/tododm#implies"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/todo/tododm#UserCommandRequest"
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/todo/tododm#implies"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/todo/tododm#RepeatArgumentRequest"
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/todo/tododm#implies"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/todo/tododm#ArgumentSpecifyRequest"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/todo/tododm#implies"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/todo/tododm#VerifyInfoRequest"
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/todo/tododm#implies"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/todo/tododm#ArgumentValueDisambiguationRequest"
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/todo/tododm#hasStepFunction"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/todo/tododm#ProcessStepStepFunction"
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/todo/tododm#IDval"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/todo/tododm#isStepFunctionOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/todo/tododm#ProcessStep"
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/todo/tododm#order"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/todo/tododm#IDval"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/todo/tododm#outputSentence"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/todo/tododm#implies"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/todo/tododm#UserCommandRequest"
+  } ]
+}, {
+  "@id" : "_:genid28",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/todo/tododm#implies"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/todo/tododm#ArgumentClarificationRequest"
+  } ]
+}, {
+  "@id" : "_:genid29",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/todo/tododm#implies"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/todo/tododm#UserCommandRequest"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/todo/tododm#implies"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/todo/tododm#ArgumentRequest"
+  } ]
+}, {
+  "@id" : "_:genid30",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/todo/tododm#implies"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/todo/tododm#ArgumentClarificationRequest"
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/todo/tododm#implies"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/todo/tododm#VerifyInfoRequest"
+  } ]
+}, {
+  "@id" : "_:genid32",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/todo/tododm#hasStepFunction"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/todo/tododm#YesNoRequestStepFunction"
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/todo/tododm#incorrectUserResponseTypeImplies"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/todo/tododm#ContentResponseNotExpected"
+  } ]
+}, {
+  "@id" : "_:genid34",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/todo/tododm#isStepFunctionOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/todo/tododm#YesNoRequest"
+  } ]
+}, {
+  "@id" : "_:genid35",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/todo/tododm#userResponseNotUnderstoodImplies"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/todo/tododm#NotUnderstoodResponse"
+  } ]
+}, {
+  "@id" : "_:genid36",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/todo/tododm#DialogueControlMarkers"
+    }, {
+      "@id" : "https://w3id.org/todo/tododm#DialogueStep"
+    }, {
+      "@id" : "https://w3id.org/todo/tododm#ProcessStep"
+    }, {
+      "@id" : "https://w3id.org/todo/tododm#StepFunction"
+    }, {
+      "@id" : "https://w3id.org/todo/tododm#SystemStep"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/todo/tododm#implies"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/todo/tododm#ArgumentSpecifyRequest"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/todo/tododm#implies"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/todo/tododm#UserCommandRequest"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/todo/tododm#implies"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/todo/tododm#ArgumentRequest"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/todo/tododm#hasStepFunction"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/todo/tododm#ContentRequestStepFunction"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/todo/tododm#incorrectUserResponseTypeImplies"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/todo/tododm#YesNoResponseNotExpected"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/todo/tododm#isStepFunctionOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/todo/tododm#ContentRequest"
+  } ]
+}, {
+  "@id" : "http://creativecommons.org/ns#license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/bibliographicCitation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/issued",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/modified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#time",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#versionIRI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#example",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://creativecommons.org/ns#license" : [ {
+    "@value" : "http://purl.org/NET/rdflicense/cc-by4.0"
+  } ],
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@value" : "Izaskun Fernández (Tekniker) <mailto:izaskun.fernandez@tekniker.es>"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2020-04-21T00:00:00"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "Cristina Aceta (Tekniker) <mailto:cristina.aceta@tekniker.es>"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "Module for dialogue process and system output management."
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : ""
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2021-03-08T16:00:00"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@value" : "TODODM: Dialogue Management Module for Task-Oriented Dialogue management Ontology (TODO)"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "tododm"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2002/07/owl#priorVersion" : [ {
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "1.0.0"
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#ActionDisambiguationRequest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Request that makes the user choose from a set of Actions obtained through inference."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ActionDisambiguationRequest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#YesNoRequest"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "[Previous SysResp: \"I couldn't resolve the action from your request\".]\n\"Do you want to {ActionTag}?\n\n\"Do you want to {go somewhere}?"
+  }, {
+    "@language" : "es",
+    "@value" : "[Previous SysResp: \"No he podido resolver la acción a partir de tu petición\"]\n\n\"¿Quieres {ActionTag}?\n\n\"¿Quieres {que te lleve a algún sitio}?\""
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#ActionOptionsResponse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Response that the system gives when a command can be associated to more than one action."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ActionOptionsResponse"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#SystemResponse"
+  }, {
+    "@id" : "_:genid1"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "Your command can be associated to many actions!"
+  }, {
+    "@language" : "es",
+    "@value" : "¡El comando puede asociarse a varias acciones!"
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#AlternativeArgumentSuggestionRequest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Request that arises when the system has not been able to obtain an argument through an item + complement. The system suggests an alternative that contains the complement in the request."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "AlternativeArgumentSuggestionRequest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#YesNoRequest"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "es",
+    "@value" : "Request: \"Llévame a un laboratorio con micrófono\".\n\n\"No encuentro ningún/a {Item} con {Complement} como {argumentTag}, pero puedo sugerir {IDval_AlternativeItem}, que sí que tiene. ¿Le llevo ahí?\"\n\n\"No encuentro ningún/a {laboratorio} con {micrófono} como {el destino al que quiere que le lleve}, pero puedo sugerir {sala de reunión 1}, que sí que tiene. ¿Le llevo ahí?\""
+  }, {
+    "@language" : "en",
+    "@value" : "Request: \"Take me to a laboratory with microphone\".\n\n\"I cannot find any {Item} with {Complement} as {ArgumentTag}, but I can suggest {IDval_AlternativeItem}, which it does have it. Do you want me to take you there?\"\n\n\"I cannot find any {laboratory} with {microphone} as {the destination you want to go}, but I can suggest {meeting room 1}, which it does have it. Do you want me to take you there?\""
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#ArgumentAssignationRequest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Request made to reassure the assignation of a value from the KEE to an Argument."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ArgumentAssignationRequest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#YesNoRequest"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "es",
+    "@value" : "\"El {Argument} es el {Argument_value}, ¿verdad?\"\n\n\"El Destino es el \"Auditorio\", ¿verdad?\""
+  }, {
+    "@language" : "en",
+    "@value" : "The {Argument} is {Argument_value}, isn't it?\n\n\"The Destination is \"Auditorium\", isn't it?\""
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#ArgumentCharacteristicRequest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Request that demands a specific characteristic of the argument. This request is used when the argument provided is too broad and the system needs some characteristic that allows determining the specific element the user is refering to.\n\nFor example, the user would require a \"piece\", and the system includes data for 300 types of pieces."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ArgumentCharacteristicRequest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#ContentRequest"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "\"Which {characteristic} is {too_broad_argument}?\"\n\n\"Which {colour} is (the) {piece}?\""
+  }, {
+    "@language" : "es",
+    "@value" : "\"¿De qué {characteristic} es {too_broad_argument}?\n\n\"¿De qué {color} es (la) {pieza}?\""
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#ArgumentClarificationRequest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Request that asks the user for some clarification for the value of an argument when a previously saved value generates too many options."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ArgumentClarificationRequest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#ContentRequest"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "es",
+    "@value" : "\"Could you please be more specific with {ArgTag}?\"\n\n\"Could you please be more specific with {the destination you want me to take you}?\""
+  }, {
+    "@language" : "es",
+    "@value" : "\"¿Puedes ser un poco más específico con el {ArgTag}?\"\n\n\"¿Puedes ser un poco más específico con el {destino al que quieres que te guíe}?\""
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#ArgumentExplanationResponse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Response that gives details about an Argument. For example, when the user does not understand what information conveys said Argument."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ArgumentExplanationResponse"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#SystemResponse"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "es",
+    "@value" : "\"El {Argument} corresponde a{ArgDescription}\"\n\n\"El {Error} corresponde a{l número de error que aparece en la máquina}\""
+  }, {
+    "@language" : "en",
+    "@value" : "\"The {Argument} corresponds to {ArgDescription}\"\n\n\"The {Error} corresponds to {the ID of the error that appears in the machine}\""
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#ArgumentNotCompatibleResponse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The system informs the user the Argument value provided is not valid according to what has been modelled in the KB."
+  }, {
+    "@language" : "en",
+    "@value" : "This would imply an ArgumentRequest."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ArgumentNotCompatibleResponse"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#SystemResponse"
+  }, {
+    "@id" : "_:genid2"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "\"{ArgumentValue} cannot be the {Argument}.\"\n\n\"{Toilet} cannot be the {Error}.\""
+  }, {
+    "@language" : "es",
+    "@value" : "\"{ArgumentValue} no puede ser {Argument}.\"\n\n\"{Baño} no puede ser {Error}.\""
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#ArgumentNotGuessedResponse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Response given when the system has not been able to guess the value of the Argument through its characteristics."
+  }, {
+    "@language" : "en",
+    "@value" : "This would imply an ArgumentRequest/ArgumentCharacteristicRequest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ArgumentNotGuessedResponse"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#SystemResponse"
+  }, {
+    "@id" : "_:genid3"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "es",
+    "@value" : "\"Con las características que me has dado, no he podido averiguar el {Argument}.\"\n\n\"Con las características que me has dado, no he podido averiguar el {Error}.\""
+  }, {
+    "@language" : "es",
+    "@value" : "\"I cannot guess the {Argument} with the information you provided.\"\n\n\"I cannot guess the {Error} with the information you provided.\""
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#ArgumentOptionsResponse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Response that the system gives when an item can be associated to more than one argument."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ArgumentOptionsResponse"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#SystemResponse"
+  }, {
+    "@id" : "_:genid4"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "The item {item} can be associated to many arguments!"
+  }, {
+    "@language" : "es",
+    "@value" : "¡El item {item} puede asociarse a varios argumentos!"
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#ArgumentRequest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Request that demands for the value of an Argument."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ArgumentRequest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#ContentRequest"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "\"Can you tell me the {argument}?\n\n\"Can you tell me the {Destination}?\""
+  }, {
+    "@language" : "es",
+    "@value" : "\"¿Puedes decirme el {argument}?\"\n\n\"¿Puedes decirme el {Destino}?\""
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#ArgumentSpecifyRequest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Request made when a value for an Argument can belong to different Arguments. The strategy is asking for each Argument option until the user confirms."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ArgumentSpecifyRequest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#YesNoRequest"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "es",
+    "@value" : "[Situation: the value \"Mesa de reparación\" could be Origin or Destination]\n\n[Previous SysResponse: \"¡Lo que me has dicho podría ser varias cosas!\"]\n\n\"¿Es {el lugar al que quieres que te lleve}?\"\n\n\"¿Es {Argument}?\""
+  }, {
+    "@language" : "en",
+    "@value" : "[Situation: the value \"Repairing table\" could be Origin or Destination]\n\n[Previous SysResponse: \"What you told me could correspond to many elements!\"]\n\n\"Is it {the place you want me to take you}?\"\n\n\"Is it {Argument}?\""
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#ArgumentValueDisambiguationRequest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Request that tries to obtain the value of the argument when it is ambiguous (e.g. \"sala\" may apply to \"sala Ura\", \"sala Sua\", etc.)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ArgumentValueDisambiguationRequest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#YesNoRequest"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "\"Do you want {Action} {ArgumentConnector} {WorldElement}?\"\n\n\"Do you want {to go} {to} {Sala Ura}?\""
+  }, {
+    "@language" : "es",
+    "@value" : "\"¿Quieres {Action} {ArgumentConnector} {WorldElement}?\"\n\n\"¿Quieres {que te guíe} {a} {Sala Ura}?\""
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#CannotResolveActionResponse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Response that the system gives when it cannot associate an action/target to one or more actions."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "CannotResolveActionResponse"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#SystemResponse"
+  }, {
+    "@id" : "_:genid5"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "I couldn't associate your command to an action. Can you please be more specific?"
+  }, {
+    "@language" : "es",
+    "@value" : "No he podido asociar tu comando a una acción. ¿Puedes repetir y ser más específico, por favor?"
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#CannotResolveCommandResponse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Response that informs the user that the command could not be resolved.\n\n[to be followed by an ArgRequest]"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "CannotResolveCommandResponse"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#SystemResponse"
+  }, {
+    "@id" : "_:genid6"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "I could not resolve your command."
+  }, {
+    "@language" : "es",
+    "@value" : "No he podido resolver tu petición."
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#ContentRequest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Request that asks for specific information, other than \"Yes\" or \"No\" (and equivalents).\n\nAlso known as \"Non polar/Open question\" in linguistics."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ContentRequest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#SystemRequest"
+  }, {
+    "@id" : "_:genid7"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/todo/tododm#YesNoRequest"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "Which is the error code?"
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#ContentRequestStepFunction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Step Function associated to a ContentRequest."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ContentRequestStepFunction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#StepFunction"
+  }, {
+    "@id" : "_:genid8"
+  }, {
+    "@id" : "_:genid9"
+  }, {
+    "@id" : "_:genid10"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#ContentResponseNotExpected",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "\"Solo necesito que me digas sí o no, por favor\""
+  }, {
+    "@language" : "en",
+    "@value" : "\"You only need me to tell me yes or no, please\""
+  }, {
+    "@language" : "en",
+    "@value" : "Reponse given to the user when the UserResponse is a ContentResponse and the SystemRequest requires a YesNoResponse."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ContentResponseNotExpected"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#ResponseTypeNotExpectedResponse"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#Continue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Marker that conveys the idea of continuing with the dialogue process."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Continue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#DialogueControlMarkers"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#DialogueControlMarkers",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Elements that correspond to predefined or generic actions in dialogue control."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "DialogueControlMarkers"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid11"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@value" : "Continue, restart dialogue"
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#DialogueStep",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Step in the dialogue process that requires a system interaction with the user (SystemStep)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "DialogueStep"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid12"
+  }, {
+    "@id" : "_:genid13"
+  }, {
+    "@id" : "_:genid14"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/todo/tododm#ProcessStep"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#FinishDial",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Marker that establishes that the dialogue must be finished."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "FinishDial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#DialogueControlMarkers"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#GreetingResponse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Welcome message."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "GreetingResponse"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#SystemResponse"
+  }, {
+    "@id" : "_:genid15"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "\"Hi! I am {SystemName}. I am happy to help you.\"\n\n\"Hi! I am {Teknibot}. I am happy to help you.\""
+  }, {
+    "@language" : "es",
+    "@value" : "\"¡Hola! Soy {SystemName}. Encantado de ayudarte.\"\n\n\"¡Hola! Soy {Teknibot}. Encantado de ayudarte.\""
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#IDval",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Unique identification value for individuals."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "IDval"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#IncorrectArgumentRequest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Request that checks which is the Argument/Action that has not been interpreter correctly, after a negative ReassureFeedbackRequest."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "IncorrectArgumentRequest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#YesNoRequest"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "\"Have I missed the {Argument}?\"\n\n\"Have I missed the {Origin}?\""
+  }, {
+    "@language" : "es",
+    "@value" : "\"¿Me he equivocado con el {Argument}?\"\n\n\"¿Me he equivocado con el {Origen}?\""
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#IntentRequest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Request made when a UserRequest can belong to different Intents. The strategy is asking for each Intent option until the user confirms."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "IntentRequest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#YesNoRequest"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "Situation: the Intent for the Request could be \"Information\" or \"Guiding\"\n\n\"So many interpretations! See if you can help me! Do you need {Intent}?\"\n\"Then do you need {Intent}?\n\n\nSYS: \"So many interpretations! See if you can help me! Do you need {Information}?\"\n\nUSR: \"No\"\n\nSYS: \"Then do you need {Guiding}?\n\nUSR: \"Yes\""
+  }, {
+    "@language" : "es",
+    "@value" : "Situation: the intent for the Request could be \"Information\" or \"Guiding\"\n\n\"¡Cuántas interpretaciones! ¡A ver si me puedes ayudar! ¿Quieres {Intent}?\"\n\"¿Entonces necesitas {Intent}?\n\nSYS: \"¡Cuántas interpretaciones! ¡A ver si me puedes ayudar! ¿Quieres {que te dé información}?\"\n\nUSR: \"No\"\n\nSYS: \"¿Entonces necesitas {que te lleve}?\n\nUSR: \"Sí\""
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#ItemNotCompatibleAnyArgResponse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "El item {item} no es compatible con ningún argumento de la acción."
+  }, {
+    "@language" : "en",
+    "@value" : "The item {item} is not compatible with any argument for this action."
+  }, {
+    "@value" : "The system informs the user the Item value provided is not compatible with any action argument, according to what has been modelled in the KB."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ItemNotCompatibleAnyArgResponse"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#SystemResponse"
+  }, {
+    "@id" : "_:genid16"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#NoMoreOptionsContinueResponse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Response that the system displays when it runs out of options. It is intended to continue with a full request of the element that the previous options corresponded to."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "NoMoreOptionsContinueResponse"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#SystemResponse"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "I do not have more options to offer you!"
+  }, {
+    "@language" : "es",
+    "@value" : "¡No tengo más opciones que mostrarte!"
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#NoMoreOptionsRestartResponse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Response that the system displays when it runs out of options. It finishes the current Dialogue."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "NoMoreOptionsRestartResponse"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#SystemResponse"
+  }, {
+    "@id" : "_:genid17"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "I do not have more options to offer you! Can you reformulate your command so I can understand better?"
+  }, {
+    "@language" : "es",
+    "@value" : "¡No tengo más opciones que mostrarte! ¿Puedes reformular tu comando para que te entienda mejor?"
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#NoResultsClarificationResponse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Response that the system returns when the clarification step of the value of an Argument does not return any results."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "NoResultsClarificationResponse"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#SystemResponse"
+  }, {
+    "@id" : "_:genid18"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "I cannot find anything that corresponds to your demand."
+  }, {
+    "@language" : "es",
+    "@value" : "No encuentro ningún elemento que responda a lo que me pides."
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#NotUnderstoodResponse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Response that informs the user that the system has not understood the user command."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "NotUnderstoodResponse"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#SystemResponse"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "\"I am sorry, but I haven't understood. Can you repeat, please?\""
+  }, {
+    "@language" : "es",
+    "@value" : "\"Lo siento, no te he entendido. ¿Puedes repetir, por favor?"
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#OptionsAvailableResponse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Response in which the system tells the user that it has several options for a specific element (e.g. WorldElement).\n\nNote the difference between OptionsAvailableResponse and TooManyAlternativesResponse: the first implies that there is a fair amount of options, whereas the latter implies that the options that are available are too many and it will require the user to be more specific."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "OptionsAvailableResponse"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#SystemResponse"
+  }, {
+    "@id" : "_:genid19"
+  }, {
+    "@id" : "_:genid20"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "\"I have many options for your request.\""
+  }, {
+    "@language" : "es",
+    "@value" : "\"Tengo varias opciones para tu comando.\"\n\n\"¡Lo que me has dicho puede ser varias cosas!\""
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#ProcessStep",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Step in the dialogue process that does not require a system interaction with the user (SystemStep)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ProcessStep"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid21"
+  }, {
+    "@id" : "_:genid22"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#ProcessStepStepFunction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Step Function associated to a ProcessStep."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ProcessStepStepFunction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#StepFunction"
+  }, {
+    "@id" : "_:genid23"
+  }, {
+    "@id" : "_:genid24"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#ReassureFeedbackRequest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Request that is sent in order to obtain feedback whether the interpretation obtained is correct or not."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ReassureFeedbackRequest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#YesNoRequest"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "es",
+    "@value" : "\"Entonces, quieres que {Action} {ArgumentConnector} {Argument}, ¿verdad?\"\n\n\"Entonces, quieres que {te lleve} {a} {l baño}, ¿verdad?\""
+  }, {
+    "@language" : "en",
+    "@value" : "\"So, you want me {Action} {ArgumentConnector} {Argument}, right?\"\n\n\"So, you want me {to take you} {to} {the toilet}, right?\""
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#RepeatArgumentRequest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Request that demands the user to repeat the value of an Argument."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "RepeatArgumentRequest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#ContentRequest"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "\"Can you repeat the {Argument}?\n\n\"Can you repeat the {Destination}?\""
+  }, {
+    "@language" : "es",
+    "@value" : "\"¿Puedes repetir el {argument}?\"\n\n\"¿Puedes repetir el {Destino}?\""
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#ResponseTypeNotExpectedResponse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Reponse given to the user when the UserResponse does not correspond with the expected response of the SystemRequest."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ResponseTypeNotExpectedResponse"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#SystemResponse"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#Restart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Marker that requires the dialogue to restart."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Restart"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#DialogueControlMarkers"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#StepFunction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Element that is linked to a function in the Dialogue Manager code. This element also determines the implications of the output of said function in the code."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "StepFunction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid25"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#SystemRequest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Act in which the system requires user input."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "SystemRequest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#SystemStep"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/todo/tododm#SystemResponse"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@value" : "Ask for missing information, ask for confirmation."
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#SystemResponse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Information that the system provides in response to a UserRequest or as a piece of information directed to the user without a prior UserRequest."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "SystemResponse"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#SystemStep"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#SystemStep",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Step performed by the system in order to request information to the user or simply outputting information."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "SystemStep"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid26"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#TooManyActionOptionsResponse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Response given when the number of possible Actions is too big."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "TooManyActionOptionsResponse"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#SystemResponse"
+  }, {
+    "@id" : "_:genid27"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "Your command can be associated to too many actions! Can you repeat and be more specific, please?"
+  }, {
+    "@language" : "es",
+    "@value" : "¡Tu comando se puede asociar a demasiadas acciones! ¿Puedes repetir y ser un poco más específico, por favor?"
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#TooManyAlternativesResponse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Response given when the alternatives (in general) are too big."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "TooManyAlternativesResponse"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#SystemResponse"
+  }, {
+    "@id" : "_:genid28"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "\"I have too many options taking into account the information you provided to me.\"\n\n\"I have too many options taking into account the information you provided to me.\""
+  }, {
+    "@language" : "es",
+    "@value" : "\"Tengo demasiadas opciones con la información que me has dado.\"\n\n\"Tengo demasiadas opciones con la información que me has dado.\""
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#TooManyArgumentOptionsResponse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "TooManyArgumentOptionsResponse"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#SystemResponse"
+  }, {
+    "@id" : "_:genid29"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "Response given when the number of possible Arguments is too big."
+  }, {
+    "@language" : "en",
+    "@value" : "Your command can be associated to too many arguments! Can you repeat and be more specific, please?"
+  }, {
+    "@language" : "es",
+    "@value" : "¡Tu comando se puede asociar a demasiados argumentos! ¿Puedes repetir y ser un poco más específico, por favor?"
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#TooManyWorldElementOptionsResponse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Response given when the number of possible World Elements is too big."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "TooManyWorldElementOptionsResponse"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#SystemResponse"
+  }, {
+    "@id" : "_:genid30"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "Your command can be associated to too many elements!"
+  }, {
+    "@language" : "es",
+    "@value" : "¡Tu comando se puede asociar a demasiados elementos!"
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#UnderstoodResponse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Response given by the system to reassure the user that it has understood the request."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "UnderstoodResponse"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#SystemResponse"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#UserCommandRequest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Request to the user to provide their (initial) command."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "UserCommandRequest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#ContentRequest"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "es",
+    "@value" : "How can I help you?\n\nTell me your command."
+  }, {
+    "@language" : "es",
+    "@value" : "¿En qué puedo ayudarte?\n\nDame tu comando."
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#ValueNotCompatibleWithArgumentResponse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Response given when the ArgValue for an Argument provided by the user is not compatible with said Argument."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ValueNotCompatibleWithArgumentResponse"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#SystemResponse"
+  }, {
+    "@id" : "_:genid31"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "\"It cannot be the {Argument}\".\n\n\"It cannot be the {destination you want me to take you}\"."
+  }, {
+    "@language" : "es",
+    "@value" : "\"No puede ser {Argument}\".\n\n\"No puede ser {el lugar al que quieres que te lleve}\"."
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#VerifyInfoRequest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Request that requires the user to repeat some information."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "VerifyInfoRequest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#ContentRequest"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "[Previous SysResponse: \"This item cannot be {ArgTag}\"]\n\"Can you verify?\"\n\n[Previous SysResponse: \"This item cannot be {the destination}\"]\n\"Can you verify?\""
+  }, {
+    "@language" : "en",
+    "@value" : "[PreviousSysResponse: \"Este elemento no puede ser {ArgTag}\"]\n\"¿Puedes verificarlo?\"\n\n[PreviousSysResponse: \"Este elemento no puede ser {el destino}\"]\n\"¿Puedes verificarlo?\""
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#YesNoRequest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Request the response of which is expected to be limited to \"Yes\" or \"No\" (and equivalents).\n\nAlso known as \"Polar question\" in linguistics."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "YesNoRequest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#SystemRequest"
+  }, {
+    "@id" : "_:genid32"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "Do you want to go to the laboratory?"
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#YesNoRequestStepFunction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Step Function associated to a YesNoRequest."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "YesNoRequestStepFunction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#StepFunction"
+  }, {
+    "@id" : "_:genid33"
+  }, {
+    "@id" : "_:genid34"
+  }, {
+    "@id" : "_:genid35"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#YesNoResponseNotExpected",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "\"Creo que no te he entendido. ¿Puedes ser un poco más concreto con tu respuesta?\""
+  }, {
+    "@language" : "en",
+    "@value" : "\"I think I haven't understood. Can you be more specific?"
+  }, {
+    "@language" : "en",
+    "@value" : "Reponse given to the user when the UserResponse is a YesNoResponse and the SystemRequest requires a ContentResponse."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "YesNoResponseNotExpected"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#ResponseTypeNotExpectedResponse"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#hasStepFunction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Establishes the StepFunction corresponding to a SystemRequest or a ProcessStep."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasStepFunction"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#isStepFunctionOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#implies",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Establishes the implications of the output of a StepFunction in the Dialogue Manager code."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "implies"
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#incorrectUserResponseTypeImplies",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Establishes the implications of an incorrect UserResponseType (e.g. when the request requires Yes/No as response and the user provides a ContentResponse)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "incorrectUserResponseTypeImplies"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#implies"
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#initiatedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Establishes the SystemRequest/Response that initiates a DialogueStep."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "initiatedBy"
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#isRequiredBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Establishes the SystemRequest that requires a given UserResponse type."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "isRequiredBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#requires"
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#isStepFunctionOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Establishes the SystemRequest or a ProcessStep corresponding to a StepFunction."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "isStepFunctionOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#lessMaxOptionsImplies",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Establishes the implications when a StepFunction, in the Dialogue Manager code, returns more than one result as output and the length of the output is smaller than the number of maximum results previously defined."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "lessMaxOptionsImplies"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#multipleOptionsImplies"
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#moreMaxOptionsImplies",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Establishes the implications when a StepFunction, in the Dialogue Manager code, returns more than one result as output and the length of the output is higher than the number of maximum results previously defined."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "moreMaxOptionsImplies"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#multipleOptionsImplies"
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#multipleOptionsImplies",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Establishes the implications when a StepFunction, in the Dialogue Manager code, returns more than one result as output."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "multipleOptionsImplies"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#implies"
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#noOptionsImplies",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Establishes the implications when a StepFunction, in the Dialogue Manager code, returns no results as output."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "noOptionsImplies"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#implies"
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#noUserResponseTypeImplies",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Establishes the implications of a negative UserResponse."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "noUserResponseTypeImplies"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#implies"
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#order",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Sets the order for StepFunctions/DialogueSteps."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "order"
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#outputSentence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "String to be output by the system in order to communicate a SystemRequest/Response to the user."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "outputSentence"
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#requires",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Establishes the type of UserResponse required by a SystemRequest."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "requires"
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#singleOptionImplies",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Establishes the implications when a StepFunction, in the Dialogue Manager code, returns one result as output."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "singleOptionImplies"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#implies"
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#userResponseNotUnderstoodImplies",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Establishes the implications when the system does not understand a UserResponse."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "userResponseNotUnderstoodImplies"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#implies"
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#yesUserResponseTypeImplies",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Establishes the implications of a positive UserResponse."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "YesUserResponseImplies"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#implies"
+  } ]
+} ]

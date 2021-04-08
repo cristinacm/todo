@@ -1,0 +1,937 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "es", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "https://w3id.org/todo/tododt", "http://www.w3.org/2001/XMLSchema" ],
+    "title" : {
+      "undefined" : "TODODT: Dialogue Tracing Module for Task-Oriented Dialogue management Ontology (TODO)"
+    },
+    "iri" : "https://w3id.org/todo/tododt",
+    "version" : "1.0.0",
+    "author" : [ "Cristina Aceta (Tekniker) <mailto:cristina.aceta@tekniker.es>" ],
+    "description" : {
+      "undefined" : "Module for dialogue tracing."
+    },
+    "other" : {
+      "priorVersion" : [ {
+        "identifier" : "priorVersion",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://purl.org/NET/rdflicense/cc-by4.0",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Cristina Aceta (Tekniker) <mailto:cristina.aceta@tekniker.es>",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Izaskun Fernández (Tekniker) <mailto:izaskun.fernandez@tekniker.es>",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-04-21T00:00:00",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "tododt",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2021-03-08T16:00:00",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0.0",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "TODODT: Dialogue Tracing Module for Task-Oriented Dialogue management Ontology (TODO)",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "8",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/todo/tododt#YesNoUserResponseTrace",
+    "baseIri" : "https://w3id.org/todo/tododt",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "YesNo User Responses:\n\n- Yes, OK\n\n- No, Not at all",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "YesNoUserResponseTrace",
+      "undefined" : "YesNoUserResponseTrace"
+    },
+    "subClasses" : [ "2", "3" ],
+    "comment" : {
+      "en" : "Element that leaves a record of the User Responses performed throughout the dialogue process. These responses correspond to a positive or negative polarity."
+    },
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododt#SystemStepTrace",
+    "baseIri" : "https://w3id.org/todo/tododt",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SystemStepTrace",
+      "undefined" : "SystemStepTrace"
+    },
+    "subClasses" : [ "5", "6" ],
+    "comment" : {
+      "undefined" : "Element that leaves a record of the SystemSteps performed throughout the dialogue process."
+    },
+    "id" : "4"
+  }, {
+    "iri" : "https://w3id.org/todo/tododt#UserStepTrace",
+    "baseIri" : "https://w3id.org/todo/tododt",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "UserStepTrace",
+      "undefined" : "UserStepTrace"
+    },
+    "subClasses" : [ "1", "20" ],
+    "comment" : {
+      "undefined" : "Element that leaves a record of the user steps (requests and responses) performed throughout the dialogue process."
+    },
+    "id" : "21"
+  }, {
+    "iri" : "https://w3id.org/todo/tododt#ContentUserResponseTrace",
+    "baseIri" : "https://w3id.org/todo/tododt",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Content User Response: The error code is 412.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ContentUserResponseTrace",
+      "undefined" : "ContentUserResponseTrace"
+    },
+    "comment" : {
+      "en" : "Element that leaves a record of the User Responses performed throughout the dialogue process. These responses provide specific information, as a response for a ContentRequest."
+    },
+    "id" : "24",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododt#NullUserResponseTrace",
+    "baseIri" : "https://w3id.org/todo/tododt",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Null User Response: I don't know.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "NullUserResponseTrace",
+      "undefined" : "NullUserResponseTrace"
+    },
+    "comment" : {
+      "en" : "Response that does not represent a value that can be classified as ContentResponse or YesNoResponse."
+    },
+    "id" : "18",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododt#SecondaryDialogueTrace",
+    "baseIri" : "https://w3id.org/todo/tododt",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SecondaryDialogueTrace",
+      "undefined" : "SecondaryDialogueTrace"
+    },
+    "comment" : {
+      "undefined" : "Element that leaves a record of the secondary dialogues performed."
+    },
+    "id" : "11",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "33",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "34",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "32",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "36",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "16",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "9",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "8",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://w3id.org/todo/tododt#NoUserResponse",
+    "baseIri" : "https://w3id.org/todo/tododt",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "No User Responses: No, Never, Not at all",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "NoUserResponse",
+      "undefined" : "NoUserResponse"
+    },
+    "comment" : {
+      "en" : "Element that leaves a record of the User Responses performed throughout the dialogue process. These responses correspond to a negative polarity."
+    },
+    "id" : "3",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "30",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "38",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://w3id.org/todo/tododt#UserRequestTrace",
+    "baseIri" : "https://w3id.org/todo/tododt",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "UserRequestTrace",
+      "undefined" : "UserRequestTrace"
+    },
+    "comment" : {
+      "en" : "Element that leaves a record of the User Requests performed throughout the dialogue process."
+    },
+    "id" : "20",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "41",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "https://w3id.org/todo/tododt#YesUserResponse",
+    "baseIri" : "https://w3id.org/todo/tododt",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Yes User Responses: Yes, OK",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "YesUserResponse",
+      "undefined" : "YesUserResponse"
+    },
+    "comment" : {
+      "en" : "Element that leaves a record of the User Responses performed throughout the dialogue process. These responses correspond to a positive polarity."
+    },
+    "id" : "2",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododt#DialogueTrace",
+    "baseIri" : "https://w3id.org/todo/tododt",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DialogueTrace",
+      "undefined" : "DialogueTrace"
+    },
+    "comment" : {
+      "undefined" : "Element that leaves a record of the dialogues performed."
+    },
+    "id" : "14",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododt#UserResponseTrace",
+    "baseIri" : "https://w3id.org/todo/tododt",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "UserResponseTrace",
+      "undefined" : "UserResponseTrace"
+    },
+    "subClasses" : [ "18", "24", "0" ],
+    "comment" : {
+      "en" : "Element that leaves a record of the User Responses performed throughout the dialogue process."
+    },
+    "id" : "1",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododt#SystemResponseTrace",
+    "baseIri" : "https://w3id.org/todo/tododt",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SystemResponseTrace",
+      "undefined" : "SystemResponseTrace"
+    },
+    "comment" : {
+      "undefined" : "Element that leaves a record of the SystemResponses performed throughout the dialogue process."
+    },
+    "id" : "6",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododt#SystemRequestTrace",
+    "baseIri" : "https://w3id.org/todo/tododt",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SystemRequestTrace",
+      "undefined" : "SystemRequestTrace"
+    },
+    "comment" : {
+      "undefined" : "Element that leaves a record of the SystemRequests performed throughout the dialogue process."
+    },
+    "id" : "5",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododt#DialogueProcessTrace",
+    "baseIri" : "https://w3id.org/todo/tododt",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DialogueProcessTrace",
+      "undefined" : "DialogueProcessTrace"
+    },
+    "subClasses" : [ "14", "11" ],
+    "comment" : {
+      "undefined" : "Element that leaves a record of the dialogues performed throughout the dialogue process."
+    },
+    "id" : "12"
+  } ],
+  "property" : [ {
+    "id" : "7",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "15",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "29",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "31",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "37",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "43",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "44",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "45",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "46",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "47",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "48",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "49",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "50",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "51",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "52",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/todo/tododt#text",
+    "baseIri" : "https://w3id.org/todo/tododt",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "text",
+      "undefined" : "text"
+    },
+    "cardinality" : "1",
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "String that corresponds to a transcribed command by an user or the fully constructed outputSentence directed to the user."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "7"
+  }, {
+    "range" : "12",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "10"
+  }, {
+    "range" : "12",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "13"
+  }, {
+    "iri" : "https://w3id.org/todo/tododt#dialStatus",
+    "baseIri" : "https://w3id.org/todo/tododt",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "dialStatus",
+      "undefined" : "dialStatus"
+    },
+    "cardinality" : "1",
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Sets whether a Dialogue/SecondaryDialogue has finished (closed) or not (open)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "15"
+  }, {
+    "range" : "1",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "17"
+  }, {
+    "range" : "21",
+    "domain" : "20",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "19"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "22"
+  }, {
+    "range" : "1",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "23"
+  }, {
+    "range" : "4",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "25"
+  }, {
+    "range" : "0",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "26"
+  }, {
+    "range" : "21",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "27"
+  }, {
+    "range" : "4",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "28"
+  }, {
+    "iri" : "https://w3id.org/todo/tododt#verb",
+    "baseIri" : "https://w3id.org/todo/tododt",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "verb",
+      "undefined" : "verb"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Key element classified as \"verb\"/\"action\"."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "29"
+  }, {
+    "iri" : "https://w3id.org/todo/tododt#initDateTime",
+    "baseIri" : "https://w3id.org/todo/tododt",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "initDateTime",
+      "undefined" : "initDateTime"
+    },
+    "cardinality" : "1",
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Sets a start timestamp to a DialogueTrace."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "31"
+  }, {
+    "range" : "0",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "35"
+  }, {
+    "iri" : "https://w3id.org/todo/tododt#dialogueStep",
+    "baseIri" : "https://w3id.org/todo/tododt",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "dialogueStep",
+      "undefined" : "dialogueStep"
+    },
+    "cardinality" : "1",
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Used to control which step is performing the current Dialogue."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "37"
+  }, {
+    "iri" : "https://w3id.org/todo/tododt#possibleValue",
+    "baseIri" : "https://w3id.org/todo/tododt",
+    "range" : "38",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "es",
+        "value" : "UserReq: \"Quiero ir a la sala\"\n\npossibleValue \"sala1\"\npossibleValue \"sala2\"\n\nSystem Req: \"¿Quieres ir a la {sala1}?\"; \"¿Quieres ir a la {sala2}?\"",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "UserReq: \"I want to go to the room\"\n\npossibleValue \"room1\"\npossibleValue \"room2\"\n\nSystemReq: \"Do you want to go to {room1}?\"; \"Do you want to go to {room2}?\"",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "possibleValue",
+      "undefined" : "possibleValue"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "When asking the user for a specific information, the possible values of that information to be asked to the user."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "39"
+  }, {
+    "iri" : "https://w3id.org/todo/tododt#dateTime",
+    "baseIri" : "https://w3id.org/todo/tododt",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "dateTime",
+      "undefined" : "dateTime"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Sets a timestamp to a DialogueTrace."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "40"
+  }, {
+    "range" : "21",
+    "domain" : "12",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "42"
+  }, {
+    "range" : "21",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "43"
+  }, {
+    "iri" : "https://w3id.org/todo/tododt#hasSecondaryDialogue",
+    "baseIri" : "https://w3id.org/todo/tododt",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "hasSecondaryDialogue",
+      "undefined" : "hasSecondaryDialogue"
+    },
+    "domain" : "12",
+    "comment" : {
+      "undefined" : "Establishes the SecondaryDialogue corresponding to a DialogueTrace."
+    },
+    "attributes" : [ "transitive", "someValues", "object" ],
+    "id" : "44"
+  }, {
+    "iri" : "https://w3id.org/todo/tododt#hasUserRequest",
+    "baseIri" : "https://w3id.org/todo/tododt",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "hasUserRequest",
+      "undefined" : "hasUserRequest"
+    },
+    "domain" : "14",
+    "comment" : {
+      "undefined" : "Establishes the UserRequest corresponding to a DialogueTrace."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "45"
+  }, {
+    "iri" : "https://w3id.org/todo/tododt#hasSystemRequest",
+    "baseIri" : "https://w3id.org/todo/tododt",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "hasSystemRequest",
+      "undefined" : "hasSystemRequest"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "Establishes the SystemRequest corresponding to a SecondaryDialogueTrace."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "46"
+  }, {
+    "iri" : "https://w3id.org/todo/tododt#hasUserResponse",
+    "baseIri" : "https://w3id.org/todo/tododt",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasUserResponse",
+      "undefined" : "hasUserResponse"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "Establishes the UserResponse corresponding to a SecondaryDialogueTrace."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "47"
+  }, {
+    "range" : "1",
+    "domain" : "20",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "48"
+  }, {
+    "range" : "0",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "49"
+  }, {
+    "range" : "4",
+    "domain" : "12",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "50"
+  }, {
+    "iri" : "https://w3id.org/todo/tododt#currentValue",
+    "baseIri" : "https://w3id.org/todo/tododt",
+    "range" : "36",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "UserReq: \"Quiero ir a la sala\"\n\npossibleValue \"sala1\"\npossibleValue \"sala2\"\n\nSystem Req: \"¿Quieres ir a la {sala1}?\" (currentValue: sala1); \"¿Quieres ir a la {sala2}? (currentValue: sala2)\"",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "UserReq: \"I want to go to the room\"\n\npossibleValue \"room1\"\npossibleValue \"room2\"\n\nSystemReq: \"Do you want to go to {room1}?\" (currentValue: room1); \"Do you want to go to {room2}? (currentValue: room2)\"",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "currentValue",
+      "undefined" : "currentValue"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "When asking the user for a specific information, the information currently asked to the user."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "51"
+  }, {
+    "iri" : "https://w3id.org/todo/tododt#finishDateTime",
+    "baseIri" : "https://w3id.org/todo/tododt",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "finishDateTime",
+      "undefined" : "finishDateTime"
+    },
+    "cardinality" : "1",
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Sets a finish timestamp to a DialogueTrace."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "52"
+  } ]
+}
