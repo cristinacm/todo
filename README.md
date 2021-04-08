@@ -2,7 +2,7 @@
 
 This repository includes TODO, along with its modules and the documentation for each of them.
 
-#URIs
+# URIs
 
 * TODO: https://w3id.org/todo
 * TODODial: https://w3id.org/todo/tododial
