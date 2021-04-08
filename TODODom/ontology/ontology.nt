@@ -1,4 +1,6 @@
 <https://w3id.org/todo/tododom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/todo/tododom> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/todo/tododfa> .
+<https://w3id.org/todo/tododom> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/todo/tododw> .
 <https://w3id.org/todo/tododom> <http://creativecommons.org/ns#license> "http://purl.org/NET/rdflicense/cc-by4.0" .
 <https://w3id.org/todo/tododom> <http://purl.org/dc/terms/contributor> "Izaskun Fernández (Tekniker) <mailto:izaskun.fernandez@tekniker.es>" .
 <https://w3id.org/todo/tododom> <http://purl.org/dc/terms/created> "2020-04-21T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .

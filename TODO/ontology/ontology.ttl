@@ -7,6 +7,8 @@
 @base <https://w3id.org/todo/todo> .
 
 <https://w3id.org/todo/todo> rdf:type owl:Ontology ;
+                              owl:imports <https://w3id.org/todo/tododial> ,
+                                          <https://w3id.org/todo/tododom> ;
                               <http://creativecommons.org/ns#license> "CC BY <https://creativecommons.org/licenses/by/2.0/>" ;
                               <http://purl.org/dc/terms/contributor> "Izaskun Fernández (Tekniker) <mailto:izaskun.fernandez@tekniker.es>" ;
                               <http://purl.org/dc/terms/created> "2020-04-21T00:00:00"^^xsd:dateTime ;
@@ -18,50 +20,6 @@
                               <http://purl.org/vocab/vann/preferredNamespacePrefix> "DialSystemOnt" ;
                               <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/todo/todo" ;
                               owl:versionInfo "1.0.0" .
-
-#################################################################
-#    Annotation properties
-#################################################################
-
-###  http://creativecommons.org/ns#license
-<http://creativecommons.org/ns#license> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/contributor
-<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/created
-<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/creator
-<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/description
-<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/issued
-<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/modified
-<http://purl.org/dc/terms/modified> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/title
-<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/vocab/vann/preferredNamespacePrefix
-<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/vocab/vann/preferredNamespaceUri
-<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
-
 
 #################################################################
 #    Object Properties

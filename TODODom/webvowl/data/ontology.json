@@ -1,8 +1,8 @@
 {
   "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
   "header" : {
-    "languages" : [ "en", "undefined" ],
-    "baseIris" : [ "http://www.daml.org/services/owl-s/1.2/Service.owl", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.daml.org/services/owl-s/1.1/Service.owl", "http://www.daml.org/services/owl-s/1.1/Grounding.owl", "http://www.daml.org/services/owl-s/1.2/Grounding.owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2003/01/geo/wgs84_pos", "https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/todo/tododfa", "https://w3id.org/todo/tododom" ],
+    "languages" : [ "en", "es", "undefined" ],
+    "baseIris" : [ "http://www.daml.org/services/owl-s/1.2/Service.owl", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.daml.org/services/owl-s/1.1/Service.owl", "http://www.daml.org/services/owl-s/1.1/Grounding.owl", "http://www.daml.org/services/owl-s/1.2/Grounding.owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2003/01/geo/wgs84_pos", "http://purl.org/dc/terms", "https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/todo/tododfa", "https://w3id.org/todo/tododom" ],
     "title" : {
       "undefined" : "TODODom: Domain Module for Task-Oriented Dialogue management Ontology (TODO)"
     },
@@ -13,16 +13,16 @@
       "undefined" : "Module for domain modelling."
     },
     "other" : {
-      "license" : [ {
-        "identifier" : "license",
-        "language" : "undefined",
-        "value" : "http://purl.org/NET/rdflicense/cc-by4.0",
-        "type" : "label"
-      } ],
       "priorVersion" : [ {
         "identifier" : "priorVersion",
         "language" : "undefined",
         "value" : "",
+        "type" : "label"
+      } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://purl.org/NET/rdflicense/cc-by4.0",
         "type" : "label"
       } ],
       "creator" : [ {
@@ -55,22 +55,16 @@
         "value" : "2021-03-09T10:00:00",
         "type" : "label"
       } ],
-      "versionInfo" : [ {
-        "identifier" : "versionInfo",
-        "language" : "undefined",
-        "value" : "1.0.0",
-        "type" : "label"
-      } ],
       "preferredNamespaceUri" : [ {
         "identifier" : "preferredNamespaceUri",
         "language" : "undefined",
         "value" : "https://w3id.org/todo/tododom",
         "type" : "label"
       } ],
-      "title" : [ {
-        "identifier" : "title",
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
         "language" : "undefined",
-        "value" : "TODODom: Domain Module for Task-Oriented Dialogue management Ontology (TODO)",
+        "value" : "1.0.0",
         "type" : "label"
       } ],
       "issued" : [ {
@@ -78,168 +72,183 @@
         "language" : "undefined",
         "value" : "",
         "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "TODODom: Domain Module for Task-Oriented Dialogue management Ontology (TODO)",
+        "type" : "label"
       } ]
     }
   },
   "namespace" : [ ],
   "class" : [ {
-    "id" : "7",
+    "id" : "12",
     "type" : "owl:Class"
   }, {
     "id" : "2",
     "type" : "owl:Class"
   }, {
-    "id" : "38",
-    "type" : "owl:Class"
+    "id" : "47",
+    "type" : "rdfs:Literal"
   }, {
-    "id" : "13",
-    "type" : "owl:Class"
+    "id" : "49",
+    "type" : "rdfs:Literal"
   }, {
-    "id" : "52",
-    "type" : "owl:Class"
+    "id" : "51",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:Literal"
   }, {
     "id" : "55",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "56",
+    "id" : "66",
     "type" : "rdfs:Literal"
   }, {
     "id" : "67",
     "type" : "owl:Class"
   }, {
-    "id" : "54",
-    "type" : "owl:Class"
+    "id" : "70",
+    "type" : "owl:Thing"
   }, {
-    "id" : "20",
-    "type" : "owl:Class"
-  }, {
-    "id" : "93",
+    "id" : "71",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "21",
+    "id" : "28",
     "type" : "owl:Class"
+  }, {
+    "id" : "72",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "73",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "43",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "74",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "75",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "76",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "77",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "80",
+    "type" : "owl:Class"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:Datatype"
   }, {
     "id" : "91",
-    "type" : "owl:Class"
+    "type" : "rdfs:Datatype"
   }, {
-    "id" : "16",
-    "type" : "owl:Class"
-  }, {
-    "id" : "36",
+    "id" : "83",
     "type" : "owl:Class"
   }, {
     "id" : "14",
     "type" : "owl:Class"
   }, {
-    "id" : "48",
-    "type" : "owl:Class"
-  }, {
-    "id" : "66",
-    "type" : "owl:Class"
-  }, {
-    "id" : "46",
-    "type" : "owl:Class"
-  }, {
-    "id" : "1",
-    "type" : "owl:Class"
-  }, {
-    "id" : "83",
-    "type" : "owl:Class"
-  }, {
-    "id" : "50",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "51",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "85",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "70",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "114",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "134",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "17",
-    "type" : "owl:Class"
-  }, {
-    "id" : "141",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "143",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "145",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "147",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "148",
+    "id" : "105",
     "type" : "rdfs:Datatype"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "142",
+    "type" : "owl:Class"
   }, {
     "id" : "30",
-    "type" : "owl:Class"
-  }, {
-    "id" : "116",
-    "type" : "owl:Class"
-  }, {
-    "id" : "69",
-    "type" : "owl:Class"
-  }, {
-    "id" : "159",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "4",
-    "type" : "owl:Class"
-  }, {
-    "id" : "75",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "167",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "169",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "131",
     "type" : "owl:Class"
   }, {
     "id" : "64",
     "type" : "owl:Class"
   }, {
-    "id" : "43",
-    "type" : "owl:Class"
-  }, {
-    "id" : "18",
-    "type" : "owl:Class"
-  }, {
-    "id" : "89",
-    "type" : "owl:Class"
-  }, {
-    "id" : "44",
-    "type" : "owl:Class"
-  }, {
-    "id" : "78",
-    "type" : "owl:Class"
-  }, {
-    "id" : "87",
+    "id" : "5",
     "type" : "owl:Class"
   }, {
     "id" : "25",
     "type" : "owl:Class"
   }, {
-    "id" : "42",
+    "id" : "9",
     "type" : "owl:Class"
   }, {
-    "id" : "101",
+    "id" : "21",
     "type" : "owl:Class"
   }, {
-    "id" : "6",
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "116",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "107",
+    "type" : "owl:Class"
+  }, {
+    "id" : "100",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "216",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "162",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "251",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "89",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "125",
+    "type" : "owl:Class"
+  }, {
+    "id" : "108",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "112",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
@@ -267,7 +276,7 @@
     "comment" : {
       "undefined" : "Element that leaves a record of a Skill obtained throughout the dialogue process."
     },
-    "id" : "7"
+    "id" : "12"
   }, {
     "iri" : "https://w3id.org/todo/tododom#TargetSystemReadableInformation",
     "baseIri" : "https://w3id.org/todo/tododom",
@@ -290,40 +299,39 @@
       "IRI-based" : "TargetSystemReadableInformation",
       "en" : "TargetSystemReadableInformation"
     },
-    "subClasses" : [ "16", "17", "18" ],
+    "subClasses" : [ "30", "31", "22" ],
     "comment" : {
       "en" : "Information that is sent to the system to perform an execution or as argument for an execution, in a format that is understandable to the target system."
     },
     "id" : "2"
   }, {
-    "iri" : "https://w3id.org/todo/tododfa#FomaGrammar",
-    "baseIri" : "https://w3id.org/todo/tododfa",
-    "instances" : 0,
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "47",
     "label" : {
-      "IRI-based" : "FomaGrammar"
-    },
-    "attributes" : [ "external" ],
-    "id" : "38"
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
   }, {
-    "iri" : "http://www.daml.org/services/owl-s/1.2/Grounding.owl#Grounding",
-    "baseIri" : "http://www.daml.org/services/owl-s/1.2/Grounding.owl",
-    "instances" : 0,
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "49",
     "label" : {
-      "IRI-based" : "Grounding"
-    },
-    "subClasses" : [ "43", "44" ],
-    "attributes" : [ "external" ],
-    "id" : "13",
-    "superClasses" : [ "21" ]
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
   }, {
-    "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing",
-    "baseIri" : "http://www.w3.org/2003/01/geo/wgs84_pos",
-    "instances" : 0,
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "51",
     "label" : {
-      "IRI-based" : "SpatialThing"
-    },
-    "attributes" : [ "external" ],
-    "id" : "52"
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "53",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "id" : "55",
@@ -333,20 +341,175 @@
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "56",
+    "id" : "66",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
     }
   }, {
-    "iri" : "https://w3id.org/todo/tododfa#FrameHead",
+    "iri" : "https://w3id.org/todo/tododfa#FomaGrammar",
     "baseIri" : "https://w3id.org/todo/tododfa",
     "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
     "label" : {
-      "IRI-based" : "FrameHead"
+      "IRI-based" : "FomaGrammar",
+      "en" : "FomaGrammar"
+    },
+    "comment" : {
+      "en" : "Grammar to be used by Foma to perform Key Element Extraction."
     },
     "attributes" : [ "external" ],
     "id" : "67"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "70",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "71",
+    "label" : {
+      "IRI-based" : "anyURI"
+    }
+  }, {
+    "iri" : "http://www.daml.org/services/owl-s/1.2/Grounding.owl#Grounding",
+    "baseIri" : "http://www.daml.org/services/owl-s/1.2/Grounding.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Grounding"
+    },
+    "subClasses" : [ "36", "39" ],
+    "attributes" : [ "external" ],
+    "id" : "28",
+    "superClasses" : [ "34" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "72",
+    "label" : {
+      "IRI-based" : "anyURI"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "73",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "43",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "74",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "75",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "76",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "77",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "78",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing",
+    "baseIri" : "http://www.w3.org/2003/01/geo/wgs84_pos",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SpatialThing"
+    },
+    "attributes" : [ "external" ],
+    "id" : "80"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "81",
+    "label" : {
+      "IRI-based" : "anyURI"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "91",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/todo/tododfa#FrameHead",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Frame: Losing\n\nFrameHead: lose (LexicalUnit: lose.v)\n\nArgumentSet:\n* Owner [Core]\n* Possession [Core]\n* Place [Optional]\n* Time [Optional]\n...\n\nFor the sentence \"My mother lost her watch at home\":\n\"[My mother - owner(C)] LOST [her watch - possession(C)] (at home - place (O))\"",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "FrameHead",
+      "en" : "FrameHead"
+    },
+    "comment" : {
+      "en" : "Word (or more than one) that evokes a specific situation or event, with its specific participants; that is, a frame. It is represented by one or more LexicalUnits."
+    },
+    "attributes" : [ "external" ],
+    "id" : "83"
   }, {
     "iri" : "https://w3id.org/todo/tododom#ParameterType",
     "baseIri" : "https://w3id.org/todo/tododom",
@@ -378,8 +541,15 @@
     "comment" : {
       "undefined" : "Establishes the type of parameter of a TSRI."
     },
-    "id" : "54",
-    "superClasses" : [ "30" ]
+    "id" : "14",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "105",
+    "label" : {
+      "IRI-based" : "string"
+    }
   }, {
     "iri" : "http://www.daml.org/services/owl-s/1.1/Service.owl#Service",
     "baseIri" : "http://www.daml.org/services/owl-s/1.1/Service.owl",
@@ -388,14 +558,7 @@
       "IRI-based" : "Service"
     },
     "attributes" : [ "external" ],
-    "id" : "20"
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#int",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "93",
-    "label" : {
-      "IRI-based" : "int"
-    }
+    "id" : "33"
   }, {
     "iri" : "http://www.daml.org/services/owl-s/1.2/Service.owl#ServiceGrounding",
     "baseIri" : "http://www.daml.org/services/owl-s/1.2/Service.owl",
@@ -403,9 +566,9 @@
     "label" : {
       "IRI-based" : "ServiceGrounding"
     },
-    "subClasses" : [ "13" ],
+    "subClasses" : [ "28" ],
     "attributes" : [ "external" ],
-    "id" : "21"
+    "id" : "34"
   }, {
     "iri" : "https://w3id.org/todo/tododom#ArgumentTrace",
     "baseIri" : "https://w3id.org/todo/tododom",
@@ -431,7 +594,7 @@
     "comment" : {
       "undefined" : "Element that leaves a record of an Argument obtained throughout the dialogue process."
     },
-    "id" : "91"
+    "id" : "142"
   }, {
     "iri" : "https://w3id.org/todo/tododom#WorldElementTSRI",
     "baseIri" : "https://w3id.org/todo/tododom",
@@ -457,7 +620,7 @@
     "comment" : {
       "undefined" : "Target System Readable Information corresponding to elements of the class WorldElement."
     },
-    "id" : "16",
+    "id" : "30",
     "superClasses" : [ "2" ]
   }, {
     "iri" : "https://w3id.org/todo/tododom#Command",
@@ -484,7 +647,7 @@
     "comment" : {
       "undefined" : "Element that covers the information to execute an Action that is executable through a command (vs. as a Service)."
     },
-    "id" : "36"
+    "id" : "64"
   }, {
     "iri" : "http://www.daml.org/services/owl-s/1.2/Grounding.owl#AtomicProcessGrounding",
     "baseIri" : "http://www.daml.org/services/owl-s/1.2/Grounding.owl",
@@ -492,9 +655,9 @@
     "label" : {
       "IRI-based" : "AtomicProcessGrounding"
     },
-    "subClasses" : [ "64", "66" ],
+    "subClasses" : [ "4", "9" ],
     "attributes" : [ "external" ],
-    "id" : "14"
+    "id" : "5"
   }, {
     "iri" : "https://w3id.org/todo/tododom#CommandTSRI",
     "baseIri" : "https://w3id.org/todo/tododom",
@@ -520,8 +683,8 @@
     "comment" : {
       "undefined" : "Target System Readable Information corresponding to elements of the class Action that require information in a Command format."
     },
-    "id" : "48",
-    "superClasses" : [ "18" ]
+    "id" : "25",
+    "superClasses" : [ "22" ]
   }, {
     "iri" : "http://www.daml.org/services/owl-s/1.2/Grounding.owl#WadlAtomicProcessGrounding",
     "baseIri" : "http://www.daml.org/services/owl-s/1.2/Grounding.owl",
@@ -530,8 +693,8 @@
       "IRI-based" : "WadlAtomicProcessGrounding"
     },
     "attributes" : [ "external" ],
-    "id" : "66",
-    "superClasses" : [ "14" ]
+    "id" : "9",
+    "superClasses" : [ "5" ]
   }, {
     "iri" : "https://w3id.org/todo/tododom#ServiceTSRI",
     "baseIri" : "https://w3id.org/todo/tododom",
@@ -557,8 +720,8 @@
     "comment" : {
       "undefined" : "Target System Readable Information corresponding to elements of the class Action that point to Services."
     },
-    "id" : "46",
-    "superClasses" : [ "18" ]
+    "id" : "21",
+    "superClasses" : [ "22" ]
   }, {
     "iri" : "https://w3id.org/todo/tododom#IntentTrace",
     "baseIri" : "https://w3id.org/todo/tododom",
@@ -589,53 +752,35 @@
     "iri" : "https://w3id.org/todo/tododfa#Intent",
     "baseIri" : "https://w3id.org/todo/tododfa",
     "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "User request: \"I want information about Mona Lisa\"\n\nIntent: receive_information",
+        "type" : "label"
+      } ]
+    },
     "label" : {
-      "IRI-based" : "Intent"
+      "IRI-based" : "Intent",
+      "en" : "Intent"
+    },
+    "comment" : {
+      "en" : "User intention when formulating a request."
     },
     "attributes" : [ "external" ],
-    "id" : "83"
-  }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "50",
-    "label" : {
-      "undefined" : "Thing"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "51",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "85",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "70",
-    "label" : {
-      "undefined" : "Thing"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "114",
-    "label" : {
-      "undefined" : "Thing"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "134",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
+    "id" : "116"
   }, {
     "iri" : "https://w3id.org/todo/tododom#ArgumentTSRI",
     "baseIri" : "https://w3id.org/todo/tododom",
@@ -661,43 +806,8 @@
     "comment" : {
       "undefined" : "Target System Readable Information corresponding to elements of the class Argument."
     },
-    "id" : "17",
+    "id" : "31",
     "superClasses" : [ "2" ]
-  }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "141",
-    "label" : {
-      "undefined" : "Thing"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "143",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "145",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "147",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#int",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "148",
-    "label" : {
-      "IRI-based" : "int"
-    }
   }, {
     "iri" : "https://w3id.org/todo/tododom#InfoType",
     "baseIri" : "https://w3id.org/todo/tododom",
@@ -720,36 +830,77 @@
       "IRI-based" : "InfoType",
       "undefined" : "InfoType"
     },
-    "subClasses" : [ "54", "42" ],
+    "subClasses" : [ "14", "18" ],
     "comment" : {
       "undefined" : "Establishes the TSRI type of a given Action/Parameter."
     },
-    "id" : "30"
+    "id" : "15"
   }, {
     "iri" : "https://w3id.org/todo/tododfa#Action",
     "baseIri" : "https://w3id.org/todo/tododfa",
     "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "(For a multipurpose robot) Guide, provide_information, pick, place",
+        "type" : "label"
+      } ]
+    },
     "label" : {
-      "IRI-based" : "Action"
+      "IRI-based" : "Action",
+      "en" : "Action"
+    },
+    "comment" : {
+      "undefined" : "Element that makes reference to the functionalities of the target system."
     },
     "attributes" : [ "external" ],
-    "id" : "116"
+    "id" : "107"
   }, {
     "iri" : "https://w3id.org/todo/tododfa#Argument",
     "baseIri" : "https://w3id.org/todo/tododfa",
     "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Frame: Losing\n\nArgumentSet:\n* Owner [Core]\n* Possession [Core]\n* Place [Optional]\n* Time [Optional]\n...\n\nFor the sentence \"My mother lost her watch at home\":\n\"[My mother - owner(C)] LOST [her watch - possession(C)] (at home - place (O))\"",
+        "type" : "label"
+      } ]
+    },
     "label" : {
-      "IRI-based" : "Argument"
+      "IRI-based" : "Argument",
+      "en" : "Argument"
+    },
+    "comment" : {
+      "undefined" : "Participant that is involved in the event described by the Frame. It can be Core (its presence is compulsory to convey the event) or Optional (its presence is not compulsory, but it adds additional information)."
     },
     "attributes" : [ "external" ],
-    "id" : "69"
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "159",
-    "label" : {
-      "IRI-based" : "string"
-    }
+    "id" : "100"
   }, {
     "iri" : "https://w3id.org/todo/tododom#WorldElementGroup",
     "baseIri" : "https://w3id.org/todo/tododom",
@@ -775,27 +926,13 @@
     "comment" : {
       "undefined" : "Agrupation of WorldElements of similar characteristics."
     },
-    "id" : "4"
+    "id" : "7"
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "75",
+    "id" : "216",
     "label" : {
-      "IRI-based" : "anyURI"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "167",
-    "label" : {
-      "IRI-based" : "anyURI"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "169",
-    "label" : {
-      "IRI-based" : "anyURI"
+      "IRI-based" : "int"
     }
   }, {
     "iri" : "https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl#WadlResourceMethodRef",
@@ -805,7 +942,7 @@
       "IRI-based" : "WadlResourceMethodRef"
     },
     "attributes" : [ "external" ],
-    "id" : "131"
+    "id" : "162"
   }, {
     "iri" : "http://www.daml.org/services/owl-s/1.2/Grounding.owl#WsdlAtomicProcessGrounding",
     "baseIri" : "http://www.daml.org/services/owl-s/1.2/Grounding.owl",
@@ -814,8 +951,15 @@
       "IRI-based" : "WsdlAtomicProcessGrounding"
     },
     "attributes" : [ "external" ],
-    "id" : "64",
-    "superClasses" : [ "14" ]
+    "id" : "4",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "251",
+    "label" : {
+      "IRI-based" : "string"
+    }
   }, {
     "iri" : "https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl#WadlGrounding",
     "baseIri" : "https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl",
@@ -824,8 +968,8 @@
       "IRI-based" : "WadlGrounding"
     },
     "attributes" : [ "external" ],
-    "id" : "43",
-    "superClasses" : [ "13" ]
+    "id" : "36",
+    "superClasses" : [ "28" ]
   }, {
     "iri" : "https://w3id.org/todo/tododom#ActionTSRI",
     "baseIri" : "https://w3id.org/todo/tododom",
@@ -848,18 +992,42 @@
       "IRI-based" : "ActionTSRI",
       "undefined" : "ActionTSRI"
     },
-    "subClasses" : [ "46", "48" ],
+    "subClasses" : [ "21", "25" ],
     "comment" : {
       "undefined" : "Target System Readable Information corresponding to elements of the class Action."
     },
-    "id" : "18",
+    "id" : "22",
     "superClasses" : [ "2" ]
   }, {
     "iri" : "https://w3id.org/todo/tododfa#Skill",
     "baseIri" : "https://w3id.org/todo/tododfa",
     "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "(For a multipurpose robot) GuideRobot, RoboticArm",
+        "type" : "label"
+      } ]
+    },
     "label" : {
-      "IRI-based" : "Skill"
+      "IRI-based" : "Skill",
+      "en" : "Skill"
+    },
+    "comment" : {
+      "undefined" : "Element that makes reference to the capabilities of the target system."
     },
     "attributes" : [ "external" ],
     "id" : "89"
@@ -871,17 +1039,41 @@
       "IRI-based" : "WsdlGrounding"
     },
     "attributes" : [ "external" ],
-    "id" : "44",
-    "superClasses" : [ "13" ]
+    "id" : "39",
+    "superClasses" : [ "28" ]
   }, {
     "iri" : "https://w3id.org/todo/tododfa#Frame",
     "baseIri" : "https://w3id.org/todo/tododfa",
     "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Frame: Losing\n\nFrameHead: lose (LexicalUnit: lose.v)\n\nArgumentSet:\n* Owner [Core]\n* Possession [Core]\n* Place [Optional]\n* Time [Optional]\n...\n\nFor the sentence \"My mother lost her watch at home\":\n\"[My mother - owner(C)] LOST [her watch - possession(C)] (at home - place (O))\"",
+        "type" : "label"
+      } ]
+    },
     "label" : {
-      "IRI-based" : "Frame"
+      "IRI-based" : "Frame",
+      "en" : "Frame"
+    },
+    "comment" : {
+      "en" : "A specific event or situation evoked by a specific word (FrameHead), along with its participants (Arguments)."
     },
     "attributes" : [ "external" ],
-    "id" : "78"
+    "id" : "125"
   }, {
     "iri" : "https://w3id.org/todo/tododom#ActionTrace",
     "baseIri" : "https://w3id.org/todo/tododom",
@@ -907,7 +1099,7 @@
     "comment" : {
       "undefined" : "Element that leaves a record of an Action obtained throughout the dialogue process."
     },
-    "id" : "87"
+    "id" : "108"
   }, {
     "iri" : "https://w3id.org/todo/tododom#FrameTrace",
     "baseIri" : "https://w3id.org/todo/tododom",
@@ -933,7 +1125,7 @@
     "comment" : {
       "undefined" : "Element that leaves a record of a Frame obtained throughout the dialogue process."
     },
-    "id" : "25"
+    "id" : "46"
   }, {
     "iri" : "https://w3id.org/todo/tododom#ActionType",
     "baseIri" : "https://w3id.org/todo/tododom",
@@ -967,17 +1159,41 @@
       "IRI-based" : "ActionType",
       "undefined" : "ActionType"
     },
-    "id" : "42",
-    "superClasses" : [ "30" ]
+    "id" : "18",
+    "superClasses" : [ "15" ]
   }, {
     "iri" : "https://w3id.org/todo/tododfa#ArgumentSet",
     "baseIri" : "https://w3id.org/todo/tododfa",
     "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Frame: Losing\n\nArgumentSet:\n* Owner [Core]\n* Possession [Core]\n* Place [Optional]\n* Time [Optional]\n...\n\nFor the sentence \"My mother lost her watch at home\":\n\"[My mother - owner(C)] LOST [her watch - possession(C)] (at home - place (O))\"",
+        "type" : "label"
+      } ]
+    },
     "label" : {
-      "IRI-based" : "ArgumentSet"
+      "IRI-based" : "ArgumentSet",
+      "en" : "ArgumentSet"
+    },
+    "comment" : {
+      "en" : "The group of Arguments that belong to a Frame."
     },
     "attributes" : [ "external" ],
-    "id" : "101"
+    "id" : "112"
   }, {
     "iri" : "https://w3id.org/todo/tododom#LexicalUnit",
     "baseIri" : "https://w3id.org/todo/tododom",
@@ -1009,80 +1225,65 @@
     "comment" : {
       "undefined" : "Word(s) that cover the different variants of a FrameHead or a WorldElement."
     },
-    "id" : "6"
+    "id" : "11"
   } ],
   "property" : [ {
     "id" : "0",
     "type" : "owl:disjointWith"
   }, {
     "id" : "3",
-    "type" : "owl:disjointWith"
+    "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "5",
+    "id" : "6",
     "type" : "owl:disjointWith"
   }, {
     "id" : "8",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "9",
-    "type" : "owl:disjointWith"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "10",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "11",
+    "id" : "13",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "16",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "12",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "15",
-    "type" : "owl:disjointWith"
+    "id" : "17",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "19",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "22",
     "type" : "owl:disjointWith"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "23",
     "type" : "owl:disjointWith"
   }, {
     "id" : "24",
-    "type" : "owl:disjointWith"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "26",
     "type" : "owl:disjointWith"
   }, {
     "id" : "27",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "28",
-    "type" : "owl:disjointWith"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "29",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "31",
-    "type" : "owl:disjointWith"
-  }, {
     "id" : "32",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "33",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "34",
-    "type" : "owl:disjointWith"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "35",
-    "type" : "owl:disjointWith"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "37",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "39",
-    "type" : "owl:disjointWith"
+    "id" : "38",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "40",
     "type" : "owl:disjointWith"
@@ -1090,155 +1291,125 @@
     "id" : "41",
     "type" : "rdfs:SubClassOf"
   }, {
+    "id" : "42",
+    "type" : "owl:objectProperty"
+  }, {
     "id" : "45",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:disjointWith"
   }, {
-    "id" : "47",
-    "type" : "rdfs:SubClassOf"
+    "id" : "48",
+    "type" : "owl:disjointWith"
   }, {
-    "id" : "49",
-    "type" : "owl:datatypeProperty"
+    "id" : "50",
+    "type" : "owl:disjointWith"
   }, {
-    "id" : "53",
-    "type" : "rdfs:SubClassOf"
+    "id" : "52",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "54",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "56",
+    "type" : "owl:disjointWith"
   }, {
     "id" : "57",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "58",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "59",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "60",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "61",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "62",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "63",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "65",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "68",
-    "type" : "owl:objectProperty"
+    "type" : "owl:disjointWith"
   }, {
-    "id" : "74",
+    "id" : "69",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "79",
     "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "76",
-    "type" : "owl:someValuesFrom"
-  }, {
-    "id" : "77",
-    "type" : "owl:someValuesFrom"
-  }, {
-    "id" : "80",
-    "type" : "owl:someValuesFrom"
   }, {
     "id" : "82",
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "84",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "85",
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "86",
-    "type" : "owl:disjointWith"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "88",
-    "type" : "owl:disjointWith"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "90",
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "92",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "94",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "95",
-    "type" : "owl:disjointWith"
-  }, {
     "id" : "96",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "97",
-    "type" : "owl:disjointWith"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "98",
-    "type" : "owl:disjointWith"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "99",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "71",
     "type" : "owl:objectProperty"
-  }, {
-    "id" : "100",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "102",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "103",
-    "type" : "owl:disjointWith"
   }, {
     "id" : "104",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "105",
-    "type" : "owl:disjointWith"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "106",
-    "type" : "owl:disjointWith"
+    "type" : "owl:someValuesFrom"
   }, {
-    "id" : "107",
+    "id" : "110",
     "type" : "owl:disjointWith"
-  }, {
-    "id" : "108",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "109",
-    "type" : "owl:objectProperty"
   }, {
     "id" : "111",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "112",
-    "type" : "owl:disjointWith"
-  }, {
     "id" : "113",
-    "type" : "owl:disjointWith"
+    "type" : "owl:datatypeProperty"
   }, {
-    "id" : "72",
-    "type" : "owl:objectProperty"
+    "id" : "114",
+    "type" : "owl:disjointWith"
   }, {
     "id" : "115",
     "type" : "owl:disjointWith"
   }, {
     "id" : "117",
-    "type" : "owl:disjointWith"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "118",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "119",
-    "type" : "owl:disjointWith"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "120",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "121",
-    "type" : "owl:someValuesFrom"
-  }, {
     "id" : "122",
-    "type" : "owl:disjointWith"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "123",
     "type" : "owl:disjointWith"
@@ -1246,29 +1417,35 @@
     "id" : "124",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "125",
-    "type" : "owl:disjointWith"
-  }, {
     "id" : "126",
     "type" : "owl:disjointWith"
   }, {
     "id" : "127",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "128",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "101",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "129",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "130",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "131",
     "type" : "owl:disjointWith"
   }, {
     "id" : "132",
     "type" : "owl:disjointWith"
   }, {
     "id" : "133",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "134",
+    "type" : "owl:disjointWith"
   }, {
     "id" : "135",
     "type" : "owl:disjointWith"
@@ -1277,10 +1454,7 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "137",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "138",
-    "type" : "owl:disjointWith"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "139",
     "type" : "owl:disjointWith"
@@ -1288,17 +1462,32 @@
     "id" : "140",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "142",
+    "id" : "141",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "102",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "143",
     "type" : "owl:disjointWith"
   }, {
     "id" : "144",
     "type" : "owl:disjointWith"
   }, {
+    "id" : "145",
+    "type" : "owl:disjointWith"
+  }, {
     "id" : "146",
     "type" : "owl:disjointWith"
   }, {
+    "id" : "147",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "148",
+    "type" : "owl:disjointWith"
+  }, {
     "id" : "149",
-    "type" : "owl:objectProperty"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "150",
     "type" : "owl:disjointWith"
@@ -1310,43 +1499,46 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "153",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "154",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "155",
-    "type" : "owl:someValuesFrom"
-  }, {
-    "id" : "73",
     "type" : "owl:objectProperty"
   }, {
+    "id" : "156",
+    "type" : "owl:someValuesFrom"
+  }, {
     "id" : "157",
-    "type" : "owl:disjointWith"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "158",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "160",
-    "type" : "owl:disjointWith"
+    "id" : "121",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "161",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "162",
-    "type" : "owl:someValuesFrom"
+    "id" : "163",
+    "type" : "owl:disjointWith"
   }, {
     "id" : "164",
-    "type" : "owl:disjointWith"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "165",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "166",
-    "type" : "owl:disjointWith"
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "167",
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "168",
     "type" : "owl:disjointWith"
+  }, {
+    "id" : "169",
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "170",
     "type" : "owl:disjointWith"
@@ -1355,30 +1547,27 @@
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "172",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "173",
-    "type" : "owl:disjointWith"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "174",
     "type" : "owl:disjointWith"
   }, {
     "id" : "175",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "176",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "177",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "178",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "179",
+    "id" : "176",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "180",
+    "id" : "177",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "178",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "179",
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "181",
@@ -1387,29 +1576,26 @@
     "id" : "182",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "183",
-    "type" : "owl:disjointWith"
-  }, {
     "id" : "184",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "185",
-    "type" : "owl:disjointWith"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "186",
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "187",
-    "type" : "owl:disjointWith"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "188",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "189",
     "type" : "owl:disjointWith"
   }, {
     "id" : "190",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "191",
     "type" : "owl:disjointWith"
@@ -1418,10 +1604,13 @@
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "193",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "194",
     "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "103",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "195",
     "type" : "owl:disjointWith"
@@ -1433,13 +1622,13 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "198",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "199",
     "type" : "owl:disjointWith"
   }, {
     "id" : "200",
-    "type" : "owl:disjointWith"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "201",
     "type" : "owl:disjointWith"
@@ -1448,25 +1637,25 @@
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "203",
-    "type" : "owl:disjointWith"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "204",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "205",
-    "type" : "owl:disjointWith"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "206",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "207",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "208",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "209",
+    "id" : "208",
     "type" : "owl:disjointWith"
+  }, {
+    "id" : "209",
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "210",
     "type" : "owl:someValuesFrom"
@@ -1475,88 +1664,79 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "212",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "213",
-    "type" : "owl:disjointWith"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "214",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "215",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "216",
     "type" : "owl:disjointWith"
   }, {
     "id" : "217",
     "type" : "owl:disjointWith"
   }, {
     "id" : "218",
-    "type" : "owl:disjointWith"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "219",
     "type" : "owl:disjointWith"
   }, {
     "id" : "220",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "221",
     "type" : "owl:disjointWith"
   }, {
     "id" : "222",
-    "type" : "owl:disjointWith"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "223",
     "type" : "owl:disjointWith"
   }, {
     "id" : "224",
-    "type" : "owl:disjointWith"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "225",
-    "type" : "owl:disjointWith"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "226",
     "type" : "owl:disjointWith"
   }, {
     "id" : "227",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "228",
-    "type" : "owl:disjointWith"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "229",
     "type" : "owl:disjointWith"
   }, {
     "id" : "230",
-    "type" : "owl:disjointWith"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "231",
-    "type" : "owl:objectProperty"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "232",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "110",
-    "type" : "owl:objectProperty"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "233",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "234",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "235",
     "type" : "owl:disjointWith"
   }, {
     "id" : "236",
-    "type" : "owl:disjointWith"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "237",
     "type" : "owl:disjointWith"
   }, {
     "id" : "238",
-    "type" : "owl:disjointWith"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "239",
     "type" : "owl:disjointWith"
@@ -1589,13 +1769,10 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "249",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "250",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "251",
-    "type" : "owl:disjointWith"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "252",
     "type" : "owl:disjointWith"
@@ -1604,7 +1781,7 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "254",
-    "type" : "owl:disjointWith"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "255",
     "type" : "owl:disjointWith"
@@ -1622,7 +1799,7 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "260",
-    "type" : "owl:disjointWith"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "261",
     "type" : "owl:disjointWith"
@@ -1635,6 +1812,9 @@
   }, {
     "id" : "264",
     "type" : "owl:disjointWith"
+  }, {
+    "id" : "160",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "265",
     "type" : "owl:disjointWith"
@@ -1655,358 +1835,378 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "271",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "272",
-    "type" : "owl:disjointWith"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "273",
-    "type" : "owl:disjointWith"
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "138",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "274",
-    "type" : "owl:disjointWith"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "275",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "276",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "277",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "278",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "279",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "280",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "281",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "282",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "283",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "284",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "285",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "286",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "287",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "288",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "289",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "290",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "291",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "292",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "293",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "294",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "295",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "296",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "297",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "298",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "299",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "300",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "301",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "302",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "303",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "304",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "305",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "306",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "307",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "308",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "309",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "310",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "311",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "312",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "313",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "314",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "315",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "316",
     "type" : "owl:disjointWith"
   } ],
   "propertyAttribute" : [ {
     "range" : "2",
     "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "0"
   }, {
-    "range" : "4",
-    "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "5",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "3"
   }, {
     "range" : "7",
-    "domain" : "6",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "5"
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "6"
   }, {
-    "range" : "2",
-    "domain" : "6",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "5",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "8"
   }, {
-    "range" : "4",
-    "domain" : "6",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "9"
-  }, {
-    "range" : "2",
-    "domain" : "7",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "12",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "10"
   }, {
-    "range" : "4",
-    "domain" : "7",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "11"
+    "range" : "15",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "13"
   }, {
-    "iri" : "http://www.daml.org/services/owl-s/1.1/Grounding.owl#hasAtomicProcessGrounding",
-    "baseIri" : "http://www.daml.org/services/owl-s/1.1/Grounding.owl",
-    "range" : "14",
-    "label" : {
-      "IRI-based" : "hasAtomicProcessGrounding"
-    },
-    "domain" : "13",
-    "attributes" : [ "object", "external" ],
-    "id" : "12"
+    "range" : "2",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "16"
   }, {
-    "range" : "4",
-    "domain" : "2",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "15"
-  }, {
-    "iri" : "http://www.daml.org/services/owl-s/1.1/Service.owl#supports",
-    "baseIri" : "http://www.daml.org/services/owl-s/1.1/Service.owl",
-    "range" : "21",
-    "label" : {
-      "IRI-based" : "supports"
-    },
-    "domain" : "20",
-    "attributes" : [ "object", "external" ],
-    "id" : "19"
-  }, {
-    "range" : "6",
-    "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "22"
+    "range" : "15",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "17"
   }, {
     "range" : "7",
-    "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "19"
+  }, {
+    "range" : "22",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "20"
+  }, {
+    "range" : "2",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "23"
   }, {
-    "range" : "6",
+    "range" : "22",
     "domain" : "25",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "24"
   }, {
     "range" : "7",
-    "domain" : "25",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "26"
   }, {
-    "range" : "2",
-    "domain" : "25",
-    "attributes" : [ "anonymous", "object" ],
+    "iri" : "http://www.daml.org/services/owl-s/1.1/Grounding.owl#hasAtomicProcessGrounding",
+    "baseIri" : "http://www.daml.org/services/owl-s/1.1/Grounding.owl",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "hasAtomicProcessGrounding"
+    },
+    "domain" : "28",
+    "attributes" : [ "external", "object" ],
     "id" : "27"
   }, {
-    "range" : "4",
-    "domain" : "25",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "28"
-  }, {
-    "range" : "1",
-    "domain" : "30",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "7",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "29"
   }, {
-    "range" : "6",
-    "domain" : "30",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "31"
-  }, {
-    "range" : "7",
-    "domain" : "30",
-    "attributes" : [ "anonymous", "object" ],
+    "iri" : "http://www.daml.org/services/owl-s/1.1/Service.owl#supports",
+    "baseIri" : "http://www.daml.org/services/owl-s/1.1/Service.owl",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "supports"
+    },
+    "domain" : "33",
+    "attributes" : [ "external", "object" ],
     "id" : "32"
   }, {
-    "range" : "2",
-    "domain" : "30",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "33"
-  }, {
-    "range" : "4",
-    "domain" : "30",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "34"
-  }, {
-    "range" : "4",
+    "range" : "28",
     "domain" : "36",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "35"
   }, {
-    "range" : "2",
-    "domain" : "36",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "11",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "37"
   }, {
-    "range" : "30",
-    "domain" : "25",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "39"
+    "range" : "28",
+    "domain" : "39",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "38"
   }, {
-    "range" : "1",
-    "domain" : "25",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "12",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "40"
   }, {
-    "range" : "30",
-    "domain" : "42",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "34",
+    "domain" : "28",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "41"
   }, {
-    "range" : "18",
+    "iri" : "https://w3id.org/todo/tododfa#isCoreArgumentOf",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "range" : "43",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isCoreArgumentOf",
+      "undefined" : "isCoreArgumentOf"
+    },
+    "superproperty" : [ "44" ],
+    "domain" : "43",
+    "comment" : {
+      "undefined" : "Establishes a relation between a CoreArgument (i.e. the arguments that are compulsory in order to perform the Action) and its corresponding Action."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "42"
+  }, {
+    "range" : "11",
     "domain" : "46",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "45"
   }, {
-    "range" : "18",
-    "domain" : "48",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "47"
-  }, {
-    "iri" : "https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl#resource",
-    "baseIri" : "https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl",
-    "range" : "51",
-    "label" : {
-      "IRI-based" : "resource"
-    },
-    "domain" : "50",
-    "attributes" : [ "datatype", "external" ],
-    "id" : "49"
-  }, {
-    "range" : "30",
-    "domain" : "54",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "53"
+    "range" : "12",
+    "domain" : "46",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "48"
   }, {
     "range" : "2",
-    "domain" : "16",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "46",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "50"
+  }, {
+    "range" : "7",
+    "domain" : "46",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "52"
+  }, {
+    "range" : "1",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "54"
+  }, {
+    "range" : "11",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "56"
+  }, {
+    "range" : "2",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "57"
   }, {
-    "range" : "2",
-    "domain" : "17",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "12",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "58"
   }, {
     "range" : "2",
-    "domain" : "18",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "31",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "59"
   }, {
-    "range" : "13",
-    "domain" : "43",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "2",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "60"
   }, {
-    "range" : "13",
-    "domain" : "44",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "2",
+    "domain" : "22",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "61"
   }, {
-    "range" : "21",
-    "domain" : "13",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "7",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "62"
   }, {
-    "range" : "14",
+    "range" : "7",
     "domain" : "64",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "63"
   }, {
-    "range" : "14",
-    "domain" : "66",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "2",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "65"
   }, {
-    "iri" : "https://w3id.org/todo/tododom#appliesToWorld",
-    "inverse" : "71",
-    "baseIri" : "https://w3id.org/todo/tododom",
-    "range" : "70",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://w3id.org/todo/tododom#",
-        "type" : "label"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "appliesToWorld",
-      "undefined" : "appliesToWorld"
-    },
-    "domain" : "69",
-    "subproperty" : [ "72", "73" ],
-    "comment" : {
-      "undefined" : "Establishes the relation between an Argument and the WorldElements that can be associated to it."
-    },
-    "attributes" : [ "object" ],
+    "range" : "15",
+    "domain" : "46",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "68"
   }, {
-    "iri" : "http://www.daml.org/services/owl-s/1.1/Grounding.owl#wsdlInputMessage",
-    "baseIri" : "http://www.daml.org/services/owl-s/1.1/Grounding.owl",
-    "range" : "75",
-    "label" : {
-      "IRI-based" : "wsdlInputMessage"
-    },
-    "cardinality" : "1",
-    "domain" : "64",
-    "attributes" : [ "datatype", "functional", "external" ],
-    "id" : "74"
-  }, {
-    "iri" : "https://w3id.org/todo/tododom#appliesToWorldElementGroup",
-    "baseIri" : "https://w3id.org/todo/tododom",
-    "range" : "4",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://w3id.org/todo/tododom#",
-        "type" : "label"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "appliesToWorldElementGroup",
-      "undefined" : "appliesToWorldElementGroup"
-    },
-    "superproperty" : [ "68" ],
-    "domain" : "69",
-    "comment" : {
-      "undefined" : "Establishes the relation between an Argument and a WorldElementGroup that can be associated to it."
-    },
-    "attributes" : [ "object", "someValues" ],
-    "id" : "76"
-  }, {
-    "iri" : "https://w3id.org/todo/tododom#hasTrace",
-    "inverse" : "79",
-    "baseIri" : "https://w3id.org/todo/tododom",
-    "range" : "25",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://w3id.org/todo/tododom#",
-        "type" : "label"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "hasTrace",
-      "undefined" : "hasTrace"
-    },
-    "domain" : "78",
-    "comment" : {
-      "undefined" : "Establishes the relationship between an element and its Trace."
-    },
-    "attributes" : [ "object", "someValues" ],
-    "id" : "77"
-  }, {
-    "iri" : "https://w3id.org/todo/tododom#hasLexicalUnit",
-    "inverse" : "81",
-    "baseIri" : "https://w3id.org/todo/tododom",
-    "range" : "6",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://w3id.org/todo/tododom#",
-        "type" : "label"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "hasLexicalUnit",
-      "undefined" : "hasLexicalUnit"
-    },
-    "domain" : "67",
-    "comment" : {
-      "undefined" : "Establishes the relation between a FrameHead/WorldElement and one of its corresponding Lexical Units."
-    },
-    "attributes" : [ "object", "someValues" ],
-    "id" : "80"
-  }, {
-    "iri" : "https://w3id.org/todo/tododom#hasTrace",
-    "inverse" : "79",
-    "baseIri" : "https://w3id.org/todo/tododom",
     "range" : "1",
+    "domain" : "46",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "69"
+  }, {
+    "iri" : "https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl#resource",
+    "baseIri" : "https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl",
+    "range" : "74",
+    "label" : {
+      "IRI-based" : "resource"
+    },
+    "domain" : "43",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "79"
+  }, {
+    "iri" : "https://w3id.org/todo/tododom#isLexicalUnitOf",
+    "baseIri" : "https://w3id.org/todo/tododom",
+    "range" : "83",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -2022,547 +2222,100 @@
       } ]
     },
     "label" : {
-      "IRI-based" : "hasTrace",
-      "undefined" : "hasTrace"
+      "IRI-based" : "isLexicalUnitOf",
+      "undefined" : "isLexicalUnitOf"
     },
-    "domain" : "83",
+    "domain" : "11",
     "comment" : {
-      "undefined" : "Establishes the relationship between an element and its Trace."
+      "undefined" : "Establishes the relation between a Lexical Unit and its corresponding FrameHead/WorldElement."
     },
     "attributes" : [ "object", "someValues" ],
     "id" : "82"
   }, {
-    "iri" : "https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl#wadlDocument",
-    "baseIri" : "https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl",
-    "range" : "85",
-    "label" : {
-      "IRI-based" : "wadlDocument"
+    "iri" : "https://w3id.org/todo/tododom#isLexicalUnitOf",
+    "baseIri" : "https://w3id.org/todo/tododom",
+    "range" : "80",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododom#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
     },
-    "domain" : "50",
-    "attributes" : [ "datatype", "external" ],
+    "label" : {
+      "IRI-based" : "isLexicalUnitOf",
+      "undefined" : "isLexicalUnitOf"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "Establishes the relation between a Lexical Unit and its corresponding FrameHead/WorldElement."
+    },
+    "attributes" : [ "object", "someValues" ],
     "id" : "84"
   }, {
-    "range" : "87",
-    "domain" : "83",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "86"
-  }, {
-    "range" : "87",
-    "domain" : "89",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "88"
-  }, {
-    "iri" : "https://w3id.org/todo/tododom#hasTrace",
-    "inverse" : "79",
+    "iri" : "https://w3id.org/todo/tododom#isTypeOf",
     "baseIri" : "https://w3id.org/todo/tododom",
-    "range" : "91",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://w3id.org/todo/tododom#",
-        "type" : "label"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "hasTrace",
-      "undefined" : "hasTrace"
-    },
-    "domain" : "69",
-    "comment" : {
-      "undefined" : "Establishes the relationship between an element and its Trace."
-    },
-    "attributes" : [ "object", "someValues" ],
-    "id" : "90"
-  }, {
-    "iri" : "https://w3id.org/todo/tododom#order",
-    "baseIri" : "https://w3id.org/todo/tododom",
-    "range" : "93",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://w3id.org/todo/tododom#",
-        "type" : "label"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "order",
-      "undefined" : "order"
-    },
-    "domain" : "69",
-    "comment" : {
-      "undefined" : "Sets the order in which each argument needs to be output to the target system."
-    },
-    "attributes" : [ "datatype", "someValues" ],
-    "id" : "92"
-  }, {
-    "iri" : "https://w3id.org/todo/tododom#appliesToWorldElement",
-    "baseIri" : "https://w3id.org/todo/tododom",
-    "range" : "52",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://w3id.org/todo/tododom#",
-        "type" : "label"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "appliesToWorldElement",
-      "undefined" : "appliesToWorldElement"
-    },
-    "superproperty" : [ "68" ],
-    "domain" : "69",
-    "comment" : {
-      "undefined" : "Establishes the relation between an Argument and a WorldElement that can be associated to it."
-    },
-    "attributes" : [ "object", "someValues" ],
-    "id" : "94"
-  }, {
-    "range" : "87",
-    "domain" : "78",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "95"
-  }, {
-    "range" : "83",
-    "domain" : "67",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "96"
-  }, {
-    "range" : "89",
-    "domain" : "67",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "97"
-  }, {
-    "range" : "87",
-    "domain" : "67",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "98"
-  }, {
-    "range" : "89",
-    "domain" : "83",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "99"
-  }, {
-    "iri" : "https://w3id.org/todo/tododom#isApplicableToArgument",
-    "baseIri" : "https://w3id.org/todo/tododom",
-    "range" : "69",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://w3id.org/todo/tododom#",
-        "type" : "label"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "isApplicableToArgument",
-      "undefined" : "isApplicableToArgument"
-    },
-    "domain" : "70",
-    "comment" : {
-      "undefined" : "Establishes the relation between a WorldElement and the Argument(s) that it can be associated to."
-    },
-    "attributes" : [ "object" ],
-    "id" : "71"
-  }, {
-    "range" : "89",
-    "domain" : "101",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "100"
-  }, {
-    "range" : "87",
-    "domain" : "101",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "102"
-  }, {
-    "range" : "67",
-    "domain" : "78",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "103"
-  }, {
-    "range" : "83",
-    "domain" : "78",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "104"
-  }, {
-    "range" : "89",
-    "domain" : "78",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "105"
-  }, {
-    "range" : "83",
-    "domain" : "69",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "106"
-  }, {
-    "range" : "89",
-    "domain" : "69",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "107"
-  }, {
-    "range" : "87",
-    "domain" : "69",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "108"
-  }, {
-    "iri" : "https://w3id.org/todo/tododom#hasTargetSystemReadableInfo",
-    "inverse" : "110",
-    "baseIri" : "https://w3id.org/todo/tododom",
-    "range" : "50",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://w3id.org/todo/tododom#",
-        "type" : "label"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "hasTargetSystemReadableInfo",
-      "undefined" : "hasTargetSystemReadableInfo"
-    },
-    "domain" : "50",
-    "comment" : {
-      "undefined" : "Establishes the relation between an Action/Argument/WorldElement and its corresponding TargetSystemReadableInfo."
-    },
-    "attributes" : [ "object" ],
-    "id" : "109"
-  }, {
-    "range" : "78",
-    "domain" : "101",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "111"
-  }, {
-    "range" : "67",
-    "domain" : "101",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "112"
-  }, {
-    "range" : "83",
-    "domain" : "101",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "113"
-  }, {
-    "iri" : "https://w3id.org/todo/tododom#appliesToWorldElementGroup",
-    "baseIri" : "https://w3id.org/todo/tododom",
-    "range" : "4",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://w3id.org/todo/tododom#",
-        "type" : "label"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "appliesToWorldElementGroup",
-      "undefined" : "appliesToWorldElementGroup"
-    },
-    "superproperty" : [ "68" ],
-    "domain" : "114",
-    "comment" : {
-      "undefined" : "Establishes the relation between an Argument and a WorldElementGroup that can be associated to it."
-    },
-    "attributes" : [ "object" ],
-    "id" : "72"
-  }, {
-    "range" : "89",
-    "domain" : "116",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "115"
-  }, {
-    "range" : "101",
-    "domain" : "69",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "117"
-  }, {
-    "range" : "78",
-    "domain" : "69",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "118"
-  }, {
-    "range" : "67",
-    "domain" : "69",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "119"
-  }, {
-    "iri" : "https://w3id.org/todo/tododom#hasLexicalUnit",
-    "inverse" : "81",
-    "baseIri" : "https://w3id.org/todo/tododom",
-    "range" : "6",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://w3id.org/todo/tododom#",
-        "type" : "label"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "hasLexicalUnit",
-      "undefined" : "hasLexicalUnit"
-    },
-    "domain" : "52",
-    "comment" : {
-      "undefined" : "Establishes the relation between a FrameHead/WorldElement and one of its corresponding Lexical Units."
-    },
-    "attributes" : [ "object", "someValues" ],
-    "id" : "120"
-  }, {
-    "iri" : "https://w3id.org/todo/tododom#hasTrace",
-    "inverse" : "79",
-    "baseIri" : "https://w3id.org/todo/tododom",
-    "range" : "87",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://w3id.org/todo/tododom#",
-        "type" : "label"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "hasTrace",
-      "undefined" : "hasTrace"
-    },
-    "domain" : "116",
-    "comment" : {
-      "undefined" : "Establishes the relationship between an element and its Trace."
-    },
-    "attributes" : [ "object", "someValues" ],
-    "id" : "121"
-  }, {
-    "range" : "69",
-    "domain" : "116",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "122"
-  }, {
-    "range" : "101",
-    "domain" : "116",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "123"
-  }, {
-    "range" : "78",
-    "domain" : "116",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "124"
-  }, {
-    "range" : "67",
-    "domain" : "116",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "125"
-  }, {
-    "range" : "83",
-    "domain" : "116",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "126"
-  }, {
-    "iri" : "http://www.daml.org/services/owl-s/1.1/Grounding.owl#hasAtomicProcessGrounding",
-    "baseIri" : "http://www.daml.org/services/owl-s/1.1/Grounding.owl",
-    "range" : "64",
-    "label" : {
-      "IRI-based" : "hasAtomicProcessGrounding"
-    },
-    "domain" : "44",
-    "attributes" : [ "object", "someValues", "external" ],
-    "id" : "127"
-  }, {
-    "iri" : "https://w3id.org/todo/tododom#isMemberOfGroup",
-    "baseIri" : "https://w3id.org/todo/tododom",
-    "range" : "4",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://w3id.org/todo/tododom#",
-        "type" : "label"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "isMemberOfGroup",
-      "undefined" : "isMemberOfGroup"
-    },
-    "domain" : "52",
-    "comment" : {
-      "undefined" : "Establishes the relation between a WorldElement and a WorldElementGroup, which is a member of."
-    },
-    "attributes" : [ "object", "someValues" ],
-    "id" : "128"
-  }, {
-    "iri" : "https://w3id.org/todo/tododom#hasTargetSystemReadableInfo",
-    "inverse" : "110",
-    "baseIri" : "https://w3id.org/todo/tododom",
-    "range" : "2",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://w3id.org/todo/tododom#",
-        "type" : "label"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "hasTargetSystemReadableInfo",
-      "undefined" : "hasTargetSystemReadableInfo"
-    },
-    "domain" : "52",
-    "comment" : {
-      "undefined" : "Establishes the relation between an Action/Argument/WorldElement and its corresponding TargetSystemReadableInfo."
-    },
-    "attributes" : [ "object", "someValues" ],
-    "id" : "129"
-  }, {
-    "range" : "131",
-    "domain" : "21",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "130"
-  }, {
-    "range" : "52",
-    "domain" : "21",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "132"
-  }, {
-    "iri" : "https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl#wadlVersion",
-    "baseIri" : "https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl",
-    "range" : "134",
-    "label" : {
-      "IRI-based" : "wadlVersion"
-    },
-    "domain" : "50",
-    "attributes" : [ "datatype", "external" ],
-    "id" : "133"
-  }, {
-    "range" : "4",
-    "domain" : "14",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "135"
-  }, {
-    "range" : "6",
-    "domain" : "14",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "136"
-  }, {
-    "range" : "1",
-    "domain" : "14",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "137"
-  }, {
-    "range" : "2",
-    "domain" : "14",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "138"
-  }, {
-    "range" : "7",
-    "domain" : "14",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "139"
-  }, {
-    "range" : "36",
-    "domain" : "14",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "140"
-  }, {
-    "range" : "91",
-    "domain" : "14",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "142"
-  }, {
     "range" : "30",
-    "domain" : "14",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "144"
-  }, {
-    "range" : "25",
-    "domain" : "14",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "146"
-  }, {
-    "iri" : "https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl#wadlResourceMethod",
-    "baseIri" : "https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl",
-    "range" : "50",
-    "label" : {
-      "IRI-based" : "wadlResourceMethod"
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododom#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
     },
-    "domain" : "50",
-    "attributes" : [ "object", "external" ],
-    "id" : "149"
-  }, {
-    "range" : "116",
+    "label" : {
+      "IRI-based" : "isTypeOf",
+      "undefined" : "isTypeOf"
+    },
     "domain" : "14",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "150"
+    "comment" : {
+      "undefined" : "Establishes a relation between a TSRI type and the Action/Argument/WorldElement TSRI with said TSRI type."
+    },
+    "attributes" : [ "inverse functional", "object", "someValues" ],
+    "id" : "85"
   }, {
-    "range" : "131",
-    "domain" : "14",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "151"
-  }, {
-    "range" : "87",
-    "domain" : "14",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "152"
+    "iri" : "https://w3id.org/todo/tododfa#hasIntent",
+    "inverse" : "87",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasIntent",
+      "undefined" : "hasIntent"
+    },
+    "domain" : "12",
+    "comment" : {
+      "undefined" : "Establishes a relation between a Skill and its corresponding Intent(s)."
+    },
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "86"
   }, {
     "iri" : "https://w3id.org/todo/tododom#isTraceOf",
     "baseIri" : "https://w3id.org/todo/tododom",
@@ -2585,84 +2338,16 @@
       "IRI-based" : "isTraceOf",
       "undefined" : "isTraceOf"
     },
-    "domain" : "7",
+    "domain" : "12",
     "comment" : {
       "undefined" : "Establishes the relationship between a Trace and the element it refers to."
     },
     "attributes" : [ "object", "someValues" ],
-    "id" : "153"
-  }, {
-    "range" : "4",
-    "domain" : "20",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "154"
-  }, {
-    "iri" : "https://w3id.org/todo/tododom#hasType",
-    "inverse" : "156",
-    "baseIri" : "https://w3id.org/todo/tododom",
-    "range" : "30",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://w3id.org/todo/tododom#",
-        "type" : "label"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "hasType",
-      "undefined" : "hasType"
-    },
-    "domain" : "2",
-    "comment" : {
-      "undefined" : "(In a guide robot, with guiding and information functionalities; the TSRI of the destinations are coordinates and the TSRI of the elements to obtain information about are IDs)\n\nDestination_guideRobot hasTSRI ?x .\n?x hasType coordinate .\n\nPieceInformation_guideRobot has TSRI ?y .\n?y hasType ID ."
-    },
-    "attributes" : [ "object", "someValues", "functional" ],
-    "id" : "155"
-  }, {
-    "iri" : "https://w3id.org/todo/tododom#appliesToWorldElement",
-    "baseIri" : "https://w3id.org/todo/tododom",
-    "range" : "52",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://w3id.org/todo/tododom#",
-        "type" : "label"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "appliesToWorldElement",
-      "undefined" : "appliesToWorldElement"
-    },
-    "superproperty" : [ "68" ],
-    "domain" : "141",
-    "comment" : {
-      "undefined" : "Establishes the relation between an Argument and a WorldElement that can be associated to it."
-    },
-    "attributes" : [ "object" ],
-    "id" : "73"
-  }, {
-    "range" : "2",
-    "domain" : "20",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "157"
+    "id" : "88"
   }, {
     "iri" : "https://w3id.org/todo/tododom#val",
     "baseIri" : "https://w3id.org/todo/tododom",
-    "range" : "159",
+    "range" : "91",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -2686,27 +2371,17 @@
       "undefined" : "Sets the value of a TSRI to be input to the target system."
     },
     "attributes" : [ "datatype", "someValues" ],
-    "id" : "158"
+    "id" : "90"
   }, {
-    "range" : "52",
-    "domain" : "14",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "160"
-  }, {
-    "range" : "21",
-    "domain" : "14",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "161"
-  }, {
-    "iri" : "https://w3id.org/todo/tododom#hasGroupMember",
-    "inverse" : "163",
-    "baseIri" : "https://w3id.org/todo/tododom",
-    "range" : "52",
+    "iri" : "https://w3id.org/todo/tododfa#hasCoreArgument",
+    "inverse" : "42",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "range" : "43",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "https://w3id.org/todo/tododom#",
+        "value" : "https://w3id.org/todo/tododfa#",
         "type" : "label"
       } ],
       "term_status" : [ {
@@ -2717,25 +2392,21 @@
       } ]
     },
     "label" : {
-      "IRI-based" : "hasGroupMember",
-      "undefined" : "hasGroupMember"
+      "IRI-based" : "hasCoreArgument",
+      "undefined" : "hasCoreArgument"
     },
-    "domain" : "4",
+    "superproperty" : [ "93" ],
+    "domain" : "43",
     "comment" : {
-      "undefined" : "Establishes the relation between a WorldElementGroup and a member of said group."
+      "undefined" : "Establishes a relation between an Action and its CoreArguments (i.e. the arguments that are compulsory in order to perform the Action)."
     },
-    "attributes" : [ "object", "someValues" ],
-    "id" : "162"
-  }, {
-    "range" : "1",
-    "domain" : "20",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "164"
+    "attributes" : [ "external", "object" ],
+    "id" : "92"
   }, {
     "iri" : "https://w3id.org/todo/tododom#hasType",
-    "inverse" : "156",
+    "inverse" : "95",
     "baseIri" : "https://w3id.org/todo/tododom",
-    "range" : "54",
+    "range" : "15",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -2754,31 +2425,17 @@
       "IRI-based" : "hasType",
       "undefined" : "hasType"
     },
-    "domain" : "16",
+    "domain" : "2",
     "comment" : {
       "undefined" : "(In a guide robot, with guiding and information functionalities; the TSRI of the destinations are coordinates and the TSRI of the elements to obtain information about are IDs)\n\nDestination_guideRobot hasTSRI ?x .\n?x hasType coordinate .\n\nPieceInformation_guideRobot has TSRI ?y .\n?y hasType ID ."
     },
-    "attributes" : [ "object", "someValues", "functional" ],
-    "id" : "165"
+    "attributes" : [ "functional", "object", "someValues" ],
+    "id" : "94"
   }, {
-    "range" : "7",
-    "domain" : "20",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "166"
-  }, {
-    "range" : "6",
-    "domain" : "20",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "168"
-  }, {
-    "range" : "6",
-    "domain" : "52",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "170"
-  }, {
-    "iri" : "https://w3id.org/todo/tododom#isTypeOf",
+    "iri" : "https://w3id.org/todo/tododom#hasGroupMember",
+    "inverse" : "97",
     "baseIri" : "https://w3id.org/todo/tododom",
-    "range" : "16",
+    "range" : "80",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -2794,81 +2451,20 @@
       } ]
     },
     "label" : {
-      "IRI-based" : "isTypeOf",
-      "undefined" : "isTypeOf"
-    },
-    "domain" : "54",
-    "comment" : {
-      "undefined" : "(In a guide robot, with guiding and information functionalities; the TSRI of the destinations are coordinates and the TSRI of the elements to obtain information about are IDs)\n\nDestination_guideRobot hasTSRI ?x .\ncoordinate isTypeOf ?x .\n\nPieceInformation_guideRobot has TSRI ?y .\nID isTypeOf ?y ."
-    },
-    "attributes" : [ "inverse functional", "object", "someValues" ],
-    "id" : "171"
-  }, {
-    "iri" : "https://w3id.org/todo/tododfa#hasIntent",
-    "baseIri" : "https://w3id.org/todo/tododfa",
-    "range" : "1",
-    "label" : {
-      "IRI-based" : "hasIntent"
+      "IRI-based" : "hasGroupMember",
+      "undefined" : "hasGroupMember"
     },
     "domain" : "7",
-    "attributes" : [ "object", "someValues", "external" ],
-    "id" : "172"
-  }, {
-    "range" : "2",
-    "domain" : "52",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "173"
-  }, {
-    "range" : "7",
-    "domain" : "52",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "174"
-  }, {
-    "iri" : "http://www.daml.org/services/owl-s/1.1/Grounding.owl#wsdlOutputMessage",
-    "baseIri" : "http://www.daml.org/services/owl-s/1.1/Grounding.owl",
-    "range" : "167",
-    "label" : {
-      "IRI-based" : "wsdlOutputMessage"
+    "comment" : {
+      "undefined" : "Establishes the relation between a WorldElementGroup and a member of said group."
     },
-    "cardinality" : "1",
-    "domain" : "64",
-    "attributes" : [ "datatype", "functional", "external" ],
-    "id" : "175"
+    "attributes" : [ "object", "someValues" ],
+    "id" : "96"
   }, {
-    "iri" : "http://www.daml.org/services/owl-s/1.1/Grounding.owl#wsdlVersion",
-    "baseIri" : "http://www.daml.org/services/owl-s/1.1/Grounding.owl",
-    "range" : "169",
-    "label" : {
-      "IRI-based" : "wsdlVersion"
-    },
-    "cardinality" : "1",
-    "domain" : "64",
-    "attributes" : [ "datatype", "functional", "external" ],
-    "id" : "176"
-  }, {
-    "range" : "25",
-    "domain" : "52",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "177"
-  }, {
-    "iri" : "https://w3id.org/todo/tododfa#isFrameOf",
-    "baseIri" : "https://w3id.org/todo/tododfa",
-    "range" : "1",
-    "label" : {
-      "IRI-based" : "isFrameOf"
-    },
-    "domain" : "25",
-    "attributes" : [ "object", "someValues", "external" ],
-    "id" : "178"
-  }, {
-    "range" : "36",
-    "domain" : "52",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "179"
-  }, {
-    "iri" : "https://w3id.org/todo/tododom#isTraceOf",
+    "iri" : "https://w3id.org/todo/tododom#hasType",
+    "inverse" : "95",
     "baseIri" : "https://w3id.org/todo/tododom",
-    "range" : "78",
+    "range" : "14",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -2884,102 +2480,270 @@
       } ]
     },
     "label" : {
-      "IRI-based" : "isTraceOf",
-      "undefined" : "isTraceOf"
+      "IRI-based" : "hasType",
+      "undefined" : "hasType"
     },
-    "domain" : "25",
+    "domain" : "30",
     "comment" : {
-      "undefined" : "Establishes the relationship between a Trace and the element it refers to."
+      "undefined" : "(In a guide robot, with guiding and information functionalities; the TSRI of the destinations are coordinates and the TSRI of the elements to obtain information about are IDs)\n\nDestination_guideRobot hasTSRI ?x .\n?x hasType coordinate .\n\nPieceInformation_guideRobot has TSRI ?y .\n?y hasType ID ."
+    },
+    "attributes" : [ "functional", "object", "someValues" ],
+    "id" : "98"
+  }, {
+    "iri" : "https://w3id.org/todo/tododom#appliesToWorld",
+    "inverse" : "101",
+    "baseIri" : "https://w3id.org/todo/tododom",
+    "range" : "76",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododom#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "appliesToWorld",
+      "undefined" : "appliesToWorld"
+    },
+    "domain" : "100",
+    "subproperty" : [ "102", "103" ],
+    "comment" : {
+      "undefined" : "Establishes the relation between an Argument and the WorldElements that can be associated to it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "99"
+  }, {
+    "iri" : "http://www.daml.org/services/owl-s/1.1/Grounding.owl#wsdlInputMessage",
+    "baseIri" : "http://www.daml.org/services/owl-s/1.1/Grounding.owl",
+    "range" : "81",
+    "label" : {
+      "IRI-based" : "wsdlInputMessage"
+    },
+    "cardinality" : "1",
+    "domain" : "4",
+    "attributes" : [ "external", "functional", "datatype" ],
+    "id" : "104"
+  }, {
+    "iri" : "https://w3id.org/todo/tododom#hasTrace",
+    "inverse" : "109",
+    "baseIri" : "https://w3id.org/todo/tododom",
+    "range" : "108",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododom#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasTrace",
+      "undefined" : "hasTrace"
+    },
+    "domain" : "107",
+    "comment" : {
+      "undefined" : "Establishes the relationship between an element and its Trace."
     },
     "attributes" : [ "object", "someValues" ],
-    "id" : "180"
+    "id" : "106"
   }, {
-    "range" : "1",
-    "domain" : "52",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "181"
+    "range" : "108",
+    "domain" : "100",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "110"
   }, {
-    "iri" : "https://w3id.org/todo/tododfa#belongsToAction",
-    "baseIri" : "https://w3id.org/todo/tododfa",
-    "range" : "87",
+    "range" : "108",
+    "domain" : "112",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "111"
+  }, {
+    "iri" : "https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl#wadlDocument",
+    "baseIri" : "https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl",
+    "range" : "75",
     "label" : {
-      "IRI-based" : "belongsToAction"
+      "IRI-based" : "wadlDocument"
     },
-    "domain" : "1",
-    "attributes" : [ "object", "someValues", "external" ],
-    "id" : "182"
+    "domain" : "43",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "113"
   }, {
-    "range" : "30",
-    "domain" : "52",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "183"
+    "range" : "89",
+    "domain" : "83",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "114"
   }, {
-    "iri" : "https://w3id.org/todo/tododom#isTraceOf",
-    "baseIri" : "https://w3id.org/todo/tododom",
+    "range" : "89",
+    "domain" : "116",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "115"
+  }, {
+    "iri" : "https://w3id.org/todo/tododfa#belongsToIntent",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "range" : "116",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "belongsToIntent",
+      "undefined" : "belongsToIntent"
+    },
+    "domain" : "107",
+    "comment" : {
+      "undefined" : "Establishes the relation between an Action and the Intent it belongs to."
+    },
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "117"
+  }, {
+    "iri" : "https://w3id.org/todo/tododfa#hasArgumentSet",
+    "inverse" : "119",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "range" : "112",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasArgumentSet",
+      "undefined" : "hasArgumentSet"
+    },
+    "domain" : "107",
+    "comment" : {
+      "undefined" : "Establishes a relation between an Action and the set composed of its Argument(s)."
+    },
+    "attributes" : [ "external", "functional", "object", "someValues" ],
+    "id" : "118"
+  }, {
+    "iri" : "https://w3id.org/todo/tododfa#hasArgument",
+    "inverse" : "44",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "range" : "100",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasArgument",
+      "undefined" : "hasArgument"
+    },
+    "domain" : "107",
+    "subproperty" : [ "121", "92" ],
+    "comment" : {
+      "undefined" : "Establishes a relation between an Action and its Argument(s)."
+    },
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "120"
+  }, {
+    "iri" : "https://w3id.org/todo/tododfa#actionTag",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "range" : "105",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "es",
+        "value" : "System request: \"Necesitas que {argumentTag}?\"\n\nAction: take_guideRobot\nactionTag: \"te lleve a algún lugar\"\n\nResulting SysRequest: \"Necesitas que {te lleve}?\"",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "System request: \"Do you need me to {argumentTag}?\"\n\nAction: take_guideRobot\nactionTag: \"take you somewhere\"\n\nResulting SysRequest: \"Do you need me to {take you somewhere}?\"",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "actionTag",
+      "undefined" : "actionTag"
+    },
+    "domain" : "107",
+    "comment" : {
+      "undefined" : "String that identifies the Action when invoked in a SystemRequest/Response (DomainONT)."
+    },
+    "attributes" : [ "external", "datatype", "someValues" ],
+    "id" : "122"
+  }, {
+    "range" : "89",
+    "domain" : "67",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "123"
+  }, {
     "range" : "83",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://w3id.org/todo/tododom#",
-        "type" : "label"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "isTraceOf",
-      "undefined" : "isTraceOf"
-    },
-    "domain" : "1",
-    "comment" : {
-      "undefined" : "Establishes the relationship between a Trace and the element it refers to."
-    },
-    "attributes" : [ "object", "someValues" ],
-    "id" : "184"
+    "domain" : "125",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "124"
   }, {
     "range" : "116",
-    "domain" : "52",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "185"
+    "domain" : "125",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "126"
   }, {
-    "iri" : "https://w3id.org/todo/tododfa#isIntentOf",
-    "baseIri" : "https://w3id.org/todo/tododfa",
-    "range" : "7",
-    "label" : {
-      "IRI-based" : "isIntentOf"
-    },
-    "domain" : "1",
-    "attributes" : [ "object", "someValues", "external" ],
-    "id" : "186"
+    "range" : "89",
+    "domain" : "125",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "127"
   }, {
-    "range" : "131",
-    "domain" : "52",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "187"
+    "range" : "116",
+    "domain" : "83",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "128"
   }, {
-    "iri" : "https://w3id.org/todo/tododfa#hasFrame",
-    "baseIri" : "https://w3id.org/todo/tododfa",
-    "range" : "25",
-    "label" : {
-      "IRI-based" : "hasFrame"
-    },
-    "domain" : "1",
-    "attributes" : [ "object", "someValues", "external" ],
-    "id" : "188"
-  }, {
-    "range" : "91",
-    "domain" : "52",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "189"
-  }, {
-    "iri" : "https://w3id.org/todo/tododom#isLexicalUnitOf",
+    "iri" : "https://w3id.org/todo/tododom#isApplicableToArgument",
     "baseIri" : "https://w3id.org/todo/tododom",
-    "range" : "52",
+    "range" : "100",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -2995,52 +2759,103 @@
       } ]
     },
     "label" : {
-      "IRI-based" : "isLexicalUnitOf",
-      "undefined" : "isLexicalUnitOf"
+      "IRI-based" : "isApplicableToArgument",
+      "undefined" : "isApplicableToArgument"
     },
-    "domain" : "6",
+    "domain" : "76",
     "comment" : {
-      "undefined" : "Establishes the relation between a Lexical Unit and its corresponding FrameHead/WorldElement."
+      "undefined" : "Establishes the relation between a WorldElement and the Argument(s) that it can be associated to."
     },
-    "attributes" : [ "object", "someValues" ],
-    "id" : "190"
+    "attributes" : [ "object" ],
+    "id" : "101"
   }, {
-    "range" : "87",
-    "domain" : "52",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "191"
+    "range" : "116",
+    "domain" : "112",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "129"
   }, {
-    "iri" : "https://w3id.org/todo/tododom#isLexicalUnitOf",
+    "range" : "89",
+    "domain" : "112",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "130"
+  }, {
+    "range" : "125",
+    "domain" : "67",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "131"
+  }, {
+    "range" : "83",
+    "domain" : "67",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "132"
+  }, {
+    "range" : "116",
+    "domain" : "67",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "133"
+  }, {
+    "range" : "83",
+    "domain" : "100",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "134"
+  }, {
+    "range" : "116",
+    "domain" : "100",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "135"
+  }, {
+    "range" : "89",
+    "domain" : "100",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "136"
+  }, {
+    "iri" : "https://w3id.org/todo/tododom#hasTargetSystemReadableInfo",
+    "inverse" : "138",
     "baseIri" : "https://w3id.org/todo/tododom",
+    "range" : "43",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododom#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasTargetSystemReadableInfo",
+      "undefined" : "hasTargetSystemReadableInfo"
+    },
+    "domain" : "43",
+    "comment" : {
+      "undefined" : "Establishes the relation between an Action/Argument/WorldElement and its corresponding TargetSystemReadableInfo."
+    },
+    "attributes" : [ "object" ],
+    "id" : "137"
+  }, {
     "range" : "67",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://w3id.org/todo/tododom#",
-        "type" : "label"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "isLexicalUnitOf",
-      "undefined" : "isLexicalUnitOf"
-    },
-    "domain" : "6",
-    "comment" : {
-      "undefined" : "Establishes the relation between a Lexical Unit and its corresponding FrameHead/WorldElement."
-    },
-    "attributes" : [ "object", "someValues" ],
-    "id" : "192"
+    "domain" : "112",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "139"
   }, {
-    "iri" : "https://w3id.org/todo/tododom#isTraceOf",
+    "range" : "125",
+    "domain" : "112",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "140"
+  }, {
+    "range" : "83",
+    "domain" : "112",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "141"
+  }, {
+    "iri" : "https://w3id.org/todo/tododom#appliesToWorldElementGroup",
     "baseIri" : "https://w3id.org/todo/tododom",
-    "range" : "69",
+    "range" : "7",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3056,34 +2871,313 @@
       } ]
     },
     "label" : {
-      "IRI-based" : "isTraceOf",
-      "undefined" : "isTraceOf"
+      "IRI-based" : "appliesToWorldElementGroup",
+      "undefined" : "appliesToWorldElementGroup"
     },
-    "domain" : "91",
+    "superproperty" : [ "99" ],
+    "domain" : "77",
     "comment" : {
-      "undefined" : "Establishes the relationship between a Trace and the element it refers to."
+      "undefined" : "Establishes the relation between an Argument and a WorldElementGroup that can be associated to it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "102"
+  }, {
+    "range" : "89",
+    "domain" : "107",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "143"
+  }, {
+    "range" : "112",
+    "domain" : "100",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "144"
+  }, {
+    "range" : "67",
+    "domain" : "100",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "145"
+  }, {
+    "range" : "125",
+    "domain" : "100",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "146"
+  }, {
+    "iri" : "https://w3id.org/todo/tododom#hasTargetSystemReadableInfo",
+    "inverse" : "138",
+    "baseIri" : "https://w3id.org/todo/tododom",
+    "range" : "2",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododom#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasTargetSystemReadableInfo",
+      "undefined" : "hasTargetSystemReadableInfo"
+    },
+    "domain" : "80",
+    "comment" : {
+      "undefined" : "Establishes the relation between an Action/Argument/WorldElement and its corresponding TargetSystemReadableInfo."
     },
     "attributes" : [ "object", "someValues" ],
-    "id" : "193"
+    "id" : "147"
+  }, {
+    "range" : "100",
+    "domain" : "107",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "148"
+  }, {
+    "range" : "112",
+    "domain" : "107",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "149"
+  }, {
+    "range" : "67",
+    "domain" : "107",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "150"
+  }, {
+    "range" : "125",
+    "domain" : "107",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "151"
+  }, {
+    "range" : "83",
+    "domain" : "107",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "152"
+  }, {
+    "range" : "116",
+    "domain" : "107",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "153"
+  }, {
+    "iri" : "https://w3id.org/todo/tododfa#hasFomaGrammar",
+    "inverse" : "155",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "range" : "43",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasFomaGrammar",
+      "undefined" : "hasFomaGrammar"
+    },
+    "domain" : "43",
+    "comment" : {
+      "undefined" : "Establishes a relation between a Skill and the FomaGrammar to use to perform Key Element Extraction."
+    },
+    "attributes" : [ "external", "functional", "object" ],
+    "id" : "154"
+  }, {
+    "iri" : "http://www.daml.org/services/owl-s/1.1/Grounding.owl#hasAtomicProcessGrounding",
+    "baseIri" : "http://www.daml.org/services/owl-s/1.1/Grounding.owl",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasAtomicProcessGrounding"
+    },
+    "domain" : "39",
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "156"
+  }, {
+    "iri" : "https://w3id.org/todo/tododom#isMemberOfGroup",
+    "baseIri" : "https://w3id.org/todo/tododom",
+    "range" : "7",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododom#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isMemberOfGroup",
+      "undefined" : "isMemberOfGroup"
+    },
+    "domain" : "80",
+    "comment" : {
+      "undefined" : "Establishes the relation between a WorldElement and a WorldElementGroup, which is a member of."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "157"
+  }, {
+    "iri" : "https://w3id.org/todo/tododom#hasLexicalUnit",
+    "inverse" : "159",
+    "baseIri" : "https://w3id.org/todo/tododom",
+    "range" : "11",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododom#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasLexicalUnit",
+      "undefined" : "hasLexicalUnit"
+    },
+    "domain" : "80",
+    "comment" : {
+      "undefined" : "Establishes the relation between a FrameHead/WorldElement and one of its corresponding Lexical Units."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "158"
+  }, {
+    "iri" : "https://w3id.org/todo/tododfa#hasOptionalArgument",
+    "inverse" : "160",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "range" : "43",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasOptionalArgument",
+      "undefined" : "hasOptionalArgument"
+    },
+    "superproperty" : [ "93" ],
+    "domain" : "43",
+    "comment" : {
+      "undefined" : "Establishes a relation between an Action and its OptionalArguments (i.e. the arguments that are not compulsory in order to perform the Action)."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "121"
+  }, {
+    "range" : "162",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "161"
+  }, {
+    "range" : "80",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "163"
+  }, {
+    "iri" : "https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl#wadlVersion",
+    "baseIri" : "https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl",
+    "range" : "78",
+    "label" : {
+      "IRI-based" : "wadlVersion"
+    },
+    "domain" : "43",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "164"
+  }, {
+    "range" : "7",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "165"
+  }, {
+    "iri" : "https://w3id.org/todo/tododom#hasType",
+    "inverse" : "95",
+    "baseIri" : "https://w3id.org/todo/tododom",
+    "range" : "14",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododom#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasType",
+      "undefined" : "hasType"
+    },
+    "domain" : "31",
+    "comment" : {
+      "undefined" : "(In a guide robot, with guiding and information functionalities; the TSRI of the destinations are coordinates and the TSRI of the elements to obtain information about are IDs)\n\nDestination_guideRobot hasTSRI ?x .\n?x hasType coordinate .\n\nPieceInformation_guideRobot has TSRI ?y .\n?y hasType ID ."
+    },
+    "attributes" : [ "functional", "object", "someValues" ],
+    "id" : "166"
   }, {
     "iri" : "https://w3id.org/todo/tododfa#isArgumentOf",
     "baseIri" : "https://w3id.org/todo/tododfa",
-    "range" : "87",
-    "label" : {
-      "IRI-based" : "isArgumentOf"
+    "range" : "108",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
     },
-    "domain" : "91",
-    "attributes" : [ "object", "someValues", "external" ],
-    "id" : "194"
+    "label" : {
+      "IRI-based" : "isArgumentOf",
+      "undefined" : "isArgumentOf"
+    },
+    "domain" : "142",
+    "subproperty" : [ "42", "160" ],
+    "comment" : {
+      "undefined" : "Establishes a relation between an Argument and its corresponding Action."
+    },
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "167"
   }, {
-    "range" : "4",
-    "domain" : "21",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "195"
+    "range" : "11",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "168"
   }, {
     "iri" : "https://w3id.org/todo/tododom#hasValue",
     "baseIri" : "https://w3id.org/todo/tododom",
-    "range" : "52",
+    "range" : "80",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3102,47 +3196,500 @@
       "IRI-based" : "hasValue",
       "undefined" : "hasValue"
     },
-    "domain" : "91",
+    "domain" : "142",
     "comment" : {
       "undefined" : "Establishes the relation between an ArgumentTrace and its corresponding value (WorldElement)."
     },
     "attributes" : [ "object", "someValues" ],
-    "id" : "196"
+    "id" : "169"
+  }, {
+    "range" : "1",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "170"
+  }, {
+    "iri" : "https://w3id.org/todo/tododom#isTraceOf",
+    "baseIri" : "https://w3id.org/todo/tododom",
+    "range" : "100",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododom#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isTraceOf",
+      "undefined" : "isTraceOf"
+    },
+    "domain" : "142",
+    "comment" : {
+      "undefined" : "Establishes the relationship between a Trace and the element it refers to."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "171"
   }, {
     "range" : "2",
-    "domain" : "21",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "197"
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "172"
   }, {
-    "iri" : "https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl#wadlMessageParam",
-    "baseIri" : "https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl",
-    "range" : "143",
-    "label" : {
-      "IRI-based" : "wadlMessageParam"
+    "iri" : "https://w3id.org/todo/tododfa#isFrameOf",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "range" : "1",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
     },
-    "domain" : "50",
-    "attributes" : [ "datatype", "external" ],
-    "id" : "198"
+    "label" : {
+      "IRI-based" : "isFrameOf",
+      "undefined" : "isFrameOf"
+    },
+    "domain" : "46",
+    "comment" : {
+      "undefined" : "https://w3id.org/todo/tododfa#"
+    },
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "173"
+  }, {
+    "range" : "12",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "174"
+  }, {
+    "iri" : "https://w3id.org/todo/tododom#isTraceOf",
+    "baseIri" : "https://w3id.org/todo/tododom",
+    "range" : "125",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododom#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isTraceOf",
+      "undefined" : "isTraceOf"
+    },
+    "domain" : "46",
+    "comment" : {
+      "undefined" : "Establishes the relationship between a Trace and the element it refers to."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "175"
+  }, {
+    "range" : "64",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "176"
+  }, {
+    "iri" : "https://w3id.org/todo/tododom#isTraceOf",
+    "baseIri" : "https://w3id.org/todo/tododom",
+    "range" : "116",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododom#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isTraceOf",
+      "undefined" : "isTraceOf"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Establishes the relationship between a Trace and the element it refers to."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "177"
+  }, {
+    "range" : "142",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "178"
+  }, {
+    "iri" : "https://w3id.org/todo/tododfa#hasFrame",
+    "inverse" : "180",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "range" : "46",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasFrame",
+      "undefined" : "hasFrame"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Establishes a relation between an Intent and its corresponding Frame."
+    },
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "179"
+  }, {
+    "range" : "15",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "181"
+  }, {
+    "iri" : "https://w3id.org/todo/tododfa#belongsToAction",
+    "inverse" : "183",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "range" : "108",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "belongsToAction",
+      "undefined" : "belongsToAction"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Establishes the relation between an Intent and the Action it belongs to."
+    },
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "182"
+  }, {
+    "range" : "46",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "184"
+  }, {
+    "iri" : "https://w3id.org/todo/tododfa#isIntentOf",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "range" : "12",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isIntentOf",
+      "undefined" : "isIntentOf"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Establishes a relation between an Intent and its corresponding Skill."
+    },
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "185"
+  }, {
+    "iri" : "https://w3id.org/todo/tododom#isTypeOf",
+    "baseIri" : "https://w3id.org/todo/tododom",
+    "range" : "22",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododom#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isTypeOf",
+      "undefined" : "isTypeOf"
+    },
+    "domain" : "18",
+    "comment" : {
+      "undefined" : "Establishes a relation between a TSRI type and the Action/Argument/WorldElement TSRI with said TSRI type."
+    },
+    "attributes" : [ "inverse functional", "object", "someValues" ],
+    "id" : "186"
+  }, {
+    "iri" : "https://w3id.org/todo/tododfa#argumentConnector",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "range" : "66",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "es",
+        "value" : "SystemRequest: ¿Necesitas que {actionTag}{argumentConnector}{WorldElement}?\n\nAction: take_guideRobot\nargumentConnector: \"a\"\n\n\"¿Necesitas que {te lleve}{a}{la sala}?\"",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "SystemRequest: Do you want me {actionTag}{argumentConnector}{WorldElement}?\n\nAction: take_guideRobot\nargumentConnector: \"to\"\n\n\"Do you want me {to take you}{to}{the restroom}?\"",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "argumentConnector",
+      "undefined" : "argumentConnector"
+    },
+    "domain" : "43",
+    "comment" : {
+      "undefined" : "String that defines the word that acts as a connector between the Argument and the rest of elements in a SystemRequest/Response."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "187"
+  }, {
+    "iri" : "https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl#wadlResourceMethod",
+    "baseIri" : "https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "wadlResourceMethod"
+    },
+    "domain" : "43",
+    "attributes" : [ "external", "object" ],
+    "id" : "188"
+  }, {
+    "range" : "107",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "189"
+  }, {
+    "range" : "162",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "190"
+  }, {
+    "range" : "108",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "191"
+  }, {
+    "iri" : "https://w3id.org/todo/tododfa#belongsToAction",
+    "inverse" : "183",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "range" : "107",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "belongsToAction",
+      "undefined" : "belongsToAction"
+    },
+    "domain" : "116",
+    "comment" : {
+      "undefined" : "Establishes the relation between an Intent and the Action it belongs to."
+    },
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "192"
   }, {
     "range" : "7",
-    "domain" : "21",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "199"
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "193"
   }, {
-    "range" : "30",
-    "domain" : "21",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "200"
+    "iri" : "https://w3id.org/todo/tododfa#isIntentOf",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "range" : "89",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isIntentOf",
+      "undefined" : "isIntentOf"
+    },
+    "domain" : "116",
+    "comment" : {
+      "undefined" : "Establishes a relation between an Intent and its corresponding Skill."
+    },
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "194"
   }, {
-    "range" : "25",
-    "domain" : "21",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "201"
+    "iri" : "https://w3id.org/todo/tododom#appliesToWorldElement",
+    "baseIri" : "https://w3id.org/todo/tododom",
+    "range" : "80",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododom#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "appliesToWorldElement",
+      "undefined" : "appliesToWorldElement"
+    },
+    "superproperty" : [ "99" ],
+    "domain" : "70",
+    "comment" : {
+      "undefined" : "Establishes the relation between an Argument and a WorldElement that can be associated to it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "103"
+  }, {
+    "range" : "2",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "195"
   }, {
     "iri" : "https://w3id.org/todo/tododom#hasTrace",
-    "inverse" : "79",
+    "inverse" : "109",
     "baseIri" : "https://w3id.org/todo/tododom",
-    "range" : "7",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododom#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasTrace",
+      "undefined" : "hasTrace"
+    },
+    "domain" : "116",
+    "comment" : {
+      "undefined" : "Establishes the relationship between an element and its Trace."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "196"
+  }, {
+    "range" : "80",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "197"
+  }, {
+    "iri" : "https://w3id.org/todo/tododfa#hasIntent",
+    "inverse" : "87",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "range" : "116",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasIntent",
+      "undefined" : "hasIntent"
+    },
+    "domain" : "89",
+    "comment" : {
+      "undefined" : "Establishes a relation between a Skill and its corresponding Intent(s)."
+    },
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "198"
+  }, {
+    "range" : "34",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "199"
+  }, {
+    "iri" : "https://w3id.org/todo/tododom#hasTrace",
+    "inverse" : "109",
+    "baseIri" : "https://w3id.org/todo/tododom",
+    "range" : "12",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3166,17 +3713,17 @@
       "undefined" : "Establishes the relationship between an element and its Trace."
     },
     "attributes" : [ "object", "someValues" ],
-    "id" : "202"
+    "id" : "200"
   }, {
-    "range" : "6",
-    "domain" : "21",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "203"
+    "range" : "1",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "201"
   }, {
     "iri" : "https://w3id.org/todo/tododom#hasType",
-    "inverse" : "156",
+    "inverse" : "95",
     "baseIri" : "https://w3id.org/todo/tododom",
-    "range" : "42",
+    "range" : "18",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3195,21 +3742,84 @@
       "IRI-based" : "hasType",
       "undefined" : "hasType"
     },
-    "domain" : "18",
+    "domain" : "22",
     "comment" : {
       "undefined" : "(In a guide robot, with guiding and information functionalities; the TSRI of the destinations are coordinates and the TSRI of the elements to obtain information about are IDs)\n\nDestination_guideRobot hasTSRI ?x .\n?x hasType coordinate .\n\nPieceInformation_guideRobot has TSRI ?y .\n?y hasType ID ."
     },
-    "attributes" : [ "object", "someValues", "functional" ],
+    "attributes" : [ "functional", "object", "someValues" ],
+    "id" : "202"
+  }, {
+    "iri" : "https://w3id.org/todo/tododfa#belongsToIntent",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "belongsToIntent",
+      "undefined" : "belongsToIntent"
+    },
+    "domain" : "108",
+    "comment" : {
+      "undefined" : "Establishes the relation between an Action and the Intent it belongs to."
+    },
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "203"
+  }, {
+    "range" : "12",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "204"
   }, {
-    "range" : "1",
-    "domain" : "21",
-    "attributes" : [ "anonymous", "object" ],
+    "iri" : "https://w3id.org/todo/tododfa#hasArgument",
+    "inverse" : "44",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "range" : "142",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasArgument",
+      "undefined" : "hasArgument"
+    },
+    "domain" : "108",
+    "subproperty" : [ "121", "92" ],
+    "comment" : {
+      "undefined" : "Establishes a relation between an Action and its Argument(s)."
+    },
+    "attributes" : [ "external", "object", "someValues" ],
     "id" : "205"
+  }, {
+    "range" : "11",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "206"
   }, {
     "iri" : "https://w3id.org/todo/tododom#isTraceOf",
     "baseIri" : "https://w3id.org/todo/tododom",
-    "range" : "116",
+    "range" : "107",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3228,85 +3838,121 @@
       "IRI-based" : "isTraceOf",
       "undefined" : "isTraceOf"
     },
-    "domain" : "87",
+    "domain" : "108",
     "comment" : {
       "undefined" : "Establishes the relationship between a Trace and the element it refers to."
     },
     "attributes" : [ "object", "someValues" ],
-    "id" : "206"
-  }, {
-    "range" : "87",
-    "domain" : "21",
-    "attributes" : [ "anonymous", "object" ],
     "id" : "207"
   }, {
-    "iri" : "https://w3id.org/todo/tododfa#belongsToIntent",
-    "baseIri" : "https://w3id.org/todo/tododfa",
-    "range" : "1",
-    "label" : {
-      "IRI-based" : "belongsToIntent"
-    },
-    "domain" : "87",
-    "attributes" : [ "object", "someValues", "external" ],
+    "range" : "11",
+    "domain" : "80",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "208"
   }, {
-    "range" : "116",
-    "domain" : "21",
-    "attributes" : [ "anonymous", "object" ],
+    "iri" : "https://w3id.org/todo/tododom#hasLexicalUnit",
+    "inverse" : "159",
+    "baseIri" : "https://w3id.org/todo/tododom",
+    "range" : "11",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododom#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasLexicalUnit",
+      "undefined" : "hasLexicalUnit"
+    },
+    "domain" : "83",
+    "comment" : {
+      "undefined" : "Establishes the relation between a FrameHead/WorldElement and one of its corresponding Lexical Units."
+    },
+    "attributes" : [ "object", "someValues" ],
     "id" : "209"
   }, {
-    "iri" : "https://w3id.org/todo/tododfa#hasArgument",
+    "iri" : "https://w3id.org/todo/tododfa#hasFrame",
+    "inverse" : "180",
     "baseIri" : "https://w3id.org/todo/tododfa",
-    "range" : "91",
-    "label" : {
-      "IRI-based" : "hasArgument"
+    "range" : "125",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
     },
-    "domain" : "87",
-    "attributes" : [ "object", "someValues", "external" ],
+    "label" : {
+      "IRI-based" : "hasFrame",
+      "undefined" : "hasFrame"
+    },
+    "domain" : "116",
+    "comment" : {
+      "undefined" : "Establishes a relation between an Intent and its corresponding Frame."
+    },
+    "attributes" : [ "external", "object", "someValues" ],
     "id" : "210"
   }, {
-    "range" : "36",
-    "domain" : "21",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "2",
+    "domain" : "80",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "211"
   }, {
-    "iri" : "https://w3id.org/todo/tododom#isTypeOf",
-    "baseIri" : "https://w3id.org/todo/tododom",
-    "range" : "18",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://w3id.org/todo/tododom#",
-        "type" : "label"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "isTypeOf",
-      "undefined" : "isTypeOf"
-    },
-    "domain" : "42",
-    "comment" : {
-      "undefined" : "(In a guide robot, with guiding and information functionalities; the TSRI of the destinations are coordinates and the TSRI of the elements to obtain information about are IDs)\n\nDestination_guideRobot hasTSRI ?x .\ncoordinate isTypeOf ?x .\n\nPieceInformation_guideRobot has TSRI ?y .\nID isTypeOf ?y ."
-    },
-    "attributes" : [ "inverse functional", "object", "someValues" ],
+    "range" : "12",
+    "domain" : "80",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "212"
   }, {
-    "range" : "91",
-    "domain" : "21",
-    "attributes" : [ "anonymous", "object" ],
+    "iri" : "http://www.daml.org/services/owl-s/1.1/Grounding.owl#wsdlOutputMessage",
+    "baseIri" : "http://www.daml.org/services/owl-s/1.1/Grounding.owl",
+    "range" : "71",
+    "label" : {
+      "IRI-based" : "wsdlOutputMessage"
+    },
+    "cardinality" : "1",
+    "domain" : "4",
+    "attributes" : [ "external", "functional", "datatype" ],
     "id" : "213"
   }, {
-    "iri" : "https://w3id.org/todo/tododom#hasType",
-    "inverse" : "156",
+    "iri" : "http://www.daml.org/services/owl-s/1.1/Grounding.owl#wsdlVersion",
+    "baseIri" : "http://www.daml.org/services/owl-s/1.1/Grounding.owl",
+    "range" : "72",
+    "label" : {
+      "IRI-based" : "wsdlVersion"
+    },
+    "cardinality" : "1",
+    "domain" : "4",
+    "attributes" : [ "external", "functional", "datatype" ],
+    "id" : "214"
+  }, {
+    "range" : "46",
+    "domain" : "80",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "215"
+  }, {
+    "range" : "64",
+    "domain" : "80",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "217"
+  }, {
+    "iri" : "https://w3id.org/todo/tododom#appliesToWorldElementGroup",
     "baseIri" : "https://w3id.org/todo/tododom",
-    "range" : "54",
+    "range" : "7",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3322,49 +3968,30 @@
       } ]
     },
     "label" : {
-      "IRI-based" : "hasType",
-      "undefined" : "hasType"
+      "IRI-based" : "appliesToWorldElementGroup",
+      "undefined" : "appliesToWorldElementGroup"
     },
-    "domain" : "17",
+    "superproperty" : [ "99" ],
+    "domain" : "100",
     "comment" : {
-      "undefined" : "(In a guide robot, with guiding and information functionalities; the TSRI of the destinations are coordinates and the TSRI of the elements to obtain information about are IDs)\n\nDestination_guideRobot hasTSRI ?x .\n?x hasType coordinate .\n\nPieceInformation_guideRobot has TSRI ?y .\n?y hasType ID ."
+      "undefined" : "Establishes the relation between an Argument and a WorldElementGroup that can be associated to it."
     },
-    "attributes" : [ "object", "someValues", "functional" ],
-    "id" : "214"
-  }, {
-    "range" : "7",
-    "domain" : "116",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "215"
-  }, {
-    "range" : "6",
-    "domain" : "116",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "216"
-  }, {
-    "range" : "4",
-    "domain" : "116",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "217"
-  }, {
-    "range" : "2",
-    "domain" : "116",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "218"
   }, {
     "range" : "1",
-    "domain" : "116",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "80",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "219"
   }, {
-    "iri" : "https://w3id.org/todo/tododom#IDval",
-    "baseIri" : "https://w3id.org/todo/tododom",
-    "range" : "145",
+    "iri" : "https://w3id.org/todo/tododfa#isArgumentSetOf",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "range" : "107",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "https://w3id.org/todo/tododom#",
+        "value" : "https://w3id.org/todo/tododfa#",
         "type" : "label"
       } ],
       "term_status" : [ {
@@ -3375,87 +4002,157 @@
       } ]
     },
     "label" : {
-      "IRI-based" : "IDval",
-      "undefined" : "IDval"
+      "IRI-based" : "isArgumentSetOf",
+      "undefined" : "isArgumentSetOf"
     },
-    "domain" : "50",
+    "domain" : "112",
     "comment" : {
-      "undefined" : "Unique identification value for individuals."
+      "undefined" : "Establishes a relation between an ArgumentSet and the Action it corresponds to."
     },
-    "attributes" : [ "datatype", "functional", "key" ],
+    "attributes" : [ "external", "inverse functional", "object", "someValues" ],
     "id" : "220"
   }, {
-    "range" : "30",
-    "domain" : "116",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "15",
+    "domain" : "80",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "221"
   }, {
-    "range" : "25",
-    "domain" : "116",
-    "attributes" : [ "anonymous", "object" ],
+    "iri" : "https://w3id.org/todo/tododfa#isFomaGrammarOf",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "range" : "89",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isFomaGrammarOf",
+      "undefined" : "isFomaGrammarOf"
+    },
+    "domain" : "67",
+    "comment" : {
+      "undefined" : "Establishes a relation between the FomaGrammar to use to perform Key Element Extraction and a Skill."
+    },
+    "attributes" : [ "external", "inverse functional", "object", "someValues" ],
     "id" : "222"
   }, {
-    "range" : "87",
-    "domain" : "116",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "107",
+    "domain" : "80",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "223"
   }, {
-    "range" : "4",
-    "domain" : "131",
-    "attributes" : [ "anonymous", "object" ],
+    "iri" : "https://w3id.org/todo/tododfa#isFrameOf",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "range" : "116",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isFrameOf",
+      "undefined" : "isFrameOf"
+    },
+    "domain" : "125",
+    "comment" : {
+      "undefined" : "https://w3id.org/todo/tododfa#"
+    },
+    "attributes" : [ "external", "object", "someValues" ],
     "id" : "224"
   }, {
-    "range" : "36",
-    "domain" : "116",
-    "attributes" : [ "anonymous", "object" ],
+    "iri" : "http://purl.org/dc/terms/isPartOf",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "isPartOf"
+    },
+    "domain" : "43",
+    "attributes" : [ "external", "object" ],
     "id" : "225"
   }, {
-    "range" : "91",
-    "domain" : "116",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "162",
+    "domain" : "80",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "226"
   }, {
-    "range" : "6",
-    "domain" : "131",
-    "attributes" : [ "anonymous", "object" ],
+    "iri" : "https://w3id.org/todo/tododfa#hasFrameHead",
+    "inverse" : "228",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "range" : "83",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasFrameHead",
+      "undefined" : "hasFrameHead"
+    },
+    "domain" : "125",
+    "comment" : {
+      "undefined" : "Establishes a relation between a Frame and its FrameHead."
+    },
+    "attributes" : [ "external", "inverse functional", "object", "someValues" ],
     "id" : "227"
   }, {
-    "range" : "1",
-    "domain" : "131",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "228"
-  }, {
-    "range" : "2",
-    "domain" : "131",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "142",
+    "domain" : "80",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "229"
   }, {
-    "range" : "7",
-    "domain" : "131",
-    "attributes" : [ "anonymous", "object" ],
+    "iri" : "https://w3id.org/todo/tododom#hasTrace",
+    "inverse" : "109",
+    "baseIri" : "https://w3id.org/todo/tododom",
+    "range" : "46",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododom#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasTrace",
+      "undefined" : "hasTrace"
+    },
+    "domain" : "125",
+    "comment" : {
+      "undefined" : "Establishes the relationship between an element and its Trace."
+    },
+    "attributes" : [ "object", "someValues" ],
     "id" : "230"
   }, {
-    "iri" : "http://www.daml.org/services/owl-s/1.1/Service.owl#supportedBy",
-    "inverse" : "19",
-    "baseIri" : "http://www.daml.org/services/owl-s/1.1/Service.owl",
-    "range" : "20",
-    "label" : {
-      "IRI-based" : "supportedBy"
-    },
-    "domain" : "21",
-    "attributes" : [ "object", "external" ],
+    "range" : "108",
+    "domain" : "80",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "231"
   }, {
-    "iri" : "https://w3id.org/todo/tododom#hasSpecification",
-    "baseIri" : "https://w3id.org/todo/tododom",
-    "range" : "50",
+    "iri" : "https://w3id.org/todo/tododfa#isFrameHeadOf",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "range" : "125",
     "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://w3id.org/todo/tododom#",
-        "type" : "label"
-      } ],
       "term_status" : [ {
         "identifier" : "term_status",
         "language" : "undefined",
@@ -3464,19 +4161,19 @@
       } ]
     },
     "label" : {
-      "IRI-based" : "hasSpecification",
-      "undefined" : "hasSpecification"
+      "IRI-based" : "isFrameHeadOf",
+      "undefined" : "isFrameHeadOf"
     },
-    "domain" : "50",
+    "domain" : "83",
     "comment" : {
-      "undefined" : "Establishes a relation between a TargetSystemReadableInformation element and its specific implementation in the target system (specification)."
+      "undefined" : "https://w3id.org/todo/tododfa#"
     },
-    "attributes" : [ "object" ],
+    "attributes" : [ "external", "functional", "object", "someValues" ],
     "id" : "232"
   }, {
-    "iri" : "https://w3id.org/todo/tododom#isTargetSystemReadableInfoOf",
+    "iri" : "https://w3id.org/todo/tododom#appliesToWorldElement",
     "baseIri" : "https://w3id.org/todo/tododom",
-    "range" : "50",
+    "range" : "80",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3492,19 +4189,54 @@
       } ]
     },
     "label" : {
-      "IRI-based" : "isTargetSystemReadableInfoOf",
-      "undefined" : "isTargetSystemReadableInfoOf"
+      "IRI-based" : "appliesToWorldElement",
+      "undefined" : "appliesToWorldElement"
     },
-    "domain" : "50",
+    "superproperty" : [ "99" ],
+    "domain" : "100",
     "comment" : {
-      "undefined" : "Establishes the relation between a TargetSystemReadableInfon and the Action/Argument/WorldElement it corresponds to."
+      "undefined" : "Establishes the relation between an Argument and a WorldElement that can be associated to it."
     },
-    "attributes" : [ "object" ],
-    "id" : "110"
+    "attributes" : [ "object", "someValues" ],
+    "id" : "233"
+  }, {
+    "iri" : "https://w3id.org/todo/tododom#hasTrace",
+    "inverse" : "109",
+    "baseIri" : "https://w3id.org/todo/tododom",
+    "range" : "142",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododom#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasTrace",
+      "undefined" : "hasTrace"
+    },
+    "domain" : "100",
+    "comment" : {
+      "undefined" : "Establishes the relationship between an element and its Trace."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "234"
+  }, {
+    "range" : "7",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "235"
   }, {
     "iri" : "https://w3id.org/todo/tododom#order",
     "baseIri" : "https://w3id.org/todo/tododom",
-    "range" : "148",
+    "range" : "216",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3523,96 +4255,482 @@
       "IRI-based" : "order",
       "undefined" : "order"
     },
-    "domain" : "50",
+    "domain" : "100",
+    "comment" : {
+      "undefined" : "Sets the order in which each argument needs to be output to the target system."
+    },
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "236"
+  }, {
+    "range" : "2",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "237"
+  }, {
+    "iri" : "https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl#wadlMessageParam",
+    "baseIri" : "https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "wadlMessageParam"
+    },
+    "domain" : "43",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "238"
+  }, {
+    "range" : "12",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "239"
+  }, {
+    "range" : "15",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "240"
+  }, {
+    "range" : "46",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "241"
+  }, {
+    "range" : "108",
+    "domain" : "125",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "242"
+  }, {
+    "range" : "11",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "243"
+  }, {
+    "range" : "108",
+    "domain" : "83",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "244"
+  }, {
+    "range" : "1",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "245"
+  }, {
+    "range" : "108",
+    "domain" : "116",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "246"
+  }, {
+    "range" : "108",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "247"
+  }, {
+    "range" : "108",
+    "domain" : "89",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "248"
+  }, {
+    "range" : "107",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "249"
+  }, {
+    "iri" : "https://w3id.org/todo/tododfa#argumentTag",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "range" : "251",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "System request: \"I need to know {argumentTag}\"\n\nArgument: destination_guideRobot\nargumentTag: \"where do you want to go\"\n\nResulting SysRequest: \"I need to know {where do you want to go}\"",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "es",
+        "value" : "System request: \"Necesito saber {argumentTag}\"\n\nArgument: destination_guideRobot\nargumentTag: \"adónde quieres ir\"\n\nResulting SysRequest: \"Necesito saber {adónde quieres ir}\"",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "argumentTag",
+      "undefined" : "argumentTag"
+    },
+    "domain" : "100",
+    "comment" : {
+      "undefined" : "String that identifies the Argument when invoked in a SystemRequest/Response (DomainONT)"
+    },
+    "attributes" : [ "external", "datatype", "someValues" ],
+    "id" : "250"
+  }, {
+    "range" : "64",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "252"
+  }, {
+    "range" : "142",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "253"
+  }, {
+    "iri" : "https://w3id.org/todo/tododfa#isArgumentOf",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "range" : "107",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isArgumentOf",
+      "undefined" : "isArgumentOf"
+    },
+    "domain" : "100",
+    "subproperty" : [ "42", "160" ],
+    "comment" : {
+      "undefined" : "Establishes a relation between an Argument and its corresponding Action."
+    },
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "254"
+  }, {
+    "range" : "12",
+    "domain" : "107",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "255"
+  }, {
+    "range" : "11",
+    "domain" : "107",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "256"
+  }, {
+    "range" : "7",
+    "domain" : "107",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "257"
+  }, {
+    "range" : "2",
+    "domain" : "107",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "258"
+  }, {
+    "range" : "1",
+    "domain" : "107",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "259"
+  }, {
+    "iri" : "https://w3id.org/todo/tododom#IDval",
+    "baseIri" : "https://w3id.org/todo/tododom",
+    "range" : "49",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododom#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IDval",
+      "undefined" : "IDval"
+    },
+    "domain" : "43",
+    "comment" : {
+      "undefined" : "Unique identification value for individuals."
+    },
+    "attributes" : [ "key", "functional", "datatype" ],
+    "id" : "260"
+  }, {
+    "range" : "15",
+    "domain" : "107",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "261"
+  }, {
+    "range" : "46",
+    "domain" : "107",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "262"
+  }, {
+    "range" : "108",
+    "domain" : "107",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "263"
+  }, {
+    "range" : "7",
+    "domain" : "162",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "264"
+  }, {
+    "iri" : "https://w3id.org/todo/tododfa#isOptionalArgumentOf",
+    "baseIri" : "https://w3id.org/todo/tododfa",
+    "range" : "43",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododfa#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isOptionalArgumentOf",
+      "undefined" : "isOptionalArgumentOf"
+    },
+    "superproperty" : [ "44" ],
+    "domain" : "43",
+    "comment" : {
+      "undefined" : "Establishes a relation between an Optional Argument (i.e. the arguments that are not compulsory in order to perform the Action) and its corresponding Action."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "160"
+  }, {
+    "range" : "64",
+    "domain" : "107",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "265"
+  }, {
+    "range" : "142",
+    "domain" : "107",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "266"
+  }, {
+    "range" : "11",
+    "domain" : "162",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "267"
+  }, {
+    "range" : "1",
+    "domain" : "162",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "268"
+  }, {
+    "range" : "2",
+    "domain" : "162",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "269"
+  }, {
+    "range" : "12",
+    "domain" : "162",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "270"
+  }, {
+    "iri" : "https://w3id.org/todo/tododom#hasSpecification",
+    "baseIri" : "https://w3id.org/todo/tododom",
+    "range" : "43",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododom#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasSpecification",
+      "undefined" : "hasSpecification"
+    },
+    "domain" : "43",
+    "comment" : {
+      "undefined" : "Establishes a relation between a TargetSystemReadableInformation element and its specific implementation in the target system (specification)."
+    },
+    "attributes" : [ "object" ],
+    "id" : "271"
+  }, {
+    "iri" : "http://www.daml.org/services/owl-s/1.1/Service.owl#supportedBy",
+    "inverse" : "32",
+    "baseIri" : "http://www.daml.org/services/owl-s/1.1/Service.owl",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "supportedBy"
+    },
+    "domain" : "34",
+    "attributes" : [ "external", "object" ],
+    "id" : "272"
+  }, {
+    "iri" : "https://w3id.org/todo/tododom#order",
+    "baseIri" : "https://w3id.org/todo/tododom",
+    "range" : "73",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododom#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "order",
+      "undefined" : "order"
+    },
+    "domain" : "43",
     "comment" : {
       "undefined" : "Sets the order in which each argument needs to be output to the target system."
     },
     "attributes" : [ "datatype" ],
-    "id" : "233"
+    "id" : "273"
+  }, {
+    "iri" : "https://w3id.org/todo/tododom#isTargetSystemReadableInfoOf",
+    "baseIri" : "https://w3id.org/todo/tododom",
+    "range" : "43",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododom#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isTargetSystemReadableInfoOf",
+      "undefined" : "isTargetSystemReadableInfoOf"
+    },
+    "domain" : "43",
+    "comment" : {
+      "undefined" : "Establishes the relation between a TargetSystemReadableInfon and the Action/Argument/WorldElement it corresponds to."
+    },
+    "attributes" : [ "object" ],
+    "id" : "138"
   }, {
     "iri" : "https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl#method",
     "baseIri" : "https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl",
-    "range" : "147",
+    "range" : "51",
     "label" : {
       "IRI-based" : "method"
     },
-    "domain" : "50",
-    "attributes" : [ "datatype", "external" ],
-    "id" : "234"
+    "domain" : "43",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "274"
   }, {
-    "range" : "25",
-    "domain" : "131",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "235"
+    "iri" : "http://purl.org/dc/terms/hasPart",
+    "inverse" : "225",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "hasPart"
+    },
+    "domain" : "43",
+    "attributes" : [ "external", "object" ],
+    "id" : "275"
   }, {
-    "range" : "36",
-    "domain" : "131",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "236"
+    "range" : "46",
+    "domain" : "162",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "276"
   }, {
-    "range" : "30",
-    "domain" : "131",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "237"
+    "range" : "64",
+    "domain" : "162",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "277"
   }, {
-    "range" : "116",
-    "domain" : "131",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "238"
+    "range" : "15",
+    "domain" : "162",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "278"
   }, {
-    "range" : "4",
-    "domain" : "52",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "239"
-  }, {
-    "range" : "91",
-    "domain" : "131",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "240"
-  }, {
-    "range" : "87",
-    "domain" : "131",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "241"
-  }, {
-    "range" : "1",
-    "domain" : "36",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "242"
-  }, {
-    "range" : "30",
-    "domain" : "36",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "243"
+    "range" : "107",
+    "domain" : "162",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "279"
   }, {
     "range" : "7",
-    "domain" : "36",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "244"
+    "domain" : "80",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "280"
   }, {
-    "range" : "6",
-    "domain" : "36",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "245"
+    "range" : "142",
+    "domain" : "162",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "281"
+  }, {
+    "range" : "108",
+    "domain" : "162",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "282"
+  }, {
+    "range" : "1",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "283"
+  }, {
+    "range" : "15",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "284"
+  }, {
+    "range" : "12",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "285"
+  }, {
+    "range" : "11",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "286"
   }, {
     "range" : "2",
-    "domain" : "91",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "246"
+    "domain" : "142",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "287"
   }, {
-    "range" : "25",
-    "domain" : "36",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "247"
+    "range" : "46",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "288"
   }, {
-    "range" : "4",
-    "domain" : "91",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "248"
+    "range" : "7",
+    "domain" : "142",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "289"
   }, {
     "iri" : "https://w3id.org/todo/tododom#implementation",
     "baseIri" : "https://w3id.org/todo/tododom",
-    "range" : "55",
+    "range" : "53",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3632,147 +4750,147 @@
       "undefined" : "implementation"
     },
     "cardinality" : "1",
-    "domain" : "50",
+    "domain" : "43",
     "comment" : {
       "undefined" : "Sets specific implementation information for a Service."
     },
-    "attributes" : [ "datatype", "functional" ],
-    "id" : "249"
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "290"
   }, {
-    "range" : "52",
-    "domain" : "20",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "250"
+    "range" : "80",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "291"
   }, {
-    "range" : "131",
-    "domain" : "20",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "251"
+    "range" : "162",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "292"
   }, {
-    "range" : "116",
-    "domain" : "20",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "252"
+    "range" : "107",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "293"
   }, {
-    "range" : "87",
-    "domain" : "20",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "253"
+    "range" : "108",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "294"
   }, {
-    "range" : "91",
-    "domain" : "20",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "254"
+    "range" : "142",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "295"
   }, {
-    "range" : "36",
-    "domain" : "20",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "255"
+    "range" : "64",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "296"
   }, {
-    "range" : "25",
-    "domain" : "20",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "256"
+    "range" : "46",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "297"
   }, {
-    "range" : "30",
-    "domain" : "20",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "257"
+    "range" : "15",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "298"
   }, {
-    "range" : "14",
-    "domain" : "20",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "258"
+    "range" : "5",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "299"
   }, {
-    "range" : "21",
-    "domain" : "20",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "259"
+    "range" : "34",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "300"
   }, {
     "range" : "1",
-    "domain" : "91",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "260"
+    "domain" : "142",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "301"
   }, {
-    "range" : "30",
-    "domain" : "91",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "261"
+    "range" : "15",
+    "domain" : "142",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "302"
+  }, {
+    "range" : "12",
+    "domain" : "142",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "303"
+  }, {
+    "range" : "11",
+    "domain" : "142",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "304"
   }, {
     "range" : "7",
-    "domain" : "91",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "262"
-  }, {
-    "range" : "6",
-    "domain" : "91",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "263"
-  }, {
-    "range" : "4",
-    "domain" : "87",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "264"
+    "domain" : "108",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "305"
   }, {
     "range" : "2",
-    "domain" : "87",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "265"
+    "domain" : "108",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "306"
   }, {
-    "range" : "25",
-    "domain" : "91",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "266"
+    "range" : "46",
+    "domain" : "142",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "307"
   }, {
-    "range" : "36",
-    "domain" : "91",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "267"
+    "range" : "64",
+    "domain" : "142",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "308"
   }, {
-    "range" : "7",
-    "domain" : "87",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "268"
+    "range" : "12",
+    "domain" : "108",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "309"
   }, {
-    "range" : "6",
-    "domain" : "87",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "269"
+    "range" : "11",
+    "domain" : "108",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "310"
   }, {
     "range" : "1",
-    "domain" : "87",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "270"
+    "domain" : "108",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "311"
   }, {
     "iri" : "http://www.daml.org/services/owl-s/1.1/Grounding.owl#wsdlDocument",
     "baseIri" : "http://www.daml.org/services/owl-s/1.1/Grounding.owl",
-    "range" : "56",
+    "range" : "55",
     "label" : {
       "IRI-based" : "wsdlDocument"
     },
     "cardinality" : "1",
-    "domain" : "50",
-    "attributes" : [ "datatype", "functional", "external" ],
-    "id" : "271"
+    "domain" : "43",
+    "attributes" : [ "external", "functional", "datatype" ],
+    "id" : "312"
   }, {
-    "range" : "36",
-    "domain" : "87",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "272"
+    "range" : "64",
+    "domain" : "108",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "313"
   }, {
-    "range" : "91",
-    "domain" : "87",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "273"
+    "range" : "142",
+    "domain" : "108",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "314"
   }, {
-    "range" : "30",
-    "domain" : "87",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "274"
+    "range" : "15",
+    "domain" : "108",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "315"
   }, {
-    "range" : "25",
-    "domain" : "87",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "275"
+    "range" : "46",
+    "domain" : "108",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "316"
   } ]
 }

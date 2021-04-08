@@ -7,6 +7,8 @@
 @base <https://w3id.org/todo/tododom> .
 
 <https://w3id.org/todo/tododom> rdf:type owl:Ontology ;
+                                 owl:imports <https://w3id.org/todo/tododfa> ,
+                                             <https://w3id.org/todo/tododw> ;
                                  <http://creativecommons.org/ns#license> "http://purl.org/NET/rdflicense/cc-by4.0" ;
                                  <http://purl.org/dc/terms/contributor> "Izaskun Fernández (Tekniker) <mailto:izaskun.fernandez@tekniker.es>" ;
                                  <http://purl.org/dc/terms/created> "2020-04-21T00:00:00"^^xsd:dateTime ;

@@ -1,4 +1,6 @@
 <https://w3id.org/todo/todo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/todo/todo> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/todo/tododial> .
+<https://w3id.org/todo/todo> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/todo/tododom> .
 <https://w3id.org/todo/todo> <http://creativecommons.org/ns#license> "CC BY <https://creativecommons.org/licenses/by/2.0/>" .
 <https://w3id.org/todo/todo> <http://purl.org/dc/terms/contributor> "Izaskun Fernández (Tekniker) <mailto:izaskun.fernandez@tekniker.es>" .
 <https://w3id.org/todo/todo> <http://purl.org/dc/terms/created> "2020-04-21T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
@@ -10,45 +12,6 @@
 <https://w3id.org/todo/todo> <http://purl.org/vocab/vann/preferredNamespacePrefix> "DialSystemOnt" .
 <https://w3id.org/todo/todo> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/todo/todo" .
 <https://w3id.org/todo/todo> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
-# 
-# 
-# #################################################################
-# #
-# #    Annotation properties
-# #
-# #################################################################
-# 
-# 
-# http://creativecommons.org/ns#license
-<http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://purl.org/dc/terms/contributor
-<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://purl.org/dc/terms/created
-<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://purl.org/dc/terms/creator
-<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://purl.org/dc/terms/description
-<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://purl.org/dc/terms/issued
-<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://purl.org/dc/terms/modified
-<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://purl.org/dc/terms/title
-<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://purl.org/vocab/vann/preferredNamespacePrefix
-<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://purl.org/vocab/vann/preferredNamespaceUri
-<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
 # 
 # 
 # #################################################################

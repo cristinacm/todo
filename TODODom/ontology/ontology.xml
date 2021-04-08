@@ -12,6 +12,8 @@
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/todo/tododom">
+        <owl:imports rdf:resource="https://w3id.org/todo/tododfa"/>
+        <owl:imports rdf:resource="https://w3id.org/todo/tododw"/>
         <ns:license>http://purl.org/NET/rdflicense/cc-by4.0</ns:license>
         <terms:contributor>Izaskun Fernández (Tekniker) &lt;mailto:izaskun.fernandez@tekniker.es&gt;</terms:contributor>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-21T00:00:00</terms:created>

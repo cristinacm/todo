@@ -2,14 +2,18 @@
 <rdf:RDF xmlns="https://w3id.org/todo/todo#"
      xml:base="https://w3id.org/todo/todo"
      xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:ns1="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/todo/todo">
+        <owl:imports rdf:resource="https://w3id.org/todo/tododial"/>
+        <owl:imports rdf:resource="https://w3id.org/todo/tododom"/>
         <ns:license>CC BY &lt;https://creativecommons.org/licenses/by/2.0/&gt;</ns:license>
         <terms:contributor>Izaskun Fernández (Tekniker) &lt;mailto:izaskun.fernandez@tekniker.es&gt;</terms:contributor>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-21T00:00:00</terms:created>
@@ -22,88 +26,6 @@
         <vann:preferredNamespaceUri>https://w3id.org/todo/todo</vann:preferredNamespaceUri>
         <owl:versionInfo>1.0.0</owl:versionInfo>
     </owl:Ontology>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotation properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-
-    
-
-
-    <!-- http://creativecommons.org/ns#license -->
-
-
-    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/contributor -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/created -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/creator -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/description -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/issued -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/modified -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/title -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
-    
-
-
-    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
-    
-
-
-    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
     
 
 
