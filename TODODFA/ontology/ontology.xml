@@ -1,0 +1,758 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/todo/tododfa#"
+     xml:base="https://w3id.org/todo/tododfa"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:ns1="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://w3id.org/todo/tododfa">
+        <ns:license>http://purl.org/NET/rdflicense/cc-by4.0</ns:license>
+        <terms:contributor>Izaskun Fernández (Tekniker) &lt;mailto:izaskun.fernandez@tekniker.es&gt;</terms:contributor>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-21T00:00:00</terms:created>
+        <terms:creator>Cristina Aceta (Tekniker) &lt;mailto:cristina.aceta@tekniker.es&gt;</terms:creator>
+        <terms:description>Module for Action (and Frame) modelling inside domain.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></terms:issued>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-08T16:00:00</terms:modified>
+        <terms:title>TODODFA: Frame-Action Module for Task-Oriented Dialogue management Ontology (TODO)</terms:title>
+        <vann:preferredNamespacePrefix>tododfa</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://w3id.org/todo/tododfa</vann:preferredNamespaceUri>
+        <owl:priorVersion></owl:priorVersion>
+        <owl:versionInfo>1.0.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://creativecommons.org/ns#license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/bibliographicCitation -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionIRI -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionIRI"/>
+    
+
+
+    <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#example -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#example"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/todo/tododfa#belongsToAction -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododfa#belongsToAction">
+        <owl:inverseOf rdf:resource="https://w3id.org/todo/tododfa#belongsToIntent"/>
+        <rdfs:comment>Establishes the relation between an Intent and the Action it belongs to.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
+        <rdfs:label>belongsToAction</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/todo/tododfa#belongsToIntent -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododfa#belongsToIntent">
+        <rdfs:comment>Establishes the relation between an Action and the Intent it belongs to.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
+        <rdfs:label>belongsToIntent</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/todo/tododfa#hasArgument -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododfa#hasArgument">
+        <owl:inverseOf rdf:resource="https://w3id.org/todo/tododfa#isArgumentOf"/>
+        <rdfs:comment>Establishes a relation between an Action and its Argument(s).</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
+        <rdfs:label>hasArgument</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/todo/tododfa#hasArgumentSet -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododfa#hasArgumentSet">
+        <owl:inverseOf rdf:resource="https://w3id.org/todo/tododfa#isArgumentSetOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:comment>Establishes a relation between an Action and the set composed of its Argument(s).</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
+        <rdfs:label>hasArgumentSet</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/todo/tododfa#hasCoreArgument -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododfa#hasCoreArgument">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/todo/tododfa#hasArgument"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/todo/tododfa#isCoreArgumentOf"/>
+        <rdfs:comment>Establishes a relation between an Action and its CoreArguments (i.e. the arguments that are compulsory in order to perform the Action).</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
+        <rdfs:label>hasCoreArgument</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/todo/tododfa#hasFomaGrammar -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododfa#hasFomaGrammar">
+        <owl:inverseOf rdf:resource="https://w3id.org/todo/tododfa#isFomaGrammarOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:comment>Establishes a relation between a Skill and the FomaGrammar to use to perform Key Element Extraction.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
+        <rdfs:label>hasFomaGrammar</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/todo/tododfa#hasFrame -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododfa#hasFrame">
+        <owl:inverseOf rdf:resource="https://w3id.org/todo/tododfa#isFrameOf"/>
+        <rdfs:comment>Establishes a relation between an Intent and its corresponding Frame.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
+        <rdfs:label>hasFrame</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/todo/tododfa#hasFrameHead -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododfa#hasFrameHead">
+        <owl:inverseOf rdf:resource="https://w3id.org/todo/tododfa#isFrameHeadOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:comment>Establishes a relation between a Frame and its FrameHead.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
+        <rdfs:label>hasFrameHead</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/todo/tododfa#hasIntent -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododfa#hasIntent">
+        <owl:inverseOf rdf:resource="https://w3id.org/todo/tododfa#isIntentOf"/>
+        <rdfs:comment>Establishes a relation between a Skill and its corresponding Intent(s).</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
+        <rdfs:label>hasIntent</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/todo/tododfa#hasOptionalArgument -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododfa#hasOptionalArgument">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/todo/tododfa#hasArgument"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/todo/tododfa#isOptionalArgumentOf"/>
+        <rdfs:comment>Establishes a relation between an Action and its OptionalArguments (i.e. the arguments that are not compulsory in order to perform the Action).</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
+        <rdfs:label>hasOptionalArgument</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/todo/tododfa#isArgumentOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododfa#isArgumentOf">
+        <rdfs:comment>Establishes a relation between an Argument and its corresponding Action.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
+        <rdfs:label>isArgumentOf</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/todo/tododfa#isArgumentSetOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododfa#isArgumentSetOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:comment>Establishes a relation between an ArgumentSet and the Action it corresponds to.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
+        <rdfs:label>isArgumentSetOf</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/todo/tododfa#isCoreArgumentOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododfa#isCoreArgumentOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/todo/tododfa#isArgumentOf"/>
+        <rdfs:comment>Establishes a relation between a CoreArgument (i.e. the arguments that are compulsory in order to perform the Action) and its corresponding Action.</rdfs:comment>
+        <rdfs:comment>https://w3id.org/todo/tododfa#</rdfs:comment>
+        <rdfs:label>isCoreArgumentOf</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/todo/tododfa#isFomaGrammarOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododfa#isFomaGrammarOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:comment>Establishes a relation between the FomaGrammar to use to perform Key Element Extraction and a Skill.</rdfs:comment>
+        <rdfs:comment>https://w3id.org/todo/tododfa#</rdfs:comment>
+        <rdfs:label>isFomaGrammarOf</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/todo/tododfa#isFrameHeadOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododfa#isFrameHeadOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:comment>Establishes a relation between a FrameHead and the Frame it applies to.</rdfs:comment>
+        <rdfs:comment>https://w3id.org/todo/tododfa#</rdfs:comment>
+        <rdfs:label>isFrameHeadOf</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/todo/tododfa#isFrameOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododfa#isFrameOf">
+        <rdfs:comment>Establishes a relation between a Frame and the Intent it corresponds to.</rdfs:comment>
+        <rdfs:comment>https://w3id.org/todo/tododfa#</rdfs:comment>
+        <rdfs:label>isFrameOf</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/todo/tododfa#isIntentOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododfa#isIntentOf">
+        <rdfs:comment>Establishes a relation between an Intent and its corresponding Skill.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
+        <rdfs:label>isIntentOf</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/todo/tododfa#isOptionalArgumentOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododfa#isOptionalArgumentOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/todo/tododfa#isArgumentOf"/>
+        <rdfs:comment>Establishes a relation between an Optional Argument (i.e. the arguments that are not compulsory in order to perform the Action) and its corresponding Action.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
+        <rdfs:label>isOptionalArgumentOf</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/todo/tododfa#actionTag -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/todo/tododfa#actionTag">
+        <rdfs:comment>String that identifies the Action when invoked in a SystemRequest/Response (DomainONT).</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododfa</rdfs:isDefinedBy>
+        <rdfs:label>actionTag</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+        <skos:example xml:lang="en">System request: &quot;Do you need me to {argumentTag}?&quot;
+
+Action: take_guideRobot
+actionTag: &quot;take you somewhere&quot;
+
+Resulting SysRequest: &quot;Do you need me to {take you somewhere}?&quot;</skos:example>
+        <skos:example xml:lang="es">System request: &quot;Necesitas que {argumentTag}?&quot;
+
+Action: take_guideRobot
+actionTag: &quot;te lleve a algún lugar&quot;
+
+Resulting SysRequest: &quot;Necesitas que {te lleve}?&quot;</skos:example>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/todo/tododfa#argumentConnector -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/todo/tododfa#argumentConnector">
+        <rdfs:comment>String that defines the word that acts as a connector between the Argument and the rest of elements in a SystemRequest/Response.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododfa</rdfs:isDefinedBy>
+        <rdfs:label>argumentConnector</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+        <skos:example xml:lang="en">SystemRequest: Do you want me {actionTag}{argumentConnector}{WorldElement}?
+
+Action: take_guideRobot
+argumentConnector: &quot;to&quot;
+
+&quot;Do you want me {to take you}{to}{the restroom}?&quot;</skos:example>
+        <skos:example xml:lang="es">SystemRequest: ¿Necesitas que {actionTag}{argumentConnector}{WorldElement}?
+
+Action: take_guideRobot
+argumentConnector: &quot;a&quot;
+
+&quot;¿Necesitas que {te lleve}{a}{la sala}?&quot;</skos:example>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/todo/tododfa#argumentTag -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/todo/tododfa#argumentTag">
+        <rdfs:comment>String that identifies the Argument when invoked in a SystemRequest/Response (DomainONT)</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
+        <rdfs:label>argumentTag</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+        <skos:example xml:lang="en">System request: &quot;I need to know {argumentTag}&quot;
+
+Argument: destination_guideRobot
+argumentTag: &quot;where do you want to go&quot;
+
+Resulting SysRequest: &quot;I need to know {where do you want to go}&quot;</skos:example>
+        <skos:example xml:lang="es">System request: &quot;Necesito saber {argumentTag}&quot;
+
+Argument: destination_guideRobot
+argumentTag: &quot;adónde quieres ir&quot;
+
+Resulting SysRequest: &quot;Necesito saber {adónde quieres ir}&quot;</skos:example>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/todo/tododfa#Action -->
+
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododfa#Action">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododfa#belongsToIntent"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododfa#Intent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododfa#hasArgument"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododfa#Argument"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododfa#hasArgumentSet"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododfa#ArgumentSet"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododfa#actionTag"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Element that makes reference to the functionalities of the target system.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Action</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+        <skos:example>(For a multipurpose robot) Guide, provide_information, pick, place</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/todo/tododfa#Argument -->
+
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododfa#Argument">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododfa#isArgumentOf"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododfa#Action"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododfa#argumentTag"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Participant that is involved in the event described by the Frame. It can be Core (its presence is compulsory to convey the event) or Optional (its presence is not compulsory, but it adds additional information).</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Argument</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+        <skos:example xml:lang="en">Frame: Losing
+
+ArgumentSet:
+* Owner [Core]
+* Possession [Core]
+* Place [Optional]
+* Time [Optional]
+...
+
+For the sentence &quot;My mother lost her watch at home&quot;:
+&quot;[My mother - owner(C)] LOST [her watch - possession(C)] (at home - place (O))&quot;</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/todo/tododfa#ArgumentSet -->
+
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododfa#ArgumentSet">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododfa#isArgumentSetOf"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododfa#Action"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">The group of Arguments that belong to a Frame.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">ArgumentSet</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+        <skos:example xml:lang="en">Frame: Losing
+
+ArgumentSet:
+* Owner [Core]
+* Possession [Core]
+* Place [Optional]
+* Time [Optional]
+...
+
+For the sentence &quot;My mother lost her watch at home&quot;:
+&quot;[My mother - owner(C)] LOST [her watch - possession(C)] (at home - place (O))&quot;</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/todo/tododfa#FomaGrammar -->
+
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododfa#FomaGrammar">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododfa#isFomaGrammarOf"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododfa#Skill"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Grammar to be used by Foma to perform Key Element Extraction.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">FomaGrammar</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/todo/tododfa#Frame -->
+
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododfa#Frame">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododfa#hasFrameHead"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododfa#FrameHead"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododfa#isFrameOf"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododfa#Intent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A specific event or situation evoked by a specific word (FrameHead), along with its participants (Arguments).</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Frame</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+        <skos:example xml:lang="en">Frame: Losing
+
+FrameHead: lose (LexicalUnit: lose.v)
+
+ArgumentSet:
+* Owner [Core]
+* Possession [Core]
+* Place [Optional]
+* Time [Optional]
+...
+
+For the sentence &quot;My mother lost her watch at home&quot;:
+&quot;[My mother - owner(C)] LOST [her watch - possession(C)] (at home - place (O))&quot;</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/todo/tododfa#FrameHead -->
+
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododfa#FrameHead">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododfa#isFrameHeadOf"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododfa#Frame"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Word (or more than one) that evokes a specific situation or event, with its specific participants; that is, a frame. It is represented by one or more LexicalUnits.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">FrameHead</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+        <skos:example xml:lang="en">Frame: Losing
+
+FrameHead: lose (LexicalUnit: lose.v)
+
+ArgumentSet:
+* Owner [Core]
+* Possession [Core]
+* Place [Optional]
+* Time [Optional]
+...
+
+For the sentence &quot;My mother lost her watch at home&quot;:
+&quot;[My mother - owner(C)] LOST [her watch - possession(C)] (at home - place (O))&quot;</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/todo/tododfa#Intent -->
+
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododfa#Intent">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododfa#belongsToAction"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododfa#Action"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododfa#hasFrame"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododfa#Frame"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododfa#isIntentOf"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododfa#Skill"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">User intention when formulating a request.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Intent</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+        <skos:example xml:lang="en">User request: &quot;I want information about Mona Lisa&quot;
+
+Intent: receive_information</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/todo/tododfa#Skill -->
+
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododfa#Skill">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododfa#hasIntent"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododfa#Intent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododfa#hasFomaGrammar"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/todo/tododfa#FomaGrammar"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Element that makes reference to the capabilities of the target system.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Skill</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+        <skos:example>(For a multipurpose robot) GuideRobot, RoboticArm</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododfa#Action"/>
+            <rdf:Description rdf:about="https://w3id.org/todo/tododfa#Argument"/>
+            <rdf:Description rdf:about="https://w3id.org/todo/tododfa#ArgumentSet"/>
+            <rdf:Description rdf:about="https://w3id.org/todo/tododfa#FomaGrammar"/>
+            <rdf:Description rdf:about="https://w3id.org/todo/tododfa#Frame"/>
+            <rdf:Description rdf:about="https://w3id.org/todo/tododfa#FrameHead"/>
+            <rdf:Description rdf:about="https://w3id.org/todo/tododfa#Intent"/>
+            <rdf:Description rdf:about="https://w3id.org/todo/tododfa#Skill"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/ -->
+
+

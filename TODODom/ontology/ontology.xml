@@ -1,0 +1,1423 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/todo/tododom#"
+     xml:base="https://w3id.org/todo/tododom"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:ns1="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://w3id.org/todo/tododom">
+        <owl:imports rdf:resource="https://w3id.org/todo/tododfa"/>
+        <owl:imports rdf:resource="https://w3id.org/todo/tododw"/>
+        <ns:license>http://purl.org/NET/rdflicense/cc-by4.0</ns:license>
+        <terms:contributor>Izaskun Fernández (Tekniker) &lt;mailto:izaskun.fernandez@tekniker.es&gt;</terms:contributor>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-21T00:00:00</terms:created>
+        <terms:creator>Cristina Aceta (Tekniker) &lt;mailto:cristina.aceta@tekniker.es&gt;</terms:creator>
+        <terms:description>Module for domain modelling.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></terms:issued>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-09T10:00:00</terms:modified>
+        <terms:title>TODODom: Domain Module for Task-Oriented Dialogue management Ontology (TODO)</terms:title>
+        <vann:preferredNamespacePrefix>tododom</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://w3id.org/todo/tododom</vann:preferredNamespaceUri>
+        <owl:priorVersion></owl:priorVersion>
+        <owl:versionInfo>1.0.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://creativecommons.org/ns#license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/bibliographicCitation -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionIRI -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionIRI"/>
+    
+
+
+    <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#example -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#example"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.daml.org/services/owl-s/1.1/Grounding.owl#hasAtomicProcessGrounding -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.daml.org/services/owl-s/1.1/Grounding.owl#hasAtomicProcessGrounding">
+        <rdfs:domain rdf:resource="http://www.daml.org/services/owl-s/1.2/Grounding.owl#Grounding"/>
+        <rdfs:range rdf:resource="http://www.daml.org/services/owl-s/1.2/Grounding.owl#AtomicProcessGrounding"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.daml.org/services/owl-s/1.1/Service.owl#supportedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.daml.org/services/owl-s/1.1/Service.owl#supportedBy">
+        <owl:inverseOf rdf:resource="http://www.daml.org/services/owl-s/1.1/Service.owl#supports"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.daml.org/services/owl-s/1.1/Service.owl#supports -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.daml.org/services/owl-s/1.1/Service.owl#supports">
+        <rdfs:domain rdf:resource="http://www.daml.org/services/owl-s/1.1/Service.owl#Service"/>
+        <rdfs:range rdf:resource="http://www.daml.org/services/owl-s/1.2/Service.owl#ServiceGrounding"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl#wadlResourceMethod -->
+
+
+    <owl:ObjectProperty rdf:about="https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl#wadlResourceMethod"/>
+    
+
+
+    <!-- https://w3id.org/todo/tododfa#belongsToAction -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododfa#belongsToAction"/>
+    
+
+
+    <!-- https://w3id.org/todo/tododfa#belongsToIntent -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododfa#belongsToIntent"/>
+    
+
+
+    <!-- https://w3id.org/todo/tododfa#hasArgument -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododfa#hasArgument"/>
+    
+
+
+    <!-- https://w3id.org/todo/tododfa#hasFrame -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododfa#hasFrame"/>
+    
+
+
+    <!-- https://w3id.org/todo/tododfa#hasIntent -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododfa#hasIntent"/>
+    
+
+
+    <!-- https://w3id.org/todo/tododfa#isArgumentOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododfa#isArgumentOf"/>
+    
+
+
+    <!-- https://w3id.org/todo/tododfa#isFrameOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododfa#isFrameOf"/>
+    
+
+
+    <!-- https://w3id.org/todo/tododfa#isIntentOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododfa#isIntentOf"/>
+    
+
+
+    <!-- https://w3id.org/todo/tododom#appliesToWorld -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododom#appliesToWorld">
+        <owl:inverseOf rdf:resource="https://w3id.org/todo/tododom#isApplicableToArgument"/>
+        <rdfs:comment>Establishes the relation between an Argument and the WorldElements that can be associated to it.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododom#</rdfs:isDefinedBy>
+        <rdfs:label>appliesToWorld</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/todo/tododom#appliesToWorldElement -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododom#appliesToWorldElement">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/todo/tododom#appliesToWorld"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <rdfs:comment>Establishes the relation between an Argument and a WorldElement that can be associated to it.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododom#</rdfs:isDefinedBy>
+        <rdfs:label>appliesToWorldElement</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/todo/tododom#appliesToWorldElementGroup -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododom#appliesToWorldElementGroup">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/todo/tododom#appliesToWorld"/>
+        <rdfs:range rdf:resource="https://w3id.org/todo/tododom#WorldElementGroup"/>
+        <rdfs:comment>Establishes the relation between an Argument and a WorldElementGroup that can be associated to it.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododom#</rdfs:isDefinedBy>
+        <rdfs:label>appliesToWorldElementGroup</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/todo/tododom#hasGroupMember -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododom#hasGroupMember">
+        <owl:inverseOf rdf:resource="https://w3id.org/todo/tododom#isMemberOfGroup"/>
+        <rdfs:comment>Establishes the relation between a WorldElementGroup and a member of said group.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododom#</rdfs:isDefinedBy>
+        <rdfs:label>hasGroupMember</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/todo/tododom#hasLexicalUnit -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododom#hasLexicalUnit">
+        <owl:inverseOf rdf:resource="https://w3id.org/todo/tododom#isLexicalUnitOf"/>
+        <rdfs:comment>Establishes the relation between a FrameHead/WorldElement and one of its corresponding Lexical Units.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododom#</rdfs:isDefinedBy>
+        <rdfs:label>hasLexicalUnit</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/todo/tododom#hasSpecification -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododom#hasSpecification">
+        <rdfs:comment>Establishes a relation between a TargetSystemReadableInformation element and its specific implementation in the target system (specification).</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododom#</rdfs:isDefinedBy>
+        <rdfs:label>hasSpecification</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/todo/tododom#hasTargetSystemReadableInfo -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododom#hasTargetSystemReadableInfo">
+        <owl:inverseOf rdf:resource="https://w3id.org/todo/tododom#isTargetSystemReadableInfoOf"/>
+        <rdfs:comment>Establishes the relation between an Action/Argument/WorldElement and its corresponding TargetSystemReadableInfo.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododom#</rdfs:isDefinedBy>
+        <rdfs:label>hasTargetSystemReadableInfo</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/todo/tododom#hasTrace -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododom#hasTrace">
+        <owl:inverseOf rdf:resource="https://w3id.org/todo/tododom#isTraceOf"/>
+        <rdfs:comment>Establishes the relationship between an element and its Trace.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododom#</rdfs:isDefinedBy>
+        <rdfs:label>hasTrace</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/todo/tododom#hasType -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododom#hasType">
+        <owl:inverseOf rdf:resource="https://w3id.org/todo/tododom#isTypeOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:comment>(In a guide robot, with guiding and information functionalities; the TSRI of the destinations are coordinates and the TSRI of the elements to obtain information about are IDs)
+
+Destination_guideRobot hasTSRI ?x .
+?x hasType coordinate .
+
+PieceInformation_guideRobot has TSRI ?y .
+?y hasType ID .</rdfs:comment>
+        <rdfs:comment>Establishes a relation between an Action/Argument/WorldElement TSRI and its TSRI type.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododom#</rdfs:isDefinedBy>
+        <rdfs:label>hasType</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/todo/tododom#hasValue -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododom#hasValue">
+        <rdfs:comment>Establishes the relation between an ArgumentTrace and its corresponding value (WorldElement).</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododom#</rdfs:isDefinedBy>
+        <rdfs:label>hasValue</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/todo/tododom#isApplicableToArgument -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododom#isApplicableToArgument">
+        <rdfs:range rdf:resource="https://w3id.org/todo/tododfa#Argument"/>
+        <rdfs:comment>Establishes the relation between a WorldElement and the Argument(s) that it can be associated to.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododom#</rdfs:isDefinedBy>
+        <rdfs:label>isApplicableToArgument</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/todo/tododom#isLexicalUnitOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododom#isLexicalUnitOf">
+        <rdfs:comment>Establishes the relation between a Lexical Unit and its corresponding FrameHead/WorldElement.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododom#</rdfs:isDefinedBy>
+        <rdfs:label>isLexicalUnitOf</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/todo/tododom#isMemberOfGroup -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododom#isMemberOfGroup">
+        <rdfs:comment>Establishes the relation between a WorldElement and a WorldElementGroup, which is a member of.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododom#</rdfs:isDefinedBy>
+        <rdfs:label>isMemberOfGroup</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/todo/tododom#isTargetSystemReadableInfoOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododom#isTargetSystemReadableInfoOf">
+        <rdfs:comment>Establishes the relation between a TargetSystemReadableInfon and the Action/Argument/WorldElement it corresponds to.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododom#</rdfs:isDefinedBy>
+        <rdfs:label>isTargetSystemReadableInfoOf</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/todo/tododom#isTraceOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododom#isTraceOf">
+        <rdfs:comment>Establishes the relationship between a Trace and the element it refers to.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododom#</rdfs:isDefinedBy>
+        <rdfs:label>isTraceOf</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/todo/tododom#isTypeOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododom#isTypeOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:comment>(In a guide robot, with guiding and information functionalities; the TSRI of the destinations are coordinates and the TSRI of the elements to obtain information about are IDs)
+
+Destination_guideRobot hasTSRI ?x .
+coordinate isTypeOf ?x .
+
+PieceInformation_guideRobot has TSRI ?y .
+ID isTypeOf ?y .</rdfs:comment>
+        <rdfs:comment>Establishes a relation between a TSRI type and the Action/Argument/WorldElement TSRI with said TSRI type.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododom#</rdfs:isDefinedBy>
+        <rdfs:label>isTypeOf</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.daml.org/services/owl-s/1.1/Grounding.owl#wsdlDocument -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.daml.org/services/owl-s/1.1/Grounding.owl#wsdlDocument">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.daml.org/services/owl-s/1.1/Grounding.owl#wsdlInputMessage -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.daml.org/services/owl-s/1.1/Grounding.owl#wsdlInputMessage">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.daml.org/services/owl-s/1.2/Grounding.owl#WsdlAtomicProcessGrounding"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.daml.org/services/owl-s/1.1/Grounding.owl#wsdlOutputMessage -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.daml.org/services/owl-s/1.1/Grounding.owl#wsdlOutputMessage">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.daml.org/services/owl-s/1.2/Grounding.owl#WsdlAtomicProcessGrounding"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.daml.org/services/owl-s/1.1/Grounding.owl#wsdlVersion -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.daml.org/services/owl-s/1.1/Grounding.owl#wsdlVersion">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.daml.org/services/owl-s/1.2/Grounding.owl#WsdlAtomicProcessGrounding"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl#method -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl#method">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/todo/tododom#implementation"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl#resource -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl#resource"/>
+    
+
+
+    <!-- https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl#wadlDocument -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl#wadlDocument"/>
+    
+
+
+    <!-- https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl#wadlMessageParam -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl#wadlMessageParam">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/todo/tododom#implementation"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl#wadlVersion -->
+
+
+    <owl:DatatypeProperty rdf:about="https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl#wadlVersion"/>
+    
+
+
+    <!-- https://w3id.org/todo/tododom#IDval -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/todo/tododom#IDval">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:comment>Unique identification value for individuals.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododom#</rdfs:isDefinedBy>
+        <rdfs:label>IDval</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/todo/tododom#implementation -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/todo/tododom#implementation">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:comment>Sets specific implementation information for a Service.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododom#</rdfs:isDefinedBy>
+        <rdfs:label>implementation</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/todo/tododom#order -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/todo/tododom#order">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment>Sets the order in which each argument needs to be output to the target system.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododom#</rdfs:isDefinedBy>
+        <rdfs:label>order</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/todo/tododom#val -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/todo/tododom#val">
+        <rdfs:comment>Sets the value of a TSRI to be input to the target system.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododom#</rdfs:isDefinedBy>
+        <rdfs:label>val</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.daml.org/services/owl-s/1.1/Service.owl#Service -->
+
+
+    <owl:Class rdf:about="http://www.daml.org/services/owl-s/1.1/Service.owl#Service">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.daml.org/services/owl-s/1.1/Service.owl#supports"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.daml.org/services/owl-s/1.2/Service.owl#ServiceGrounding"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.daml.org/services/owl-s/1.2/Grounding.owl#AtomicProcessGrounding -->
+
+
+    <owl:Class rdf:about="http://www.daml.org/services/owl-s/1.2/Grounding.owl#AtomicProcessGrounding"/>
+    
+
+
+    <!-- http://www.daml.org/services/owl-s/1.2/Grounding.owl#Grounding -->
+
+
+    <owl:Class rdf:about="http://www.daml.org/services/owl-s/1.2/Grounding.owl#Grounding">
+        <rdfs:subClassOf rdf:resource="http://www.daml.org/services/owl-s/1.2/Service.owl#ServiceGrounding"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.daml.org/services/owl-s/1.2/Grounding.owl#WadlAtomicProcessGrounding -->
+
+
+    <owl:Class rdf:about="http://www.daml.org/services/owl-s/1.2/Grounding.owl#WadlAtomicProcessGrounding">
+        <rdfs:subClassOf rdf:resource="http://www.daml.org/services/owl-s/1.2/Grounding.owl#AtomicProcessGrounding"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.daml.org/services/owl-s/1.2/Grounding.owl#WsdlAtomicProcessGrounding -->
+
+
+    <owl:Class rdf:about="http://www.daml.org/services/owl-s/1.2/Grounding.owl#WsdlAtomicProcessGrounding">
+        <rdfs:subClassOf rdf:resource="http://www.daml.org/services/owl-s/1.2/Grounding.owl#AtomicProcessGrounding"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.daml.org/services/owl-s/1.1/Grounding.owl#wsdlDocument"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.daml.org/services/owl-s/1.1/Grounding.owl#wsdlInputMessage"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.daml.org/services/owl-s/1.1/Grounding.owl#wsdlOutputMessage"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.daml.org/services/owl-s/1.1/Grounding.owl#wsdlVersion"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododom#IDval"/>
+        </owl:hasKey>
+    </owl:Class>
+    
+
+
+    <!-- http://www.daml.org/services/owl-s/1.2/Grounding.owl#WsdlGrounding -->
+
+
+    <owl:Class rdf:about="http://www.daml.org/services/owl-s/1.2/Grounding.owl#WsdlGrounding">
+        <rdfs:subClassOf rdf:resource="http://www.daml.org/services/owl-s/1.2/Grounding.owl#Grounding"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.daml.org/services/owl-s/1.1/Grounding.owl#hasAtomicProcessGrounding"/>
+                <owl:someValuesFrom rdf:resource="http://www.daml.org/services/owl-s/1.2/Grounding.owl#WsdlAtomicProcessGrounding"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.daml.org/services/owl-s/1.2/Service.owl#ServiceGrounding -->
+
+
+    <owl:Class rdf:about="http://www.daml.org/services/owl-s/1.2/Service.owl#ServiceGrounding"/>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododom#hasLexicalUnit"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododom#LexicalUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododom#hasTargetSystemReadableInfo"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododom#TargetSystemReadableInformation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododom#isMemberOfGroup"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododom#WorldElementGroup"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododom#IDval"/>
+        </owl:hasKey>
+    </owl:Class>
+    
+
+
+    <!-- https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl#WadlGrounding -->
+
+
+    <owl:Class rdf:about="https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl#WadlGrounding">
+        <rdfs:subClassOf rdf:resource="http://www.daml.org/services/owl-s/1.2/Grounding.owl#Grounding"/>
+    </owl:Class>
+    
+
+
+    <!-- https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl#WadlResourceMethodRef -->
+
+
+    <owl:Class rdf:about="https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl#WadlResourceMethodRef"/>
+    
+
+
+    <!-- https://w3id.org/todo/tododfa#Action -->
+
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododfa#Action">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododom#hasTrace"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododom#ActionTrace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododom#hasTargetSystemReadableInfo"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/todo/tododom#TargetSystemReadableInformation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododom#IDval"/>
+        </owl:hasKey>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/todo/tododfa#Argument -->
+
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododfa#Argument">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododom#appliesToWorldElement"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododom#appliesToWorldElementGroup"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododom#WorldElementGroup"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododom#hasTrace"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododom#ArgumentTrace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododom#hasTargetSystemReadableInfo"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/todo/tododom#TargetSystemReadableInformation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododom#order"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododom#IDval"/>
+        </owl:hasKey>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/todo/tododfa#ArgumentSet -->
+
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododfa#ArgumentSet">
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododom#IDval"/>
+        </owl:hasKey>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/todo/tododfa#FomaGrammar -->
+
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododfa#FomaGrammar">
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododom#IDval"/>
+        </owl:hasKey>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/todo/tododfa#Frame -->
+
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododfa#Frame">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododom#hasTrace"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododom#FrameTrace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododom#IDval"/>
+        </owl:hasKey>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/todo/tododfa#FrameHead -->
+
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododfa#FrameHead">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododom#hasLexicalUnit"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododom#LexicalUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododom#IDval"/>
+        </owl:hasKey>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/todo/tododfa#Intent -->
+
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododfa#Intent">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododom#hasTrace"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododom#IntentTrace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododom#IDval"/>
+        </owl:hasKey>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/todo/tododfa#Skill -->
+
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododfa#Skill">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododom#hasTrace"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododom#SkillTrace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododom#IDval"/>
+        </owl:hasKey>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/todo/tododom#ActionTSRI -->
+
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododom#ActionTSRI">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododom#TargetSystemReadableInformation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododom#hasType"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododom#ActionType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododom#IDval"/>
+        </owl:hasKey>
+        <rdfs:comment>Target System Readable Information corresponding to elements of the class Action.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododom#</rdfs:isDefinedBy>
+        <rdfs:label>ActionTSRI</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/todo/tododom#ActionTrace -->
+
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododom#ActionTrace">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododfa#belongsToIntent"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododom#IntentTrace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododfa#hasArgument"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododom#ArgumentTrace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododom#isTraceOf"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododfa#Action"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododom#IDval"/>
+        </owl:hasKey>
+        <rdfs:comment>Element that leaves a record of an Action obtained throughout the dialogue process.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododom#</rdfs:isDefinedBy>
+        <rdfs:label>ActionTrace</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/todo/tododom#ActionType -->
+
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododom#ActionType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododom#InfoType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododom#isTypeOf"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododom#ActionTSRI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododom#IDval"/>
+        </owl:hasKey>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododom#</rdfs:isDefinedBy>
+        <rdfs:label>ActionType</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+        <skos:example>Action: obtain_information -&gt; it is directed towards API REST service
+The TSRI for obtain_information has an ActionType &quot;service&quot;.</skos:example>
+        <skos:example>Establishes the TSRI type of an Action.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/todo/tododom#ArgumentTSRI -->
+
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododom#ArgumentTSRI">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododom#TargetSystemReadableInformation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododom#hasType"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododom#ParameterType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododom#implementation"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododom#IDval"/>
+        </owl:hasKey>
+        <rdfs:comment>Target System Readable Information corresponding to elements of the class Argument.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododom#</rdfs:isDefinedBy>
+        <rdfs:label>ArgumentTSRI</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/todo/tododom#ArgumentTrace -->
+
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododom#ArgumentTrace">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododfa#isArgumentOf"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododom#ActionTrace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododom#hasValue"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododom#isTraceOf"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododfa#Argument"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododom#IDval"/>
+        </owl:hasKey>
+        <rdfs:comment>Element that leaves a record of an Argument obtained throughout the dialogue process.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododom#</rdfs:isDefinedBy>
+        <rdfs:label>ArgumentTrace</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/todo/tododom#Command -->
+
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododom#Command">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododom#implementation"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododom#IDval"/>
+        </owl:hasKey>
+        <rdfs:comment>Element that covers the information to execute an Action that is executable through a command (vs. as a Service).</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododom#</rdfs:isDefinedBy>
+        <rdfs:label>Command</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/todo/tododom#CommandTSRI -->
+
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododom#CommandTSRI">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododom#ActionTSRI"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododom#hasSpecification"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/todo/tododom#Command"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododom#IDval"/>
+        </owl:hasKey>
+        <rdfs:comment>Target System Readable Information corresponding to elements of the class Action that require information in a Command format.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododom#</rdfs:isDefinedBy>
+        <rdfs:label>CommandTSRI</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/todo/tododom#FrameTrace -->
+
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododom#FrameTrace">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododfa#isFrameOf"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododom#IntentTrace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododom#isTraceOf"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododfa#Frame"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododom#IDval"/>
+        </owl:hasKey>
+        <rdfs:comment>Element that leaves a record of a Frame obtained throughout the dialogue process.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododom#</rdfs:isDefinedBy>
+        <rdfs:label>FrameTrace</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/todo/tododom#InfoType -->
+
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododom#InfoType">
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododom#IDval"/>
+        </owl:hasKey>
+        <rdfs:comment>Establishes the TSRI type of a given Action/Parameter.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododom#</rdfs:isDefinedBy>
+        <rdfs:label>InfoType</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/todo/tododom#IntentTrace -->
+
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododom#IntentTrace">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododfa#belongsToAction"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododom#ActionTrace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododfa#hasFrame"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododom#FrameTrace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododfa#isIntentOf"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododom#SkillTrace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododom#isTraceOf"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododfa#Intent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododom#IDval"/>
+        </owl:hasKey>
+        <rdfs:comment>Element that leaves a record of an Intent obtained throughout the dialogue process.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododom#</rdfs:isDefinedBy>
+        <rdfs:label>IntentTrace</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/todo/tododom#LexicalUnit -->
+
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododom#LexicalUnit">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododom#isLexicalUnitOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododom#isLexicalUnitOf"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododfa#FrameHead"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododom#IDval"/>
+        </owl:hasKey>
+        <rdfs:comment>Word(s) that cover the different variants of a FrameHead or a WorldElement.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododom#</rdfs:isDefinedBy>
+        <rdfs:label>LexicalUnit</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+        <skos:example>FrameHead: go
+LexUnits (in Spanish): ir.V, desplazarse.V</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/todo/tododom#ParameterType -->
+
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododom#ParameterType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododom#InfoType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododom#isTypeOf"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododom#WorldElementTSRI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododom#IDval"/>
+        </owl:hasKey>
+        <rdfs:comment>Establishes the type of parameter of a TSRI.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododom#</rdfs:isDefinedBy>
+        <rdfs:label>ParameterType</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+        <skos:example>&quot;baño&quot; hasTSRI &quot;coords_baño&quot;
+&quot;baño&quot; hasTSRI &quot;ID_baño&quot; 
+
+&quot;coords_baño&quot; is of ParameterType &quot;coordinate&quot;
+&quot;ID_baño&quot; is of ParameterType &quot;ID&quot;</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/todo/tododom#ServiceTSRI -->
+
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododom#ServiceTSRI">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododom#ActionTSRI"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododom#hasSpecification"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.daml.org/services/owl-s/1.1/Service.owl#Service"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododom#IDval"/>
+        </owl:hasKey>
+        <rdfs:comment>Target System Readable Information corresponding to elements of the class Action that point to Services.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododom#</rdfs:isDefinedBy>
+        <rdfs:label>ServiceTSRI</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/todo/tododom#SkillTrace -->
+
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododom#SkillTrace">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododfa#hasIntent"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododom#IntentTrace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododom#isTraceOf"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododfa#Skill"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododom#IDval"/>
+        </owl:hasKey>
+        <rdfs:comment>Element that leaves a record of a Skill obtained throughout the dialogue process.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododom#</rdfs:isDefinedBy>
+        <rdfs:label>SkillTrace</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/todo/tododom#TargetSystemReadableInformation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododom#TargetSystemReadableInformation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododom#hasType"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododom#InfoType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododom#val"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododom#IDval"/>
+        </owl:hasKey>
+        <rdfs:comment xml:lang="en">Information that is sent to the system to perform an execution or as argument for an execution, in a format that is understandable to the target system.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Plain language for whole action: Pick plastic container
+
+SystemReadableInfo for &quot;pick&quot;: robAction.Pick
+SystemReadableInfo for &quot;plastic container&quot;: containerID:235
+
+SystemReadableInfo for whole action: robAction.Pick(containerID:235)</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododom#</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">TargetSystemReadableInformation</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/todo/tododom#WorldElementGroup -->
+
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododom#WorldElementGroup">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododom#hasGroupMember"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododom#IDval"/>
+        </owl:hasKey>
+        <rdfs:comment>Agrupation of WorldElements of similar characteristics.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododom#</rdfs:isDefinedBy>
+        <rdfs:label>WorldElementGroup</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/todo/tododom#WorldElementTSRI -->
+
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododom#WorldElementTSRI">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododom#TargetSystemReadableInformation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododom#hasType"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododom#ParameterType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododom#IDval"/>
+        </owl:hasKey>
+        <rdfs:comment>Target System Readable Information corresponding to elements of the class WorldElement.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododom#</rdfs:isDefinedBy>
+        <rdfs:label>WorldElementTSRI</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.daml.org/services/owl-s/1.1/Service.owl#Service"/>
+            <rdf:Description rdf:about="http://www.daml.org/services/owl-s/1.2/Grounding.owl#AtomicProcessGrounding"/>
+            <rdf:Description rdf:about="http://www.daml.org/services/owl-s/1.2/Service.owl#ServiceGrounding"/>
+            <rdf:Description rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+            <rdf:Description rdf:about="https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl#WadlResourceMethodRef"/>
+            <rdf:Description rdf:about="https://w3id.org/todo/tododfa#Action"/>
+            <rdf:Description rdf:about="https://w3id.org/todo/tododom#ActionTrace"/>
+            <rdf:Description rdf:about="https://w3id.org/todo/tododom#ArgumentTrace"/>
+            <rdf:Description rdf:about="https://w3id.org/todo/tododom#Command"/>
+            <rdf:Description rdf:about="https://w3id.org/todo/tododom#FrameTrace"/>
+            <rdf:Description rdf:about="https://w3id.org/todo/tododom#InfoType"/>
+            <rdf:Description rdf:about="https://w3id.org/todo/tododom#IntentTrace"/>
+            <rdf:Description rdf:about="https://w3id.org/todo/tododom#LexicalUnit"/>
+            <rdf:Description rdf:about="https://w3id.org/todo/tododom#SkillTrace"/>
+            <rdf:Description rdf:about="https://w3id.org/todo/tododom#TargetSystemReadableInformation"/>
+            <rdf:Description rdf:about="https://w3id.org/todo/tododom#WorldElementGroup"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododfa#Action"/>
+            <rdf:Description rdf:about="https://w3id.org/todo/tododfa#Argument"/>
+            <rdf:Description rdf:about="https://w3id.org/todo/tododfa#ArgumentSet"/>
+            <rdf:Description rdf:about="https://w3id.org/todo/tododfa#Frame"/>
+            <rdf:Description rdf:about="https://w3id.org/todo/tododfa#FrameHead"/>
+            <rdf:Description rdf:about="https://w3id.org/todo/tododfa#Intent"/>
+            <rdf:Description rdf:about="https://w3id.org/todo/tododfa#Skill"/>
+            <rdf:Description rdf:about="https://w3id.org/todo/tododom#ActionTrace"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/ -->
+
+

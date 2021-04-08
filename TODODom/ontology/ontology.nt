@@ -1,0 +1,919 @@
+<https://w3id.org/todo/tododom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/todo/tododom> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/todo/tododfa> .
+<https://w3id.org/todo/tododom> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/todo/tododw> .
+<https://w3id.org/todo/tododom> <http://creativecommons.org/ns#license> "http://purl.org/NET/rdflicense/cc-by4.0" .
+<https://w3id.org/todo/tododom> <http://purl.org/dc/terms/contributor> "Izaskun Fernández (Tekniker) <mailto:izaskun.fernandez@tekniker.es>" .
+<https://w3id.org/todo/tododom> <http://purl.org/dc/terms/created> "2020-04-21T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/todo/tododom> <http://purl.org/dc/terms/creator> "Cristina Aceta (Tekniker) <mailto:cristina.aceta@tekniker.es>" .
+<https://w3id.org/todo/tododom> <http://purl.org/dc/terms/description> "Module for domain modelling." .
+<https://w3id.org/todo/tododom> <http://purl.org/dc/terms/issued> ""^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/todo/tododom> <http://purl.org/dc/terms/modified> "2021-03-09T10:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/todo/tododom> <http://purl.org/dc/terms/title> "TODODom: Domain Module for Task-Oriented Dialogue management Ontology (TODO)" .
+<https://w3id.org/todo/tododom> <http://purl.org/vocab/vann/preferredNamespacePrefix> "tododom" .
+<https://w3id.org/todo/tododom> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/todo/tododom" .
+<https://w3id.org/todo/tododom> <http://www.w3.org/2002/07/owl#priorVersion> "" .
+<https://w3id.org/todo/tododom> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/bibliographicCitation
+<http://purl.org/dc/terms/bibliographicCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionIRI
+<http://www.w3.org/2002/07/owl#versionIRI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#example
+<http://www.w3.org/2004/02/skos/core#example> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.daml.org/services/owl-s/1.1/Grounding.owl#hasAtomicProcessGrounding
+<http://www.daml.org/services/owl-s/1.1/Grounding.owl#hasAtomicProcessGrounding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.daml.org/services/owl-s/1.1/Grounding.owl#hasAtomicProcessGrounding> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.daml.org/services/owl-s/1.2/Grounding.owl#Grounding> .
+<http://www.daml.org/services/owl-s/1.1/Grounding.owl#hasAtomicProcessGrounding> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.daml.org/services/owl-s/1.2/Grounding.owl#AtomicProcessGrounding> .
+# 
+# http://www.daml.org/services/owl-s/1.1/Service.owl#supportedBy
+<http://www.daml.org/services/owl-s/1.1/Service.owl#supportedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.daml.org/services/owl-s/1.1/Service.owl#supportedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.daml.org/services/owl-s/1.1/Service.owl#supports> .
+# 
+# http://www.daml.org/services/owl-s/1.1/Service.owl#supports
+<http://www.daml.org/services/owl-s/1.1/Service.owl#supports> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.daml.org/services/owl-s/1.1/Service.owl#supports> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.daml.org/services/owl-s/1.1/Service.owl#Service> .
+<http://www.daml.org/services/owl-s/1.1/Service.owl#supports> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.daml.org/services/owl-s/1.2/Service.owl#ServiceGrounding> .
+# 
+# https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl#wadlResourceMethod
+<https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl#wadlResourceMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/todo/tododfa#belongsToAction
+<https://w3id.org/todo/tododfa#belongsToAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/todo/tododfa#belongsToIntent
+<https://w3id.org/todo/tododfa#belongsToIntent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/todo/tododfa#hasArgument
+<https://w3id.org/todo/tododfa#hasArgument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/todo/tododfa#hasFrame
+<https://w3id.org/todo/tododfa#hasFrame> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/todo/tododfa#hasIntent
+<https://w3id.org/todo/tododfa#hasIntent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/todo/tododfa#isArgumentOf
+<https://w3id.org/todo/tododfa#isArgumentOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/todo/tododfa#isFrameOf
+<https://w3id.org/todo/tododfa#isFrameOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/todo/tododfa#isIntentOf
+<https://w3id.org/todo/tododfa#isIntentOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/todo/tododom#appliesToWorld
+<https://w3id.org/todo/tododom#appliesToWorld> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/todo/tododom#appliesToWorld> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/todo/tododom#isApplicableToArgument> .
+<https://w3id.org/todo/tododom#appliesToWorld> <http://www.w3.org/2000/01/rdf-schema#comment> "Establishes the relation between an Argument and the WorldElements that can be associated to it." .
+<https://w3id.org/todo/tododom#appliesToWorld> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododom#" .
+<https://w3id.org/todo/tododom#appliesToWorld> <http://www.w3.org/2000/01/rdf-schema#label> "appliesToWorld" .
+<https://w3id.org/todo/tododom#appliesToWorld> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododom#appliesToWorldElement
+<https://w3id.org/todo/tododom#appliesToWorldElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/todo/tododom#appliesToWorldElement> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/todo/tododom#appliesToWorld> .
+<https://w3id.org/todo/tododom#appliesToWorldElement> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
+<https://w3id.org/todo/tododom#appliesToWorldElement> <http://www.w3.org/2000/01/rdf-schema#comment> "Establishes the relation between an Argument and a WorldElement that can be associated to it." .
+<https://w3id.org/todo/tododom#appliesToWorldElement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododom#" .
+<https://w3id.org/todo/tododom#appliesToWorldElement> <http://www.w3.org/2000/01/rdf-schema#label> "appliesToWorldElement" .
+<https://w3id.org/todo/tododom#appliesToWorldElement> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododom#appliesToWorldElementGroup
+<https://w3id.org/todo/tododom#appliesToWorldElementGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/todo/tododom#appliesToWorldElementGroup> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/todo/tododom#appliesToWorld> .
+<https://w3id.org/todo/tododom#appliesToWorldElementGroup> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/todo/tododom#WorldElementGroup> .
+<https://w3id.org/todo/tododom#appliesToWorldElementGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "Establishes the relation between an Argument and a WorldElementGroup that can be associated to it." .
+<https://w3id.org/todo/tododom#appliesToWorldElementGroup> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododom#" .
+<https://w3id.org/todo/tododom#appliesToWorldElementGroup> <http://www.w3.org/2000/01/rdf-schema#label> "appliesToWorldElementGroup" .
+<https://w3id.org/todo/tododom#appliesToWorldElementGroup> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododom#hasGroupMember
+<https://w3id.org/todo/tododom#hasGroupMember> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/todo/tododom#hasGroupMember> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/todo/tododom#isMemberOfGroup> .
+<https://w3id.org/todo/tododom#hasGroupMember> <http://www.w3.org/2000/01/rdf-schema#comment> "Establishes the relation between a WorldElementGroup and a member of said group." .
+<https://w3id.org/todo/tododom#hasGroupMember> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododom#" .
+<https://w3id.org/todo/tododom#hasGroupMember> <http://www.w3.org/2000/01/rdf-schema#label> "hasGroupMember" .
+<https://w3id.org/todo/tododom#hasGroupMember> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododom#hasLexicalUnit
+<https://w3id.org/todo/tododom#hasLexicalUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/todo/tododom#hasLexicalUnit> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/todo/tododom#isLexicalUnitOf> .
+<https://w3id.org/todo/tododom#hasLexicalUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "Establishes the relation between a FrameHead/WorldElement and one of its corresponding Lexical Units." .
+<https://w3id.org/todo/tododom#hasLexicalUnit> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododom#" .
+<https://w3id.org/todo/tododom#hasLexicalUnit> <http://www.w3.org/2000/01/rdf-schema#label> "hasLexicalUnit" .
+<https://w3id.org/todo/tododom#hasLexicalUnit> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododom#hasSpecification
+<https://w3id.org/todo/tododom#hasSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/todo/tododom#hasSpecification> <http://www.w3.org/2000/01/rdf-schema#comment> "Establishes a relation between a TargetSystemReadableInformation element and its specific implementation in the target system (specification)." .
+<https://w3id.org/todo/tododom#hasSpecification> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododom#" .
+<https://w3id.org/todo/tododom#hasSpecification> <http://www.w3.org/2000/01/rdf-schema#label> "hasSpecification" .
+<https://w3id.org/todo/tododom#hasSpecification> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododom#hasTargetSystemReadableInfo
+<https://w3id.org/todo/tododom#hasTargetSystemReadableInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/todo/tododom#hasTargetSystemReadableInfo> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/todo/tododom#isTargetSystemReadableInfoOf> .
+<https://w3id.org/todo/tododom#hasTargetSystemReadableInfo> <http://www.w3.org/2000/01/rdf-schema#comment> "Establishes the relation between an Action/Argument/WorldElement and its corresponding TargetSystemReadableInfo." .
+<https://w3id.org/todo/tododom#hasTargetSystemReadableInfo> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododom#" .
+<https://w3id.org/todo/tododom#hasTargetSystemReadableInfo> <http://www.w3.org/2000/01/rdf-schema#label> "hasTargetSystemReadableInfo" .
+<https://w3id.org/todo/tododom#hasTargetSystemReadableInfo> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododom#hasTrace
+<https://w3id.org/todo/tododom#hasTrace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/todo/tododom#hasTrace> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/todo/tododom#isTraceOf> .
+<https://w3id.org/todo/tododom#hasTrace> <http://www.w3.org/2000/01/rdf-schema#comment> "Establishes the relationship between an element and its Trace." .
+<https://w3id.org/todo/tododom#hasTrace> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododom#" .
+<https://w3id.org/todo/tododom#hasTrace> <http://www.w3.org/2000/01/rdf-schema#label> "hasTrace" .
+<https://w3id.org/todo/tododom#hasTrace> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododom#hasType
+<https://w3id.org/todo/tododom#hasType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/todo/tododom#hasType> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/todo/tododom#isTypeOf> .
+<https://w3id.org/todo/tododom#hasType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/todo/tododom#hasType> <http://www.w3.org/2000/01/rdf-schema#comment> "(In a guide robot, with guiding and information functionalities; the TSRI of the destinations are coordinates and the TSRI of the elements to obtain information about are IDs)\n\nDestination_guideRobot hasTSRI ?x .\n?x hasType coordinate .\n\nPieceInformation_guideRobot has TSRI ?y .\n?y hasType ID ." .
+<https://w3id.org/todo/tododom#hasType> <http://www.w3.org/2000/01/rdf-schema#comment> "Establishes a relation between an Action/Argument/WorldElement TSRI and its TSRI type." .
+<https://w3id.org/todo/tododom#hasType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododom#" .
+<https://w3id.org/todo/tododom#hasType> <http://www.w3.org/2000/01/rdf-schema#label> "hasType" .
+<https://w3id.org/todo/tododom#hasType> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododom#hasValue
+<https://w3id.org/todo/tododom#hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/todo/tododom#hasValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Establishes the relation between an ArgumentTrace and its corresponding value (WorldElement)." .
+<https://w3id.org/todo/tododom#hasValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododom#" .
+<https://w3id.org/todo/tododom#hasValue> <http://www.w3.org/2000/01/rdf-schema#label> "hasValue" .
+<https://w3id.org/todo/tododom#hasValue> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododom#isApplicableToArgument
+<https://w3id.org/todo/tododom#isApplicableToArgument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/todo/tododom#isApplicableToArgument> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/todo/tododfa#Argument> .
+<https://w3id.org/todo/tododom#isApplicableToArgument> <http://www.w3.org/2000/01/rdf-schema#comment> "Establishes the relation between a WorldElement and the Argument(s) that it can be associated to." .
+<https://w3id.org/todo/tododom#isApplicableToArgument> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododom#" .
+<https://w3id.org/todo/tododom#isApplicableToArgument> <http://www.w3.org/2000/01/rdf-schema#label> "isApplicableToArgument" .
+<https://w3id.org/todo/tododom#isApplicableToArgument> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododom#isLexicalUnitOf
+<https://w3id.org/todo/tododom#isLexicalUnitOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/todo/tododom#isLexicalUnitOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Establishes the relation between a Lexical Unit and its corresponding FrameHead/WorldElement." .
+<https://w3id.org/todo/tododom#isLexicalUnitOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododom#" .
+<https://w3id.org/todo/tododom#isLexicalUnitOf> <http://www.w3.org/2000/01/rdf-schema#label> "isLexicalUnitOf" .
+<https://w3id.org/todo/tododom#isLexicalUnitOf> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododom#isMemberOfGroup
+<https://w3id.org/todo/tododom#isMemberOfGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/todo/tododom#isMemberOfGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "Establishes the relation between a WorldElement and a WorldElementGroup, which is a member of." .
+<https://w3id.org/todo/tododom#isMemberOfGroup> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododom#" .
+<https://w3id.org/todo/tododom#isMemberOfGroup> <http://www.w3.org/2000/01/rdf-schema#label> "isMemberOfGroup" .
+<https://w3id.org/todo/tododom#isMemberOfGroup> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododom#isTargetSystemReadableInfoOf
+<https://w3id.org/todo/tododom#isTargetSystemReadableInfoOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/todo/tododom#isTargetSystemReadableInfoOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Establishes the relation between a TargetSystemReadableInfon and the Action/Argument/WorldElement it corresponds to." .
+<https://w3id.org/todo/tododom#isTargetSystemReadableInfoOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododom#" .
+<https://w3id.org/todo/tododom#isTargetSystemReadableInfoOf> <http://www.w3.org/2000/01/rdf-schema#label> "isTargetSystemReadableInfoOf" .
+<https://w3id.org/todo/tododom#isTargetSystemReadableInfoOf> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododom#isTraceOf
+<https://w3id.org/todo/tododom#isTraceOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/todo/tododom#isTraceOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Establishes the relationship between a Trace and the element it refers to." .
+<https://w3id.org/todo/tododom#isTraceOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododom#" .
+<https://w3id.org/todo/tododom#isTraceOf> <http://www.w3.org/2000/01/rdf-schema#label> "isTraceOf" .
+<https://w3id.org/todo/tododom#isTraceOf> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododom#isTypeOf
+<https://w3id.org/todo/tododom#isTypeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/todo/tododom#isTypeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<https://w3id.org/todo/tododom#isTypeOf> <http://www.w3.org/2000/01/rdf-schema#comment> "(In a guide robot, with guiding and information functionalities; the TSRI of the destinations are coordinates and the TSRI of the elements to obtain information about are IDs)\n\nDestination_guideRobot hasTSRI ?x .\ncoordinate isTypeOf ?x .\n\nPieceInformation_guideRobot has TSRI ?y .\nID isTypeOf ?y ." .
+<https://w3id.org/todo/tododom#isTypeOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Establishes a relation between a TSRI type and the Action/Argument/WorldElement TSRI with said TSRI type." .
+<https://w3id.org/todo/tododom#isTypeOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododom#" .
+<https://w3id.org/todo/tododom#isTypeOf> <http://www.w3.org/2000/01/rdf-schema#label> "isTypeOf" .
+<https://w3id.org/todo/tododom#isTypeOf> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.daml.org/services/owl-s/1.1/Grounding.owl#wsdlDocument
+<http://www.daml.org/services/owl-s/1.1/Grounding.owl#wsdlDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.daml.org/services/owl-s/1.1/Grounding.owl#wsdlDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+# 
+# http://www.daml.org/services/owl-s/1.1/Grounding.owl#wsdlInputMessage
+<http://www.daml.org/services/owl-s/1.1/Grounding.owl#wsdlInputMessage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.daml.org/services/owl-s/1.1/Grounding.owl#wsdlInputMessage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.daml.org/services/owl-s/1.1/Grounding.owl#wsdlInputMessage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.daml.org/services/owl-s/1.2/Grounding.owl#WsdlAtomicProcessGrounding> .
+<http://www.daml.org/services/owl-s/1.1/Grounding.owl#wsdlInputMessage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://www.daml.org/services/owl-s/1.1/Grounding.owl#wsdlOutputMessage
+<http://www.daml.org/services/owl-s/1.1/Grounding.owl#wsdlOutputMessage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.daml.org/services/owl-s/1.1/Grounding.owl#wsdlOutputMessage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.daml.org/services/owl-s/1.1/Grounding.owl#wsdlOutputMessage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.daml.org/services/owl-s/1.2/Grounding.owl#WsdlAtomicProcessGrounding> .
+<http://www.daml.org/services/owl-s/1.1/Grounding.owl#wsdlOutputMessage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://www.daml.org/services/owl-s/1.1/Grounding.owl#wsdlVersion
+<http://www.daml.org/services/owl-s/1.1/Grounding.owl#wsdlVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.daml.org/services/owl-s/1.1/Grounding.owl#wsdlVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.daml.org/services/owl-s/1.1/Grounding.owl#wsdlVersion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.daml.org/services/owl-s/1.2/Grounding.owl#WsdlAtomicProcessGrounding> .
+<http://www.daml.org/services/owl-s/1.1/Grounding.owl#wsdlVersion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl#method
+<https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl#method> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl#method> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/todo/tododom#implementation> .
+# 
+# https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl#resource
+<https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl#resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl#wadlDocument
+<https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl#wadlDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl#wadlMessageParam
+<https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl#wadlMessageParam> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl#wadlMessageParam> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/todo/tododom#implementation> .
+# 
+# https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl#wadlVersion
+<https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl#wadlVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/todo/tododom#IDval
+<https://w3id.org/todo/tododom#IDval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/todo/tododom#IDval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/todo/tododom#IDval> <http://www.w3.org/2000/01/rdf-schema#comment> "Unique identification value for individuals." .
+<https://w3id.org/todo/tododom#IDval> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododom#" .
+<https://w3id.org/todo/tododom#IDval> <http://www.w3.org/2000/01/rdf-schema#label> "IDval" .
+<https://w3id.org/todo/tododom#IDval> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododom#implementation
+<https://w3id.org/todo/tododom#implementation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/todo/tododom#implementation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/todo/tododom#implementation> <http://www.w3.org/2000/01/rdf-schema#comment> "Sets specific implementation information for a Service." .
+<https://w3id.org/todo/tododom#implementation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododom#" .
+<https://w3id.org/todo/tododom#implementation> <http://www.w3.org/2000/01/rdf-schema#label> "implementation" .
+<https://w3id.org/todo/tododom#implementation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododom#order
+<https://w3id.org/todo/tododom#order> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/todo/tododom#order> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<https://w3id.org/todo/tododom#order> <http://www.w3.org/2000/01/rdf-schema#comment> "Sets the order in which each argument needs to be output to the target system." .
+<https://w3id.org/todo/tododom#order> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododom#" .
+<https://w3id.org/todo/tododom#order> <http://www.w3.org/2000/01/rdf-schema#label> "order" .
+<https://w3id.org/todo/tododom#order> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododom#val
+<https://w3id.org/todo/tododom#val> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/todo/tododom#val> <http://www.w3.org/2000/01/rdf-schema#comment> "Sets the value of a TSRI to be input to the target system." .
+<https://w3id.org/todo/tododom#val> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododom#" .
+<https://w3id.org/todo/tododom#val> <http://www.w3.org/2000/01/rdf-schema#label> "val" .
+<https://w3id.org/todo/tododom#val> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.daml.org/services/owl-s/1.1/Service.owl#Service
+<http://www.daml.org/services/owl-s/1.1/Service.owl#Service> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.daml.org/services/owl-s/1.1/Service.owl#Service> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.daml.org/services/owl-s/1.1/Service.owl#supports> .
+_:genid1 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onClass> <http://www.daml.org/services/owl-s/1.2/Service.owl#ServiceGrounding> .
+# 
+# http://www.daml.org/services/owl-s/1.2/Grounding.owl#AtomicProcessGrounding
+<http://www.daml.org/services/owl-s/1.2/Grounding.owl#AtomicProcessGrounding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.daml.org/services/owl-s/1.2/Grounding.owl#Grounding
+<http://www.daml.org/services/owl-s/1.2/Grounding.owl#Grounding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.daml.org/services/owl-s/1.2/Grounding.owl#Grounding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.daml.org/services/owl-s/1.2/Service.owl#ServiceGrounding> .
+# 
+# http://www.daml.org/services/owl-s/1.2/Grounding.owl#WadlAtomicProcessGrounding
+<http://www.daml.org/services/owl-s/1.2/Grounding.owl#WadlAtomicProcessGrounding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.daml.org/services/owl-s/1.2/Grounding.owl#WadlAtomicProcessGrounding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.daml.org/services/owl-s/1.2/Grounding.owl#AtomicProcessGrounding> .
+# 
+# http://www.daml.org/services/owl-s/1.2/Grounding.owl#WsdlAtomicProcessGrounding
+<http://www.daml.org/services/owl-s/1.2/Grounding.owl#WsdlAtomicProcessGrounding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.daml.org/services/owl-s/1.2/Grounding.owl#WsdlAtomicProcessGrounding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.daml.org/services/owl-s/1.2/Grounding.owl#AtomicProcessGrounding> .
+<http://www.daml.org/services/owl-s/1.2/Grounding.owl#WsdlAtomicProcessGrounding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.daml.org/services/owl-s/1.1/Grounding.owl#wsdlDocument> .
+_:genid2 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://www.daml.org/services/owl-s/1.2/Grounding.owl#WsdlAtomicProcessGrounding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.daml.org/services/owl-s/1.1/Grounding.owl#wsdlInputMessage> .
+_:genid3 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid3 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://www.daml.org/services/owl-s/1.2/Grounding.owl#WsdlAtomicProcessGrounding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://www.daml.org/services/owl-s/1.1/Grounding.owl#wsdlOutputMessage> .
+_:genid4 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid4 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://www.daml.org/services/owl-s/1.2/Grounding.owl#WsdlAtomicProcessGrounding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://www.daml.org/services/owl-s/1.1/Grounding.owl#wsdlVersion> .
+_:genid5 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid5 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://www.daml.org/services/owl-s/1.2/Grounding.owl#WsdlAtomicProcessGrounding> <http://www.w3.org/2002/07/owl#hasKey> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/todo/tododom#IDval> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# http://www.daml.org/services/owl-s/1.2/Grounding.owl#WsdlGrounding
+<http://www.daml.org/services/owl-s/1.2/Grounding.owl#WsdlGrounding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.daml.org/services/owl-s/1.2/Grounding.owl#WsdlGrounding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.daml.org/services/owl-s/1.2/Grounding.owl#Grounding> .
+<http://www.daml.org/services/owl-s/1.2/Grounding.owl#WsdlGrounding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.daml.org/services/owl-s/1.1/Grounding.owl#hasAtomicProcessGrounding> .
+_:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.daml.org/services/owl-s/1.2/Grounding.owl#WsdlAtomicProcessGrounding> .
+# 
+# http://www.daml.org/services/owl-s/1.2/Service.owl#ServiceGrounding
+<http://www.daml.org/services/owl-s/1.2/Service.owl#ServiceGrounding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing
+<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododom#hasLexicalUnit> .
+_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododom#LexicalUnit> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododom#hasTargetSystemReadableInfo> .
+_:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododom#TargetSystemReadableInformation> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododom#isMemberOfGroup> .
+_:genid10 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododom#WorldElementGroup> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> <http://www.w3.org/2002/07/owl#hasKey> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/todo/tododom#IDval> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl#WadlGrounding
+<https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl#WadlGrounding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl#WadlGrounding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.daml.org/services/owl-s/1.2/Grounding.owl#Grounding> .
+# 
+# https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl#WadlResourceMethodRef
+<https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl#WadlResourceMethodRef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/todo/tododfa#Action
+<https://w3id.org/todo/tododfa#Action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododfa#Action> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododom#hasTrace> .
+_:genid12 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododom#ActionTrace> .
+<https://w3id.org/todo/tododfa#Action> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododom#hasTargetSystemReadableInfo> .
+_:genid13 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid13 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/todo/tododom#TargetSystemReadableInformation> .
+<https://w3id.org/todo/tododfa#Action> <http://www.w3.org/2002/07/owl#hasKey> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/todo/tododom#IDval> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# https://w3id.org/todo/tododfa#Argument
+<https://w3id.org/todo/tododfa#Argument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododfa#Argument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododom#appliesToWorldElement> .
+_:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
+<https://w3id.org/todo/tododfa#Argument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododom#appliesToWorldElementGroup> .
+_:genid16 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododom#WorldElementGroup> .
+<https://w3id.org/todo/tododfa#Argument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododom#hasTrace> .
+_:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododom#ArgumentTrace> .
+<https://w3id.org/todo/tododfa#Argument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododom#hasTargetSystemReadableInfo> .
+_:genid18 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid18 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/todo/tododom#TargetSystemReadableInformation> .
+<https://w3id.org/todo/tododfa#Argument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododom#order> .
+_:genid19 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#int> .
+<https://w3id.org/todo/tododfa#Argument> <http://www.w3.org/2002/07/owl#hasKey> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/todo/tododom#IDval> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# https://w3id.org/todo/tododfa#ArgumentSet
+<https://w3id.org/todo/tododfa#ArgumentSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododfa#ArgumentSet> <http://www.w3.org/2002/07/owl#hasKey> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/todo/tododom#IDval> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# https://w3id.org/todo/tododfa#FomaGrammar
+<https://w3id.org/todo/tododfa#FomaGrammar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododfa#FomaGrammar> <http://www.w3.org/2002/07/owl#hasKey> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/todo/tododom#IDval> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# https://w3id.org/todo/tododfa#Frame
+<https://w3id.org/todo/tododfa#Frame> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododfa#Frame> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododom#hasTrace> .
+_:genid23 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododom#FrameTrace> .
+<https://w3id.org/todo/tododfa#Frame> <http://www.w3.org/2002/07/owl#hasKey> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/todo/tododom#IDval> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# https://w3id.org/todo/tododfa#FrameHead
+<https://w3id.org/todo/tododfa#FrameHead> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododfa#FrameHead> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododom#hasLexicalUnit> .
+_:genid25 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododom#LexicalUnit> .
+<https://w3id.org/todo/tododfa#FrameHead> <http://www.w3.org/2002/07/owl#hasKey> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/todo/tododom#IDval> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# https://w3id.org/todo/tododfa#Intent
+<https://w3id.org/todo/tododfa#Intent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododfa#Intent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododom#hasTrace> .
+_:genid27 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododom#IntentTrace> .
+<https://w3id.org/todo/tododfa#Intent> <http://www.w3.org/2002/07/owl#hasKey> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/todo/tododom#IDval> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# https://w3id.org/todo/tododfa#Skill
+<https://w3id.org/todo/tododfa#Skill> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododfa#Skill> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododom#hasTrace> .
+_:genid29 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododom#SkillTrace> .
+<https://w3id.org/todo/tododfa#Skill> <http://www.w3.org/2002/07/owl#hasKey> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/todo/tododom#IDval> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# https://w3id.org/todo/tododom#ActionTSRI
+<https://w3id.org/todo/tododom#ActionTSRI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododom#ActionTSRI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/todo/tododom#TargetSystemReadableInformation> .
+<https://w3id.org/todo/tododom#ActionTSRI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododom#hasType> .
+_:genid31 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododom#ActionType> .
+<https://w3id.org/todo/tododom#ActionTSRI> <http://www.w3.org/2002/07/owl#hasKey> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/todo/tododom#IDval> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/todo/tododom#ActionTSRI> <http://www.w3.org/2000/01/rdf-schema#comment> "Target System Readable Information corresponding to elements of the class Action." .
+<https://w3id.org/todo/tododom#ActionTSRI> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododom#" .
+<https://w3id.org/todo/tododom#ActionTSRI> <http://www.w3.org/2000/01/rdf-schema#label> "ActionTSRI" .
+<https://w3id.org/todo/tododom#ActionTSRI> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododom#ActionTrace
+<https://w3id.org/todo/tododom#ActionTrace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododom#ActionTrace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododfa#belongsToIntent> .
+_:genid33 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododom#IntentTrace> .
+<https://w3id.org/todo/tododom#ActionTrace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododfa#hasArgument> .
+_:genid34 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododom#ArgumentTrace> .
+<https://w3id.org/todo/tododom#ActionTrace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododom#isTraceOf> .
+_:genid35 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododfa#Action> .
+<https://w3id.org/todo/tododom#ActionTrace> <http://www.w3.org/2002/07/owl#hasKey> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/todo/tododom#IDval> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/todo/tododom#ActionTrace> <http://www.w3.org/2000/01/rdf-schema#comment> "Element that leaves a record of an Action obtained throughout the dialogue process." .
+<https://w3id.org/todo/tododom#ActionTrace> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododom#" .
+<https://w3id.org/todo/tododom#ActionTrace> <http://www.w3.org/2000/01/rdf-schema#label> "ActionTrace" .
+<https://w3id.org/todo/tododom#ActionTrace> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododom#ActionType
+<https://w3id.org/todo/tododom#ActionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododom#ActionType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/todo/tododom#InfoType> .
+<https://w3id.org/todo/tododom#ActionType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododom#isTypeOf> .
+_:genid37 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododom#ActionTSRI> .
+<https://w3id.org/todo/tododom#ActionType> <http://www.w3.org/2002/07/owl#hasKey> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/todo/tododom#IDval> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/todo/tododom#ActionType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododom#" .
+<https://w3id.org/todo/tododom#ActionType> <http://www.w3.org/2000/01/rdf-schema#label> "ActionType" .
+<https://w3id.org/todo/tododom#ActionType> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<https://w3id.org/todo/tododom#ActionType> <http://www.w3.org/2004/02/skos/core#example> "Action: obtain_information -> it is directed towards API REST service\nThe TSRI for obtain_information has an ActionType \"service\"." .
+<https://w3id.org/todo/tododom#ActionType> <http://www.w3.org/2004/02/skos/core#example> "Establishes the TSRI type of an Action." .
+# 
+# https://w3id.org/todo/tododom#ArgumentTSRI
+<https://w3id.org/todo/tododom#ArgumentTSRI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododom#ArgumentTSRI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/todo/tododom#TargetSystemReadableInformation> .
+<https://w3id.org/todo/tododom#ArgumentTSRI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododom#hasType> .
+_:genid39 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododom#ParameterType> .
+<https://w3id.org/todo/tododom#ArgumentTSRI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododom#implementation> .
+_:genid40 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid40 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/todo/tododom#ArgumentTSRI> <http://www.w3.org/2002/07/owl#hasKey> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/todo/tododom#IDval> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/todo/tododom#ArgumentTSRI> <http://www.w3.org/2000/01/rdf-schema#comment> "Target System Readable Information corresponding to elements of the class Argument." .
+<https://w3id.org/todo/tododom#ArgumentTSRI> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododom#" .
+<https://w3id.org/todo/tododom#ArgumentTSRI> <http://www.w3.org/2000/01/rdf-schema#label> "ArgumentTSRI" .
+<https://w3id.org/todo/tododom#ArgumentTSRI> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododom#ArgumentTrace
+<https://w3id.org/todo/tododom#ArgumentTrace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododom#ArgumentTrace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododfa#isArgumentOf> .
+_:genid42 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododom#ActionTrace> .
+<https://w3id.org/todo/tododom#ArgumentTrace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododom#hasValue> .
+_:genid43 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
+<https://w3id.org/todo/tododom#ArgumentTrace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododom#isTraceOf> .
+_:genid44 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododfa#Argument> .
+<https://w3id.org/todo/tododom#ArgumentTrace> <http://www.w3.org/2002/07/owl#hasKey> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/todo/tododom#IDval> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/todo/tododom#ArgumentTrace> <http://www.w3.org/2000/01/rdf-schema#comment> "Element that leaves a record of an Argument obtained throughout the dialogue process." .
+<https://w3id.org/todo/tododom#ArgumentTrace> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododom#" .
+<https://w3id.org/todo/tododom#ArgumentTrace> <http://www.w3.org/2000/01/rdf-schema#label> "ArgumentTrace" .
+<https://w3id.org/todo/tododom#ArgumentTrace> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododom#Command
+<https://w3id.org/todo/tododom#Command> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododom#Command> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododom#implementation> .
+_:genid46 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid46 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/todo/tododom#Command> <http://www.w3.org/2002/07/owl#hasKey> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/todo/tododom#IDval> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/todo/tododom#Command> <http://www.w3.org/2000/01/rdf-schema#comment> "Element that covers the information to execute an Action that is executable through a command (vs. as a Service)." .
+<https://w3id.org/todo/tododom#Command> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododom#" .
+<https://w3id.org/todo/tododom#Command> <http://www.w3.org/2000/01/rdf-schema#label> "Command" .
+<https://w3id.org/todo/tododom#Command> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododom#CommandTSRI
+<https://w3id.org/todo/tododom#CommandTSRI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododom#CommandTSRI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/todo/tododom#ActionTSRI> .
+<https://w3id.org/todo/tododom#CommandTSRI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid48 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododom#hasSpecification> .
+_:genid48 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid48 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/todo/tododom#Command> .
+<https://w3id.org/todo/tododom#CommandTSRI> <http://www.w3.org/2002/07/owl#hasKey> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/todo/tododom#IDval> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/todo/tododom#CommandTSRI> <http://www.w3.org/2000/01/rdf-schema#comment> "Target System Readable Information corresponding to elements of the class Action that require information in a Command format." .
+<https://w3id.org/todo/tododom#CommandTSRI> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododom#" .
+<https://w3id.org/todo/tododom#CommandTSRI> <http://www.w3.org/2000/01/rdf-schema#label> "CommandTSRI" .
+<https://w3id.org/todo/tododom#CommandTSRI> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododom#FrameTrace
+<https://w3id.org/todo/tododom#FrameTrace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododom#FrameTrace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid50 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododfa#isFrameOf> .
+_:genid50 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododom#IntentTrace> .
+<https://w3id.org/todo/tododom#FrameTrace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid51 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododom#isTraceOf> .
+_:genid51 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododfa#Frame> .
+<https://w3id.org/todo/tododom#FrameTrace> <http://www.w3.org/2002/07/owl#hasKey> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/todo/tododom#IDval> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/todo/tododom#FrameTrace> <http://www.w3.org/2000/01/rdf-schema#comment> "Element that leaves a record of a Frame obtained throughout the dialogue process." .
+<https://w3id.org/todo/tododom#FrameTrace> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododom#" .
+<https://w3id.org/todo/tododom#FrameTrace> <http://www.w3.org/2000/01/rdf-schema#label> "FrameTrace" .
+<https://w3id.org/todo/tododom#FrameTrace> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododom#InfoType
+<https://w3id.org/todo/tododom#InfoType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododom#InfoType> <http://www.w3.org/2002/07/owl#hasKey> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/todo/tododom#IDval> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/todo/tododom#InfoType> <http://www.w3.org/2000/01/rdf-schema#comment> "Establishes the TSRI type of a given Action/Parameter." .
+<https://w3id.org/todo/tododom#InfoType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododom#" .
+<https://w3id.org/todo/tododom#InfoType> <http://www.w3.org/2000/01/rdf-schema#label> "InfoType" .
+<https://w3id.org/todo/tododom#InfoType> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododom#IntentTrace
+<https://w3id.org/todo/tododom#IntentTrace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododom#IntentTrace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid54 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododfa#belongsToAction> .
+_:genid54 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododom#ActionTrace> .
+<https://w3id.org/todo/tododom#IntentTrace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid55 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododfa#hasFrame> .
+_:genid55 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododom#FrameTrace> .
+<https://w3id.org/todo/tododom#IntentTrace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid56 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododfa#isIntentOf> .
+_:genid56 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododom#SkillTrace> .
+<https://w3id.org/todo/tododom#IntentTrace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid57 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododom#isTraceOf> .
+_:genid57 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododfa#Intent> .
+<https://w3id.org/todo/tododom#IntentTrace> <http://www.w3.org/2002/07/owl#hasKey> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/todo/tododom#IDval> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/todo/tododom#IntentTrace> <http://www.w3.org/2000/01/rdf-schema#comment> "Element that leaves a record of an Intent obtained throughout the dialogue process." .
+<https://w3id.org/todo/tododom#IntentTrace> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododom#" .
+<https://w3id.org/todo/tododom#IntentTrace> <http://www.w3.org/2000/01/rdf-schema#label> "IntentTrace" .
+<https://w3id.org/todo/tododom#IntentTrace> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododom#LexicalUnit
+<https://w3id.org/todo/tododom#LexicalUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododom#LexicalUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid59 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododom#isLexicalUnitOf> .
+_:genid59 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
+<https://w3id.org/todo/tododom#LexicalUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid60 .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid60 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododom#isLexicalUnitOf> .
+_:genid60 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododfa#FrameHead> .
+<https://w3id.org/todo/tododom#LexicalUnit> <http://www.w3.org/2002/07/owl#hasKey> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/todo/tododom#IDval> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/todo/tododom#LexicalUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "Word(s) that cover the different variants of a FrameHead or a WorldElement." .
+<https://w3id.org/todo/tododom#LexicalUnit> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododom#" .
+<https://w3id.org/todo/tododom#LexicalUnit> <http://www.w3.org/2000/01/rdf-schema#label> "LexicalUnit" .
+<https://w3id.org/todo/tododom#LexicalUnit> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<https://w3id.org/todo/tododom#LexicalUnit> <http://www.w3.org/2004/02/skos/core#example> "FrameHead: go\nLexUnits (in Spanish): ir.V, desplazarse.V" .
+# 
+# https://w3id.org/todo/tododom#ParameterType
+<https://w3id.org/todo/tododom#ParameterType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododom#ParameterType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/todo/tododom#InfoType> .
+<https://w3id.org/todo/tododom#ParameterType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid62 .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid62 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododom#isTypeOf> .
+_:genid62 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododom#WorldElementTSRI> .
+<https://w3id.org/todo/tododom#ParameterType> <http://www.w3.org/2002/07/owl#hasKey> _:genid63 .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/todo/tododom#IDval> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/todo/tododom#ParameterType> <http://www.w3.org/2000/01/rdf-schema#comment> "Establishes the type of parameter of a TSRI." .
+<https://w3id.org/todo/tododom#ParameterType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododom#" .
+<https://w3id.org/todo/tododom#ParameterType> <http://www.w3.org/2000/01/rdf-schema#label> "ParameterType" .
+<https://w3id.org/todo/tododom#ParameterType> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<https://w3id.org/todo/tododom#ParameterType> <http://www.w3.org/2004/02/skos/core#example> "\"baño\" hasTSRI \"coords_baño\"\n\"baño\" hasTSRI \"ID_baño\" \n\n\"coords_baño\" is of ParameterType \"coordinate\"\n\"ID_baño\" is of ParameterType \"ID\"" .
+# 
+# https://w3id.org/todo/tododom#ServiceTSRI
+<https://w3id.org/todo/tododom#ServiceTSRI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododom#ServiceTSRI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/todo/tododom#ActionTSRI> .
+<https://w3id.org/todo/tododom#ServiceTSRI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid64 .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid64 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododom#hasSpecification> .
+_:genid64 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid64 <http://www.w3.org/2002/07/owl#onClass> <http://www.daml.org/services/owl-s/1.1/Service.owl#Service> .
+<https://w3id.org/todo/tododom#ServiceTSRI> <http://www.w3.org/2002/07/owl#hasKey> _:genid65 .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/todo/tododom#IDval> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/todo/tododom#ServiceTSRI> <http://www.w3.org/2000/01/rdf-schema#comment> "Target System Readable Information corresponding to elements of the class Action that point to Services." .
+<https://w3id.org/todo/tododom#ServiceTSRI> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododom#" .
+<https://w3id.org/todo/tododom#ServiceTSRI> <http://www.w3.org/2000/01/rdf-schema#label> "ServiceTSRI" .
+<https://w3id.org/todo/tododom#ServiceTSRI> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododom#SkillTrace
+<https://w3id.org/todo/tododom#SkillTrace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododom#SkillTrace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid66 .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid66 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododfa#hasIntent> .
+_:genid66 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododom#IntentTrace> .
+<https://w3id.org/todo/tododom#SkillTrace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid67 .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid67 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododom#isTraceOf> .
+_:genid67 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododfa#Skill> .
+<https://w3id.org/todo/tododom#SkillTrace> <http://www.w3.org/2002/07/owl#hasKey> _:genid68 .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/todo/tododom#IDval> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/todo/tododom#SkillTrace> <http://www.w3.org/2000/01/rdf-schema#comment> "Element that leaves a record of a Skill obtained throughout the dialogue process." .
+<https://w3id.org/todo/tododom#SkillTrace> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododom#" .
+<https://w3id.org/todo/tododom#SkillTrace> <http://www.w3.org/2000/01/rdf-schema#label> "SkillTrace" .
+<https://w3id.org/todo/tododom#SkillTrace> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododom#TargetSystemReadableInformation
+<https://w3id.org/todo/tododom#TargetSystemReadableInformation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododom#TargetSystemReadableInformation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid69 .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid69 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododom#hasType> .
+_:genid69 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododom#InfoType> .
+<https://w3id.org/todo/tododom#TargetSystemReadableInformation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid70 .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid70 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododom#val> .
+_:genid70 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/todo/tododom#TargetSystemReadableInformation> <http://www.w3.org/2002/07/owl#hasKey> _:genid71 .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/todo/tododom#IDval> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/todo/tododom#TargetSystemReadableInformation> <http://www.w3.org/2000/01/rdf-schema#comment> "Information that is sent to the system to perform an execution or as argument for an execution, in a format that is understandable to the target system."@en .
+<https://w3id.org/todo/tododom#TargetSystemReadableInformation> <http://www.w3.org/2000/01/rdf-schema#comment> "Plain language for whole action: Pick plastic container\n\nSystemReadableInfo for \"pick\": robAction.Pick\nSystemReadableInfo for \"plastic container\": containerID:235\n\nSystemReadableInfo for whole action: robAction.Pick(containerID:235)"@en .
+<https://w3id.org/todo/tododom#TargetSystemReadableInformation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododom#" .
+<https://w3id.org/todo/tododom#TargetSystemReadableInformation> <http://www.w3.org/2000/01/rdf-schema#label> "TargetSystemReadableInformation"@en .
+<https://w3id.org/todo/tododom#TargetSystemReadableInformation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododom#WorldElementGroup
+<https://w3id.org/todo/tododom#WorldElementGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododom#WorldElementGroup> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid72 .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid72 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododom#hasGroupMember> .
+_:genid72 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
+<https://w3id.org/todo/tododom#WorldElementGroup> <http://www.w3.org/2002/07/owl#hasKey> _:genid73 .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/todo/tododom#IDval> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/todo/tododom#WorldElementGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "Agrupation of WorldElements of similar characteristics." .
+<https://w3id.org/todo/tododom#WorldElementGroup> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododom#" .
+<https://w3id.org/todo/tododom#WorldElementGroup> <http://www.w3.org/2000/01/rdf-schema#label> "WorldElementGroup" .
+<https://w3id.org/todo/tododom#WorldElementGroup> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododom#WorldElementTSRI
+<https://w3id.org/todo/tododom#WorldElementTSRI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododom#WorldElementTSRI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/todo/tododom#TargetSystemReadableInformation> .
+<https://w3id.org/todo/tododom#WorldElementTSRI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid74 .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid74 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododom#hasType> .
+_:genid74 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododom#ParameterType> .
+<https://w3id.org/todo/tododom#WorldElementTSRI> <http://www.w3.org/2002/07/owl#hasKey> _:genid75 .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/todo/tododom#IDval> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/todo/tododom#WorldElementTSRI> <http://www.w3.org/2000/01/rdf-schema#comment> "Target System Readable Information corresponding to elements of the class WorldElement." .
+<https://w3id.org/todo/tododom#WorldElementTSRI> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododom#" .
+<https://w3id.org/todo/tododom#WorldElementTSRI> <http://www.w3.org/2000/01/rdf-schema#label> "WorldElementTSRI" .
+<https://w3id.org/todo/tododom#WorldElementTSRI> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid76 <http://www.w3.org/2002/07/owl#members> _:genid92 .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.daml.org/services/owl-s/1.1/Service.owl#Service> .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid91 .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.daml.org/services/owl-s/1.2/Grounding.owl#AtomicProcessGrounding> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid90 .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.daml.org/services/owl-s/1.2/Service.owl#ServiceGrounding> .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid89 .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid88 .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://sites.google.com/site/owlsrestful/RESTfulGrounding.owl#WadlResourceMethodRef> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid87 .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/todo/tododfa#Action> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid86 .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/todo/tododom#ActionTrace> .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid85 .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/todo/tododom#ArgumentTrace> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid84 .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/todo/tododom#Command> .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid83 .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/todo/tododom#FrameTrace> .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid82 .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/todo/tododom#InfoType> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid81 .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/todo/tododom#IntentTrace> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid80 .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/todo/tododom#LexicalUnit> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid79 .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/todo/tododom#SkillTrace> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid78 .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/todo/tododom#TargetSystemReadableInformation> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid77 .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/todo/tododom#WorldElementGroup> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid93 <http://www.w3.org/2002/07/owl#members> _:genid101 .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/todo/tododfa#Action> .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid100 .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/todo/tododfa#Argument> .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid99 .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/todo/tododfa#ArgumentSet> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid98 .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/todo/tododfa#Frame> .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid97 .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/todo/tododfa#FrameHead> .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid96 .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/todo/tododfa#Intent> .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid95 .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/todo/tododfa#Skill> .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid94 .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/todo/tododom#ActionTrace> .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

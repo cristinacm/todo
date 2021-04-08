@@ -1,0 +1,5413 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "es", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/todo/tododial" ],
+    "title" : {
+      "undefined" : "TODODial: Dialogue Module for Task-Oriented Dialogue management Ontology (TODO)"
+    },
+    "iri" : "https://w3id.org/todo/tododial",
+    "version" : "1.0.0",
+    "author" : [ "Cristina Aceta (Tekniker) <mailto:cristina.aceta@tekniker.es>" ],
+    "description" : {
+      "undefined" : "Module for dialogue process and system output management."
+    },
+    "other" : {
+      "priorVersion" : [ {
+        "identifier" : "priorVersion",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://purl.org/NET/rdflicense/cc-by4.0",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Cristina Aceta (Tekniker) <mailto:cristina.aceta@tekniker.es>",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Izaskun Fernández (Tekniker) <mailto:izaskun.fernandez@tekniker.es>",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-04-21T00:00:00",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "tododial",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2021-03-08T16:00:00",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0.0",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "TODODial: Dialogue Module for Task-Oriented Dialogue management Ontology (TODO)",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "owl:Class"
+  }, {
+    "id" : "69",
+    "type" : "owl:Class"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "91",
+    "type" : "owl:Class"
+  }, {
+    "id" : "80",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "101",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "90",
+    "type" : "owl:Class"
+  }, {
+    "id" : "119",
+    "type" : "owl:Class"
+  }, {
+    "id" : "109",
+    "type" : "owl:Class"
+  }, {
+    "id" : "112",
+    "type" : "owl:Class"
+  }, {
+    "id" : "103",
+    "type" : "owl:Class"
+  }, {
+    "id" : "72",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  }, {
+    "id" : "133",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "136",
+    "type" : "owl:Class"
+  }, {
+    "id" : "156",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "139",
+    "type" : "owl:Class"
+  }, {
+    "id" : "142",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "128",
+    "type" : "owl:Class"
+  }, {
+    "id" : "126",
+    "type" : "owl:Class"
+  }, {
+    "id" : "172",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "177",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "118",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "124",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "191",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "134",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
+    "type" : "owl:Class"
+  }, {
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "200",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "203",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "207",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "105",
+    "type" : "owl:Class"
+  }, {
+    "id" : "96",
+    "type" : "owl:Class"
+  }, {
+    "id" : "217",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "122",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "196",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "210",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "86",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "152",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "39",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "234",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "116",
+    "type" : "owl:Class"
+  }, {
+    "id" : "94",
+    "type" : "owl:Class"
+  }, {
+    "id" : "114",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/todo/tododial#FinishDial",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "FinishDial",
+      "undefined" : "FinishDial"
+    },
+    "comment" : {
+      "undefined" : "Marker that establishes that the dialogue must be finished."
+    },
+    "id" : "10",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#TooManyArgumentOptionsResponse",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Response given when the number of possible Arguments is too big.",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "es",
+        "value" : "¡Tu comando se puede asociar a demasiados argumentos! ¿Puedes repetir y ser un poco más específico, por favor?",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Your command can be associated to too many arguments! Can you repeat and be more specific, please?",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "TooManyArgumentOptionsResponse",
+      "undefined" : "TooManyArgumentOptionsResponse"
+    },
+    "id" : "22",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#YesNoRequestStepFunction",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "YesNoRequestStepFunction",
+      "undefined" : "YesNoRequestStepFunction"
+    },
+    "comment" : {
+      "undefined" : "Step Function associated to a YesNoRequest."
+    },
+    "id" : "23",
+    "superClasses" : [ "24" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#NullUserResponseTrace",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Null User Response: I don't know.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "NullUserResponseTrace",
+      "undefined" : "NullUserResponseTrace"
+    },
+    "comment" : {
+      "en" : "Response that does not represent a value that can be classified as ContentResponse or YesNoResponse."
+    },
+    "id" : "4",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#GreetingResponse",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "es",
+        "value" : "\"¡Hola! Soy {SystemName}. Encantado de ayudarte.\"\n\n\"¡Hola! Soy {Teknibot}. Encantado de ayudarte.\"",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "\"Hi! I am {SystemName}. I am happy to help you.\"\n\n\"Hi! I am {Teknibot}. I am happy to help you.\"",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "GreetingResponse",
+      "undefined" : "GreetingResponse"
+    },
+    "comment" : {
+      "en" : "Welcome message."
+    },
+    "id" : "25",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#Restart",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Restart",
+      "undefined" : "Restart"
+    },
+    "comment" : {
+      "undefined" : "Marker that requires the dialogue to restart."
+    },
+    "id" : "26",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#ArgumentCharacteristicRequest",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "es",
+        "value" : "\"¿De qué {characteristic} es {too_broad_argument}?\n\n\"¿De qué {color} es (la) {pieza}?\"",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "\"Which {characteristic} is {too_broad_argument}?\"\n\n\"Which {colour} is (the) {piece}?\"",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ArgumentCharacteristicRequest",
+      "undefined" : "ArgumentCharacteristicRequest"
+    },
+    "comment" : {
+      "en" : "Request that demands a specific characteristic of the argument. This request is used when the argument provided is too broad and the system needs some characteristic that allows determining the specific element the user is refering to.\n\nFor example, the user would require a \"piece\", and the system includes data for 300 types of pieces."
+    },
+    "id" : "27",
+    "superClasses" : [ "28" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#SystemRequest",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "Ask for missing information, ask for confirmation.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SystemRequest",
+      "undefined" : "SystemRequest"
+    },
+    "subClasses" : [ "29", "28" ],
+    "comment" : {
+      "en" : "Act in which the system requires user input."
+    },
+    "id" : "21",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#TooManyWorldElementOptionsResponse",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "es",
+        "value" : "¡Tu comando se puede asociar a demasiados elementos!",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Your command can be associated to too many elements!",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "TooManyWorldElementOptionsResponse",
+      "undefined" : "TooManyWorldElementOptionsResponse"
+    },
+    "comment" : {
+      "en" : "Response given when the number of possible World Elements is too big."
+    },
+    "id" : "52",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#ArgumentOptionsResponse",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "es",
+        "value" : "¡El item {item} puede asociarse a varios argumentos!",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "The item {item} can be associated to many arguments!",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ArgumentOptionsResponse",
+      "undefined" : "ArgumentOptionsResponse"
+    },
+    "comment" : {
+      "en" : "Response that the system gives when an item can be associated to more than one argument."
+    },
+    "id" : "53",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#ContentRequest",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Which is the error code?",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ContentRequest",
+      "undefined" : "ContentRequest"
+    },
+    "subClasses" : [ "27", "55", "57", "58", "35", "37" ],
+    "comment" : {
+      "en" : "Request that asks for specific information, other than \"Yes\" or \"No\" (and equivalents).\n\nAlso known as \"Non polar/Open question\" in linguistics."
+    },
+    "id" : "28",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#StepFunction",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "StepFunction",
+      "undefined" : "StepFunction"
+    },
+    "subClasses" : [ "42", "44", "23" ],
+    "comment" : {
+      "undefined" : "Element that is linked to a function in the Dialogue Manager code. This element also determines the implications of the output of said function in the code."
+    },
+    "id" : "24"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#DialogueControlMarker",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "Continue, restart dialogue",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DialogueControlMarker",
+      "undefined" : "DialogueControlMarkers"
+    },
+    "subClasses" : [ "47", "26", "10" ],
+    "comment" : {
+      "undefined" : "Elements that correspond to predefined or generic actions in dialogue control."
+    },
+    "id" : "11"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#NoUserResponse",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "No User Responses: No, Never, Not at all",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "NoUserResponse",
+      "undefined" : "NoUserResponse"
+    },
+    "comment" : {
+      "en" : "Element that leaves a record of the User Responses performed throughout the dialogue process. These responses correspond to a negative polarity."
+    },
+    "id" : "51",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#YesUserResponse",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Yes User Responses: Yes, OK",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "YesUserResponse",
+      "undefined" : "YesUserResponse"
+    },
+    "comment" : {
+      "en" : "Element that leaves a record of the User Responses performed throughout the dialogue process. These responses correspond to a positive polarity."
+    },
+    "id" : "31",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#ValueNotCompatibleWithArgumentResponse",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "es",
+        "value" : "\"No puede ser {Argument}\".\n\n\"No puede ser {el lugar al que quieres que te lleve}\".",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "\"It cannot be the {Argument}\".\n\n\"It cannot be the {destination you want me to take you}\".",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ValueNotCompatibleWithArgumentResponse",
+      "undefined" : "ValueNotCompatibleWithArgumentResponse"
+    },
+    "comment" : {
+      "en" : "Response given when the ArgValue for an Argument provided by the user is not compatible with said Argument."
+    },
+    "id" : "67",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#AlternativeArgumentSuggestionRequest",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Request: \"Take me to a laboratory with microphone\".\n\n\"I cannot find any {Item} with {Complement} as {ArgumentTag}, but I can suggest {IDval_AlternativeItem}, which it does have it. Do you want me to take you there?\"\n\n\"I cannot find any {laboratory} with {microphone} as {the destination you want to go}, but I can suggest {meeting room 1}, which it does have it. Do you want me to take you there?\"",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "es",
+        "value" : "Request: \"Llévame a un laboratorio con micrófono\".\n\n\"No encuentro ningún/a {Item} con {Complement} como {argumentTag}, pero puedo sugerir {IDval_AlternativeItem}, que sí que tiene. ¿Le llevo ahí?\"\n\n\"No encuentro ningún/a {laboratorio} con {micrófono} como {el destino al que quiere que le lleve}, pero puedo sugerir {sala de reunión 1}, que sí que tiene. ¿Le llevo ahí?\"",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "AlternativeArgumentSuggestionRequest",
+      "undefined" : "AlternativeArgumentSuggestionRequest"
+    },
+    "comment" : {
+      "es" : "Request that arises when the system has not been able to obtain an argument through an item + complement. The system suggests an alternative that contains the complement in the request."
+    },
+    "id" : "68",
+    "superClasses" : [ "29" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#UnderstoodResponse",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "UnderstoodResponse",
+      "undefined" : "UnderstoodResponse"
+    },
+    "comment" : {
+      "undefined" : "Response given by the system to reassure the user that it has understood the request."
+    },
+    "id" : "69",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#ArgumentSpecifyRequest",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "[Situation: the value \"Repairing table\" could be Origin or Destination]\n\n[Previous SysResponse: \"What you told me could correspond to many elements!\"]\n\n\"Is it {the place you want me to take you}?\"\n\n\"Is it {Argument}?\"",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "es",
+        "value" : "[Situation: the value \"Mesa de reparación\" could be Origin or Destination]\n\n[Previous SysResponse: \"¡Lo que me has dicho podría ser varias cosas!\"]\n\n\"¿Es {el lugar al que quieres que te lleve}?\"\n\n\"¿Es {Argument}?\"",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ArgumentSpecifyRequest",
+      "undefined" : "ArgumentSpecifyRequest"
+    },
+    "comment" : {
+      "en" : "Request made when a value for an Argument can belong to different Arguments. The strategy is asking for each Argument option until the user confirms."
+    },
+    "id" : "70",
+    "superClasses" : [ "29" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#VerifyInfoRequest",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "[PreviousSysResponse: \"Este elemento no puede ser {ArgTag}\"]\n\"¿Puedes verificarlo?\"\n\n[PreviousSysResponse: \"Este elemento no puede ser {el destino}\"]\n\"¿Puedes verificarlo?\"",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "[Previous SysResponse: \"This item cannot be {ArgTag}\"]\n\"Can you verify?\"\n\n[Previous SysResponse: \"This item cannot be {the destination}\"]\n\"Can you verify?\"",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "VerifyInfoRequest",
+      "undefined" : "VerifyInfoRequest"
+    },
+    "comment" : {
+      "en" : "Request that requires the user to repeat some information."
+    },
+    "id" : "57",
+    "superClasses" : [ "28" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#ContentUserResponseTrace",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Content User Response: The error code is 412.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ContentUserResponseTrace",
+      "undefined" : "ContentUserResponseTrace"
+    },
+    "comment" : {
+      "en" : "Element that leaves a record of the User Responses performed throughout the dialogue process. These responses provide specific information, as a response for a ContentRequest."
+    },
+    "id" : "1",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#ArgumentNotCompatibleResponse",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "es",
+        "value" : "\"{ArgumentValue} no puede ser {Argument}.\"\n\n\"{Baño} no puede ser {Error}.\"",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "\"{ArgumentValue} cannot be the {Argument}.\"\n\n\"{Toilet} cannot be the {Error}.\"",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ArgumentNotCompatibleResponse",
+      "undefined" : "ArgumentNotCompatibleResponse"
+    },
+    "comment" : {
+      "en" : "This would imply an ArgumentRequest."
+    },
+    "id" : "91",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#ActionDisambiguationRequest",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "es",
+        "value" : "[Previous SysResp: \"No he podido resolver la acción a partir de tu petición\"]\n\n\"¿Quieres {ActionTag}?\n\n\"¿Quieres {que te lleve a algún sitio}?\"",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "[Previous SysResp: \"I couldn't resolve the action from your request\".]\n\"Do you want to {ActionTag}?\n\n\"Do you want to {go somewhere}?",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ActionDisambiguationRequest",
+      "undefined" : "ActionDisambiguationRequest"
+    },
+    "comment" : {
+      "en" : "Request that makes the user choose from a set of Actions obtained through inference."
+    },
+    "id" : "80",
+    "superClasses" : [ "29" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#YesNoUserResponseTrace",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "YesNo User Responses:\n\n- Yes, OK\n\n- No, Not at all",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "YesNoUserResponseTrace",
+      "undefined" : "YesNoUserResponseTrace"
+    },
+    "subClasses" : [ "51", "31" ],
+    "comment" : {
+      "en" : "Element that leaves a record of the User Responses performed throughout the dialogue process. These responses correspond to a positive or negative polarity."
+    },
+    "id" : "32",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#TooManyActionOptionsResponse",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "es",
+        "value" : "¡Tu comando se puede asociar a demasiadas acciones! ¿Puedes repetir y ser un poco más específico, por favor?",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Your command can be associated to too many actions! Can you repeat and be more specific, please?",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "TooManyActionOptionsResponse",
+      "undefined" : "TooManyActionOptionsResponse"
+    },
+    "comment" : {
+      "en" : "Response given when the number of possible Actions is too big."
+    },
+    "id" : "101",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#UserResponseTrace",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "UserResponseTrace",
+      "undefined" : "UserResponseTrace"
+    },
+    "subClasses" : [ "32", "1", "4" ],
+    "comment" : {
+      "en" : "Element that leaves a record of the User Responses performed throughout the dialogue process."
+    },
+    "id" : "2",
+    "superClasses" : [ "94" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#ResponseTypeNotExpectedResponse",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ResponseTypeNotExpectedResponse",
+      "undefined" : "ResponseTypeNotExpectedResponse"
+    },
+    "subClasses" : [ "6", "9" ],
+    "comment" : {
+      "en" : "Reponse given to the user when the UserResponse does not correspond with the expected response of the SystemRequest."
+    },
+    "id" : "7",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#ActionOptionsResponse",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "es",
+        "value" : "¡El comando puede asociarse a varias acciones!",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Your command can be associated to many actions!",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ActionOptionsResponse",
+      "undefined" : "ActionOptionsResponse"
+    },
+    "comment" : {
+      "en" : "Response that the system gives when a command can be associated to more than one action."
+    },
+    "id" : "90",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#NoMoreOptionsContinueResponse",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "es",
+        "value" : "¡No tengo más opciones que mostrarte!",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "I do not have more options to offer you!",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "NoMoreOptionsContinueResponse",
+      "undefined" : "NoMoreOptionsContinueResponse"
+    },
+    "comment" : {
+      "en" : "Response that the system displays when it runs out of options. It is intended to continue with a full request of the element that the previous options corresponded to."
+    },
+    "id" : "119",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#ItemNotCompatibleAnyArgResponse",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ItemNotCompatibleAnyArgResponse",
+      "undefined" : "ItemNotCompatibleAnyArgResponse"
+    },
+    "comment" : {
+      "en" : "The item {item} is not compatible with any argument for this action.",
+      "es" : "El item {item} no es compatible con ningún argumento de la acción.",
+      "undefined" : "The system informs the user the Item value provided is not compatible with any action argument, according to what has been modelled in the KB."
+    },
+    "id" : "109",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#CannotResolveActionResponse",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "es",
+        "value" : "No he podido asociar tu comando a una acción. ¿Puedes repetir y ser más específico, por favor?",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "I couldn't associate your command to an action. Can you please be more specific?",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CannotResolveActionResponse",
+      "undefined" : "CannotResolveActionResponse"
+    },
+    "comment" : {
+      "en" : "Response that the system gives when it cannot associate an action/target to one or more actions."
+    },
+    "id" : "112",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#ArgumentNotGuessedResponse",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "es",
+        "value" : "\"I cannot guess the {Argument} with the information you provided.\"\n\n\"I cannot guess the {Error} with the information you provided.\"",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "es",
+        "value" : "\"Con las características que me has dado, no he podido averiguar el {Argument}.\"\n\n\"Con las características que me has dado, no he podido averiguar el {Error}.\"",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ArgumentNotGuessedResponse",
+      "undefined" : "ArgumentNotGuessedResponse"
+    },
+    "comment" : {
+      "en" : "This would imply an ArgumentRequest/ArgumentCharacteristicRequest"
+    },
+    "id" : "103",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#ArgumentAssignationRequest",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "The {Argument} is {Argument_value}, isn't it?\n\n\"The Destination is \"Auditorium\", isn't it?\"",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "es",
+        "value" : "\"El {Argument} es el {Argument_value}, ¿verdad?\"\n\n\"El Destino es el \"Auditorio\", ¿verdad?\"",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ArgumentAssignationRequest",
+      "undefined" : "ArgumentAssignationRequest"
+    },
+    "comment" : {
+      "en" : "Request made to reassure the assignation of a value from the KEE to an Argument."
+    },
+    "id" : "72",
+    "superClasses" : [ "29" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#ArgumentClarificationRequest",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "es",
+        "value" : "\"¿Puedes ser un poco más específico con el {ArgTag}?\"\n\n\"¿Puedes ser un poco más específico con el {destino al que quieres que te guíe}?\"",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "es",
+        "value" : "\"Could you please be more specific with {ArgTag}?\"\n\n\"Could you please be more specific with {the destination you want me to take you}?\"",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ArgumentClarificationRequest",
+      "undefined" : "ArgumentClarificationRequest"
+    },
+    "comment" : {
+      "en" : "Request that asks the user for some clarification for the value of an argument when a previously saved value generates too many options."
+    },
+    "id" : "58",
+    "superClasses" : [ "28" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#SecondaryDialogueTrace",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SecondaryDialogueTrace",
+      "undefined" : "SecondaryDialogueTrace"
+    },
+    "comment" : {
+      "undefined" : "Element that leaves a record of the secondary dialogues performed."
+    },
+    "id" : "133",
+    "superClasses" : [ "134" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#SystemStepTrace",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SystemStepTrace",
+      "undefined" : "SystemStepTrace"
+    },
+    "subClasses" : [ "13", "16" ],
+    "comment" : {
+      "undefined" : "Element that leaves a record of the SystemSteps performed throughout the dialogue process."
+    },
+    "id" : "14"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#ArgumentRequest",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "es",
+        "value" : "\"¿Puedes decirme el {argument}?\"\n\n\"¿Puedes decirme el {Destino}?\"",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "\"Can you tell me the {argument}?\n\n\"Can you tell me the {Destination}?\"",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ArgumentRequest",
+      "undefined" : "ArgumentRequest"
+    },
+    "comment" : {
+      "en" : "Request that demands for the value of an Argument."
+    },
+    "id" : "35",
+    "superClasses" : [ "28" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#ContentRequestStepFunction",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ContentRequestStepFunction",
+      "undefined" : "ContentRequestStepFunction"
+    },
+    "comment" : {
+      "undefined" : "Step Function associated to a ContentRequest."
+    },
+    "id" : "44",
+    "superClasses" : [ "24" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#DialogueTrace",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DialogueTrace",
+      "undefined" : "DialogueTrace"
+    },
+    "comment" : {
+      "undefined" : "Element that leaves a record of the dialogues performed."
+    },
+    "id" : "136",
+    "superClasses" : [ "134" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "156",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#DialogueStep",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DialogueStep",
+      "undefined" : "DialogueStep"
+    },
+    "comment" : {
+      "undefined" : "Step in the dialogue process that requires a system interaction with the user (SystemStep)."
+    },
+    "id" : "139"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#ProcessStep",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ProcessStep",
+      "undefined" : "ProcessStep"
+    },
+    "comment" : {
+      "undefined" : "Step in the dialogue process that does not require a system interaction with the user (SystemStep)."
+    },
+    "id" : "142"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#SystemStep",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SystemStep",
+      "undefined" : "SystemStep"
+    },
+    "subClasses" : [ "18", "21" ],
+    "comment" : {
+      "undefined" : "Step performed by the system in order to request information to the user or simply outputting information."
+    },
+    "id" : "19"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#NoResultsClarificationResponse",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "es",
+        "value" : "No encuentro ningún elemento que responda a lo que me pides.",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "I cannot find anything that corresponds to your demand.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "NoResultsClarificationResponse",
+      "undefined" : "NoResultsClarificationResponse"
+    },
+    "comment" : {
+      "en" : "Response that the system returns when the clarification step of the value of an Argument does not return any results."
+    },
+    "id" : "128",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#ArgumentExplanationResponse",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "\"The {Argument} corresponds to {ArgDescription}\"\n\n\"The {Error} corresponds to {the ID of the error that appears in the machine}\"",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "es",
+        "value" : "\"El {Argument} corresponde a{ArgDescription}\"\n\n\"El {Error} corresponde a{l número de error que aparece en la máquina}\"",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ArgumentExplanationResponse",
+      "undefined" : "ArgumentExplanationResponse"
+    },
+    "comment" : {
+      "en" : "Response that gives details about an Argument. For example, when the user does not understand what information conveys said Argument."
+    },
+    "id" : "126",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "172",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "177",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#OptionsAvailableResponse",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "es",
+        "value" : "\"Tengo varias opciones para tu comando.\"\n\n\"¡Lo que me has dicho puede ser varias cosas!\"",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "\"I have many options for your request.\"",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "OptionsAvailableResponse",
+      "undefined" : "OptionsAvailableResponse"
+    },
+    "comment" : {
+      "en" : "Response in which the system tells the user that it has several options for a specific element (e.g. WorldElement).\n\nNote the difference between OptionsAvailableResponse and TooManyAlternativesResponse: the first implies that there is a fair amount of options, whereas the latter implies that the options that are available are too many and it will require the user to be more specific."
+    },
+    "id" : "118",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#RepeatArgumentRequest",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "es",
+        "value" : "\"¿Puedes repetir el {argument}?\"\n\n\"¿Puedes repetir el {Destino}?\"",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "\"Can you repeat the {Argument}?\n\n\"Can you repeat the {Destination}?\"",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "RepeatArgumentRequest",
+      "undefined" : "RepeatArgumentRequest"
+    },
+    "comment" : {
+      "en" : "Request that demands the user to repeat the value of an Argument."
+    },
+    "id" : "55",
+    "superClasses" : [ "28" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#NoMoreOptionsRestartResponse",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "es",
+        "value" : "¡No tengo más opciones que mostrarte! ¿Puedes reformular tu comando para que te entienda mejor?",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "I do not have more options to offer you! Can you reformulate your command so I can understand better?",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "NoMoreOptionsRestartResponse",
+      "undefined" : "NoMoreOptionsRestartResponse"
+    },
+    "comment" : {
+      "en" : "Response that the system displays when it runs out of options. It finishes the current Dialogue."
+    },
+    "id" : "124",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#SystemResponseTrace",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SystemResponseTrace",
+      "undefined" : "SystemResponseTrace"
+    },
+    "comment" : {
+      "undefined" : "Element that leaves a record of the SystemResponses performed throughout the dialogue process."
+    },
+    "id" : "13",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#ContentResponseNotExpected",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ContentResponseNotExpected",
+      "undefined" : "ContentResponseNotExpected"
+    },
+    "comment" : {
+      "en" : "\"You only need me to tell me yes or no, please\"",
+      "es" : "\"Solo necesito que me digas sí o no, por favor\""
+    },
+    "id" : "9",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#ProcessStepStepFunction",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ProcessStepStepFunction",
+      "undefined" : "ProcessStepStepFunction"
+    },
+    "comment" : {
+      "undefined" : "Step Function associated to a ProcessStep."
+    },
+    "id" : "42",
+    "superClasses" : [ "24" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "191",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#DialogueProcessTrace",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DialogueProcessTrace",
+      "undefined" : "DialogueProcessTrace"
+    },
+    "subClasses" : [ "133", "136" ],
+    "comment" : {
+      "undefined" : "Element that leaves a record of the dialogues performed throughout the dialogue process."
+    },
+    "id" : "134"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#ArgumentValueDisambiguationRequest",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "\"Do you want {Action} {ArgumentConnector} {WorldElement}?\"\n\n\"Do you want {to go} {to} {Sala Ura}?\"",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "es",
+        "value" : "\"¿Quieres {Action} {ArgumentConnector} {WorldElement}?\"\n\n\"¿Quieres {que te guíe} {a} {Sala Ura}?\"",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ArgumentValueDisambiguationRequest",
+      "undefined" : "ArgumentValueDisambiguationRequest"
+    },
+    "comment" : {
+      "en" : "Request that tries to obtain the value of the argument when it is ambiguous (e.g. \"sala\" may apply to \"sala Ura\", \"sala Sua\", etc.)."
+    },
+    "id" : "83",
+    "superClasses" : [ "29" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#ReassureFeedbackRequest",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "\"So, you want me {Action} {ArgumentConnector} {Argument}, right?\"\n\n\"So, you want me {to take you} {to} {the toilet}, right?\"",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "es",
+        "value" : "\"Entonces, quieres que {Action} {ArgumentConnector} {Argument}, ¿verdad?\"\n\n\"Entonces, quieres que {te lleve} {a} {l baño}, ¿verdad?\"",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ReassureFeedbackRequest",
+      "undefined" : "ReassureFeedbackRequest"
+    },
+    "comment" : {
+      "en" : "Request that is sent in order to obtain feedback whether the interpretation obtained is correct or not."
+    },
+    "id" : "76",
+    "superClasses" : [ "29" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "200",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "203",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#Continue",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Continue",
+      "undefined" : "Continue"
+    },
+    "comment" : {
+      "undefined" : "Marker that conveys the idea of continuing with the dialogue process."
+    },
+    "id" : "47",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#SystemResponse",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SystemResponse",
+      "undefined" : "SystemResponse"
+    },
+    "subClasses" : [ "119", "116", "118", "67", "124", "126", "128", "22", "109", "52", "112", "114", "25", "53", "69", "101", "103", "105", "7", "90", "91" ],
+    "comment" : {
+      "en" : "Information that the system provides in response to a UserRequest or as a piece of information directed to the user without a prior UserRequest."
+    },
+    "id" : "18",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#UserCommandRequest",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "es",
+        "value" : "¿En qué puedo ayudarte?\n\nDame tu comando.",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "es",
+        "value" : "How can I help you?\n\nTell me your command.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "UserCommandRequest",
+      "undefined" : "UserCommandRequest"
+    },
+    "comment" : {
+      "en" : "Request to the user to provide their (initial) command."
+    },
+    "id" : "37",
+    "superClasses" : [ "28" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#YesNoResponseNotExpected",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "YesNoResponseNotExpected",
+      "undefined" : "YesNoResponseNotExpected"
+    },
+    "comment" : {
+      "en" : "\"I think I haven't understood. Can you be more specific?",
+      "es" : "\"Creo que no te he entendido. ¿Puedes ser un poco más concreto con tu respuesta?\""
+    },
+    "id" : "6",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "207",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#TooManyAlternativesResponse",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "\"I have too many options taking into account the information you provided to me.\"\n\n\"I have too many options taking into account the information you provided to me.\"",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "es",
+        "value" : "\"Tengo demasiadas opciones con la información que me has dado.\"\n\n\"Tengo demasiadas opciones con la información que me has dado.\"",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "TooManyAlternativesResponse",
+      "undefined" : "TooManyAlternativesResponse"
+    },
+    "comment" : {
+      "en" : "Response given when the alternatives (in general) are too big."
+    },
+    "id" : "105",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#UserRequestTrace",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "UserRequestTrace",
+      "undefined" : "UserRequestTrace"
+    },
+    "comment" : {
+      "en" : "Element that leaves a record of the User Requests performed throughout the dialogue process."
+    },
+    "id" : "96",
+    "superClasses" : [ "94" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "217",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "122",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "196",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "210",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "78",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#IncorrectArgumentRequest",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "\"Have I missed the {Argument}?\"\n\n\"Have I missed the {Origin}?\"",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "es",
+        "value" : "\"¿Me he equivocado con el {Argument}?\"\n\n\"¿Me he equivocado con el {Origen}?\"",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IncorrectArgumentRequest",
+      "undefined" : "IncorrectArgumentRequest"
+    },
+    "comment" : {
+      "en" : "Request that checks which is the Argument/Action that has not been interpreter correctly, after a negative ReassureFeedbackRequest."
+    },
+    "id" : "86",
+    "superClasses" : [ "29" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "62",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#SystemRequestTrace",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SystemRequestTrace",
+      "undefined" : "SystemRequestTrace"
+    },
+    "comment" : {
+      "undefined" : "Element that leaves a record of the SystemRequests performed throughout the dialogue process."
+    },
+    "id" : "16",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "152",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "66",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "64",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "39",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "234",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#NotUnderstoodResponse",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "es",
+        "value" : "\"Lo siento, no te he entendido. ¿Puedes repetir, por favor?",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "\"I am sorry, but I haven't understood. Can you repeat, please?\"",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "NotUnderstoodResponse",
+      "undefined" : "NotUnderstoodResponse"
+    },
+    "comment" : {
+      "en" : "Response that informs the user that the system has not understood the user command."
+    },
+    "id" : "116",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#UserStepTrace",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "UserStepTrace",
+      "undefined" : "UserStepTrace"
+    },
+    "subClasses" : [ "2", "96" ],
+    "comment" : {
+      "undefined" : "Element that leaves a record of the user steps (requests and responses) performed throughout the dialogue process."
+    },
+    "id" : "94"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#CannotResolveCommandResponse",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "I could not resolve your command.",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "es",
+        "value" : "No he podido resolver tu petición.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CannotResolveCommandResponse",
+      "undefined" : "CannotResolveCommandResponse"
+    },
+    "comment" : {
+      "en" : "Response that informs the user that the command could not be resolved.\n\n[to be followed by an ArgRequest]"
+    },
+    "id" : "114",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#YesNoRequest",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Do you want to go to the laboratory?",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "YesNoRequest",
+      "undefined" : "YesNoRequest"
+    },
+    "subClasses" : [ "80", "70", "83", "68", "86", "72", "74", "76" ],
+    "comment" : {
+      "en" : "Request the response of which is expected to be limited to \"Yes\" or \"No\" (and equivalents).\n\nAlso known as \"Polar question\" in linguistics."
+    },
+    "id" : "29",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#IntentRequest",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Situation: the Intent for the Request could be \"Information\" or \"Guiding\"\n\n\"So many interpretations! See if you can help me! Do you need {Intent}?\"\n\"Then do you need {Intent}?\n\n\nSYS: \"So many interpretations! See if you can help me! Do you need {Information}?\"\n\nUSR: \"No\"\n\nSYS: \"Then do you need {Guiding}?\n\nUSR: \"Yes\"",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "es",
+        "value" : "Situation: the intent for the Request could be \"Information\" or \"Guiding\"\n\n\"¡Cuántas interpretaciones! ¡A ver si me puedes ayudar! ¿Quieres {Intent}?\"\n\"¿Entonces necesitas {Intent}?\n\nSYS: \"¡Cuántas interpretaciones! ¡A ver si me puedes ayudar! ¿Quieres {que te dé información}?\"\n\nUSR: \"No\"\n\nSYS: \"¿Entonces necesitas {que te lleve}?\n\nUSR: \"Sí\"",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IntentRequest",
+      "undefined" : "IntentRequest"
+    },
+    "comment" : {
+      "en" : "Request made when a UserRequest can belong to different Intents. The strategy is asking for each Intent option until the user confirms."
+    },
+    "id" : "74",
+    "superClasses" : [ "29" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "3",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "38",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "61",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "63",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "65",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "73",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "75",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "77",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "79",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "85",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "87",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "88",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "89",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "92",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "93",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "95",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "97",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "98",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "99",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "100",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "102",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "104",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "106",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "108",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "110",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "111",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "113",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "115",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "117",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "120",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "121",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "123",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "125",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "127",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "129",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "130",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "132",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "135",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "137",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "40",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "138",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "140",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "141",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "143",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "144",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "145",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "146",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "147",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "148",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "149",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "150",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "151",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "153",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "154",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "155",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "157",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "158",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "159",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "160",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "161",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "162",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "163",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "169",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "170",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "171",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "173",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "174",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "175",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "176",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "178",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "179",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "180",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "164",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "181",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "182",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "183",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "184",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "185",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "186",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "187",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "188",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "189",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "190",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "192",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "193",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "194",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "195",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "168",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "197",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "198",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "199",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "201",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "202",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "204",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "205",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "206",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "208",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "209",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "211",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "212",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "213",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "214",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "216",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "218",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "219",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "220",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "221",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "222",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "223",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "224",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "225",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "226",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "227",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "228",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "229",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "165",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "230",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "232",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "233",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "235",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "236",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "237",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "238",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "239",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "240",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "241",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "242",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "243",
+    "type" : "owl:disjointWith"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "0"
+  }, {
+    "range" : "2",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "3"
+  }, {
+    "range" : "7",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "5"
+  }, {
+    "range" : "7",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "8"
+  }, {
+    "range" : "14",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "12"
+  }, {
+    "range" : "14",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "15"
+  }, {
+    "range" : "19",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "17"
+  }, {
+    "range" : "19",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "20"
+  }, {
+    "range" : "32",
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "30"
+  }, {
+    "range" : "2",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "33"
+  }, {
+    "range" : "28",
+    "domain" : "35",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "34"
+  }, {
+    "range" : "28",
+    "domain" : "37",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "36"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#moreMaxOptionsImplies",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "39",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "moreMaxOptionsImplies",
+      "undefined" : "moreMaxOptionsImplies"
+    },
+    "superproperty" : [ "40" ],
+    "domain" : "39",
+    "comment" : {
+      "undefined" : "Establishes the implications when a StepFunction, in the Dialogue Manager code, returns more than one result as output and the length of the output is higher than the number of maximum results previously defined."
+    },
+    "attributes" : [ "object" ],
+    "id" : "38"
+  }, {
+    "range" : "24",
+    "domain" : "42",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "41"
+  }, {
+    "range" : "24",
+    "domain" : "44",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "43"
+  }, {
+    "range" : "24",
+    "domain" : "23",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "45"
+  }, {
+    "range" : "11",
+    "domain" : "47",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "46"
+  }, {
+    "range" : "11",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "48"
+  }, {
+    "range" : "11",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "49"
+  }, {
+    "range" : "32",
+    "domain" : "51",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "50"
+  }, {
+    "range" : "28",
+    "domain" : "55",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "54"
+  }, {
+    "range" : "28",
+    "domain" : "27",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "56"
+  }, {
+    "range" : "28",
+    "domain" : "57",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "59"
+  }, {
+    "range" : "28",
+    "domain" : "58",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "60"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#dialStatus",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "62",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "dialStatus",
+      "undefined" : "dialStatus"
+    },
+    "cardinality" : "1",
+    "domain" : "39",
+    "comment" : {
+      "undefined" : "Sets whether a Dialogue/SecondaryDialogue has finished (closed) or not (open)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "61"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#finishDateTime",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "64",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "finishDateTime",
+      "undefined" : "finishDateTime"
+    },
+    "cardinality" : "1",
+    "domain" : "39",
+    "comment" : {
+      "undefined" : "Sets a finish timestamp to a DialogueTrace."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "63"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "66",
+    "label" : {
+      "IRI-based" : "topDataProperty"
+    },
+    "domain" : "39",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "65"
+  }, {
+    "range" : "29",
+    "domain" : "72",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "71"
+  }, {
+    "range" : "29",
+    "domain" : "74",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "73"
+  }, {
+    "range" : "29",
+    "domain" : "76",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "75"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#verb",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "78",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "verb",
+      "undefined" : "verb"
+    },
+    "domain" : "39",
+    "comment" : {
+      "undefined" : "Key element classified as \"verb\"/\"action\"."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "77"
+  }, {
+    "range" : "29",
+    "domain" : "80",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "79"
+  }, {
+    "range" : "29",
+    "domain" : "70",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "81"
+  }, {
+    "range" : "29",
+    "domain" : "83",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "82"
+  }, {
+    "range" : "29",
+    "domain" : "68",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "84"
+  }, {
+    "range" : "29",
+    "domain" : "86",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "85"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#lessMaxOptionsImplies",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "39",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "lessMaxOptionsImplies",
+      "undefined" : "lessMaxOptionsImplies"
+    },
+    "superproperty" : [ "40" ],
+    "domain" : "39",
+    "comment" : {
+      "undefined" : "Establishes the implications when a StepFunction, in the Dialogue Manager code, returns more than one result as output and the length of the output is smaller than the number of maximum results previously defined."
+    },
+    "attributes" : [ "object" ],
+    "id" : "87"
+  }, {
+    "range" : "18",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "88"
+  }, {
+    "range" : "18",
+    "domain" : "90",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "89"
+  }, {
+    "range" : "18",
+    "domain" : "91",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "92"
+  }, {
+    "range" : "94",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "93"
+  }, {
+    "range" : "94",
+    "domain" : "96",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "95"
+  }, {
+    "range" : "18",
+    "domain" : "25",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "97"
+  }, {
+    "range" : "18",
+    "domain" : "53",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "98"
+  }, {
+    "range" : "18",
+    "domain" : "69",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "99"
+  }, {
+    "range" : "18",
+    "domain" : "101",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "100"
+  }, {
+    "range" : "18",
+    "domain" : "103",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "102"
+  }, {
+    "range" : "18",
+    "domain" : "105",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "104"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#noOptionsImplies",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "39",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "noOptionsImplies",
+      "undefined" : "noOptionsImplies"
+    },
+    "superproperty" : [ "107" ],
+    "domain" : "39",
+    "comment" : {
+      "undefined" : "Establishes the implications when a StepFunction, in the Dialogue Manager code, returns no results as output."
+    },
+    "attributes" : [ "object" ],
+    "id" : "106"
+  }, {
+    "range" : "18",
+    "domain" : "109",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "108"
+  }, {
+    "range" : "18",
+    "domain" : "52",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "110"
+  }, {
+    "range" : "18",
+    "domain" : "112",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "111"
+  }, {
+    "range" : "18",
+    "domain" : "114",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "113"
+  }, {
+    "range" : "18",
+    "domain" : "116",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "115"
+  }, {
+    "range" : "18",
+    "domain" : "118",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "117"
+  }, {
+    "range" : "18",
+    "domain" : "67",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "120"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#text",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "122",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "text",
+      "undefined" : "text"
+    },
+    "cardinality" : "1",
+    "domain" : "39",
+    "comment" : {
+      "undefined" : "String that corresponds to a transcribed command by an user or the fully constructed outputSentence directed to the user."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "121"
+  }, {
+    "range" : "18",
+    "domain" : "124",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "123"
+  }, {
+    "range" : "18",
+    "domain" : "126",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "125"
+  }, {
+    "range" : "18",
+    "domain" : "128",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "127"
+  }, {
+    "range" : "18",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "129"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#isRequiredBy",
+    "inverse" : "131",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "39",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isRequiredBy",
+      "undefined" : "isRequiredBy"
+    },
+    "domain" : "39",
+    "comment" : {
+      "undefined" : "Establishes the SystemRequest that requires a given UserResponse type."
+    },
+    "attributes" : [ "object" ],
+    "id" : "130"
+  }, {
+    "range" : "134",
+    "domain" : "133",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "132"
+  }, {
+    "range" : "134",
+    "domain" : "136",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "135"
+  }, {
+    "range" : "18",
+    "domain" : "119",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "137"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#multipleOptionsImplies",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "39",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "multipleOptionsImplies",
+      "undefined" : "multipleOptionsImplies"
+    },
+    "superproperty" : [ "107" ],
+    "domain" : "39",
+    "subproperty" : [ "38", "87" ],
+    "comment" : {
+      "undefined" : "Establishes the implications when a StepFunction, in the Dialogue Manager code, returns more than one result as output."
+    },
+    "attributes" : [ "object" ],
+    "id" : "40"
+  }, {
+    "range" : "19",
+    "domain" : "139",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "138"
+  }, {
+    "range" : "24",
+    "domain" : "139",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "140"
+  }, {
+    "range" : "142",
+    "domain" : "139",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "141"
+  }, {
+    "range" : "19",
+    "domain" : "134",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "143"
+  }, {
+    "range" : "24",
+    "domain" : "134",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "144"
+  }, {
+    "range" : "94",
+    "domain" : "134",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "145"
+  }, {
+    "range" : "14",
+    "domain" : "134",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "146"
+  }, {
+    "range" : "94",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "147"
+  }, {
+    "range" : "14",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "148"
+  }, {
+    "range" : "142",
+    "domain" : "134",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "149"
+  }, {
+    "range" : "139",
+    "domain" : "134",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "150"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#dialogueStep",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "152",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "dialogueStep",
+      "undefined" : "dialogueStep"
+    },
+    "cardinality" : "1",
+    "domain" : "39",
+    "comment" : {
+      "undefined" : "Used to control which step is performing the current Dialogue."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "151"
+  }, {
+    "range" : "24",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "153"
+  }, {
+    "range" : "142",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "154"
+  }, {
+    "range" : "19",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "155"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#IDval",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "156",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IDval",
+      "undefined" : "IDval"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "Unique identification value for individuals."
+    },
+    "attributes" : [ "someValues", "datatype" ],
+    "id" : "157"
+  }, {
+    "range" : "139",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "158"
+  }, {
+    "range" : "134",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "159"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#isStepFunctionOf",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "28",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isStepFunctionOf",
+      "undefined" : "isStepFunctionOf"
+    },
+    "domain" : "44",
+    "comment" : {
+      "undefined" : "Establishes the SystemRequest or a ProcessStep corresponding to a StepFunction."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "160"
+  }, {
+    "range" : "32",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "161"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#userResponseNotUnderstoodImplies",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "116",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "userResponseNotUnderstoodImplies",
+      "undefined" : "userResponseNotUnderstoodImplies"
+    },
+    "superproperty" : [ "107" ],
+    "domain" : "44",
+    "comment" : {
+      "undefined" : "Establishes the implications when the system does not understand a UserResponse."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "162"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#implies",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "37",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "implies",
+      "undefined" : "implies"
+    },
+    "domain" : "25",
+    "subproperty" : [ "40", "164", "165", "166", "167", "106", "168" ],
+    "comment" : {
+      "undefined" : "Establishes the implications of the output of a StepFunction in the Dialogue Manager code."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "163"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#implies",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "37",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "implies",
+      "undefined" : "implies"
+    },
+    "domain" : "124",
+    "subproperty" : [ "40", "164", "165", "166", "167", "106", "168" ],
+    "comment" : {
+      "undefined" : "Establishes the implications of the output of a StepFunction in the Dialogue Manager code."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "169"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#implies",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "57",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "implies",
+      "undefined" : "implies"
+    },
+    "domain" : "109",
+    "subproperty" : [ "40", "164", "165", "166", "167", "106", "168" ],
+    "comment" : {
+      "undefined" : "Establishes the implications of the output of a StepFunction in the Dialogue Manager code."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "170"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#order",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "172",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "order",
+      "undefined" : "order"
+    },
+    "domain" : "139",
+    "comment" : {
+      "undefined" : "Sets the order for StepFunctions/DialogueSteps."
+    },
+    "attributes" : [ "someValues", "datatype" ],
+    "id" : "171"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#initiatedBy",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "19",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "initiatedBy",
+      "undefined" : "initiatedBy"
+    },
+    "domain" : "139",
+    "comment" : {
+      "undefined" : "Establishes the SystemRequest/Response that initiates a DialogueStep."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "173"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#hasUserRequest",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "96",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasUserRequest",
+      "undefined" : "hasUserRequest"
+    },
+    "domain" : "136",
+    "comment" : {
+      "undefined" : "Establishes the UserRequest corresponding to a DialogueTrace."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "174"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#hasSecondaryDialogue",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "133",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasSecondaryDialogue",
+      "undefined" : "hasSecondaryDialogue"
+    },
+    "domain" : "134",
+    "comment" : {
+      "undefined" : "Establishes the SecondaryDialogue corresponding to a DialogueTrace."
+    },
+    "attributes" : [ "someValues", "transitive", "object" ],
+    "id" : "175"
+  }, {
+    "range" : "94",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "176"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#IDval",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "177",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IDval",
+      "undefined" : "IDval"
+    },
+    "domain" : "139",
+    "comment" : {
+      "undefined" : "Unique identification value for individuals."
+    },
+    "attributes" : [ "someValues", "datatype" ],
+    "id" : "178"
+  }, {
+    "range" : "94",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "179"
+  }, {
+    "range" : "14",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "180"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#noUserResponseTypeImplies",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "39",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "noUserResponseTypeImplies",
+      "undefined" : "noUserResponseTypeImplies"
+    },
+    "superproperty" : [ "107" ],
+    "domain" : "39",
+    "comment" : {
+      "undefined" : "Establishes the implications of a negative UserResponse."
+    },
+    "attributes" : [ "object" ],
+    "id" : "164"
+  }, {
+    "range" : "94",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "181"
+  }, {
+    "range" : "94",
+    "domain" : "142",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "182"
+  }, {
+    "range" : "14",
+    "domain" : "142",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "183"
+  }, {
+    "range" : "14",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "184"
+  }, {
+    "range" : "19",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "185"
+  }, {
+    "range" : "94",
+    "domain" : "139",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "186"
+  }, {
+    "range" : "14",
+    "domain" : "139",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "187"
+  }, {
+    "range" : "19",
+    "domain" : "142",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "188"
+  }, {
+    "range" : "24",
+    "domain" : "142",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "189"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#isTraceOf",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "19",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isTraceOf",
+      "undefined" : "isTraceOf"
+    },
+    "domain" : "14",
+    "comment" : {
+      "undefined" : "Establishes the relationship between a Trace and the element it refers to."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "190"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#implies",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "58",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "implies",
+      "undefined" : "implies"
+    },
+    "domain" : "105",
+    "subproperty" : [ "40", "164", "165", "166", "167", "106", "168" ],
+    "comment" : {
+      "undefined" : "Establishes the implications of the output of a StepFunction in the Dialogue Manager code."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "192"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#implies",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "37",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "implies",
+      "undefined" : "implies"
+    },
+    "domain" : "101",
+    "subproperty" : [ "40", "164", "165", "166", "167", "106", "168" ],
+    "comment" : {
+      "undefined" : "Establishes the implications of the output of a StepFunction in the Dialogue Manager code."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "193"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#outputSentence",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "191",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "outputSentence",
+      "undefined" : "outputSentence"
+    },
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "String to be output by the system in order to communicate a SystemRequest/Response to the user."
+    },
+    "attributes" : [ "someValues", "datatype" ],
+    "id" : "194"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#initDateTime",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "196",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "initDateTime",
+      "undefined" : "initDateTime"
+    },
+    "cardinality" : "1",
+    "domain" : "39",
+    "comment" : {
+      "undefined" : "Sets a start timestamp to a DialogueTrace."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "195"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#yesUserResponseTypeImplies",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "39",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "yesUserResponseTypeImplies",
+      "undefined" : "YesUserResponseImplies"
+    },
+    "superproperty" : [ "107" ],
+    "domain" : "39",
+    "comment" : {
+      "undefined" : "Establishes the implications of a positive UserResponse."
+    },
+    "attributes" : [ "object" ],
+    "id" : "168"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#isTraceOf",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "18",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isTraceOf",
+      "undefined" : "isTraceOf"
+    },
+    "domain" : "13",
+    "comment" : {
+      "undefined" : "Establishes the relationship between a Trace and the element it refers to."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "197"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#isTraceOf",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "21",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isTraceOf",
+      "undefined" : "isTraceOf"
+    },
+    "domain" : "16",
+    "comment" : {
+      "undefined" : "Establishes the relationship between a Trace and the element it refers to."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "198"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#IDval",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "200",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IDval",
+      "undefined" : "IDval"
+    },
+    "domain" : "24",
+    "comment" : {
+      "undefined" : "Unique identification value for individuals."
+    },
+    "attributes" : [ "someValues", "datatype" ],
+    "id" : "199"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#hasDialogueProcessStep",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "139",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasDialogueProcessStep",
+      "undefined" : "hasDialogueProcessStep"
+    },
+    "domain" : "133",
+    "comment" : {
+      "undefined" : "Establishes the DialogueProcessStep corresponding to a DialogueTrace."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "201"
+  }, {
+    "range" : "18",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "202"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#order",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "203",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "order",
+      "undefined" : "order"
+    },
+    "domain" : "42",
+    "comment" : {
+      "undefined" : "Sets the order for StepFunctions/DialogueSteps."
+    },
+    "attributes" : [ "someValues", "datatype" ],
+    "id" : "204"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#hasUserResponse",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "2",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasUserResponse",
+      "undefined" : "hasUserResponse"
+    },
+    "domain" : "133",
+    "comment" : {
+      "undefined" : "Establishes the UserResponse corresponding to a SecondaryDialogueTrace."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "205"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#hasSystemRequest",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "16",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasSystemRequest",
+      "undefined" : "hasSystemRequest"
+    },
+    "domain" : "133",
+    "comment" : {
+      "undefined" : "Establishes the SystemRequest corresponding to a SecondaryDialogueTrace."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "206"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#IDval",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "207",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IDval",
+      "undefined" : "IDval"
+    },
+    "domain" : "142",
+    "comment" : {
+      "undefined" : "Unique identification value for individuals."
+    },
+    "attributes" : [ "someValues", "datatype" ],
+    "id" : "208"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#possibleValue",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "210",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "UserReq: \"I want to go to the room\"\n\npossibleValue \"room1\"\npossibleValue \"room2\"\n\nSystemReq: \"Do you want to go to {room1}?\"; \"Do you want to go to {room2}?\"",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "es",
+        "value" : "UserReq: \"Quiero ir a la sala\"\n\npossibleValue \"sala1\"\npossibleValue \"sala2\"\n\nSystem Req: \"¿Quieres ir a la {sala1}?\"; \"¿Quieres ir a la {sala2}?\"",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "possibleValue",
+      "undefined" : "possibleValue"
+    },
+    "domain" : "39",
+    "comment" : {
+      "undefined" : "When asking the user for a specific information, the possible values of that information to be asked to the user."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "209"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#isStepFunctionOf",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "142",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isStepFunctionOf",
+      "undefined" : "isStepFunctionOf"
+    },
+    "domain" : "42",
+    "comment" : {
+      "undefined" : "Establishes the SystemRequest or a ProcessStep corresponding to a StepFunction."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "211"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#implies",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "70",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "implies",
+      "undefined" : "implies"
+    },
+    "domain" : "118",
+    "subproperty" : [ "40", "164", "165", "166", "167", "106", "168" ],
+    "comment" : {
+      "undefined" : "Establishes the implications of the output of a StepFunction in the Dialogue Manager code."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "212"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#implies",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "55",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "implies",
+      "undefined" : "implies"
+    },
+    "domain" : "128",
+    "subproperty" : [ "40", "164", "165", "166", "167", "106", "168" ],
+    "comment" : {
+      "undefined" : "Establishes the implications of the output of a StepFunction in the Dialogue Manager code."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "213"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#hasStepFunction",
+    "inverse" : "215",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "42",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasStepFunction",
+      "undefined" : "hasStepFunction"
+    },
+    "domain" : "142",
+    "comment" : {
+      "undefined" : "Establishes the StepFunction corresponding to a SystemRequest or a ProcessStep."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "214"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#implies",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "83",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "implies",
+      "undefined" : "implies"
+    },
+    "domain" : "118",
+    "subproperty" : [ "40", "164", "165", "166", "167", "106", "168" ],
+    "comment" : {
+      "undefined" : "Establishes the implications of the output of a StepFunction in the Dialogue Manager code."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "216"
+  }, {
+    "range" : "21",
+    "domain" : "28",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "218"
+  }, {
+    "range" : "21",
+    "domain" : "29",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "219"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#implies",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "35",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "implies",
+      "undefined" : "implies"
+    },
+    "domain" : "103",
+    "subproperty" : [ "40", "164", "165", "166", "167", "106", "168" ],
+    "comment" : {
+      "undefined" : "Establishes the implications of the output of a StepFunction in the Dialogue Manager code."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "220"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#implies",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "70",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "implies",
+      "undefined" : "implies"
+    },
+    "domain" : "53",
+    "subproperty" : [ "40", "164", "165", "166", "167", "106", "168" ],
+    "comment" : {
+      "undefined" : "Establishes the implications of the output of a StepFunction in the Dialogue Manager code."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "221"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#implies",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "37",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "implies",
+      "undefined" : "implies"
+    },
+    "domain" : "112",
+    "subproperty" : [ "40", "164", "165", "166", "167", "106", "168" ],
+    "comment" : {
+      "undefined" : "Establishes the implications of the output of a StepFunction in the Dialogue Manager code."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "222"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#implies",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "35",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "implies",
+      "undefined" : "implies"
+    },
+    "domain" : "114",
+    "subproperty" : [ "40", "164", "165", "166", "167", "106", "168" ],
+    "comment" : {
+      "undefined" : "Establishes the implications of the output of a StepFunction in the Dialogue Manager code."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "223"
+  }, {
+    "range" : "29",
+    "domain" : "28",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "224"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#requires",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "requires",
+      "undefined" : "requires"
+    },
+    "domain" : "28",
+    "comment" : {
+      "undefined" : "Establishes the type of UserResponse required by a SystemRequest."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "225"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#hasStepFunction",
+    "inverse" : "215",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "44",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasStepFunction",
+      "undefined" : "hasStepFunction"
+    },
+    "domain" : "28",
+    "comment" : {
+      "undefined" : "Establishes the StepFunction corresponding to a SystemRequest or a ProcessStep."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "226"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#incorrectUserResponseTypeImplies",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "6",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "incorrectUserResponseTypeImplies",
+      "undefined" : "incorrectUserResponseTypeImplies"
+    },
+    "superproperty" : [ "107" ],
+    "domain" : "44",
+    "comment" : {
+      "undefined" : "Establishes the implications of an incorrect UserResponseType (e.g. when the request requires Yes/No as response and the user provides a ContentResponse)."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "227"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#implies",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "80",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "implies",
+      "undefined" : "implies"
+    },
+    "domain" : "90",
+    "subproperty" : [ "40", "164", "165", "166", "167", "106", "168" ],
+    "comment" : {
+      "undefined" : "Establishes the implications of the output of a StepFunction in the Dialogue Manager code."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "228"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#implies",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "57",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "implies",
+      "undefined" : "implies"
+    },
+    "domain" : "91",
+    "subproperty" : [ "40", "164", "165", "166", "167", "106", "168" ],
+    "comment" : {
+      "undefined" : "Establishes the implications of the output of a StepFunction in the Dialogue Manager code."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "229"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#singleOptionImplies",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "39",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "singleOptionImplies",
+      "undefined" : "singleOptionImplies"
+    },
+    "superproperty" : [ "107" ],
+    "domain" : "39",
+    "comment" : {
+      "undefined" : "Establishes the implications when a StepFunction, in the Dialogue Manager code, returns one result as output."
+    },
+    "attributes" : [ "object" ],
+    "id" : "165"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#hasTrace",
+    "inverse" : "231",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "39",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasTrace",
+      "undefined" : "hasTrace"
+    },
+    "domain" : "39",
+    "comment" : {
+      "undefined" : "Establishes the relationship between an element and its Trace."
+    },
+    "attributes" : [ "object" ],
+    "id" : "230"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#userResponseNotUnderstoodImplies",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "116",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "userResponseNotUnderstoodImplies",
+      "undefined" : "userResponseNotUnderstoodImplies"
+    },
+    "superproperty" : [ "107" ],
+    "domain" : "23",
+    "comment" : {
+      "undefined" : "Establishes the implications when the system does not understand a UserResponse."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "232"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#incorrectUserResponseTypeImplies",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "9",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "incorrectUserResponseTypeImplies",
+      "undefined" : "incorrectUserResponseTypeImplies"
+    },
+    "superproperty" : [ "107" ],
+    "domain" : "23",
+    "comment" : {
+      "undefined" : "Establishes the implications of an incorrect UserResponseType (e.g. when the request requires Yes/No as response and the user provides a ContentResponse)."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "233"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#isStepFunctionOf",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "29",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isStepFunctionOf",
+      "undefined" : "isStepFunctionOf"
+    },
+    "domain" : "23",
+    "comment" : {
+      "undefined" : "Establishes the SystemRequest or a ProcessStep corresponding to a StepFunction."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "235"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#requires",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "32",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "requires",
+      "undefined" : "requires"
+    },
+    "domain" : "29",
+    "comment" : {
+      "undefined" : "Establishes the type of UserResponse required by a SystemRequest."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "236"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#currentValue",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "217",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "UserReq: \"I want to go to the room\"\n\npossibleValue \"room1\"\npossibleValue \"room2\"\n\nSystemReq: \"Do you want to go to {room1}?\" (currentValue: room1); \"Do you want to go to {room2}? (currentValue: room2)\"",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "UserReq: \"Quiero ir a la sala\"\n\npossibleValue \"sala1\"\npossibleValue \"sala2\"\n\nSystem Req: \"¿Quieres ir a la {sala1}?\" (currentValue: sala1); \"¿Quieres ir a la {sala2}? (currentValue: sala2)\"",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "currentValue",
+      "undefined" : "currentValue"
+    },
+    "domain" : "39",
+    "comment" : {
+      "undefined" : "When asking the user for a specific information, the information currently asked to the user."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "237"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#hasStepFunction",
+    "inverse" : "215",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "23",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasStepFunction",
+      "undefined" : "hasStepFunction"
+    },
+    "domain" : "29",
+    "comment" : {
+      "undefined" : "Establishes the StepFunction corresponding to a SystemRequest or a ProcessStep."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "238"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#implies",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "58",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "implies",
+      "undefined" : "implies"
+    },
+    "domain" : "52",
+    "subproperty" : [ "40", "164", "165", "166", "167", "106", "168" ],
+    "comment" : {
+      "undefined" : "Establishes the implications of the output of a StepFunction in the Dialogue Manager code."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "239"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#implies",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "37",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "implies",
+      "undefined" : "implies"
+    },
+    "domain" : "22",
+    "subproperty" : [ "40", "164", "165", "166", "167", "106", "168" ],
+    "comment" : {
+      "undefined" : "Establishes the implications of the output of a StepFunction in the Dialogue Manager code."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "240"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#dateTime",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "234",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "dateTime",
+      "undefined" : "dateTime"
+    },
+    "domain" : "39",
+    "comment" : {
+      "undefined" : "Sets a timestamp to a DialogueTrace."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "241"
+  }, {
+    "iri" : "https://w3id.org/todo/tododial#implies",
+    "baseIri" : "https://w3id.org/todo/tododial",
+    "range" : "57",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododial#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "implies",
+      "undefined" : "implies"
+    },
+    "domain" : "67",
+    "subproperty" : [ "40", "164", "165", "166", "167", "106", "168" ],
+    "comment" : {
+      "undefined" : "Establishes the implications of the output of a StepFunction in the Dialogue Manager code."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "242"
+  }, {
+    "range" : "2",
+    "domain" : "96",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "243"
+  } ]
+}
