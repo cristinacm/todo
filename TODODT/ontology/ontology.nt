@@ -1,0 +1,382 @@
+<https://w3id.org/todo/tododt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/todo/tododt> <http://creativecommons.org/ns#license> "http://purl.org/NET/rdflicense/cc-by4.0" .
+<https://w3id.org/todo/tododt> <http://purl.org/dc/terms/contributor> "Izaskun Fernández (Tekniker) <mailto:izaskun.fernandez@tekniker.es>" .
+<https://w3id.org/todo/tododt> <http://purl.org/dc/terms/created> "2020-04-21T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/todo/tododt> <http://purl.org/dc/terms/creator> "Cristina Aceta (Tekniker) <mailto:cristina.aceta@tekniker.es>" .
+<https://w3id.org/todo/tododt> <http://purl.org/dc/terms/description> "Module for dialogue tracing." .
+<https://w3id.org/todo/tododt> <http://purl.org/dc/terms/issued> ""^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/todo/tododt> <http://purl.org/dc/terms/modified> "2021-03-08T16:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/todo/tododt> <http://purl.org/dc/terms/title> "TODODT: Dialogue Tracing Module for Task-Oriented Dialogue management Ontology (TODO)" .
+<https://w3id.org/todo/tododt> <http://purl.org/vocab/vann/preferredNamespacePrefix> "tododt" .
+<https://w3id.org/todo/tododt> <http://purl.org/vocab/vann/preferredNamespaceUri> "" .
+<https://w3id.org/todo/tododt> <http://www.w3.org/2002/07/owl#priorVersion> "" .
+<https://w3id.org/todo/tododt> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/bibliographicCitation
+<http://purl.org/dc/terms/bibliographicCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionIRI
+<http://www.w3.org/2002/07/owl#versionIRI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#example
+<http://www.w3.org/2004/02/skos/core#example> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#time
+<http://www.w3.org/2001/XMLSchema#time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/todo/tododt#hasSecondaryDialogue
+<https://w3id.org/todo/tododt#hasSecondaryDialogue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/todo/tododt#hasSecondaryDialogue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://w3id.org/todo/tododt#hasSecondaryDialogue> <http://www.w3.org/2000/01/rdf-schema#comment> "Establishes the SecondaryDialogue corresponding to a DialogueTrace." .
+<https://w3id.org/todo/tododt#hasSecondaryDialogue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododt#" .
+<https://w3id.org/todo/tododt#hasSecondaryDialogue> <http://www.w3.org/2000/01/rdf-schema#label> "hasSecondaryDialogue" .
+<https://w3id.org/todo/tododt#hasSecondaryDialogue> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododt#hasSystemRequest
+<https://w3id.org/todo/tododt#hasSystemRequest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/todo/tododt#hasSystemRequest> <http://www.w3.org/2000/01/rdf-schema#comment> "Establishes the SystemRequest corresponding to a SecondaryDialogueTrace." .
+<https://w3id.org/todo/tododt#hasSystemRequest> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododt#" .
+<https://w3id.org/todo/tododt#hasSystemRequest> <http://www.w3.org/2000/01/rdf-schema#label> "hasSystemRequest" .
+<https://w3id.org/todo/tododt#hasSystemRequest> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododt#hasUserRequest
+<https://w3id.org/todo/tododt#hasUserRequest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/todo/tododt#hasUserRequest> <http://www.w3.org/2000/01/rdf-schema#comment> "Establishes the UserRequest corresponding to a DialogueTrace." .
+<https://w3id.org/todo/tododt#hasUserRequest> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododt#" .
+<https://w3id.org/todo/tododt#hasUserRequest> <http://www.w3.org/2000/01/rdf-schema#label> "hasUserRequest" .
+<https://w3id.org/todo/tododt#hasUserRequest> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododt#hasUserResponse
+<https://w3id.org/todo/tododt#hasUserResponse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/todo/tododt#hasUserResponse> <http://www.w3.org/2000/01/rdf-schema#comment> "Establishes the UserResponse corresponding to a SecondaryDialogueTrace." .
+<https://w3id.org/todo/tododt#hasUserResponse> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododt#" .
+<https://w3id.org/todo/tododt#hasUserResponse> <http://www.w3.org/2000/01/rdf-schema#label> "hasUserResponse" .
+<https://w3id.org/todo/tododt#hasUserResponse> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/todo/tododt#currentValue
+<https://w3id.org/todo/tododt#currentValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/todo/tododt#currentValue> <http://www.w3.org/2000/01/rdf-schema#comment> "When asking the user for a specific information, the information currently asked to the user." .
+<https://w3id.org/todo/tododt#currentValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododt#" .
+<https://w3id.org/todo/tododt#currentValue> <http://www.w3.org/2000/01/rdf-schema#label> "currentValue" .
+<https://w3id.org/todo/tododt#currentValue> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<https://w3id.org/todo/tododt#currentValue> <http://www.w3.org/2004/02/skos/core#example> "UserReq: \"I want to go to the room\"\n\npossibleValue \"room1\"\npossibleValue \"room2\"\n\nSystemReq: \"Do you want to go to {room1}?\" (currentValue: room1); \"Do you want to go to {room2}? (currentValue: room2)\""@en .
+<https://w3id.org/todo/tododt#currentValue> <http://www.w3.org/2004/02/skos/core#example> "UserReq: \"Quiero ir a la sala\"\n\npossibleValue \"sala1\"\npossibleValue \"sala2\"\n\nSystem Req: \"¿Quieres ir a la {sala1}?\" (currentValue: sala1); \"¿Quieres ir a la {sala2}? (currentValue: sala2)\""@en .
+# 
+# https://w3id.org/todo/tododt#dateTime
+<https://w3id.org/todo/tododt#dateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/todo/tododt#dateTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/todo/tododt#dateTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Sets a timestamp to a DialogueTrace." .
+<https://w3id.org/todo/tododt#dateTime> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododt#" .
+<https://w3id.org/todo/tododt#dateTime> <http://www.w3.org/2000/01/rdf-schema#label> "dateTime" .
+<https://w3id.org/todo/tododt#dateTime> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododt#dialStatus
+<https://w3id.org/todo/tododt#dialStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/todo/tododt#dialStatus> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid1 <http://www.w3.org/2002/07/owl#oneOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "closed" .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "open" .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/todo/tododt#dialStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "Sets whether a Dialogue/SecondaryDialogue has finished (closed) or not (open)." .
+<https://w3id.org/todo/tododt#dialStatus> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododt#" .
+<https://w3id.org/todo/tododt#dialStatus> <http://www.w3.org/2000/01/rdf-schema#label> "dialStatus" .
+<https://w3id.org/todo/tododt#dialStatus> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododt#dialogueStep
+<https://w3id.org/todo/tododt#dialogueStep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/todo/tododt#dialogueStep> <http://www.w3.org/2000/01/rdf-schema#comment> "Used to control which step is performing the current Dialogue." .
+<https://w3id.org/todo/tododt#dialogueStep> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododt#" .
+<https://w3id.org/todo/tododt#dialogueStep> <http://www.w3.org/2000/01/rdf-schema#label> "dialogueStep" .
+<https://w3id.org/todo/tododt#dialogueStep> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododt#finishDateTime
+<https://w3id.org/todo/tododt#finishDateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/todo/tododt#finishDateTime> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/todo/tododt#dateTime> .
+<https://w3id.org/todo/tododt#finishDateTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Sets a finish timestamp to a DialogueTrace." .
+<https://w3id.org/todo/tododt#finishDateTime> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododt#" .
+<https://w3id.org/todo/tododt#finishDateTime> <http://www.w3.org/2000/01/rdf-schema#label> "finishDateTime" .
+<https://w3id.org/todo/tododt#finishDateTime> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododt#initDateTime
+<https://w3id.org/todo/tododt#initDateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/todo/tododt#initDateTime> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/todo/tododt#dateTime> .
+<https://w3id.org/todo/tododt#initDateTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Sets a start timestamp to a DialogueTrace." .
+<https://w3id.org/todo/tododt#initDateTime> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododt#" .
+<https://w3id.org/todo/tododt#initDateTime> <http://www.w3.org/2000/01/rdf-schema#label> "initDateTime" .
+<https://w3id.org/todo/tododt#initDateTime> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododt#possibleValue
+<https://w3id.org/todo/tododt#possibleValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/todo/tododt#possibleValue> <http://www.w3.org/2000/01/rdf-schema#comment> "When asking the user for a specific information, the possible values of that information to be asked to the user." .
+<https://w3id.org/todo/tododt#possibleValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododt#" .
+<https://w3id.org/todo/tododt#possibleValue> <http://www.w3.org/2000/01/rdf-schema#label> "possibleValue" .
+<https://w3id.org/todo/tododt#possibleValue> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<https://w3id.org/todo/tododt#possibleValue> <http://www.w3.org/2004/02/skos/core#example> "UserReq: \"I want to go to the room\"\n\npossibleValue \"room1\"\npossibleValue \"room2\"\n\nSystemReq: \"Do you want to go to {room1}?\"; \"Do you want to go to {room2}?\""@en .
+<https://w3id.org/todo/tododt#possibleValue> <http://www.w3.org/2004/02/skos/core#example> "UserReq: \"Quiero ir a la sala\"\n\npossibleValue \"sala1\"\npossibleValue \"sala2\"\n\nSystem Req: \"¿Quieres ir a la {sala1}?\"; \"¿Quieres ir a la {sala2}?\""@es .
+# 
+# https://w3id.org/todo/tododt#text
+<https://w3id.org/todo/tododt#text> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/todo/tododt#text> <http://www.w3.org/2000/01/rdf-schema#comment> "String that corresponds to a transcribed command by an user or the fully constructed outputSentence directed to the user." .
+<https://w3id.org/todo/tododt#text> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododt#" .
+<https://w3id.org/todo/tododt#text> <http://www.w3.org/2000/01/rdf-schema#label> "text" .
+<https://w3id.org/todo/tododt#text> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododt#verb
+<https://w3id.org/todo/tododt#verb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/todo/tododt#verb> <http://www.w3.org/2000/01/rdf-schema#comment> "Key element classified as \"verb\"/\"action\"." .
+<https://w3id.org/todo/tododt#verb> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododt#" .
+<https://w3id.org/todo/tododt#verb> <http://www.w3.org/2000/01/rdf-schema#label> "verb" .
+<https://w3id.org/todo/tododt#verb> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/todo/tododt#ContentUserResponseTrace
+<https://w3id.org/todo/tododt#ContentUserResponseTrace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododt#ContentUserResponseTrace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/todo/tododt#UserResponseTrace> .
+<https://w3id.org/todo/tododt#ContentUserResponseTrace> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/todo/tododt#YesNoUserResponseTrace> .
+<https://w3id.org/todo/tododt#ContentUserResponseTrace> <http://www.w3.org/2000/01/rdf-schema#comment> "Element that leaves a record of the User Responses performed throughout the dialogue process. These responses provide specific information, as a response for a ContentRequest."@en .
+<https://w3id.org/todo/tododt#ContentUserResponseTrace> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododt#" .
+<https://w3id.org/todo/tododt#ContentUserResponseTrace> <http://www.w3.org/2000/01/rdf-schema#label> "ContentUserResponseTrace" .
+<https://w3id.org/todo/tododt#ContentUserResponseTrace> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<https://w3id.org/todo/tododt#ContentUserResponseTrace> <http://www.w3.org/2004/02/skos/core#example> "Content User Response: The error code is 412."@en .
+# 
+# https://w3id.org/todo/tododt#DialogueProcessTrace
+<https://w3id.org/todo/tododt#DialogueProcessTrace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododt#DialogueProcessTrace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododt#hasSecondaryDialogue> .
+_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododt#SecondaryDialogueTrace> .
+<https://w3id.org/todo/tododt#DialogueProcessTrace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododt#dialStatus> .
+_:genid5 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid5 <http://www.w3.org/2002/07/owl#onDataRange> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid6 <http://www.w3.org/2002/07/owl#oneOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "close" .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "open" .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/todo/tododt#DialogueProcessTrace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododt#finishDateTime> .
+_:genid9 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid9 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/todo/tododt#DialogueProcessTrace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododt#initDateTime> .
+_:genid10 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid10 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/todo/tododt#DialogueProcessTrace> <http://www.w3.org/2000/01/rdf-schema#comment> "Element that leaves a record of the dialogues performed throughout the dialogue process." .
+<https://w3id.org/todo/tododt#DialogueProcessTrace> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododt#" .
+<https://w3id.org/todo/tododt#DialogueProcessTrace> <http://www.w3.org/2000/01/rdf-schema#label> "DialogueProcessTrace" .
+<https://w3id.org/todo/tododt#DialogueProcessTrace> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododt#DialogueTrace
+<https://w3id.org/todo/tododt#DialogueTrace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododt#DialogueTrace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/todo/tododt#DialogueProcessTrace> .
+<https://w3id.org/todo/tododt#DialogueTrace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododt#hasUserRequest> .
+_:genid11 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododt#UserRequestTrace> .
+<https://w3id.org/todo/tododt#DialogueTrace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododt#dialogueStep> .
+_:genid12 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid12 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/todo/tododt#DialogueTrace> <http://www.w3.org/2000/01/rdf-schema#comment> "Element that leaves a record of the dialogues performed." .
+<https://w3id.org/todo/tododt#DialogueTrace> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododt#" .
+<https://w3id.org/todo/tododt#DialogueTrace> <http://www.w3.org/2000/01/rdf-schema#label> "DialogueTrace" .
+<https://w3id.org/todo/tododt#DialogueTrace> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododt#NoUserResponse
+<https://w3id.org/todo/tododt#NoUserResponse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododt#NoUserResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/todo/tododt#YesNoUserResponseTrace> .
+<https://w3id.org/todo/tododt#NoUserResponse> <http://www.w3.org/2000/01/rdf-schema#comment> "Element that leaves a record of the User Responses performed throughout the dialogue process. These responses correspond to a negative polarity."@en .
+<https://w3id.org/todo/tododt#NoUserResponse> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododt#" .
+<https://w3id.org/todo/tododt#NoUserResponse> <http://www.w3.org/2000/01/rdf-schema#label> "NoUserResponse" .
+<https://w3id.org/todo/tododt#NoUserResponse> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<https://w3id.org/todo/tododt#NoUserResponse> <http://www.w3.org/2004/02/skos/core#example> "No User Responses: No, Never, Not at all"@en .
+# 
+# https://w3id.org/todo/tododt#NullUserResponseTrace
+<https://w3id.org/todo/tododt#NullUserResponseTrace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododt#NullUserResponseTrace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/todo/tododt#UserResponseTrace> .
+<https://w3id.org/todo/tododt#NullUserResponseTrace> <http://www.w3.org/2000/01/rdf-schema#comment> "Response that does not represent a value that can be classified as ContentResponse or YesNoResponse."@en .
+<https://w3id.org/todo/tododt#NullUserResponseTrace> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododt#" .
+<https://w3id.org/todo/tododt#NullUserResponseTrace> <http://www.w3.org/2000/01/rdf-schema#label> "NullUserResponseTrace" .
+<https://w3id.org/todo/tododt#NullUserResponseTrace> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<https://w3id.org/todo/tododt#NullUserResponseTrace> <http://www.w3.org/2004/02/skos/core#example> "Null User Response: I don't know."@en .
+# 
+# https://w3id.org/todo/tododt#SecondaryDialogueTrace
+<https://w3id.org/todo/tododt#SecondaryDialogueTrace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododt#SecondaryDialogueTrace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/todo/tododt#DialogueProcessTrace> .
+<https://w3id.org/todo/tododt#SecondaryDialogueTrace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododt#hasSystemRequest> .
+_:genid13 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododt#SystemRequestTrace> .
+<https://w3id.org/todo/tododt#SecondaryDialogueTrace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododt#hasUserResponse> .
+_:genid14 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododt#UserResponseTrace> .
+<https://w3id.org/todo/tododt#SecondaryDialogueTrace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododt#text> .
+_:genid15 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid15 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/todo/tododt#SecondaryDialogueTrace> <http://www.w3.org/2000/01/rdf-schema#comment> "Element that leaves a record of the secondary dialogues performed." .
+<https://w3id.org/todo/tododt#SecondaryDialogueTrace> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododt#" .
+<https://w3id.org/todo/tododt#SecondaryDialogueTrace> <http://www.w3.org/2000/01/rdf-schema#label> "SecondaryDialogueTrace" .
+<https://w3id.org/todo/tododt#SecondaryDialogueTrace> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododt#SystemRequestTrace
+<https://w3id.org/todo/tododt#SystemRequestTrace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododt#SystemRequestTrace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/todo/tododt#SystemStepTrace> .
+<https://w3id.org/todo/tododt#SystemRequestTrace> <http://www.w3.org/2000/01/rdf-schema#comment> "Element that leaves a record of the SystemRequests performed throughout the dialogue process." .
+<https://w3id.org/todo/tododt#SystemRequestTrace> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododt#" .
+<https://w3id.org/todo/tododt#SystemRequestTrace> <http://www.w3.org/2000/01/rdf-schema#label> "SystemRequestTrace" .
+<https://w3id.org/todo/tododt#SystemRequestTrace> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododt#SystemResponseTrace
+<https://w3id.org/todo/tododt#SystemResponseTrace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododt#SystemResponseTrace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/todo/tododt#SystemStepTrace> .
+<https://w3id.org/todo/tododt#SystemResponseTrace> <http://www.w3.org/2000/01/rdf-schema#comment> "Element that leaves a record of the SystemResponses performed throughout the dialogue process." .
+<https://w3id.org/todo/tododt#SystemResponseTrace> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododt#" .
+<https://w3id.org/todo/tododt#SystemResponseTrace> <http://www.w3.org/2000/01/rdf-schema#label> "SystemResponseTrace" .
+<https://w3id.org/todo/tododt#SystemResponseTrace> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododt#SystemStepTrace
+<https://w3id.org/todo/tododt#SystemStepTrace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododt#SystemStepTrace> <http://www.w3.org/2000/01/rdf-schema#comment> "Element that leaves a record of the SystemSteps performed throughout the dialogue process." .
+<https://w3id.org/todo/tododt#SystemStepTrace> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododt#" .
+<https://w3id.org/todo/tododt#SystemStepTrace> <http://www.w3.org/2000/01/rdf-schema#label> "SystemStepTrace" .
+<https://w3id.org/todo/tododt#SystemStepTrace> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododt#UserRequestTrace
+<https://w3id.org/todo/tododt#UserRequestTrace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododt#UserRequestTrace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/todo/tododt#UserStepTrace> .
+<https://w3id.org/todo/tododt#UserRequestTrace> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/todo/tododt#UserResponseTrace> .
+<https://w3id.org/todo/tododt#UserRequestTrace> <http://www.w3.org/2000/01/rdf-schema#comment> "Element that leaves a record of the User Requests performed throughout the dialogue process."@en .
+<https://w3id.org/todo/tododt#UserRequestTrace> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododt#" .
+<https://w3id.org/todo/tododt#UserRequestTrace> <http://www.w3.org/2000/01/rdf-schema#label> "UserRequestTrace" .
+<https://w3id.org/todo/tododt#UserRequestTrace> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododt#UserResponseTrace
+<https://w3id.org/todo/tododt#UserResponseTrace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododt#UserResponseTrace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/todo/tododt#UserStepTrace> .
+<https://w3id.org/todo/tododt#UserResponseTrace> <http://www.w3.org/2000/01/rdf-schema#comment> "Element that leaves a record of the User Responses performed throughout the dialogue process."@en .
+<https://w3id.org/todo/tododt#UserResponseTrace> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododt#" .
+<https://w3id.org/todo/tododt#UserResponseTrace> <http://www.w3.org/2000/01/rdf-schema#label> "UserResponseTrace" .
+<https://w3id.org/todo/tododt#UserResponseTrace> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododt#UserStepTrace
+<https://w3id.org/todo/tododt#UserStepTrace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododt#UserStepTrace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododt#text> .
+_:genid16 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid16 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/todo/tododt#UserStepTrace> <http://www.w3.org/2000/01/rdf-schema#comment> "Element that leaves a record of the user steps (requests and responses) performed throughout the dialogue process." .
+<https://w3id.org/todo/tododt#UserStepTrace> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododt#" .
+<https://w3id.org/todo/tododt#UserStepTrace> <http://www.w3.org/2000/01/rdf-schema#label> "UserStepTrace" .
+<https://w3id.org/todo/tododt#UserStepTrace> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododt#YesNoUserResponseTrace
+<https://w3id.org/todo/tododt#YesNoUserResponseTrace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododt#YesNoUserResponseTrace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/todo/tododt#UserResponseTrace> .
+<https://w3id.org/todo/tododt#YesNoUserResponseTrace> <http://www.w3.org/2000/01/rdf-schema#comment> "Element that leaves a record of the User Responses performed throughout the dialogue process. These responses correspond to a positive or negative polarity."@en .
+<https://w3id.org/todo/tododt#YesNoUserResponseTrace> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododt#" .
+<https://w3id.org/todo/tododt#YesNoUserResponseTrace> <http://www.w3.org/2000/01/rdf-schema#label> "YesNoUserResponseTrace" .
+<https://w3id.org/todo/tododt#YesNoUserResponseTrace> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<https://w3id.org/todo/tododt#YesNoUserResponseTrace> <http://www.w3.org/2004/02/skos/core#example> "YesNo User Responses:\n\n- Yes, OK\n\n- No, Not at all"@en .
+# 
+# https://w3id.org/todo/tododt#YesUserResponse
+<https://w3id.org/todo/tododt#YesUserResponse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododt#YesUserResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/todo/tododt#YesNoUserResponseTrace> .
+<https://w3id.org/todo/tododt#YesUserResponse> <http://www.w3.org/2000/01/rdf-schema#comment> "Element that leaves a record of the User Responses performed throughout the dialogue process. These responses correspond to a positive polarity."@en .
+<https://w3id.org/todo/tododt#YesUserResponse> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododt#" .
+<https://w3id.org/todo/tododt#YesUserResponse> <http://www.w3.org/2000/01/rdf-schema#label> "YesUserResponse" .
+<https://w3id.org/todo/tododt#YesUserResponse> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<https://w3id.org/todo/tododt#YesUserResponse> <http://www.w3.org/2004/02/skos/core#example> "Yes User Responses: Yes, OK"@en .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
