@@ -175,7 +175,9 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododm#hasStepFunction">
         <owl:inverseOf rdf:resource="https://w3id.org/todo/tododm#isStepFunctionOf"/>
         <rdfs:comment>Establishes the StepFunction corresponding to a SystemRequest or a ProcessStep.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>hasStepFunction</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -185,7 +187,9 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododm#implies">
         <rdfs:comment>Establishes the implications of the output of a StepFunction in the Dialogue Manager code.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>implies</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -196,7 +200,9 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododm#incorrectUserResponseTypeImplies">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/todo/tododm#implies"/>
         <rdfs:comment>Establishes the implications of an incorrect UserResponseType (e.g. when the request requires Yes/No as response and the user provides a ContentResponse).</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>incorrectUserResponseTypeImplies</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -206,7 +212,9 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododm#initiatedBy">
         <rdfs:comment>Establishes the SystemRequest/Response that initiates a DialogueStep.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>initiatedBy</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -217,7 +225,9 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododm#isRequiredBy">
         <owl:inverseOf rdf:resource="https://w3id.org/todo/tododm#requires"/>
         <rdfs:comment>Establishes the SystemRequest that requires a given UserResponse type.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>isRequiredBy</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -227,7 +237,9 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododm#isStepFunctionOf">
         <rdfs:comment>Establishes the SystemRequest or a ProcessStep corresponding to a StepFunction.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>isStepFunctionOf</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -238,7 +250,9 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododm#lessMaxOptionsImplies">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/todo/tododm#multipleOptionsImplies"/>
         <rdfs:comment>Establishes the implications when a StepFunction, in the Dialogue Manager code, returns more than one result as output and the length of the output is smaller than the number of maximum results previously defined.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>lessMaxOptionsImplies</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -249,7 +263,9 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododm#moreMaxOptionsImplies">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/todo/tododm#multipleOptionsImplies"/>
         <rdfs:comment>Establishes the implications when a StepFunction, in the Dialogue Manager code, returns more than one result as output and the length of the output is higher than the number of maximum results previously defined.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>moreMaxOptionsImplies</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -260,7 +276,9 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododm#multipleOptionsImplies">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/todo/tododm#implies"/>
         <rdfs:comment>Establishes the implications when a StepFunction, in the Dialogue Manager code, returns more than one result as output.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>multipleOptionsImplies</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -271,7 +289,9 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododm#noOptionsImplies">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/todo/tododm#implies"/>
         <rdfs:comment>Establishes the implications when a StepFunction, in the Dialogue Manager code, returns no results as output.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>noOptionsImplies</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -282,7 +302,9 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododm#noUserResponseTypeImplies">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/todo/tododm#implies"/>
         <rdfs:comment>Establishes the implications of a negative UserResponse.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>noUserResponseTypeImplies</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -292,7 +314,9 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododm#requires">
         <rdfs:comment>Establishes the type of UserResponse required by a SystemRequest.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>requires</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -303,7 +327,9 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododm#singleOptionImplies">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/todo/tododm#implies"/>
         <rdfs:comment>Establishes the implications when a StepFunction, in the Dialogue Manager code, returns one result as output.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>singleOptionImplies</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -314,7 +340,9 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododm#userResponseNotUnderstoodImplies">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/todo/tododm#implies"/>
         <rdfs:comment>Establishes the implications when the system does not understand a UserResponse.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>userResponseNotUnderstoodImplies</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -325,7 +353,9 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododm#yesUserResponseTypeImplies">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/todo/tododm#implies"/>
         <rdfs:comment>Establishes the implications of a positive UserResponse.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>YesUserResponseImplies</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -348,7 +378,9 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/todo/tododm#IDval">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:comment>Unique identification value for individuals.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>IDval</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
     </owl:DatatypeProperty>
     
 
@@ -358,7 +390,9 @@
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/todo/tododm#order">
         <rdfs:comment>Sets the order for StepFunctions/DialogueSteps.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>order</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
     </owl:DatatypeProperty>
     
 
@@ -368,7 +402,9 @@
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/todo/tododm#outputSentence">
         <rdfs:comment>String to be output by the system in order to communicate a SystemRequest/Response to the user.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>outputSentence</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
     </owl:DatatypeProperty>
     
 
@@ -391,6 +427,7 @@
     <owl:Class rdf:about="https://w3id.org/todo/tododm#ActionDisambiguationRequest">
         <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododm#YesNoRequest"/>
         <rdfs:comment xml:lang="en">Request that makes the user choose from a set of Actions obtained through inference.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>ActionDisambiguationRequest</rdfs:label>
         <ns1:term_status>stable</ns1:term_status>
         <skos:example xml:lang="en">[Previous SysResp: &quot;I couldn&apos;t resolve the action from your request&quot;.]
@@ -418,6 +455,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Response that the system gives when a command can be associated to more than one action.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>ActionOptionsResponse</rdfs:label>
         <ns1:term_status>stable</ns1:term_status>
         <skos:example xml:lang="en">Your command can be associated to many actions!</skos:example>
@@ -432,6 +470,7 @@
     <owl:Class rdf:about="https://w3id.org/todo/tododm#AlternativeArgumentSuggestionRequest">
         <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododm#YesNoRequest"/>
         <rdfs:comment xml:lang="es">Request that arises when the system has not been able to obtain an argument through an item + complement. The system suggests an alternative that contains the complement in the request.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>AlternativeArgumentSuggestionRequest</rdfs:label>
         <ns1:term_status>stable</ns1:term_status>
         <skos:example xml:lang="es">Request: &quot;Llévame a un laboratorio con micrófono&quot;.
@@ -454,6 +493,7 @@
     <owl:Class rdf:about="https://w3id.org/todo/tododm#ArgumentAssignationRequest">
         <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododm#YesNoRequest"/>
         <rdfs:comment xml:lang="en">Request made to reassure the assignation of a value from the KEE to an Argument.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>ArgumentAssignationRequest</rdfs:label>
         <ns1:term_status>stable</ns1:term_status>
         <skos:example xml:lang="es">&quot;El {Argument} es el {Argument_value}, ¿verdad?&quot;
@@ -474,6 +514,7 @@
         <rdfs:comment xml:lang="en">Request that demands a specific characteristic of the argument. This request is used when the argument provided is too broad and the system needs some characteristic that allows determining the specific element the user is refering to.
 
 For example, the user would require a &quot;piece&quot;, and the system includes data for 300 types of pieces.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>ArgumentCharacteristicRequest</rdfs:label>
         <ns1:term_status>stable</ns1:term_status>
         <skos:example xml:lang="en">&quot;Which {characteristic} is {too_broad_argument}?&quot;
@@ -492,6 +533,7 @@ For example, the user would require a &quot;piece&quot;, and the system includes
     <owl:Class rdf:about="https://w3id.org/todo/tododm#ArgumentClarificationRequest">
         <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododm#ContentRequest"/>
         <rdfs:comment xml:lang="en">Request that asks the user for some clarification for the value of an argument when a previously saved value generates too many options.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>ArgumentClarificationRequest</rdfs:label>
         <ns1:term_status>stable</ns1:term_status>
         <skos:example xml:lang="es">&quot;Could you please be more specific with {ArgTag}?&quot;
@@ -510,6 +552,7 @@ For example, the user would require a &quot;piece&quot;, and the system includes
     <owl:Class rdf:about="https://w3id.org/todo/tododm#ArgumentExplanationResponse">
         <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododm#SystemResponse"/>
         <rdfs:comment xml:lang="en">Response that gives details about an Argument. For example, when the user does not understand what information conveys said Argument.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>ArgumentExplanationResponse</rdfs:label>
         <ns1:term_status>stable</ns1:term_status>
         <skos:example xml:lang="es">&quot;El {Argument} corresponde a{ArgDescription}&quot;
@@ -535,6 +578,7 @@ For example, the user would require a &quot;piece&quot;, and the system includes
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">The system informs the user the Argument value provided is not valid according to what has been modelled in the KB.</rdfs:comment>
         <rdfs:comment xml:lang="en">This would imply an ArgumentRequest.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>ArgumentNotCompatibleResponse</rdfs:label>
         <ns1:term_status>stable</ns1:term_status>
         <skos:example xml:lang="en">&quot;{ArgumentValue} cannot be the {Argument}.&quot;
@@ -560,6 +604,7 @@ For example, the user would require a &quot;piece&quot;, and the system includes
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Response given when the system has not been able to guess the value of the Argument through its characteristics.</rdfs:comment>
         <rdfs:comment xml:lang="en">This would imply an ArgumentRequest/ArgumentCharacteristicRequest</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>ArgumentNotGuessedResponse</rdfs:label>
         <ns1:term_status>stable</ns1:term_status>
         <skos:example xml:lang="es">&quot;Con las características que me has dado, no he podido averiguar el {Argument}.&quot;
@@ -584,6 +629,7 @@ For example, the user would require a &quot;piece&quot;, and the system includes
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Response that the system gives when an item can be associated to more than one argument.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>ArgumentOptionsResponse</rdfs:label>
         <ns1:term_status>stable</ns1:term_status>
         <skos:example xml:lang="en">The item {item} can be associated to many arguments!</skos:example>
@@ -598,6 +644,7 @@ For example, the user would require a &quot;piece&quot;, and the system includes
     <owl:Class rdf:about="https://w3id.org/todo/tododm#ArgumentRequest">
         <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododm#ContentRequest"/>
         <rdfs:comment xml:lang="en">Request that demands for the value of an Argument.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>ArgumentRequest</rdfs:label>
         <ns1:term_status>stable</ns1:term_status>
         <skos:example xml:lang="en">&quot;Can you tell me the {argument}?
@@ -616,6 +663,7 @@ For example, the user would require a &quot;piece&quot;, and the system includes
     <owl:Class rdf:about="https://w3id.org/todo/tododm#ArgumentSpecifyRequest">
         <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododm#YesNoRequest"/>
         <rdfs:comment xml:lang="en">Request made when a value for an Argument can belong to different Arguments. The strategy is asking for each Argument option until the user confirms.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>ArgumentSpecifyRequest</rdfs:label>
         <ns1:term_status>stable</ns1:term_status>
         <skos:example xml:lang="es">[Situation: the value &quot;Mesa de reparación&quot; could be Origin or Destination]
@@ -642,6 +690,7 @@ For example, the user would require a &quot;piece&quot;, and the system includes
     <owl:Class rdf:about="https://w3id.org/todo/tododm#ArgumentValueDisambiguationRequest">
         <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododm#YesNoRequest"/>
         <rdfs:comment xml:lang="en">Request that tries to obtain the value of the argument when it is ambiguous (e.g. &quot;sala&quot; may apply to &quot;sala Ura&quot;, &quot;sala Sua&quot;, etc.).</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>ArgumentValueDisambiguationRequest</rdfs:label>
         <ns1:term_status>stable</ns1:term_status>
         <skos:example xml:lang="en">&quot;Do you want {Action} {ArgumentConnector} {WorldElement}?&quot;
@@ -666,6 +715,7 @@ For example, the user would require a &quot;piece&quot;, and the system includes
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Response that the system gives when it cannot associate an action/target to one or more actions.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>CannotResolveActionResponse</rdfs:label>
         <ns1:term_status>stable</ns1:term_status>
         <skos:example xml:lang="en">I couldn&apos;t associate your command to an action. Can you please be more specific?</skos:example>
@@ -688,6 +738,7 @@ For example, the user would require a &quot;piece&quot;, and the system includes
         <rdfs:comment xml:lang="en">Response that informs the user that the command could not be resolved.
 
 [to be followed by an ArgRequest]</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>CannotResolveCommandResponse</rdfs:label>
         <ns1:term_status>stable</ns1:term_status>
         <skos:example xml:lang="en">I could not resolve your command.</skos:example>
@@ -711,6 +762,7 @@ For example, the user would require a &quot;piece&quot;, and the system includes
         <rdfs:comment xml:lang="en">Request that asks for specific information, other than &quot;Yes&quot; or &quot;No&quot; (and equivalents).
 
 Also known as &quot;Non polar/Open question&quot; in linguistics.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>ContentRequest</rdfs:label>
         <ns1:term_status>stable</ns1:term_status>
         <skos:example xml:lang="en">Which is the error code?</skos:example>
@@ -742,6 +794,7 @@ Also known as &quot;Non polar/Open question&quot; in linguistics.</rdfs:comment>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Step Function associated to a ContentRequest.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>ContentRequestStepFunction</rdfs:label>
         <ns1:term_status>stable</ns1:term_status>
     </owl:Class>
@@ -756,6 +809,7 @@ Also known as &quot;Non polar/Open question&quot; in linguistics.</rdfs:comment>
         <rdfs:comment xml:lang="es">&quot;Solo necesito que me digas sí o no, por favor&quot;</rdfs:comment>
         <rdfs:comment xml:lang="en">&quot;You only need me to tell me yes or no, please&quot;</rdfs:comment>
         <rdfs:comment xml:lang="en">Reponse given to the user when the UserResponse is a ContentResponse and the SystemRequest requires a YesNoResponse.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>ContentResponseNotExpected</rdfs:label>
         <ns1:term_status>stable</ns1:term_status>
     </owl:Class>
@@ -766,18 +820,19 @@ Also known as &quot;Non polar/Open question&quot; in linguistics.</rdfs:comment>
 
 
     <owl:Class rdf:about="https://w3id.org/todo/tododm#Continue">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododm#DialogueControlMarkers"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododm#DialogueControlMarker"/>
         <rdfs:comment>Marker that conveys the idea of continuing with the dialogue process.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>Continue</rdfs:label>
         <ns1:term_status>stable</ns1:term_status>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/todo/tododm#DialogueControlMarkers -->
+    <!-- https://w3id.org/todo/tododm#DialogueControlMarker -->
 
 
-    <owl:Class rdf:about="https://w3id.org/todo/tododm#DialogueControlMarkers">
+    <owl:Class rdf:about="https://w3id.org/todo/tododm#DialogueControlMarker">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/todo/tododm#IDval"/>
@@ -785,6 +840,7 @@ Also known as &quot;Non polar/Open question&quot; in linguistics.</rdfs:comment>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Elements that correspond to predefined or generic actions in dialogue control.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>DialogueControlMarkers</rdfs:label>
         <ns1:term_status>stable</ns1:term_status>
         <skos:example>Continue, restart dialogue</skos:example>
@@ -816,6 +872,7 @@ Also known as &quot;Non polar/Open question&quot; in linguistics.</rdfs:comment>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="https://w3id.org/todo/tododm#ProcessStep"/>
         <rdfs:comment>Step in the dialogue process that requires a system interaction with the user (SystemStep).</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>DialogueStep</rdfs:label>
         <ns1:term_status>stable</ns1:term_status>
     </owl:Class>
@@ -826,8 +883,9 @@ Also known as &quot;Non polar/Open question&quot; in linguistics.</rdfs:comment>
 
 
     <owl:Class rdf:about="https://w3id.org/todo/tododm#FinishDial">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododm#DialogueControlMarkers"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododm#DialogueControlMarker"/>
         <rdfs:comment>Marker that establishes that the dialogue must be finished.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>FinishDial</rdfs:label>
         <ns1:term_status>stable</ns1:term_status>
     </owl:Class>
@@ -846,6 +904,7 @@ Also known as &quot;Non polar/Open question&quot; in linguistics.</rdfs:comment>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Welcome message.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>GreetingResponse</rdfs:label>
         <ns1:term_status>stable</ns1:term_status>
         <skos:example xml:lang="en">&quot;Hi! I am {SystemName}. I am happy to help you.&quot;
@@ -864,6 +923,7 @@ Also known as &quot;Non polar/Open question&quot; in linguistics.</rdfs:comment>
     <owl:Class rdf:about="https://w3id.org/todo/tododm#IncorrectArgumentRequest">
         <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododm#YesNoRequest"/>
         <rdfs:comment xml:lang="en">Request that checks which is the Argument/Action that has not been interpreter correctly, after a negative ReassureFeedbackRequest.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>IncorrectArgumentRequest</rdfs:label>
         <ns1:term_status>stable</ns1:term_status>
         <skos:example xml:lang="en">&quot;Have I missed the {Argument}?&quot;
@@ -882,6 +942,7 @@ Also known as &quot;Non polar/Open question&quot; in linguistics.</rdfs:comment>
     <owl:Class rdf:about="https://w3id.org/todo/tododm#IntentRequest">
         <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododm#YesNoRequest"/>
         <rdfs:comment xml:lang="en">Request made when a UserRequest can belong to different Intents. The strategy is asking for each Intent option until the user confirms.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>IntentRequest</rdfs:label>
         <ns1:term_status>stable</ns1:term_status>
         <skos:example xml:lang="en">Situation: the Intent for the Request could be &quot;Information&quot; or &quot;Guiding&quot;
@@ -927,6 +988,7 @@ USR: &quot;Sí&quot;</skos:example>
         <rdfs:comment xml:lang="es">El item {item} no es compatible con ningún argumento de la acción.</rdfs:comment>
         <rdfs:comment xml:lang="en">The item {item} is not compatible with any argument for this action.</rdfs:comment>
         <rdfs:comment>The system informs the user the Item value provided is not compatible with any action argument, according to what has been modelled in the KB.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>ItemNotCompatibleAnyArgResponse</rdfs:label>
         <ns1:term_status>stable</ns1:term_status>
     </owl:Class>
@@ -939,6 +1001,7 @@ USR: &quot;Sí&quot;</skos:example>
     <owl:Class rdf:about="https://w3id.org/todo/tododm#NoMoreOptionsContinueResponse">
         <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododm#SystemResponse"/>
         <rdfs:comment xml:lang="en">Response that the system displays when it runs out of options. It is intended to continue with a full request of the element that the previous options corresponded to.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>NoMoreOptionsContinueResponse</rdfs:label>
         <ns1:term_status>stable</ns1:term_status>
         <skos:example xml:lang="en">I do not have more options to offer you!</skos:example>
@@ -959,6 +1022,7 @@ USR: &quot;Sí&quot;</skos:example>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Response that the system displays when it runs out of options. It finishes the current Dialogue.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>NoMoreOptionsRestartResponse</rdfs:label>
         <ns1:term_status>stable</ns1:term_status>
         <skos:example xml:lang="en">I do not have more options to offer you! Can you reformulate your command so I can understand better?</skos:example>
@@ -979,6 +1043,7 @@ USR: &quot;Sí&quot;</skos:example>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Response that the system returns when the clarification step of the value of an Argument does not return any results.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>NoResultsClarificationResponse</rdfs:label>
         <ns1:term_status>stable</ns1:term_status>
         <skos:example xml:lang="en">I cannot find anything that corresponds to your demand.</skos:example>
@@ -993,6 +1058,7 @@ USR: &quot;Sí&quot;</skos:example>
     <owl:Class rdf:about="https://w3id.org/todo/tododm#NotUnderstoodResponse">
         <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododm#SystemResponse"/>
         <rdfs:comment xml:lang="en">Response that informs the user that the system has not understood the user command.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>NotUnderstoodResponse</rdfs:label>
         <ns1:term_status>stable</ns1:term_status>
         <skos:example xml:lang="en">&quot;I am sorry, but I haven&apos;t understood. Can you repeat, please?&quot;</skos:example>
@@ -1021,6 +1087,7 @@ USR: &quot;Sí&quot;</skos:example>
         <rdfs:comment xml:lang="en">Response in which the system tells the user that it has several options for a specific element (e.g. WorldElement).
 
 Note the difference between OptionsAvailableResponse and TooManyAlternativesResponse: the first implies that there is a fair amount of options, whereas the latter implies that the options that are available are too many and it will require the user to be more specific.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>OptionsAvailableResponse</rdfs:label>
         <ns1:term_status>stable</ns1:term_status>
         <skos:example xml:lang="en">&quot;I have many options for your request.&quot;</skos:example>
@@ -1048,6 +1115,7 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Step in the dialogue process that does not require a system interaction with the user (SystemStep).</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>ProcessStep</rdfs:label>
         <ns1:term_status>stable</ns1:term_status>
     </owl:Class>
@@ -1072,6 +1140,7 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Step Function associated to a ProcessStep.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>ProcessStepStepFunction</rdfs:label>
         <ns1:term_status>stable</ns1:term_status>
     </owl:Class>
@@ -1084,6 +1153,7 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
     <owl:Class rdf:about="https://w3id.org/todo/tododm#ReassureFeedbackRequest">
         <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododm#YesNoRequest"/>
         <rdfs:comment xml:lang="en">Request that is sent in order to obtain feedback whether the interpretation obtained is correct or not.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>ReassureFeedbackRequest</rdfs:label>
         <ns1:term_status>stable</ns1:term_status>
         <skos:example xml:lang="es">&quot;Entonces, quieres que {Action} {ArgumentConnector} {Argument}, ¿verdad?&quot;
@@ -1102,6 +1172,7 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
     <owl:Class rdf:about="https://w3id.org/todo/tododm#RepeatArgumentRequest">
         <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododm#ContentRequest"/>
         <rdfs:comment xml:lang="en">Request that demands the user to repeat the value of an Argument.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>RepeatArgumentRequest</rdfs:label>
         <ns1:term_status>stable</ns1:term_status>
         <skos:example xml:lang="en">&quot;Can you repeat the {Argument}?
@@ -1120,6 +1191,7 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
     <owl:Class rdf:about="https://w3id.org/todo/tododm#ResponseTypeNotExpectedResponse">
         <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododm#SystemResponse"/>
         <rdfs:comment xml:lang="en">Reponse given to the user when the UserResponse does not correspond with the expected response of the SystemRequest.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>ResponseTypeNotExpectedResponse</rdfs:label>
         <ns1:term_status>stable</ns1:term_status>
     </owl:Class>
@@ -1130,8 +1202,9 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
 
 
     <owl:Class rdf:about="https://w3id.org/todo/tododm#Restart">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododm#DialogueControlMarkers"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododm#DialogueControlMarker"/>
         <rdfs:comment>Marker that requires the dialogue to restart.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>Restart</rdfs:label>
         <ns1:term_status>stable</ns1:term_status>
     </owl:Class>
@@ -1149,6 +1222,7 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Element that is linked to a function in the Dialogue Manager code. This element also determines the implications of the output of said function in the code.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>StepFunction</rdfs:label>
         <ns1:term_status>stable</ns1:term_status>
     </owl:Class>
@@ -1162,6 +1236,7 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
         <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododm#SystemStep"/>
         <owl:disjointWith rdf:resource="https://w3id.org/todo/tododm#SystemResponse"/>
         <rdfs:comment xml:lang="en">Act in which the system requires user input.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>SystemRequest</rdfs:label>
         <ns1:term_status>stable</ns1:term_status>
         <skos:example>Ask for missing information, ask for confirmation.</skos:example>
@@ -1175,6 +1250,7 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
     <owl:Class rdf:about="https://w3id.org/todo/tododm#SystemResponse">
         <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododm#SystemStep"/>
         <rdfs:comment xml:lang="en">Information that the system provides in response to a UserRequest or as a piece of information directed to the user without a prior UserRequest.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>SystemResponse</rdfs:label>
         <ns1:term_status>stable</ns1:term_status>
     </owl:Class>
@@ -1192,6 +1268,7 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Step performed by the system in order to request information to the user or simply outputting information.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>SystemStep</rdfs:label>
         <ns1:term_status>stable</ns1:term_status>
     </owl:Class>
@@ -1210,6 +1287,7 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Response given when the number of possible Actions is too big.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>TooManyActionOptionsResponse</rdfs:label>
         <ns1:term_status>stable</ns1:term_status>
         <skos:example xml:lang="en">Your command can be associated to too many actions! Can you repeat and be more specific, please?</skos:example>
@@ -1230,6 +1308,7 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Response given when the alternatives (in general) are too big.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>TooManyAlternativesResponse</rdfs:label>
         <ns1:term_status>stable</ns1:term_status>
         <skos:example xml:lang="en">&quot;I have too many options taking into account the information you provided to me.&quot;
@@ -1253,6 +1332,7 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
                 <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododm#UserCommandRequest"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>TooManyArgumentOptionsResponse</rdfs:label>
         <ns1:term_status>stable</ns1:term_status>
         <skos:example xml:lang="en">Response given when the number of possible Arguments is too big.</skos:example>
@@ -1274,6 +1354,7 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Response given when the number of possible World Elements is too big.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>TooManyWorldElementOptionsResponse</rdfs:label>
         <ns1:term_status>stable</ns1:term_status>
         <skos:example xml:lang="en">Your command can be associated to too many elements!</skos:example>
@@ -1288,6 +1369,7 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
     <owl:Class rdf:about="https://w3id.org/todo/tododm#UnderstoodResponse">
         <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododm#SystemResponse"/>
         <rdfs:comment>Response given by the system to reassure the user that it has understood the request.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>UnderstoodResponse</rdfs:label>
         <ns1:term_status>stable</ns1:term_status>
     </owl:Class>
@@ -1300,6 +1382,7 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
     <owl:Class rdf:about="https://w3id.org/todo/tododm#UserCommandRequest">
         <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododm#ContentRequest"/>
         <rdfs:comment xml:lang="en">Request to the user to provide their (initial) command.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>UserCommandRequest</rdfs:label>
         <ns1:term_status>stable</ns1:term_status>
         <skos:example xml:lang="es">How can I help you?
@@ -1324,6 +1407,7 @@ Dame tu comando.</skos:example>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Response given when the ArgValue for an Argument provided by the user is not compatible with said Argument.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>ValueNotCompatibleWithArgumentResponse</rdfs:label>
         <ns1:term_status>stable</ns1:term_status>
         <skos:example xml:lang="en">&quot;It cannot be the {Argument}&quot;.
@@ -1342,6 +1426,7 @@ Dame tu comando.</skos:example>
     <owl:Class rdf:about="https://w3id.org/todo/tododm#VerifyInfoRequest">
         <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododm#ContentRequest"/>
         <rdfs:comment xml:lang="en">Request that requires the user to repeat some information.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>VerifyInfoRequest</rdfs:label>
         <ns1:term_status>stable</ns1:term_status>
         <skos:example xml:lang="en">[Previous SysResponse: &quot;This item cannot be {ArgTag}&quot;]
@@ -1372,6 +1457,7 @@ Dame tu comando.</skos:example>
         <rdfs:comment xml:lang="en">Request the response of which is expected to be limited to &quot;Yes&quot; or &quot;No&quot; (and equivalents).
 
 Also known as &quot;Polar question&quot; in linguistics.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>YesNoRequest</rdfs:label>
         <ns1:term_status>stable</ns1:term_status>
         <skos:example xml:lang="en">Do you want to go to the laboratory?</skos:example>
@@ -1403,6 +1489,7 @@ Also known as &quot;Polar question&quot; in linguistics.</rdfs:comment>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Step Function associated to a YesNoRequest.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>YesNoRequestStepFunction</rdfs:label>
         <ns1:term_status>stable</ns1:term_status>
     </owl:Class>
@@ -1417,31 +1504,10 @@ Also known as &quot;Polar question&quot; in linguistics.</rdfs:comment>
         <rdfs:comment xml:lang="es">&quot;Creo que no te he entendido. ¿Puedes ser un poco más concreto con tu respuesta?&quot;</rdfs:comment>
         <rdfs:comment xml:lang="en">&quot;I think I haven&apos;t understood. Can you be more specific?</rdfs:comment>
         <rdfs:comment xml:lang="en">Reponse given to the user when the UserResponse is a YesNoResponse and the SystemRequest requires a ContentResponse.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>YesNoResponseNotExpected</rdfs:label>
         <ns1:term_status>stable</ns1:term_status>
     </owl:Class>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // General axioms
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/todo/tododm#DialogueControlMarkers"/>
-            <rdf:Description rdf:about="https://w3id.org/todo/tododm#DialogueStep"/>
-            <rdf:Description rdf:about="https://w3id.org/todo/tododm#ProcessStep"/>
-            <rdf:Description rdf:about="https://w3id.org/todo/tododm#StepFunction"/>
-            <rdf:Description rdf:about="https://w3id.org/todo/tododm#SystemStep"/>
-        </owl:members>
-    </rdf:Description>
 </rdf:RDF>
 
 
