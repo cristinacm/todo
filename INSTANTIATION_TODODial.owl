@@ -13,9 +13,10 @@
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:pmofn="http://premon.fbk.eu/ontology/fn#"
      xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:tododm="https://w3id.org/todo/tododm#"
      xmlns:ontolex="http://www.w3.org/ns/lemon/ontolex#"
      xmlns:DialogueONT="https://w3id.org/todo/tododial#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst">
         <owl:imports rdf:resource="https://w3id.org/todo/tododial"/>
         <ns:license></ns:license>
         <terms:contributor></terms:contributor>
@@ -143,25 +144,6 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Data properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#Duration -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#Duration">
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -170,27 +152,51 @@
     
 
 
-    <!-- https://w3id.org/todo/tododial#MainDialogueTrace -->
+    <!-- https://w3id.org/todo/tododm#TooManyActionOptionsResponse -->
 
-    <owl:Class rdf:about="https://w3id.org/todo/tododial#MainDialogueTrace"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododm#TooManyActionOptionsResponse"/>
     
 
 
-    <!-- https://w3id.org/todo/tododial#TooManyActionOptionsResponse -->
+    <!-- https://w3id.org/todo/tododm#TooManyArgumentOptionsResponse -->
 
-    <owl:Class rdf:about="https://w3id.org/todo/tododial#TooManyActionOptionsResponse"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododm#TooManyArgumentOptionsResponse"/>
     
 
 
-    <!-- https://w3id.org/todo/tododial#TooManyArgumentOptionsResponse -->
+    <!-- https://w3id.org/todo/tododm#TooManyWorldElementOptionsResponse -->
 
-    <owl:Class rdf:about="https://w3id.org/todo/tododial#TooManyArgumentOptionsResponse"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododm#TooManyWorldElementOptionsResponse"/>
     
 
 
-    <!-- https://w3id.org/todo/tododial#TooManyWorldElementOptionsResponse -->
+    <!-- https://w3id.org/todo/tododm#UnderstoodResponse -->
 
-    <owl:Class rdf:about="https://w3id.org/todo/tododial#TooManyWorldElementOptionsResponse"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododm#UnderstoodResponse"/>
+    
+
+
+    <!-- https://w3id.org/todo/tododm#UserCommandRequest -->
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododm#UserCommandRequest"/>
+    
+
+
+    <!-- https://w3id.org/todo/tododm#ValueNotCompatibleWithArgumentResponse -->
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododm#ValueNotCompatibleWithArgumentResponse"/>
+    
+
+
+    <!-- https://w3id.org/todo/tododm#VerifyInfoRequest -->
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododm#VerifyInfoRequest"/>
+    
+
+
+    <!-- https://w3id.org/todo/tododt#DialogueTrace -->
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododt#DialogueTrace"/>
     
 
 
@@ -205,397 +211,625 @@
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#Dialogue1 -->
+    <!-- http://www.semanticweb.org/linuxsii/ontologies/2021/0/DialogueONT-Guide-inst#dialStep_correctArguments -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#Dialogue1">
-        <rdf:type rdf:resource="https://w3id.org/todo/tododial#DialogueTrace"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/linuxsii/ontologies/2021/0/DialogueONT-Guide-inst#dialStep_correctArguments">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#DialogueStep"/>
+        <tododm:initiatedBy rdf:resource="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SReqCont_ArgRequest"/>
+        <tododm:IDval>correctArguments</tododm:IDval>
+        <tododm:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</tododm:order>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#MainDialogue1 -->
+    <!-- http://www.semanticweb.org/linuxsii/ontologies/2021/0/DialogueONT-Guide-inst#dialStep_processUserRequest -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#MainDialogue1">
-        <rdf:type rdf:resource="https://w3id.org/todo/tododial#MainDialogueTrace"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/linuxsii/ontologies/2021/0/DialogueONT-Guide-inst#dialStep_processUserRequest">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#DialogueStep"/>
+        <tododm:initiatedBy rdf:resource="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_Greeting"/>
+        <tododm:IDval>processUserRequest</tododm:IDval>
+        <tododm:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</tododm:order>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqCont_ArgCharacteristic -->
+    <!-- http://www.semanticweb.org/linuxsii/ontologies/2021/0/DialogueONT-Guide-inst#dialStep_userConfirmation -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqCont_ArgCharacteristic">
-        <rdf:type rdf:resource="https://w3id.org/todo/tododial#ArgumentCharacteristicRequest"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/linuxsii/ontologies/2021/0/DialogueONT-Guide-inst#dialStep_userConfirmation">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#DialogueStep"/>
+        <tododm:initiatedBy rdf:resource="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SReqYN_Reassure"/>
+        <tododm:IDval>userConfirmation</tododm:IDval>
+        <tododm:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</tododm:order>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqCont_ArgClarification -->
+    <!-- http://www.semanticweb.org/linuxsii/ontologies/2021/0/DialogueONT-Guide-inst#processStep_checkArgs_missingArgs -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqCont_ArgClarification">
-        <rdf:type rdf:resource="https://w3id.org/todo/tododial#ArgumentClarificationRequest"/>
-        <DialogueONT:outputSentence xml:lang="es">¿Puedes ser un poco más específico con {ArgTag}?</DialogueONT:outputSentence>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/linuxsii/ontologies/2021/0/DialogueONT-Guide-inst#processStep_checkArgs_missingArgs">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#ProcessStep"/>
+        <tododm:hasStepFunction rdf:resource="http://www.semanticweb.org/linuxsii/ontologies/2021/0/DialogueONT-Guide-inst#stepFunction_checkMissingArguments"/>
+        <tododm:IDval>checkArgs_missingArgs</tododm:IDval>
+        <tododm:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</tododm:order>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqCont_ArgRequest -->
+    <!-- http://www.semanticweb.org/linuxsii/ontologies/2021/0/DialogueONT-Guide-inst#processStep_getAction -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqCont_ArgRequest">
-        <rdf:type rdf:resource="https://w3id.org/todo/tododial#ArgumentRequest"/>
-        <DialogueONT:outputSentence xml:lang="es">Necesito que me digas {Argument}, por favor</DialogueONT:outputSentence>
-        <DialogueONT:outputSentence xml:lang="es">¿Puedes decirme {Argument}?</DialogueONT:outputSentence>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/linuxsii/ontologies/2021/0/DialogueONT-Guide-inst#processStep_getAction">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#ProcessStep"/>
+        <tododm:hasStepFunction rdf:resource="http://www.semanticweb.org/linuxsii/ontologies/2021/0/DialogueONT-Guide-inst#stepFunction_obtainAction"/>
+        <tododm:IDval>getAction</tododm:IDval>
+        <tododm:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</tododm:order>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqCont_RepeatArgument -->
+    <!-- http://www.semanticweb.org/linuxsii/ontologies/2021/0/DialogueONT-Guide-inst#processStep_getActionArgs -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqCont_RepeatArgument">
-        <rdf:type rdf:resource="https://w3id.org/todo/tododial#RepeatArgumentRequest"/>
-        <DialogueONT:outputSentence xml:lang="es">¿Me puedes decir de nuevo {ArgTag}?</DialogueONT:outputSentence>
-        <DialogueONT:outputSentence xml:lang="es">¿Puedes repetir {ArgTag}?</DialogueONT:outputSentence>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/linuxsii/ontologies/2021/0/DialogueONT-Guide-inst#processStep_getActionArgs">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#ProcessStep"/>
+        <tododm:hasStepFunction rdf:resource="http://www.semanticweb.org/linuxsii/ontologies/2021/0/DialogueONT-Guide-inst#stepFunction_getArgument"/>
+        <tododm:IDval>getActionArguments</tododm:IDval>
+        <tododm:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</tododm:order>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqCont_UserCommand -->
+    <!-- http://www.semanticweb.org/linuxsii/ontologies/2021/0/DialogueONT-Guide-inst#stepFunction_YesNoDetermine_ActionDisambiguation -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqCont_UserCommand">
-        <rdf:type rdf:resource="https://w3id.org/todo/tododial#UserCommandRequest"/>
-        <DialogueONT:outputSentence xml:lang="es">Dame tu comando.</DialogueONT:outputSentence>
-        <DialogueONT:outputSentence xml:lang="es">¿En qué puedo ayudarte?</DialogueONT:outputSentence>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/linuxsii/ontologies/2021/0/DialogueONT-Guide-inst#stepFunction_YesNoDetermine_ActionDisambiguation">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#YesNoRequestStepFunction"/>
+        <tododm:noOptionsImplies rdf:resource="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_NoMoreOptionsRestart"/>
+        <tododm:noUserResponseTypeImplies rdf:resource="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SReqYN_ActionDisambiguation"/>
+        <tododm:yesUserResponseTypeImplies rdf:resource="http://www.semanticweb.org/linuxsii/ontologies/2021/0/DialogueONT-Guide-inst#processStep_getActionArgs"/>
+        <tododm:IDval>YesNo_ActionDisambiguation</tododm:IDval>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqCont_VerifyInfo -->
+    <!-- http://www.semanticweb.org/linuxsii/ontologies/2021/0/DialogueONT-Guide-inst#stepFunction_YesNoDetermine_ArgumentSpecify -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqCont_VerifyInfo">
-        <rdf:type rdf:resource="https://w3id.org/todo/tododial#VerifyInfoRequest"/>
-        <DialogueONT:outputSentence xml:lang="es">¿Puedes verificarlo?</DialogueONT:outputSentence>
-        <DialogueONT:outputSentence xml:lang="es">¿Puedes volverlo a intentar?</DialogueONT:outputSentence>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/linuxsii/ontologies/2021/0/DialogueONT-Guide-inst#stepFunction_YesNoDetermine_ArgumentSpecify">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#YesNoRequestStepFunction"/>
+        <tododm:noOptionsImplies rdf:resource="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_NoMoreOptionsContinue"/>
+        <tododm:noUserResponseTypeImplies rdf:resource="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SReqYN_ArgSpecify"/>
+        <tododm:yesUserResponseTypeImplies rdf:resource="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#dialMarker_continue"/>
+        <tododm:IDval>YesNo_ArgumentSpecify</tododm:IDval>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqYN_ActionDisambiguation -->
+    <!-- http://www.semanticweb.org/linuxsii/ontologies/2021/0/DialogueONT-Guide-inst#stepFunction_YesNoDetermine_ArgumentValueDisambiguation -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqYN_ActionDisambiguation">
-        <rdf:type rdf:resource="https://w3id.org/todo/tododial#ActionDisambiguationRequest"/>
-        <DialogueONT:outputSentence xml:lang="es">¿Quieres {ActionTag}?</DialogueONT:outputSentence>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/linuxsii/ontologies/2021/0/DialogueONT-Guide-inst#stepFunction_YesNoDetermine_ArgumentValueDisambiguation">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#YesNoRequestStepFunction"/>
+        <tododm:noOptionsImplies rdf:resource="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_NoMoreOptionsContinue"/>
+        <tododm:noOptionsImplies rdf:resource="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_ValueNotCompatibleArgument"/>
+        <tododm:noUserResponseTypeImplies rdf:resource="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SReqYN_ArgumentValueDisambiguation"/>
+        <tododm:yesUserResponseTypeImplies rdf:resource="http://www.semanticweb.org/linuxsii/ontologies/2021/0/DialogueONT-Guide-inst#processStep_checkArgs_missingArgs"/>
+        <tododm:yesUserResponseTypeImplies rdf:resource="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#dialMarker_nextStep"/>
+        <tododm:IDval>YesNo_ValueDisambiguation</tododm:IDval>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqYN_AlternativeArgSuggestion -->
+    <!-- http://www.semanticweb.org/linuxsii/ontologies/2021/0/DialogueONT-Guide-inst#stepFunction_YesNoDetermine_IncorrectArgument -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqYN_AlternativeArgSuggestion">
-        <rdf:type rdf:resource="https://w3id.org/todo/tododial#AlternativeArgumentSuggestionRequest"/>
-        <DialogueONT:outputSentence xml:lang="es">No encuentro ningún/a {Item} con {Complement} como {argumentTag}, pero puedo sugerir {IDval_AlternativeItem}, que sí que tiene. ¿Te llevo ahí?</DialogueONT:outputSentence>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/linuxsii/ontologies/2021/0/DialogueONT-Guide-inst#stepFunction_YesNoDetermine_IncorrectArgument">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#YesNoRequestStepFunction"/>
+        <tododm:noOptionsImplies rdf:resource="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SReqYN_Reassure"/>
+        <tododm:noUserResponseTypeImplies rdf:resource="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SReqYN_IncorrectArg"/>
+        <tododm:yesUserResponseTypeImplies rdf:resource="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#dialMarker_nextStep"/>
+        <tododm:IDval>YesNo_IncorrectArgument</tododm:IDval>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqYN_ArgAssignation -->
+    <!-- http://www.semanticweb.org/linuxsii/ontologies/2021/0/DialogueONT-Guide-inst#stepFunction_YesNoDetermine_ReassureFeedback -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqYN_ArgAssignation">
-        <rdf:type rdf:resource="https://w3id.org/todo/tododial#ArgumentAssignationRequest"/>
-        <DialogueONT:outputSentence xml:lang="es">El {ArgTag} es {ArgValue}, ¿verdad?</DialogueONT:outputSentence>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/linuxsii/ontologies/2021/0/DialogueONT-Guide-inst#stepFunction_YesNoDetermine_ReassureFeedback">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#YesNoRequestStepFunction"/>
+        <tododm:noUserResponseTypeImplies rdf:resource="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SReqYN_IncorrectArg"/>
+        <tododm:yesUserResponseTypeImplies rdf:resource="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#dialMarker_finishDial"/>
+        <tododm:IDval>YesNo_ReassureFeedback</tododm:IDval>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqYN_ArgSpecify -->
+    <!-- http://www.semanticweb.org/linuxsii/ontologies/2021/0/DialogueONT-Guide-inst#stepFunction_assignValueToArgument -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqYN_ArgSpecify">
-        <rdf:type rdf:resource="https://w3id.org/todo/tododial#ArgumentSpecifyRequest"/>
-        <DialogueONT:outputSentence xml:lang="es">¿Es {ArgTag}?</DialogueONT:outputSentence>
-        <DialogueONT:outputSentence xml:lang="es">¿Te refieres a {ArgTag}?</DialogueONT:outputSentence>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/linuxsii/ontologies/2021/0/DialogueONT-Guide-inst#stepFunction_assignValueToArgument">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#ContentRequestStepFunction"/>
+        <tododm:lessMaxOptionsImplies rdf:resource="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SReqYN_ArgumentValueDisambiguation"/>
+        <tododm:lessMaxOptionsImplies rdf:resource="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_OptionsAvailable"/>
+        <tododm:moreMaxOptionsImplies rdf:resource="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_TooManyWorldElementOptions"/>
+        <tododm:noOptionsImplies rdf:resource="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_ArgumentNotCompatible"/>
+        <tododm:singleOptionImplies rdf:resource="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#dialMarker_continue"/>
+        <tododm:IDval>assignValueToArgument</tododm:IDval>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqYN_ArgumentValueDisambiguation -->
+    <!-- http://www.semanticweb.org/linuxsii/ontologies/2021/0/DialogueONT-Guide-inst#stepFunction_checkMissingArguments -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqYN_ArgumentValueDisambiguation">
-        <rdf:type rdf:resource="https://w3id.org/todo/tododial#ArgumentValueDisambiguationRequest"/>
-        <DialogueONT:outputSentence xml:lang="es">¿Quieres {Action} {ArgumentConnector} {WorldElement}?</DialogueONT:outputSentence>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/linuxsii/ontologies/2021/0/DialogueONT-Guide-inst#stepFunction_checkMissingArguments">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#ProcessStepStepFunction"/>
+        <tododm:multipleOptionsImplies rdf:resource="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SReqCont_ArgRequest"/>
+        <tododm:multipleOptionsImplies rdf:resource="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_CannotResolveCommand"/>
+        <tododm:noOptionsImplies rdf:resource="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#dialMarker_continue"/>
+        <tododm:singleOptionImplies rdf:resource="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SReqCont_ArgRequest"/>
+        <tododm:singleOptionImplies rdf:resource="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_CannotResolveCommand"/>
+        <tododm:IDval>checkMissingArguments</tododm:IDval>
+        <tododm:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</tododm:order>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqYN_IncorrectArg -->
+    <!-- http://www.semanticweb.org/linuxsii/ontologies/2021/0/DialogueONT-Guide-inst#stepFunction_getArgument -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqYN_IncorrectArg">
-        <rdf:type rdf:resource="https://w3id.org/todo/tododial#IncorrectArgumentRequest"/>
-        <DialogueONT:outputSentence xml:lang="es">¿Me he equivocado con {ArgTag}?</DialogueONT:outputSentence>
-        <DialogueONT:outputSentence xml:lang="es">¿Puede que haya interpretado mal {ArgTag}?</DialogueONT:outputSentence>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/linuxsii/ontologies/2021/0/DialogueONT-Guide-inst#stepFunction_getArgument">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#ProcessStepStepFunction"/>
+        <tododm:lessMaxOptionsImplies rdf:resource="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SReqYN_ArgSpecify"/>
+        <tododm:lessMaxOptionsImplies rdf:resource="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_OptionsAvailable"/>
+        <tododm:moreMaxOptionsImplies rdf:resource="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_TooManyArgumentOptions"/>
+        <tododm:noOptionsImplies rdf:resource="http://www.semanticweb.org/linuxsii/ontologies/2021/0/DialogueONT-Guide-inst#stepFunction_getWorldElement"/>
+        <tododm:singleOptionImplies rdf:resource="http://www.semanticweb.org/linuxsii/ontologies/2021/0/DialogueONT-Guide-inst#stepFunction_getWorldElement"/>
+        <tododm:IDval>getArgument</tododm:IDval>
+        <tododm:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</tododm:order>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqYN_Intent -->
+    <!-- http://www.semanticweb.org/linuxsii/ontologies/2021/0/DialogueONT-Guide-inst#stepFunction_getKeyElements -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqYN_Intent">
-        <rdf:type rdf:resource="https://w3id.org/todo/tododial#IntentRequest"/>
-        <DialogueONT:outputSentence xml:lang="es">Tu petición puede aplicar a varias interpretaciones. ¿Quieres {Intent}?</DialogueONT:outputSentence>
-        <DialogueONT:outputSentence xml:lang="es">¡Cuántas interpretaciones! ¡A ver si me puedes ayudar! ¿Quieres {Intent}?</DialogueONT:outputSentence>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/linuxsii/ontologies/2021/0/DialogueONT-Guide-inst#stepFunction_getKeyElements">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#ContentRequestStepFunction"/>
+        <tododm:multipleOptionsImplies rdf:resource="http://www.semanticweb.org/linuxsii/ontologies/2021/0/DialogueONT-Guide-inst#processStep_getAction"/>
+        <tododm:noOptionsImplies rdf:resource="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_NotUnderstood"/>
+        <tododm:singleOptionImplies rdf:resource="http://www.semanticweb.org/linuxsii/ontologies/2021/0/DialogueONT-Guide-inst#processStep_getAction"/>
+        <tododm:IDval>getKeyElements</tododm:IDval>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqYN_Reassure -->
+    <!-- http://www.semanticweb.org/linuxsii/ontologies/2021/0/DialogueONT-Guide-inst#stepFunction_getWorldElement -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SReqYN_Reassure">
-        <rdf:type rdf:resource="https://w3id.org/todo/tododial#ReassureFeedbackRequest"/>
-        <DialogueONT:outputSentence xml:lang="es">Entonces, quieres {Action} {ArgumentConnector} {Argument}, ¿verdad?</DialogueONT:outputSentence>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/linuxsii/ontologies/2021/0/DialogueONT-Guide-inst#stepFunction_getWorldElement">
+        <tododm:lessMaxOptionsImplies rdf:resource="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SReqYN_ArgumentValueDisambiguation"/>
+        <tododm:lessMaxOptionsImplies rdf:resource="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_OptionsAvailable"/>
+        <tododm:moreMaxOptionsImplies rdf:resource="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_TooManyWorldElementOptions"/>
+        <tododm:noOptionsImplies rdf:resource="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_NoMoreOptionsContinue"/>
+        <tododm:noOptionsImplies rdf:resource="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_ValueNotCompatibleArgument"/>
+        <tododm:singleOptionImplies rdf:resource="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#dialMarker_continue"/>
+        <tododm:IDval>getWorldElement</tododm:IDval>
+        <tododm:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</tododm:order>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_ActionOptions -->
+    <!-- http://www.semanticweb.org/linuxsii/ontologies/2021/0/DialogueONT-Guide-inst#stepFunction_obtainAction -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_ActionOptions">
-        <rdf:type rdf:resource="https://w3id.org/todo/tododial#ActionOptionsResponse"/>
-        <DialogueONT:outputSentence xml:lang="es">Hay varias acciones que podrían corresponderse con tu comando.</DialogueONT:outputSentence>
-        <DialogueONT:outputSentence xml:lang="es">¡El comando puede asociarse a varias acciones!</DialogueONT:outputSentence>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/linuxsii/ontologies/2021/0/DialogueONT-Guide-inst#stepFunction_obtainAction">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#ProcessStepStepFunction"/>
+        <tododm:lessMaxOptionsImplies rdf:resource="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SReqYN_ActionDisambiguation"/>
+        <tododm:lessMaxOptionsImplies rdf:resource="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_OptionsAvailable"/>
+        <tododm:moreMaxOptionsImplies rdf:resource="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_TooManyActionOptions"/>
+        <tododm:noOptionsImplies rdf:resource="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_NoMoreOptionsRestart"/>
+        <tododm:singleOptionImplies rdf:resource="http://www.semanticweb.org/linuxsii/ontologies/2021/0/DialogueONT-Guide-inst#processStep_getActionArgs"/>
+        <tododm:IDval>obtainAction</tododm:IDval>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_ArgExplanation -->
+    <!-- http://www.semanticweb.org/linuxsii/ontologies/2021/0/DialogueONT-Guide-inst#stepFunction_obtainArgumentClarification -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_ArgExplanation">
-        <rdf:type rdf:resource="https://w3id.org/todo/tododial#ArgumentExplanationResponse"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/linuxsii/ontologies/2021/0/DialogueONT-Guide-inst#stepFunction_obtainArgumentClarification">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#ContentRequestStepFunction"/>
+        <tododm:multipleOptionsImplies rdf:resource="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SReqYN_ArgumentValueDisambiguation"/>
+        <tododm:multipleOptionsImplies rdf:resource="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_OptionsAvailable"/>
+        <tododm:singleOptionImplies rdf:resource="http://www.semanticweb.org/linuxsii/ontologies/2021/0/DialogueONT-Guide-inst#processStep_checkArgs_missingArgs"/>
+        <tododm:IDval>obtainArgumentClarification</tododm:IDval>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_ArgNotGuessed -->
+    <!-- http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#Dialogue1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_ArgNotGuessed">
-        <rdf:type rdf:resource="https://w3id.org/todo/tododial#ArgumentNotGuessedResponse"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#Dialogue1">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododt#DialogueTrace"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_ArgumentNotCompatible -->
+    <!-- http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#MainDialogue1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_ArgumentNotCompatible">
-        <rdf:type rdf:resource="https://w3id.org/todo/tododial#ArgumentNotCompatibleResponse"/>
-        <DialogueONT:outputSentence xml:lang="es">No puede ser {Argument}.</DialogueONT:outputSentence>
-        <DialogueONT:outputSentence xml:lang="es">{Argument} no es válido.</DialogueONT:outputSentence>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#MainDialogue1"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SReqCont_ArgCharacteristic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SReqCont_ArgCharacteristic">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#ArgumentCharacteristicRequest"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_ArgumentOptions -->
+    <!-- http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SReqCont_ArgClarification -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_ArgumentOptions">
-        <rdf:type rdf:resource="https://w3id.org/todo/tododial#ArgumentOptionsResponse"/>
-        <DialogueONT:outputSentence xml:lang="es">¡{Item} puede asociarse a varios argumentos!</DialogueONT:outputSentence>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SReqCont_ArgClarification">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#ArgumentClarificationRequest"/>
+        <tododm:outputSentence xml:lang="es">¿Puedes ser un poco más específico con {ArgTag}?</tododm:outputSentence>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_CannotResolveAction -->
+    <!-- http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SReqCont_ArgRequest -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_CannotResolveAction">
-        <rdf:type rdf:resource="https://w3id.org/todo/tododial#CannotResolveActionResponse"/>
-        <DialogueONT:outputSentence xml:lang="es">No he podido asociar tu comando a una acción. ¿Puedes repetir y ser más específico, por favor?</DialogueONT:outputSentence>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SReqCont_ArgRequest">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#ArgumentRequest"/>
+        <tododm:outputSentence xml:lang="es">Necesito que me digas {Argument}, por favor</tododm:outputSentence>
+        <tododm:outputSentence xml:lang="es">¿Puedes decirme {Argument}?</tododm:outputSentence>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_CannotResolveCommand -->
+    <!-- http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SReqCont_RepeatArgument -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_CannotResolveCommand">
-        <rdf:type rdf:resource="https://w3id.org/todo/tododial#CannotResolveCommandResponse"/>
-        <DialogueONT:outputSentence xml:lang="es">No he podido resolver tu petición.</DialogueONT:outputSentence>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SReqCont_RepeatArgument">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#RepeatArgumentRequest"/>
+        <tododm:outputSentence xml:lang="es">¿Me puedes decir de nuevo {ArgTag}?</tododm:outputSentence>
+        <tododm:outputSentence xml:lang="es">¿Puedes repetir {ArgTag}?</tododm:outputSentence>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_ContentRespNotExpected -->
+    <!-- http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SReqCont_UserCommand -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_ContentRespNotExpected">
-        <rdf:type rdf:resource="https://w3id.org/todo/tododial#ContentResponseNotExpected"/>
-        <DialogueONT:outputSentence xml:lang="es">Solo necesito que me digas sí o no, por favor.</DialogueONT:outputSentence>
-        <DialogueONT:outputSentence xml:lang="es">¡Con que me digas sí o no es suficiente!</DialogueONT:outputSentence>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SReqCont_UserCommand">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#UserCommandRequest"/>
+        <tododm:outputSentence xml:lang="es">Dame tu comando.</tododm:outputSentence>
+        <tododm:outputSentence xml:lang="es">¿En qué puedo ayudarte?</tododm:outputSentence>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_Greeting -->
+    <!-- http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SReqCont_VerifyInfo -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_Greeting">
-        <rdf:type rdf:resource="https://w3id.org/todo/tododial#GreetingResponse"/>
-        <DialogueONT:outputSentence xml:lang="es">Bienvenido a {SystemName}. Encantado de ayudarte.</DialogueONT:outputSentence>
-        <DialogueONT:outputSentence xml:lang="es">¡Hola! Soy {SystemName}. Encantado de ayudarte.</DialogueONT:outputSentence>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SReqCont_VerifyInfo">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#VerifyInfoRequest"/>
+        <tododm:outputSentence xml:lang="es">¿Puedes verificarlo?</tododm:outputSentence>
+        <tododm:outputSentence xml:lang="es">¿Puedes volverlo a intentar?</tododm:outputSentence>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_ItemNotCompatibleAnyArg -->
+    <!-- http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SReqYN_ActionDisambiguation -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_ItemNotCompatibleAnyArg">
-        <rdf:type rdf:resource="https://w3id.org/todo/tododial#ItemNotCompatibleAnyArgResponse"/>
-        <DialogueONT:outputSentence xml:lang="es">{item} no es compatible con ningún argumento de la acción.</DialogueONT:outputSentence>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SReqYN_ActionDisambiguation">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#ActionDisambiguationRequest"/>
+        <tododm:outputSentence xml:lang="es">¿Quieres {ActionTag}?</tododm:outputSentence>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_NoMoreOptionsContinue -->
+    <!-- http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SReqYN_AlternativeArgSuggestion -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_NoMoreOptionsContinue">
-        <rdf:type rdf:resource="https://w3id.org/todo/tododial#NoMoreOptionsContinueResponse"/>
-        <DialogueONT:outputSentence xml:lang="es">¡No tengo más opciones que mostrarte!</DialogueONT:outputSentence>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SReqYN_AlternativeArgSuggestion">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#AlternativeArgumentSuggestionRequest"/>
+        <tododm:outputSentence xml:lang="es">No encuentro ningún/a {Item} con {Complement} como {argumentTag}, pero puedo sugerir {IDval_AlternativeItem}, que sí que tiene. ¿Te llevo ahí?</tododm:outputSentence>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_NoMoreOptionsRestart -->
+    <!-- http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SReqYN_ArgAssignation -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_NoMoreOptionsRestart">
-        <rdf:type rdf:resource="https://w3id.org/todo/tododial#NoMoreOptionsRestartResponse"/>
-        <DialogueONT:outputSentence xml:lang="es">¡No tengo más opciones que mostrarte! ¿Puedes reformular tu comando para que te entienda mejor?</DialogueONT:outputSentence>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SReqYN_ArgAssignation">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#ArgumentAssignationRequest"/>
+        <tododm:outputSentence xml:lang="es">El {ArgTag} es {ArgValue}, ¿verdad?</tododm:outputSentence>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_NoResultsClarification -->
+    <!-- http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SReqYN_ArgSpecify -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_NoResultsClarification">
-        <rdf:type rdf:resource="https://w3id.org/todo/tododial#NoResultsClarificationResponse"/>
-        <DialogueONT:outputSentence xml:lang="es">No encuentro ningún elemento que responda a lo que me pides.</DialogueONT:outputSentence>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SReqYN_ArgSpecify">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#ArgumentSpecifyRequest"/>
+        <tododm:outputSentence xml:lang="es">¿Es {ArgTag}?</tododm:outputSentence>
+        <tododm:outputSentence xml:lang="es">¿Te refieres a {ArgTag}?</tododm:outputSentence>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_NotUnderstood -->
+    <!-- http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SReqYN_ArgumentValueDisambiguation -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_NotUnderstood">
-        <rdf:type rdf:resource="https://w3id.org/todo/tododial#NotUnderstoodResponse"/>
-        <DialogueONT:outputSentence xml:lang="es">Lo siento, no te he entendido. ¿Puedes repetir, por favor?</DialogueONT:outputSentence>
-        <DialogueONT:outputSentence xml:lang="es">Perdona, ¿Puedes repetir? No te he entendido.</DialogueONT:outputSentence>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SReqYN_ArgumentValueDisambiguation">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#ArgumentValueDisambiguationRequest"/>
+        <tododm:outputSentence xml:lang="es">¿Quieres {Action} {ArgumentConnector} {WorldElement}?</tododm:outputSentence>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_OptionsAvailable -->
+    <!-- http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SReqYN_IncorrectArg -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_OptionsAvailable">
-        <rdf:type rdf:resource="https://w3id.org/todo/tododial#OptionsAvailableResponse"/>
-        <DialogueONT:outputSentence xml:lang="es">Tengo varias opciones para tu comando.</DialogueONT:outputSentence>
-        <DialogueONT:outputSentence xml:lang="es">¡Lo que me has dicho puede ser varias cosas!</DialogueONT:outputSentence>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SReqYN_IncorrectArg">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#IncorrectArgumentRequest"/>
+        <tododm:outputSentence xml:lang="es">¿Me he equivocado con {ArgTag}?</tododm:outputSentence>
+        <tododm:outputSentence xml:lang="es">¿Puede que haya interpretado mal {ArgTag}?</tododm:outputSentence>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_TooManyActionOptions -->
+    <!-- http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SReqYN_Intent -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_TooManyActionOptions">
-        <rdf:type rdf:resource="https://w3id.org/todo/tododial#TooManyActionOptionsResponse"/>
-        <DialogueONT:outputSentence xml:lang="es">¡El comando puede asociarse a varias acciones! ¿Puedes repetir y ser más específico, por favor?</DialogueONT:outputSentence>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SReqYN_Intent">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#IntentRequest"/>
+        <tododm:outputSentence xml:lang="es">Tu petición puede aplicar a varias interpretaciones. ¿Quieres {Intent}?</tododm:outputSentence>
+        <tododm:outputSentence xml:lang="es">¡Cuántas interpretaciones! ¡A ver si me puedes ayudar! ¿Quieres {Intent}?</tododm:outputSentence>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_TooManyAlternatives -->
+    <!-- http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SReqYN_Reassure -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_TooManyAlternatives">
-        <rdf:type rdf:resource="https://w3id.org/todo/tododial#TooManyAlternativesResponse"/>
-        <DialogueONT:outputSentence xml:lang="es">Hay muchas alternativas para lo que me has dicho.</DialogueONT:outputSentence>
-        <DialogueONT:outputSentence xml:lang="es">Tengo demasiadas opciones con la información que me has dado.</DialogueONT:outputSentence>
-        <DialogueONT:outputSentence xml:lang="es">¡Lo que me has dicho podría ser demasiadas cosas!</DialogueONT:outputSentence>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SReqYN_Reassure">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#ReassureFeedbackRequest"/>
+        <tododm:outputSentence xml:lang="es">Entonces, quieres {Action} {ArgumentConnector} {Argument}, ¿verdad?</tododm:outputSentence>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_TooManyArgumentOptions -->
+    <!-- http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_ActionOptions -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_TooManyArgumentOptions">
-        <rdf:type rdf:resource="https://w3id.org/todo/tododial#TooManyArgumentOptionsResponse"/>
-        <DialogueONT:outputSentence xml:lang="es">¡{item} puede asociarse a varios argumentos! ¿Puedes repetir y ser un poco más específico, por favor?</DialogueONT:outputSentence>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_ActionOptions">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#ActionOptionsResponse"/>
+        <tododm:outputSentence xml:lang="es">Hay varias acciones que podrían corresponderse con tu comando.</tododm:outputSentence>
+        <tododm:outputSentence xml:lang="es">¡El comando puede asociarse a varias acciones!</tododm:outputSentence>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_TooManyWorldElementOptions -->
+    <!-- http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_ArgExplanation -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_TooManyWorldElementOptions">
-        <rdf:type rdf:resource="https://w3id.org/todo/tododial#TooManyWorldElementOptionsResponse"/>
-        <DialogueONT:outputSentence xml:lang="es">Tengo demasiadas opciones con la información que me has dado. ¿Puedes ser un poco más específico con el {ArgTag}? Para que tengas una referencia, un ejemplo podría ser {PossibleValue}.</DialogueONT:outputSentence>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_ArgExplanation">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#ArgumentExplanationResponse"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_Understood -->
+    <!-- http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_ArgNotGuessed -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_Understood">
-        <rdf:type rdf:resource="https://w3id.org/todo/tododial#UnderstoodResponse"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_ArgNotGuessed">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#ArgumentNotGuessedResponse"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_ValueNotCompatibleArgument -->
+    <!-- http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_ArgumentNotCompatible -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_ValueNotCompatibleArgument">
-        <rdf:type rdf:resource="https://w3id.org/todo/tododial#ValueNotCompatibleWithArgumentResponse"/>
-        <DialogueONT:outputSentence xml:lang="es">No puede ser {ArgTag}.</DialogueONT:outputSentence>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_ArgumentNotCompatible">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#ArgumentNotCompatibleResponse"/>
+        <tododm:outputSentence xml:lang="es">No puede ser {Argument}.</tododm:outputSentence>
+        <tododm:outputSentence xml:lang="es">{Argument} no es válido.</tododm:outputSentence>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_YNRespNotExpected -->
+    <!-- http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_ArgumentOptions -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SResp_YNRespNotExpected">
-        <rdf:type rdf:resource="https://w3id.org/todo/tododial#YesNoResponseNotExpected"/>
-        <DialogueONT:outputSentence xml:lang="es">Creo que no te he entendido. ¿Puedes ser más concreto con tu respuesta?</DialogueONT:outputSentence>
-        <DialogueONT:outputSentence xml:lang="es">¿Puedes ser un poco más específico, por favor?</DialogueONT:outputSentence>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_ArgumentOptions">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#ArgumentOptionsResponse"/>
+        <tododm:outputSentence xml:lang="es">¡{Item} puede asociarse a varios argumentos!</tododm:outputSentence>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SecondaryDialogue1 -->
+    <!-- http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_CannotResolveAction -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SecondaryDialogue1">
-        <rdf:type rdf:resource="https://w3id.org/todo/tododial#SecondaryDialogueTrace"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_CannotResolveAction">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#CannotResolveActionResponse"/>
+        <tododm:outputSentence xml:lang="es">No he podido asociar tu comando a una acción. ¿Puedes repetir y ser más específico, por favor?</tododm:outputSentence>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SecondaryDialogue2 -->
+    <!-- http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_CannotResolveCommand -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#SecondaryDialogue2">
-        <rdf:type rdf:resource="https://w3id.org/todo/tododial#SecondaryDialogueTrace"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_CannotResolveCommand">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#CannotResolveCommandResponse"/>
+        <tododm:outputSentence xml:lang="es">No he podido resolver tu petición.</tododm:outputSentence>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#dialMarker_continue -->
+    <!-- http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_ContentRespNotExpected -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#dialMarker_continue">
-        <rdf:type rdf:resource="https://w3id.org/todo/tododial#Continue"/>
-        <DialogueONT:IDval>continue</DialogueONT:IDval>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_ContentRespNotExpected">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#ContentResponseNotExpected"/>
+        <tododm:outputSentence xml:lang="es">Solo necesito que me digas sí o no, por favor.</tododm:outputSentence>
+        <tododm:outputSentence xml:lang="es">¡Con que me digas sí o no es suficiente!</tododm:outputSentence>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#dialMarker_finishDial -->
+    <!-- http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_Greeting -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#dialMarker_finishDial">
-        <rdf:type rdf:resource="https://w3id.org/todo/tododial#FinishDial"/>
-        <DialogueONT:IDval>finishDial</DialogueONT:IDval>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_Greeting">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#GreetingResponse"/>
+        <tododm:outputSentence xml:lang="es">Bienvenido a {SystemName}. Encantado de ayudarte.</tododm:outputSentence>
+        <tododm:outputSentence xml:lang="es">¡Hola! Soy {SystemName}. Encantado de ayudarte.</tododm:outputSentence>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#dialMarker_restart -->
+    <!-- http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_ItemNotCompatibleAnyArg -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/caceta/ontologies/2020/3/DialogueONT-inst#dialMarker_restart">
-        <rdf:type rdf:resource="https://w3id.org/todo/tododial#Restart"/>
-        <DialogueONT:IDval>restart</DialogueONT:IDval>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_ItemNotCompatibleAnyArg">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#ItemNotCompatibleAnyArgResponse"/>
+        <tododm:outputSentence xml:lang="es">{item} no es compatible con ningún argumento de la acción.</tododm:outputSentence>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_NoMoreOptionsContinue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_NoMoreOptionsContinue">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#NoMoreOptionsContinueResponse"/>
+        <tododm:outputSentence xml:lang="es">¡No tengo más opciones que mostrarte!</tododm:outputSentence>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_NoMoreOptionsRestart -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_NoMoreOptionsRestart">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#NoMoreOptionsRestartResponse"/>
+        <tododm:outputSentence xml:lang="es">¡No tengo más opciones que mostrarte! ¿Puedes reformular tu comando para que te entienda mejor?</tododm:outputSentence>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_NoResultsClarification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_NoResultsClarification">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#NoResultsClarificationResponse"/>
+        <tododm:outputSentence xml:lang="es">No encuentro ningún elemento que responda a lo que me pides.</tododm:outputSentence>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_NotUnderstood -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_NotUnderstood">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#NotUnderstoodResponse"/>
+        <tododm:outputSentence xml:lang="es">Lo siento, no te he entendido. ¿Puedes repetir, por favor?</tododm:outputSentence>
+        <tododm:outputSentence xml:lang="es">Perdona, ¿Puedes repetir? No te he entendido.</tododm:outputSentence>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_OptionsAvailable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_OptionsAvailable">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#OptionsAvailableResponse"/>
+        <tododm:outputSentence xml:lang="es">Tengo varias opciones para tu comando.</tododm:outputSentence>
+        <tododm:outputSentence xml:lang="es">¡Lo que me has dicho puede ser varias cosas!</tododm:outputSentence>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_TooManyActionOptions -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_TooManyActionOptions">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#TooManyActionOptionsResponse"/>
+        <tododm:outputSentence xml:lang="es">¡El comando puede asociarse a varias acciones! ¿Puedes repetir y ser más específico, por favor?</tododm:outputSentence>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_TooManyAlternatives -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_TooManyAlternatives">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#TooManyAlternativesResponse"/>
+        <tododm:outputSentence xml:lang="es">Hay muchas alternativas para lo que me has dicho.</tododm:outputSentence>
+        <tododm:outputSentence xml:lang="es">Tengo demasiadas opciones con la información que me has dado.</tododm:outputSentence>
+        <tododm:outputSentence xml:lang="es">¡Lo que me has dicho podría ser demasiadas cosas!</tododm:outputSentence>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_TooManyArgumentOptions -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_TooManyArgumentOptions">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#TooManyArgumentOptionsResponse"/>
+        <tododm:outputSentence xml:lang="es">¡{item} puede asociarse a varios argumentos! ¿Puedes repetir y ser un poco más específico, por favor?</tododm:outputSentence>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_TooManyWorldElementOptions -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_TooManyWorldElementOptions">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#TooManyWorldElementOptionsResponse"/>
+        <tododm:outputSentence xml:lang="es">Tengo demasiadas opciones con la información que me has dado. ¿Puedes ser un poco más específico con el {ArgTag}? Para que tengas una referencia, un ejemplo podría ser {PossibleValue}.</tododm:outputSentence>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_Understood -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_Understood">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#UnderstoodResponse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_ValueNotCompatibleArgument -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_ValueNotCompatibleArgument">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#ValueNotCompatibleWithArgumentResponse"/>
+        <tododm:outputSentence xml:lang="es">No puede ser {ArgTag}.</tododm:outputSentence>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_YNRespNotExpected -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SResp_YNRespNotExpected">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#YesNoResponseNotExpected"/>
+        <tododm:outputSentence xml:lang="es">Creo que no te he entendido. ¿Puedes ser más concreto con tu respuesta?</tododm:outputSentence>
+        <tododm:outputSentence xml:lang="es">¿Puedes ser un poco más específico, por favor?</tododm:outputSentence>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SecondaryDialogue1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SecondaryDialogue1">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododt#SecondaryDialogueTrace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SecondaryDialogue2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#SecondaryDialogue2">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododt#SecondaryDialogueTrace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#dialMarker_continue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#dialMarker_continue">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#Continue"/>
+        <tododm:IDval>continue</tododm:IDval>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#dialMarker_finishDial -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#dialMarker_finishDial">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#FinishDial"/>
+        <tododm:IDval>finishDial</tododm:IDval>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#dialMarker_nextStep -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#dialMarker_nextStep"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#dialMarker_restart -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tek/ontologies/2020/3/TODODial-inst#dialMarker_restart">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#Restart"/>
+        <tododm:IDval>restart</tododm:IDval>
     </owl:NamedIndividual>
 </rdf:RDF>
 
