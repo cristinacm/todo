@@ -1139,6 +1139,18 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
     
 
 
+    <!-- https://w3id.org/todo/tododm#Return -->
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododm#Return">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododm#DialogueControlMarker"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marker that returns to the last SystemResponse+Request/SystemRequest performed.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
+        <rdfs:label>Return</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/todo/tododm#StepFunction -->
 
     <owl:Class rdf:about="https://w3id.org/todo/tododm#StepFunction">
