@@ -407,6 +407,24 @@
     
 
 
+    <!-- https://w3id.org/todo/tododm#ActionOptionsAvailable -->
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododm#ActionOptionsAvailable">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododm#OptionsAvailableResponse"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododm#implies"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododm#ActionDisambiguationRequest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Response in which the system tells the user that it has several options for an Action.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
+        <rdfs:label>ActionOptionsAvailable</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/todo/tododm#ActionOptionsResponse -->
 
     <owl:Class rdf:about="https://w3id.org/todo/tododm#ActionOptionsResponse">
@@ -573,6 +591,24 @@ For example, the user would require a &quot;piece&quot;, and the system includes
     
 
 
+    <!-- https://w3id.org/todo/tododm#ArgumentOptionsAvailable -->
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododm#ArgumentOptionsAvailable">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododm#OptionsAvailableResponse"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododm#implies"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododm#ArgumentSpecifyRequest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Response in which the system tells the user that it has several options for an Argument.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
+        <rdfs:label>ArgumentOptionsAvailable</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/todo/tododm#ArgumentOptionsResponse -->
 
     <owl:Class rdf:about="https://w3id.org/todo/tododm#ArgumentOptionsResponse">
@@ -651,6 +687,24 @@ For example, the user would require a &quot;piece&quot;, and the system includes
         <skos:example xml:lang="es">&quot;¿Quieres {Action} {ArgumentConnector} {WorldElement}?&quot;
 
 &quot;¿Quieres {que te guíe} {a} {Sala Ura}?&quot;</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/todo/tododm#ArgumentValueOptionsAvailable -->
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododm#ArgumentValueOptionsAvailable">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododm#OptionsAvailableResponse"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododm#implies"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododm#ArgumentValueDisambiguationRequest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Response in which the system tells the user that it has several options for an argument value.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
+        <rdfs:label>ArgumentValueOptionsAvailable</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:Class>
     
 
@@ -1006,18 +1060,6 @@ USR: &quot;Sí&quot;</skos:example>
 
     <owl:Class rdf:about="https://w3id.org/todo/tododm#OptionsAvailableResponse">
         <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododm#SystemResponse"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/todo/tododm#implies"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododm#ArgumentSpecifyRequest"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/todo/tododm#implies"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododm#ArgumentValueDisambiguationRequest"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Response in which the system tells the user that it has several options for a specific element (e.g. WorldElement).
 
 Note the difference between OptionsAvailableResponse and TooManyAlternativesResponse: the first implies that there is a fair amount of options, whereas the latter implies that the options that are available are too many and it will require the user to be more specific.</rdfs:comment>
