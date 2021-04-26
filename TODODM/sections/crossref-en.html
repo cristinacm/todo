@@ -8,6 +8,10 @@ This section provides details for each class and property defined by TODODM.
             title="https://w3id.org/todo/tododm#ActionDisambiguationRequest">ActionDisambiguationRequest</a>
       </li>
       <li>
+         <a href="#ActionOptionsAvailable"
+            title="https://w3id.org/todo/tododm#ActionOptionsAvailable">ActionOptionsAvailable</a>
+      </li>
+      <li>
          <a href="#ActionOptionsResponse"
             title="https://w3id.org/todo/tododm#ActionOptionsResponse">ActionOptionsResponse</a>
       </li>
@@ -40,6 +44,10 @@ This section provides details for each class and property defined by TODODM.
             title="https://w3id.org/todo/tododm#ArgumentNotGuessedResponse">ArgumentNotGuessedResponse</a>
       </li>
       <li>
+         <a href="#ArgumentOptionsAvailable"
+            title="https://w3id.org/todo/tododm#ArgumentOptionsAvailable">ArgumentOptionsAvailable</a>
+      </li>
+      <li>
          <a href="#ArgumentOptionsResponse"
             title="https://w3id.org/todo/tododm#ArgumentOptionsResponse">ArgumentOptionsResponse</a>
       </li>
@@ -53,6 +61,10 @@ This section provides details for each class and property defined by TODODM.
       <li>
          <a href="#ArgumentValueDisambiguationRequest"
             title="https://w3id.org/todo/tododm#ArgumentValueDisambiguationRequest">ArgumentValueDisambiguationRequest</a>
+      </li>
+      <li>
+         <a href="#ArgumentValueOptionsAvailable"
+            title="https://w3id.org/todo/tododm#ArgumentValueOptionsAvailable">ArgumentValueOptionsAvailable</a>
       </li>
       <li>
          <a href="#CannotResolveActionResponse"
@@ -77,8 +89,8 @@ This section provides details for each class and property defined by TODODM.
          <a href="#Continue" title="https://w3id.org/todo/tododm#Continue">Continue</a>
       </li>
       <li>
-         <a href="#DialogueControlMarkers"
-            title="https://w3id.org/todo/tododm#DialogueControlMarkers">DialogueControlMarkers</a>
+         <a href="#DialogueControlMarker"
+            title="https://w3id.org/todo/tododm#DialogueControlMarker">DialogueControlMarkers</a>
       </li>
       <li>
          <a href="#DialogueStep" title="https://w3id.org/todo/tododm#DialogueStep">DialogueStep</a>
@@ -143,6 +155,9 @@ This section provides details for each class and property defined by TODODM.
          <a href="#Restart" title="https://w3id.org/todo/tododm#Restart">Restart</a>
       </li>
       <li>
+         <a href="#Return" title="https://w3id.org/todo/tododm#Return">Return</a>
+      </li>
+      <li>
          <a href="#StepFunction" title="https://w3id.org/todo/tododm#StepFunction">StepFunction</a>
       </li>
       <li>
@@ -203,8 +218,13 @@ This section provides details for each class and property defined by TODODM.
       <p>
          <strong>IRI:</strong> https://w3id.org/todo/tododm#ActionDisambiguationRequest</p>
       <div class="comment">
-         <span class="markdown">Request that makes the user choose from a set of Actions obtained through inference.</span>
+         <span class="markdown">Request that makes the user choose from a set of Actions obtained through
+            inference.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
@@ -233,6 +253,34 @@ This section provides details for each class and property defined by TODODM.
          </dd>
       </dl>
    </div>
+   <div class="entity" id="ActionOptionsAvailable">
+      <h3>ActionOptionsAvailable<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/todo/tododm#ActionOptionsAvailable</p>
+      <div class="comment">
+         <span class="markdown">Response in which the system tells the user that it has several options for an
+            Action.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#OptionsAvailableResponse"
+               title="https://w3id.org/todo/tododm#OptionsAvailableResponse">OptionsAvailableResponse</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="ActionOptionsResponse">
       <h3>ActionOptionsResponse<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -241,8 +289,13 @@ This section provides details for each class and property defined by TODODM.
       <p>
          <strong>IRI:</strong> https://w3id.org/todo/tododm#ActionOptionsResponse</p>
       <div class="comment">
-         <span class="markdown">Response that the system gives when a command can be associated to more than one action.</span>
+         <span class="markdown">Response that the system gives when a command can be associated to more than one
+            action.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
@@ -272,8 +325,13 @@ This section provides details for each class and property defined by TODODM.
       <p>
          <strong>IRI:</strong> https://w3id.org/todo/tododm#AlternativeArgumentSuggestionRequest</p>
       <div class="comment">
-         <span class="markdown">Request that arises when the system has not been able to obtain an argument through an item + complement. The system suggests an alternative that contains the complement in the request.</span>
+         <span class="markdown">Request that arises when the system has not been able to obtain an argument through an
+            item + complement. The system suggests an alternative that contains the complement in the request.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
@@ -313,6 +371,10 @@ This section provides details for each class and property defined by TODODM.
       <div class="comment">
          <span class="markdown">Request made to reassure the assignation of a value from the KEE to an Argument.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
@@ -346,10 +408,16 @@ This section provides details for each class and property defined by TODODM.
       <p>
          <strong>IRI:</strong> https://w3id.org/todo/tododm#ArgumentCharacteristicRequest</p>
       <div class="comment">
-         <span class="markdown">Request that demands a specific characteristic of the argument. This request is used when the argument provided is too broad and the system needs some characteristic that allows determining the specific element the user is refering to.
+         <span class="markdown">Request that demands a specific characteristic of the argument. This request is used
+            when the argument provided is too broad and the system needs some characteristic that allows determining the
+            specific element the user is refering to.
 
-For example, the user would require a "piece", and the system includes data for 300 types of pieces.</span>
+            For example, the user would require a "piece", and the system includes data for 300 types of pieces.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
@@ -383,8 +451,13 @@ For example, the user would require a "piece", and the system includes data for 
       <p>
          <strong>IRI:</strong> https://w3id.org/todo/tododm#ArgumentClarificationRequest</p>
       <div class="comment">
-         <span class="markdown">Request that asks the user for some clarification for the value of an argument when a previously saved value generates too many options.</span>
+         <span class="markdown">Request that asks the user for some clarification for the value of an argument when a
+            previously saved value generates too many options.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
@@ -418,8 +491,13 @@ For example, the user would require a "piece", and the system includes data for 
       <p>
          <strong>IRI:</strong> https://w3id.org/todo/tododm#ArgumentExplanationResponse</p>
       <div class="comment">
-         <span class="markdown">Response that gives details about an Argument. For example, when the user does not understand what information conveys said Argument.</span>
+         <span class="markdown">Response that gives details about an Argument. For example, when the user does not
+            understand what information conveys said Argument.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
@@ -453,8 +531,13 @@ For example, the user would require a "piece", and the system includes data for 
       <p>
          <strong>IRI:</strong> https://w3id.org/todo/tododm#ArgumentNotCompatibleResponse</p>
       <div class="comment">
-         <span class="markdown">The system informs the user the Argument value provided is not valid according to what has been modelled in the KB.</span>
+         <span class="markdown">The system informs the user the Argument value provided is not valid according to what
+            has been modelled in the KB.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
@@ -488,8 +571,13 @@ For example, the user would require a "piece", and the system includes data for 
       <p>
          <strong>IRI:</strong> https://w3id.org/todo/tododm#ArgumentNotGuessedResponse</p>
       <div class="comment">
-         <span class="markdown">Response given when the system has not been able to guess the value of the Argument through its characteristics.</span>
+         <span class="markdown">Response given when the system has not been able to guess the value of the Argument
+            through its characteristics.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
@@ -515,6 +603,34 @@ For example, the user would require a "piece", and the system includes data for 
          </dd>
       </dl>
    </div>
+   <div class="entity" id="ArgumentOptionsAvailable">
+      <h3>ArgumentOptionsAvailable<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/todo/tododm#ArgumentOptionsAvailable</p>
+      <div class="comment">
+         <span class="markdown">Response in which the system tells the user that it has several options for an
+            Argument.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#OptionsAvailableResponse"
+               title="https://w3id.org/todo/tododm#OptionsAvailableResponse">OptionsAvailableResponse</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="ArgumentOptionsResponse">
       <h3>ArgumentOptionsResponse<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -523,8 +639,13 @@ For example, the user would require a "piece", and the system includes data for 
       <p>
          <strong>IRI:</strong> https://w3id.org/todo/tododm#ArgumentOptionsResponse</p>
       <div class="comment">
-         <span class="markdown">Response that the system gives when an item can be associated to more than one argument.</span>
+         <span class="markdown">Response that the system gives when an item can be associated to more than one
+            argument.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
@@ -556,6 +677,10 @@ For example, the user would require a "piece", and the system includes data for 
       <div class="comment">
          <span class="markdown">Request that demands for the value of an Argument.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
@@ -589,8 +714,13 @@ For example, the user would require a "piece", and the system includes data for 
       <p>
          <strong>IRI:</strong> https://w3id.org/todo/tododm#ArgumentSpecifyRequest</p>
       <div class="comment">
-         <span class="markdown">Request made when a value for an Argument can belong to different Arguments. The strategy is asking for each Argument option until the user confirms.</span>
+         <span class="markdown">Request made when a value for an Argument can belong to different Arguments. The
+            strategy is asking for each Argument option until the user confirms.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
@@ -632,8 +762,13 @@ For example, the user would require a "piece", and the system includes data for 
       <p>
          <strong>IRI:</strong> https://w3id.org/todo/tododm#ArgumentValueDisambiguationRequest</p>
       <div class="comment">
-         <span class="markdown">Request that tries to obtain the value of the argument when it is ambiguous (e.g. "sala" may apply to "sala Ura", "sala Sua", etc.).</span>
+         <span class="markdown">Request that tries to obtain the value of the argument when it is ambiguous (e.g. "sala"
+            may apply to "sala Ura", "sala Sua", etc.).</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
@@ -659,6 +794,34 @@ For example, the user would require a "piece", and the system includes data for 
          </dd>
       </dl>
    </div>
+   <div class="entity" id="ArgumentValueOptionsAvailable">
+      <h3>ArgumentValueOptionsAvailable<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/todo/tododm#ArgumentValueOptionsAvailable</p>
+      <div class="comment">
+         <span class="markdown">Response in which the system tells the user that it has several options for an argument
+            value.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#OptionsAvailableResponse"
+               title="https://w3id.org/todo/tododm#OptionsAvailableResponse">OptionsAvailableResponse</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="CannotResolveActionResponse">
       <h3>CannotResolveActionResponse<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -667,8 +830,13 @@ For example, the user would require a "piece", and the system includes data for 
       <p>
          <strong>IRI:</strong> https://w3id.org/todo/tododm#CannotResolveActionResponse</p>
       <div class="comment">
-         <span class="markdown">Response that the system gives when it cannot associate an action/target to one or more actions.</span>
+         <span class="markdown">Response that the system gives when it cannot associate an action/target to one or more
+            actions.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
@@ -700,8 +868,12 @@ For example, the user would require a "piece", and the system includes data for 
       <div class="comment">
          <span class="markdown">Response that informs the user that the command could not be resolved.
 
-[to be followed by an ArgRequest]</span>
+            [to be followed by an ArgRequest]</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
@@ -733,8 +905,12 @@ For example, the user would require a "piece", and the system includes data for 
       <div class="comment">
          <span class="markdown">Request that asks for specific information, other than "Yes" or "No" (and equivalents).
 
-Also known as "Non polar/Open question" in linguistics.</span>
+            Also known as "Non polar/Open question" in linguistics.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
@@ -757,11 +933,14 @@ Also known as "Non polar/Open question" in linguistics.</span>
                title="https://w3id.org/todo/tododm#ArgumentCharacteristicRequest">ArgumentCharacteristicRequest</a>
             <sup class="type-c" title="class">c</sup>, <a href="#ArgumentClarificationRequest"
                title="https://w3id.org/todo/tododm#ArgumentClarificationRequest">ArgumentClarificationRequest</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#ArgumentRequest" title="https://w3id.org/todo/tododm#ArgumentRequest">ArgumentRequest</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ArgumentRequest"
+               title="https://w3id.org/todo/tododm#ArgumentRequest">ArgumentRequest</a>
             <sup class="type-c" title="class">c</sup>, <a href="#RepeatArgumentRequest"
                title="https://w3id.org/todo/tododm#RepeatArgumentRequest">RepeatArgumentRequest</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#UserCommandRequest" title="https://w3id.org/todo/tododm#UserCommandRequest">UserCommandRequest</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#VerifyInfoRequest" title="https://w3id.org/todo/tododm#VerifyInfoRequest">VerifyInfoRequest</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#UserCommandRequest"
+               title="https://w3id.org/todo/tododm#UserCommandRequest">UserCommandRequest</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#VerifyInfoRequest"
+               title="https://w3id.org/todo/tododm#VerifyInfoRequest">VerifyInfoRequest</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is disjoint with</dt>
@@ -781,6 +960,10 @@ Also known as "Non polar/Open question" in linguistics.</span>
       <div class="comment">
          <span class="markdown">Step Function associated to a ContentRequest.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
@@ -803,6 +986,10 @@ Also known as "Non polar/Open question" in linguistics.</span>
       <div class="comment">
          <span class="markdown">"You only need me to tell me yes or no, please"</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
@@ -826,6 +1013,10 @@ Also known as "Non polar/Open question" in linguistics.</span>
       <div class="comment">
          <span class="markdown">Marker that conveys the idea of continuing with the dialogue process.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
@@ -833,22 +1024,26 @@ Also known as "Non polar/Open question" in linguistics.</span>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#DialogueControlMarkers"
-               title="https://w3id.org/todo/tododm#DialogueControlMarkers">DialogueControlMarkers</a>
+            <a href="#DialogueControlMarker"
+               title="https://w3id.org/todo/tododm#DialogueControlMarker">DialogueControlMarkers</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="DialogueControlMarkers">
+   <div class="entity" id="DialogueControlMarker">
       <h3>DialogueControlMarkers<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/todo/tododm#DialogueControlMarkers</p>
+         <strong>IRI:</strong> https://w3id.org/todo/tododm#DialogueControlMarker</p>
       <div class="comment">
          <span class="markdown">Elements that correspond to predefined or generic actions in dialogue control.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
@@ -861,20 +1056,16 @@ Also known as "Non polar/Open question" in linguistics.</span>
       </dl>
       <dl class="description">
          <dt>has super-classes</dt>
-         <dd/>
+         <dd />
          <dt>has sub-classes</dt>
          <dd>
             <a href="#Continue" title="https://w3id.org/todo/tododm#Continue">Continue</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#FinishDial" title="https://w3id.org/todo/tododm#FinishDial">FinishDial</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Restart" title="https://w3id.org/todo/tododm#Restart">Restart</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>is disjoint with</dt>
-         <dd>
-            <a href="#DialogueStep" title="https://w3id.org/todo/tododm#DialogueStep">DialogueStep</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#ProcessStep" title="https://w3id.org/todo/tododm#ProcessStep">ProcessStep</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#StepFunction" title="https://w3id.org/todo/tododm#StepFunction">StepFunction</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#SystemStep" title="https://w3id.org/todo/tododm#SystemStep">SystemStep</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#FinishDial"
+               title="https://w3id.org/todo/tododm#FinishDial">FinishDial</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Restart"
+               title="https://w3id.org/todo/tododm#Restart">Restart</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Return"
+               title="https://w3id.org/todo/tododm#Return">Return</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -887,23 +1078,23 @@ Also known as "Non polar/Open question" in linguistics.</span>
       <p>
          <strong>IRI:</strong> https://w3id.org/todo/tododm#DialogueStep</p>
       <div class="comment">
-         <span class="markdown">Step in the dialogue process that requires a system interaction with the user (SystemStep).</span>
+         <span class="markdown">Step in the dialogue process that requires a system interaction with the user
+            (SystemStep).</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
       </dl>
       <dl class="description">
          <dt>has super-classes</dt>
-         <dd/>
+         <dd />
          <dt>is disjoint with</dt>
          <dd>
             <a href="#ProcessStep" title="https://w3id.org/todo/tododm#ProcessStep">ProcessStep</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#DialogueControlMarkers"
-               title="https://w3id.org/todo/tododm#DialogueControlMarkers">DialogueControlMarkers</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#ProcessStep" title="https://w3id.org/todo/tododm#ProcessStep">ProcessStep</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#StepFunction" title="https://w3id.org/todo/tododm#StepFunction">StepFunction</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#SystemStep" title="https://w3id.org/todo/tododm#SystemStep">SystemStep</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -918,6 +1109,10 @@ Also known as "Non polar/Open question" in linguistics.</span>
       <div class="comment">
          <span class="markdown">Marker that establishes that the dialogue must be finished.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
@@ -925,8 +1120,8 @@ Also known as "Non polar/Open question" in linguistics.</span>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#DialogueControlMarkers"
-               title="https://w3id.org/todo/tododm#DialogueControlMarkers">DialogueControlMarkers</a>
+            <a href="#DialogueControlMarker"
+               title="https://w3id.org/todo/tododm#DialogueControlMarker">DialogueControlMarkers</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -941,6 +1136,10 @@ Also known as "Non polar/Open question" in linguistics.</span>
       <div class="comment">
          <span class="markdown">Welcome message.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
@@ -974,8 +1173,13 @@ Also known as "Non polar/Open question" in linguistics.</span>
       <p>
          <strong>IRI:</strong> https://w3id.org/todo/tododm#IncorrectArgumentRequest</p>
       <div class="comment">
-         <span class="markdown">Request that checks which is the Argument/Action that has not been interpreter correctly, after a negative ReassureFeedbackRequest.</span>
+         <span class="markdown">Request that checks which is the Argument/Action that has not been interpreter
+            correctly, after a negative ReassureFeedbackRequest.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
@@ -1009,8 +1213,13 @@ Also known as "Non polar/Open question" in linguistics.</span>
       <p>
          <strong>IRI:</strong> https://w3id.org/todo/tododm#IntentRequest</p>
       <div class="comment">
-         <span class="markdown">Request made when a UserRequest can belong to different Intents. The strategy is asking for each Intent option until the user confirms.</span>
+         <span class="markdown">Request made when a UserRequest can belong to different Intents. The strategy is asking
+            for each Intent option until the user confirms.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
@@ -1065,6 +1274,10 @@ USR: "Sí"</pre>
       <div class="comment">
          <span class="markdown">The item {item} is not compatible with any argument for this action.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
@@ -1085,8 +1298,13 @@ USR: "Sí"</pre>
       <p>
          <strong>IRI:</strong> https://w3id.org/todo/tododm#NoMoreOptionsContinueResponse</p>
       <div class="comment">
-         <span class="markdown">Response that the system displays when it runs out of options. It is intended to continue with a full request of the element that the previous options corresponded to.</span>
+         <span class="markdown">Response that the system displays when it runs out of options. It is intended to
+            continue with a full request of the element that the previous options corresponded to.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
@@ -1116,8 +1334,13 @@ USR: "Sí"</pre>
       <p>
          <strong>IRI:</strong> https://w3id.org/todo/tododm#NoMoreOptionsRestartResponse</p>
       <div class="comment">
-         <span class="markdown">Response that the system displays when it runs out of options. It finishes the current Dialogue.</span>
+         <span class="markdown">Response that the system displays when it runs out of options. It finishes the current
+            Dialogue.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
@@ -1147,8 +1370,13 @@ USR: "Sí"</pre>
       <p>
          <strong>IRI:</strong> https://w3id.org/todo/tododm#NoResultsClarificationResponse</p>
       <div class="comment">
-         <span class="markdown">Response that the system returns when the clarification step of the value of an Argument does not return any results.</span>
+         <span class="markdown">Response that the system returns when the clarification step of the value of an Argument
+            does not return any results.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
@@ -1178,8 +1406,13 @@ USR: "Sí"</pre>
       <p>
          <strong>IRI:</strong> https://w3id.org/todo/tododm#NotUnderstoodResponse</p>
       <div class="comment">
-         <span class="markdown">Response that informs the user that the system has not understood the user command.</span>
+         <span class="markdown">Response that informs the user that the system has not understood the user
+            command.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
@@ -1209,10 +1442,17 @@ USR: "Sí"</pre>
       <p>
          <strong>IRI:</strong> https://w3id.org/todo/tododm#OptionsAvailableResponse</p>
       <div class="comment">
-         <span class="markdown">Response in which the system tells the user that it has several options for a specific element (e.g. WorldElement).
+         <span class="markdown">Response in which the system tells the user that it has several options for a specific
+            element (e.g. WorldElement).
 
-Note the difference between OptionsAvailableResponse and TooManyAlternativesResponse: the first implies that there is a fair amount of options, whereas the latter implies that the options that are available are too many and it will require the user to be more specific.</span>
+            Note the difference between OptionsAvailableResponse and TooManyAlternativesResponse: the first implies that
+            there is a fair amount of options, whereas the latter implies that the options that are available are too
+            many and it will require the user to be more specific.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
@@ -1234,6 +1474,16 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
             <a href="#SystemResponse" title="https://w3id.org/todo/tododm#SystemResponse">SystemResponse</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#ActionOptionsAvailable"
+               title="https://w3id.org/todo/tododm#ActionOptionsAvailable">ActionOptionsAvailable</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ArgumentOptionsAvailable"
+               title="https://w3id.org/todo/tododm#ArgumentOptionsAvailable">ArgumentOptionsAvailable</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ArgumentValueOptionsAvailable"
+               title="https://w3id.org/todo/tododm#ArgumentValueOptionsAvailable">ArgumentValueOptionsAvailable</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="ProcessStep">
@@ -1244,23 +1494,23 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
       <p>
          <strong>IRI:</strong> https://w3id.org/todo/tododm#ProcessStep</p>
       <div class="comment">
-         <span class="markdown">Step in the dialogue process that does not require a system interaction with the user (SystemStep).</span>
+         <span class="markdown">Step in the dialogue process that does not require a system interaction with the user
+            (SystemStep).</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
       </dl>
       <dl class="description">
          <dt>has super-classes</dt>
-         <dd/>
+         <dd />
          <dt>is disjoint with</dt>
          <dd>
             <a href="#DialogueStep" title="https://w3id.org/todo/tododm#DialogueStep">DialogueStep</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#DialogueControlMarkers"
-               title="https://w3id.org/todo/tododm#DialogueControlMarkers">DialogueControlMarkers</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#DialogueStep" title="https://w3id.org/todo/tododm#DialogueStep">DialogueStep</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#StepFunction" title="https://w3id.org/todo/tododm#StepFunction">StepFunction</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#SystemStep" title="https://w3id.org/todo/tododm#SystemStep">SystemStep</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -1275,6 +1525,10 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
       <div class="comment">
          <span class="markdown">Step Function associated to a ProcessStep.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
@@ -1295,8 +1549,13 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
       <p>
          <strong>IRI:</strong> https://w3id.org/todo/tododm#ReassureFeedbackRequest</p>
       <div class="comment">
-         <span class="markdown">Request that is sent in order to obtain feedback whether the interpretation obtained is correct or not.</span>
+         <span class="markdown">Request that is sent in order to obtain feedback whether the interpretation obtained is
+            correct or not.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
@@ -1332,6 +1591,10 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
       <div class="comment">
          <span class="markdown">Request that demands the user to repeat the value of an Argument.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
@@ -1365,8 +1628,13 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
       <p>
          <strong>IRI:</strong> https://w3id.org/todo/tododm#ResponseTypeNotExpectedResponse</p>
       <div class="comment">
-         <span class="markdown">Reponse given to the user when the UserResponse does not correspond with the expected response of the SystemRequest.</span>
+         <span class="markdown">Reponse given to the user when the UserResponse does not correspond with the expected
+            response of the SystemRequest.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
@@ -1397,6 +1665,10 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
       <div class="comment">
          <span class="markdown">Marker that requires the dialogue to restart.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
@@ -1404,8 +1676,35 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#DialogueControlMarkers"
-               title="https://w3id.org/todo/tododm#DialogueControlMarkers">DialogueControlMarkers</a>
+            <a href="#DialogueControlMarker"
+               title="https://w3id.org/todo/tododm#DialogueControlMarker">DialogueControlMarkers</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Return">
+      <h3>Return<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/todo/tododm#Return</p>
+      <div class="comment">
+         <span class="markdown">Marker that returns to the last SystemResponse+Request/SystemRequest performed.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#DialogueControlMarker"
+               title="https://w3id.org/todo/tododm#DialogueControlMarker">DialogueControlMarkers</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -1418,15 +1717,20 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
       <p>
          <strong>IRI:</strong> https://w3id.org/todo/tododm#StepFunction</p>
       <div class="comment">
-         <span class="markdown">Element that is linked to a function in the Dialogue Manager code. This element also determines the implications of the output of said function in the code.</span>
+         <span class="markdown">Element that is linked to a function in the Dialogue Manager code. This element also
+            determines the implications of the output of said function in the code.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
       </dl>
       <dl class="description">
          <dt>has super-classes</dt>
-         <dd/>
+         <dd />
          <dt>has sub-classes</dt>
          <dd>
             <a href="#ContentRequestStepFunction"
@@ -1435,15 +1739,6 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
                title="https://w3id.org/todo/tododm#ProcessStepStepFunction">ProcessStepStepFunction</a>
             <sup class="type-c" title="class">c</sup>, <a href="#YesNoRequestStepFunction"
                title="https://w3id.org/todo/tododm#YesNoRequestStepFunction">YesNoRequestStepFunction</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>is disjoint with</dt>
-         <dd>
-            <a href="#DialogueControlMarkers"
-               title="https://w3id.org/todo/tododm#DialogueControlMarkers">DialogueControlMarkers</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#DialogueStep" title="https://w3id.org/todo/tododm#DialogueStep">DialogueStep</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#ProcessStep" title="https://w3id.org/todo/tododm#ProcessStep">ProcessStep</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#SystemStep" title="https://w3id.org/todo/tododm#SystemStep">SystemStep</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -1458,6 +1753,10 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
       <div class="comment">
          <span class="markdown">Act in which the system requires user input.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
@@ -1477,7 +1776,8 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
          <dt>has sub-classes</dt>
          <dd>
             <a href="#ContentRequest" title="https://w3id.org/todo/tododm#ContentRequest">ContentRequest</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#YesNoRequest" title="https://w3id.org/todo/tododm#YesNoRequest">YesNoRequest</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#YesNoRequest"
+               title="https://w3id.org/todo/tododm#YesNoRequest">YesNoRequest</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is disjoint with</dt>
@@ -1495,8 +1795,13 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
       <p>
          <strong>IRI:</strong> https://w3id.org/todo/tododm#SystemResponse</p>
       <div class="comment">
-         <span class="markdown">Information that the system provides in response to a UserRequest or as a piece of information directed to the user without a prior UserRequest.</span>
+         <span class="markdown">Information that the system provides in response to a UserRequest or as a piece of
+            information directed to the user without a prior UserRequest.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
@@ -1523,7 +1828,8 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
                title="https://w3id.org/todo/tododm#CannotResolveActionResponse">CannotResolveActionResponse</a>
             <sup class="type-c" title="class">c</sup>, <a href="#CannotResolveCommandResponse"
                title="https://w3id.org/todo/tododm#CannotResolveCommandResponse">CannotResolveCommandResponse</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#GreetingResponse" title="https://w3id.org/todo/tododm#GreetingResponse">GreetingResponse</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#GreetingResponse"
+               title="https://w3id.org/todo/tododm#GreetingResponse">GreetingResponse</a>
             <sup class="type-c" title="class">c</sup>, <a href="#ItemNotCompatibleAnyArgResponse"
                title="https://w3id.org/todo/tododm#ItemNotCompatibleAnyArgResponse">ItemNotCompatibleAnyArgResponse</a>
             <sup class="type-c" title="class">c</sup>, <a href="#NoMoreOptionsContinueResponse"
@@ -1546,7 +1852,8 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
                title="https://w3id.org/todo/tododm#TooManyArgumentOptionsResponse">TooManyArgumentOptionsResponse</a>
             <sup class="type-c" title="class">c</sup>, <a href="#TooManyWorldElementOptionsResponse"
                title="https://w3id.org/todo/tododm#TooManyWorldElementOptionsResponse">TooManyWorldElementOptionsResponse</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#UnderstoodResponse" title="https://w3id.org/todo/tododm#UnderstoodResponse">UnderstoodResponse</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#UnderstoodResponse"
+               title="https://w3id.org/todo/tododm#UnderstoodResponse">UnderstoodResponse</a>
             <sup class="type-c" title="class">c</sup>, <a href="#ValueNotCompatibleWithArgumentResponse"
                title="https://w3id.org/todo/tododm#ValueNotCompatibleWithArgumentResponse">ValueNotCompatibleWithArgumentResponse</a>
             <sup class="type-c" title="class">c</sup>
@@ -1566,28 +1873,25 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
       <p>
          <strong>IRI:</strong> https://w3id.org/todo/tododm#SystemStep</p>
       <div class="comment">
-         <span class="markdown">Step performed by the system in order to request information to the user or simply outputting information.</span>
+         <span class="markdown">Step performed by the system in order to request information to the user or simply
+            outputting information.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
       </dl>
       <dl class="description">
          <dt>has super-classes</dt>
-         <dd/>
+         <dd />
          <dt>has sub-classes</dt>
          <dd>
             <a href="#SystemRequest" title="https://w3id.org/todo/tododm#SystemRequest">SystemRequest</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#SystemResponse" title="https://w3id.org/todo/tododm#SystemResponse">SystemResponse</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>is disjoint with</dt>
-         <dd>
-            <a href="#DialogueControlMarkers"
-               title="https://w3id.org/todo/tododm#DialogueControlMarkers">DialogueControlMarkers</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#DialogueStep" title="https://w3id.org/todo/tododm#DialogueStep">DialogueStep</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#ProcessStep" title="https://w3id.org/todo/tododm#ProcessStep">ProcessStep</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#StepFunction" title="https://w3id.org/todo/tododm#StepFunction">StepFunction</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#SystemResponse"
+               title="https://w3id.org/todo/tododm#SystemResponse">SystemResponse</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -1602,6 +1906,10 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
       <div class="comment">
          <span class="markdown">Response given when the number of possible Actions is too big.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
@@ -1633,6 +1941,10 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
       <div class="comment">
          <span class="markdown">Response given when the alternatives (in general) are too big.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
@@ -1665,6 +1977,10 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/todo/tododm#TooManyArgumentOptionsResponse</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
@@ -1699,6 +2015,10 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
       <div class="comment">
          <span class="markdown">Response given when the number of possible World Elements is too big.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
@@ -1728,8 +2048,13 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
       <p>
          <strong>IRI:</strong> https://w3id.org/todo/tododm#UnderstoodResponse</p>
       <div class="comment">
-         <span class="markdown">Response given by the system to reassure the user that it has understood the request.</span>
+         <span class="markdown">Response given by the system to reassure the user that it has understood the
+            request.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
@@ -1752,6 +2077,10 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
       <div class="comment">
          <span class="markdown">Request to the user to provide their (initial) command.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
@@ -1785,8 +2114,13 @@ Dame tu comando.</pre>
       <p>
          <strong>IRI:</strong> https://w3id.org/todo/tododm#ValueNotCompatibleWithArgumentResponse</p>
       <div class="comment">
-         <span class="markdown">Response given when the ArgValue for an Argument provided by the user is not compatible with said Argument.</span>
+         <span class="markdown">Response given when the ArgValue for an Argument provided by the user is not compatible
+            with said Argument.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
@@ -1822,6 +2156,10 @@ Dame tu comando.</pre>
       <div class="comment">
          <span class="markdown">Request that requires the user to repeat some information.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
@@ -1859,10 +2197,15 @@ Dame tu comando.</pre>
       <p>
          <strong>IRI:</strong> https://w3id.org/todo/tododm#YesNoRequest</p>
       <div class="comment">
-         <span class="markdown">Request the response of which is expected to be limited to "Yes" or "No" (and equivalents).
+         <span class="markdown">Request the response of which is expected to be limited to "Yes" or "No" (and
+            equivalents).
 
-Also known as "Polar question" in linguistics.</span>
+            Also known as "Polar question" in linguistics.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
@@ -1893,7 +2236,8 @@ Also known as "Polar question" in linguistics.</span>
                title="https://w3id.org/todo/tododm#ArgumentValueDisambiguationRequest">ArgumentValueDisambiguationRequest</a>
             <sup class="type-c" title="class">c</sup>, <a href="#IncorrectArgumentRequest"
                title="https://w3id.org/todo/tododm#IncorrectArgumentRequest">IncorrectArgumentRequest</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#IntentRequest" title="https://w3id.org/todo/tododm#IntentRequest">IntentRequest</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#IntentRequest"
+               title="https://w3id.org/todo/tododm#IntentRequest">IntentRequest</a>
             <sup class="type-c" title="class">c</sup>, <a href="#ReassureFeedbackRequest"
                title="https://w3id.org/todo/tododm#ReassureFeedbackRequest">ReassureFeedbackRequest</a>
             <sup class="type-c" title="class">c</sup>
@@ -1915,6 +2259,10 @@ Also known as "Polar question" in linguistics.</span>
       <div class="comment">
          <span class="markdown">Step Function associated to a YesNoRequest.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
@@ -1937,6 +2285,10 @@ Also known as "Polar question" in linguistics.</span>
       <div class="comment">
          <span class="markdown">"I think I haven't understood. Can you be more specific?</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
@@ -1950,7 +2302,8 @@ Also known as "Polar question" in linguistics.</span>
          </dd>
       </dl>
    </div>
-</div><div id="objectproperties">
+</div>
+<div id="objectproperties">
    <h3 id="properties" class="list">Object Properties</h3>
    <ul class="hlist">
       <li>
@@ -2016,6 +2369,14 @@ Also known as "Polar question" in linguistics.</span>
       <div class="comment">
          <span class="markdown">Establishes the StepFunction corresponding to a SystemRequest or a ProcessStep.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>is inverse of</dt>
@@ -2034,8 +2395,17 @@ Also known as "Polar question" in linguistics.</span>
       <p>
          <strong>IRI:</strong> https://w3id.org/todo/tododm#implies</p>
       <div class="comment">
-         <span class="markdown">Establishes the implications of the output of a StepFunction in the Dialogue Manager code.</span>
+         <span class="markdown">Establishes the implications of the output of a StepFunction in the Dialogue Manager
+            code.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has sub-properties</dt>
@@ -2046,10 +2416,12 @@ Also known as "Polar question" in linguistics.</span>
                   title="https://w3id.org/todo/tododm#incorrectUserResponseTypeImplies">incorrectUserResponseTypeImplies</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#multipleOptionsImplies"
                   title="https://w3id.org/todo/tododm#multipleOptionsImplies">multipleOptionsImplies</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#noOptionsImplies" title="https://w3id.org/todo/tododm#noOptionsImplies">noOptionsImplies</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#noOptionsImplies"
+                  title="https://w3id.org/todo/tododm#noOptionsImplies">noOptionsImplies</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#noUserResponseTypeImplies"
                   title="https://w3id.org/todo/tododm#noUserResponseTypeImplies">noUserResponseTypeImplies</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#singleOptionImplies" title="https://w3id.org/todo/tododm#singleOptionImplies">singleOptionImplies</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#singleOptionImplies"
+                  title="https://w3id.org/todo/tododm#singleOptionImplies">singleOptionImplies</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#userResponseNotUnderstoodImplies"
                   title="https://w3id.org/todo/tododm#userResponseNotUnderstoodImplies">userResponseNotUnderstoodImplies</a>
                <sup class="type-op" title="object property">op</sup>
@@ -2065,8 +2437,17 @@ Also known as "Polar question" in linguistics.</span>
       <p>
          <strong>IRI:</strong> https://w3id.org/todo/tododm#incorrectUserResponseTypeImplies</p>
       <div class="comment">
-         <span class="markdown">Establishes the implications of an incorrect UserResponseType (e.g. when the request requires Yes/No as response and the user provides a ContentResponse).</span>
+         <span class="markdown">Establishes the implications of an incorrect UserResponseType (e.g. when the request
+            requires Yes/No as response and the user provides a ContentResponse).</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -2087,6 +2468,14 @@ Also known as "Polar question" in linguistics.</span>
       <div class="comment">
          <span class="markdown">Establishes the SystemRequest/Response that initiates a DialogueStep.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
    </div>
    <div class="entity" id="isRequiredBy">
       <h3>isRequiredBy<sup class="type-op" title="object property">op</sup>
@@ -2098,6 +2487,14 @@ Also known as "Polar question" in linguistics.</span>
       <div class="comment">
          <span class="markdown">Establishes the SystemRequest that requires a given UserResponse type.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>is inverse of</dt>
@@ -2118,6 +2515,14 @@ Also known as "Polar question" in linguistics.</span>
       <div class="comment">
          <span class="markdown">Establishes the SystemRequest or a ProcessStep corresponding to a StepFunction.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>is inverse of</dt>
@@ -2136,8 +2541,18 @@ Also known as "Polar question" in linguistics.</span>
       <p>
          <strong>IRI:</strong> https://w3id.org/todo/tododm#lessMaxOptionsImplies</p>
       <div class="comment">
-         <span class="markdown">Establishes the implications when a StepFunction, in the Dialogue Manager code, returns more than one result as output and the length of the output is smaller than the number of maximum results previously defined.</span>
+         <span class="markdown">Establishes the implications when a StepFunction, in the Dialogue Manager code, returns
+            more than one result as output and the length of the output is smaller than the number of maximum results
+            previously defined.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -2157,8 +2572,18 @@ Also known as "Polar question" in linguistics.</span>
       <p>
          <strong>IRI:</strong> https://w3id.org/todo/tododm#moreMaxOptionsImplies</p>
       <div class="comment">
-         <span class="markdown">Establishes the implications when a StepFunction, in the Dialogue Manager code, returns more than one result as output and the length of the output is higher than the number of maximum results previously defined.</span>
+         <span class="markdown">Establishes the implications when a StepFunction, in the Dialogue Manager code, returns
+            more than one result as output and the length of the output is higher than the number of maximum results
+            previously defined.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -2178,8 +2603,17 @@ Also known as "Polar question" in linguistics.</span>
       <p>
          <strong>IRI:</strong> https://w3id.org/todo/tododm#multipleOptionsImplies</p>
       <div class="comment">
-         <span class="markdown">Establishes the implications when a StepFunction, in the Dialogue Manager code, returns more than one result as output.</span>
+         <span class="markdown">Establishes the implications when a StepFunction, in the Dialogue Manager code, returns
+            more than one result as output.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -2206,8 +2640,17 @@ Also known as "Polar question" in linguistics.</span>
       <p>
          <strong>IRI:</strong> https://w3id.org/todo/tododm#noOptionsImplies</p>
       <div class="comment">
-         <span class="markdown">Establishes the implications when a StepFunction, in the Dialogue Manager code, returns no results as output.</span>
+         <span class="markdown">Establishes the implications when a StepFunction, in the Dialogue Manager code, returns
+            no results as output.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -2228,6 +2671,14 @@ Also known as "Polar question" in linguistics.</span>
       <div class="comment">
          <span class="markdown">Establishes the implications of a negative UserResponse.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -2248,6 +2699,14 @@ Also known as "Polar question" in linguistics.</span>
       <div class="comment">
          <span class="markdown">Establishes the type of UserResponse required by a SystemRequest.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>is inverse of</dt>
@@ -2266,8 +2725,17 @@ Also known as "Polar question" in linguistics.</span>
       <p>
          <strong>IRI:</strong> https://w3id.org/todo/tododm#singleOptionImplies</p>
       <div class="comment">
-         <span class="markdown">Establishes the implications when a StepFunction, in the Dialogue Manager code, returns one result as output.</span>
+         <span class="markdown">Establishes the implications when a StepFunction, in the Dialogue Manager code, returns
+            one result as output.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -2288,6 +2756,14 @@ Also known as "Polar question" in linguistics.</span>
       <div class="comment">
          <span class="markdown">Establishes the implications when the system does not understand a UserResponse.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -2308,6 +2784,14 @@ Also known as "Polar question" in linguistics.</span>
       <div class="comment">
          <span class="markdown">Establishes the implications of a positive UserResponse.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -2318,7 +2802,8 @@ Also known as "Polar question" in linguistics.</span>
          </dl>
       </div>
    </div>
-</div><div id="dataproperties">
+</div>
+<div id="dataproperties">
    <h3 id="dataproperties-headline" class="list">Data Properties</h3>
    <ul class="hlist">
       <li>
@@ -2341,6 +2826,14 @@ Also known as "Polar question" in linguistics.</span>
       <div class="comment">
          <span class="markdown">Unique identification value for individuals.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -2360,6 +2853,14 @@ Also known as "Polar question" in linguistics.</span>
       <div class="comment">
          <span class="markdown">Sets the order for StepFunctions/DialogueSteps.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
    </div>
    <div class="entity" id="outputSentence">
       <h3>outputSentence<sup class="type-dp" title="data property">dp</sup>
@@ -2369,10 +2870,20 @@ Also known as "Polar question" in linguistics.</span>
       <p>
          <strong>IRI:</strong> https://w3id.org/todo/tododm#outputSentence</p>
       <div class="comment">
-         <span class="markdown">String to be output by the system in order to communicate a SystemRequest/Response to the user.</span>
+         <span class="markdown">String to be output by the system in order to communicate a SystemRequest/Response to
+            the user.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
    </div>
-</div><div id="legend">
+</div>
+<div id="legend">
 <h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <div   class="entity">
 <sup class="type-c" title="Classes">c</sup>: Classes <br/>

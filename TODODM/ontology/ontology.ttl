@@ -274,6 +274,19 @@ xsd:time rdf:type rdfs:Datatype .
 \"¿Quieres {que te lleve a algún sitio}?\""""@es .
 
 
+###  https://w3id.org/todo/tododm#ActionOptionsAvailable
+:ActionOptionsAvailable rdf:type owl:Class ;
+                        rdfs:subClassOf :OptionsAvailableResponse ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :implies ;
+                                          owl:someValuesFrom :ActionDisambiguationRequest
+                                        ] ;
+                        rdfs:comment "Response in which the system tells the user that it has several options for an Action."@en ;
+                        rdfs:isDefinedBy "https://w3id.org/todo/tododm#" ;
+                        rdfs:label "ActionOptionsAvailable" ;
+                        <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
 ###  https://w3id.org/todo/tododm#ActionOptionsResponse
 :ActionOptionsResponse rdf:type owl:Class ;
                        rdfs:subClassOf :SystemResponse ,
@@ -410,6 +423,19 @@ For example, the user would require a \"piece\", and the system includes data fo
 \"I cannot guess the {Error} with the information you provided.\""""@es .
 
 
+###  https://w3id.org/todo/tododm#ArgumentOptionsAvailable
+:ArgumentOptionsAvailable rdf:type owl:Class ;
+                          rdfs:subClassOf :OptionsAvailableResponse ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :implies ;
+                                            owl:someValuesFrom :ArgumentSpecifyRequest
+                                          ] ;
+                          rdfs:comment "Response in which the system tells the user that it has several options for an Argument."@en ;
+                          rdfs:isDefinedBy "https://w3id.org/todo/tododm#" ;
+                          rdfs:label "ArgumentOptionsAvailable" ;
+                          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
 ###  https://w3id.org/todo/tododm#ArgumentOptionsResponse
 :ArgumentOptionsResponse rdf:type owl:Class ;
                          rdfs:subClassOf :SystemResponse ,
@@ -476,6 +502,19 @@ For example, the user would require a \"piece\", and the system includes data fo
                                                                                   """\"¿Quieres {Action} {ArgumentConnector} {WorldElement}?\"
 
 \"¿Quieres {que te guíe} {a} {Sala Ura}?\""""@es .
+
+
+###  https://w3id.org/todo/tododm#ArgumentValueOptionsAvailable
+:ArgumentValueOptionsAvailable rdf:type owl:Class ;
+                               rdfs:subClassOf :OptionsAvailableResponse ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :implies ;
+                                                 owl:someValuesFrom :ArgumentValueDisambiguationRequest
+                                               ] ;
+                               rdfs:comment "Response in which the system tells the user that it has several options for an argument value."@en ;
+                               rdfs:isDefinedBy "https://w3id.org/todo/tododm#" ;
+                               rdfs:label "ArgumentValueOptionsAvailable" ;
+                               <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/todo/tododm#CannotResolveActionResponse
@@ -748,15 +787,7 @@ USR: \"Sí\""""@es .
 
 ###  https://w3id.org/todo/tododm#OptionsAvailableResponse
 :OptionsAvailableResponse rdf:type owl:Class ;
-                          rdfs:subClassOf :SystemResponse ,
-                                          [ rdf:type owl:Restriction ;
-                                            owl:onProperty :implies ;
-                                            owl:someValuesFrom :ArgumentSpecifyRequest
-                                          ] ,
-                                          [ rdf:type owl:Restriction ;
-                                            owl:onProperty :implies ;
-                                            owl:someValuesFrom :ArgumentValueDisambiguationRequest
-                                          ] ;
+                          rdfs:subClassOf :SystemResponse ;
                           rdfs:comment """Response in which the system tells the user that it has several options for a specific element (e.g. WorldElement).
 
 Note the difference between OptionsAvailableResponse and TooManyAlternativesResponse: the first implies that there is a fair amount of options, whereas the latter implies that the options that are available are too many and it will require the user to be more specific."""@en ;
@@ -848,6 +879,15 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
          rdfs:isDefinedBy "https://w3id.org/todo/tododm#" ;
          rdfs:label "Restart" ;
          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/todo/tododm#Return
+:Return rdf:type owl:Class ;
+        rdfs:subClassOf :DialogueControlMarker ;
+        rdfs:comment "Marker that returns to the last SystemResponse+Request/SystemRequest performed." ;
+        rdfs:isDefinedBy "https://w3id.org/todo/tododm#" ;
+        rdfs:label "Return" ;
+        <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/todo/tododm#StepFunction
