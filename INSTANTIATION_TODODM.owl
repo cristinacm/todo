@@ -846,7 +846,7 @@
         <tododm:moreMaxOptionsImplies rdf:resource="https://w3id.org/todo/tododm-inst#SResp_TooManyWorldElementOptions"/>
         <tododm:noOptionsImplies rdf:resource="https://w3id.org/todo/tododm-inst#SResp_NoMoreOptionsContinue"/>
         <tododm:noOptionsImplies rdf:resource="https://w3id.org/todo/tododm-inst#SResp_ValueNotCompatibleArgument"/>
-        <tododm:singleOptionImplies rdf:resource="https://w3id.org/todo/tododm-inst#dialMarker_continue"/>
+        <tododm:singleOptionImplies rdf:resource="https://w3id.org/todo/tododm-inst#processStep_checkArgs_missingArgs"/>
         <tododm:IDval>getWorldElement</tododm:IDval>
         <tododm:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</tododm:order>
     </owl:NamedIndividual>
