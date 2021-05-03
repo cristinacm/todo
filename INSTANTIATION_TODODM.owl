@@ -750,7 +750,6 @@
         <tododm:incorrectUserResponseTypeImplies rdf:resource="https://w3id.org/todo/tododm-inst#SResp_ContentRespNotExpected"/>
         <tododm:noOptionsImplies rdf:resource="https://w3id.org/todo/tododm-inst#SResp_NoMoreOptionsContinue"/>
         <tododm:noUserResponseTypeImplies rdf:resource="https://w3id.org/todo/tododm-inst#SReqYN_ArgumentValueDisambiguation"/>
-        <tododm:yesUserResponseTypeImplies rdf:resource="https://w3id.org/todo/tododm-inst#dialMarker_nextStep"/>
         <tododm:yesUserResponseTypeImplies rdf:resource="https://w3id.org/todo/tododm-inst#processStep_checkArgs_missingArgs"/>
         <tododm:IDval>YesNo_ValueDisambiguation</tododm:IDval>
     </owl:NamedIndividual>
@@ -764,7 +763,7 @@
         <tododm:incorrectUserResponseTypeImplies rdf:resource="https://w3id.org/todo/tododm-inst#SResp_ContentRespNotExpected"/>
         <tododm:noOptionsImplies rdf:resource="https://w3id.org/todo/tododm-inst#SReqYN_Reassure"/>
         <tododm:noUserResponseTypeImplies rdf:resource="https://w3id.org/todo/tododm-inst#SReqYN_IncorrectArg"/>
-        <tododm:yesUserResponseTypeImplies rdf:resource="https://w3id.org/todo/tododm-inst#dialMarker_nextStep"/>
+        <tododm:yesUserResponseTypeImplies rdf:resource="https://w3id.org/todo/tododm-inst#SReqCont_ArgRequest"/>
         <tododm:IDval>YesNo_IncorrectArgument</tododm:IDval>
     </owl:NamedIndividual>
     
@@ -842,6 +841,7 @@
     <!-- https://w3id.org/todo/tododm-inst#stepFunction_getWorldElement -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/todo/tododm-inst#stepFunction_getWorldElement">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#ProcessStepStepFunction"/>
         <tododm:lessMaxOptionsImplies rdf:resource="https://w3id.org/todo/tododm-inst#SResp_ArgumentValueOptionsAvailable"/>
         <tododm:moreMaxOptionsImplies rdf:resource="https://w3id.org/todo/tododm-inst#SResp_TooManyWorldElementOptions"/>
         <tododm:noOptionsImplies rdf:resource="https://w3id.org/todo/tododm-inst#SResp_NoMoreOptionsContinue"/>
