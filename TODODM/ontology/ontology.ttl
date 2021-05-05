@@ -733,6 +733,21 @@ USR: \"Sí\""""@es .
                                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
+###  https://w3id.org/todo/tododm#MissingInformationResponse
+:MissingInformationResponse rdf:type owl:Class ;
+                            rdfs:subClassOf :SystemResponse ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty :implies ;
+                                              owl:someValuesFrom :ArgumentRequest
+                                            ] ;
+                            rdfs:comment "Response that is given when, after checking if all the core Arguments have been provided by the user command, there are core Arguments that are missing."@en ;
+                            rdfs:isDefinedBy "https://w3id.org/todo/tododm#" ;
+                            rdfs:label "MissingInformationResponse" ;
+                            <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" ;
+                            <http://www.w3.org/2004/02/skos/core#example> "Hay información que me falta."@es ,
+                                                                          "I still need some more information."@es .
+
+
 ###  https://w3id.org/todo/tododm#NoMoreOptionsContinueResponse
 :NoMoreOptionsContinueResponse rdf:type owl:Class ;
                                rdfs:subClassOf :SystemResponse ;

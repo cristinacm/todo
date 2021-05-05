@@ -113,7 +113,7 @@
     "@id" : "https://w3id.org/todo/tododm#implies"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/todo/tododm#UserCommandRequest"
+    "@id" : "https://w3id.org/todo/tododm#ArgumentRequest"
   } ]
 }, {
   "@id" : "_:genid21",
@@ -122,10 +122,19 @@
     "@id" : "https://w3id.org/todo/tododm#implies"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/todo/tododm#RepeatArgumentRequest"
+    "@id" : "https://w3id.org/todo/tododm#UserCommandRequest"
   } ]
 }, {
   "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/todo/tododm#implies"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/todo/tododm#RepeatArgumentRequest"
+  } ]
+}, {
+  "@id" : "_:genid23",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/todo/tododm#hasStepFunction"
@@ -134,7 +143,7 @@
     "@id" : "https://w3id.org/todo/tododm#ProcessStepStepFunction"
   } ]
 }, {
-  "@id" : "_:genid23",
+  "@id" : "_:genid24",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/todo/tododm#IDval"
@@ -143,7 +152,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "_:genid24",
+  "@id" : "_:genid25",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/todo/tododm#isStepFunctionOf"
@@ -152,7 +161,7 @@
     "@id" : "https://w3id.org/todo/tododm#ProcessStep"
   } ]
 }, {
-  "@id" : "_:genid25",
+  "@id" : "_:genid26",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/todo/tododm#order"
@@ -161,7 +170,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
-  "@id" : "_:genid26",
+  "@id" : "_:genid27",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/todo/tododm#IDval"
@@ -170,7 +179,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "_:genid27",
+  "@id" : "_:genid28",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/todo/tododm#outputSentence"
@@ -179,22 +188,13 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "_:genid28",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/todo/tododm#implies"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/todo/tododm#UserCommandRequest"
-  } ]
-}, {
   "@id" : "_:genid29",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/todo/tododm#implies"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/todo/tododm#ArgumentClarificationRequest"
+    "@id" : "https://w3id.org/todo/tododm#UserCommandRequest"
   } ]
 }, {
   "@id" : "_:genid3",
@@ -212,7 +212,7 @@
     "@id" : "https://w3id.org/todo/tododm#implies"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/todo/tododm#UserCommandRequest"
+    "@id" : "https://w3id.org/todo/tododm#ArgumentClarificationRequest"
   } ]
 }, {
   "@id" : "_:genid31",
@@ -221,7 +221,7 @@
     "@id" : "https://w3id.org/todo/tododm#implies"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/todo/tododm#ArgumentClarificationRequest"
+    "@id" : "https://w3id.org/todo/tododm#UserCommandRequest"
   } ]
 }, {
   "@id" : "_:genid32",
@@ -230,10 +230,19 @@
     "@id" : "https://w3id.org/todo/tododm#implies"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/todo/tododm#VerifyInfoRequest"
+    "@id" : "https://w3id.org/todo/tododm#ArgumentClarificationRequest"
   } ]
 }, {
   "@id" : "_:genid33",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/todo/tododm#implies"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/todo/tododm#VerifyInfoRequest"
+  } ]
+}, {
+  "@id" : "_:genid34",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/todo/tododm#hasStepFunction"
@@ -242,7 +251,7 @@
     "@id" : "https://w3id.org/todo/tododm#YesNoRequestStepFunction"
   } ]
 }, {
-  "@id" : "_:genid34",
+  "@id" : "_:genid35",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/todo/tododm#incorrectUserResponseTypeImplies"
@@ -251,7 +260,7 @@
     "@id" : "https://w3id.org/todo/tododm#ContentResponseNotExpected"
   } ]
 }, {
-  "@id" : "_:genid35",
+  "@id" : "_:genid36",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/todo/tododm#isStepFunctionOf"
@@ -260,7 +269,7 @@
     "@id" : "https://w3id.org/todo/tododm#YesNoRequest"
   } ]
 }, {
-  "@id" : "_:genid36",
+  "@id" : "_:genid37",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/todo/tododm#userResponseNotUnderstoodImplies"
@@ -1164,6 +1173,34 @@
     "@value" : "stable"
   } ]
 }, {
+  "@id" : "https://w3id.org/todo/tododm#MissingInformationResponse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Response that is given when, after checking if all the core Arguments have been provided by the user command, there are core Arguments that are missing."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "https://w3id.org/todo/tododm#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "MissingInformationResponse"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#SystemResponse"
+  }, {
+    "@id" : "_:genid20"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "es",
+    "@value" : "Hay información que me falta."
+  }, {
+    "@language" : "es",
+    "@value" : "I still need some more information."
+  } ]
+}, {
   "@id" : "https://w3id.org/todo/tododm#NoMoreOptionsContinueResponse",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1205,7 +1242,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/todo/tododm#SystemResponse"
   }, {
-    "@id" : "_:genid20"
+    "@id" : "_:genid21"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
     "@value" : "stable"
@@ -1233,7 +1270,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/todo/tododm#SystemResponse"
   }, {
-    "@id" : "_:genid21"
+    "@id" : "_:genid22"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
     "@value" : "stable"
@@ -1310,9 +1347,9 @@
     "@value" : "ProcessStep"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid22"
-  }, {
     "@id" : "_:genid23"
+  }, {
+    "@id" : "_:genid24"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
     "@value" : "stable"
@@ -1332,9 +1369,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/todo/tododm#StepFunction"
   }, {
-    "@id" : "_:genid24"
-  }, {
     "@id" : "_:genid25"
+  }, {
+    "@id" : "_:genid26"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
     "@value" : "stable"
@@ -1459,7 +1496,7 @@
     "@value" : "StepFunction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid26"
+    "@id" : "_:genid27"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
     "@value" : "stable"
@@ -1521,7 +1558,7 @@
     "@value" : "SystemStep"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid27"
+    "@id" : "_:genid28"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
     "@value" : "stable"
@@ -1542,7 +1579,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/todo/tododm#SystemResponse"
   }, {
-    "@id" : "_:genid28"
+    "@id" : "_:genid29"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
     "@value" : "stable"
@@ -1570,7 +1607,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/todo/tododm#SystemResponse"
   }, {
-    "@id" : "_:genid29"
+    "@id" : "_:genid30"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
     "@value" : "stable"
@@ -1594,7 +1631,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/todo/tododm#SystemResponse"
   }, {
-    "@id" : "_:genid30"
+    "@id" : "_:genid31"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
     "@value" : "stable"
@@ -1625,7 +1662,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/todo/tododm#SystemResponse"
   }, {
-    "@id" : "_:genid31"
+    "@id" : "_:genid32"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
     "@value" : "stable"
@@ -1697,7 +1734,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/todo/tododm#SystemResponse"
   }, {
-    "@id" : "_:genid32"
+    "@id" : "_:genid33"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
     "@value" : "stable"
@@ -1751,7 +1788,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/todo/tododm#SystemRequest"
   }, {
-    "@id" : "_:genid33"
+    "@id" : "_:genid34"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
     "@value" : "stable"
@@ -1775,11 +1812,11 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/todo/tododm#StepFunction"
   }, {
-    "@id" : "_:genid34"
-  }, {
     "@id" : "_:genid35"
   }, {
     "@id" : "_:genid36"
+  }, {
+    "@id" : "_:genid37"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
     "@value" : "stable"

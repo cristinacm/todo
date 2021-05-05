@@ -988,6 +988,26 @@ USR: &quot;Sí&quot;</skos:example>
     
 
 
+    <!-- https://w3id.org/todo/tododm#MissingInformationResponse -->
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododm#MissingInformationResponse">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododm#SystemResponse"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododm#implies"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododm#ArgumentRequest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Response that is given when, after checking if all the core Arguments have been provided by the user command, there are core Arguments that are missing.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
+        <rdfs:label>MissingInformationResponse</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+        <skos:example xml:lang="es">Hay información que me falta.</skos:example>
+        <skos:example xml:lang="es">I still need some more information.</skos:example>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/todo/tododm#NoMoreOptionsContinueResponse -->
 
     <owl:Class rdf:about="https://w3id.org/todo/tododm#NoMoreOptionsContinueResponse">
