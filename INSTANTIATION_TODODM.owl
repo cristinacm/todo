@@ -484,6 +484,17 @@
     
 
 
+    <!-- https://w3id.org/todo/tododm-inst#SResp_MissingInformation -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/todo/tododm-inst#SResp_MissingInformation">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#MissingInformationResponse"/>
+        <tododm:implies rdf:resource="https://w3id.org/todo/tododm-inst#SReqCont_ArgRequest"/>
+        <tododm:outputSentence>Hay información que me falta.</tododm:outputSentence>
+        <tododm:outputSentence>Necesitaría que me dieras más información.</tododm:outputSentence>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/todo/tododm-inst#SResp_NoMoreOptionsContinue -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/todo/tododm-inst#SResp_NoMoreOptionsContinue">
@@ -799,11 +810,9 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/todo/tododm-inst#stepFunction_checkMissingArguments">
         <rdf:type rdf:resource="https://w3id.org/todo/tododm#ProcessStepStepFunction"/>
-        <tododm:multipleOptionsImplies rdf:resource="https://w3id.org/todo/tododm-inst#SReqCont_ArgRequest"/>
-        <tododm:multipleOptionsImplies rdf:resource="https://w3id.org/todo/tododm-inst#SResp_CannotResolveCommand"/>
-        <tododm:noOptionsImplies rdf:resource="https://w3id.org/todo/tododm-inst#dialMarker_continue"/>
-        <tododm:singleOptionImplies rdf:resource="https://w3id.org/todo/tododm-inst#SReqCont_ArgRequest"/>
-        <tododm:singleOptionImplies rdf:resource="https://w3id.org/todo/tododm-inst#SResp_CannotResolveCommand"/>
+        <tododm:multipleOptionsImplies rdf:resource="https://w3id.org/todo/tododm-inst#SResp_MissingInformation"/>
+        <tododm:noOptionsImplies rdf:resource="https://w3id.org/todo/tododm-inst#dialStep_userConfirmation"/>
+        <tododm:singleOptionImplies rdf:resource="https://w3id.org/todo/tododm-inst#SResp_MissingInformation"/>
         <tododm:IDval>checkMissingArguments</tododm:IDval>
         <tododm:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</tododm:order>
     </owl:NamedIndividual>
