@@ -224,7 +224,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/todo/tododm-inst#SReqCont_ArgClarification">
         <rdf:type rdf:resource="https://w3id.org/todo/tododm#ArgumentClarificationRequest"/>
         <tododm:hasStepFunction rdf:resource="https://w3id.org/todo/tododm-inst#stepFunction_obtainArgumentClarification"/>
-        <tododm:outputSentence xml:lang="es">¿Puedes ser un poco más específico con {ArgTag}?</tododm:outputSentence>
+        <tododm:outputSentence xml:lang="es">¿Puedes ser un poco más específico con {argumentTag}?</tododm:outputSentence>
     </owl:NamedIndividual>
     
 
@@ -234,8 +234,8 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/todo/tododm-inst#SReqCont_ArgRequest">
         <rdf:type rdf:resource="https://w3id.org/todo/tododm#ArgumentRequest"/>
         <tododm:hasStepFunction rdf:resource="https://w3id.org/todo/tododm-inst#stepFunction_assignValueToArgument"/>
-        <tododm:outputSentence xml:lang="es">Necesito que me digas {Argument}, por favor</tododm:outputSentence>
-        <tododm:outputSentence xml:lang="es">¿Puedes decirme {Argument}?</tododm:outputSentence>
+        <tododm:outputSentence xml:lang="es">Necesito que me digas {argumentTag}, por favor.</tododm:outputSentence>
+        <tododm:outputSentence xml:lang="es">¿Puedes decirme {argumentTag}?</tododm:outputSentence>
     </owl:NamedIndividual>
     
 
@@ -245,8 +245,8 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/todo/tododm-inst#SReqCont_RepeatArgument">
         <rdf:type rdf:resource="https://w3id.org/todo/tododm#RepeatArgumentRequest"/>
         <tododm:hasStepFunction rdf:resource="https://w3id.org/todo/tododm-inst#stepFunction_assignValueToArgument"/>
-        <tododm:outputSentence xml:lang="es">¿Me puedes decir de nuevo {ArgTag}?</tododm:outputSentence>
-        <tododm:outputSentence xml:lang="es">¿Puedes repetir {ArgTag}?</tododm:outputSentence>
+        <tododm:outputSentence xml:lang="es">¿Me puedes decir de nuevo {argumentTag}?</tododm:outputSentence>
+        <tododm:outputSentence xml:lang="es">¿Puedes repetir {argumentTag}?</tododm:outputSentence>
     </owl:NamedIndividual>
     
 
@@ -277,7 +277,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/todo/tododm-inst#SReqYN_ActionDisambiguation">
         <rdf:type rdf:resource="https://w3id.org/todo/tododm#ActionDisambiguationRequest"/>
         <tododm:hasStepFunction rdf:resource="https://w3id.org/todo/tododm-inst#stepFunction_YesNoDetermine_ActionDisambiguation"/>
-        <tododm:outputSentence xml:lang="es">¿Quieres {ActionTag}?</tododm:outputSentence>
+        <tododm:outputSentence xml:lang="es">¿Quieres {actionTag}?</tododm:outputSentence>
     </owl:NamedIndividual>
     
 
@@ -286,7 +286,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/todo/tododm-inst#SReqYN_AlternativeArgSuggestion">
         <rdf:type rdf:resource="https://w3id.org/todo/tododm#AlternativeArgumentSuggestionRequest"/>
-        <tododm:outputSentence xml:lang="es">No encuentro ningún/a {Item} con {Complement} como {argumentTag}, pero puedo sugerir {IDval_AlternativeItem}, que sí que tiene. ¿Te llevo ahí?</tododm:outputSentence>
+        <tododm:outputSentence xml:lang="es">No encuentro ningún/a {item} con {complement} como {argumentTag}, pero puedo sugerir {IDval_AlternativeItem}, que sí que tiene. ¿Te llevo ahí?</tododm:outputSentence>
     </owl:NamedIndividual>
     
 
@@ -295,7 +295,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/todo/tododm-inst#SReqYN_ArgAssignation">
         <rdf:type rdf:resource="https://w3id.org/todo/tododm#ArgumentAssignationRequest"/>
-        <tododm:outputSentence xml:lang="es">El {ArgTag} es {ArgValue}, ¿verdad?</tododm:outputSentence>
+        <tododm:outputSentence xml:lang="es">El {argumentTag} es {argumentValue}, ¿verdad?</tododm:outputSentence>
     </owl:NamedIndividual>
     
 
@@ -305,8 +305,8 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/todo/tododm-inst#SReqYN_ArgSpecify">
         <rdf:type rdf:resource="https://w3id.org/todo/tododm#ArgumentSpecifyRequest"/>
         <tododm:hasStepFunction rdf:resource="https://w3id.org/todo/tododm-inst#stepFunction_YesNoDetermine_ArgumentSpecify"/>
-        <tododm:outputSentence xml:lang="es">¿Es {ArgTag}?</tododm:outputSentence>
-        <tododm:outputSentence xml:lang="es">¿Te refieres a {ArgTag}?</tododm:outputSentence>
+        <tododm:outputSentence xml:lang="es">¿Es {argumentTag}?</tododm:outputSentence>
+        <tododm:outputSentence xml:lang="es">¿Te refieres a {argumentTag}?</tododm:outputSentence>
     </owl:NamedIndividual>
     
 
@@ -316,7 +316,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/todo/tododm-inst#SReqYN_ArgumentValueDisambiguation">
         <rdf:type rdf:resource="https://w3id.org/todo/tododm#ArgumentValueDisambiguationRequest"/>
         <tododm:hasStepFunction rdf:resource="https://w3id.org/todo/tododm-inst#stepFunction_YesNoDetermine_ArgumentValueDisambiguation"/>
-        <tododm:outputSentence xml:lang="es">¿Quieres {Action} {ArgumentConnector} {WorldElement}?</tododm:outputSentence>
+        <tododm:outputSentence xml:lang="es">¿Quieres {actionTag} {argumentConnector} {worldElementIDval}?</tododm:outputSentence>
     </owl:NamedIndividual>
     
 
@@ -326,8 +326,8 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/todo/tododm-inst#SReqYN_IncorrectArg">
         <rdf:type rdf:resource="https://w3id.org/todo/tododm#IncorrectArgumentRequest"/>
         <tododm:hasStepFunction rdf:resource="https://w3id.org/todo/tododm-inst#stepFunction_YesNoDetermine_IncorrectArgument"/>
-        <tododm:outputSentence xml:lang="es">¿Me he equivocado con {ArgTag}?</tododm:outputSentence>
-        <tododm:outputSentence xml:lang="es">¿Puede que haya interpretado mal {ArgTag}?</tododm:outputSentence>
+        <tododm:outputSentence xml:lang="es">¿Me he equivocado con {argumentTag}?</tododm:outputSentence>
+        <tododm:outputSentence xml:lang="es">¿Puede que haya interpretado mal {argumentTag}?</tododm:outputSentence>
     </owl:NamedIndividual>
     
 
@@ -336,8 +336,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/todo/tododm-inst#SReqYN_Intent">
         <rdf:type rdf:resource="https://w3id.org/todo/tododm#IntentRequest"/>
-        <tododm:outputSentence xml:lang="es">Tu petición puede aplicar a varias interpretaciones. ¿Quieres {Intent}?</tododm:outputSentence>
-        <tododm:outputSentence xml:lang="es">¡Cuántas interpretaciones! ¡A ver si me puedes ayudar! ¿Quieres {Intent}?</tododm:outputSentence>
+        <tododm:outputSentence xml:lang="es">Tu petición puede aplicar a varias interpretaciones. ¿Quieres {intentTag}?</tododm:outputSentence>
+        <tododm:outputSentence xml:lang="es">¡Cuántas interpretaciones! ¡A ver si me puedes ayudar! ¿Quieres {intentTag}?</tododm:outputSentence>
     </owl:NamedIndividual>
     
 
@@ -347,7 +347,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/todo/tododm-inst#SReqYN_Reassure">
         <rdf:type rdf:resource="https://w3id.org/todo/tododm#ReassureFeedbackRequest"/>
         <tododm:hasStepFunction rdf:resource="https://w3id.org/todo/tododm-inst#stepFunction_YesNoDetermine_ReassureFeedback"/>
-        <tododm:outputSentence xml:lang="es">Entonces, quieres {Action} {ArgumentConnector} {Argument}, ¿verdad?</tododm:outputSentence>
+        <tododm:outputSentence xml:lang="es">Entonces, quieres {actionTag} {argumentConnector} {argumentTag}, ¿verdad?</tododm:outputSentence>
     </owl:NamedIndividual>
     
 
@@ -395,8 +395,8 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/todo/tododm-inst#SResp_ArgumentNotCompatible">
         <rdf:type rdf:resource="https://w3id.org/todo/tododm#ArgumentNotCompatibleResponse"/>
         <tododm:implies rdf:resource="https://w3id.org/todo/tododm-inst#SReqCont_RepeatArgument"/>
-        <tododm:outputSentence xml:lang="es">No puede ser {Argument}.</tododm:outputSentence>
-        <tododm:outputSentence xml:lang="es">{Argument} no es válido.</tododm:outputSentence>
+        <tododm:outputSentence xml:lang="es">No puede ser {argumentTag}.</tododm:outputSentence>
+        <tododm:outputSentence xml:lang="es">{argumentTag} no es válido.</tododm:outputSentence>
     </owl:NamedIndividual>
     
 
@@ -406,7 +406,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/todo/tododm-inst#SResp_ArgumentOptions">
         <rdf:type rdf:resource="https://w3id.org/todo/tododm#ArgumentOptionsResponse"/>
         <tododm:implies rdf:resource="https://w3id.org/todo/tododm-inst#SReqYN_ArgSpecify"/>
-        <tododm:outputSentence xml:lang="es">¡{Item} puede asociarse a varios argumentos!</tododm:outputSentence>
+        <tododm:outputSentence xml:lang="es">¡{item} puede asociarse a varios argumentos!</tododm:outputSentence>
     </owl:NamedIndividual>
     
 
@@ -469,8 +469,8 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/todo/tododm-inst#SResp_Greeting">
         <rdf:type rdf:resource="https://w3id.org/todo/tododm#GreetingResponse"/>
         <tododm:implies rdf:resource="https://w3id.org/todo/tododm-inst#SReqCont_UserCommand"/>
-        <tododm:outputSentence xml:lang="es">Bienvenido a {SystemName}. Encantado de ayudarte.</tododm:outputSentence>
-        <tododm:outputSentence xml:lang="es">¡Hola! Soy {SystemName}. Encantado de ayudarte.</tododm:outputSentence>
+        <tododm:outputSentence xml:lang="es">Bienvenido a {systemName}. Encantado de ayudarte.</tododm:outputSentence>
+        <tododm:outputSentence xml:lang="es">¡Hola! Soy {systemName}. Encantado de ayudarte.</tododm:outputSentence>
     </owl:NamedIndividual>
     
 
@@ -590,7 +590,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/todo/tododm-inst#SResp_ValueNotCompatibleArgument">
         <rdf:type rdf:resource="https://w3id.org/todo/tododm#ValueNotCompatibleWithArgumentResponse"/>
         <tododm:implies rdf:resource="https://w3id.org/todo/tododm-inst#SReqCont_ArgRequest"/>
-        <tododm:outputSentence xml:lang="es">No puede ser {ArgTag}.</tododm:outputSentence>
+        <tododm:outputSentence xml:lang="es">No puede ser {argumentTag}.</tododm:outputSentence>
     </owl:NamedIndividual>
     
 
