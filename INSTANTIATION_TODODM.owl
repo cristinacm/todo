@@ -347,7 +347,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/todo/tododm-inst#SReqYN_Reassure">
         <rdf:type rdf:resource="https://w3id.org/todo/tododm#ReassureFeedbackRequest"/>
         <tododm:hasStepFunction rdf:resource="https://w3id.org/todo/tododm-inst#stepFunction_YesNoDetermine_ReassureFeedback"/>
-        <tododm:outputSentence xml:lang="es">Entonces, quieres {actionTag} {argumentConnector} {argumentTag}, ¿verdad?</tododm:outputSentence>
+        <tododm:outputSentence xml:lang="es">Entonces, quieres {actionTag} {argumentConnector} {worldElementIDval}, ¿verdad?</tododm:outputSentence>
     </owl:NamedIndividual>
     
 
