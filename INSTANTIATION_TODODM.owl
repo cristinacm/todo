@@ -305,8 +305,8 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/todo/tododm-inst#SReqYN_ArgSpecify">
         <rdf:type rdf:resource="https://w3id.org/todo/tododm#ArgumentSpecifyRequest"/>
         <tododm:hasStepFunction rdf:resource="https://w3id.org/todo/tododm-inst#stepFunction_YesNoDetermine_ArgumentSpecify"/>
-        <tododm:outputSentence xml:lang="es">¿Es {argumentTag}?</tododm:outputSentence>
-        <tododm:outputSentence xml:lang="es">¿Te refieres a {argumentTag}?</tododm:outputSentence>
+        <tododm:outputSentence xml:lang="es">¿Con {item} te refieres a {argumentTag}?</tododm:outputSentence>
+        <tododm:outputSentence xml:lang="es">¿Es {item} {argumentTag}?</tododm:outputSentence>
     </owl:NamedIndividual>
     
 
@@ -721,7 +721,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/todo/tododm-inst#processStep_getActionArgs">
         <rdf:type rdf:resource="https://w3id.org/todo/tododm#ProcessStep"/>
-        <tododm:hasStepFunction rdf:resource="https://w3id.org/todo/tododm-inst#stepFunction_getArgument"/>
+        <tododm:hasStepFunction rdf:resource="https://w3id.org/todo/tododm-inst#stepFunction_processKeyElement"/>
         <tododm:IDval>getActionArguments</tododm:IDval>
         <tododm:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</tododm:order>
     </owl:NamedIndividual>
@@ -746,9 +746,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/todo/tododm-inst#stepFunction_YesNoDetermine_ArgumentSpecify">
         <rdf:type rdf:resource="https://w3id.org/todo/tododm#YesNoRequestStepFunction"/>
         <tododm:incorrectUserResponseTypeImplies rdf:resource="https://w3id.org/todo/tododm-inst#SResp_ContentRespNotExpected"/>
-        <tododm:noOptionsImplies rdf:resource="https://w3id.org/todo/tododm-inst#SResp_NoMoreOptionsContinue"/>
+        <tododm:noOptionsImplies rdf:resource="https://w3id.org/todo/tododm-inst#stepFunction_processKeyElement"/>
         <tododm:noUserResponseTypeImplies rdf:resource="https://w3id.org/todo/tododm-inst#SReqYN_ArgSpecify"/>
-        <tododm:yesUserResponseTypeImplies rdf:resource="https://w3id.org/todo/tododm-inst#dialMarker_continue"/>
+        <tododm:yesUserResponseTypeImplies rdf:resource="https://w3id.org/todo/tododm-inst#stepFunction_getWorldElement"/>
         <tododm:IDval>YesNo_ArgumentSpecify</tododm:IDval>
     </owl:NamedIndividual>
     
@@ -761,7 +761,7 @@
         <tododm:incorrectUserResponseTypeImplies rdf:resource="https://w3id.org/todo/tododm-inst#SResp_ContentRespNotExpected"/>
         <tododm:noOptionsImplies rdf:resource="https://w3id.org/todo/tododm-inst#SResp_NoMoreOptionsContinue"/>
         <tododm:noUserResponseTypeImplies rdf:resource="https://w3id.org/todo/tododm-inst#SReqYN_ArgumentValueDisambiguation"/>
-        <tododm:yesUserResponseTypeImplies rdf:resource="https://w3id.org/todo/tododm-inst#processStep_checkArgs_missingArgs"/>
+        <tododm:yesUserResponseTypeImplies rdf:resource="https://w3id.org/todo/tododm-inst#stepFunction_processKeyElement"/>
         <tododm:IDval>YesNo_ValueDisambiguation</tododm:IDval>
     </owl:NamedIndividual>
     
@@ -788,6 +788,18 @@
         <tododm:noUserResponseTypeImplies rdf:resource="https://w3id.org/todo/tododm-inst#SReqYN_IncorrectArg"/>
         <tododm:yesUserResponseTypeImplies rdf:resource="https://w3id.org/todo/tododm-inst#dialMarker_finishDial"/>
         <tododm:IDval>YesNo_ReassureFeedback</tododm:IDval>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/todo/tododm-inst#stepFunction_assignKeyElementToArgumentWorldElement -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/todo/tododm-inst#stepFunction_assignKeyElementToArgumentWorldElement">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#ProcessStepStepFunction"/>
+        <tododm:multipleOptionsImplies rdf:resource="https://w3id.org/todo/tododm-inst#stepFunction_getArgument"/>
+        <tododm:noOptionsImplies rdf:resource="https://w3id.org/todo/tododm-inst#stepFunction_processKeyElement"/>
+        <tododm:singleOptionImplies rdf:resource="https://w3id.org/todo/tododm-inst#stepFunction_getWorldElement"/>
+        <tododm:IDval>assignKeyElementToArgumentWorldElement</tododm:IDval>
     </owl:NamedIndividual>
     
 
@@ -823,10 +835,9 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/todo/tododm-inst#stepFunction_getArgument">
         <rdf:type rdf:resource="https://w3id.org/todo/tododm#ProcessStepStepFunction"/>
-        <tododm:lessMaxOptionsImplies rdf:resource="https://w3id.org/todo/tododm-inst#SReqYN_ArgSpecify"/>
-        <tododm:lessMaxOptionsImplies rdf:resource="https://w3id.org/todo/tododm-inst#SResp_ActionOptionsAvailable"/>
+        <tododm:lessMaxOptionsImplies rdf:resource="https://w3id.org/todo/tododm-inst#SResp_ArgumentOptionsAvailable"/>
         <tododm:moreMaxOptionsImplies rdf:resource="https://w3id.org/todo/tododm-inst#SResp_TooManyArgumentOptions"/>
-        <tododm:noOptionsImplies rdf:resource="https://w3id.org/todo/tododm-inst#stepFunction_getWorldElement"/>
+        <tododm:noOptionsImplies rdf:resource="https://w3id.org/todo/tododm-inst#stepFunction_processKeyElement"/>
         <tododm:singleOptionImplies rdf:resource="https://w3id.org/todo/tododm-inst#stepFunction_getWorldElement"/>
         <tododm:IDval>getArgument</tododm:IDval>
         <tododm:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</tododm:order>
@@ -855,7 +866,7 @@
         <tododm:moreMaxOptionsImplies rdf:resource="https://w3id.org/todo/tododm-inst#SResp_TooManyWorldElementOptions"/>
         <tododm:noOptionsImplies rdf:resource="https://w3id.org/todo/tododm-inst#SResp_NoMoreOptionsContinue"/>
         <tododm:noOptionsImplies rdf:resource="https://w3id.org/todo/tododm-inst#SResp_ValueNotCompatibleArgument"/>
-        <tododm:singleOptionImplies rdf:resource="https://w3id.org/todo/tododm-inst#processStep_checkArgs_missingArgs"/>
+        <tododm:singleOptionImplies rdf:resource="https://w3id.org/todo/tododm-inst#stepFunction_processKeyElement"/>
         <tododm:IDval>getWorldElement</tododm:IDval>
         <tododm:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</tododm:order>
     </owl:NamedIndividual>
@@ -885,6 +896,17 @@
         <tododm:multipleOptionsImplies rdf:resource="https://w3id.org/todo/tododm-inst#SResp_ActionOptionsAvailable"/>
         <tododm:singleOptionImplies rdf:resource="https://w3id.org/todo/tododm-inst#processStep_checkArgs_missingArgs"/>
         <tododm:IDval>obtainArgumentClarification</tododm:IDval>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/todo/tododm-inst#stepFunction_processKeyElement -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/todo/tododm-inst#stepFunction_processKeyElement">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#ProcessStepStepFunction"/>
+        <tododm:noOptionsImplies rdf:resource="https://w3id.org/todo/tododm-inst#processStep_checkArgs_missingArgs"/>
+        <tododm:singleOptionImplies rdf:resource="https://w3id.org/todo/tododm-inst#stepFunction_assignKeyElementToArgumentWorldElement"/>
+        <tododm:IDval>processKeyElement</tododm:IDval>
     </owl:NamedIndividual>
 </rdf:RDF>
 
