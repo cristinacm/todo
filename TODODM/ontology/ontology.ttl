@@ -620,6 +620,17 @@ Also known as \"Non polar/Open question\" in linguistics."""@en ;
                        <http://www.w3.org/2004/02/skos/core#example> "Continue, restart dialogue" .
 
 
+###  https://w3id.org/todo/tododm#DialogueFinished
+:DialogueFinished rdf:type owl:Class ;
+                  rdfs:subClassOf :SystemResponse ;
+                  rdfs:comment "Response given by the system when the dialogue process has finished (i.e., when the user confirms the action and argument values)" ;
+                  rdfs:isDefinedBy "https://w3id.org/todo/tododm#" ;
+                  rdfs:label "DialogueFinished" ;
+                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" ;
+                  <http://www.w3.org/2004/02/skos/core#example> "Done!"@en ,
+                                                                "¡Listo!"@es .
+
+
 ###  https://w3id.org/todo/tododm#DialogueStep
 :DialogueStep rdf:type owl:Class ;
               rdfs:subClassOf [ rdf:type owl:Restriction ;
@@ -746,6 +757,17 @@ USR: \"Sí\""""@es .
                             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" ;
                             <http://www.w3.org/2004/02/skos/core#example> "Hay información que me falta."@es ,
                                                                           "I still need some more information."@es .
+
+
+###  https://w3id.org/todo/tododm#NewDialogue
+:NewDialogue rdf:type owl:Class ;
+             rdfs:subClassOf :YesNoRequest ;
+             rdfs:comment "Request that asks the user whether they want to initiate a new dialogue process." ;
+             rdfs:isDefinedBy "https://w3id.org/todo/tododm#" ;
+             rdfs:label "NewDialogue" ;
+             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" ;
+             <http://www.w3.org/2004/02/skos/core#example> "Do you need anything else?"@en ,
+                                                           "¿Necesitas algo más?"@es .
 
 
 ###  https://w3id.org/todo/tododm#NoMoreOptionsContinueResponse

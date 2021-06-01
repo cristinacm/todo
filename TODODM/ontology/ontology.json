@@ -1006,6 +1006,31 @@
     "@value" : "Continue, restart dialogue"
   } ]
 }, {
+  "@id" : "https://w3id.org/todo/tododm#DialogueFinished",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Response given by the system when the dialogue process has finished (i.e., when the user confirms the action and argument values)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "https://w3id.org/todo/tododm#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "DialogueFinished"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#SystemResponse"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "Done!"
+  }, {
+    "@language" : "es",
+    "@value" : "¡Listo!"
+  } ]
+}, {
   "@id" : "https://w3id.org/todo/tododm#DialogueStep",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1199,6 +1224,31 @@
   }, {
     "@language" : "es",
     "@value" : "I still need some more information."
+  } ]
+}, {
+  "@id" : "https://w3id.org/todo/tododm#NewDialogue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Request that asks the user whether they want to initiate a new dialogue process."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "https://w3id.org/todo/tododm#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "NewDialogue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/todo/tododm#YesNoRequest"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "Do you need anything else?"
+  }, {
+    "@language" : "es",
+    "@value" : "¿Necesitas algo más?"
   } ]
 }, {
   "@id" : "https://w3id.org/todo/tododm#NoMoreOptionsContinueResponse",

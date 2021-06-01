@@ -93,6 +93,9 @@ This section provides details for each class and property defined by TODODM.
             title="https://w3id.org/todo/tododm#DialogueControlMarker">DialogueControlMarkers</a>
       </li>
       <li>
+         <a href="#DialogueFinished" title="https://w3id.org/todo/tododm#DialogueFinished">DialogueFinished</a>
+      </li>
+      <li>
          <a href="#DialogueStep" title="https://w3id.org/todo/tododm#DialogueStep">DialogueStep</a>
       </li>
       <li>
@@ -115,6 +118,9 @@ This section provides details for each class and property defined by TODODM.
       <li>
          <a href="#MissingInformationResponse"
             title="https://w3id.org/todo/tododm#MissingInformationResponse">MissingInformationResponse</a>
+      </li>
+      <li>
+         <a href="#NewDialogue" title="https://w3id.org/todo/tododm#NewDialogue">NewDialogue</a>
       </li>
       <li>
          <a href="#NoMoreOptionsContinueResponse"
@@ -1074,6 +1080,42 @@ This section provides details for each class and property defined by TODODM.
          </dd>
       </dl>
    </div>
+   <div class="entity" id="DialogueFinished">
+      <h3>DialogueFinished<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/todo/tododm#DialogueFinished</p>
+      <div class="comment">
+         <span class="markdown">Response given by the system when the dialogue process has finished (i.e., when the user
+            confirms the action and argument values)</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>Done!</pre>
+         </dd>
+         <dd>
+            <pre>¡Listo!</pre>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#SystemResponse" title="https://w3id.org/todo/tododm#SystemResponse">SystemResponse</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="DialogueStep">
       <h3>DialogueStep<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -1326,6 +1368,41 @@ USR: "Sí"</pre>
          <dt>has super-classes</dt>
          <dd>
             <a href="#SystemResponse" title="https://w3id.org/todo/tododm#SystemResponse">SystemResponse</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="NewDialogue">
+      <h3>NewDialogue<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/todo/tododm#NewDialogue</p>
+      <div class="comment">
+         <span class="markdown">Request that asks the user whether they want to initiate a new dialogue process.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/todo/tododm</dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>Do you need anything else?</pre>
+         </dd>
+         <dd>
+            <pre>¿Necesitas algo más?</pre>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#YesNoRequest" title="https://w3id.org/todo/tododm#YesNoRequest">YesNoRequest</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -1868,6 +1945,8 @@ USR: "Sí"</pre>
                title="https://w3id.org/todo/tododm#CannotResolveActionResponse">CannotResolveActionResponse</a>
             <sup class="type-c" title="class">c</sup>, <a href="#CannotResolveCommandResponse"
                title="https://w3id.org/todo/tododm#CannotResolveCommandResponse">CannotResolveCommandResponse</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#DialogueFinished"
+               title="https://w3id.org/todo/tododm#DialogueFinished">DialogueFinished</a>
             <sup class="type-c" title="class">c</sup>, <a href="#GreetingResponse"
                title="https://w3id.org/todo/tododm#GreetingResponse">GreetingResponse</a>
             <sup class="type-c" title="class">c</sup>, <a href="#ItemNotCompatibleAnyArgResponse"
@@ -2280,6 +2359,8 @@ Dame tu comando.</pre>
                title="https://w3id.org/todo/tododm#IncorrectArgumentRequest">IncorrectArgumentRequest</a>
             <sup class="type-c" title="class">c</sup>, <a href="#IntentRequest"
                title="https://w3id.org/todo/tododm#IntentRequest">IntentRequest</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#NewDialogue"
+               title="https://w3id.org/todo/tododm#NewDialogue">NewDialogue</a>
             <sup class="type-c" title="class">c</sup>, <a href="#ReassureFeedbackRequest"
                title="https://w3id.org/todo/tododm#ReassureFeedbackRequest">ReassureFeedbackRequest</a>
             <sup class="type-c" title="class">c</sup>

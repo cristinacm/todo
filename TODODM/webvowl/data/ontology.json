@@ -13,16 +13,16 @@
       "undefined" : "Module for dialogue process and system output management."
     },
     "other" : {
-      "license" : [ {
-        "identifier" : "license",
-        "language" : "undefined",
-        "value" : "http://purl.org/NET/rdflicense/cc-by4.0",
-        "type" : "label"
-      } ],
       "priorVersion" : [ {
         "identifier" : "priorVersion",
         "language" : "undefined",
         "value" : "",
+        "type" : "label"
+      } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://purl.org/NET/rdflicense/cc-by4.0",
         "type" : "label"
       } ],
       "creator" : [ {
@@ -107,175 +107,184 @@
     "id" : "23",
     "type" : "owl:Class"
   }, {
-    "id" : "46",
+    "id" : "41",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "47",
     "type" : "owl:Class"
   }, {
     "id" : "7",
     "type" : "owl:Class"
   }, {
-    "id" : "20",
+    "id" : "2",
     "type" : "owl:Class"
   }, {
-    "id" : "53",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "52",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "55",
+    "id" : "56",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "59",
-    "type" : "owl:Class"
-  }, {
-    "id" : "50",
-    "type" : "owl:Class"
-  }, {
-    "id" : "4",
-    "type" : "owl:Class"
-  }, {
-    "id" : "68",
-    "type" : "owl:Class"
-  }, {
-    "id" : "6",
-    "type" : "owl:Class"
-  }, {
-    "id" : "73",
-    "type" : "owl:Class"
-  }, {
-    "id" : "26",
-    "type" : "owl:Class"
-  }, {
-    "id" : "75",
-    "type" : "owl:Class"
-  }, {
-    "id" : "76",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "10",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "67",
-    "type" : "owl:Class"
-  }, {
-    "id" : "27",
-    "type" : "owl:Class"
-  }, {
-    "id" : "1",
-    "type" : "owl:Class"
-  }, {
-    "id" : "48",
-    "type" : "owl:Class"
-  }, {
-    "id" : "88",
-    "type" : "owl:Class"
-  }, {
-    "id" : "90",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "24",
-    "type" : "owl:Class"
-  }, {
-    "id" : "49",
-    "type" : "owl:Class"
-  }, {
-    "id" : "2",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "98",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "100",
-    "type" : "owl:Class"
-  }, {
-    "id" : "104",
-    "type" : "owl:Class"
-  }, {
-    "id" : "84",
-    "type" : "owl:Class"
-  }, {
-    "id" : "109",
-    "type" : "owl:Class"
-  }, {
-    "id" : "113",
-    "type" : "owl:Class"
-  }, {
-    "id" : "117",
-    "type" : "owl:Class"
-  }, {
-    "id" : "116",
-    "type" : "owl:Class"
-  }, {
-    "id" : "18",
-    "type" : "owl:Class"
-  }, {
-    "id" : "35",
-    "type" : "owl:Class"
-  }, {
-    "id" : "102",
-    "type" : "owl:Class"
-  }, {
-    "id" : "94",
-    "type" : "owl:Class"
-  }, {
-    "id" : "125",
+    "id" : "63",
     "type" : "owl:Class"
   }, {
     "id" : "36",
     "type" : "owl:Class"
   }, {
-    "id" : "139",
+    "id" : "4",
     "type" : "owl:Class"
   }, {
-    "id" : "15",
+    "id" : "72",
     "type" : "owl:Class"
   }, {
-    "id" : "41",
+    "id" : "6",
     "type" : "owl:Class"
   }, {
-    "id" : "64",
+    "id" : "81",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "71",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "99",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "104",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  }, {
+    "id" : "106",
     "type" : "owl:Class"
   }, {
     "id" : "107",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "109",
     "type" : "owl:Class"
   }, {
-    "id" : "74",
+    "id" : "112",
     "type" : "owl:Class"
   }, {
-    "id" : "66",
+    "id" : "89",
     "type" : "owl:Class"
   }, {
-    "id" : "44",
+    "id" : "117",
     "type" : "owl:Class"
   }, {
-    "id" : "8",
+    "id" : "122",
     "type" : "owl:Class"
   }, {
-    "id" : "86",
+    "id" : "126",
     "type" : "owl:Class"
   }, {
-    "id" : "119",
+    "id" : "120",
     "type" : "owl:Class"
   }, {
-    "id" : "45",
+    "id" : "18",
     "type" : "owl:Class"
   }, {
-    "id" : "57",
-    "type" : "owl:Class"
-  }, {
-    "id" : "136",
-    "type" : "owl:Class"
-  }, {
-    "id" : "62",
+    "id" : "26",
     "type" : "owl:Class"
   }, {
     "id" : "96",
     "type" : "owl:Class"
   }, {
-    "id" : "123",
+    "id" : "114",
     "type" : "owl:Class"
   }, {
-    "id" : "92",
+    "id" : "66",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "145",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  }, {
+    "id" : "131",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "owl:Class"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "93",
+    "type" : "owl:Class"
+  }, {
+    "id" : "125",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "103",
+    "type" : "owl:Class"
+  }, {
+    "id" : "132",
+    "type" : "owl:Class"
+  }, {
+    "id" : "101",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
@@ -412,13 +421,13 @@
       } ],
       "example" : [ {
         "identifier" : "example",
-        "language" : "en",
-        "value" : "\"Hi! I am {SystemName}. I am happy to help you.\"\n\n\"Hi! I am {Teknibot}. I am happy to help you.\"",
+        "language" : "es",
+        "value" : "\"¡Hola! Soy {SystemName}. Encantado de ayudarte.\"\n\n\"¡Hola! Soy {Teknibot}. Encantado de ayudarte.\"",
         "type" : "label"
       }, {
         "identifier" : "example",
-        "language" : "es",
-        "value" : "\"¡Hola! Soy {SystemName}. Encantado de ayudarte.\"\n\n\"¡Hola! Soy {Teknibot}. Encantado de ayudarte.\"",
+        "language" : "en",
+        "value" : "\"Hi! I am {SystemName}. I am happy to help you.\"\n\n\"Hi! I am {Teknibot}. I am happy to help you.\"",
         "type" : "label"
       } ]
     },
@@ -451,7 +460,7 @@
       "example" : [ {
         "identifier" : "example",
         "language" : "en",
-        "value" : "Response given when the number of possible Arguments is too big.",
+        "value" : "Your command can be associated to too many arguments! Can you repeat and be more specific, please?",
         "type" : "label"
       }, {
         "identifier" : "example",
@@ -461,7 +470,7 @@
       }, {
         "identifier" : "example",
         "language" : "en",
-        "value" : "Your command can be associated to too many arguments! Can you repeat and be more specific, please?",
+        "value" : "Response given when the number of possible Arguments is too big.",
         "type" : "label"
       } ]
     },
@@ -506,6 +515,13 @@
     "id" : "23",
     "superClasses" : [ "24" ]
   }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "41",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
     "iri" : "https://w3id.org/todo/tododm#YesNoRequestStepFunction",
     "baseIri" : "https://w3id.org/todo/tododm",
     "instances" : 0,
@@ -530,7 +546,7 @@
     "comment" : {
       "undefined" : "Step Function associated to a YesNoRequest."
     },
-    "id" : "46",
+    "id" : "47",
     "superClasses" : [ "15" ]
   }, {
     "iri" : "https://w3id.org/todo/tododm#ContentRequest",
@@ -560,7 +576,7 @@
       "IRI-based" : "ContentRequest",
       "undefined" : "ContentRequest"
     },
-    "subClasses" : [ "27", "45", "48", "49", "50", "36" ],
+    "subClasses" : [ "40", "46", "53", "54", "36", "27" ],
     "comment" : {
       "en" : "Request that asks for specific information, other than \"Yes\" or \"No\" (and equivalents).\n\nAlso known as \"Non polar/Open question\" in linguistics."
     },
@@ -591,25 +607,18 @@
     "comment" : {
       "undefined" : "Step in the dialogue process that does not require a system interaction with the user (SystemStep)."
     },
-    "id" : "20"
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "53",
-    "label" : {
-      "IRI-based" : "integer"
-    }
+    "id" : "2"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "52",
+    "id" : "56",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "55",
+    "id" : "59",
     "label" : {
       "IRI-based" : "string"
     }
@@ -632,13 +641,13 @@
       } ],
       "example" : [ {
         "identifier" : "example",
-        "language" : "en",
-        "value" : "\"The {Argument} corresponds to {ArgDescription}\"\n\n\"The {Error} corresponds to {the ID of the error that appears in the machine}\"",
+        "language" : "es",
+        "value" : "\"El {Argument} corresponde a{ArgDescription}\"\n\n\"El {Error} corresponde a{l número de error que aparece en la máquina}\"",
         "type" : "label"
       }, {
         "identifier" : "example",
-        "language" : "es",
-        "value" : "\"El {Argument} corresponde a{ArgDescription}\"\n\n\"El {Error} corresponde a{l número de error que aparece en la máquina}\"",
+        "language" : "en",
+        "value" : "\"The {Argument} corresponds to {ArgDescription}\"\n\n\"The {Error} corresponds to {the ID of the error that appears in the machine}\"",
         "type" : "label"
       } ]
     },
@@ -649,7 +658,7 @@
     "comment" : {
       "en" : "Response that gives details about an Argument. For example, when the user does not understand what information conveys said Argument."
     },
-    "id" : "59",
+    "id" : "63",
     "superClasses" : [ "18" ]
   }, {
     "iri" : "https://w3id.org/todo/tododm#ArgumentRequest",
@@ -670,13 +679,13 @@
       } ],
       "example" : [ {
         "identifier" : "example",
-        "language" : "es",
-        "value" : "\"¿Puedes decirme el {argument}?\"\n\n\"¿Puedes decirme el {Destino}?\"",
+        "language" : "en",
+        "value" : "\"Can you tell me the {argument}?\n\n\"Can you tell me the {Destination}?\"",
         "type" : "label"
       }, {
         "identifier" : "example",
-        "language" : "en",
-        "value" : "\"Can you tell me the {argument}?\n\n\"Can you tell me the {Destination}?\"",
+        "language" : "es",
+        "value" : "\"¿Puedes decirme el {argument}?\"\n\n\"¿Puedes decirme el {Destino}?\"",
         "type" : "label"
       } ]
     },
@@ -687,7 +696,7 @@
     "comment" : {
       "en" : "Request that demands for the value of an Argument."
     },
-    "id" : "50",
+    "id" : "36",
     "superClasses" : [ "7" ]
   }, {
     "iri" : "https://w3id.org/todo/tododm#DialogueControlMarker",
@@ -717,7 +726,7 @@
       "IRI-based" : "DialogueControlMarker",
       "undefined" : "DialogueControlMarkers"
     },
-    "subClasses" : [ "67", "16", "68", "3" ],
+    "subClasses" : [ "71", "16", "72", "3" ],
     "comment" : {
       "undefined" : "Elements that correspond to predefined or generic actions in dialogue control."
     },
@@ -747,7 +756,7 @@
     "comment" : {
       "undefined" : "Marker that returns to the last SystemResponse+Request/SystemRequest performed."
     },
-    "id" : "68",
+    "id" : "72",
     "superClasses" : [ "4" ]
   }, {
     "iri" : "https://w3id.org/todo/tododm#SystemStep",
@@ -802,8 +811,46 @@
       "en" : "Reponse given to the user when the UserResponse is a ContentResponse and the SystemRequest requires a YesNoResponse.",
       "es" : "\"Solo necesito que me digas sí o no, por favor\""
     },
-    "id" : "73",
-    "superClasses" : [ "74" ]
+    "id" : "81",
+    "superClasses" : [ "82" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododm#NewDialogue",
+    "baseIri" : "https://w3id.org/todo/tododm",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododm#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "es",
+        "value" : "¿Necesitas algo más?",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Do you need anything else?",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "NewDialogue",
+      "undefined" : "NewDialogue"
+    },
+    "comment" : {
+      "undefined" : "Request that asks the user whether they want to initiate a new dialogue process."
+    },
+    "id" : "75",
+    "superClasses" : [ "8" ]
   }, {
     "iri" : "https://w3id.org/todo/tododm#NoResultsClarificationResponse",
     "baseIri" : "https://w3id.org/todo/tododm",
@@ -840,7 +887,7 @@
     "comment" : {
       "en" : "Response that the system returns when the clarification step of the value of an Argument does not return any results."
     },
-    "id" : "26",
+    "id" : "39",
     "superClasses" : [ "18" ]
   }, {
     "iri" : "https://w3id.org/todo/tododm#ArgumentOptionsAvailable",
@@ -867,21 +914,21 @@
     "comment" : {
       "en" : "Response in which the system tells the user that it has several options for an Argument."
     },
-    "id" : "75",
+    "id" : "83",
     "superClasses" : [ "24" ]
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "76",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
     "id" : "10",
     "label" : {
       "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "86",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
     }
   }, {
     "iri" : "https://w3id.org/todo/tododm#Continue",
@@ -908,7 +955,7 @@
     "comment" : {
       "undefined" : "Marker that conveys the idea of continuing with the dialogue process."
     },
-    "id" : "67",
+    "id" : "71",
     "superClasses" : [ "4" ]
   }, {
     "iri" : "https://w3id.org/todo/tododm#RepeatArgumentRequest",
@@ -929,13 +976,13 @@
       } ],
       "example" : [ {
         "identifier" : "example",
-        "language" : "es",
-        "value" : "\"¿Puedes repetir el {argument}?\"\n\n\"¿Puedes repetir el {Destino}?\"",
+        "language" : "en",
+        "value" : "\"Can you repeat the {Argument}?\n\n\"Can you repeat the {Destination}?\"",
         "type" : "label"
       }, {
         "identifier" : "example",
-        "language" : "en",
-        "value" : "\"Can you repeat the {Argument}?\n\n\"Can you repeat the {Destination}?\"",
+        "language" : "es",
+        "value" : "\"¿Puedes repetir el {argument}?\"\n\n\"¿Puedes repetir el {Destino}?\"",
         "type" : "label"
       } ]
     },
@@ -946,7 +993,7 @@
     "comment" : {
       "en" : "Request that demands the user to repeat the value of an Argument."
     },
-    "id" : "27",
+    "id" : "40",
     "superClasses" : [ "7" ]
   }, {
     "iri" : "https://w3id.org/todo/tododm#ProcessStepStepFunction",
@@ -994,13 +1041,13 @@
       } ],
       "example" : [ {
         "identifier" : "example",
-        "language" : "es",
-        "value" : "\"¿De qué {characteristic} es {too_broad_argument}?\n\n\"¿De qué {color} es (la) {pieza}?\"",
+        "language" : "en",
+        "value" : "\"Which {characteristic} is {too_broad_argument}?\"\n\n\"Which {colour} is (the) {piece}?\"",
         "type" : "label"
       }, {
         "identifier" : "example",
-        "language" : "en",
-        "value" : "\"Which {characteristic} is {too_broad_argument}?\"\n\n\"Which {colour} is (the) {piece}?\"",
+        "language" : "es",
+        "value" : "\"¿De qué {characteristic} es {too_broad_argument}?\n\n\"¿De qué {color} es (la) {pieza}?\"",
         "type" : "label"
       } ]
     },
@@ -1011,7 +1058,7 @@
     "comment" : {
       "en" : "Request that demands a specific characteristic of the argument. This request is used when the argument provided is too broad and the system needs some characteristic that allows determining the specific element the user is refering to.\n\nFor example, the user would require a \"piece\", and the system includes data for 300 types of pieces."
     },
-    "id" : "48",
+    "id" : "53",
     "superClasses" : [ "7" ]
   }, {
     "iri" : "https://w3id.org/todo/tododm#ArgumentValueDisambiguationRequest",
@@ -1049,15 +1096,8 @@
     "comment" : {
       "en" : "Request that tries to obtain the value of the argument when it is ambiguous (e.g. \"sala\" may apply to \"sala Ura\", \"sala Sua\", etc.)."
     },
-    "id" : "88",
+    "id" : "68",
     "superClasses" : [ "8" ]
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "90",
-    "label" : {
-      "IRI-based" : "string"
-    }
   }, {
     "iri" : "https://w3id.org/todo/tododm#OptionsAvailableResponse",
     "baseIri" : "https://w3id.org/todo/tododm",
@@ -1077,13 +1117,13 @@
       } ],
       "example" : [ {
         "identifier" : "example",
-        "language" : "es",
-        "value" : "\"Tengo varias opciones para tu comando.\"\n\n\"¡Lo que me has dicho puede ser varias cosas!\"",
+        "language" : "en",
+        "value" : "\"I have many options for your request.\"",
         "type" : "label"
       }, {
         "identifier" : "example",
-        "language" : "en",
-        "value" : "\"I have many options for your request.\"",
+        "language" : "es",
+        "value" : "\"Tengo varias opciones para tu comando.\"\n\n\"¡Lo que me has dicho puede ser varias cosas!\"",
         "type" : "label"
       } ]
     },
@@ -1091,12 +1131,26 @@
       "IRI-based" : "OptionsAvailableResponse",
       "undefined" : "OptionsAvailableResponse"
     },
-    "subClasses" : [ "75", "23", "92" ],
+    "subClasses" : [ "83", "23", "101" ],
     "comment" : {
       "en" : "Response in which the system tells the user that it has several options for a specific element (e.g. WorldElement).\n\nNote the difference between OptionsAvailableResponse and TooManyAlternativesResponse: the first implies that there is a fair amount of options, whereas the latter implies that the options that are available are too many and it will require the user to be more specific."
     },
     "id" : "24",
     "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "99",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "104",
+    "label" : {
+      "IRI-based" : "integer"
+    }
   }, {
     "iri" : "https://w3id.org/todo/tododm#ArgumentClarificationRequest",
     "baseIri" : "https://w3id.org/todo/tododm",
@@ -1117,12 +1171,12 @@
       "example" : [ {
         "identifier" : "example",
         "language" : "es",
-        "value" : "\"Could you please be more specific with {ArgTag}?\"\n\n\"Could you please be more specific with {the destination you want me to take you}?\"",
+        "value" : "\"¿Puedes ser un poco más específico con el {ArgTag}?\"\n\n\"¿Puedes ser un poco más específico con el {destino al que quieres que te guíe}?\"",
         "type" : "label"
       }, {
         "identifier" : "example",
         "language" : "es",
-        "value" : "\"¿Puedes ser un poco más específico con el {ArgTag}?\"\n\n\"¿Puedes ser un poco más específico con el {destino al que quieres que te guíe}?\"",
+        "value" : "\"Could you please be more specific with {ArgTag}?\"\n\n\"Could you please be more specific with {the destination you want me to take you}?\"",
         "type" : "label"
       } ]
     },
@@ -1133,19 +1187,50 @@
     "comment" : {
       "en" : "Request that asks the user for some clarification for the value of an argument when a previously saved value generates too many options."
     },
-    "id" : "49",
+    "id" : "54",
     "superClasses" : [ "7" ]
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "2",
+    "iri" : "https://w3id.org/todo/tododm#DialogueFinished",
+    "baseIri" : "https://w3id.org/todo/tododm",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododm#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "es",
+        "value" : "¡Listo!",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Done!",
+        "type" : "label"
+      } ]
+    },
     "label" : {
-      "IRI-based" : "integer"
-    }
+      "IRI-based" : "DialogueFinished",
+      "undefined" : "DialogueFinished"
+    },
+    "comment" : {
+      "undefined" : "Response given by the system when the dialogue process has finished (i.e., when the user confirms the action and argument values)"
+    },
+    "id" : "106",
+    "superClasses" : [ "18" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "98",
+    "id" : "107",
     "label" : {
       "IRI-based" : "string"
     }
@@ -1168,13 +1253,13 @@
       } ],
       "example" : [ {
         "identifier" : "example",
-        "language" : "es",
-        "value" : "\"{ArgumentValue} no puede ser {Argument}.\"\n\n\"{Baño} no puede ser {Error}.\"",
+        "language" : "en",
+        "value" : "\"{ArgumentValue} cannot be the {Argument}.\"\n\n\"{Toilet} cannot be the {Error}.\"",
         "type" : "label"
       }, {
         "identifier" : "example",
-        "language" : "en",
-        "value" : "\"{ArgumentValue} cannot be the {Argument}.\"\n\n\"{Toilet} cannot be the {Error}.\"",
+        "language" : "es",
+        "value" : "\"{ArgumentValue} no puede ser {Argument}.\"\n\n\"{Baño} no puede ser {Error}.\"",
         "type" : "label"
       } ]
     },
@@ -1183,9 +1268,9 @@
       "undefined" : "ArgumentNotCompatibleResponse"
     },
     "comment" : {
-      "en" : "The system informs the user the Argument value provided is not valid according to what has been modelled in the KB."
+      "en" : "This would imply an ArgumentRequest."
     },
-    "id" : "100",
+    "id" : "109",
     "superClasses" : [ "18" ]
   }, {
     "iri" : "https://w3id.org/todo/tododm#AlternativeArgumentSuggestionRequest",
@@ -1206,13 +1291,13 @@
       } ],
       "example" : [ {
         "identifier" : "example",
-        "language" : "es",
-        "value" : "Request: \"Llévame a un laboratorio con micrófono\".\n\n\"No encuentro ningún/a {Item} con {Complement} como {argumentTag}, pero puedo sugerir {IDval_AlternativeItem}, que sí que tiene. ¿Le llevo ahí?\"\n\n\"No encuentro ningún/a {laboratorio} con {micrófono} como {el destino al que quiere que le lleve}, pero puedo sugerir {sala de reunión 1}, que sí que tiene. ¿Le llevo ahí?\"",
+        "language" : "en",
+        "value" : "Request: \"Take me to a laboratory with microphone\".\n\n\"I cannot find any {Item} with {Complement} as {ArgumentTag}, but I can suggest {IDval_AlternativeItem}, which it does have it. Do you want me to take you there?\"\n\n\"I cannot find any {laboratory} with {microphone} as {the destination you want to go}, but I can suggest {meeting room 1}, which it does have it. Do you want me to take you there?\"",
         "type" : "label"
       }, {
         "identifier" : "example",
-        "language" : "en",
-        "value" : "Request: \"Take me to a laboratory with microphone\".\n\n\"I cannot find any {Item} with {Complement} as {ArgumentTag}, but I can suggest {IDval_AlternativeItem}, which it does have it. Do you want me to take you there?\"\n\n\"I cannot find any {laboratory} with {microphone} as {the destination you want to go}, but I can suggest {meeting room 1}, which it does have it. Do you want me to take you there?\"",
+        "language" : "es",
+        "value" : "Request: \"Llévame a un laboratorio con micrófono\".\n\n\"No encuentro ningún/a {Item} con {Complement} como {argumentTag}, pero puedo sugerir {IDval_AlternativeItem}, que sí que tiene. ¿Le llevo ahí?\"\n\n\"No encuentro ningún/a {laboratorio} con {micrófono} como {el destino al que quiere que le lleve}, pero puedo sugerir {sala de reunión 1}, que sí que tiene. ¿Le llevo ahí?\"",
         "type" : "label"
       } ]
     },
@@ -1223,7 +1308,7 @@
     "comment" : {
       "es" : "Request that arises when the system has not been able to obtain an argument through an item + complement. The system suggests an alternative that contains the complement in the request."
     },
-    "id" : "104",
+    "id" : "112",
     "superClasses" : [ "8" ]
   }, {
     "iri" : "https://w3id.org/todo/tododm#ValueNotCompatibleWithArgumentResponse",
@@ -1261,7 +1346,7 @@
     "comment" : {
       "en" : "Response given when the ArgValue for an Argument provided by the user is not compatible with said Argument."
     },
-    "id" : "84",
+    "id" : "89",
     "superClasses" : [ "18" ]
   }, {
     "iri" : "https://w3id.org/todo/tododm#ArgumentSpecifyRequest",
@@ -1299,7 +1384,7 @@
     "comment" : {
       "en" : "Request made when a value for an Argument can belong to different Arguments. The strategy is asking for each Argument option until the user confirms."
     },
-    "id" : "109",
+    "id" : "117",
     "superClasses" : [ "8" ]
   }, {
     "iri" : "https://w3id.org/todo/tododm#CannotResolveActionResponse",
@@ -1320,13 +1405,13 @@
       } ],
       "example" : [ {
         "identifier" : "example",
-        "language" : "es",
-        "value" : "No he podido asociar tu comando a una acción. ¿Puedes repetir y ser más específico, por favor?",
+        "language" : "en",
+        "value" : "I couldn't associate your command to an action. Can you please be more specific?",
         "type" : "label"
       }, {
         "identifier" : "example",
-        "language" : "en",
-        "value" : "I couldn't associate your command to an action. Can you please be more specific?",
+        "language" : "es",
+        "value" : "No he podido asociar tu comando a una acción. ¿Puedes repetir y ser más específico, por favor?",
         "type" : "label"
       } ]
     },
@@ -1337,7 +1422,7 @@
     "comment" : {
       "en" : "Response that the system gives when it cannot associate an action/target to one or more actions."
     },
-    "id" : "113",
+    "id" : "122",
     "superClasses" : [ "18" ]
   }, {
     "iri" : "https://w3id.org/todo/tododm#CannotResolveCommandResponse",
@@ -1358,13 +1443,13 @@
       } ],
       "example" : [ {
         "identifier" : "example",
-        "language" : "es",
-        "value" : "No he podido resolver tu petición.",
+        "language" : "en",
+        "value" : "I could not resolve your command.",
         "type" : "label"
       }, {
         "identifier" : "example",
-        "language" : "en",
-        "value" : "I could not resolve your command.",
+        "language" : "es",
+        "value" : "No he podido resolver tu petición.",
         "type" : "label"
       } ]
     },
@@ -1375,7 +1460,7 @@
     "comment" : {
       "en" : "Response that informs the user that the command could not be resolved.\n\n[to be followed by an ArgRequest]"
     },
-    "id" : "117",
+    "id" : "126",
     "superClasses" : [ "18" ]
   }, {
     "iri" : "https://w3id.org/todo/tododm#ActionOptionsResponse",
@@ -1413,7 +1498,7 @@
     "comment" : {
       "en" : "Response that the system gives when a command can be associated to more than one action."
     },
-    "id" : "116",
+    "id" : "120",
     "superClasses" : [ "18" ]
   }, {
     "iri" : "https://w3id.org/todo/tododm#SystemResponse",
@@ -1437,7 +1522,7 @@
       "IRI-based" : "SystemResponse",
       "undefined" : "SystemResponse"
     },
-    "subClasses" : [ "100", "119", "116", "35", "57", "84", "94", "102", "107", "17", "74", "96", "21", "123", "26", "44", "24", "59", "113", "86", "117" ],
+    "subClasses" : [ "109", "125", "120", "26", "61", "89", "35", "96", "114", "131", "17", "82", "103", "21", "132", "39", "45", "24", "63", "122", "106", "93", "126" ],
     "comment" : {
       "en" : "Information that the system provides in response to a UserRequest or as a piece of information directed to the user without a prior UserRequest."
     },
@@ -1479,7 +1564,45 @@
     "comment" : {
       "en" : "Response that the system displays when it runs out of options. It finishes the current Dialogue."
     },
-    "id" : "35",
+    "id" : "26",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododm#TooManyAlternativesResponse",
+    "baseIri" : "https://w3id.org/todo/tododm",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododm#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "\"I have too many options taking into account the information you provided to me.\"\n\n\"I have too many options taking into account the information you provided to me.\"",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "es",
+        "value" : "\"Tengo demasiadas opciones con la información que me has dado.\"\n\n\"Tengo demasiadas opciones con la información que me has dado.\"",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "TooManyAlternativesResponse",
+      "undefined" : "TooManyAlternativesResponse"
+    },
+    "comment" : {
+      "en" : "Response given when the alternatives (in general) are too big."
+    },
+    "id" : "96",
     "superClasses" : [ "18" ]
   }, {
     "iri" : "https://w3id.org/todo/tododm#UnderstoodResponse",
@@ -1506,45 +1629,7 @@
     "comment" : {
       "undefined" : "Response given by the system to reassure the user that it has understood the request."
     },
-    "id" : "102",
-    "superClasses" : [ "18" ]
-  }, {
-    "iri" : "https://w3id.org/todo/tododm#TooManyAlternativesResponse",
-    "baseIri" : "https://w3id.org/todo/tododm",
-    "instances" : 0,
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://w3id.org/todo/tododm#",
-        "type" : "label"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ],
-      "example" : [ {
-        "identifier" : "example",
-        "language" : "es",
-        "value" : "\"Tengo demasiadas opciones con la información que me has dado.\"\n\n\"Tengo demasiadas opciones con la información que me has dado.\"",
-        "type" : "label"
-      }, {
-        "identifier" : "example",
-        "language" : "en",
-        "value" : "\"I have too many options taking into account the information you provided to me.\"\n\n\"I have too many options taking into account the information you provided to me.\"",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "TooManyAlternativesResponse",
-      "undefined" : "TooManyAlternativesResponse"
-    },
-    "comment" : {
-      "en" : "Response given when the alternatives (in general) are too big."
-    },
-    "id" : "94",
+    "id" : "114",
     "superClasses" : [ "18" ]
   }, {
     "iri" : "https://w3id.org/todo/tododm#IncorrectArgumentRequest",
@@ -1565,13 +1650,13 @@
       } ],
       "example" : [ {
         "identifier" : "example",
-        "language" : "es",
-        "value" : "\"¿Me he equivocado con el {Argument}?\"\n\n\"¿Me he equivocado con el {Origen}?\"",
+        "language" : "en",
+        "value" : "\"Have I missed the {Argument}?\"\n\n\"Have I missed the {Origin}?\"",
         "type" : "label"
       }, {
         "identifier" : "example",
-        "language" : "en",
-        "value" : "\"Have I missed the {Argument}?\"\n\n\"Have I missed the {Origin}?\"",
+        "language" : "es",
+        "value" : "\"¿Me he equivocado con el {Argument}?\"\n\n\"¿Me he equivocado con el {Origen}?\"",
         "type" : "label"
       } ]
     },
@@ -1582,7 +1667,7 @@
     "comment" : {
       "en" : "Request that checks which is the Argument/Action that has not been interpreter correctly, after a negative ReassureFeedbackRequest."
     },
-    "id" : "125",
+    "id" : "66",
     "superClasses" : [ "8" ]
   }, {
     "iri" : "https://w3id.org/todo/tododm#UserCommandRequest",
@@ -1604,12 +1689,12 @@
       "example" : [ {
         "identifier" : "example",
         "language" : "es",
-        "value" : "¿En qué puedo ayudarte?\n\nDame tu comando.",
+        "value" : "How can I help you?\n\nTell me your command.",
         "type" : "label"
       }, {
         "identifier" : "example",
         "language" : "es",
-        "value" : "How can I help you?\n\nTell me your command.",
+        "value" : "¿En qué puedo ayudarte?\n\nDame tu comando.",
         "type" : "label"
       } ]
     },
@@ -1620,7 +1705,7 @@
     "comment" : {
       "en" : "Request to the user to provide their (initial) command."
     },
-    "id" : "36",
+    "id" : "27",
     "superClasses" : [ "7" ]
   }, {
     "iri" : "https://w3id.org/todo/tododm#ActionDisambiguationRequest",
@@ -1641,13 +1726,13 @@
       } ],
       "example" : [ {
         "identifier" : "example",
-        "language" : "en",
-        "value" : "[Previous SysResp: \"I couldn't resolve the action from your request\".]\n\"Do you want to {ActionTag}?\n\n\"Do you want to {go somewhere}?",
+        "language" : "es",
+        "value" : "[Previous SysResp: \"No he podido resolver la acción a partir de tu petición\"]\n\n\"¿Quieres {ActionTag}?\n\n\"¿Quieres {que te lleve a algún sitio}?\"",
         "type" : "label"
       }, {
         "identifier" : "example",
-        "language" : "es",
-        "value" : "[Previous SysResp: \"No he podido resolver la acción a partir de tu petición\"]\n\n\"¿Quieres {ActionTag}?\n\n\"¿Quieres {que te lleve a algún sitio}?\"",
+        "language" : "en",
+        "value" : "[Previous SysResp: \"I couldn't resolve the action from your request\".]\n\"Do you want to {ActionTag}?\n\n\"Do you want to {go somewhere}?",
         "type" : "label"
       } ]
     },
@@ -1658,7 +1743,7 @@
     "comment" : {
       "en" : "Request that makes the user choose from a set of Actions obtained through inference."
     },
-    "id" : "139",
+    "id" : "145",
     "superClasses" : [ "8" ]
   }, {
     "iri" : "https://w3id.org/todo/tododm#StepFunction",
@@ -1682,7 +1767,7 @@
       "IRI-based" : "StepFunction",
       "undefined" : "StepFunction"
     },
-    "subClasses" : [ "14", "1", "46" ],
+    "subClasses" : [ "14", "1", "47" ],
     "comment" : {
       "undefined" : "Element that is linked to a function in the Dialogue Manager code. This element also determines the implications of the output of said function in the code."
     },
@@ -1712,7 +1797,7 @@
     "comment" : {
       "undefined" : "Step in the dialogue process that requires a system interaction with the user (SystemStep)."
     },
-    "id" : "41"
+    "id" : "43"
   }, {
     "iri" : "https://w3id.org/todo/tododm#ArgumentAssignationRequest",
     "baseIri" : "https://w3id.org/todo/tododm",
@@ -1749,7 +1834,7 @@
     "comment" : {
       "en" : "Request made to reassure the assignation of a value from the KEE to an Argument."
     },
-    "id" : "64",
+    "id" : "50",
     "superClasses" : [ "8" ]
   }, {
     "iri" : "https://w3id.org/todo/tododm#ArgumentOptionsResponse",
@@ -1787,7 +1872,7 @@
     "comment" : {
       "en" : "Response that the system gives when an item can be associated to more than one argument."
     },
-    "id" : "107",
+    "id" : "131",
     "superClasses" : [ "18" ]
   }, {
     "iri" : "https://w3id.org/todo/tododm#ResponseTypeNotExpectedResponse",
@@ -1811,11 +1896,11 @@
       "IRI-based" : "ResponseTypeNotExpectedResponse",
       "undefined" : "ResponseTypeNotExpectedResponse"
     },
-    "subClasses" : [ "66", "73" ],
+    "subClasses" : [ "70", "81" ],
     "comment" : {
       "en" : "Reponse given to the user when the UserResponse does not correspond with the expected response of the SystemRequest."
     },
-    "id" : "74",
+    "id" : "82",
     "superClasses" : [ "18" ]
   }, {
     "iri" : "https://w3id.org/todo/tododm#YesNoResponseNotExpected",
@@ -1843,8 +1928,8 @@
       "en" : "Reponse given to the user when the UserResponse is a YesNoResponse and the SystemRequest requires a ContentResponse.",
       "es" : "\"Creo que no te he entendido. ¿Puedes ser un poco más concreto con tu respuesta?\""
     },
-    "id" : "66",
-    "superClasses" : [ "74" ]
+    "id" : "70",
+    "superClasses" : [ "82" ]
   }, {
     "iri" : "https://w3id.org/todo/tododm#ItemNotCompatibleAnyArgResponse",
     "baseIri" : "https://w3id.org/todo/tododm",
@@ -1872,7 +1957,7 @@
       "es" : "El item {item} no es compatible con ningún argumento de la acción.",
       "undefined" : "The system informs the user the Item value provided is not compatible with any action argument, according to what has been modelled in the KB."
     },
-    "id" : "44",
+    "id" : "45",
     "superClasses" : [ "18" ]
   }, {
     "iri" : "https://w3id.org/todo/tododm#YesNoRequest",
@@ -1902,7 +1987,7 @@
       "IRI-based" : "YesNoRequest",
       "undefined" : "YesNoRequest"
     },
-    "subClasses" : [ "104", "139", "109", "88", "125", "136", "64", "62" ],
+    "subClasses" : [ "112", "145", "117", "68", "66", "75", "77", "50", "52" ],
     "comment" : {
       "en" : "Request the response of which is expected to be limited to \"Yes\" or \"No\" (and equivalents).\n\nAlso known as \"Polar question\" in linguistics."
     },
@@ -1927,13 +2012,13 @@
       } ],
       "example" : [ {
         "identifier" : "example",
-        "language" : "es",
-        "value" : "¡Tu comando se puede asociar a demasiados elementos!",
+        "language" : "en",
+        "value" : "Your command can be associated to too many elements!",
         "type" : "label"
       }, {
         "identifier" : "example",
-        "language" : "en",
-        "value" : "Your command can be associated to too many elements!",
+        "language" : "es",
+        "value" : "¡Tu comando se puede asociar a demasiados elementos!",
         "type" : "label"
       } ]
     },
@@ -1944,7 +2029,7 @@
     "comment" : {
       "en" : "Response given when the number of possible World Elements is too big."
     },
-    "id" : "86",
+    "id" : "93",
     "superClasses" : [ "18" ]
   }, {
     "iri" : "https://w3id.org/todo/tododm#NoMoreOptionsContinueResponse",
@@ -1965,13 +2050,13 @@
       } ],
       "example" : [ {
         "identifier" : "example",
-        "language" : "en",
-        "value" : "I do not have more options to offer you!",
+        "language" : "es",
+        "value" : "¡No tengo más opciones que mostrarte!",
         "type" : "label"
       }, {
         "identifier" : "example",
-        "language" : "es",
-        "value" : "¡No tengo más opciones que mostrarte!",
+        "language" : "en",
+        "value" : "I do not have more options to offer you!",
         "type" : "label"
       } ]
     },
@@ -1982,7 +2067,7 @@
     "comment" : {
       "en" : "Response that the system displays when it runs out of options. It is intended to continue with a full request of the element that the previous options corresponded to."
     },
-    "id" : "119",
+    "id" : "125",
     "superClasses" : [ "18" ]
   }, {
     "iri" : "https://w3id.org/todo/tododm#VerifyInfoRequest",
@@ -2020,7 +2105,7 @@
     "comment" : {
       "en" : "Request that requires the user to repeat some information."
     },
-    "id" : "45",
+    "id" : "46",
     "superClasses" : [ "7" ]
   }, {
     "iri" : "https://w3id.org/todo/tododm#NotUnderstoodResponse",
@@ -2058,7 +2143,45 @@
     "comment" : {
       "en" : "Response that informs the user that the system has not understood the user command."
     },
-    "id" : "57",
+    "id" : "61",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "https://w3id.org/todo/tododm#MissingInformationResponse",
+    "baseIri" : "https://w3id.org/todo/tododm",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododm#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "es",
+        "value" : "Hay información que me falta.",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "es",
+        "value" : "I still need some more information.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MissingInformationResponse",
+      "undefined" : "MissingInformationResponse"
+    },
+    "comment" : {
+      "en" : "Response that is given when, after checking if all the core Arguments have been provided by the user command, there are core Arguments that are missing."
+    },
+    "id" : "35",
     "superClasses" : [ "18" ]
   }, {
     "iri" : "https://w3id.org/todo/tododm#ReassureFeedbackRequest",
@@ -2079,13 +2202,13 @@
       } ],
       "example" : [ {
         "identifier" : "example",
-        "language" : "en",
-        "value" : "\"So, you want me {Action} {ArgumentConnector} {Argument}, right?\"\n\n\"So, you want me {to take you} {to} {the toilet}, right?\"",
+        "language" : "es",
+        "value" : "\"Entonces, quieres que {Action} {ArgumentConnector} {Argument}, ¿verdad?\"\n\n\"Entonces, quieres que {te lleve} {a} {l baño}, ¿verdad?\"",
         "type" : "label"
       }, {
         "identifier" : "example",
-        "language" : "es",
-        "value" : "\"Entonces, quieres que {Action} {ArgumentConnector} {Argument}, ¿verdad?\"\n\n\"Entonces, quieres que {te lleve} {a} {l baño}, ¿verdad?\"",
+        "language" : "en",
+        "value" : "\"So, you want me {Action} {ArgumentConnector} {Argument}, right?\"\n\n\"So, you want me {to take you} {to} {the toilet}, right?\"",
         "type" : "label"
       } ]
     },
@@ -2096,7 +2219,7 @@
     "comment" : {
       "en" : "Request that is sent in order to obtain feedback whether the interpretation obtained is correct or not."
     },
-    "id" : "136",
+    "id" : "77",
     "superClasses" : [ "8" ]
   }, {
     "iri" : "https://w3id.org/todo/tododm#IntentRequest",
@@ -2134,7 +2257,7 @@
     "comment" : {
       "en" : "Request made when a UserRequest can belong to different Intents. The strategy is asking for each Intent option until the user confirms."
     },
-    "id" : "62",
+    "id" : "52",
     "superClasses" : [ "8" ]
   }, {
     "iri" : "https://w3id.org/todo/tododm#TooManyActionOptionsResponse",
@@ -2172,7 +2295,7 @@
     "comment" : {
       "en" : "Response given when the number of possible Actions is too big."
     },
-    "id" : "96",
+    "id" : "103",
     "superClasses" : [ "18" ]
   }, {
     "iri" : "https://w3id.org/todo/tododm#ArgumentNotGuessedResponse",
@@ -2194,12 +2317,12 @@
       "example" : [ {
         "identifier" : "example",
         "language" : "es",
-        "value" : "\"Con las características que me has dado, no he podido averiguar el {Argument}.\"\n\n\"Con las características que me has dado, no he podido averiguar el {Error}.\"",
+        "value" : "\"I cannot guess the {Argument} with the information you provided.\"\n\n\"I cannot guess the {Error} with the information you provided.\"",
         "type" : "label"
       }, {
         "identifier" : "example",
         "language" : "es",
-        "value" : "\"I cannot guess the {Argument} with the information you provided.\"\n\n\"I cannot guess the {Error} with the information you provided.\"",
+        "value" : "\"Con las características que me has dado, no he podido averiguar el {Argument}.\"\n\n\"Con las características que me has dado, no he podido averiguar el {Error}.\"",
         "type" : "label"
       } ]
     },
@@ -2210,7 +2333,7 @@
     "comment" : {
       "en" : "This would imply an ArgumentRequest/ArgumentCharacteristicRequest"
     },
-    "id" : "123",
+    "id" : "132",
     "superClasses" : [ "18" ]
   }, {
     "iri" : "https://w3id.org/todo/tododm#ArgumentValueOptionsAvailable",
@@ -2237,7 +2360,7 @@
     "comment" : {
       "en" : "Response in which the system tells the user that it has several options for an argument value."
     },
-    "id" : "92",
+    "id" : "101",
     "superClasses" : [ "24" ]
   } ],
   "property" : [ {
@@ -2262,119 +2385,113 @@
     "id" : "38",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "40",
-    "type" : "owl:disjointWith"
-  }, {
     "id" : "42",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "43",
+    "id" : "44",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "47",
+    "id" : "48",
     "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "51",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "55",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "54",
-    "type" : "owl:someValuesFrom"
-  }, {
-    "id" : "56",
-    "type" : "owl:someValuesFrom"
+    "id" : "57",
+    "type" : "owl:disjointWith"
   }, {
     "id" : "58",
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "60",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "62",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "64",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "61",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "63",
-    "type" : "rdfs:SubClassOf"
-  }, {
     "id" : "65",
-    "type" : "owl:someValuesFrom"
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "67",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "69",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "70",
+    "id" : "73",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "74",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "71",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "72",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "77",
+    "id" : "76",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "78",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "79",
-    "type" : "owl:someValuesFrom"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "80",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "84",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "81",
+    "id" : "85",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "87",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "82",
+    "id" : "88",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "83",
+    "id" : "90",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "91",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "92",
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "30",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "85",
-    "type" : "owl:someValuesFrom"
-  }, {
-    "id" : "87",
-    "type" : "owl:someValuesFrom"
-  }, {
-    "id" : "89",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "91",
-    "type" : "owl:someValuesFrom"
-  }, {
-    "id" : "93",
+    "id" : "94",
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "95",
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "97",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "98",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "99",
+    "id" : "100",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "101",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "103",
-    "type" : "rdfs:SubClassOf"
+    "id" : "102",
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "105",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "106",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "108",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "28",
-    "type" : "owl:objectProperty"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "110",
     "type" : "rdfs:SubClassOf"
@@ -2382,31 +2499,31 @@
     "id" : "111",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "112",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "114",
+    "id" : "113",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "115",
     "type" : "rdfs:SubClassOf"
   }, {
+    "id" : "116",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "28",
+    "type" : "owl:objectProperty"
+  }, {
     "id" : "118",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "120",
+    "id" : "119",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "121",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "122",
+    "id" : "123",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "124",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "126",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "127",
@@ -2421,15 +2538,6 @@
     "id" : "130",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "33",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "131",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "132",
-    "type" : "rdfs:SubClassOf"
-  }, {
     "id" : "133",
     "type" : "rdfs:SubClassOf"
   }, {
@@ -2439,44 +2547,47 @@
     "id" : "135",
     "type" : "rdfs:SubClassOf"
   }, {
+    "id" : "136",
+    "type" : "rdfs:SubClassOf"
+  }, {
     "id" : "137",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "138",
     "type" : "rdfs:SubClassOf"
   }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "139",
+    "type" : "rdfs:SubClassOf"
+  }, {
     "id" : "140",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "141",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "142",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "143",
-    "type" : "owl:someValuesFrom"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "144",
-    "type" : "owl:someValuesFrom"
-  }, {
-    "id" : "32",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "145",
-    "type" : "owl:someValuesFrom"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "146",
-    "type" : "owl:someValuesFrom"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "147",
-    "type" : "owl:someValuesFrom"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "148",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "149",
-    "type" : "owl:someValuesFrom"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "150",
     "type" : "owl:someValuesFrom"
@@ -2484,47 +2595,50 @@
     "id" : "151",
     "type" : "owl:someValuesFrom"
   }, {
+    "id" : "32",
+    "type" : "owl:objectProperty"
+  }, {
     "id" : "152",
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "153",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "154",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "155",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "156",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "157",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "158",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "159",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "160",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "13",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "154",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "155",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "156",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "12",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "157",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "158",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "159",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "160",
-    "type" : "rdfs:SubClassOf"
-  }, {
     "id" : "161",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "162",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "163",
     "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "12",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "164",
     "type" : "rdfs:SubClassOf"
@@ -2539,10 +2653,31 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "168",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "169",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "170",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "171",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "172",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "173",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "174",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "175",
     "type" : "rdfs:SubClassOf"
   } ],
   "propertyAttribute" : [ {
-    "iri" : "https://w3id.org/todo/tododm#order",
+    "iri" : "https://w3id.org/todo/tododm#isStepFunctionOf",
     "baseIri" : "https://w3id.org/todo/tododm",
     "range" : "2",
     "annotations" : {
@@ -2560,14 +2695,14 @@
       } ]
     },
     "label" : {
-      "IRI-based" : "order",
-      "undefined" : "order"
+      "IRI-based" : "isStepFunctionOf",
+      "undefined" : "isStepFunctionOf"
     },
     "domain" : "1",
     "comment" : {
-      "undefined" : "Sets the order for StepFunctions/DialogueSteps."
+      "undefined" : "Establishes the SystemRequest or a ProcessStep corresponding to a StepFunction."
     },
-    "attributes" : [ "datatype", "someValues" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "0"
   }, {
     "iri" : "https://w3id.org/todo/tododm#multipleOptionsImplies",
@@ -2600,9 +2735,10 @@
     "attributes" : [ "object" ],
     "id" : "9"
   }, {
-    "iri" : "https://w3id.org/todo/tododm#isStepFunctionOf",
+    "iri" : "https://w3id.org/todo/tododm#hasStepFunction",
+    "inverse" : "20",
     "baseIri" : "https://w3id.org/todo/tododm",
-    "range" : "20",
+    "range" : "1",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -2618,14 +2754,14 @@
       } ]
     },
     "label" : {
-      "IRI-based" : "isStepFunctionOf",
-      "undefined" : "isStepFunctionOf"
+      "IRI-based" : "hasStepFunction",
+      "undefined" : "hasStepFunction"
     },
-    "domain" : "1",
+    "domain" : "2",
     "comment" : {
-      "undefined" : "Establishes the SystemRequest or a ProcessStep corresponding to a StepFunction."
+      "undefined" : "Establishes the StepFunction corresponding to a SystemRequest or a ProcessStep."
     },
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "19"
   }, {
     "iri" : "https://w3id.org/todo/tododm#implies",
@@ -2654,7 +2790,7 @@
     "comment" : {
       "undefined" : "Establishes the implications of the output of a StepFunction in the Dialogue Manager code."
     },
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "25"
   }, {
     "iri" : "https://w3id.org/todo/tododm#implies",
@@ -2683,7 +2819,7 @@
     "comment" : {
       "undefined" : "Establishes the implications of the output of a StepFunction in the Dialogue Manager code."
     },
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "34"
   }, {
     "iri" : "https://w3id.org/todo/tododm#IDval",
@@ -2707,78 +2843,16 @@
       "IRI-based" : "IDval",
       "undefined" : "IDval"
     },
-    "domain" : "20",
+    "domain" : "2",
     "comment" : {
       "undefined" : "Unique identification value for individuals."
     },
     "attributes" : [ "datatype", "someValues" ],
     "id" : "37"
   }, {
-    "iri" : "https://w3id.org/todo/tododm#hasStepFunction",
-    "inverse" : "39",
-    "baseIri" : "https://w3id.org/todo/tododm",
-    "range" : "1",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://w3id.org/todo/tododm#",
-        "type" : "label"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "hasStepFunction",
-      "undefined" : "hasStepFunction"
-    },
-    "domain" : "20",
-    "comment" : {
-      "undefined" : "Establishes the StepFunction corresponding to a SystemRequest or a ProcessStep."
-    },
-    "attributes" : [ "someValues", "object" ],
-    "id" : "38"
-  }, {
-    "range" : "20",
-    "domain" : "41",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "40"
-  }, {
-    "iri" : "https://w3id.org/todo/tododm#initiatedBy",
-    "baseIri" : "https://w3id.org/todo/tododm",
-    "range" : "6",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://w3id.org/todo/tododm#",
-        "type" : "label"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "initiatedBy",
-      "undefined" : "initiatedBy"
-    },
-    "domain" : "41",
-    "comment" : {
-      "undefined" : "Establishes the SystemRequest/Response that initiates a DialogueStep."
-    },
-    "attributes" : [ "someValues", "object" ],
-    "id" : "42"
-  }, {
     "iri" : "https://w3id.org/todo/tododm#implies",
     "baseIri" : "https://w3id.org/todo/tododm",
-    "range" : "45",
+    "range" : "40",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -2797,17 +2871,74 @@
       "IRI-based" : "implies",
       "undefined" : "implies"
     },
-    "domain" : "44",
+    "domain" : "39",
     "subproperty" : [ "28", "29", "30", "31", "32", "9", "33" ],
     "comment" : {
       "undefined" : "Establishes the implications of the output of a StepFunction in the Dialogue Manager code."
     },
-    "attributes" : [ "someValues", "object" ],
-    "id" : "43"
+    "attributes" : [ "object", "someValues" ],
+    "id" : "38"
+  }, {
+    "iri" : "https://w3id.org/todo/tododm#order",
+    "baseIri" : "https://w3id.org/todo/tododm",
+    "range" : "41",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododm#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "order",
+      "undefined" : "order"
+    },
+    "domain" : "43",
+    "comment" : {
+      "undefined" : "Sets the order for StepFunctions/DialogueSteps."
+    },
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "42"
   }, {
     "iri" : "https://w3id.org/todo/tododm#implies",
     "baseIri" : "https://w3id.org/todo/tododm",
-    "range" : "36",
+    "range" : "46",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododm#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "implies",
+      "undefined" : "implies"
+    },
+    "domain" : "45",
+    "subproperty" : [ "28", "29", "30", "31", "32", "9", "33" ],
+    "comment" : {
+      "undefined" : "Establishes the implications of the output of a StepFunction in the Dialogue Manager code."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "44"
+  }, {
+    "iri" : "https://w3id.org/todo/tododm#implies",
+    "baseIri" : "https://w3id.org/todo/tododm",
+    "range" : "27",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -2831,12 +2962,22 @@
     "comment" : {
       "undefined" : "Establishes the implications of the output of a StepFunction in the Dialogue Manager code."
     },
-    "attributes" : [ "someValues", "object" ],
-    "id" : "47"
+    "attributes" : [ "object", "someValues" ],
+    "id" : "48"
   }, {
-    "iri" : "https://w3id.org/todo/tododm#IDval",
+    "range" : "8",
+    "domain" : "50",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "49"
+  }, {
+    "range" : "8",
+    "domain" : "52",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "51"
+  }, {
+    "iri" : "https://w3id.org/todo/tododm#initiatedBy",
     "baseIri" : "https://w3id.org/todo/tododm",
-    "range" : "52",
+    "range" : "6",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -2852,19 +2993,24 @@
       } ]
     },
     "label" : {
-      "IRI-based" : "IDval",
-      "undefined" : "IDval"
+      "IRI-based" : "initiatedBy",
+      "undefined" : "initiatedBy"
     },
-    "domain" : "41",
+    "domain" : "43",
     "comment" : {
-      "undefined" : "Unique identification value for individuals."
+      "undefined" : "Establishes the SystemRequest/Response that initiates a DialogueStep."
     },
-    "attributes" : [ "datatype", "someValues" ],
-    "id" : "51"
+    "attributes" : [ "object", "someValues" ],
+    "id" : "55"
+  }, {
+    "range" : "2",
+    "domain" : "43",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "57"
   }, {
     "iri" : "https://w3id.org/todo/tododm#IDval",
     "baseIri" : "https://w3id.org/todo/tododm",
-    "range" : "55",
+    "range" : "59",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -2888,11 +3034,11 @@
       "undefined" : "Unique identification value for individuals."
     },
     "attributes" : [ "datatype", "someValues" ],
-    "id" : "54"
+    "id" : "58"
   }, {
     "iri" : "https://w3id.org/todo/tododm#userResponseNotUnderstoodImplies",
     "baseIri" : "https://w3id.org/todo/tododm",
-    "range" : "57",
+    "range" : "61",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -2916,12 +3062,12 @@
     "comment" : {
       "undefined" : "Establishes the implications when the system does not understand a UserResponse."
     },
-    "attributes" : [ "someValues", "object" ],
-    "id" : "56"
+    "attributes" : [ "object", "someValues" ],
+    "id" : "60"
   }, {
-    "iri" : "https://w3id.org/todo/tododm#order",
+    "iri" : "https://w3id.org/todo/tododm#IDval",
     "baseIri" : "https://w3id.org/todo/tododm",
-    "range" : "53",
+    "range" : "56",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -2937,34 +3083,34 @@
       } ]
     },
     "label" : {
-      "IRI-based" : "order",
-      "undefined" : "order"
+      "IRI-based" : "IDval",
+      "undefined" : "IDval"
     },
-    "domain" : "41",
+    "domain" : "43",
     "comment" : {
-      "undefined" : "Sets the order for StepFunctions/DialogueSteps."
+      "undefined" : "Unique identification value for individuals."
     },
     "attributes" : [ "datatype", "someValues" ],
-    "id" : "58"
+    "id" : "62"
   }, {
     "range" : "8",
     "domain" : "7",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "60"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "64"
   }, {
     "range" : "8",
-    "domain" : "62",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "61"
+    "domain" : "66",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "65"
   }, {
     "range" : "8",
-    "domain" : "64",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "63"
+    "domain" : "68",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "67"
   }, {
     "iri" : "https://w3id.org/todo/tododm#incorrectUserResponseTypeImplies",
     "baseIri" : "https://w3id.org/todo/tododm",
-    "range" : "66",
+    "range" : "70",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -2988,8 +3134,8 @@
     "comment" : {
       "undefined" : "Establishes the implications of an incorrect UserResponseType (e.g. when the request requires Yes/No as response and the user provides a ContentResponse)."
     },
-    "attributes" : [ "someValues", "object" ],
-    "id" : "65"
+    "attributes" : [ "object", "someValues" ],
+    "id" : "69"
   }, {
     "iri" : "https://w3id.org/todo/tododm#isStepFunctionOf",
     "baseIri" : "https://w3id.org/todo/tododm",
@@ -3016,37 +3162,37 @@
     "comment" : {
       "undefined" : "Establishes the SystemRequest or a ProcessStep corresponding to a StepFunction."
     },
-    "attributes" : [ "someValues", "object" ],
-    "id" : "69"
+    "attributes" : [ "object", "someValues" ],
+    "id" : "73"
   }, {
-    "range" : "7",
-    "domain" : "27",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "70"
+    "range" : "8",
+    "domain" : "75",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "74"
   }, {
-    "range" : "7",
-    "domain" : "48",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "71"
-  }, {
-    "range" : "7",
-    "domain" : "45",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "72"
+    "range" : "8",
+    "domain" : "77",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "76"
   }, {
     "range" : "5",
     "domain" : "8",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "77"
-  }, {
-    "range" : "5",
-    "domain" : "7",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "78"
   }, {
-    "iri" : "https://w3id.org/todo/tododm#userResponseNotUnderstoodImplies",
+    "range" : "7",
+    "domain" : "46",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "79"
+  }, {
+    "range" : "7",
+    "domain" : "40",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "80"
+  }, {
+    "iri" : "https://w3id.org/todo/tododm#incorrectUserResponseTypeImplies",
     "baseIri" : "https://w3id.org/todo/tododm",
-    "range" : "57",
+    "range" : "81",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3062,21 +3208,26 @@
       } ]
     },
     "label" : {
-      "IRI-based" : "userResponseNotUnderstoodImplies",
-      "undefined" : "userResponseNotUnderstoodImplies"
+      "IRI-based" : "incorrectUserResponseTypeImplies",
+      "undefined" : "incorrectUserResponseTypeImplies"
     },
     "superproperty" : [ "11" ],
-    "domain" : "46",
+    "domain" : "47",
     "comment" : {
-      "undefined" : "Establishes the implications when the system does not understand a UserResponse."
+      "undefined" : "Establishes the implications of an incorrect UserResponseType (e.g. when the request requires Yes/No as response and the user provides a ContentResponse)."
     },
-    "attributes" : [ "someValues", "object" ],
-    "id" : "79"
+    "attributes" : [ "object", "someValues" ],
+    "id" : "84"
+  }, {
+    "range" : "5",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "85"
   }, {
     "iri" : "https://w3id.org/todo/tododm#hasStepFunction",
-    "inverse" : "39",
+    "inverse" : "20",
     "baseIri" : "https://w3id.org/todo/tododm",
-    "range" : "46",
+    "range" : "47",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3099,8 +3250,66 @@
     "comment" : {
       "undefined" : "Establishes the StepFunction corresponding to a SystemRequest or a ProcessStep."
     },
-    "attributes" : [ "someValues", "object" ],
-    "id" : "80"
+    "attributes" : [ "object", "someValues" ],
+    "id" : "87"
+  }, {
+    "iri" : "https://w3id.org/todo/tododm#implies",
+    "baseIri" : "https://w3id.org/todo/tododm",
+    "range" : "46",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododm#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "implies",
+      "undefined" : "implies"
+    },
+    "domain" : "89",
+    "subproperty" : [ "28", "29", "30", "31", "32", "9", "33" ],
+    "comment" : {
+      "undefined" : "Establishes the implications of the output of a StepFunction in the Dialogue Manager code."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "88"
+  }, {
+    "iri" : "https://w3id.org/todo/tododm#userResponseNotUnderstoodImplies",
+    "baseIri" : "https://w3id.org/todo/tododm",
+    "range" : "61",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododm#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "userResponseNotUnderstoodImplies",
+      "undefined" : "userResponseNotUnderstoodImplies"
+    },
+    "superproperty" : [ "11" ],
+    "domain" : "47",
+    "comment" : {
+      "undefined" : "Establishes the implications when the system does not understand a UserResponse."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "90"
   }, {
     "iri" : "https://w3id.org/todo/tododm#isStepFunctionOf",
     "baseIri" : "https://w3id.org/todo/tododm",
@@ -3123,45 +3332,16 @@
       "IRI-based" : "isStepFunctionOf",
       "undefined" : "isStepFunctionOf"
     },
-    "domain" : "46",
+    "domain" : "47",
     "comment" : {
       "undefined" : "Establishes the SystemRequest or a ProcessStep corresponding to a StepFunction."
     },
-    "attributes" : [ "someValues", "object" ],
-    "id" : "81"
-  }, {
-    "iri" : "https://w3id.org/todo/tododm#incorrectUserResponseTypeImplies",
-    "baseIri" : "https://w3id.org/todo/tododm",
-    "range" : "73",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://w3id.org/todo/tododm#",
-        "type" : "label"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "incorrectUserResponseTypeImplies",
-      "undefined" : "incorrectUserResponseTypeImplies"
-    },
-    "superproperty" : [ "11" ],
-    "domain" : "46",
-    "comment" : {
-      "undefined" : "Establishes the implications of an incorrect UserResponseType (e.g. when the request requires Yes/No as response and the user provides a ContentResponse)."
-    },
-    "attributes" : [ "someValues", "object" ],
-    "id" : "82"
+    "attributes" : [ "object", "someValues" ],
+    "id" : "91"
   }, {
     "iri" : "https://w3id.org/todo/tododm#implies",
     "baseIri" : "https://w3id.org/todo/tododm",
-    "range" : "45",
+    "range" : "54",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3180,13 +3360,13 @@
       "IRI-based" : "implies",
       "undefined" : "implies"
     },
-    "domain" : "84",
+    "domain" : "93",
     "subproperty" : [ "28", "29", "30", "31", "32", "9", "33" ],
     "comment" : {
       "undefined" : "Establishes the implications of the output of a StepFunction in the Dialogue Manager code."
     },
-    "attributes" : [ "someValues", "object" ],
-    "id" : "83"
+    "attributes" : [ "object", "someValues" ],
+    "id" : "92"
   }, {
     "iri" : "https://w3id.org/todo/tododm#noUserResponseTypeImplies",
     "baseIri" : "https://w3id.org/todo/tododm",
@@ -3219,36 +3399,7 @@
   }, {
     "iri" : "https://w3id.org/todo/tododm#implies",
     "baseIri" : "https://w3id.org/todo/tododm",
-    "range" : "49",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://w3id.org/todo/tododm#",
-        "type" : "label"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "implies",
-      "undefined" : "implies"
-    },
-    "domain" : "86",
-    "subproperty" : [ "28", "29", "30", "31", "32", "9", "33" ],
-    "comment" : {
-      "undefined" : "Establishes the implications of the output of a StepFunction in the Dialogue Manager code."
-    },
-    "attributes" : [ "someValues", "object" ],
-    "id" : "85"
-  }, {
-    "iri" : "https://w3id.org/todo/tododm#implies",
-    "baseIri" : "https://w3id.org/todo/tododm",
-    "range" : "36",
+    "range" : "27",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3272,79 +3423,12 @@
     "comment" : {
       "undefined" : "Establishes the implications of the output of a StepFunction in the Dialogue Manager code."
     },
-    "attributes" : [ "someValues", "object" ],
-    "id" : "87"
-  }, {
-    "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
-    "baseIri" : "http://www.w3.org/2002/07/owl",
-    "range" : "76",
-    "label" : {
-      "IRI-based" : "topDataProperty"
-    },
-    "domain" : "10",
-    "attributes" : [ "datatype", "external" ],
-    "id" : "89"
-  }, {
-    "iri" : "https://w3id.org/todo/tododm#outputSentence",
-    "baseIri" : "https://w3id.org/todo/tododm",
-    "range" : "90",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://w3id.org/todo/tododm#",
-        "type" : "label"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "outputSentence",
-      "undefined" : "outputSentence"
-    },
-    "domain" : "6",
-    "comment" : {
-      "undefined" : "String to be output by the system in order to communicate a SystemRequest/Response to the user."
-    },
-    "attributes" : [ "datatype", "someValues" ],
-    "id" : "91"
+    "attributes" : [ "object", "someValues" ],
+    "id" : "94"
   }, {
     "iri" : "https://w3id.org/todo/tododm#implies",
     "baseIri" : "https://w3id.org/todo/tododm",
-    "range" : "49",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://w3id.org/todo/tododm#",
-        "type" : "label"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "implies",
-      "undefined" : "implies"
-    },
-    "domain" : "94",
-    "subproperty" : [ "28", "29", "30", "31", "32", "9", "33" ],
-    "comment" : {
-      "undefined" : "Establishes the implications of the output of a StepFunction in the Dialogue Manager code."
-    },
-    "attributes" : [ "someValues", "object" ],
-    "id" : "93"
-  }, {
-    "iri" : "https://w3id.org/todo/tododm#implies",
-    "baseIri" : "https://w3id.org/todo/tododm",
-    "range" : "36",
+    "range" : "54",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3368,12 +3452,112 @@
     "comment" : {
       "undefined" : "Establishes the implications of the output of a StepFunction in the Dialogue Manager code."
     },
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "95"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "86",
+    "label" : {
+      "IRI-based" : "topDataProperty"
+    },
+    "domain" : "10",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "97"
+  }, {
+    "iri" : "https://w3id.org/todo/tododm#outputSentence",
+    "baseIri" : "https://w3id.org/todo/tododm",
+    "range" : "99",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododm#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "outputSentence",
+      "undefined" : "outputSentence"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "String to be output by the system in order to communicate a SystemRequest/Response to the user."
+    },
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "98"
+  }, {
+    "range" : "18",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "100"
+  }, {
+    "iri" : "https://w3id.org/todo/tododm#implies",
+    "baseIri" : "https://w3id.org/todo/tododm",
+    "range" : "27",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododm#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "implies",
+      "undefined" : "implies"
+    },
+    "domain" : "103",
+    "subproperty" : [ "28", "29", "30", "31", "32", "9", "33" ],
+    "comment" : {
+      "undefined" : "Establishes the implications of the output of a StepFunction in the Dialogue Manager code."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "102"
+  }, {
+    "iri" : "https://w3id.org/todo/tododm#order",
+    "baseIri" : "https://w3id.org/todo/tododm",
+    "range" : "104",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododm#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "order",
+      "undefined" : "order"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Sets the order for StepFunctions/DialogueSteps."
+    },
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "105"
   }, {
     "iri" : "https://w3id.org/todo/tododm#IDval",
     "baseIri" : "https://w3id.org/todo/tododm",
-    "range" : "98",
+    "range" : "107",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3397,37 +3581,32 @@
       "undefined" : "Unique identification value for individuals."
     },
     "attributes" : [ "datatype", "someValues" ],
-    "id" : "97"
-  }, {
-    "range" : "18",
-    "domain" : "5",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "99"
-  }, {
-    "range" : "18",
-    "domain" : "102",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "101"
-  }, {
-    "range" : "18",
-    "domain" : "94",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "103"
-  }, {
-    "range" : "18",
-    "domain" : "17",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "105"
-  }, {
-    "range" : "18",
-    "domain" : "107",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "106"
-  }, {
-    "range" : "18",
-    "domain" : "84",
-    "attributes" : [ "anonymous", "object" ],
     "id" : "108"
+  }, {
+    "range" : "18",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "110"
+  }, {
+    "range" : "18",
+    "domain" : "89",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "111"
+  }, {
+    "range" : "18",
+    "domain" : "114",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "113"
+  }, {
+    "range" : "18",
+    "domain" : "96",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "115"
+  }, {
+    "range" : "18",
+    "domain" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "116"
   }, {
     "iri" : "https://w3id.org/todo/tododm#yesUserResponseTypeImplies",
     "baseIri" : "https://w3id.org/todo/tododm",
@@ -3459,79 +3638,79 @@
     "id" : "28"
   }, {
     "range" : "18",
-    "domain" : "57",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "110"
-  }, {
-    "range" : "18",
-    "domain" : "35",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "111"
-  }, {
-    "range" : "18",
-    "domain" : "100",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "112"
-  }, {
-    "range" : "24",
-    "domain" : "92",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "114"
-  }, {
-    "range" : "18",
-    "domain" : "116",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "115"
-  }, {
-    "range" : "18",
-    "domain" : "119",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "26",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "118"
   }, {
-    "range" : "6",
-    "domain" : "5",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "120"
+    "range" : "18",
+    "domain" : "120",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "119"
   }, {
-    "range" : "6",
-    "domain" : "18",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "24",
+    "domain" : "101",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "121"
   }, {
     "range" : "24",
     "domain" : "23",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "122"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "123"
   }, {
-    "range" : "24",
-    "domain" : "75",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "18",
+    "domain" : "125",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "124"
   }, {
-    "range" : "4",
-    "domain" : "68",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "126"
-  }, {
-    "range" : "4",
-    "domain" : "16",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "18",
+    "domain" : "109",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "127"
+  }, {
+    "range" : "6",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "128"
   }, {
     "range" : "4",
     "domain" : "3",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "128"
-  }, {
-    "range" : "7",
-    "domain" : "50",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "129"
   }, {
-    "range" : "7",
-    "domain" : "49",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "24",
+    "domain" : "83",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "130"
+  }, {
+    "range" : "6",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "133"
+  }, {
+    "range" : "4",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "134"
+  }, {
+    "range" : "4",
+    "domain" : "71",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "135"
+  }, {
+    "range" : "4",
+    "domain" : "72",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "136"
+  }, {
+    "range" : "7",
+    "domain" : "54",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "137"
+  }, {
+    "range" : "7",
+    "domain" : "53",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "138"
   }, {
     "iri" : "https://w3id.org/todo/tododm#noOptionsImplies",
     "baseIri" : "https://w3id.org/todo/tododm",
@@ -3562,45 +3741,45 @@
     "attributes" : [ "object" ],
     "id" : "33"
   }, {
-    "range" : "4",
-    "domain" : "67",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "131"
+    "range" : "7",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "139"
   }, {
     "range" : "7",
     "domain" : "36",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "132"
-  }, {
-    "range" : "8",
-    "domain" : "88",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "133"
-  }, {
-    "range" : "8",
-    "domain" : "109",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "134"
-  }, {
-    "range" : "8",
-    "domain" : "136",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "135"
-  }, {
-    "range" : "8",
-    "domain" : "125",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "137"
-  }, {
-    "range" : "74",
-    "domain" : "73",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "138"
-  }, {
-    "range" : "8",
-    "domain" : "139",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "140"
+  }, {
+    "range" : "8",
+    "domain" : "112",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "141"
+  }, {
+    "range" : "82",
+    "domain" : "81",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "142"
+  }, {
+    "range" : "8",
+    "domain" : "117",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "143"
+  }, {
+    "range" : "8",
+    "domain" : "145",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "144"
+  }, {
+    "range" : "15",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "146"
+  }, {
+    "range" : "82",
+    "domain" : "70",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "147"
   }, {
     "iri" : "https://w3id.org/todo/tododm#requires",
     "baseIri" : "https://w3id.org/todo/tododm",
@@ -3628,16 +3807,16 @@
       "undefined" : "Establishes the type of UserResponse required by a SystemRequest."
     },
     "attributes" : [ "object" ],
-    "id" : "141"
+    "id" : "148"
   }, {
-    "range" : "8",
-    "domain" : "104",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "142"
+    "range" : "15",
+    "domain" : "47",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "149"
   }, {
     "iri" : "https://w3id.org/todo/tododm#implies",
     "baseIri" : "https://w3id.org/todo/tododm",
-    "range" : "45",
+    "range" : "46",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3656,17 +3835,17 @@
       "IRI-based" : "implies",
       "undefined" : "implies"
     },
-    "domain" : "100",
+    "domain" : "109",
     "subproperty" : [ "28", "29", "30", "31", "32", "9", "33" ],
     "comment" : {
       "undefined" : "Establishes the implications of the output of a StepFunction in the Dialogue Manager code."
     },
-    "attributes" : [ "someValues", "object" ],
-    "id" : "143"
+    "attributes" : [ "object", "someValues" ],
+    "id" : "150"
   }, {
     "iri" : "https://w3id.org/todo/tododm#implies",
     "baseIri" : "https://w3id.org/todo/tododm",
-    "range" : "50",
+    "range" : "36",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3685,13 +3864,13 @@
       "IRI-based" : "implies",
       "undefined" : "implies"
     },
-    "domain" : "123",
+    "domain" : "132",
     "subproperty" : [ "28", "29", "30", "31", "32", "9", "33" ],
     "comment" : {
       "undefined" : "Establishes the implications of the output of a StepFunction in the Dialogue Manager code."
     },
-    "attributes" : [ "someValues", "object" ],
-    "id" : "144"
+    "attributes" : [ "object", "someValues" ],
+    "id" : "151"
   }, {
     "iri" : "https://w3id.org/todo/tododm#singleOptionImplies",
     "baseIri" : "https://w3id.org/todo/tododm",
@@ -3724,7 +3903,7 @@
   }, {
     "iri" : "https://w3id.org/todo/tododm#implies",
     "baseIri" : "https://w3id.org/todo/tododm",
-    "range" : "109",
+    "range" : "117",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3743,17 +3922,17 @@
       "IRI-based" : "implies",
       "undefined" : "implies"
     },
-    "domain" : "75",
+    "domain" : "83",
     "subproperty" : [ "28", "29", "30", "31", "32", "9", "33" ],
     "comment" : {
       "undefined" : "Establishes the implications of the output of a StepFunction in the Dialogue Manager code."
     },
-    "attributes" : [ "someValues", "object" ],
-    "id" : "145"
+    "attributes" : [ "object", "someValues" ],
+    "id" : "152"
   }, {
     "iri" : "https://w3id.org/todo/tododm#implies",
     "baseIri" : "https://w3id.org/todo/tododm",
-    "range" : "109",
+    "range" : "117",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3772,17 +3951,17 @@
       "IRI-based" : "implies",
       "undefined" : "implies"
     },
-    "domain" : "107",
+    "domain" : "131",
     "subproperty" : [ "28", "29", "30", "31", "32", "9", "33" ],
     "comment" : {
       "undefined" : "Establishes the implications of the output of a StepFunction in the Dialogue Manager code."
     },
-    "attributes" : [ "someValues", "object" ],
-    "id" : "146"
+    "attributes" : [ "object", "someValues" ],
+    "id" : "153"
   }, {
     "iri" : "https://w3id.org/todo/tododm#implies",
     "baseIri" : "https://w3id.org/todo/tododm",
-    "range" : "88",
+    "range" : "68",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3801,13 +3980,42 @@
       "IRI-based" : "implies",
       "undefined" : "implies"
     },
-    "domain" : "92",
+    "domain" : "101",
     "subproperty" : [ "28", "29", "30", "31", "32", "9", "33" ],
     "comment" : {
       "undefined" : "Establishes the implications of the output of a StepFunction in the Dialogue Manager code."
     },
-    "attributes" : [ "someValues", "object" ],
-    "id" : "147"
+    "attributes" : [ "object", "someValues" ],
+    "id" : "154"
+  }, {
+    "iri" : "https://w3id.org/todo/tododm#implies",
+    "baseIri" : "https://w3id.org/todo/tododm",
+    "range" : "27",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/todo/tododm#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "implies",
+      "undefined" : "implies"
+    },
+    "domain" : "122",
+    "subproperty" : [ "28", "29", "30", "31", "32", "9", "33" ],
+    "comment" : {
+      "undefined" : "Establishes the implications of the output of a StepFunction in the Dialogue Manager code."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "155"
   }, {
     "iri" : "https://w3id.org/todo/tododm#implies",
     "baseIri" : "https://w3id.org/todo/tododm",
@@ -3830,45 +4038,16 @@
       "IRI-based" : "implies",
       "undefined" : "implies"
     },
-    "domain" : "113",
+    "domain" : "126",
     "subproperty" : [ "28", "29", "30", "31", "32", "9", "33" ],
     "comment" : {
       "undefined" : "Establishes the implications of the output of a StepFunction in the Dialogue Manager code."
     },
-    "attributes" : [ "someValues", "object" ],
-    "id" : "148"
-  }, {
-    "iri" : "https://w3id.org/todo/tododm#implies",
-    "baseIri" : "https://w3id.org/todo/tododm",
-    "range" : "50",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://w3id.org/todo/tododm#",
-        "type" : "label"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "implies",
-      "undefined" : "implies"
-    },
-    "domain" : "117",
-    "subproperty" : [ "28", "29", "30", "31", "32", "9", "33" ],
-    "comment" : {
-      "undefined" : "Establishes the implications of the output of a StepFunction in the Dialogue Manager code."
-    },
-    "attributes" : [ "someValues", "object" ],
-    "id" : "149"
+    "attributes" : [ "object", "someValues" ],
+    "id" : "156"
   }, {
     "iri" : "https://w3id.org/todo/tododm#hasStepFunction",
-    "inverse" : "39",
+    "inverse" : "20",
     "baseIri" : "https://w3id.org/todo/tododm",
     "range" : "14",
     "annotations" : {
@@ -3893,12 +4072,12 @@
     "comment" : {
       "undefined" : "Establishes the StepFunction corresponding to a SystemRequest or a ProcessStep."
     },
-    "attributes" : [ "someValues", "object" ],
-    "id" : "150"
+    "attributes" : [ "object", "someValues" ],
+    "id" : "157"
   }, {
     "iri" : "https://w3id.org/todo/tododm#implies",
     "baseIri" : "https://w3id.org/todo/tododm",
-    "range" : "139",
+    "range" : "145",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3922,12 +4101,12 @@
     "comment" : {
       "undefined" : "Establishes the implications of the output of a StepFunction in the Dialogue Manager code."
     },
-    "attributes" : [ "someValues", "object" ],
-    "id" : "151"
+    "attributes" : [ "object", "someValues" ],
+    "id" : "158"
   }, {
     "iri" : "https://w3id.org/todo/tododm#implies",
     "baseIri" : "https://w3id.org/todo/tododm",
-    "range" : "139",
+    "range" : "145",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3946,18 +4125,18 @@
       "IRI-based" : "implies",
       "undefined" : "implies"
     },
-    "domain" : "116",
+    "domain" : "120",
     "subproperty" : [ "28", "29", "30", "31", "32", "9", "33" ],
     "comment" : {
       "undefined" : "Establishes the implications of the output of a StepFunction in the Dialogue Manager code."
     },
-    "attributes" : [ "someValues", "object" ],
-    "id" : "152"
+    "attributes" : [ "object", "someValues" ],
+    "id" : "159"
   }, {
-    "range" : "15",
-    "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "153"
+    "range" : "18",
+    "domain" : "93",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "160"
   }, {
     "iri" : "https://w3id.org/todo/tododm#lessMaxOptionsImplies",
     "baseIri" : "https://w3id.org/todo/tododm",
@@ -3988,20 +4167,20 @@
     "attributes" : [ "object" ],
     "id" : "13"
   }, {
+    "range" : "18",
+    "domain" : "106",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "161"
+  }, {
     "range" : "15",
     "domain" : "14",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "154"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "162"
   }, {
-    "range" : "74",
-    "domain" : "66",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "155"
-  }, {
-    "range" : "15",
-    "domain" : "46",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "156"
+    "range" : "18",
+    "domain" : "126",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "163"
   }, {
     "iri" : "https://w3id.org/todo/tododm#moreMaxOptionsImplies",
     "baseIri" : "https://w3id.org/todo/tododm",
@@ -4033,27 +4212,27 @@
     "id" : "12"
   }, {
     "range" : "18",
-    "domain" : "113",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "157"
+    "domain" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "164"
   }, {
     "range" : "18",
-    "domain" : "59",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "158"
+    "domain" : "45",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "165"
   }, {
     "range" : "18",
-    "domain" : "117",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "159"
+    "domain" : "122",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "166"
   }, {
     "range" : "18",
-    "domain" : "86",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "160"
+    "domain" : "63",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "167"
   }, {
     "iri" : "https://w3id.org/todo/tododm#isRequiredBy",
-    "inverse" : "141",
+    "inverse" : "148",
     "baseIri" : "https://w3id.org/todo/tododm",
     "range" : "10",
     "annotations" : {
@@ -4079,41 +4258,41 @@
       "undefined" : "Establishes the SystemRequest that requires a given UserResponse type."
     },
     "attributes" : [ "object" ],
-    "id" : "161"
+    "id" : "168"
   }, {
     "range" : "18",
-    "domain" : "24",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "162"
+    "domain" : "39",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "169"
   }, {
     "range" : "18",
-    "domain" : "44",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "163"
-  }, {
-    "range" : "18",
-    "domain" : "26",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "164"
-  }, {
-    "range" : "18",
-    "domain" : "96",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "165"
-  }, {
-    "range" : "18",
-    "domain" : "74",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "166"
-  }, {
-    "range" : "18",
-    "domain" : "123",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "167"
+    "domain" : "132",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "170"
   }, {
     "range" : "18",
     "domain" : "21",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "168"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "171"
+  }, {
+    "range" : "18",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "172"
+  }, {
+    "range" : "18",
+    "domain" : "131",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "173"
+  }, {
+    "range" : "18",
+    "domain" : "103",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "174"
+  }, {
+    "range" : "18",
+    "domain" : "82",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "175"
   } ]
 }

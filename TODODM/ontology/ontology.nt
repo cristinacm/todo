@@ -515,6 +515,16 @@ _:genid14 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001
 <https://w3id.org/todo/tododm#DialogueControlMarker> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 <https://w3id.org/todo/tododm#DialogueControlMarker> <http://www.w3.org/2004/02/skos/core#example> "Continue, restart dialogue" .
 # 
+# https://w3id.org/todo/tododm#DialogueFinished
+<https://w3id.org/todo/tododm#DialogueFinished> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododm#DialogueFinished> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/todo/tododm#SystemResponse> .
+<https://w3id.org/todo/tododm#DialogueFinished> <http://www.w3.org/2000/01/rdf-schema#comment> "Response given by the system when the dialogue process has finished (i.e., when the user confirms the action and argument values)" .
+<https://w3id.org/todo/tododm#DialogueFinished> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododm#" .
+<https://w3id.org/todo/tododm#DialogueFinished> <http://www.w3.org/2000/01/rdf-schema#label> "DialogueFinished" .
+<https://w3id.org/todo/tododm#DialogueFinished> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<https://w3id.org/todo/tododm#DialogueFinished> <http://www.w3.org/2004/02/skos/core#example> "Done!"@en .
+<https://w3id.org/todo/tododm#DialogueFinished> <http://www.w3.org/2004/02/skos/core#example> "¡Listo!"@es .
+# 
 # https://w3id.org/todo/tododm#DialogueStep
 <https://w3id.org/todo/tododm#DialogueStep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/todo/tododm#DialogueStep> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
@@ -604,6 +614,16 @@ _:genid20 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/
 <https://w3id.org/todo/tododm#MissingInformationResponse> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 <https://w3id.org/todo/tododm#MissingInformationResponse> <http://www.w3.org/2004/02/skos/core#example> "Hay información que me falta."@es .
 <https://w3id.org/todo/tododm#MissingInformationResponse> <http://www.w3.org/2004/02/skos/core#example> "I still need some more information."@es .
+# 
+# https://w3id.org/todo/tododm#NewDialogue
+<https://w3id.org/todo/tododm#NewDialogue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododm#NewDialogue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/todo/tododm#YesNoRequest> .
+<https://w3id.org/todo/tododm#NewDialogue> <http://www.w3.org/2000/01/rdf-schema#comment> "Request that asks the user whether they want to initiate a new dialogue process." .
+<https://w3id.org/todo/tododm#NewDialogue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododm#" .
+<https://w3id.org/todo/tododm#NewDialogue> <http://www.w3.org/2000/01/rdf-schema#label> "NewDialogue" .
+<https://w3id.org/todo/tododm#NewDialogue> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<https://w3id.org/todo/tododm#NewDialogue> <http://www.w3.org/2004/02/skos/core#example> "Do you need anything else?"@en .
+<https://w3id.org/todo/tododm#NewDialogue> <http://www.w3.org/2004/02/skos/core#example> "¿Necesitas algo más?"@es .
 # 
 # https://w3id.org/todo/tododm#NoMoreOptionsContinueResponse
 <https://w3id.org/todo/tododm#NoMoreOptionsContinueResponse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

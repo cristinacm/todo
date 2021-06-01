@@ -905,6 +905,21 @@ Also known as &quot;Non polar/Open question&quot; in linguistics.</rdfs:comment>
     
 
 
+    <!-- https://w3id.org/todo/tododm#DialogueFinished -->
+
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododm#DialogueFinished">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododm#SystemResponse"/>
+        <rdfs:comment>Response given by the system when the dialogue process has finished (i.e., when the user confirms the action and argument values)</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
+        <rdfs:label>DialogueFinished</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+        <skos:example xml:lang="en">Done!</skos:example>
+        <skos:example xml:lang="es">¡Listo!</skos:example>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/todo/tododm#DialogueStep -->
 
 
@@ -1069,6 +1084,21 @@ USR: &quot;Sí&quot;</skos:example>
         <ns1:term_status>stable</ns1:term_status>
         <skos:example xml:lang="es">Hay información que me falta.</skos:example>
         <skos:example xml:lang="es">I still need some more information.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/todo/tododm#NewDialogue -->
+
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododm#NewDialogue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododm#YesNoRequest"/>
+        <rdfs:comment>Request that asks the user whether they want to initiate a new dialogue process.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
+        <rdfs:label>NewDialogue</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+        <skos:example xml:lang="en">Do you need anything else?</skos:example>
+        <skos:example xml:lang="es">¿Necesitas algo más?</skos:example>
     </owl:Class>
     
 
