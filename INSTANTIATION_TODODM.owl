@@ -342,12 +342,24 @@
     
 
 
+    <!-- https://w3id.org/todo/tododm-inst#SReqYN_NewDialogue -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/todo/tododm-inst#SReqYN_NewDialogue">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#NewDialogue"/>
+        <tododm:hasStepFunction rdf:resource="https://w3id.org/todo/tododm-inst#stepFunction_YesNoDetermine_NewDialogue"/>
+        <tododm:outputSentence xml:lang="es">¿Necesitas algo más?</tododm:outputSentence>
+        <tododm:outputSentence xml:lang="es">¿Quieres algo más?</tododm:outputSentence>
+        <tododm:outputSentence xml:lang="es">¿Quieres mandarme una nueva petición?</tododm:outputSentence>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/todo/tododm-inst#SReqYN_Reassure -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/todo/tododm-inst#SReqYN_Reassure">
         <rdf:type rdf:resource="https://w3id.org/todo/tododm#ReassureFeedbackRequest"/>
         <tododm:hasStepFunction rdf:resource="https://w3id.org/todo/tododm-inst#stepFunction_YesNoDetermine_ReassureFeedback"/>
-        <tododm:outputSentence xml:lang="es">Entonces, quieres {actionTag} {argumentConnector} {worldElementIDval}, ¿verdad?</tododm:outputSentence>
+        <tododm:outputSentence xml:lang="es">Entonces, quieres {actionTag} {argTags_argValues}, ¿verdad?</tododm:outputSentence>
     </owl:NamedIndividual>
     
 
@@ -460,6 +472,17 @@
         <tododm:implies rdf:resource="https://w3id.org/todo/tododm-inst#dialMarker_return"/>
         <tododm:outputSentence xml:lang="es">Solo necesito que me digas sí o no, por favor.</tododm:outputSentence>
         <tododm:outputSentence xml:lang="es">¡Con que me digas sí o no es suficiente!</tododm:outputSentence>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/todo/tododm-inst#SResp_DialogueFinished -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/todo/tododm-inst#SResp_DialogueFinished">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#DialogueFinished"/>
+        <tododm:implies rdf:resource="https://w3id.org/todo/tododm-inst#SReqYN_NewDialogue"/>
+        <tododm:outputSentence xml:lang="es">¡Listo!</tododm:outputSentence>
+        <tododm:outputSentence xml:lang="es">¡Ya está!</tododm:outputSentence>
     </owl:NamedIndividual>
     
 
@@ -593,6 +616,16 @@
         <rdf:type rdf:resource="https://w3id.org/todo/tododm#TooManyWorldElementOptionsResponse"/>
         <tododm:implies rdf:resource="https://w3id.org/todo/tododm-inst#SReqCont_ArgClarification"/>
         <tododm:outputSentence xml:lang="es">Tengo demasiadas opciones con la información que me has dado.</tododm:outputSentence>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/todo/tododm-inst#SResp_TooManyWorldElementOptions_restart -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/todo/tododm-inst#SResp_TooManyWorldElementOptions_restart">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#TooManyWorldElementOptionsResponse"/>
+        <tododm:implies rdf:resource="https://w3id.org/todo/tododm-inst#dialMarker_restart"/>
+        <tododm:outputSentence xml:lang="es">Tengo demasiadas opciones con la información que me has dado y no puedo continuar. Necesitaré que repitas tu comando.</tododm:outputSentence>
     </owl:NamedIndividual>
     
 
@@ -800,13 +833,25 @@
     
 
 
+    <!-- https://w3id.org/todo/tododm-inst#stepFunction_YesNoDetermine_NewDialogue -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/todo/tododm-inst#stepFunction_YesNoDetermine_NewDialogue">
+        <rdf:type rdf:resource="https://w3id.org/todo/tododm#YesNoRequestStepFunction"/>
+        <tododm:incorrectUserResponseTypeImplies rdf:resource="https://w3id.org/todo/tododm-inst#SResp_ContentRespNotExpected"/>
+        <tododm:noUserResponseTypeImplies rdf:resource="https://w3id.org/todo/tododm-inst#dialMarker_finishDial"/>
+        <tododm:yesUserResponseTypeImplies rdf:resource="https://w3id.org/todo/tododm-inst#dialStep_processUserRequest"/>
+        <tododm:IDval xml:lang="es">YesNo_NewDialogue</tododm:IDval>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/todo/tododm-inst#stepFunction_YesNoDetermine_ReassureFeedback -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/todo/tododm-inst#stepFunction_YesNoDetermine_ReassureFeedback">
         <rdf:type rdf:resource="https://w3id.org/todo/tododm#YesNoRequestStepFunction"/>
         <tododm:incorrectUserResponseTypeImplies rdf:resource="https://w3id.org/todo/tododm-inst#SResp_ContentRespNotExpected"/>
         <tododm:noUserResponseTypeImplies rdf:resource="https://w3id.org/todo/tododm-inst#SReqYN_IncorrectArg"/>
-        <tododm:yesUserResponseTypeImplies rdf:resource="https://w3id.org/todo/tododm-inst#dialMarker_finishDial"/>
+        <tododm:yesUserResponseTypeImplies rdf:resource="https://w3id.org/todo/tododm-inst#SResp_DialogueFinished"/>
         <tododm:IDval>YesNo_ReassureFeedback</tododm:IDval>
     </owl:NamedIndividual>
     
@@ -912,6 +957,7 @@
         <rdf:type rdf:resource="https://w3id.org/todo/tododm#ContentRequestStepFunction"/>
         <tododm:incorrectUserResponseTypeImplies rdf:resource="https://w3id.org/todo/tododm-inst#SResp_YNRespNotExpected"/>
         <tododm:lessMaxOptionsImplies rdf:resource="https://w3id.org/todo/tododm-inst#stepFunction_YesNoDetermine_ArgumentValueDisambiguation"/>
+        <tododm:moreMaxOptionsImplies rdf:resource="https://w3id.org/todo/tododm-inst#SResp_TooManyWorldElementOptions_restart"/>
         <tododm:singleOptionImplies rdf:resource="https://w3id.org/todo/tododm-inst#processStep_checkArgs_missingArgs"/>
         <tododm:IDval>obtainArgumentClarification</tododm:IDval>
     </owl:NamedIndividual>
