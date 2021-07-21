@@ -177,6 +177,17 @@
     
 
 
+    <!-- https://w3id.org/todo/tododt#hasSystemResponse -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododt#hasSystemResponse">
+        <rdfs:comment>Establishes the SystemResponse corresponding to a SecondaryDialogueTrace.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododt#</rdfs:isDefinedBy>
+        <rdfs:label>hasSystemResponse</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/todo/tododt#hasUserRequest -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododt#hasUserRequest">
@@ -506,6 +517,12 @@ System Req: &quot;¿Quieres ir a la {sala1}?&quot;; &quot;¿Quieres ir a la {sal
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/todo/tododt#hasSystemRequest"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododt#SystemRequestTrace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododt#hasSystemResponse"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododt#SystemResponseTrace"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
