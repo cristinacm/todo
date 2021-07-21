@@ -187,6 +187,157 @@
         <rdfs:label>isTraceOf</rdfs:label>
         <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/todo/tododt#ContentUserResponseTrace -->
+
+    <rdf:Description rdf:about="https://w3id.org/todo/tododt#ContentUserResponseTrace">
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododm#IDval"/>
+        </owl:hasKey>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/todo/tododt#DialogueProcessTrace -->
+
+    <rdf:Description rdf:about="https://w3id.org/todo/tododt#DialogueProcessTrace">
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododm#IDval"/>
+        </owl:hasKey>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/todo/tododt#DialogueTrace -->
+
+    <rdf:Description rdf:about="https://w3id.org/todo/tododt#DialogueTrace">
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododm#IDval"/>
+        </owl:hasKey>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/todo/tododt#NoUserResponse -->
+
+    <rdf:Description rdf:about="https://w3id.org/todo/tododt#NoUserResponse">
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododm#IDval"/>
+        </owl:hasKey>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/todo/tododt#NullUserResponseTrace -->
+
+    <rdf:Description rdf:about="https://w3id.org/todo/tododt#NullUserResponseTrace">
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododm#IDval"/>
+        </owl:hasKey>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/todo/tododt#SecondaryDialogueTrace -->
+
+    <rdf:Description rdf:about="https://w3id.org/todo/tododt#SecondaryDialogueTrace">
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododm#IDval"/>
+        </owl:hasKey>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/todo/tododt#SystemRequestTrace -->
+
+    <rdf:Description rdf:about="https://w3id.org/todo/tododt#SystemRequestTrace">
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododm#IDval"/>
+        </owl:hasKey>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/todo/tododt#SystemResponseTrace -->
+
+    <rdf:Description rdf:about="https://w3id.org/todo/tododt#SystemResponseTrace">
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododm#IDval"/>
+        </owl:hasKey>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/todo/tododt#SystemStepTrace -->
+
+    <rdf:Description rdf:about="https://w3id.org/todo/tododt#SystemStepTrace">
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododm#IDval"/>
+        </owl:hasKey>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/todo/tododt#UserRequestTrace -->
+
+    <rdf:Description rdf:about="https://w3id.org/todo/tododt#UserRequestTrace">
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododm#IDval"/>
+        </owl:hasKey>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/todo/tododt#UserResponseTrace -->
+
+    <rdf:Description rdf:about="https://w3id.org/todo/tododt#UserResponseTrace">
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododm#IDval"/>
+        </owl:hasKey>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/todo/tododt#UserStepTrace -->
+
+    <rdf:Description rdf:about="https://w3id.org/todo/tododt#UserStepTrace">
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododm#IDval"/>
+        </owl:hasKey>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/todo/tododt#YesNoUserResponseTrace -->
+
+    <rdf:Description rdf:about="https://w3id.org/todo/tododt#YesNoUserResponseTrace">
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododm#IDval"/>
+        </owl:hasKey>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/todo/tododt#YesUserResponse -->
+
+    <rdf:Description rdf:about="https://w3id.org/todo/tododt#YesUserResponse">
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododm#IDval"/>
+        </owl:hasKey>
+    </rdf:Description>
 </rdf:RDF>
 
 
