@@ -83,6 +83,12 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododom#ActionTrace"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododom#hasKeyElement"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododom#KeyElementTrace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
