@@ -353,17 +353,6 @@ System Req: &quot;¿Quieres ir a la {sala1}?&quot;; &quot;¿Quieres ir a la {sal
     
 
 
-    <!-- https://w3id.org/todo/tododt#verb -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/todo/tododt#verb">
-        <rdfs:comment>Key element classified as &quot;verb&quot;/&quot;action&quot;.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/todo/tododt#</rdfs:isDefinedBy>
-        <rdfs:label>verb</rdfs:label>
-        <vs:term_status>stable</vs:term_status>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
