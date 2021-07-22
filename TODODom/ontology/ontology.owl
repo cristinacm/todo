@@ -649,6 +649,17 @@ ID isTypeOf ?y .</rdfs:comment>
     
 
 
+    <!-- https://w3id.org/todo/tododom#current -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/todo/tododom#current">
+        <rdfs:comment>Flag to determine if the KeyElementTrace is the one being processed by the Dialogue Manager.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododom#</rdfs:isDefinedBy>
+        <rdfs:label>current</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://w3id.org/todo/tododom#implementation -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/todo/tododom#implementation">
@@ -656,6 +667,17 @@ ID isTypeOf ?y .</rdfs:comment>
         <rdfs:comment>Sets specific implementation information for a Service.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododom#</rdfs:isDefinedBy>
         <rdfs:label>implementation</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/todo/tododom#index -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/todo/tododom#index">
+        <rdfs:comment>Flag to determine the order of KeyElementTraces.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododom#</rdfs:isDefinedBy>
+        <rdfs:label>index</rdfs:label>
         <vs:term_status>stable</vs:term_status>
     </owl:DatatypeProperty>
     
@@ -1285,6 +1307,18 @@ The TSRI for obtain_information has an ActionType &quot;service&quot;.</skos:exa
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/todo/tododom#hasPossibleArgument"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododom#ArgumentTrace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododom#asked"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododom#current"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:hasKey rdf:parseType="Collection">
