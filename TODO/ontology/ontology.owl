@@ -46,8 +46,21 @@
         <owl:inverseOf rdf:resource="https://w3id.org/todo#isActionTraceOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:comment>Establishes the relationship between an Action and its Trace</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/todo/todo</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>https://w3id.org/todo#</rdfs:isDefinedBy>
         <rdfs:label>hasActionTrace</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/todo#hasObtained -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo#hasObtained">
+        <owl:inverseOf rdf:resource="https://w3id.org/todo#obtainedThrough"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:comment>Establishes a relation between a SecondaryDialogue and the information (ActionTrace/ArgumentTrace/WorldElementTrace) that has been obtained thanks to it.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo#</rdfs:isDefinedBy>
+        <rdfs:label>hasObtained</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -59,6 +72,18 @@
         <rdfs:comment>Establishes the relationship between an ActionTrace and the Action it refers to.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/todo</rdfs:isDefinedBy>
         <rdfs:label>isActionTraceOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/todo#obtainedThrough -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo#obtainedThrough">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:comment>Establishes a relation between a Trace (ActionTrace/ArgumentTrace/WorldElementTrace) and the SecondaryDialogue performed to obtain said Trace.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo#</rdfs:isDefinedBy>
+        <rdfs:label>obtainedThrough</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -95,7 +120,65 @@
 
     <!-- https://w3id.org/todo/tododom#ActionTrace -->
 
-    <owl:Class rdf:about="https://w3id.org/todo/tododom#ActionTrace"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododom#ActionTrace">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo#obtainedThrough"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododt#SecondaryDialogueTrace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/todo/tododom#ArgumentTrace -->
+
+    <rdf:Description rdf:about="https://w3id.org/todo/tododom#ArgumentTrace">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo#obtainedThrough"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododt#SecondaryDialogueTrace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/todo/tododom#WorldElementTrace -->
+
+    <rdf:Description rdf:about="https://w3id.org/todo/tododom#WorldElementTrace">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo#obtainedThrough"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododt#SecondaryDialogueTrace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/todo/tododt#SecondaryDialogueTrace -->
+
+    <rdf:Description rdf:about="https://w3id.org/todo/tododt#SecondaryDialogueTrace">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo#hasObtained"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododom#ActionTrace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo#hasObtained"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododom#ArgumentTrace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo#hasObtained"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododom#WorldElementTrace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
 </rdf:RDF>
 
 
