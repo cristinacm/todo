@@ -742,6 +742,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/todo/tododm-inst#dialMarker_return">
         <rdf:type rdf:resource="https://w3id.org/todo/tododm#Return"/>
+        <tododm:IDval>return</tododm:IDval>
     </owl:NamedIndividual>
     
 
@@ -875,7 +876,7 @@
         <tododm:incorrectUserResponseTypeImplies rdf:resource="https://w3id.org/todo/tododm-inst#SResp_ContentRespNotExpected"/>
         <tododm:noUserResponseTypeImplies rdf:resource="https://w3id.org/todo/tododm-inst#dialMarker_finishDial"/>
         <tododm:userResponseNotUnderstoodImplies rdf:resource="https://w3id.org/todo/tododm-inst#SResp_NotUnderstood"/>
-        <tododm:yesUserResponseTypeImplies rdf:resource="https://w3id.org/todo/tododm-inst#dialStep_processUserRequest"/>
+        <tododm:yesUserResponseTypeImplies rdf:resource="https://w3id.org/todo/tododm-inst#dialMarker_restart"/>
         <tododm:IDval xml:lang="es">YesNo_NewDialogue</tododm:IDval>
     </owl:NamedIndividual>
     
