@@ -13,12 +13,12 @@
                                 <http://purl.org/dc/terms/creator> "Cristina Aceta (Tekniker) <mailto:cristina.aceta@tekniker.es>" ;
                                 <http://purl.org/dc/terms/description> "Module for dialogue tracing." ;
                                 <http://purl.org/dc/terms/issued> ""^^xsd:dateTime ;
-                                <http://purl.org/dc/terms/modified> "2021-03-08T16:00:00"^^xsd:dateTime ;
+                                <http://purl.org/dc/terms/modified> "2021-09-23T10:00:00"^^xsd:dateTime ;
                                 <http://purl.org/dc/terms/title> "TODODT: Dialogue Tracing Module for Task-Oriented Dialogue management Ontology (TODO)" ;
                                 <http://purl.org/vocab/vann/preferredNamespacePrefix> "tododt" ;
-                                <http://purl.org/vocab/vann/preferredNamespaceUri> "" ;
+                                <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/todo/tododt" ;
                                 owl:priorVersion "" ;
-                                owl:versionInfo "1.0.0" .
+                                owl:versionInfo 2.1 .
 
 #################################################################
 #    Annotation properties
@@ -109,6 +109,14 @@ xsd:time rdf:type rdfs:Datatype .
                   <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
+###  https://w3id.org/todo/tododt#hasSystemResponse
+:hasSystemResponse rdf:type owl:ObjectProperty ;
+                   rdfs:comment "Establishes the SystemResponse corresponding to a SecondaryDialogueTrace." ;
+                   rdfs:isDefinedBy "https://w3id.org/todo/tododt#" ;
+                   rdfs:label "hasSystemResponse" ;
+                   <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
 ###  https://w3id.org/todo/tododt#hasUserRequest
 :hasUserRequest rdf:type owl:ObjectProperty ;
                 rdfs:comment "Establishes the UserRequest corresponding to a DialogueTrace." ;
@@ -128,6 +136,14 @@ xsd:time rdf:type rdfs:Datatype .
 #################################################################
 #    Data properties
 #################################################################
+
+###  https://w3id.org/todo/tododt#IDval
+:IDval rdf:type owl:DatatypeProperty ;
+       rdfs:comment "Unique identification value for individuals." ;
+       rdfs:isDefinedBy "https://w3id.org/todo/tododom#" ;
+       rdfs:label "IDval" ;
+       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
 
 ###  https://w3id.org/todo/tododt#currentValue
 :currentValue rdf:type owl:DatatypeProperty ;
@@ -229,14 +245,6 @@ System Req: \"¿Quieres ir a la {sala1}?\"; \"¿Quieres ir a la {sala2}?\""""@es
       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
-###  https://w3id.org/todo/tododt#verb
-:verb rdf:type owl:DatatypeProperty ;
-      rdfs:comment "Key element classified as \"verb\"/\"action\"." ;
-      rdfs:isDefinedBy "https://w3id.org/todo/tododt#" ;
-      rdfs:label "verb" ;
-      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
-
-
 #################################################################
 #    Classes
 #################################################################
@@ -245,6 +253,8 @@ System Req: \"¿Quieres ir a la {sala1}?\"; \"¿Quieres ir a la {sala2}?\""""@es
 :ContentUserResponseTrace rdf:type owl:Class ;
                           rdfs:subClassOf :UserResponseTrace ;
                           owl:disjointWith :YesNoUserResponseTrace ;
+                          owl:hasKey ( :IDval
+                                     ) ;
                           rdfs:comment "Element that leaves a record of the User Responses performed throughout the dialogue process. These responses provide specific information, as a response for a ContentRequest."@en ;
                           rdfs:isDefinedBy "https://w3id.org/todo/tododt#" ;
                           rdfs:label "ContentUserResponseTrace" ;
@@ -281,6 +291,8 @@ System Req: \"¿Quieres ir a la {sala1}?\"; \"¿Quieres ir a la {sala2}?\""""@es
                                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                         owl:onDataRange xsd:dateTime
                                       ] ;
+                      owl:hasKey ( :IDval
+                                 ) ;
                       rdfs:comment "Element that leaves a record of the dialogues performed throughout the dialogue process." ;
                       rdfs:isDefinedBy "https://w3id.org/todo/tododt#" ;
                       rdfs:label "DialogueProcessTrace" ;
@@ -299,6 +311,8 @@ System Req: \"¿Quieres ir a la {sala1}?\"; \"¿Quieres ir a la {sala2}?\""""@es
                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                  owl:onDataRange xsd:string
                                ] ;
+               owl:hasKey ( :IDval
+                          ) ;
                rdfs:comment "Element that leaves a record of the dialogues performed." ;
                rdfs:isDefinedBy "https://w3id.org/todo/tododt#" ;
                rdfs:label "DialogueTrace" ;
@@ -308,6 +322,8 @@ System Req: \"¿Quieres ir a la {sala1}?\"; \"¿Quieres ir a la {sala2}?\""""@es
 ###  https://w3id.org/todo/tododt#NoUserResponse
 :NoUserResponse rdf:type owl:Class ;
                 rdfs:subClassOf :YesNoUserResponseTrace ;
+                owl:hasKey ( :IDval
+                           ) ;
                 rdfs:comment "Element that leaves a record of the User Responses performed throughout the dialogue process. These responses correspond to a negative polarity."@en ;
                 rdfs:isDefinedBy "https://w3id.org/todo/tododt#" ;
                 rdfs:label "NoUserResponse" ;
@@ -318,6 +334,8 @@ System Req: \"¿Quieres ir a la {sala1}?\"; \"¿Quieres ir a la {sala2}?\""""@es
 ###  https://w3id.org/todo/tododt#NullUserResponseTrace
 :NullUserResponseTrace rdf:type owl:Class ;
                        rdfs:subClassOf :UserResponseTrace ;
+                       owl:hasKey ( :IDval
+                                  ) ;
                        rdfs:comment "Response that does not represent a value that can be classified as ContentResponse or YesNoResponse."@en ;
                        rdfs:isDefinedBy "https://w3id.org/todo/tododt#" ;
                        rdfs:label "NullUserResponseTrace" ;
@@ -333,6 +351,10 @@ System Req: \"¿Quieres ir a la {sala1}?\"; \"¿Quieres ir a la {sala2}?\""""@es
                                           owl:someValuesFrom :SystemRequestTrace
                                         ] ,
                                         [ rdf:type owl:Restriction ;
+                                          owl:onProperty :hasSystemResponse ;
+                                          owl:someValuesFrom :SystemResponseTrace
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
                                           owl:onProperty :hasUserResponse ;
                                           owl:someValuesFrom :UserResponseTrace
                                         ] ,
@@ -341,6 +363,8 @@ System Req: \"¿Quieres ir a la {sala1}?\"; \"¿Quieres ir a la {sala2}?\""""@es
                                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                           owl:onDataRange xsd:string
                                         ] ;
+                        owl:hasKey ( :IDval
+                                   ) ;
                         rdfs:comment "Element that leaves a record of the secondary dialogues performed." ;
                         rdfs:isDefinedBy "https://w3id.org/todo/tododt#" ;
                         rdfs:label "SecondaryDialogueTrace" ;
@@ -350,6 +374,8 @@ System Req: \"¿Quieres ir a la {sala1}?\"; \"¿Quieres ir a la {sala2}?\""""@es
 ###  https://w3id.org/todo/tododt#SystemRequestTrace
 :SystemRequestTrace rdf:type owl:Class ;
                     rdfs:subClassOf :SystemStepTrace ;
+                    owl:hasKey ( :IDval
+                               ) ;
                     rdfs:comment "Element that leaves a record of the SystemRequests performed throughout the dialogue process." ;
                     rdfs:isDefinedBy "https://w3id.org/todo/tododt#" ;
                     rdfs:label "SystemRequestTrace" ;
@@ -359,6 +385,8 @@ System Req: \"¿Quieres ir a la {sala1}?\"; \"¿Quieres ir a la {sala2}?\""""@es
 ###  https://w3id.org/todo/tododt#SystemResponseTrace
 :SystemResponseTrace rdf:type owl:Class ;
                      rdfs:subClassOf :SystemStepTrace ;
+                     owl:hasKey ( :IDval
+                                ) ;
                      rdfs:comment "Element that leaves a record of the SystemResponses performed throughout the dialogue process." ;
                      rdfs:isDefinedBy "https://w3id.org/todo/tododt#" ;
                      rdfs:label "SystemResponseTrace" ;
@@ -367,6 +395,8 @@ System Req: \"¿Quieres ir a la {sala1}?\"; \"¿Quieres ir a la {sala2}?\""""@es
 
 ###  https://w3id.org/todo/tododt#SystemStepTrace
 :SystemStepTrace rdf:type owl:Class ;
+                 owl:hasKey ( :IDval
+                            ) ;
                  rdfs:comment "Element that leaves a record of the SystemSteps performed throughout the dialogue process." ;
                  rdfs:isDefinedBy "https://w3id.org/todo/tododt#" ;
                  rdfs:label "SystemStepTrace" ;
@@ -377,6 +407,8 @@ System Req: \"¿Quieres ir a la {sala1}?\"; \"¿Quieres ir a la {sala2}?\""""@es
 :UserRequestTrace rdf:type owl:Class ;
                   rdfs:subClassOf :UserStepTrace ;
                   owl:disjointWith :UserResponseTrace ;
+                  owl:hasKey ( :IDval
+                             ) ;
                   rdfs:comment "Element that leaves a record of the User Requests performed throughout the dialogue process."@en ;
                   rdfs:isDefinedBy "https://w3id.org/todo/tododt#" ;
                   rdfs:label "UserRequestTrace" ;
@@ -386,6 +418,8 @@ System Req: \"¿Quieres ir a la {sala1}?\"; \"¿Quieres ir a la {sala2}?\""""@es
 ###  https://w3id.org/todo/tododt#UserResponseTrace
 :UserResponseTrace rdf:type owl:Class ;
                    rdfs:subClassOf :UserStepTrace ;
+                   owl:hasKey ( :IDval
+                              ) ;
                    rdfs:comment "Element that leaves a record of the User Responses performed throughout the dialogue process."@en ;
                    rdfs:isDefinedBy "https://w3id.org/todo/tododt#" ;
                    rdfs:label "UserResponseTrace" ;
@@ -399,6 +433,8 @@ System Req: \"¿Quieres ir a la {sala1}?\"; \"¿Quieres ir a la {sala2}?\""""@es
                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                  owl:onDataRange xsd:string
                                ] ;
+               owl:hasKey ( :IDval
+                          ) ;
                rdfs:comment "Element that leaves a record of the user steps (requests and responses) performed throughout the dialogue process." ;
                rdfs:isDefinedBy "https://w3id.org/todo/tododt#" ;
                rdfs:label "UserStepTrace" ;
@@ -408,6 +444,8 @@ System Req: \"¿Quieres ir a la {sala1}?\"; \"¿Quieres ir a la {sala2}?\""""@es
 ###  https://w3id.org/todo/tododt#YesNoUserResponseTrace
 :YesNoUserResponseTrace rdf:type owl:Class ;
                         rdfs:subClassOf :UserResponseTrace ;
+                        owl:hasKey ( :IDval
+                                   ) ;
                         rdfs:comment "Element that leaves a record of the User Responses performed throughout the dialogue process. These responses correspond to a positive or negative polarity."@en ;
                         rdfs:isDefinedBy "https://w3id.org/todo/tododt#" ;
                         rdfs:label "YesNoUserResponseTrace" ;
@@ -422,6 +460,8 @@ System Req: \"¿Quieres ir a la {sala1}?\"; \"¿Quieres ir a la {sala2}?\""""@es
 ###  https://w3id.org/todo/tododt#YesUserResponse
 :YesUserResponse rdf:type owl:Class ;
                  rdfs:subClassOf :YesNoUserResponseTrace ;
+                 owl:hasKey ( :IDval
+                            ) ;
                  rdfs:comment "Element that leaves a record of the User Responses performed throughout the dialogue process. These responses correspond to a positive polarity."@en ;
                  rdfs:isDefinedBy "https://w3id.org/todo/tododt#" ;
                  rdfs:label "YesUserResponse" ;

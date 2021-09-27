@@ -68,7 +68,7 @@
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2021-03-08T16:00:00"
+    "@value" : "2021-09-23T10:00:00"
   } ],
   "http://purl.org/dc/terms/title" : [ {
     "@value" : "TODODial: Dialogue Module for Task-Oriented Dialogue management Ontology (TODO)"
@@ -88,7 +88,8 @@
     "@value" : ""
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "1.0.0"
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "2.1"
   } ]
 }, {
   "@id" : "https://w3id.org/todo/tododial#hasDialogueProcessStep",

@@ -1,17 +1,17 @@
-<https://w3id.org/todo/todo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/todo/todo> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/todo/tododial> .
-<https://w3id.org/todo/todo> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/todo/tododom> .
-<https://w3id.org/todo/todo> <http://creativecommons.org/ns#license> "CC BY <https://creativecommons.org/licenses/by/2.0/>" .
-<https://w3id.org/todo/todo> <http://purl.org/dc/terms/contributor> "Izaskun Fernández (Tekniker) <mailto:izaskun.fernandez@tekniker.es>" .
-<https://w3id.org/todo/todo> <http://purl.org/dc/terms/created> "2020-04-21T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://w3id.org/todo/todo> <http://purl.org/dc/terms/creator> "Cristina Aceta (Tekniker) <mailto:cristina.aceta@tekniker.es>" .
-<https://w3id.org/todo/todo> <http://purl.org/dc/terms/description> "" .
-<https://w3id.org/todo/todo> <http://purl.org/dc/terms/issued> ""^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://w3id.org/todo/todo> <http://purl.org/dc/terms/modified> "2021-03-09T11:00:00" .
-<https://w3id.org/todo/todo> <http://purl.org/dc/terms/title> "TODO: Task-Oriented Dialogue management Ontology" .
-<https://w3id.org/todo/todo> <http://purl.org/vocab/vann/preferredNamespacePrefix> "DialSystemOnt" .
-<https://w3id.org/todo/todo> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/todo/todo" .
-<https://w3id.org/todo/todo> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
+<https://w3id.org/todo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/todo> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/todo/tododial> .
+<https://w3id.org/todo> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/todo/tododom> .
+<https://w3id.org/todo> <http://creativecommons.org/ns#license> "http://purl.org/NET/rdflicense/cc-by4.0" .
+<https://w3id.org/todo> <http://purl.org/dc/terms/contributor> "Izaskun Fernández (Tekniker) <mailto:izaskun.fernandez@tekniker.es>" .
+<https://w3id.org/todo> <http://purl.org/dc/terms/created> "2020-04-21T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/todo> <http://purl.org/dc/terms/creator> "Cristina Aceta (Tekniker) <mailto:cristina.aceta@tekniker.es>" .
+<https://w3id.org/todo> <http://purl.org/dc/terms/description> "With the aim of enhancing natural communication between workers in industrial environments and the systems to be used by them, TODO (Task-Oriented Dialogue management Ontology) has been developed to be the core of task-oriented dialogue systems. TODO is a core ontology that provides task-oriented dialogue systems with the necessary means to be capable of naturally interacting with workers (both at understanding and at ommunication levels) and that can be easily adapted to different industrial scenarios, reducing adaptation time and costs. Moreover, it allows to store and reproduce the dialogue process to be able to learn from new interactions." .
+<https://w3id.org/todo> <http://purl.org/dc/terms/issued> ""^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/todo> <http://purl.org/dc/terms/modified> "2021-09-23T10:00:00" .
+<https://w3id.org/todo> <http://purl.org/dc/terms/title> "TODO: Task-Oriented Dialogue management Ontology" .
+<https://w3id.org/todo> <http://purl.org/vocab/vann/preferredNamespacePrefix> "todo" .
+<https://w3id.org/todo> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/todo" .
+<https://w3id.org/todo> <http://www.w3.org/2002/07/owl#versionInfo> "2.1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 # 
 # 
 # #################################################################
@@ -21,20 +21,39 @@
 # #################################################################
 # 
 # 
-# https://w3id.org/todo/todo#hasActionTrace
-<https://w3id.org/todo/todo#hasActionTrace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/todo/todo#hasActionTrace> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/todo/todo#isActionTraceOf> .
-<https://w3id.org/todo/todo#hasActionTrace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<https://w3id.org/todo/todo#hasActionTrace> <http://www.w3.org/2000/01/rdf-schema#comment> "Establishes the relationship between an Action and its Trace" .
-<https://w3id.org/todo/todo#hasActionTrace> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/todo" .
-<https://w3id.org/todo/todo#hasActionTrace> <http://www.w3.org/2000/01/rdf-schema#label> "hasActionTrace" .
+# https://w3id.org/todo#hasActionTrace
+<https://w3id.org/todo#hasActionTrace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/todo#hasActionTrace> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/todo#isActionTraceOf> .
+<https://w3id.org/todo#hasActionTrace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/todo#hasActionTrace> <http://www.w3.org/2000/01/rdf-schema#comment> "Establishes the relationship between an Action and its Trace" .
+<https://w3id.org/todo#hasActionTrace> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo#" .
+<https://w3id.org/todo#hasActionTrace> <http://www.w3.org/2000/01/rdf-schema#label> "hasActionTrace" .
+<https://w3id.org/todo#hasActionTrace> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
-# https://w3id.org/todo/todo#isActionTraceOf
-<https://w3id.org/todo/todo#isActionTraceOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/todo/todo#isActionTraceOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
-<https://w3id.org/todo/todo#isActionTraceOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Establishes the relationship between an ActionTrace and the Action it refers to." .
-<https://w3id.org/todo/todo#isActionTraceOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/todo" .
-<https://w3id.org/todo/todo#isActionTraceOf> <http://www.w3.org/2000/01/rdf-schema#label> "isActionTraceOf" .
+# https://w3id.org/todo#hasObtained
+<https://w3id.org/todo#hasObtained> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/todo#hasObtained> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/todo#obtainedThrough> .
+<https://w3id.org/todo#hasObtained> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<https://w3id.org/todo#hasObtained> <http://www.w3.org/2000/01/rdf-schema#comment> "Establishes a relation between a SecondaryDialogue and the information (ActionTrace/ArgumentTrace/WorldElementTrace) that has been obtained thanks to it." .
+<https://w3id.org/todo#hasObtained> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo#" .
+<https://w3id.org/todo#hasObtained> <http://www.w3.org/2000/01/rdf-schema#label> "hasObtained" .
+<https://w3id.org/todo#hasObtained> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo#isActionTraceOf
+<https://w3id.org/todo#isActionTraceOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/todo#isActionTraceOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<https://w3id.org/todo#isActionTraceOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Establishes the relationship between an ActionTrace and the Action it refers to." .
+<https://w3id.org/todo#isActionTraceOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/todo" .
+<https://w3id.org/todo#isActionTraceOf> <http://www.w3.org/2000/01/rdf-schema#label> "isActionTraceOf" .
+<https://w3id.org/todo#isActionTraceOf> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo#obtainedThrough
+<https://w3id.org/todo#obtainedThrough> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/todo#obtainedThrough> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/todo#obtainedThrough> <http://www.w3.org/2000/01/rdf-schema#comment> "Establishes a relation between a Trace (ActionTrace/ArgumentTrace/WorldElementTrace) and the SecondaryDialogue performed to obtain said Trace." .
+<https://w3id.org/todo#obtainedThrough> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo#" .
+<https://w3id.org/todo#obtainedThrough> <http://www.w3.org/2000/01/rdf-schema#label> "obtainedThrough" .
+<https://w3id.org/todo#obtainedThrough> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # 
 # 
@@ -49,10 +68,44 @@
 <https://w3id.org/todo/tododial#UserRequestTrace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/todo/tododial#UserRequestTrace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
 _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/todo#hasActionTrace> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo#hasActionTrace> .
 _:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododom#ActionTrace> .
+<https://w3id.org/todo/tododial#UserRequestTrace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododom#hasKeyElement> .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododom#KeyElementTrace> .
 # 
 # https://w3id.org/todo/tododom#ActionTrace
 <https://w3id.org/todo/tododom#ActionTrace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododom#ActionTrace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo#obtainedThrough> .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododt#SecondaryDialogueTrace> .
+# 
+# https://w3id.org/todo/tododom#ArgumentTrace
+<https://w3id.org/todo/tododom#ArgumentTrace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo#obtainedThrough> .
+_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododt#SecondaryDialogueTrace> .
+# 
+# https://w3id.org/todo/tododom#WorldElementTrace
+<https://w3id.org/todo/tododom#WorldElementTrace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo#obtainedThrough> .
+_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododt#SecondaryDialogueTrace> .
+# 
+# https://w3id.org/todo/tododt#SecondaryDialogueTrace
+<https://w3id.org/todo/tododt#SecondaryDialogueTrace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo#hasObtained> .
+_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododom#ActionTrace> .
+<https://w3id.org/todo/tododt#SecondaryDialogueTrace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo#hasObtained> .
+_:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododom#ArgumentTrace> .
+<https://w3id.org/todo/tododt#SecondaryDialogueTrace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo#hasObtained> .
+_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododom#WorldElementTrace> .
 # 
 # Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

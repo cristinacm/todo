@@ -2,7 +2,7 @@
 <rdf:RDF xmlns="https://w3id.org/todo/tododt#"
      xml:base="https://w3id.org/todo/tododt"
      xmlns:ns="http://creativecommons.org/ns#"
-     xmlns:ns1="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -18,12 +18,12 @@
         <terms:creator>Cristina Aceta (Tekniker) &lt;mailto:cristina.aceta@tekniker.es&gt;</terms:creator>
         <terms:description>Module for dialogue tracing.</terms:description>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></terms:issued>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-08T16:00:00</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-09-23T10:00:00</terms:modified>
         <terms:title>TODODT: Dialogue Tracing Module for Task-Oriented Dialogue management Ontology (TODO)</terms:title>
         <vann:preferredNamespacePrefix>tododt</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri></vann:preferredNamespaceUri>
+        <vann:preferredNamespaceUri>https://w3id.org/todo/tododt</vann:preferredNamespaceUri>
         <owl:priorVersion></owl:priorVersion>
-        <owl:versionInfo>1.0.0</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.1</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -177,7 +177,7 @@
         <rdfs:comment>Establishes the SecondaryDialogue corresponding to a DialogueTrace.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododt#</rdfs:isDefinedBy>
         <rdfs:label>hasSecondaryDialogue</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
@@ -189,7 +189,19 @@
         <rdfs:comment>Establishes the SystemRequest corresponding to a SecondaryDialogueTrace.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododt#</rdfs:isDefinedBy>
         <rdfs:label>hasSystemRequest</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/todo/tododt#hasSystemResponse -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo/tododt#hasSystemResponse">
+        <rdfs:comment>Establishes the SystemResponse corresponding to a SecondaryDialogueTrace.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododt#</rdfs:isDefinedBy>
+        <rdfs:label>hasSystemResponse</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
@@ -201,7 +213,7 @@
         <rdfs:comment>Establishes the UserRequest corresponding to a DialogueTrace.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododt#</rdfs:isDefinedBy>
         <rdfs:label>hasUserRequest</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
@@ -213,7 +225,7 @@
         <rdfs:comment>Establishes the UserResponse corresponding to a SecondaryDialogueTrace.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododt#</rdfs:isDefinedBy>
         <rdfs:label>hasUserResponse</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
@@ -230,6 +242,18 @@
     
 
 
+    <!-- https://w3id.org/todo/tododt#IDval -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/todo/tododt#IDval">
+        <rdfs:comment>Unique identification value for individuals.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododom#</rdfs:isDefinedBy>
+        <rdfs:label>IDval</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://w3id.org/todo/tododt#currentValue -->
 
 
@@ -237,7 +261,7 @@
         <rdfs:comment>When asking the user for a specific information, the information currently asked to the user.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododt#</rdfs:isDefinedBy>
         <rdfs:label>currentValue</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
         <skos:example xml:lang="en">UserReq: &quot;I want to go to the room&quot;
 
 possibleValue &quot;room1&quot;
@@ -262,7 +286,7 @@ System Req: &quot;¿Quieres ir a la {sala1}?&quot; (currentValue: sala1); &quot;
         <rdfs:comment>Sets a timestamp to a DialogueTrace.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododt#</rdfs:isDefinedBy>
         <rdfs:label>dateTime</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
     </owl:DatatypeProperty>
     
 
@@ -291,7 +315,7 @@ System Req: &quot;¿Quieres ir a la {sala1}?&quot; (currentValue: sala1); &quot;
         <rdfs:comment>Sets whether a Dialogue/SecondaryDialogue has finished (closed) or not (open).</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododt#</rdfs:isDefinedBy>
         <rdfs:label>dialStatus</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
     </owl:DatatypeProperty>
     
 
@@ -303,7 +327,7 @@ System Req: &quot;¿Quieres ir a la {sala1}?&quot; (currentValue: sala1); &quot;
         <rdfs:comment>Used to control which step is performing the current Dialogue.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododt#</rdfs:isDefinedBy>
         <rdfs:label>dialogueStep</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
     </owl:DatatypeProperty>
     
 
@@ -316,7 +340,7 @@ System Req: &quot;¿Quieres ir a la {sala1}?&quot; (currentValue: sala1); &quot;
         <rdfs:comment>Sets a finish timestamp to a DialogueTrace.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododt#</rdfs:isDefinedBy>
         <rdfs:label>finishDateTime</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
     </owl:DatatypeProperty>
     
 
@@ -329,7 +353,7 @@ System Req: &quot;¿Quieres ir a la {sala1}?&quot; (currentValue: sala1); &quot;
         <rdfs:comment>Sets a start timestamp to a DialogueTrace.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododt#</rdfs:isDefinedBy>
         <rdfs:label>initDateTime</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
     </owl:DatatypeProperty>
     
 
@@ -341,7 +365,7 @@ System Req: &quot;¿Quieres ir a la {sala1}?&quot; (currentValue: sala1); &quot;
         <rdfs:comment>When asking the user for a specific information, the possible values of that information to be asked to the user.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododt#</rdfs:isDefinedBy>
         <rdfs:label>possibleValue</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
         <skos:example xml:lang="en">UserReq: &quot;I want to go to the room&quot;
 
 possibleValue &quot;room1&quot;
@@ -365,19 +389,7 @@ System Req: &quot;¿Quieres ir a la {sala1}?&quot;; &quot;¿Quieres ir a la {sal
         <rdfs:comment>String that corresponds to a transcribed command by an user or the fully constructed outputSentence directed to the user.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododt#</rdfs:isDefinedBy>
         <rdfs:label>text</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/todo/tododt#verb -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/todo/tododt#verb">
-        <rdfs:comment>Key element classified as &quot;verb&quot;/&quot;action&quot;.</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/todo/tododt#</rdfs:isDefinedBy>
-        <rdfs:label>verb</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
     </owl:DatatypeProperty>
     
 
@@ -400,10 +412,13 @@ System Req: &quot;¿Quieres ir a la {sala1}?&quot;; &quot;¿Quieres ir a la {sal
     <owl:Class rdf:about="https://w3id.org/todo/tododt#ContentUserResponseTrace">
         <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododt#UserResponseTrace"/>
         <owl:disjointWith rdf:resource="https://w3id.org/todo/tododt#YesNoUserResponseTrace"/>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododt#IDval"/>
+        </owl:hasKey>
         <rdfs:comment xml:lang="en">Element that leaves a record of the User Responses performed throughout the dialogue process. These responses provide specific information, as a response for a ContentRequest.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododt#</rdfs:isDefinedBy>
         <rdfs:label>ContentUserResponseTrace</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
         <skos:example xml:lang="en">Content User Response: The error code is 412.</skos:example>
     </owl:Class>
     
@@ -456,10 +471,13 @@ System Req: &quot;¿Quieres ir a la {sala1}?&quot;; &quot;¿Quieres ir a la {sal
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododt#IDval"/>
+        </owl:hasKey>
         <rdfs:comment>Element that leaves a record of the dialogues performed throughout the dialogue process.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododt#</rdfs:isDefinedBy>
         <rdfs:label>DialogueProcessTrace</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
     </owl:Class>
     
 
@@ -482,10 +500,13 @@ System Req: &quot;¿Quieres ir a la {sala1}?&quot;; &quot;¿Quieres ir a la {sal
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododt#IDval"/>
+        </owl:hasKey>
         <rdfs:comment>Element that leaves a record of the dialogues performed.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododt#</rdfs:isDefinedBy>
         <rdfs:label>DialogueTrace</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
     </owl:Class>
     
 
@@ -495,10 +516,13 @@ System Req: &quot;¿Quieres ir a la {sala1}?&quot;; &quot;¿Quieres ir a la {sal
 
     <owl:Class rdf:about="https://w3id.org/todo/tododt#NoUserResponse">
         <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododt#YesNoUserResponseTrace"/>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododt#IDval"/>
+        </owl:hasKey>
         <rdfs:comment xml:lang="en">Element that leaves a record of the User Responses performed throughout the dialogue process. These responses correspond to a negative polarity.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododt#</rdfs:isDefinedBy>
         <rdfs:label>NoUserResponse</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
         <skos:example xml:lang="en">No User Responses: No, Never, Not at all</skos:example>
     </owl:Class>
     
@@ -509,10 +533,13 @@ System Req: &quot;¿Quieres ir a la {sala1}?&quot;; &quot;¿Quieres ir a la {sal
 
     <owl:Class rdf:about="https://w3id.org/todo/tododt#NullUserResponseTrace">
         <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododt#UserResponseTrace"/>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododt#IDval"/>
+        </owl:hasKey>
         <rdfs:comment xml:lang="en">Response that does not represent a value that can be classified as ContentResponse or YesNoResponse.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododt#</rdfs:isDefinedBy>
         <rdfs:label>NullUserResponseTrace</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
         <skos:example xml:lang="en">Null User Response: I don&apos;t know.</skos:example>
     </owl:Class>
     
@@ -531,6 +558,12 @@ System Req: &quot;¿Quieres ir a la {sala1}?&quot;; &quot;¿Quieres ir a la {sal
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododt#hasSystemResponse"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododt#SystemResponseTrace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/todo/tododt#hasUserResponse"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododt#UserResponseTrace"/>
             </owl:Restriction>
@@ -542,10 +575,13 @@ System Req: &quot;¿Quieres ir a la {sala1}?&quot;; &quot;¿Quieres ir a la {sal
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododt#IDval"/>
+        </owl:hasKey>
         <rdfs:comment>Element that leaves a record of the secondary dialogues performed.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododt#</rdfs:isDefinedBy>
         <rdfs:label>SecondaryDialogueTrace</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
     </owl:Class>
     
 
@@ -555,10 +591,13 @@ System Req: &quot;¿Quieres ir a la {sala1}?&quot;; &quot;¿Quieres ir a la {sal
 
     <owl:Class rdf:about="https://w3id.org/todo/tododt#SystemRequestTrace">
         <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododt#SystemStepTrace"/>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododt#IDval"/>
+        </owl:hasKey>
         <rdfs:comment>Element that leaves a record of the SystemRequests performed throughout the dialogue process.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododt#</rdfs:isDefinedBy>
         <rdfs:label>SystemRequestTrace</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
     </owl:Class>
     
 
@@ -568,10 +607,13 @@ System Req: &quot;¿Quieres ir a la {sala1}?&quot;; &quot;¿Quieres ir a la {sal
 
     <owl:Class rdf:about="https://w3id.org/todo/tododt#SystemResponseTrace">
         <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododt#SystemStepTrace"/>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododt#IDval"/>
+        </owl:hasKey>
         <rdfs:comment>Element that leaves a record of the SystemResponses performed throughout the dialogue process.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododt#</rdfs:isDefinedBy>
         <rdfs:label>SystemResponseTrace</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
     </owl:Class>
     
 
@@ -580,10 +622,13 @@ System Req: &quot;¿Quieres ir a la {sala1}?&quot;; &quot;¿Quieres ir a la {sal
 
 
     <owl:Class rdf:about="https://w3id.org/todo/tododt#SystemStepTrace">
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododt#IDval"/>
+        </owl:hasKey>
         <rdfs:comment>Element that leaves a record of the SystemSteps performed throughout the dialogue process.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododt#</rdfs:isDefinedBy>
         <rdfs:label>SystemStepTrace</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
     </owl:Class>
     
 
@@ -594,10 +639,13 @@ System Req: &quot;¿Quieres ir a la {sala1}?&quot;; &quot;¿Quieres ir a la {sal
     <owl:Class rdf:about="https://w3id.org/todo/tododt#UserRequestTrace">
         <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododt#UserStepTrace"/>
         <owl:disjointWith rdf:resource="https://w3id.org/todo/tododt#UserResponseTrace"/>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododt#IDval"/>
+        </owl:hasKey>
         <rdfs:comment xml:lang="en">Element that leaves a record of the User Requests performed throughout the dialogue process.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododt#</rdfs:isDefinedBy>
         <rdfs:label>UserRequestTrace</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
     </owl:Class>
     
 
@@ -607,10 +655,13 @@ System Req: &quot;¿Quieres ir a la {sala1}?&quot;; &quot;¿Quieres ir a la {sal
 
     <owl:Class rdf:about="https://w3id.org/todo/tododt#UserResponseTrace">
         <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododt#UserStepTrace"/>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododt#IDval"/>
+        </owl:hasKey>
         <rdfs:comment xml:lang="en">Element that leaves a record of the User Responses performed throughout the dialogue process.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododt#</rdfs:isDefinedBy>
         <rdfs:label>UserResponseTrace</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
     </owl:Class>
     
 
@@ -626,10 +677,13 @@ System Req: &quot;¿Quieres ir a la {sala1}?&quot;; &quot;¿Quieres ir a la {sal
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododt#IDval"/>
+        </owl:hasKey>
         <rdfs:comment>Element that leaves a record of the user steps (requests and responses) performed throughout the dialogue process.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododt#</rdfs:isDefinedBy>
         <rdfs:label>UserStepTrace</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
     </owl:Class>
     
 
@@ -639,10 +693,13 @@ System Req: &quot;¿Quieres ir a la {sala1}?&quot;; &quot;¿Quieres ir a la {sal
 
     <owl:Class rdf:about="https://w3id.org/todo/tododt#YesNoUserResponseTrace">
         <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododt#UserResponseTrace"/>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododt#IDval"/>
+        </owl:hasKey>
         <rdfs:comment xml:lang="en">Element that leaves a record of the User Responses performed throughout the dialogue process. These responses correspond to a positive or negative polarity.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododt#</rdfs:isDefinedBy>
         <rdfs:label>YesNoUserResponseTrace</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
         <skos:example xml:lang="en">YesNo User Responses:
 
 - Yes, OK
@@ -657,10 +714,13 @@ System Req: &quot;¿Quieres ir a la {sala1}?&quot;; &quot;¿Quieres ir a la {sal
 
     <owl:Class rdf:about="https://w3id.org/todo/tododt#YesUserResponse">
         <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododt#YesNoUserResponseTrace"/>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/todo/tododt#IDval"/>
+        </owl:hasKey>
         <rdfs:comment xml:lang="en">Element that leaves a record of the User Responses performed throughout the dialogue process. These responses correspond to a positive polarity.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododt#</rdfs:isDefinedBy>
         <rdfs:label>YesUserResponse</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
         <skos:example xml:lang="en">Yes User Responses: Yes, OK</skos:example>
     </owl:Class>
 </rdf:RDF>

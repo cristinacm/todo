@@ -2,7 +2,7 @@
 <rdf:RDF xmlns="https://w3id.org/todo#"
      xml:base="https://w3id.org/todo"
      xmlns:ns="http://creativecommons.org/ns#"
-     xmlns:ns1="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -48,7 +48,7 @@
         <rdfs:comment>Establishes the relationship between an Action and its Trace</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo#</rdfs:isDefinedBy>
         <rdfs:label>hasActionTrace</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
@@ -61,7 +61,7 @@
         <rdfs:comment>Establishes a relation between a SecondaryDialogue and the information (ActionTrace/ArgumentTrace/WorldElementTrace) that has been obtained thanks to it.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo#</rdfs:isDefinedBy>
         <rdfs:label>hasObtained</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
@@ -73,7 +73,7 @@
         <rdfs:comment>Establishes the relationship between an ActionTrace and the Action it refers to.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/todo</rdfs:isDefinedBy>
         <rdfs:label>isActionTraceOf</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
@@ -85,7 +85,7 @@
         <rdfs:comment>Establishes a relation between a Trace (ActionTrace/ArgumentTrace/WorldElementTrace) and the SecondaryDialogue performed to obtain said Trace.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo#</rdfs:isDefinedBy>
         <rdfs:label>obtainedThrough</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 

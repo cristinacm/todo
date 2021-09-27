@@ -1,45 +1,66 @@
-@prefix : <https://w3id.org/todo/todo#> .
+@prefix : <https://w3id.org/todo#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://w3id.org/todo/todo> .
+@base <https://w3id.org/todo> .
 
-<https://w3id.org/todo/todo> rdf:type owl:Ontology ;
-                              owl:imports <https://w3id.org/todo/tododial> ,
-                                          <https://w3id.org/todo/tododom> ;
-                              <http://creativecommons.org/ns#license> "CC BY <https://creativecommons.org/licenses/by/2.0/>" ;
-                              <http://purl.org/dc/terms/contributor> "Izaskun Fernández (Tekniker) <mailto:izaskun.fernandez@tekniker.es>" ;
-                              <http://purl.org/dc/terms/created> "2020-04-21T00:00:00"^^xsd:dateTime ;
-                              <http://purl.org/dc/terms/creator> "Cristina Aceta (Tekniker) <mailto:cristina.aceta@tekniker.es>" ;
-                              <http://purl.org/dc/terms/description> "" ;
-                              <http://purl.org/dc/terms/issued> ""^^xsd:dateTime ;
-                              <http://purl.org/dc/terms/modified> "2021-03-09T11:00:00" ;
-                              <http://purl.org/dc/terms/title> "TODO: Task-Oriented Dialogue management Ontology" ;
-                              <http://purl.org/vocab/vann/preferredNamespacePrefix> "DialSystemOnt" ;
-                              <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/todo/todo" ;
-                              owl:versionInfo "1.0.0" .
+<https://w3id.org/todo> rdf:type owl:Ontology ;
+                         owl:imports <https://w3id.org/todo/tododial> ,
+                                     <https://w3id.org/todo/tododom> ;
+                         <http://creativecommons.org/ns#license> "http://purl.org/NET/rdflicense/cc-by4.0" ;
+                         <http://purl.org/dc/terms/contributor> "Izaskun Fernández (Tekniker) <mailto:izaskun.fernandez@tekniker.es>" ;
+                         <http://purl.org/dc/terms/created> "2020-04-21T00:00:00"^^xsd:dateTime ;
+                         <http://purl.org/dc/terms/creator> "Cristina Aceta (Tekniker) <mailto:cristina.aceta@tekniker.es>" ;
+                         <http://purl.org/dc/terms/description> "With the aim of enhancing natural communication between workers in industrial environments and the systems to be used by them, TODO (Task-Oriented Dialogue management Ontology) has been developed to be the core of task-oriented dialogue systems. TODO is a core ontology that provides task-oriented dialogue systems with the necessary means to be capable of naturally interacting with workers (both at understanding and at ommunication levels) and that can be easily adapted to different industrial scenarios, reducing adaptation time and costs. Moreover, it allows to store and reproduce the dialogue process to be able to learn from new interactions." ;
+                         <http://purl.org/dc/terms/issued> ""^^xsd:dateTime ;
+                         <http://purl.org/dc/terms/modified> "2021-09-23T10:00:00" ;
+                         <http://purl.org/dc/terms/title> "TODO: Task-Oriented Dialogue management Ontology" ;
+                         <http://purl.org/vocab/vann/preferredNamespacePrefix> "todo" ;
+                         <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/todo" ;
+                         owl:versionInfo 2.1 .
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  https://w3id.org/todo/todo#hasActionTrace
+###  https://w3id.org/todo#hasActionTrace
 :hasActionTrace rdf:type owl:ObjectProperty ;
                 owl:inverseOf :isActionTraceOf ;
                 rdf:type owl:FunctionalProperty ;
                 rdfs:comment "Establishes the relationship between an Action and its Trace" ;
-                rdfs:isDefinedBy "https://w3id.org/todo/todo" ;
-                rdfs:label "hasActionTrace" .
+                rdfs:isDefinedBy "https://w3id.org/todo#" ;
+                rdfs:label "hasActionTrace" ;
+                <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
-###  https://w3id.org/todo/todo#isActionTraceOf
+###  https://w3id.org/todo#hasObtained
+:hasObtained rdf:type owl:ObjectProperty ;
+             owl:inverseOf :obtainedThrough ;
+             rdf:type owl:InverseFunctionalProperty ;
+             rdfs:comment "Establishes a relation between a SecondaryDialogue and the information (ActionTrace/ArgumentTrace/WorldElementTrace) that has been obtained thanks to it." ;
+             rdfs:isDefinedBy "https://w3id.org/todo#" ;
+             rdfs:label "hasObtained" ;
+             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/todo#isActionTraceOf
 :isActionTraceOf rdf:type owl:ObjectProperty ,
                           owl:InverseFunctionalProperty ;
                  rdfs:comment "Establishes the relationship between an ActionTrace and the Action it refers to." ;
                  rdfs:isDefinedBy "https://w3id.org/todo/todo" ;
-                 rdfs:label "isActionTraceOf" .
+                 rdfs:label "isActionTraceOf" ;
+                 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/todo#obtainedThrough
+:obtainedThrough rdf:type owl:ObjectProperty ,
+                          owl:FunctionalProperty ;
+                 rdfs:comment "Establishes a relation between a Trace (ActionTrace/ArgumentTrace/WorldElementTrace) and the SecondaryDialogue performed to obtain said Trace." ;
+                 rdfs:isDefinedBy "https://w3id.org/todo#" ;
+                 rdfs:label "obtainedThrough" ;
+                 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 #################################################################
@@ -51,11 +72,48 @@
                                                   rdfs:subClassOf [ rdf:type owl:Restriction ;
                                                                     owl:onProperty :hasActionTrace ;
                                                                     owl:someValuesFrom <https://w3id.org/todo/tododom#ActionTrace>
+                                                                  ] ,
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty <https://w3id.org/todo/tododom#hasKeyElement> ;
+                                                                    owl:someValuesFrom <https://w3id.org/todo/tododom#KeyElementTrace>
                                                                   ] .
 
 
 ###  https://w3id.org/todo/tododom#ActionTrace
-<https://w3id.org/todo/tododom#ActionTrace> rdf:type owl:Class .
+<https://w3id.org/todo/tododom#ActionTrace> rdf:type owl:Class ;
+                                            rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                              owl:onProperty :obtainedThrough ;
+                                                              owl:someValuesFrom <https://w3id.org/todo/tododt#SecondaryDialogueTrace>
+                                                            ] .
+
+
+###  https://w3id.org/todo/tododom#ArgumentTrace
+<https://w3id.org/todo/tododom#ArgumentTrace> rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                owl:onProperty :obtainedThrough ;
+                                                                owl:someValuesFrom <https://w3id.org/todo/tododt#SecondaryDialogueTrace>
+                                                              ] .
+
+
+###  https://w3id.org/todo/tododom#WorldElementTrace
+<https://w3id.org/todo/tododom#WorldElementTrace> rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty :obtainedThrough ;
+                                                                    owl:someValuesFrom <https://w3id.org/todo/tododt#SecondaryDialogueTrace>
+                                                                  ] .
+
+
+###  https://w3id.org/todo/tododt#SecondaryDialogueTrace
+<https://w3id.org/todo/tododt#SecondaryDialogueTrace> rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty :hasObtained ;
+                                                                        owl:someValuesFrom <https://w3id.org/todo/tododom#ActionTrace>
+                                                                      ] ,
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty :hasObtained ;
+                                                                        owl:someValuesFrom <https://w3id.org/todo/tododom#ArgumentTrace>
+                                                                      ] ,
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty :hasObtained ;
+                                                                        owl:someValuesFrom <https://w3id.org/todo/tododom#WorldElementTrace>
+                                                                      ] .
 
 
 ###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

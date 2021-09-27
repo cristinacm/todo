@@ -13,12 +13,12 @@
                                 <http://purl.org/dc/terms/creator> "Cristina Aceta (Tekniker) <mailto:cristina.aceta@tekniker.es>" ;
                                 <http://purl.org/dc/terms/description> "Module for dialogue process and system output management." ;
                                 <http://purl.org/dc/terms/issued> ""^^xsd:dateTime ;
-                                <http://purl.org/dc/terms/modified> "2021-03-08T16:00:00"^^xsd:dateTime ;
+                                <http://purl.org/dc/terms/modified> "2021-09-23T10:00:00"^^xsd:dateTime ;
                                 <http://purl.org/dc/terms/title> "TODODM: Dialogue Management Module for Task-Oriented Dialogue management Ontology (TODO)" ;
                                 <http://purl.org/vocab/vann/preferredNamespacePrefix> "tododm" ;
-                                <http://purl.org/vocab/vann/preferredNamespaceUri> "" ;
+                                <http://purl.org/vocab/vann/preferredNamespaceUri> https://w3id.org/todo/tododm ;
                                 owl:priorVersion "" ;
-                                owl:versionInfo "1.0.0" .
+                                owl:versionInfo 2.1 .
 
 #################################################################
 #    Annotation properties

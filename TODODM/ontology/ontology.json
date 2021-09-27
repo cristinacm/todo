@@ -401,7 +401,7 @@
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2021-03-08T16:00:00"
+    "@value" : "2021-09-23T10:00:00"
   } ],
   "http://purl.org/dc/terms/title" : [ {
     "@value" : "TODODM: Dialogue Management Module for Task-Oriented Dialogue management Ontology (TODO)"
@@ -410,13 +410,15 @@
     "@value" : "tododm"
   } ],
   "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
-    "@value" : ""
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "https://w3id.org/todo/tododm"
   } ],
   "http://www.w3.org/2002/07/owl#priorVersion" : [ {
     "@value" : ""
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "1.0.0"
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "2.1"
   } ]
 }, {
   "@id" : "https://w3id.org/todo/tododm#ActionDisambiguationRequest",
