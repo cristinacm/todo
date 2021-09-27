@@ -19,11 +19,11 @@
         <owl:imports rdf:resource="https://w3id.org/todo/tododw"/>
         <ns:license>http://purl.org/NET/rdflicense/cc-by4.0</ns:license>
         <terms:contributor>Izaskun Fernández (Tekniker) &lt;mailto:izaskun.fernandez(at)tekniker.es&gt;</terms:contributor>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-21T00:00:00</terms:created>
+        <terms:created>2020-04-21T00:00:00</terms:created>
         <terms:creator>Cristina Aceta (Tekniker) &lt;mailto:cristina.aceta(at)tekniker.es&gt;</terms:creator>
         <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Module for domain modelling.</terms:description>
-        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></terms:issued>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-09-23T10:00:00</terms:modified>
+        <terms:issued></terms:issued>
+        <terms:modified>2021-09-23T10:00:00</terms:modified>
         <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TODODom: Domain Module for Task-Oriented Dialogue management Ontology (TODO)</terms:title>
         <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tododom</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://w3id.org/todo/tododom</vann:preferredNamespaceUri>
