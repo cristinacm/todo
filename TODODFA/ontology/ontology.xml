@@ -2,7 +2,7 @@
 <rdf:RDF xmlns="https://w3id.org/todo/tododfa#"
      xml:base="https://w3id.org/todo/tododfa"
      xmlns:ns="http://creativecommons.org/ns#"
-     xmlns:ns1="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -18,12 +18,12 @@
         <terms:creator>Cristina Aceta (Tekniker) &lt;mailto:cristina.aceta@tekniker.es&gt;</terms:creator>
         <terms:description>Module for Action (and Frame) modelling inside domain.</terms:description>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></terms:issued>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-08T16:00:00</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-09-23T10:00:00</terms:modified>
         <terms:title>TODODFA: Frame-Action Module for Task-Oriented Dialogue management Ontology (TODO)</terms:title>
         <vann:preferredNamespacePrefix>tododfa</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://w3id.org/todo/tododfa</vann:preferredNamespaceUri>
         <owl:priorVersion></owl:priorVersion>
-        <owl:versionInfo>1.0.0</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.1</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -158,7 +158,7 @@
         <rdfs:comment>Establishes the relation between an Intent and the Action it belongs to.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
         <rdfs:label>belongsToAction</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
@@ -170,7 +170,7 @@
         <rdfs:comment>Establishes the relation between an Action and the Intent it belongs to.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
         <rdfs:label>belongsToIntent</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
@@ -183,7 +183,7 @@
         <rdfs:comment>Establishes a relation between an Action and its Argument(s).</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
         <rdfs:label>hasArgument</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
@@ -197,7 +197,7 @@
         <rdfs:comment>Establishes a relation between an Action and the set composed of its Argument(s).</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
         <rdfs:label>hasArgumentSet</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
@@ -211,7 +211,7 @@
         <rdfs:comment>Establishes a relation between an Action and its CoreArguments (i.e. the arguments that are compulsory in order to perform the Action).</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
         <rdfs:label>hasCoreArgument</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
@@ -225,7 +225,7 @@
         <rdfs:comment>Establishes a relation between a Skill and the FomaGrammar to use to perform Key Element Extraction.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
         <rdfs:label>hasFomaGrammar</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
@@ -238,7 +238,7 @@
         <rdfs:comment>Establishes a relation between an Intent and its corresponding Frame.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
         <rdfs:label>hasFrame</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
@@ -252,7 +252,7 @@
         <rdfs:comment>Establishes a relation between a Frame and its FrameHead.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
         <rdfs:label>hasFrameHead</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
@@ -265,7 +265,7 @@
         <rdfs:comment>Establishes a relation between a Skill and its corresponding Intent(s).</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
         <rdfs:label>hasIntent</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
@@ -279,7 +279,7 @@
         <rdfs:comment>Establishes a relation between an Action and its OptionalArguments (i.e. the arguments that are not compulsory in order to perform the Action).</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
         <rdfs:label>hasOptionalArgument</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
@@ -291,7 +291,7 @@
         <rdfs:comment>Establishes a relation between an Argument and its corresponding Action.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
         <rdfs:label>isArgumentOf</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
@@ -304,7 +304,7 @@
         <rdfs:comment>Establishes a relation between an ArgumentSet and the Action it corresponds to.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
         <rdfs:label>isArgumentSetOf</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
@@ -317,7 +317,7 @@
         <rdfs:comment>Establishes a relation between a CoreArgument (i.e. the arguments that are compulsory in order to perform the Action) and its corresponding Action.</rdfs:comment>
         <rdfs:comment>https://w3id.org/todo/tododfa#</rdfs:comment>
         <rdfs:label>isCoreArgumentOf</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
@@ -330,7 +330,7 @@
         <rdfs:comment>Establishes a relation between the FomaGrammar to use to perform Key Element Extraction and a Skill.</rdfs:comment>
         <rdfs:comment>https://w3id.org/todo/tododfa#</rdfs:comment>
         <rdfs:label>isFomaGrammarOf</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
@@ -343,7 +343,7 @@
         <rdfs:comment>Establishes a relation between a FrameHead and the Frame it applies to.</rdfs:comment>
         <rdfs:comment>https://w3id.org/todo/tododfa#</rdfs:comment>
         <rdfs:label>isFrameHeadOf</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
@@ -355,7 +355,7 @@
         <rdfs:comment>Establishes a relation between a Frame and the Intent it corresponds to.</rdfs:comment>
         <rdfs:comment>https://w3id.org/todo/tododfa#</rdfs:comment>
         <rdfs:label>isFrameOf</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
@@ -367,7 +367,7 @@
         <rdfs:comment>Establishes a relation between an Intent and its corresponding Skill.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
         <rdfs:label>isIntentOf</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
@@ -380,7 +380,7 @@
         <rdfs:comment>Establishes a relation between an Optional Argument (i.e. the arguments that are not compulsory in order to perform the Action) and its corresponding Action.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
         <rdfs:label>isOptionalArgumentOf</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
@@ -404,7 +404,7 @@
         <rdfs:comment>String that identifies the Action when invoked in a SystemRequest/Response (DomainONT).</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododfa</rdfs:isDefinedBy>
         <rdfs:label>actionTag</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
         <skos:example xml:lang="en">System request: &quot;Do you need me to {argumentTag}?&quot;
 
 Action: take_guideRobot
@@ -428,7 +428,7 @@ Resulting SysRequest: &quot;Necesitas que {te lleve}?&quot;</skos:example>
         <rdfs:comment>String that defines the word that acts as a connector between the Argument and the rest of elements in a SystemRequest/Response.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododfa</rdfs:isDefinedBy>
         <rdfs:label>argumentConnector</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
         <skos:example xml:lang="en">SystemRequest: Do you want me {actionTag}{argumentConnector}{WorldElement}?
 
 Action: take_guideRobot
@@ -452,7 +452,7 @@ argumentConnector: &quot;a&quot;
         <rdfs:comment>String that identifies the Argument when invoked in a SystemRequest/Response (DomainONT)</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
         <rdfs:label>argumentTag</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
         <skos:example xml:lang="en">System request: &quot;I need to know {argumentTag}&quot;
 
 Argument: destination_guideRobot
@@ -512,7 +512,7 @@ Resulting SysRequest: &quot;Necesito saber {adónde quieres ir}&quot;</skos:exam
         <rdfs:comment>Element that makes reference to the functionalities of the target system.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">Action</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
         <skos:example>(For a multipurpose robot) Guide, provide_information, pick, place</skos:example>
     </owl:Class>
     
@@ -537,7 +537,7 @@ Resulting SysRequest: &quot;Necesito saber {adónde quieres ir}&quot;</skos:exam
         <rdfs:comment>Participant that is involved in the event described by the Frame. It can be Core (its presence is compulsory to convey the event) or Optional (its presence is not compulsory, but it adds additional information).</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">Argument</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
         <skos:example xml:lang="en">Frame: Losing
 
 ArgumentSet:
@@ -566,7 +566,7 @@ For the sentence &quot;My mother lost her watch at home&quot;:
         <rdfs:comment xml:lang="en">The group of Arguments that belong to a Frame.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">ArgumentSet</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
         <skos:example xml:lang="en">Frame: Losing
 
 ArgumentSet:
@@ -595,7 +595,7 @@ For the sentence &quot;My mother lost her watch at home&quot;:
         <rdfs:comment xml:lang="en">Grammar to be used by Foma to perform Key Element Extraction.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">FomaGrammar</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
     </owl:Class>
     
 
@@ -619,7 +619,7 @@ For the sentence &quot;My mother lost her watch at home&quot;:
         <rdfs:comment xml:lang="en">A specific event or situation evoked by a specific word (FrameHead), along with its participants (Arguments).</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">Frame</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
         <skos:example xml:lang="en">Frame: Losing
 
 FrameHead: lose (LexicalUnit: lose.v)
@@ -650,7 +650,7 @@ For the sentence &quot;My mother lost her watch at home&quot;:
         <rdfs:comment xml:lang="en">Word (or more than one) that evokes a specific situation or event, with its specific participants; that is, a frame. It is represented by one or more LexicalUnits.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">FrameHead</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
         <skos:example xml:lang="en">Frame: Losing
 
 FrameHead: lose (LexicalUnit: lose.v)
@@ -693,7 +693,7 @@ For the sentence &quot;My mother lost her watch at home&quot;:
         <rdfs:comment xml:lang="en">User intention when formulating a request.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">Intent</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
         <skos:example xml:lang="en">User request: &quot;I want information about Mona Lisa&quot;
 
 Intent: receive_information</skos:example>
@@ -721,7 +721,7 @@ Intent: receive_information</skos:example>
         <rdfs:comment>Element that makes reference to the capabilities of the target system.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododfa#</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">Skill</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
         <skos:example>(For a multipurpose robot) GuideRobot, RoboticArm</skos:example>
     </owl:Class>
     

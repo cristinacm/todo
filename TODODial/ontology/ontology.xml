@@ -2,7 +2,7 @@
 <rdf:RDF xmlns="https://w3id.org/todo/tododial#"
      xml:base="https://w3id.org/todo/tododial"
      xmlns:ns="http://creativecommons.org/ns#"
-     xmlns:ns1="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -20,12 +20,12 @@
         <terms:creator>Cristina Aceta (Tekniker) &lt;mailto:cristina.aceta@tekniker.es&gt;</terms:creator>
         <terms:description>Module for dialogue process and system output management.</terms:description>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></terms:issued>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-08T16:00:00</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-09-23T10:00:00</terms:modified>
         <terms:title>TODODial: Dialogue Module for Task-Oriented Dialogue management Ontology (TODO)</terms:title>
         <vann:preferredNamespacePrefix>tododial</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://w3id.org/todo/tododial</vann:preferredNamespaceUri>
         <owl:priorVersion></owl:priorVersion>
-        <owl:versionInfo>1.0.0</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.1</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -178,7 +178,7 @@
         <rdfs:comment>Establishes the DialogueProcessStep corresponding to a DialogueTrace.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>hasDialogueProcessStep</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
@@ -191,7 +191,7 @@
         <rdfs:comment>Establishes the relationship between an element and its Trace.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>hasTrace</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
@@ -203,7 +203,7 @@
         <rdfs:comment>Establishes the relationship between a Trace and the element it refers to.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododial#</rdfs:isDefinedBy>
         <rdfs:label>isTraceOf</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
 </rdf:RDF>
 

@@ -17,16 +17,16 @@
     <owl:Ontology rdf:about="https://w3id.org/todo/tododm">
         <ns:license>http://purl.org/NET/rdflicense/cc-by4.0</ns:license>
         <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Izaskun Fernández (Tekniker) &lt;mailto:izaskun.fernandez@tekniker.es&gt;</terms:contributor>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-21T00:00:00</terms:created>
+        <terms:created>2020-04-21T00:00:00</terms:created>
         <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cristina Aceta (Tekniker) &lt;mailto:cristina.aceta@tekniker.es&gt;</terms:creator>
         <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Module for dialogue process and system output management.</terms:description>
-        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></terms:issued>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-08T16:00:00</terms:modified>
+        <terms:issued></terms:issued>
+        <terms:modified>2021-09-23T10:00:00</terms:modified>
         <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TODODM: Dialogue Management Module for Task-Oriented Dialogue management Ontology (TODO)</terms:title>
         <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tododm</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri></vann:preferredNamespaceUri>
+        <vann:preferredNamespaceUri>https://w3id.org/todo/tododm</vann:preferredNamespaceUri>
         <owl:priorVersion></owl:priorVersion>
-        <owl:versionInfo>1.0.0</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.1</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -407,6 +407,24 @@
     
 
 
+    <!-- https://w3id.org/todo/tododm#ActionOptionsAvailable -->
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododm#ActionOptionsAvailable">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododm#OptionsAvailableResponse"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododm#implies"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododm#ActionDisambiguationRequest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Response in which the system tells the user that it has several options for an Action.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
+        <rdfs:label>ActionOptionsAvailable</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/todo/tododm#ActionOptionsResponse -->
 
     <owl:Class rdf:about="https://w3id.org/todo/tododm#ActionOptionsResponse">
@@ -573,6 +591,24 @@ For example, the user would require a &quot;piece&quot;, and the system includes
     
 
 
+    <!-- https://w3id.org/todo/tododm#ArgumentOptionsAvailable -->
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododm#ArgumentOptionsAvailable">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododm#OptionsAvailableResponse"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododm#implies"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododm#ArgumentSpecifyRequest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Response in which the system tells the user that it has several options for an Argument.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
+        <rdfs:label>ArgumentOptionsAvailable</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/todo/tododm#ArgumentOptionsResponse -->
 
     <owl:Class rdf:about="https://w3id.org/todo/tododm#ArgumentOptionsResponse">
@@ -651,6 +687,24 @@ For example, the user would require a &quot;piece&quot;, and the system includes
         <skos:example xml:lang="es">&quot;¿Quieres {Action} {ArgumentConnector} {WorldElement}?&quot;
 
 &quot;¿Quieres {que te guíe} {a} {Sala Ura}?&quot;</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/todo/tododm#ArgumentValueOptionsAvailable -->
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododm#ArgumentValueOptionsAvailable">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododm#OptionsAvailableResponse"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododm#implies"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododm#ArgumentValueDisambiguationRequest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Response in which the system tells the user that it has several options for an argument value.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
+        <rdfs:label>ArgumentValueOptionsAvailable</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:Class>
     
 
@@ -789,6 +843,20 @@ Also known as &quot;Non polar/Open question&quot; in linguistics.</rdfs:comment>
         <rdfs:label>DialogueControlMarkers</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
         <skos:example>Continue, restart dialogue</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/todo/tododm#DialogueFinished -->
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododm#DialogueFinished">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododm#SystemResponse"/>
+        <rdfs:comment>Response given by the system when the dialogue process has finished (i.e., when the user confirms the action and argument values)</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
+        <rdfs:label>DialogueFinished</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+        <skos:example xml:lang="en">Done!</skos:example>
+        <skos:example xml:lang="es">¡Listo!</skos:example>
     </owl:Class>
     
 
@@ -934,6 +1002,40 @@ USR: &quot;Sí&quot;</skos:example>
     
 
 
+    <!-- https://w3id.org/todo/tododm#MissingInformationResponse -->
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododm#MissingInformationResponse">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododm#SystemResponse"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododm#implies"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododm#ArgumentRequest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Response that is given when, after checking if all the core Arguments have been provided by the user command, there are core Arguments that are missing.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
+        <rdfs:label>MissingInformationResponse</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+        <skos:example xml:lang="es">Hay información que me falta.</skos:example>
+        <skos:example xml:lang="es">I still need some more information.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/todo/tododm#NewDialogue -->
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododm#NewDialogue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododm#YesNoRequest"/>
+        <rdfs:comment>Request that asks the user whether they want to initiate a new dialogue process.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
+        <rdfs:label>NewDialogue</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+        <skos:example xml:lang="en">Do you need anything else?</skos:example>
+        <skos:example xml:lang="es">¿Necesitas algo más?</skos:example>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/todo/tododm#NoMoreOptionsContinueResponse -->
 
     <owl:Class rdf:about="https://w3id.org/todo/tododm#NoMoreOptionsContinueResponse">
@@ -1006,18 +1108,6 @@ USR: &quot;Sí&quot;</skos:example>
 
     <owl:Class rdf:about="https://w3id.org/todo/tododm#OptionsAvailableResponse">
         <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododm#SystemResponse"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/todo/tododm#implies"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododm#ArgumentSpecifyRequest"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/todo/tododm#implies"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododm#ArgumentValueDisambiguationRequest"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Response in which the system tells the user that it has several options for a specific element (e.g. WorldElement).
 
 Note the difference between OptionsAvailableResponse and TooManyAlternativesResponse: the first implies that there is a fair amount of options, whereas the latter implies that the options that are available are too many and it will require the user to be more specific.</rdfs:comment>
@@ -1134,6 +1224,18 @@ Note the difference between OptionsAvailableResponse and TooManyAlternativesResp
         <rdfs:comment>Marker that requires the dialogue to restart.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
         <rdfs:label>Restart</rdfs:label>
+        <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/todo/tododm#Return -->
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododm#Return">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/todo/tododm#DialogueControlMarker"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marker that returns to the last SystemResponse+Request/SystemRequest performed.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo/tododm#</rdfs:isDefinedBy>
+        <rdfs:label>Return</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</vs:term_status>
     </owl:Class>
     

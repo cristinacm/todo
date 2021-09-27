@@ -5,12 +5,12 @@
 <https://w3id.org/todo/tododm> <http://purl.org/dc/terms/creator> "Cristina Aceta (Tekniker) <mailto:cristina.aceta@tekniker.es>" .
 <https://w3id.org/todo/tododm> <http://purl.org/dc/terms/description> "Module for dialogue process and system output management." .
 <https://w3id.org/todo/tododm> <http://purl.org/dc/terms/issued> ""^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://w3id.org/todo/tododm> <http://purl.org/dc/terms/modified> "2021-03-08T16:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/todo/tododm> <http://purl.org/dc/terms/modified> "2021-09-23T10:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://w3id.org/todo/tododm> <http://purl.org/dc/terms/title> "TODODM: Dialogue Management Module for Task-Oriented Dialogue management Ontology (TODO)" .
 <https://w3id.org/todo/tododm> <http://purl.org/vocab/vann/preferredNamespacePrefix> "tododm" .
-<https://w3id.org/todo/tododm> <http://purl.org/vocab/vann/preferredNamespaceUri> "" .
+<https://w3id.org/todo/tododm> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/todo/tododm"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 <https://w3id.org/todo/tododm> <http://www.w3.org/2002/07/owl#priorVersion> "" .
-<https://w3id.org/todo/tododm> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
+<https://w3id.org/todo/tododm> <http://www.w3.org/2002/07/owl#versionInfo> "2.1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 # 
 # 
 # #################################################################
@@ -249,13 +249,25 @@
 <https://w3id.org/todo/tododm#ActionDisambiguationRequest> <http://www.w3.org/2004/02/skos/core#example> "[Previous SysResp: \"I couldn't resolve the action from your request\".]\n\"Do you want to {ActionTag}?\n\n\"Do you want to {go somewhere}?"@en .
 <https://w3id.org/todo/tododm#ActionDisambiguationRequest> <http://www.w3.org/2004/02/skos/core#example> "[Previous SysResp: \"No he podido resolver la acción a partir de tu petición\"]\n\n\"¿Quieres {ActionTag}?\n\n\"¿Quieres {que te lleve a algún sitio}?\""@es .
 # 
-# https://w3id.org/todo/tododm#ActionOptionsResponse
-<https://w3id.org/todo/tododm#ActionOptionsResponse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/todo/tododm#ActionOptionsResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/todo/tododm#SystemResponse> .
-<https://w3id.org/todo/tododm#ActionOptionsResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+# https://w3id.org/todo/tododm#ActionOptionsAvailable
+<https://w3id.org/todo/tododm#ActionOptionsAvailable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododm#ActionOptionsAvailable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/todo/tododm#OptionsAvailableResponse> .
+<https://w3id.org/todo/tododm#ActionOptionsAvailable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
 _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#implies> .
 _:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#ActionDisambiguationRequest> .
+<https://w3id.org/todo/tododm#ActionOptionsAvailable> <http://www.w3.org/2000/01/rdf-schema#comment> "Response in which the system tells the user that it has several options for an Action."@en .
+<https://w3id.org/todo/tododm#ActionOptionsAvailable> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododm#" .
+<https://w3id.org/todo/tododm#ActionOptionsAvailable> <http://www.w3.org/2000/01/rdf-schema#label> "ActionOptionsAvailable" .
+<https://w3id.org/todo/tododm#ActionOptionsAvailable> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododm#ActionOptionsResponse
+<https://w3id.org/todo/tododm#ActionOptionsResponse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododm#ActionOptionsResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/todo/tododm#SystemResponse> .
+<https://w3id.org/todo/tododm#ActionOptionsResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#implies> .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#ActionDisambiguationRequest> .
 <https://w3id.org/todo/tododm#ActionOptionsResponse> <http://www.w3.org/2000/01/rdf-schema#comment> "Response that the system gives when a command can be associated to more than one action."@en .
 <https://w3id.org/todo/tododm#ActionOptionsResponse> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododm#" .
 <https://w3id.org/todo/tododm#ActionOptionsResponse> <http://www.w3.org/2000/01/rdf-schema#label> "ActionOptionsResponse" .
@@ -316,10 +328,10 @@ _:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/t
 # https://w3id.org/todo/tododm#ArgumentNotCompatibleResponse
 <https://w3id.org/todo/tododm#ArgumentNotCompatibleResponse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/todo/tododm#ArgumentNotCompatibleResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/todo/tododm#SystemResponse> .
-<https://w3id.org/todo/tododm#ArgumentNotCompatibleResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#implies> .
-_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#VerifyInfoRequest> .
+<https://w3id.org/todo/tododm#ArgumentNotCompatibleResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#implies> .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#VerifyInfoRequest> .
 <https://w3id.org/todo/tododm#ArgumentNotCompatibleResponse> <http://www.w3.org/2000/01/rdf-schema#comment> "The system informs the user the Argument value provided is not valid according to what has been modelled in the KB."@en .
 <https://w3id.org/todo/tododm#ArgumentNotCompatibleResponse> <http://www.w3.org/2000/01/rdf-schema#comment> "This would imply an ArgumentRequest."@en .
 <https://w3id.org/todo/tododm#ArgumentNotCompatibleResponse> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododm#" .
@@ -331,10 +343,10 @@ _:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/t
 # https://w3id.org/todo/tododm#ArgumentNotGuessedResponse
 <https://w3id.org/todo/tododm#ArgumentNotGuessedResponse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/todo/tododm#ArgumentNotGuessedResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/todo/tododm#SystemResponse> .
-<https://w3id.org/todo/tododm#ArgumentNotGuessedResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#implies> .
-_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#ArgumentRequest> .
+<https://w3id.org/todo/tododm#ArgumentNotGuessedResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#implies> .
+_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#ArgumentRequest> .
 <https://w3id.org/todo/tododm#ArgumentNotGuessedResponse> <http://www.w3.org/2000/01/rdf-schema#comment> "Response given when the system has not been able to guess the value of the Argument through its characteristics."@en .
 <https://w3id.org/todo/tododm#ArgumentNotGuessedResponse> <http://www.w3.org/2000/01/rdf-schema#comment> "This would imply an ArgumentRequest/ArgumentCharacteristicRequest"@en .
 <https://w3id.org/todo/tododm#ArgumentNotGuessedResponse> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododm#" .
@@ -343,13 +355,25 @@ _:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/t
 <https://w3id.org/todo/tododm#ArgumentNotGuessedResponse> <http://www.w3.org/2004/02/skos/core#example> "\"Con las características que me has dado, no he podido averiguar el {Argument}.\"\n\n\"Con las características que me has dado, no he podido averiguar el {Error}.\""@es .
 <https://w3id.org/todo/tododm#ArgumentNotGuessedResponse> <http://www.w3.org/2004/02/skos/core#example> "\"I cannot guess the {Argument} with the information you provided.\"\n\n\"I cannot guess the {Error} with the information you provided.\""@es .
 # 
+# https://w3id.org/todo/tododm#ArgumentOptionsAvailable
+<https://w3id.org/todo/tododm#ArgumentOptionsAvailable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododm#ArgumentOptionsAvailable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/todo/tododm#OptionsAvailableResponse> .
+<https://w3id.org/todo/tododm#ArgumentOptionsAvailable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#implies> .
+_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#ArgumentSpecifyRequest> .
+<https://w3id.org/todo/tododm#ArgumentOptionsAvailable> <http://www.w3.org/2000/01/rdf-schema#comment> "Response in which the system tells the user that it has several options for an Argument."@en .
+<https://w3id.org/todo/tododm#ArgumentOptionsAvailable> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododm#" .
+<https://w3id.org/todo/tododm#ArgumentOptionsAvailable> <http://www.w3.org/2000/01/rdf-schema#label> "ArgumentOptionsAvailable" .
+<https://w3id.org/todo/tododm#ArgumentOptionsAvailable> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
 # https://w3id.org/todo/tododm#ArgumentOptionsResponse
 <https://w3id.org/todo/tododm#ArgumentOptionsResponse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/todo/tododm#ArgumentOptionsResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/todo/tododm#SystemResponse> .
-<https://w3id.org/todo/tododm#ArgumentOptionsResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#implies> .
-_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#ArgumentSpecifyRequest> .
+<https://w3id.org/todo/tododm#ArgumentOptionsResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#implies> .
+_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#ArgumentSpecifyRequest> .
 <https://w3id.org/todo/tododm#ArgumentOptionsResponse> <http://www.w3.org/2000/01/rdf-schema#comment> "Response that the system gives when an item can be associated to more than one argument."@en .
 <https://w3id.org/todo/tododm#ArgumentOptionsResponse> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododm#" .
 <https://w3id.org/todo/tododm#ArgumentOptionsResponse> <http://www.w3.org/2000/01/rdf-schema#label> "ArgumentOptionsResponse" .
@@ -387,13 +411,25 @@ _:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/t
 <https://w3id.org/todo/tododm#ArgumentValueDisambiguationRequest> <http://www.w3.org/2004/02/skos/core#example> "\"Do you want {Action} {ArgumentConnector} {WorldElement}?\"\n\n\"Do you want {to go} {to} {Sala Ura}?\""@en .
 <https://w3id.org/todo/tododm#ArgumentValueDisambiguationRequest> <http://www.w3.org/2004/02/skos/core#example> "\"¿Quieres {Action} {ArgumentConnector} {WorldElement}?\"\n\n\"¿Quieres {que te guíe} {a} {Sala Ura}?\""@es .
 # 
+# https://w3id.org/todo/tododm#ArgumentValueOptionsAvailable
+<https://w3id.org/todo/tododm#ArgumentValueOptionsAvailable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododm#ArgumentValueOptionsAvailable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/todo/tododm#OptionsAvailableResponse> .
+<https://w3id.org/todo/tododm#ArgumentValueOptionsAvailable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#implies> .
+_:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#ArgumentValueDisambiguationRequest> .
+<https://w3id.org/todo/tododm#ArgumentValueOptionsAvailable> <http://www.w3.org/2000/01/rdf-schema#comment> "Response in which the system tells the user that it has several options for an argument value."@en .
+<https://w3id.org/todo/tododm#ArgumentValueOptionsAvailable> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododm#" .
+<https://w3id.org/todo/tododm#ArgumentValueOptionsAvailable> <http://www.w3.org/2000/01/rdf-schema#label> "ArgumentValueOptionsAvailable" .
+<https://w3id.org/todo/tododm#ArgumentValueOptionsAvailable> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
 # https://w3id.org/todo/tododm#CannotResolveActionResponse
 <https://w3id.org/todo/tododm#CannotResolveActionResponse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/todo/tododm#CannotResolveActionResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/todo/tododm#SystemResponse> .
-<https://w3id.org/todo/tododm#CannotResolveActionResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#implies> .
-_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#UserCommandRequest> .
+<https://w3id.org/todo/tododm#CannotResolveActionResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#implies> .
+_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#UserCommandRequest> .
 <https://w3id.org/todo/tododm#CannotResolveActionResponse> <http://www.w3.org/2000/01/rdf-schema#comment> "Response that the system gives when it cannot associate an action/target to one or more actions."@en .
 <https://w3id.org/todo/tododm#CannotResolveActionResponse> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododm#" .
 <https://w3id.org/todo/tododm#CannotResolveActionResponse> <http://www.w3.org/2000/01/rdf-schema#label> "CannotResolveActionResponse" .
@@ -404,10 +440,10 @@ _:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/t
 # https://w3id.org/todo/tododm#CannotResolveCommandResponse
 <https://w3id.org/todo/tododm#CannotResolveCommandResponse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/todo/tododm#CannotResolveCommandResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/todo/tododm#SystemResponse> .
-<https://w3id.org/todo/tododm#CannotResolveCommandResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#implies> .
-_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#ArgumentRequest> .
+<https://w3id.org/todo/tododm#CannotResolveCommandResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#implies> .
+_:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#ArgumentRequest> .
 <https://w3id.org/todo/tododm#CannotResolveCommandResponse> <http://www.w3.org/2000/01/rdf-schema#comment> "Response that informs the user that the command could not be resolved.\n\n[to be followed by an ArgRequest]"@en .
 <https://w3id.org/todo/tododm#CannotResolveCommandResponse> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododm#" .
 <https://w3id.org/todo/tododm#CannotResolveCommandResponse> <http://www.w3.org/2000/01/rdf-schema#label> "CannotResolveCommandResponse" .
@@ -418,10 +454,10 @@ _:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/t
 # https://w3id.org/todo/tododm#ContentRequest
 <https://w3id.org/todo/tododm#ContentRequest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/todo/tododm#ContentRequest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/todo/tododm#SystemRequest> .
-<https://w3id.org/todo/tododm#ContentRequest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#hasStepFunction> .
-_:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#ContentRequestStepFunction> .
+<https://w3id.org/todo/tododm#ContentRequest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#hasStepFunction> .
+_:genid10 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#ContentRequestStepFunction> .
 <https://w3id.org/todo/tododm#ContentRequest> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/todo/tododm#YesNoRequest> .
 <https://w3id.org/todo/tododm#ContentRequest> <http://www.w3.org/2000/01/rdf-schema#comment> "Request that asks for specific information, other than \"Yes\" or \"No\" (and equivalents).\n\nAlso known as \"Non polar/Open question\" in linguistics."@en .
 <https://w3id.org/todo/tododm#ContentRequest> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododm#" .
@@ -432,18 +468,18 @@ _:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/t
 # https://w3id.org/todo/tododm#ContentRequestStepFunction
 <https://w3id.org/todo/tododm#ContentRequestStepFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/todo/tododm#ContentRequestStepFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/todo/tododm#StepFunction> .
-<https://w3id.org/todo/tododm#ContentRequestStepFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#incorrectUserResponseTypeImplies> .
-_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#YesNoResponseNotExpected> .
-<https://w3id.org/todo/tododm#ContentRequestStepFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#isStepFunctionOf> .
-_:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#ContentRequest> .
-<https://w3id.org/todo/tododm#ContentRequestStepFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#userResponseNotUnderstoodImplies> .
-_:genid10 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#NotUnderstoodResponse> .
+<https://w3id.org/todo/tododm#ContentRequestStepFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#incorrectUserResponseTypeImplies> .
+_:genid11 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#YesNoResponseNotExpected> .
+<https://w3id.org/todo/tododm#ContentRequestStepFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#isStepFunctionOf> .
+_:genid12 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#ContentRequest> .
+<https://w3id.org/todo/tododm#ContentRequestStepFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#userResponseNotUnderstoodImplies> .
+_:genid13 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#NotUnderstoodResponse> .
 <https://w3id.org/todo/tododm#ContentRequestStepFunction> <http://www.w3.org/2000/01/rdf-schema#comment> "Step Function associated to a ContentRequest." .
 <https://w3id.org/todo/tododm#ContentRequestStepFunction> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododm#" .
 <https://w3id.org/todo/tododm#ContentRequestStepFunction> <http://www.w3.org/2000/01/rdf-schema#label> "ContentRequestStepFunction" .
@@ -469,30 +505,40 @@ _:genid10 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/
 # 
 # https://w3id.org/todo/tododm#DialogueControlMarker
 <https://w3id.org/todo/tododm#DialogueControlMarker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/todo/tododm#DialogueControlMarker> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#IDval> .
-_:genid11 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/todo/tododm#DialogueControlMarker> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#IDval> .
+_:genid14 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/todo/tododm#DialogueControlMarker> <http://www.w3.org/2000/01/rdf-schema#comment> "Elements that correspond to predefined or generic actions in dialogue control." .
 <https://w3id.org/todo/tododm#DialogueControlMarker> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododm#" .
 <https://w3id.org/todo/tododm#DialogueControlMarker> <http://www.w3.org/2000/01/rdf-schema#label> "DialogueControlMarkers" .
 <https://w3id.org/todo/tododm#DialogueControlMarker> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 <https://w3id.org/todo/tododm#DialogueControlMarker> <http://www.w3.org/2004/02/skos/core#example> "Continue, restart dialogue" .
 # 
+# https://w3id.org/todo/tododm#DialogueFinished
+<https://w3id.org/todo/tododm#DialogueFinished> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododm#DialogueFinished> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/todo/tododm#SystemResponse> .
+<https://w3id.org/todo/tododm#DialogueFinished> <http://www.w3.org/2000/01/rdf-schema#comment> "Response given by the system when the dialogue process has finished (i.e., when the user confirms the action and argument values)" .
+<https://w3id.org/todo/tododm#DialogueFinished> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododm#" .
+<https://w3id.org/todo/tododm#DialogueFinished> <http://www.w3.org/2000/01/rdf-schema#label> "DialogueFinished" .
+<https://w3id.org/todo/tododm#DialogueFinished> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<https://w3id.org/todo/tododm#DialogueFinished> <http://www.w3.org/2004/02/skos/core#example> "Done!"@en .
+<https://w3id.org/todo/tododm#DialogueFinished> <http://www.w3.org/2004/02/skos/core#example> "¡Listo!"@es .
+# 
 # https://w3id.org/todo/tododm#DialogueStep
 <https://w3id.org/todo/tododm#DialogueStep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/todo/tododm#DialogueStep> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#initiatedBy> .
-_:genid12 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#SystemStep> .
-<https://w3id.org/todo/tododm#DialogueStep> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
-_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#IDval> .
-_:genid13 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/todo/tododm#DialogueStep> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#order> .
-_:genid14 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/todo/tododm#DialogueStep> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#initiatedBy> .
+_:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#SystemStep> .
+<https://w3id.org/todo/tododm#DialogueStep> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#IDval> .
+_:genid16 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/todo/tododm#DialogueStep> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#order> .
+_:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#integer> .
 <https://w3id.org/todo/tododm#DialogueStep> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/todo/tododm#ProcessStep> .
 <https://w3id.org/todo/tododm#DialogueStep> <http://www.w3.org/2000/01/rdf-schema#comment> "Step in the dialogue process that requires a system interaction with the user (SystemStep)." .
 <https://w3id.org/todo/tododm#DialogueStep> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododm#" .
@@ -510,10 +556,10 @@ _:genid14 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001
 # https://w3id.org/todo/tododm#GreetingResponse
 <https://w3id.org/todo/tododm#GreetingResponse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/todo/tododm#GreetingResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/todo/tododm#SystemResponse> .
-<https://w3id.org/todo/tododm#GreetingResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#implies> .
-_:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#UserCommandRequest> .
+<https://w3id.org/todo/tododm#GreetingResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#implies> .
+_:genid18 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#UserCommandRequest> .
 <https://w3id.org/todo/tododm#GreetingResponse> <http://www.w3.org/2000/01/rdf-schema#comment> "Welcome message."@en .
 <https://w3id.org/todo/tododm#GreetingResponse> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododm#" .
 <https://w3id.org/todo/tododm#GreetingResponse> <http://www.w3.org/2000/01/rdf-schema#label> "GreetingResponse" .
@@ -544,16 +590,40 @@ _:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/
 # https://w3id.org/todo/tododm#ItemNotCompatibleAnyArgResponse
 <https://w3id.org/todo/tododm#ItemNotCompatibleAnyArgResponse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/todo/tododm#ItemNotCompatibleAnyArgResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/todo/tododm#SystemResponse> .
-<https://w3id.org/todo/tododm#ItemNotCompatibleAnyArgResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#implies> .
-_:genid16 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#VerifyInfoRequest> .
+<https://w3id.org/todo/tododm#ItemNotCompatibleAnyArgResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#implies> .
+_:genid19 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#VerifyInfoRequest> .
 <https://w3id.org/todo/tododm#ItemNotCompatibleAnyArgResponse> <http://www.w3.org/2000/01/rdf-schema#comment> "El item {item} no es compatible con ningún argumento de la acción."@es .
 <https://w3id.org/todo/tododm#ItemNotCompatibleAnyArgResponse> <http://www.w3.org/2000/01/rdf-schema#comment> "The item {item} is not compatible with any argument for this action."@en .
 <https://w3id.org/todo/tododm#ItemNotCompatibleAnyArgResponse> <http://www.w3.org/2000/01/rdf-schema#comment> "The system informs the user the Item value provided is not compatible with any action argument, according to what has been modelled in the KB." .
 <https://w3id.org/todo/tododm#ItemNotCompatibleAnyArgResponse> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododm#" .
 <https://w3id.org/todo/tododm#ItemNotCompatibleAnyArgResponse> <http://www.w3.org/2000/01/rdf-schema#label> "ItemNotCompatibleAnyArgResponse" .
 <https://w3id.org/todo/tododm#ItemNotCompatibleAnyArgResponse> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/todo/tododm#MissingInformationResponse
+<https://w3id.org/todo/tododm#MissingInformationResponse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododm#MissingInformationResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/todo/tododm#SystemResponse> .
+<https://w3id.org/todo/tododm#MissingInformationResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#implies> .
+_:genid20 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#ArgumentRequest> .
+<https://w3id.org/todo/tododm#MissingInformationResponse> <http://www.w3.org/2000/01/rdf-schema#comment> "Response that is given when, after checking if all the core Arguments have been provided by the user command, there are core Arguments that are missing."@en .
+<https://w3id.org/todo/tododm#MissingInformationResponse> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododm#" .
+<https://w3id.org/todo/tododm#MissingInformationResponse> <http://www.w3.org/2000/01/rdf-schema#label> "MissingInformationResponse" .
+<https://w3id.org/todo/tododm#MissingInformationResponse> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<https://w3id.org/todo/tododm#MissingInformationResponse> <http://www.w3.org/2004/02/skos/core#example> "Hay información que me falta."@es .
+<https://w3id.org/todo/tododm#MissingInformationResponse> <http://www.w3.org/2004/02/skos/core#example> "I still need some more information."@es .
+# 
+# https://w3id.org/todo/tododm#NewDialogue
+<https://w3id.org/todo/tododm#NewDialogue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododm#NewDialogue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/todo/tododm#YesNoRequest> .
+<https://w3id.org/todo/tododm#NewDialogue> <http://www.w3.org/2000/01/rdf-schema#comment> "Request that asks the user whether they want to initiate a new dialogue process." .
+<https://w3id.org/todo/tododm#NewDialogue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododm#" .
+<https://w3id.org/todo/tododm#NewDialogue> <http://www.w3.org/2000/01/rdf-schema#label> "NewDialogue" .
+<https://w3id.org/todo/tododm#NewDialogue> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<https://w3id.org/todo/tododm#NewDialogue> <http://www.w3.org/2004/02/skos/core#example> "Do you need anything else?"@en .
+<https://w3id.org/todo/tododm#NewDialogue> <http://www.w3.org/2004/02/skos/core#example> "¿Necesitas algo más?"@es .
 # 
 # https://w3id.org/todo/tododm#NoMoreOptionsContinueResponse
 <https://w3id.org/todo/tododm#NoMoreOptionsContinueResponse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -568,10 +638,10 @@ _:genid16 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/
 # https://w3id.org/todo/tododm#NoMoreOptionsRestartResponse
 <https://w3id.org/todo/tododm#NoMoreOptionsRestartResponse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/todo/tododm#NoMoreOptionsRestartResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/todo/tododm#SystemResponse> .
-<https://w3id.org/todo/tododm#NoMoreOptionsRestartResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#implies> .
-_:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#UserCommandRequest> .
+<https://w3id.org/todo/tododm#NoMoreOptionsRestartResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#implies> .
+_:genid21 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#UserCommandRequest> .
 <https://w3id.org/todo/tododm#NoMoreOptionsRestartResponse> <http://www.w3.org/2000/01/rdf-schema#comment> "Response that the system displays when it runs out of options. It finishes the current Dialogue."@en .
 <https://w3id.org/todo/tododm#NoMoreOptionsRestartResponse> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododm#" .
 <https://w3id.org/todo/tododm#NoMoreOptionsRestartResponse> <http://www.w3.org/2000/01/rdf-schema#label> "NoMoreOptionsRestartResponse" .
@@ -582,10 +652,10 @@ _:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/
 # https://w3id.org/todo/tododm#NoResultsClarificationResponse
 <https://w3id.org/todo/tododm#NoResultsClarificationResponse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/todo/tododm#NoResultsClarificationResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/todo/tododm#SystemResponse> .
-<https://w3id.org/todo/tododm#NoResultsClarificationResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#implies> .
-_:genid18 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#RepeatArgumentRequest> .
+<https://w3id.org/todo/tododm#NoResultsClarificationResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#implies> .
+_:genid22 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#RepeatArgumentRequest> .
 <https://w3id.org/todo/tododm#NoResultsClarificationResponse> <http://www.w3.org/2000/01/rdf-schema#comment> "Response that the system returns when the clarification step of the value of an Argument does not return any results."@en .
 <https://w3id.org/todo/tododm#NoResultsClarificationResponse> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododm#" .
 <https://w3id.org/todo/tododm#NoResultsClarificationResponse> <http://www.w3.org/2000/01/rdf-schema#label> "NoResultsClarificationResponse" .
@@ -606,14 +676,6 @@ _:genid18 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/
 # https://w3id.org/todo/tododm#OptionsAvailableResponse
 <https://w3id.org/todo/tododm#OptionsAvailableResponse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/todo/tododm#OptionsAvailableResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/todo/tododm#SystemResponse> .
-<https://w3id.org/todo/tododm#OptionsAvailableResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#implies> .
-_:genid19 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#ArgumentSpecifyRequest> .
-<https://w3id.org/todo/tododm#OptionsAvailableResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
-_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#implies> .
-_:genid20 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#ArgumentValueDisambiguationRequest> .
 <https://w3id.org/todo/tododm#OptionsAvailableResponse> <http://www.w3.org/2000/01/rdf-schema#comment> "Response in which the system tells the user that it has several options for a specific element (e.g. WorldElement).\n\nNote the difference between OptionsAvailableResponse and TooManyAlternativesResponse: the first implies that there is a fair amount of options, whereas the latter implies that the options that are available are too many and it will require the user to be more specific."@en .
 <https://w3id.org/todo/tododm#OptionsAvailableResponse> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododm#" .
 <https://w3id.org/todo/tododm#OptionsAvailableResponse> <http://www.w3.org/2000/01/rdf-schema#label> "OptionsAvailableResponse" .
@@ -623,14 +685,14 @@ _:genid20 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/
 # 
 # https://w3id.org/todo/tododm#ProcessStep
 <https://w3id.org/todo/tododm#ProcessStep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/todo/tododm#ProcessStep> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#hasStepFunction> .
-_:genid21 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#ProcessStepStepFunction> .
-<https://w3id.org/todo/tododm#ProcessStep> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
-_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#IDval> .
-_:genid22 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/todo/tododm#ProcessStep> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#hasStepFunction> .
+_:genid23 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#ProcessStepStepFunction> .
+<https://w3id.org/todo/tododm#ProcessStep> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#IDval> .
+_:genid24 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/todo/tododm#ProcessStep> <http://www.w3.org/2000/01/rdf-schema#comment> "Step in the dialogue process that does not require a system interaction with the user (SystemStep)." .
 <https://w3id.org/todo/tododm#ProcessStep> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododm#" .
 <https://w3id.org/todo/tododm#ProcessStep> <http://www.w3.org/2000/01/rdf-schema#label> "ProcessStep" .
@@ -639,14 +701,14 @@ _:genid22 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001
 # https://w3id.org/todo/tododm#ProcessStepStepFunction
 <https://w3id.org/todo/tododm#ProcessStepStepFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/todo/tododm#ProcessStepStepFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/todo/tododm#StepFunction> .
-<https://w3id.org/todo/tododm#ProcessStepStepFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
-_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#isStepFunctionOf> .
-_:genid23 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#ProcessStep> .
-<https://w3id.org/todo/tododm#ProcessStepStepFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
-_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#order> .
-_:genid24 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/todo/tododm#ProcessStepStepFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#isStepFunctionOf> .
+_:genid25 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#ProcessStep> .
+<https://w3id.org/todo/tododm#ProcessStepStepFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#order> .
+_:genid26 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#integer> .
 <https://w3id.org/todo/tododm#ProcessStepStepFunction> <http://www.w3.org/2000/01/rdf-schema#comment> "Step Function associated to a ProcessStep." .
 <https://w3id.org/todo/tododm#ProcessStepStepFunction> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododm#" .
 <https://w3id.org/todo/tododm#ProcessStepStepFunction> <http://www.w3.org/2000/01/rdf-schema#label> "ProcessStepStepFunction" .
@@ -688,12 +750,20 @@ _:genid24 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001
 <https://w3id.org/todo/tododm#Restart> <http://www.w3.org/2000/01/rdf-schema#label> "Restart" .
 <https://w3id.org/todo/tododm#Restart> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
+# https://w3id.org/todo/tododm#Return
+<https://w3id.org/todo/tododm#Return> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/todo/tododm#Return> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/todo/tododm#DialogueControlMarker> .
+<https://w3id.org/todo/tododm#Return> <http://www.w3.org/2000/01/rdf-schema#comment> "Marker that returns to the last SystemResponse+Request/SystemRequest performed." .
+<https://w3id.org/todo/tododm#Return> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododm#" .
+<https://w3id.org/todo/tododm#Return> <http://www.w3.org/2000/01/rdf-schema#label> "Return" .
+<https://w3id.org/todo/tododm#Return> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
 # https://w3id.org/todo/tododm#StepFunction
 <https://w3id.org/todo/tododm#StepFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/todo/tododm#StepFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
-_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#IDval> .
-_:genid25 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/todo/tododm#StepFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#IDval> .
+_:genid27 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/todo/tododm#StepFunction> <http://www.w3.org/2000/01/rdf-schema#comment> "Element that is linked to a function in the Dialogue Manager code. This element also determines the implications of the output of said function in the code." .
 <https://w3id.org/todo/tododm#StepFunction> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododm#" .
 <https://w3id.org/todo/tododm#StepFunction> <http://www.w3.org/2000/01/rdf-schema#label> "StepFunction" .
@@ -719,10 +789,10 @@ _:genid25 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001
 # 
 # https://w3id.org/todo/tododm#SystemStep
 <https://w3id.org/todo/tododm#SystemStep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/todo/tododm#SystemStep> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
-_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#outputSentence> .
-_:genid26 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/todo/tododm#SystemStep> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#outputSentence> .
+_:genid28 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/todo/tododm#SystemStep> <http://www.w3.org/2000/01/rdf-schema#comment> "Step performed by the system in order to request information to the user or simply outputting information." .
 <https://w3id.org/todo/tododm#SystemStep> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododm#" .
 <https://w3id.org/todo/tododm#SystemStep> <http://www.w3.org/2000/01/rdf-schema#label> "SystemStep" .
@@ -731,10 +801,10 @@ _:genid26 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001
 # https://w3id.org/todo/tododm#TooManyActionOptionsResponse
 <https://w3id.org/todo/tododm#TooManyActionOptionsResponse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/todo/tododm#TooManyActionOptionsResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/todo/tododm#SystemResponse> .
-<https://w3id.org/todo/tododm#TooManyActionOptionsResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
-_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#implies> .
-_:genid27 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#UserCommandRequest> .
+<https://w3id.org/todo/tododm#TooManyActionOptionsResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#implies> .
+_:genid29 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#UserCommandRequest> .
 <https://w3id.org/todo/tododm#TooManyActionOptionsResponse> <http://www.w3.org/2000/01/rdf-schema#comment> "Response given when the number of possible Actions is too big."@en .
 <https://w3id.org/todo/tododm#TooManyActionOptionsResponse> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododm#" .
 <https://w3id.org/todo/tododm#TooManyActionOptionsResponse> <http://www.w3.org/2000/01/rdf-schema#label> "TooManyActionOptionsResponse" .
@@ -745,10 +815,10 @@ _:genid27 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/
 # https://w3id.org/todo/tododm#TooManyAlternativesResponse
 <https://w3id.org/todo/tododm#TooManyAlternativesResponse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/todo/tododm#TooManyAlternativesResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/todo/tododm#SystemResponse> .
-<https://w3id.org/todo/tododm#TooManyAlternativesResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
-_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#implies> .
-_:genid28 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#ArgumentClarificationRequest> .
+<https://w3id.org/todo/tododm#TooManyAlternativesResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#implies> .
+_:genid30 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#ArgumentClarificationRequest> .
 <https://w3id.org/todo/tododm#TooManyAlternativesResponse> <http://www.w3.org/2000/01/rdf-schema#comment> "Response given when the alternatives (in general) are too big."@en .
 <https://w3id.org/todo/tododm#TooManyAlternativesResponse> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododm#" .
 <https://w3id.org/todo/tododm#TooManyAlternativesResponse> <http://www.w3.org/2000/01/rdf-schema#label> "TooManyAlternativesResponse" .
@@ -759,10 +829,10 @@ _:genid28 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/
 # https://w3id.org/todo/tododm#TooManyArgumentOptionsResponse
 <https://w3id.org/todo/tododm#TooManyArgumentOptionsResponse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/todo/tododm#TooManyArgumentOptionsResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/todo/tododm#SystemResponse> .
-<https://w3id.org/todo/tododm#TooManyArgumentOptionsResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
-_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#implies> .
-_:genid29 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#UserCommandRequest> .
+<https://w3id.org/todo/tododm#TooManyArgumentOptionsResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#implies> .
+_:genid31 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#UserCommandRequest> .
 <https://w3id.org/todo/tododm#TooManyArgumentOptionsResponse> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododm#" .
 <https://w3id.org/todo/tododm#TooManyArgumentOptionsResponse> <http://www.w3.org/2000/01/rdf-schema#label> "TooManyArgumentOptionsResponse" .
 <https://w3id.org/todo/tododm#TooManyArgumentOptionsResponse> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -773,10 +843,10 @@ _:genid29 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/
 # https://w3id.org/todo/tododm#TooManyWorldElementOptionsResponse
 <https://w3id.org/todo/tododm#TooManyWorldElementOptionsResponse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/todo/tododm#TooManyWorldElementOptionsResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/todo/tododm#SystemResponse> .
-<https://w3id.org/todo/tododm#TooManyWorldElementOptionsResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
-_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#implies> .
-_:genid30 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#ArgumentClarificationRequest> .
+<https://w3id.org/todo/tododm#TooManyWorldElementOptionsResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#implies> .
+_:genid32 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#ArgumentClarificationRequest> .
 <https://w3id.org/todo/tododm#TooManyWorldElementOptionsResponse> <http://www.w3.org/2000/01/rdf-schema#comment> "Response given when the number of possible World Elements is too big."@en .
 <https://w3id.org/todo/tododm#TooManyWorldElementOptionsResponse> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododm#" .
 <https://w3id.org/todo/tododm#TooManyWorldElementOptionsResponse> <http://www.w3.org/2000/01/rdf-schema#label> "TooManyWorldElementOptionsResponse" .
@@ -805,10 +875,10 @@ _:genid30 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/
 # https://w3id.org/todo/tododm#ValueNotCompatibleWithArgumentResponse
 <https://w3id.org/todo/tododm#ValueNotCompatibleWithArgumentResponse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/todo/tododm#ValueNotCompatibleWithArgumentResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/todo/tododm#SystemResponse> .
-<https://w3id.org/todo/tododm#ValueNotCompatibleWithArgumentResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
-_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#implies> .
-_:genid31 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#VerifyInfoRequest> .
+<https://w3id.org/todo/tododm#ValueNotCompatibleWithArgumentResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#implies> .
+_:genid33 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#VerifyInfoRequest> .
 <https://w3id.org/todo/tododm#ValueNotCompatibleWithArgumentResponse> <http://www.w3.org/2000/01/rdf-schema#comment> "Response given when the ArgValue for an Argument provided by the user is not compatible with said Argument."@en .
 <https://w3id.org/todo/tododm#ValueNotCompatibleWithArgumentResponse> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododm#" .
 <https://w3id.org/todo/tododm#ValueNotCompatibleWithArgumentResponse> <http://www.w3.org/2000/01/rdf-schema#label> "ValueNotCompatibleWithArgumentResponse" .
@@ -829,10 +899,10 @@ _:genid31 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/
 # https://w3id.org/todo/tododm#YesNoRequest
 <https://w3id.org/todo/tododm#YesNoRequest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/todo/tododm#YesNoRequest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/todo/tododm#SystemRequest> .
-<https://w3id.org/todo/tododm#YesNoRequest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
-_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#hasStepFunction> .
-_:genid32 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#YesNoRequestStepFunction> .
+<https://w3id.org/todo/tododm#YesNoRequest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#hasStepFunction> .
+_:genid34 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#YesNoRequestStepFunction> .
 <https://w3id.org/todo/tododm#YesNoRequest> <http://www.w3.org/2000/01/rdf-schema#comment> "Request the response of which is expected to be limited to \"Yes\" or \"No\" (and equivalents).\n\nAlso known as \"Polar question\" in linguistics."@en .
 <https://w3id.org/todo/tododm#YesNoRequest> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododm#" .
 <https://w3id.org/todo/tododm#YesNoRequest> <http://www.w3.org/2000/01/rdf-schema#label> "YesNoRequest" .
@@ -842,18 +912,18 @@ _:genid32 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/
 # https://w3id.org/todo/tododm#YesNoRequestStepFunction
 <https://w3id.org/todo/tododm#YesNoRequestStepFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/todo/tododm#YesNoRequestStepFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/todo/tododm#StepFunction> .
-<https://w3id.org/todo/tododm#YesNoRequestStepFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
-_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#incorrectUserResponseTypeImplies> .
-_:genid33 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#ContentResponseNotExpected> .
-<https://w3id.org/todo/tododm#YesNoRequestStepFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
-_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#isStepFunctionOf> .
-_:genid34 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#YesNoRequest> .
 <https://w3id.org/todo/tododm#YesNoRequestStepFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
 _:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#userResponseNotUnderstoodImplies> .
-_:genid35 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#NotUnderstoodResponse> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#incorrectUserResponseTypeImplies> .
+_:genid35 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#ContentResponseNotExpected> .
+<https://w3id.org/todo/tododm#YesNoRequestStepFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#isStepFunctionOf> .
+_:genid36 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#YesNoRequest> .
+<https://w3id.org/todo/tododm#YesNoRequestStepFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/todo/tododm#userResponseNotUnderstoodImplies> .
+_:genid37 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/todo/tododm#NotUnderstoodResponse> .
 <https://w3id.org/todo/tododm#YesNoRequestStepFunction> <http://www.w3.org/2000/01/rdf-schema#comment> "Step Function associated to a YesNoRequest." .
 <https://w3id.org/todo/tododm#YesNoRequestStepFunction> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/todo/tododm#" .
 <https://w3id.org/todo/tododm#YesNoRequestStepFunction> <http://www.w3.org/2000/01/rdf-schema#label> "YesNoRequestStepFunction" .

@@ -5,12 +5,12 @@
 <https://w3id.org/todo/tododw> <http://purl.org/dc/terms/creator> "Cristina Aceta (Tekniker) <mailto:cristina.aceta@tekniker.es>" .
 <https://w3id.org/todo/tododw> <http://purl.org/dc/terms/description> "Module for scenario modelling (world elements) of domain." .
 <https://w3id.org/todo/tododw> <http://purl.org/dc/terms/issued> ""^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://w3id.org/todo/tododw> <http://purl.org/dc/terms/modified> "2021-03-09T10:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/todo/tododw> <http://purl.org/dc/terms/modified> "2021-09-23T10:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://w3id.org/todo/tododw> <http://purl.org/dc/terms/title> "TODODW: World Module for Task-Oriented Dialogue management Ontology (TODO)" .
 <https://w3id.org/todo/tododw> <http://purl.org/vocab/vann/preferredNamespacePrefix> "tododw" .
 <https://w3id.org/todo/tododw> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/todo/tododw" .
 <https://w3id.org/todo/tododw> <http://www.w3.org/2002/07/owl#priorVersion> "" .
-<https://w3id.org/todo/tododw> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
+<https://w3id.org/todo/tododw> <http://www.w3.org/2002/07/owl#versionInfo> "2.1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 # 
 # 
 # #################################################################

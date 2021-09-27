@@ -2,7 +2,7 @@
 <rdf:RDF xmlns="https://w3id.org/todo#"
      xml:base="https://w3id.org/todo"
      xmlns:ns="http://creativecommons.org/ns#"
-     xmlns:ns1="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -16,15 +16,15 @@
         <owl:imports rdf:resource="https://w3id.org/todo/tododom"/>
         <ns:license>http://purl.org/NET/rdflicense/cc-by4.0</ns:license>
         <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Izaskun Fernández (Tekniker) &lt;mailto:izaskun.fernandez@tekniker.es&gt;</terms:contributor>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-21T00:00:00</terms:created>
+        <terms:created>2020-04-21T00:00:00</terms:created>
         <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cristina Aceta (Tekniker) &lt;mailto:cristina.aceta@tekniker.es&gt;</terms:creator>
-        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></terms:description>
-        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></terms:issued>
-        <terms:modified>2021-03-09T11:00:00</terms:modified>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">With the aim of enhancing natural communication between workers in industrial environments and the systems to be used by them, TODO (Task-Oriented Dialogue management Ontology) has been developed to be the core of task-oriented dialogue systems. TODO is a core ontology that provides task-oriented dialogue systems with the necessary means to be capable of naturally interacting with workers (both at understanding and at ommunication levels) and that can be easily adapted to different industrial scenarios, reducing adaptation time and costs. Moreover, it allows to store and reproduce the dialogue process to be able to learn from new interactions.</terms:description>
+        <terms:issued></terms:issued>
+        <terms:modified>2021-09-23T10:00:00</terms:modified>
         <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TODO: Task-Oriented Dialogue management Ontology</terms:title>
-        <vann:preferredNamespacePrefix>DialSystemOnt</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri>https://w3id.org/todo/todo</vann:preferredNamespaceUri>
-        <owl:versionInfo>1.0.0</owl:versionInfo>
+        <vann:preferredNamespacePrefix>todo</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://w3id.org/todo</vann:preferredNamespaceUri>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.1</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -46,8 +46,22 @@
         <owl:inverseOf rdf:resource="https://w3id.org/todo#isActionTraceOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:comment>Establishes the relationship between an Action and its Trace</rdfs:comment>
-        <rdfs:isDefinedBy>https://w3id.org/todo/todo</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>https://w3id.org/todo#</rdfs:isDefinedBy>
         <rdfs:label>hasActionTrace</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/todo#hasObtained -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo#hasObtained">
+        <owl:inverseOf rdf:resource="https://w3id.org/todo#obtainedThrough"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:comment>Establishes a relation between a SecondaryDialogue and the information (ActionTrace/ArgumentTrace/WorldElementTrace) that has been obtained thanks to it.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo#</rdfs:isDefinedBy>
+        <rdfs:label>hasObtained</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
@@ -59,6 +73,19 @@
         <rdfs:comment>Establishes the relationship between an ActionTrace and the Action it refers to.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/todo</rdfs:isDefinedBy>
         <rdfs:label>isActionTraceOf</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/todo#obtainedThrough -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/todo#obtainedThrough">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:comment>Establishes a relation between a Trace (ActionTrace/ArgumentTrace/WorldElementTrace) and the SecondaryDialogue performed to obtain said Trace.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/todo#</rdfs:isDefinedBy>
+        <rdfs:label>obtainedThrough</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
@@ -83,13 +110,77 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododom#ActionTrace"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo/tododom#hasKeyElement"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododom#KeyElementTrace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
 
     <!-- https://w3id.org/todo/tododom#ActionTrace -->
 
-    <owl:Class rdf:about="https://w3id.org/todo/tododom#ActionTrace"/>
+    <owl:Class rdf:about="https://w3id.org/todo/tododom#ActionTrace">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo#obtainedThrough"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododt#SecondaryDialogueTrace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/todo/tododom#ArgumentTrace -->
+
+    <rdf:Description rdf:about="https://w3id.org/todo/tododom#ArgumentTrace">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo#obtainedThrough"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododt#SecondaryDialogueTrace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/todo/tododom#WorldElementTrace -->
+
+    <rdf:Description rdf:about="https://w3id.org/todo/tododom#WorldElementTrace">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo#obtainedThrough"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododt#SecondaryDialogueTrace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/todo/tododt#SecondaryDialogueTrace -->
+
+    <rdf:Description rdf:about="https://w3id.org/todo/tododt#SecondaryDialogueTrace">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo#hasObtained"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododom#ActionTrace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo#hasObtained"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododom#ArgumentTrace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/todo#hasObtained"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/todo/tododom#WorldElementTrace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
 </rdf:RDF>
 
 
