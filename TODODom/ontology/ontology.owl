@@ -23,12 +23,12 @@
         <terms:creator>Cristina Aceta (Tekniker) &lt;mailto:cristina.aceta(at)tekniker.es&gt;</terms:creator>
         <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Module for domain modelling.</terms:description>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></terms:issued>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-09T10:00:00</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-09-23T10:00:00</terms:modified>
         <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TODODom: Domain Module for Task-Oriented Dialogue management Ontology (TODO)</terms:title>
         <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tododom</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://w3id.org/todo/tododom</vann:preferredNamespaceUri>
         <owl:priorVersion></owl:priorVersion>
-        <owl:versionInfo>1.0.0</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.1</owl:versionInfo>
     </owl:Ontology>
     
 

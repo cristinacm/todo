@@ -18,13 +18,13 @@
         <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Izaskun Fernández (Tekniker) &lt;mailto:izaskun.fernandez@tekniker.es&gt;</terms:contributor>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-21T00:00:00</terms:created>
         <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cristina Aceta (Tekniker) &lt;mailto:cristina.aceta@tekniker.es&gt;</terms:creator>
-        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></terms:description>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">With the aim of enhancing natural communication between workers in industrial environments and the systems to be used by them, TODO (Task-Oriented Dialogue management Ontology) has been developed to be the core of task-oriented dialogue systems. TODO is a core ontology that provides task-oriented dialogue systems with the necessary means to be capable of naturally interacting with workers (both at understanding and at ommunication levels) and that can be easily adapted to different industrial scenarios, reducing adaptation time and costs. Moreover, it allows to store and reproduce the dialogue process to be able to learn from new interactions.</terms:description>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></terms:issued>
-        <terms:modified>2021-03-09T11:00:00</terms:modified>
+        <terms:modified>2021-09-23T10:00:00</terms:modified>
         <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TODO: Task-Oriented Dialogue management Ontology</terms:title>
-        <vann:preferredNamespacePrefix>DialSystemOnt</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri>https://w3id.org/todo/todo</vann:preferredNamespaceUri>
-        <owl:versionInfo>1.0.0</owl:versionInfo>
+        <vann:preferredNamespacePrefix>todo</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://w3id.org/todo</vann:preferredNamespaceUri>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.1</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -48,6 +48,7 @@
         <rdfs:comment>Establishes the relationship between an Action and its Trace</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo#</rdfs:isDefinedBy>
         <rdfs:label>hasActionTrace</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
     </owl:ObjectProperty>
     
 
@@ -72,6 +73,7 @@
         <rdfs:comment>Establishes the relationship between an ActionTrace and the Action it refers to.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/todo</rdfs:isDefinedBy>
         <rdfs:label>isActionTraceOf</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
     </owl:ObjectProperty>
     
 
