@@ -50,7 +50,7 @@
         <rdfs:comment>Establishes the relationship between an Action and its Trace</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo#</rdfs:isDefinedBy>
         <rdfs:label>hasActionTrace</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
@@ -64,7 +64,7 @@
         <rdfs:comment>Establishes a relation between a SecondaryDialogue and the information (ActionTrace/ArgumentTrace/WorldElementTrace) that has been obtained thanks to it.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo#</rdfs:isDefinedBy>
         <rdfs:label>hasObtained</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
@@ -77,7 +77,7 @@
         <rdfs:comment>Establishes the relationship between an ActionTrace and the Action it refers to.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo/todo</rdfs:isDefinedBy>
         <rdfs:label>isActionTraceOf</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
@@ -90,7 +90,7 @@
         <rdfs:comment>Establishes a relation between a Trace (ActionTrace/ArgumentTrace/WorldElementTrace) and the SecondaryDialogue performed to obtain said Trace.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/todo#</rdfs:isDefinedBy>
         <rdfs:label>obtainedThrough</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+        <vs:term_status>stable</vs:term_status>
     </owl:ObjectProperty>
     
 
