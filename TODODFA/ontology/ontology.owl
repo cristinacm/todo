@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://w3id.org/todo/tododfa"
      xml:base="https://w3id.org/todo/tododfa"
-     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:cc="http://creativecommons.org/ns#"
      xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -15,7 +15,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:ontolex="http://www.w3.org/ns/lemon/ontolex#">
     <owl:Ontology rdf:about="https://w3id.org/todo/tododfa">
-        <ns:license>http://purl.org/NET/rdflicense/cc-by4.0</ns:license>
+        <cc:license>http://purl.org/NET/rdflicense/cc-by4.0</cc:license>
         <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Izaskun Fernández (Tekniker) &lt;mailto:izaskun.fernandez@tekniker.es&gt;</terms:contributor>
         <terms:created>2020-04-21T00:00:00</terms:created>
         <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cristina Aceta (Tekniker) &lt;mailto:cristina.aceta@tekniker.es&gt;</terms:creator>
