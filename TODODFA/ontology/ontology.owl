@@ -15,7 +15,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:ontolex="http://www.w3.org/ns/lemon/ontolex#">
     <owl:Ontology rdf:about="https://w3id.org/todo/tododfa">
-        <ns:license>http://purl.org/NET/rdflicense/cc-by4.0</ns:license>
+        <ns:License>http://purl.org/NET/rdflicense/cc-by4.0</ns:License>
         <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Izaskun Fernández (Tekniker) &lt;mailto:izaskun.fernandez@tekniker.es&gt;</terms:contributor>
         <terms:created>2020-04-21T00:00:00</terms:created>
         <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cristina Aceta (Tekniker) &lt;mailto:cristina.aceta@tekniker.es&gt;</terms:creator>
